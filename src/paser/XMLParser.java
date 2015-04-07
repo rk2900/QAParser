@@ -2,7 +2,10 @@ package paser;
 
 import java.io.File;
 import java.io.IOException;
+import java.security.AlgorithmConstraints;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -15,8 +18,6 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import basic.FileOps;
-import manager.Loader;
-import manager.Question;
 
 /**
  * Parse QALD5 train data into Question structure instances
@@ -27,14 +28,29 @@ import manager.Question;
 public class XMLParser {
 	private String filePath;
 	private Document doc;
-	public ArrayList<Question> questions;
+	private ArrayList<Question> questions;
+	private static HashSet<String> types;
+	
+	static {
+		types = new HashSet<>();
+		types.add("resource");
+		types.add("date");
+		types.add("number");
+		types.add("boolean");
+		types.add("list");
+		types.add("string");
+	}
 	
 	public XMLParser() {
 		System.out.println("No document given.");
+		filePath = new String();
+		questions = new ArrayList<Question>();
 	}
 	
 	public XMLParser(String file) {
 		filePath = new String(file);
+		load();
+		questions = new ArrayList<Question>();
 	}
 	
 	public XMLParser(Document document) {
@@ -45,8 +61,12 @@ public class XMLParser {
 			questions = new ArrayList<Question>();
 		}
 	}
+	
+	public void setFilePath(String filePath) {
+		this.filePath = new String(filePath);
+	}
 
-	private void load() {
+	public void load() {
 		if(FileOps.exist(filePath)) {
 			File xmlFile = new File(filePath);
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -64,7 +84,7 @@ public class XMLParser {
 		}
 	}
 	
-	private void parse() {
+	public void parse() {
 		if(doc == null) {
 			System.out.println("Document not loaded.");
 			return;
@@ -135,18 +155,46 @@ public class XMLParser {
 		}
 		System.out.println("Parsing finished.");
 	}
+	
+	public ArrayList<Question> getQuestions() {
+		return questions;
+	}
+	
+	public ArrayList<Question> getQuestionsPart(int begin, int end) {
+		ArrayList<Question> qList = new ArrayList<Question>();
+		int count = 0;
+		for (Question question : questions) {
+			if(count++ >= begin && count < end) {
+				qList.add(question);
+			}
+		}
+		return qList;
+	}
+	
+	public ArrayList<Question> getQuestionsPart(int begin, int end, String type) {
+		ArrayList<Question> qList = new ArrayList<>();
+		if(types.contains(type)) {
+			System.out.println("Found such QA type.");
+			int count = 0;
+			for (Question question : questions)
+				if(count++ >= begin && count < end && question.answerType.equals(type))
+					qList.add(question);
+		} else
+			System.out.println("Warning: No such QA pairs.");
+		return qList;
+	}
 
 	public static void main(String[] args) {
 		String filePath = "./data/qald-5_train.xml";
 		if(args.length > 1 && args[1].length() > 0) {
 			filePath = args[1];
 		}
-		XMLParser parser  = new XMLParser(filePath);
+		XMLParser parser  = new XMLParser();
+		parser.setFilePath(filePath);
 		parser.load();
 		parser.parse();
 		
-		for(Question q: parser.questions) {
-			q.print();
-		}
+		ArrayList<Question> qList = parser.getQuestionsPart(0, 301, "resource");
+		System.out.println(qList.size());
 	}
 }
