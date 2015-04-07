@@ -71,7 +71,7 @@ public class WikiEntityFinder {
 
 	public static void main(String[] args) {
 		WikiEntityFinder finder = new WikiEntityFinder();
-		LinkedList<String> lines = FileOps.LoadFilebyLine("./data/score-entity.txt");
+		LinkedList<String> lines = FileOps.LoadFilebyLine("./data/q-e/all-question-entity.txt");
 		LinkedList<String> linesToOutput = new LinkedList<String>();
 		for (String line : lines) {
 			String[] items = line.split("\t");
@@ -84,7 +84,8 @@ public class WikiEntityFinder {
 			}
 			linesToOutput.add(sb.toString());
 		}
-		FileOps.SaveList("./data/score-entity_entity.txt", linesToOutput);
+//		FileOps.SaveList("./data/score-entity_entity.txt", linesToOutput);
+		System.out.println(linesToOutput.get(0));
 	}
 
 }

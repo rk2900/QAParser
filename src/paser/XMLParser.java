@@ -2,7 +2,6 @@ package paser;
 
 import java.io.File;
 import java.io.IOException;
-import java.security.AlgorithmConstraints;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -29,6 +28,7 @@ public class XMLParser {
 	private String filePath;
 	private Document doc;
 	private ArrayList<Question> questions;
+	private HashMap<Integer, Question> mappedQuestions;
 	private static HashSet<String> types;
 	
 	static {
@@ -45,12 +45,14 @@ public class XMLParser {
 		System.out.println("No document given.");
 		filePath = new String();
 		questions = new ArrayList<Question>();
+		mappedQuestions = new HashMap<>();
 	}
 	
 	public XMLParser(String file) {
 		filePath = new String(file);
 		load();
 		questions = new ArrayList<Question>();
+		mappedQuestions = new HashMap<>();
 	}
 	
 	public XMLParser(Document document) {
@@ -59,6 +61,7 @@ public class XMLParser {
 		} else {
 			doc = document;
 			questions = new ArrayList<Question>();
+			mappedQuestions = new HashMap<>();
 		}
 	}
 	
@@ -152,6 +155,7 @@ public class XMLParser {
 					answerType, keywords, question, answers, query);
 			
 			questions.add(q);
+			mappedQuestions.put(id, q);
 		}
 		System.out.println("Parsing finished.");
 	}
@@ -182,6 +186,24 @@ public class XMLParser {
 		} else
 			System.out.println("Warning: No such QA pairs.");
 		return qList;
+	}
+	
+	/**
+	 * To get specified question with q-id in training data.
+	 * @param qid the id number in training data attributes
+	 * @return the specified question
+	 */
+	public Question getQuestionWithId(int qid) {
+		return mappedQuestions.get(qid);
+	}
+	
+	/**
+	 * To get specified question with pseudo q-id in XML file.
+	 * @param id pseudo q-id
+	 * @return the specified question
+	 */
+	public Question getQuestionWithPseudoId(int id) {
+		return questions.get(id);
 	}
 
 	public static void main(String[] args) {
