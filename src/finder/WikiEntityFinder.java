@@ -1,10 +1,6 @@
 package finder;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
 
 import knowledgebase.ClientManagement;
 import basic.FileOps;
@@ -56,8 +52,6 @@ public class WikiEntityFinder {
 				while (results.hasNext()) {
 					QuerySolution result = results.next();
 					RDFNode s = result.get("s");
-					RDFNode p = result.get("p");
-//					System.out.println(s+"\t"+p);
 					entityNodes.add(s);
 				}
 			} finally {
@@ -69,14 +63,13 @@ public class WikiEntityFinder {
 		return entityNodes;
 	}
 
-	public static void main(String[] args) {
-		WikiEntityFinder finder = new WikiEntityFinder();
-		LinkedList<String> lines = FileOps.LoadFilebyLine("./data/q-e/all-question-entity.txt");
+	public void wikiLinkEntity(String inputFile, String outputFile) {
+		LinkedList<String> lines = FileOps.LoadFilebyLine(inputFile);
 		LinkedList<String> linesToOutput = new LinkedList<String>();
 		for (String line : lines) {
 			String[] items = line.split("\t");
 			String wikiUrl = items[3];
-			LinkedList<RDFNode> entities = finder.getEntityOfWiki(wikiUrl);
+			LinkedList<RDFNode> entities = getEntityOfWiki(wikiUrl);
 			StringBuilder sb = new StringBuilder();
 			sb.append(line);
 			for (RDFNode rdfNode : entities) {
@@ -84,8 +77,13 @@ public class WikiEntityFinder {
 			}
 			linesToOutput.add(sb.toString());
 		}
-//		FileOps.SaveList("./data/score-entity_entity.txt", linesToOutput);
-		System.out.println(linesToOutput.get(0));
+		FileOps.SaveList(outputFile, linesToOutput);
+	}
+	
+	public static void main(String[] args) {
+		WikiEntityFinder finder = new WikiEntityFinder();
+		finder.wikiLinkEntity("./data/q-e/question-wiki-test.txt", 
+				"./data/q-e/question-wiki-entity-test.txt");
 	}
 
 }

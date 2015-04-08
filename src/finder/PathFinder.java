@@ -1,8 +1,13 @@
 package finder;
 
+import java.io.BufferedOutputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
 import java.util.LinkedList;
 
 import knowledgebase.ClientManagement;
+import basic.FileOps;
 
 import com.franz.agraph.jena.AGModel;
 import com.hp.hpl.jena.query.QuerySolution;
@@ -10,10 +15,14 @@ import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.RDFNode;
 
 import paser.Path;
+import paser.Question;
+import paser.XMLParser;
 
 public class PathFinder {
 
 	private static AGModel agModel = null;
+	private static int lengthThreshold = 2;
+	private static boolean printQuery = false;
 	
 	private static void AGInit() {
 		try {
@@ -38,10 +47,10 @@ public class PathFinder {
 	 * @param length the length of path (counting edges)
 	 * @return
 	 */
-	public LinkedList<Path> getPath(String root, String end, int length) {
+	public LinkedList<Path> getPathList(String root, String end, int length) {
 		LinkedList<String> vars = new LinkedList<>();
-		String rootLabel = "A";
-		String endLabel = "B";
+		String rootLabel = "AAAA";
+		String endLabel = "BBBB";
 		LinkedList<Path> pathList = new LinkedList<>();
 		
 		StringBuilder sparqlBuilder = new StringBuilder();
@@ -65,14 +74,14 @@ public class PathFinder {
 		sparqlBuilder.append("}");
 		
 		sparqlBuilder.replace(sparqlBuilder.indexOf(rootLabel), 
-				sparqlBuilder.indexOf(rootLabel)+1, 
+				sparqlBuilder.indexOf(rootLabel)+4, 
 				"<"+root+">");
 		sparqlBuilder.replace(sparqlBuilder.indexOf(endLabel), 
-				sparqlBuilder.indexOf(endLabel)+1,
+				sparqlBuilder.indexOf(endLabel)+4,
 				"<"+end+">");
 		
 //		System.out.println(sparqlBuilder.toString());
-		ResultSet rs = ClientManagement.query(sparqlBuilder.toString());
+		ResultSet rs = ClientManagement.query(sparqlBuilder.toString(), printQuery);
 		while(rs.hasNext()) {
 			Path path = new Path(root, end);
 			QuerySolution qSolution = rs.next();
@@ -88,9 +97,9 @@ public class PathFinder {
 	}
 	
 	public static void main(String[] args) {
-//		XMLParser parser = new XMLParser("./data/qald-5_train.xml");
-//		parser.load();
-//		parser.parse();
+		XMLParser xmlParser = new XMLParser("./data/qald-5_train.xml");
+		xmlParser.load();
+		xmlParser.parse();
 		
 //		ArrayList<Question> qList = parser.getQuestionsPart(0, 301, "resource");
 //		Question q = qList.get(0);
@@ -99,11 +108,65 @@ public class PathFinder {
 //			System.out.println(answer);
 //		}
 		
-		PathFinder finder = new PathFinder();
-		LinkedList<Path> pathList = finder.getPath("http://dbpedia.org/resource/China", "http://dbpedia.org/resource/Beijing", 1);
-		for (Path path : pathList) {
-			System.out.println(path);
+		/****************************************/
+		String wikiEntityFilePath = "./data/q-e/question-wiki-entity-all.txt";
+		String resultFilePath = "./data/path-result-all.txt";
+		BufferedOutputStream bw = null;
+		try {
+			bw = new BufferedOutputStream(new FileOutputStream(resultFilePath, true));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
 		}
+		PrintStream console = System.out;
+		PrintStream out = new PrintStream(bw);
+		System.setOut(out);
+		
+		PathFinder finder = new PathFinder();
+		LinkedList<String> qeList = FileOps.LoadFilebyLine(wikiEntityFilePath);
+		for (String qeLine : qeList) {
+			String[] items = qeLine.split("\t");
+			if(items.length < 6)
+				continue;
+			int pseudoId = Integer.parseInt(items[0]);
+//			int beginOffset = Integer.parseInt(items[1]);
+//			int endOffset = Integer.parseInt(items[2]);
+//			String wikiUrl = items[3];
+//			boolean correct = (Integer.parseInt(items[4]))==1?true:false;
+			String entityUri = items[5];
+			Question question = xmlParser.getQuestionWithPseudoId(pseudoId);
+			if(!question.answerType.equals("resource"))
+				continue;
+			System.out.println(pseudoId+"\t"+question.question);
+			System.out.println("\tForward:");
+			for (String answer : question.answers) {
+				System.out.println("\t"+"<"+answer+">");
+				for(int length=1; length<=lengthThreshold; length++) {
+					LinkedList<Path> pathList = finder.getPathList(entityUri, answer, length);
+					if(pathList.size()>0) {
+						System.out.println("\t\tLength = "+length);
+						for (Path path : pathList) {
+							System.out.println("\t\t"+path);
+						}
+					}
+				}
+			}
+			System.out.println("\tBackward");
+			for (String answer : question.answers) {
+				for(int length=1; length<=lengthThreshold; length++) {
+					LinkedList<Path> pathList = finder.getPathList(answer, entityUri, length);
+					if(pathList.size()>0) {
+						System.out.println("\t\tLength = "+length);
+						for (Path path : pathList) {
+							System.out.println("\t\t"+path);
+						}
+					}
+				}
+			}
+		}
+		
+		out.close();
+		System.setOut(console);
+		
 	}
 
 }

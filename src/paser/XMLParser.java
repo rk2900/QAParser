@@ -203,7 +203,7 @@ public class XMLParser {
 	 * @return the specified question
 	 */
 	public Question getQuestionWithPseudoId(int id) {
-		return questions.get(id);
+		return questions.get(id-1);
 	}
 
 	public static void main(String[] args) {
@@ -216,7 +216,11 @@ public class XMLParser {
 		parser.load();
 		parser.parse();
 		
-		ArrayList<Question> qList = parser.getQuestionsPart(0, 301, "resource");
-		System.out.println(qList.size());
+		Question q = parser.getQuestionWithPseudoId(176);
+		q.print();
+		
+		StringBuilder a = new StringBuilder("123456789AAAAA321654987");
+		int index = a.indexOf("AAAA");
+		System.out.println(a.replace(index, index+4, "bbbb"));
 	}
 }
