@@ -22,7 +22,7 @@ public class TypeExtraction {
 		xmlParser.parse();
 	}
 	
-	public HashSet<String> typeExtractor(String text){
+	public HashSet<String> typeExtractor(String text, boolean visible){
 		return new HashSet<>();
 	}
 
