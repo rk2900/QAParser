@@ -26,7 +26,7 @@ import basic.FileOps;
 
 public class TreeParser {
 
-	public void parse(String q) {
+	public void treeParse(String q) {
 		// creates a StanfordCoreNLP object, with POS tagging, lemmatization,
 		// NER, parsing, and coreference resolution
 		Properties props = new Properties();

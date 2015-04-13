@@ -1,5 +1,6 @@
 package finder;
 
+import java.util.HashSet;
 import java.util.LinkedList;
 
 import com.hp.hpl.jena.rdf.model.RDFNode;
@@ -11,6 +12,7 @@ import knowledgebase.ClientManagement;
 
 public class Pipeline {
 	public static final String questionFile = "./data/qald-5_train.xml";
+	public static final String wikiEntityFilePath = "./data/q-e/question-wiki-entity-all.txt";
 	public static final double matchThreshold = 0.5;
 	public static final int edThreshold = 2;
 	
@@ -33,7 +35,6 @@ public class Pipeline {
 	
 	public void proceed(int pseudoId) {
 		// Read question text and entity inside
-		String wikiEntityFilePath = "./data/q-e/question-wiki-entity-all.txt";
 		LinkedList<String> qeLines = FileOps.LoadFilebyLine(wikiEntityFilePath);
 		int lineCount = 0;
 		String qe = "";
@@ -49,6 +50,7 @@ public class Pipeline {
 		
 		// Get split question text
 		String questionText = question.question;
+		System.out.println(pseudoId+"\t"+questionText);
 		String splitText = splitSentence(questionText, beginOffset, endOffset);
 		
 		// Get entity and surrounding predicates
@@ -56,16 +58,16 @@ public class Pipeline {
 		LinkedList<RDFNode> predicates = ClientManagement.getSurroundingPred(entityUri);
 		
 		// Insert matched predicates into new list
-		LinkedList<RDFNode> matchedPredicates = new LinkedList<>();
+		HashSet<String> matchedPredicates = new HashSet<>();
 		for (RDFNode predicate : predicates) {
 			double matchScore = getMatchScore(splitText, predicate);
 			if(matchScore > matchThreshold) {
-				matchedPredicates.add(predicate);
+				matchedPredicates.add(predicate.toString());
 			}
 		}
 		
 		// Print results
-		System.out.println(matchedPredicates);
+		System.out.println("\t"+matchedPredicates);
 	}
 	
 	private double getMatchScore(String splitText, RDFNode predicate) {
@@ -78,14 +80,14 @@ public class Pipeline {
 			int matchCount = 0;
 			for(String wordL: wordsInLabel)
 				for(String wordT: wordsInText)
-					matchCount += editDistance(wordL, wordT)<edThreshold?1:0;
+					matchCount += editDistance(wordL, wordT, false)<edThreshold?1:0;
 			if(matchedFlag = (matchCount==wordsInLabel.length?true:false) )
 				break;
 		}
 		return matchedFlag?1:0;
 	}
 
-	private int editDistance(String wordL, String wordT) {
+	private int editDistance(String wordL, String wordT, boolean visible) {
 		int lenL = wordL.length();
 		int lenT = wordT.length();
 		int[][] distance = new int[lenL+1][lenT+1];
@@ -115,13 +117,15 @@ public class Pipeline {
 			}
 		}
 		
-		System.out.println(wordL+"\t"+wordT+"\t"+distance[lenL][lenT]);
+		if(visible)
+			System.out.println("\t"+wordL+"\t"+wordT+"\t"+distance[lenL][lenT]);
 		return distance[lenL][lenT];
 	}
 
 	public static void main(String[] args) {
 		Pipeline pipeline = new Pipeline();
-		pipeline.proceed(169);
+		for(int i=0; i<300; i++) 
+			pipeline.proceed(i);
 	}
 
 }

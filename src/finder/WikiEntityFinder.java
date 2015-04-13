@@ -67,6 +67,7 @@ public class WikiEntityFinder {
 		LinkedList<String> lines = FileOps.LoadFilebyLine(inputFile);
 		LinkedList<String> linesToOutput = new LinkedList<String>();
 		for (String line : lines) {
+			System.out.println(line);
 			String[] items = line.split("\t");
 			String wikiUrl = items[3];
 			LinkedList<RDFNode> entities = getEntityOfWiki(wikiUrl);
@@ -82,8 +83,8 @@ public class WikiEntityFinder {
 	
 	public static void main(String[] args) {
 		WikiEntityFinder finder = new WikiEntityFinder();
-		finder.wikiLinkEntity("./data/q-e/question-wiki-test.txt", 
-				"./data/q-e/question-wiki-entity-test.txt");
+		finder.wikiLinkEntity("./data/q-e/all-mark-wiki.txt", 
+				"./data/q-e/all-mark-wiki-entity.txt");
 	}
 
 }

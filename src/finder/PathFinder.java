@@ -109,8 +109,8 @@ public class PathFinder {
 //		}
 		
 		/****************************************/
-		String wikiEntityFilePath = "./data/q-e/question-wiki-entity-all.txt";
-		String resultFilePath = "./data/path-result-all.txt";
+		String wikiEntityFilePath = "./data/q-e/all-mark-wiki-entity.txt";
+		String resultFilePath = "./data/path-result-mark-all.txt";
 		BufferedOutputStream bw = null;
 		try {
 			bw = new BufferedOutputStream(new FileOutputStream(resultFilePath, true));
@@ -125,14 +125,14 @@ public class PathFinder {
 		LinkedList<String> qeList = FileOps.LoadFilebyLine(wikiEntityFilePath);
 		for (String qeLine : qeList) {
 			String[] items = qeLine.split("\t");
-			if(items.length < 6)
+			if(items.length < 5)
 				continue;
 			int pseudoId = Integer.parseInt(items[0]);
 //			int beginOffset = Integer.parseInt(items[1]);
 //			int endOffset = Integer.parseInt(items[2]);
 //			String wikiUrl = items[3];
 //			boolean correct = (Integer.parseInt(items[4]))==1?true:false;
-			String entityUri = items[5];
+			String entityUri = items[4];
 			Question question = xmlParser.getQuestionWithPseudoId(pseudoId);
 			if(!question.answerType.equals("resource"))
 				continue;
