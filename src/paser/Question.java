@@ -1,6 +1,10 @@
 package paser;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
+
+import com.hp.hpl.jena.rdf.model.RDFNode;
 
 public class Question {
 	//public enum answerType {resource, date, number, string, bool, list};
@@ -16,6 +20,11 @@ public class Question {
 	
 	public String query;
 	
+	public LinkedList<String> qWordList;
+	public LinkedList<String> qPOSList;
+	public HashSet<Integer> entityPositions;
+	public LinkedList<String> surPredicates;
+	
 	public Question(int id, boolean onlydbo, boolean aggregation, boolean hybrid, String answerType,
 			ArrayList<String> keywords, String question, ArrayList<String> answers, String query) {
 		this.id = id;
@@ -29,10 +38,6 @@ public class Question {
 		this.query = query;
 	}
 	
-//	public Question clone() {
-//		Question q = new Question(id, onlydbo, aggregation, hybrid, answerType, keywords, question, answers, query);
-//		return q;
-//	}
 	
 	public void print() {
 		System.out.println("-------------------------");
@@ -55,6 +60,27 @@ public class Question {
 		}
 		System.out.println();
 		System.out.println("-------------------------");
+	}
+
+	public HashSet<Integer> getEntityPositions() {
+		// TODO Auto-generated method stub
+		return entityPositions;
+	}
+
+	public LinkedList<String> getPOSList() {
+		// TODO Auto-generated method stub
+		return qPOSList;
+	}
+
+	public LinkedList<String> getWordList() {
+		// TODO Auto-generated method stub
+		return qWordList;
+	}
+
+
+	public LinkedList<String> getSurPredicates() {
+		// TODO Auto-generated method stub
+		return surPredicates;
 	}
 	
 }

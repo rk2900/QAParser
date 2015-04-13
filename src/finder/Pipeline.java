@@ -124,8 +124,20 @@ public class Pipeline {
 
 	public static void main(String[] args) {
 		Pipeline pipeline = new Pipeline();
-		for(int i=0; i<300; i++) 
-			pipeline.proceed(i);
+//		for(int i=0; i<300; i++) 
+//			pipeline.proceed(i);
+		
+		Question q = pipeline.preProcess();
+		q.getWordList();
+		q.getPOSList();
+		q.getEntityPositions();
+		q.getSurPredicates();
+		
+	}
+
+	private Question preProcess() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
