@@ -2,21 +2,40 @@ package finder;
 
 import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.Properties;
+
+import org.w3c.dom.Node;
 
 import com.hp.hpl.jena.rdf.model.RDFNode;
 
+import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
+import edu.stanford.nlp.ling.CoreLabel;
+import edu.stanford.nlp.pipeline.Annotation;
+import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+import edu.stanford.nlp.util.CoreMap;
 import basic.FileOps;
 import paser.Question;
+import paser.QuestionSingle;
 import paser.XMLParser;
 import knowledgebase.ClientManagement;
 
 public class Pipeline {
 	public static final String questionFile = "./data/qald-5_train.xml";
-	public static final String wikiEntityFilePath = "./data/q-e/question-wiki-entity-all.txt";
+	public static final String wikiEntityFilePath = "./data/q-e/all-mark-wiki-entity.txt";
 	public static final double matchThreshold = 0.5;
 	public static final int edThreshold = 2;
 	
 	private XMLParser xmlParser;
+	
+	private static StanfordCoreNLP pipeline;
+	
+	static {
+		Properties props = new Properties();
+		props.setProperty("annotators", "tokenize, ssplit, pos");
+		pipeline = new StanfordCoreNLP(props);
+	}
 	
 	/**
 	 * To initialize AGraph model and XML parser.
@@ -124,20 +143,69 @@ public class Pipeline {
 
 	public static void main(String[] args) {
 		Pipeline pipeline = new Pipeline();
-//		for(int i=0; i<300; i++) 
-//			pipeline.proceed(i);
+		int pseudoId = 2;
 		
-		Question q = pipeline.preProcess();
-		q.getWordList();
-		q.getPOSList();
-		q.getEntityPositions();
-		q.getSurPredicates();
+		QuestionSingle q = pipeline.preProcess(pseudoId);
+		if(q==null)
+			return;
+		System.out.println(q.getWordList());
+		System.out.println(q.getPOSList());
+		System.out.println(q.mention);
+		System.out.println(q.entityPositions);
+		System.out.println(q.surPredicates);
 		
 	}
 
-	private Question preProcess() {
-		// TODO Auto-generated method stub
-		return null;
+	private QuestionSingle preProcess(int pseudoId) {
+		// Read question text and entity inside
+		LinkedList<String> qeLines = FileOps.LoadFilebyLine("./data/q-e/all-mark-wiki-entity.txt");
+		int lineCount = 0;
+		String qe = "";
+		while( lineCount < qeLines.size() && !(qe = qeLines.get(lineCount++)).startsWith(pseudoId+"\t") );
+		String[] itemsOfQe = qe.split("\t");
+		if( lineCount == qeLines.size() || itemsOfQe.length < 5)
+			return null;
+		
+		// Start to load question information
+		QuestionSingle question = xmlParser.getQuestionWithPseudoId(pseudoId).toQuestionSingle();
+		String sentence = question.question;
+		int beginOffset = Integer.parseInt(itemsOfQe[1]);
+		int endOffset = Integer.parseInt(itemsOfQe[2]);
+		
+		// Get entity mention
+		String mention = question.question.substring(beginOffset, endOffset);
+		question.mention = mention;
+		
+		// Get question words list
+		String[] wordList = sentence.split(" ");
+		for (String string : wordList) {
+			question.qWordList.add(string);
+			if(mention.contains(string))
+				question.entityPositions.add(question.qWordList.size()-1);
+		}
+		
+		// Get POS tags
+		LinkedList<String> POSList = getPOSTag(sentence);
+		question.qPOSList = POSList;
+		
+		// Get entity and surrounding predicates
+		String entityUri = itemsOfQe[4];
+		LinkedList<RDFNode> predicates = ClientManagement.getSurroundingPred(entityUri);
+		for (RDFNode predNode : predicates)
+			question.surPredicates.add(predNode.toString());
+		
+		return question;
+	}
+	
+	public LinkedList<String> getPOSTag(String sentence) {
+		LinkedList<String> tags = new LinkedList<String>();
+		Annotation annotation = new Annotation(sentence);
+		pipeline.annotate(annotation);
+		CoreMap labeledSentence = annotation.get(SentencesAnnotation.class).get(0);
+		for (CoreLabel label : labeledSentence.get(TokensAnnotation.class)) {
+			tags.add(label.get(PartOfSpeechAnnotation.class));
+		}
+		return tags;
 	}
 
 }

@@ -20,11 +20,6 @@ public class Question {
 	
 	public String query;
 	
-	public LinkedList<String> qWordList;
-	public LinkedList<String> qPOSList;
-	public HashSet<Integer> entityPositions;
-	public LinkedList<String> surPredicates;
-	
 	public Question(int id, boolean onlydbo, boolean aggregation, boolean hybrid, String answerType,
 			ArrayList<String> keywords, String question, ArrayList<String> answers, String query) {
 		this.id = id;
@@ -61,26 +56,10 @@ public class Question {
 		System.out.println();
 		System.out.println("-------------------------");
 	}
-
-	public HashSet<Integer> getEntityPositions() {
-		// TODO Auto-generated method stub
-		return entityPositions;
-	}
-
-	public LinkedList<String> getPOSList() {
-		// TODO Auto-generated method stub
-		return qPOSList;
-	}
-
-	public LinkedList<String> getWordList() {
-		// TODO Auto-generated method stub
-		return qWordList;
-	}
-
-
-	public LinkedList<String> getSurPredicates() {
-		// TODO Auto-generated method stub
-		return surPredicates;
+	
+	public QuestionSingle toQuestionSingle() {
+		QuestionSingle qPred = new QuestionSingle(id, onlydbo, aggregation, hybrid, answerType, keywords, question, answers, query);
+		return qPred;
 	}
 	
 }
