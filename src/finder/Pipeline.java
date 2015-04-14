@@ -8,8 +8,10 @@ import org.w3c.dom.Node;
 
 import com.hp.hpl.jena.rdf.model.RDFNode;
 
+import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
@@ -34,7 +36,7 @@ public class Pipeline {
 	
 	static {
 		Properties props = new Properties();
-		props.setProperty("annotators", "tokenize, ssplit, pos");
+		props.setProperty("annotators", "tokenize, ssplit, pos, lemma");
 		pipeline = new StanfordCoreNLP(props);
 	}
 	
@@ -144,7 +146,7 @@ public class Pipeline {
 
 	public static void main(String[] args) {
 		Pipeline pipeline = new Pipeline();
-		int pseudoId = 2;
+		int pseudoId = 5;
 		
 		QuestionSingle q = pipeline.preProcess(pseudoId);
 		if(q==null)
@@ -155,9 +157,11 @@ public class Pipeline {
 		System.out.println(q.entityPositions);
 		System.out.println(q.surPredicates);
 		
+		System.out.println(pipeline.getLemma(q.question));
+		
 	}
 
-	private QuestionSingle preProcess(int pseudoId) {
+	public QuestionSingle preProcess(int pseudoId) {
 		// Read question text and entity inside
 		LinkedList<String> qeLines = FileOps.LoadFilebyLine("./data/q-e/all-mark-wiki-entity.txt");
 		int lineCount = 0;
@@ -177,22 +181,17 @@ public class Pipeline {
 		String mention = question.question.substring(beginOffset, endOffset);
 		question.mention = mention;
 		
-		// Get question words list
-		String[] wordList = sentence.split(" ");
-		// Eliminate punctuation
-		String lastWord = wordList[wordList.length-1];
-		wordList[wordList.length-1] = lastWord.substring(0, lastWord.length()-1);
-		for (String string : wordList) {
-			question.qWordList.add(string);
-			if(mention.contains(string))
-				question.entityPositions.add(question.qWordList.size()-1);
-		}
-		
 		// Get POS tags
-		LinkedList<String> POSList = getPOSTag(sentence);
-		// Eliminate punctuation of POS tag
+		LinkedList<String> POSList = getPOSTag(question);
+		// Eliminate punctuation
+		question.qWordList.remove(question.qWordList.size()-1);
 		POSList.remove(POSList.size()-1);
 		question.qPOSList = POSList;
+		
+		// Get mention words position
+		for (String string : question.qWordList)
+			if(mention.contains(string))
+				question.entityPositions.add(question.qWordList.indexOf(string));
 		
 		// Get entity and surrounding predicates
 		String entityUri = itemsOfQe[4];
@@ -201,6 +200,18 @@ public class Pipeline {
 			question.surPredicates.add(predNode.toString());
 		
 		return question;
+	}
+	
+	public LinkedList<String> getPOSTag(QuestionSingle question) {
+		LinkedList<String> tags = new LinkedList<String>();
+		Annotation annotation = new Annotation(question.question);
+		pipeline.annotate(annotation);
+		CoreMap labeledSentence = annotation.get(SentencesAnnotation.class).get(0);
+		for (CoreLabel label : labeledSentence.get(TokensAnnotation.class)) {
+			question.qWordList.add(label.get(TextAnnotation.class));
+			tags.add(label.get(PartOfSpeechAnnotation.class));
+		}
+		return tags;
 	}
 	
 	public LinkedList<String> getPOSTag(String sentence) {
@@ -212,6 +223,17 @@ public class Pipeline {
 			tags.add(label.get(PartOfSpeechAnnotation.class));
 		}
 		return tags;
+	}
+	
+	public LinkedList<String> getLemma(String sentence) {
+		LinkedList<String> lemma = new LinkedList<>();
+		Annotation annotation = new Annotation(sentence);
+		pipeline.annotate(annotation);
+		CoreMap labeledSentence = annotation.get(SentencesAnnotation.class).get(0);
+		for (CoreLabel label : labeledSentence.get(TokensAnnotation.class)) {
+			lemma.add(label.get(LemmaAnnotation.class));
+		}
+		return lemma;
 	}
 
 }
