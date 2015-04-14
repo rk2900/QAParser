@@ -4,8 +4,6 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Properties;
 
-import org.w3c.dom.Node;
-
 import com.hp.hpl.jena.rdf.model.RDFNode;
 
 import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
@@ -17,7 +15,6 @@ import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
-import arq.qparse;
 import basic.FileOps;
 import paser.Question;
 import paser.QuestionSingle;
@@ -173,7 +170,6 @@ public class Pipeline {
 		
 		// Start to load question information
 		QuestionSingle question = xmlParser.getQuestionWithPseudoId(pseudoId).toQuestionSingle();
-		String sentence = question.question;
 		int beginOffset = Integer.parseInt(itemsOfQe[1]);
 		int endOffset = Integer.parseInt(itemsOfQe[2]);
 		

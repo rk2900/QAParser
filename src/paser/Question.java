@@ -1,10 +1,6 @@
 package paser;
 
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.LinkedList;
-
-import com.hp.hpl.jena.rdf.model.RDFNode;
 
 public class Question {
 	//public enum answerType {resource, date, number, string, bool, list};
