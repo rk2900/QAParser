@@ -61,7 +61,7 @@ public class Extraction {
 		System.out.println(q.surPredicates.size());
 		
 		for (String predict : predicts) {
-//			System.out.println(predict);
+			System.out.println(predict);
 			LinkedList<String> labels = ClientManagement.getLabel(predict);
 			StringBuilder sb = new StringBuilder();
 			for (String label : labels) {
