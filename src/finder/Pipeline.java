@@ -10,6 +10,7 @@ import com.hp.hpl.jena.rdf.model.RDFNode;
 
 import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
@@ -144,7 +145,7 @@ public class Pipeline {
 
 	public static void main(String[] args) {
 		Pipeline pipeline = new Pipeline();
-		int pseudoId = 2;
+		int pseudoId = 5;
 		
 		QuestionSingle q = pipeline.preProcess(pseudoId);
 		if(q==null)
@@ -177,22 +178,17 @@ public class Pipeline {
 		String mention = question.question.substring(beginOffset, endOffset);
 		question.mention = mention;
 		
-		// Get question words list
-		String[] wordList = sentence.split(" ");
-		// Eliminate punctuation
-		String lastWord = wordList[wordList.length-1];
-		wordList[wordList.length-1] = lastWord.substring(0, lastWord.length()-1);
-		for (String string : wordList) {
-			question.qWordList.add(string);
-			if(mention.contains(string))
-				question.entityPositions.add(question.qWordList.size()-1);
-		}
-		
 		// Get POS tags
-		LinkedList<String> POSList = getPOSTag(sentence);
-		// Eliminate punctuation of POS tag
+		LinkedList<String> POSList = getPOSTag(question);
+		// Eliminate punctuation
+		question.qWordList.remove(question.qWordList.size()-1);
 		POSList.remove(POSList.size()-1);
 		question.qPOSList = POSList;
+		
+		// Get mention words position
+		for (String string : question.qWordList)
+			if(mention.contains(string))
+				question.entityPositions.add(question.qWordList.indexOf(string));
 		
 		// Get entity and surrounding predicates
 		String entityUri = itemsOfQe[4];
@@ -203,12 +199,13 @@ public class Pipeline {
 		return question;
 	}
 	
-	public LinkedList<String> getPOSTag(String sentence) {
+	public LinkedList<String> getPOSTag(QuestionSingle question) {
 		LinkedList<String> tags = new LinkedList<String>();
-		Annotation annotation = new Annotation(sentence);
+		Annotation annotation = new Annotation(question.question);
 		pipeline.annotate(annotation);
 		CoreMap labeledSentence = annotation.get(SentencesAnnotation.class).get(0);
 		for (CoreLabel label : labeledSentence.get(TokensAnnotation.class)) {
+			question.qWordList.add(label.get(TextAnnotation.class));
 			tags.add(label.get(PartOfSpeechAnnotation.class));
 		}
 		return tags;
