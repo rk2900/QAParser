@@ -37,7 +37,7 @@ public class RuleBasedType extends TypeExtraction{
 		interrogativeRules = new HashMap<>();
 		for (String string : prepositionWords)
 			prepositionRules.add(string);
-		String[] who = {"person", "organization"};
+		String[] who = {"person", "organisation"};
 		interrogativeRules.put("who", who);
 		String[] when = {"date"};
 		interrogativeRules.put("when", when);
