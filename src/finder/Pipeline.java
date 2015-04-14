@@ -15,6 +15,7 @@ import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
+import arq.qparse;
 import basic.FileOps;
 import paser.Question;
 import paser.QuestionSingle;
@@ -178,6 +179,9 @@ public class Pipeline {
 		
 		// Get question words list
 		String[] wordList = sentence.split(" ");
+		// Eliminate punctuation
+		String lastWord = wordList[wordList.length-1];
+		wordList[wordList.length-1] = lastWord.substring(0, lastWord.length()-1);
 		for (String string : wordList) {
 			question.qWordList.add(string);
 			if(mention.contains(string))
@@ -186,6 +190,8 @@ public class Pipeline {
 		
 		// Get POS tags
 		LinkedList<String> POSList = getPOSTag(sentence);
+		// Eliminate punctuation of POS tag
+		POSList.remove(POSList.size()-1);
 		question.qPOSList = POSList;
 		
 		// Get entity and surrounding predicates
