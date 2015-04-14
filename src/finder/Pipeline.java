@@ -8,6 +8,7 @@ import org.w3c.dom.Node;
 
 import com.hp.hpl.jena.rdf.model.RDFNode;
 
+import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
@@ -35,7 +36,7 @@ public class Pipeline {
 	
 	static {
 		Properties props = new Properties();
-		props.setProperty("annotators", "tokenize, ssplit, pos");
+		props.setProperty("annotators", "tokenize, ssplit, pos, lemma");
 		pipeline = new StanfordCoreNLP(props);
 	}
 	
@@ -156,9 +157,11 @@ public class Pipeline {
 		System.out.println(q.entityPositions);
 		System.out.println(q.surPredicates);
 		
+		System.out.println(pipeline.getLemma(q.question));
+		
 	}
 
-	private QuestionSingle preProcess(int pseudoId) {
+	public QuestionSingle preProcess(int pseudoId) {
 		// Read question text and entity inside
 		LinkedList<String> qeLines = FileOps.LoadFilebyLine("./data/q-e/all-mark-wiki-entity.txt");
 		int lineCount = 0;
@@ -209,6 +212,28 @@ public class Pipeline {
 			tags.add(label.get(PartOfSpeechAnnotation.class));
 		}
 		return tags;
+	}
+	
+	public LinkedList<String> getPOSTag(String sentence) {
+		LinkedList<String> tags = new LinkedList<String>();
+		Annotation annotation = new Annotation(sentence);
+		pipeline.annotate(annotation);
+		CoreMap labeledSentence = annotation.get(SentencesAnnotation.class).get(0);
+		for (CoreLabel label : labeledSentence.get(TokensAnnotation.class)) {
+			tags.add(label.get(PartOfSpeechAnnotation.class));
+		}
+		return tags;
+	}
+	
+	public LinkedList<String> getLemma(String sentence) {
+		LinkedList<String> lemma = new LinkedList<>();
+		Annotation annotation = new Annotation(sentence);
+		pipeline.annotate(annotation);
+		CoreMap labeledSentence = annotation.get(SentencesAnnotation.class).get(0);
+		for (CoreLabel label : labeledSentence.get(TokensAnnotation.class)) {
+			lemma.add(label.get(LemmaAnnotation.class));
+		}
+		return lemma;
 	}
 
 }
