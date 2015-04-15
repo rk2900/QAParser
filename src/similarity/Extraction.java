@@ -16,6 +16,9 @@ import finder.Pipeline;
 
 public class Extraction {
 	
+	public static int minLength = 3;
+	public static double threshold = 0.0;
+	
 	public static int getCommonStrLength(String str1, String str2){
 		str1 = str1.toLowerCase();
 		str2 = str2.toLowerCase();
@@ -41,6 +44,26 @@ public class Extraction {
         }
         return 0;  
 	}
+	
+	/*
+	 * if there exist space,
+	 * we only consider the words before and after the space
+	 */
+//	public static int getComLength(String str1, String str2){
+//		int maxLength = 0;
+//		int currentLength = 0;
+//		String [] list1 = str1.split(" ");
+//		String [] list2 = str2.split(" ");
+//		for (String l1 : list1) {
+//			for (String l2 : list2) {
+//				currentLength = getCommonStrLength(l1, l2);
+//				if(currentLength > maxLength){
+//					maxLength = currentLength;
+//				}
+//			}
+//		}
+//		return maxLength;
+//	}
 
 	public static HashMap<String, Double> topRanking(Pipeline pipeline,int pseudoId){
 		QuestionSingle q = pipeline.preProcess(pseudoId);
@@ -166,6 +189,7 @@ public class Extraction {
 				}
 			}
 		}
+		System.out.println(result);
 		return result;
 	}
 	
@@ -223,8 +247,13 @@ public class Extraction {
 						continue;
 					}
 					
+					boolean first = true;
 					while(i<postags.size() && (postag = postags.get(i)).startsWith("NN")){
+						if(!first){
+							phrase.append(" ");
+						}
 						phrase.append(words.get(i));
+						first = false;
 						++i;
 					}
 					if(phrase.length() > 0){
@@ -233,7 +262,11 @@ public class Extraction {
 					}else{
 						while(i<postags.size() && (postag = postags.get(i)).startsWith("VB")){
 							if(!stopwords.contains(words.get(i).toLowerCase())){
+								if(!first){
+									phrase.append(" ");
+								}
 								phrase.append(words.get(i));
+								first = false;
 							}
 							++i;
 						}
@@ -259,11 +292,16 @@ public class Extraction {
 					for (String label : labels) {
 						comLength = 0;
 						rate = 0;
-						String tlabel = label.replace(" ", "");
+//						String tlabel = label.replace(" ", "");
+						String tlabel = label;
 						for(int k=0; k<NP.size(); ++k){
 							comLength = getCommonStrLength(tlabel,NP.get(k));
+							if(comLength < minLength){
+								comLength = 0;
+							}
 							double p = (double)comLength / tlabel.length();
 							double r = (double)comLength / NP.get(k).length();
+							
 							if((p+r) > 0){
 								rate += 2*p*r/(p+r);
 							}else{
@@ -273,6 +311,9 @@ public class Extraction {
 						}
 						for(int k=0; k<VP.size(); ++k){
 							comLength = getCommonStrLength(tlabel, VP.get(k));
+							if(comLength < minLength){
+								comLength = 0;
+							}
 							double p = (double)comLength / tlabel.length();
 							double r = (double)comLength / VP.get(k).length();
 							if((p+r) > 0){
@@ -290,33 +331,38 @@ public class Extraction {
 				Collections.reverse(ranking);
 				
 				int count = 0;
-//				HashMap<String, Double> result = new HashMap<String, Double>();
+				boolean isIn = false;
 				for(int k=0; count<5 && k<ranking.size(); ++k){
-					for (String key : rateMap.keySet()) {
-						if(rateMap.get(key).equals(ranking.get(k))){
-							++count;
-							fout.write(key);
-							fout.write("\t");
-							fout.write(ranking.get(k).toString());
-							fout.write("\n");
-//							result.put(key, ranking.get(k));
+					double currentRanking = ranking.get(k);
+					if(currentRanking > threshold){
+						for (String key : rateMap.keySet()) {
+							if(rateMap.get(key).equals(currentRanking)){
+								++count;
+								fout.write(key);
+								fout.write("\t");
+								fout.write(ranking.get(k).toString());
+								fout.write("\n");
+								for (int j = 1; j < list.length; j++) {
+									if(list[j].equals(key)){
+										isIn = true;
+									}
+								}
+							}
 						}
+					}else{
+						break;
 					}
 				}
 				fout.write("\n");
-				
-//				for(int k=1; k<list.length; ++k){
-//					if(result.containsKey(list[k])){
-//						++matched;
-//						System.out.println(questionId+"\t"+list[k]);
-//						break;
-//					}
-//				}
-//				System.out.println(matched);
-//				System.out.println(questions.size());
-//				System.out.println((double)matched/questions.size());
+				if(isIn){
+					++matched;
+				}
 			}
 			fout.close();
+			System.out.println(matched);
+			System.out.println(questions.size());
+			System.out.println((double)matched/questions.size());
+			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

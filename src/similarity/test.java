@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 
 import finder.Pipeline;
@@ -12,6 +13,7 @@ public class test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Pipeline pipeline = new Pipeline();
 //		int l = Extraction.getCommonStrLength("writer", "wrote");
 //		System.out.println(l);
 		
@@ -27,7 +29,16 @@ public class test {
 //				System.out.println("vv");
 //			}
 //		}
-		Extraction.topRanking(new Pipeline(), 5);
+		Extraction.topRanking(pipeline, 67);
+
+//		String sentence = "writers";
+//		LinkedList<String> lemmas = pipeline.getLemma(sentence);
+//		for (String lemma : lemmas) {
+//			System.out.println(lemma);
+//		}
+//		String s = "In which U.S. state is Fort Knox located?";
+//		LinkedList<String> postags = pipeline.getPOSTag(s);
+//		System.out.println(postags);
 	}
 
 }
