@@ -10,10 +10,10 @@ import java.util.List;
 import finder.Pipeline;
 
 public class test {
-
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Pipeline pipeline = new Pipeline();
+//		Pipeline pipeline = new Pipeline();
 //		int l = Extraction.getCommonStrLength("writer", "wrote");
 //		System.out.println(l);
 		
@@ -29,7 +29,7 @@ public class test {
 //				System.out.println("vv");
 //			}
 //		}
-		Extraction.topRanking(pipeline, 67);
+		Extraction.topRanking(67);
 
 //		String sentence = "writers";
 //		LinkedList<String> lemmas = pipeline.getLemma(sentence);

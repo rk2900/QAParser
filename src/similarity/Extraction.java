@@ -16,8 +16,12 @@ import finder.Pipeline;
 
 public class Extraction {
 	
+	public static Pipeline pipeline;
 	public static int minLength = 3;
 	public static double threshold = 0.0;
+	static{
+		pipeline = new Pipeline();
+	}
 	
 	public static int getCommonStrLength(String str1, String str2){
 		str1 = str1.toLowerCase();
@@ -65,7 +69,7 @@ public class Extraction {
 //		return maxLength;
 //	}
 
-	public static HashMap<String, Double> topRanking(Pipeline pipeline,int pseudoId){
+	public static HashMap<String, Double> topRanking(int pseudoId){
 		QuestionSingle q = pipeline.preProcess(pseudoId);
 		if(q==null)
 			return null;
@@ -196,7 +200,6 @@ public class Extraction {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Pipeline pipeline = new Pipeline();
 		String questionPath = "./data/zch/question.txt";
 		LinkedList<String> questions = FileOps.LoadFilebyLine(questionPath);
 		
