@@ -1,7 +1,6 @@
 package pattern;
 
 import java.util.HashSet;
-import java.util.LinkedList;
 
 import paser.Question;
 import paser.XMLParser;
