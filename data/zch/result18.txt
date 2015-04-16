@@ -1,0 +1,16 @@
+83	http://dbpedia.org/property/location
+87	http://dbpedia.org/property/children
+96	http://dbpedia.org/property/creators
+99	http://dbpedia.org/ontology/musicComposer
+106	http://dbpedia.org/ontology/director
+115	http://dbpedia.org/property/borderingstates
+117	http://dbpedia.org/ontology/creator
+123	http://dbpedia.org/ontology/award
+130	http://dbpedia.org/ontology/owner
+135	http://dbpedia.org/ontology/crosses
+138	http://dbpedia.org/ontology/officialLanguage
+140	http://dbpedia.org/property/designer
+144	http://dbpedia.org/property/editor
+13
+18
+0.7222222222222222

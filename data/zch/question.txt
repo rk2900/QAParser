@@ -1,20 +1,51 @@
-76
-83
-87
-96
-99
-101
-106
-115
-117
-123
-126
-127
-130
-131
-135
-137
-138
-139
-140
-144
+2	http://dbpedia.org/ontology/sourceCountry
+5	http://dbpedia.org/ontology/vicePresident	http://dbpedia.org/property/vicePresident
+6	http://dbpedia.org/ontology/leader
+9	http://dbpedia.org/property/birthPlace	http://dbpedia.org/property/placeOfBirth	http://dbpedia.org/ontology/birthPlace
+11	http://dbpedia.org/property/country	http://dbpedia.org/ontology/country
+15	http://dbpedia.org/property/products	http://dbpedia.org/ontology/product
+19	http://dbpedia.org/property/currentMembers	http://dbpedia.org/ontology/bandMember
+22	http://dbpedia.org/ontology/assembly	http://dbpedia.org/property/assembly	http://dbpedia.org/property/manufacturer	http://dbpedia.org/ontology/manufacturer
+27	http://dbpedia.org/ontology/capital	http://dbpedia.org/property/capital
+28	http://dbpedia.org/property/governor
+30	http://dbpedia.org/property/father	
+34	http://dbpedia.org/ontology/director	http://dbpedia.org/property/director
+38	http://dbpedia.org/ontology/religion	http://dbpedia.org/property/religion
+40	http://dbpedia.org/ontology/locationCountry	http://dbpedia.org/property/locationCountry
+41	http://dbpedia.org/ontology/battle	http://dbpedia.org/property/battles
+42	http://dbpedia.org/ontology/developer	http://dbpedia.org/property/developer
+46	http://dbpedia.org/property/location	http://dbpedia.org/ontology/location
+48	http://dbpedia.org/ontology/publisher	http://dbpedia.org/property/publisher
+49	http://dbpedia.org/ontology/foundedBy	http://dbpedia.org/property/founder
+50	http://dbpedia.org/property/spouse	http://dbpedia.org/ontology/spouse
+51	http://dbpedia.org/property/breed
+52	http://dbpedia.org/ontology/city	http://dbpedia.org/property/city
+53	http://dbpedia.org/ontology/country	
+54	http://dbpedia.org/property/birthPlace	http://dbpedia.org/property/placeOfBirth
+58	http://dbpedia.org/ontology/creator	http://dbpedia.org/property/creator	http://dbpedia.org/property/creators
+60	http://dbpedia.org/ontology/country
+62	http://dbpedia.org/property/leaderParty	http://dbpedia.org/property/mayorParty
+66	http://dbpedia.org/property/crewMembers
+67	http://dbpedia.org/property/timezone
+70	http://dbpedia.org/ontology/country
+73	http://dbpedia.org/ontology/country	http://dbpedia.org/property/country
+75	http://dbpedia.org/ontology/instrument
+76	http://dbpedia.org/property/shipNamesake
+83	http://dbpedia.org/property/location	http://dbpedia.org/ontology/location
+87	http://dbpedia.org/property/children	http://dbpedia.org/ontology/child	
+96	http://dbpedia.org/property/creators	http://dbpedia.org/ontology/creator
+99	http://dbpedia.org/ontology/musicComposer
+101	http://dbpedia.org/ontology/restingPlace
+106	http://dbpedia.org/ontology/director	http://dbpedia.org/property/director
+115	http://dbpedia.org/property/borderingstates
+117	http://dbpedia.org/ontology/creator	http://dbpedia.org/property/creator
+123	http://dbpedia.org/ontology/award	http://dbpedia.org/property/awards
+126	http://dbpedia.org/ontology/currency	http://dbpedia.org/property/currency
+127	http://dbpedia.org/ontology/currency	http://dbpedia.org/property/currency
+130	http://dbpedia.org/ontology/owner
+135	http://dbpedia.org/ontology/crosses	http://dbpedia.org/property/crosses
+137	http://dbpedia.org/ontology/ground	http://dbpedia.org/property/ground
+138	http://dbpedia.org/ontology/officialLanguage	http://dbpedia.org/property/officialLanguages
+139	http://dbpedia.org/ontology/leaderName	http://dbpedia.org/property/leaderName
+140	http://dbpedia.org/property/designer
+144	http://dbpedia.org/property/editor	http://dbpedia.org/ontology/editor

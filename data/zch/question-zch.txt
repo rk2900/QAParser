@@ -1,0 +1,19 @@
+76	http://dbpedia.org/property/shipNamesake
+83	http://dbpedia.org/property/location	http://dbpedia.org/ontology/location
+87	http://dbpedia.org/property/children	http://dbpedia.org/ontology/child	
+96	http://dbpedia.org/property/creators	http://dbpedia.org/ontology/creator
+99	http://dbpedia.org/ontology/musicComposer
+101	http://dbpedia.org/ontology/restingPlace
+106	http://dbpedia.org/ontology/director	http://dbpedia.org/property/director
+115	http://dbpedia.org/property/borderingstates
+117	http://dbpedia.org/ontology/creator	http://dbpedia.org/property/creator
+123	http://dbpedia.org/ontology/award	http://dbpedia.org/property/awards
+126	http://dbpedia.org/ontology/currency	http://dbpedia.org/property/currency
+127	http://dbpedia.org/ontology/currency	http://dbpedia.org/property/currency
+130	http://dbpedia.org/ontology/owner
+135	http://dbpedia.org/ontology/crosses	http://dbpedia.org/property/crosses
+137	http://dbpedia.org/ontology/ground	http://dbpedia.org/property/ground
+138	http://dbpedia.org/ontology/officialLanguage	http://dbpedia.org/property/officialLanguages
+139	http://dbpedia.org/ontology/leaderName	http://dbpedia.org/property/leaderName
+140	http://dbpedia.org/property/designer
+144	http://dbpedia.org/property/editor	http://dbpedia.org/ontology/editor
