@@ -44,5 +44,4 @@ Temporary Items
 
 *.class
 /target/classes/*
-target/classes/finder/Pipeline.class
-*.class
+target/classes/*

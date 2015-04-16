@@ -45,6 +45,6 @@
 	<classpathentry kind="lib" path="lib/sesame/commons-httpclient-3.1.jar"/>
 	<classpathentry kind="lib" path="lib/sesame/openrdf-sesame-2.7.11-onejar-src.jar"/>
 	<classpathentry kind="lib" path="lib/sesame/openrdf-sesame-2.7.11-onejar.jar"/>
-	<classpathentry kind="lib" path="D:/Users/chzhu/github/QAParser/lib/ws4j-1.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/ws4j-1.0.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
