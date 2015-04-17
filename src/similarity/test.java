@@ -29,7 +29,7 @@ public class test {
 //				System.out.println("vv");
 //			}
 //		}
-		Extraction.topRanking(67);
+//		Extraction.topRanking(6);
 
 //		String sentence = "writers";
 //		LinkedList<String> lemmas = pipeline.getLemma(sentence);
@@ -39,6 +39,11 @@ public class test {
 //		String s = "In which U.S. state is Fort Knox located?";
 //		LinkedList<String> postags = pipeline.getPOSTag(s);
 //		System.out.println(postags);
+//		double result = UMBC.getSimilarity("car", "bike");
+//		System.out.println(result);
+//		String predict = "http://dbpedia.org/property/rulingParty";
+//		LinkedList<String> 
+//		Extraction2.rankingUMBC(predict, questionList)
 	}
 
 }

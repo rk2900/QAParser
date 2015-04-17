@@ -1,0 +1,72 @@
+Which ships were called after Benjamin Franklin?
+[Which, ships, were, called, after, Benjamin, Franklin]
+[WDT, NNS, VBD, VBN, IN, NNP, NNP]
+0.7663415	http://dbpedia.org/property/name
+0.6670693	http://dbpedia.org/property/appointed
+0.5544061775	http://dbpedia.org/property/shipNamesake
+0.45106623	http://dbpedia.org/property/order
+0.4264086	http://dbpedia.org/property/namedFor
+0.4264086	http://dbpedia.org/property/namedAfter
+0.31960808	http://dbpedia.org/property/termStart
+0.31241852	http://dbpedia.org/property/title
+0.275626615	http://dbpedia.org/property/termEnd
+0.265206635	http://dbpedia.org/ontology/knownFor
+
+In which U.S. state is Fort Knox located?
+[In, which, U.S., state, is, Fort, Knox, located]
+[IN, WDT, NNP, NN, VBZ, NNP, NNP, JJ]
+1.0	http://dbpedia.org/ontology/location
+1.0	http://dbpedia.org/property/location
+0.522343587	http://dbpedia.org/property/locationSpecial
+0.39685225	http://dbpedia.org/property/siteCityst
+0.29287004	http://dbpedia.org/ontology/city
+0.29287004	http://dbpedia.org/property/city
+0.266149683	http://dbpedia.org/property/birthPlace
+0.266149683	http://dbpedia.org/ontology/birthPlace
+0.25945834	http://dbpedia.org/ontology/restingPlace
+0.22286865	http://dbpedia.org/property/latitude
+
+List the children of Margaret Thatcher.
+[List, the, children, of, Margaret, Thatcher]
+[VB, DT, NNS, IN, NNP, NNP]
+1.0	http://dbpedia.org/property/children
+1.0	http://dbpedia.org/ontology/child
+0.6763612	http://dbpedia.org/property/setting
+0.6311516	http://dbpedia.org/ontology/parent
+0.6311516	http://dbpedia.org/property/parents
+0.4092732	http://dbpedia.org/property/name
+0.333189885	http://dbpedia.org/ontology/birthName
+0.255736025	http://dbpedia.org/ontology/notableStudent
+0.255736025	http://dbpedia.org/property/notableStudents
+0.25519874499999995	http://dbpedia.org/ontology/birthDate
+0.25519874499999995	http://dbpedia.org/property/birthDate
+
+Who created the comic Captain America?
+[Who, created, the, comic, Captain, America]
+[WP, VBD, DT, JJ, NNP, NNP]
+0.53708327	http://dbpedia.org/property/creators
+0.53708327	http://dbpedia.org/ontology/creator
+0.30945215	http://dbpedia.org/property/debut
+0.22765599	http://dbpedia.org/property/publisher
+0.15160832	http://dbpedia.org/property/hero
+0.14767347	http://dbpedia.org/property/caption
+0.11829164	http://dbpedia.org/property/characters
+0.0940488045	http://dbpedia.org/property/notableWorks
+0.09263525	http://dbpedia.org/property/converted
+0.08031188	http://dbpedia.org/ontology/basedOn
+
+Who composed the music for Harold and Maude?
+[Who, composed, the, music, for, Harold, and, Maude]
+[WP, VBN, DT, NN, IN, NNP, CC, NNP]
+1.0	http://dbpedia.org/property/music
+0.7834626	http://dbpedia.org/ontology/musicComposer
+0.5762162	http://dbpedia.org/property/writer
+0.5762162	http://dbpedia.org/ontology/writer
+0.31708702	http://dbpedia.org/property/artist
+0.23261379	http://dbpedia.org/property/language
+0.216811635	http://dbpedia.org/ontology/director
+0.09943608	http://dbpedia.org/ontology/producer
+0.09943608	http://dbpedia.org/property/producer
+0.09255634	http://dbpedia.org/ontology/distributor
+0.09255634	http://dbpedia.org/property/distributor
+

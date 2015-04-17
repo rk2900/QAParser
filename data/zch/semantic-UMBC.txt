@@ -1,0 +1,9 @@
+Who is the mayor of Berlin?
+[Who, is, the, mayor, of, Berlin]
+[WP, VBZ, DT, NN, IN, NNP]
+Who is the mayor of Tel Aviv?
+[Who, is, the, mayor, of, Tel, Aviv]
+[WP, VBZ, DT, NN, IN, NNP, NNP]
+In which military conflicts did Lawrence of Arabia participate?
+[In, which, military, conflicts, did, Lawrence, of, Arabia, participate]
+[IN, WDT, JJ, NNS, VBD, NNP, IN, NNP, VB]

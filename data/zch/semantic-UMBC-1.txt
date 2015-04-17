@@ -1,0 +1,9 @@
+In which military conflicts did Lawrence of Arabia participate?
+[In, which, military, conflicts, did, Lawrence, of, Arabia, participate]
+[IN, WDT, JJ, NNS, VBD, NNP, IN, NNP, VB]
+0.54509401	http://dbpedia.org/ontology/militaryBranch
+0.49356037	http://dbpedia.org/property/commanders
+0.49356037	http://dbpedia.org/ontology/commander
+0.3129266	http://dbpedia.org/ontology/battle
+0.3129266	http://dbpedia.org/property/battles
+

@@ -27,6 +27,7 @@ public class wsfj {
                         System.out.println( rc.getClass().getName()+"\t"+s );
                 }
         }
+        
         public static double simi(String word1,String word2) {
         	WS4JConfiguration.getInstance().setMFS(true);
         	return rcs[conf].calcRelatednessOfWords(word1, word2);
@@ -43,9 +44,9 @@ public class wsfj {
             return ans;
         }
         public static void main(String[] args) {
-                long t0 = System.currentTimeMillis();
-                run( "relation","link" );
-                long t1 = System.currentTimeMillis();
-                System.out.println( "Done in "+(t1-t0)+" msec." );
+        	 long t0 = System.currentTimeMillis();
+        	 run( "mayor","person" );
+             long t1 = System.currentTimeMillis();
+             System.out.println( "Done in "+(t1-t0)+" msec." );
         }
 }

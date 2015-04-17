@@ -1,0 +1,3 @@
+6	http://dbpedia.org/ontology/leader
+139	http://dbpedia.org/ontology/leaderName	http://dbpedia.org/property/leaderName
+41	http://dbpedia.org/ontology/battle	http://dbpedia.org/property/battles

@@ -19,8 +19,29 @@ public class Extraction {
 	public static Pipeline pipeline;
 	public static int minLength = 3;
 	public static double threshold = 0.0;
+	public static double precision = 0.59;
+	public static double recall = 0.59;
 	static{
 		pipeline = new Pipeline();
+	}
+	
+	/*
+	 * return the max common prefix length of two string
+	 */
+	public static int getMaxComPreLength(String str1, String str2){
+		int maxLength = 0;
+		str1 = str1.toLowerCase();
+		str2 = str2.toLowerCase();
+		
+		int size = (str1.length() < str2.length())? str1.length():str2.length();
+		for(int i=0; i<size; ++i){
+			if(str1.charAt(i) == str2.charAt(i)){
+				++maxLength;
+			}else{
+				break;
+			}
+		}
+		return maxLength;
 	}
 	
 	public static int getCommonStrLength(String str1, String str2){
@@ -48,27 +69,63 @@ public class Extraction {
         }
         return 0;  
 	}
-	
-	/*
-	 * if there exist space,
-	 * we only consider the words before and after the space
-	 */
-//	public static int getComLength(String str1, String str2){
-//		int maxLength = 0;
-//		int currentLength = 0;
-//		String [] list1 = str1.split(" ");
-//		String [] list2 = str2.split(" ");
-//		for (String l1 : list1) {
-//			for (String l2 : list2) {
-//				currentLength = getCommonStrLength(l1, l2);
-//				if(currentLength > maxLength){
-//					maxLength = currentLength;
-//				}
-//			}
-//		}
-//		return maxLength;
-//	}
 
+	public static int getMaxComPreLength4List(String str1,LinkedList<String> list){
+		int maxLength = 0;
+		int currentLength;
+		for (String str2 : list) {
+			currentLength = getMaxComPreLength(str1, str2);
+			if(currentLength > maxLength){
+				double rate1 = (double)currentLength / str2.length();
+				double rate2 = (double)currentLength / str1.length();
+				if(currentLength > minLength && rate1 > precision && rate2 > recall){
+					maxLength = currentLength;
+				}
+			}
+		}
+		return maxLength;
+	}
+
+	public static double calLexRate4List(LinkedList<String> words, LinkedList<Integer> lengths){
+		double rate = 0;
+		if(words.size() != lengths.size()){
+			System.err.println("***calculateRate4List wrong***");
+		}
+		
+		int lengthSum = 0;
+		int sum = 0;
+		for (String word : words) {
+			sum += word.length();
+		}
+		for (Integer length : lengths) {
+			lengthSum += length;
+		}
+		
+		rate = (double)lengthSum/sum;
+		return rate;
+	}
+	
+	public static double[] calSemRate(String str,ArrayList<String> nP2,ArrayList<String> vP){
+		double[] semRates = new double[8];
+		for (int i=0; i<semRates.length; ++i) {
+			semRates[i] = 0;
+		}
+		
+		nP2.addAll(vP);
+		for (String np : nP2) {
+			LinkedList<String> npLemmas = pipeline.getLemma(np);
+			for (String npLemma : npLemmas) {
+				double[] tmpRates = wsfj.similarity(str, npLemma);
+				for(int i=0; i<semRates.length; ++i){
+					if(semRates[i] <tmpRates[i]){
+						semRates[i] = tmpRates[i];
+					}
+				}
+			}
+		}
+		return semRates;
+	}
+	
 	public static HashMap<String, Double> topRanking(int pseudoId){
 		QuestionSingle q = pipeline.preProcess(pseudoId);
 		if(q==null)
@@ -197,8 +254,7 @@ public class Extraction {
 		return result;
 	}
 	
-	
-	public static void main(String[] args) {
+	public static void comSub() {
 		// TODO Auto-generated method stub
 		String questionPath = "./data/zch/question.txt";
 		LinkedList<String> questions = FileOps.LoadFilebyLine(questionPath);
@@ -372,4 +428,321 @@ public class Extraction {
 		}
 	}
 	
+	public static void comPre(){
+		String questionPath = "./data/zch/question-semantic.txt";
+		LinkedList<String> questions = FileOps.LoadFilebyLine(questionPath);
+		
+		HashSet<String> stopwords = new HashSet<String>();
+		LinkedList<String> stopwordslist = FileOps.LoadFilebyLine("./data/zch/stopwords.txt");
+		for (String stopword : stopwordslist) {
+			stopwords.add(stopword);
+		}
+		
+		try {
+			BufferedWriter fout = new BufferedWriter(new FileWriter("./data/zch/semantic-com-prefix.txt"));
+			int matched = 0;
+			System.out.println(questions.size());
+			for (String question : questions) {
+				String[] list = question.split("\t");
+				int questionId = Integer.parseInt(list[0]);
+				QuestionSingle q = pipeline.preProcess(questionId);
+				if(q==null)
+					return;
+				
+//				fout.write(q.question);
+//				fout.write("\n");
+				
+				LinkedList<String> words = q.getWordList();
+				LinkedList<String> postags = q.getPOSList();
+				HashSet<Integer> entityindexes = q.getEntityPositions();
+				LinkedList<String> predicts = q.getSurPredicates();
+							
+				ArrayList<String> NP = new ArrayList<String>();
+				ArrayList<String> VP = new ArrayList<String>();
+				
+//				fout.write(words.toString());
+//				fout.write("\n");
+//				fout.write(postags.toString());
+//				fout.write("\n");
+				
+				int i = 0;
+				String postag;
+				StringBuilder phrase = new StringBuilder();
+				
+				while(i<postags.size()){
+					postag = postags.get(i);
+					if(entityindexes.contains(i)){
+						++i;
+						continue;
+					}
+					if(!postag.startsWith("VB") && !postag.startsWith("NN")){
+						++i;
+						continue;
+					}
+					
+					boolean first = true;
+					while(i<postags.size() && (postag = postags.get(i)).startsWith("NN")){
+						if(!first){
+							phrase.append(" ");
+						}
+						phrase.append(words.get(i));
+						first = false;
+						++i;
+					}
+					if(phrase.length() > 0){
+						NP.add(phrase.toString());
+						phrase.setLength(0);
+					}else{
+						while(i<postags.size() && (postag = postags.get(i)).startsWith("VB")){
+							if(!stopwords.contains(words.get(i).toLowerCase())){
+								if(!first){
+									phrase.append(" ");
+								}
+								phrase.append(words.get(i));
+								first = false;
+							}
+							++i;
+						}
+						if(phrase.length() > 0){
+							VP.add(phrase.toString());
+							phrase.setLength(0);
+						}
+					}
+				}
+//				fout.write(NP.toString());
+//				fout.write("\n");
+//				fout.write(VP.toString());
+//				fout.write("\n");
+//				fout.write(question);
+//				fout.write("\n");
+				
+				double rate;
+				HashMap<String, Double> rateMap = new HashMap<String, Double>();
+				HashSet<Double> rankingSet = new HashSet<Double>();
+				
+				System.out.println("predicts:\t"+predicts.size());
+				for (String predict : predicts) {
+					LinkedList<String> labels = ClientManagement.getLabel(predict);
+					System.out.println("labels:+\t"+labels.size());
+					for (String label : labels) {
+						rate = 0;
+//						String tlabel = label.replace(" ", "");
+						LinkedList<String> tlabels = pipeline.getLemma(label);
+						LinkedList<Integer> preLength = new LinkedList<Integer>(); 
+//						for (String tlabel : tlabels) {
+//							int currentLength = getMaxComPreLength4List(tlabel, pipeline.getLemma(q.question));
+//							preLength.add(currentLength);
+//						}
+//						rate = calLexRate4List(tlabels, preLength);
+						
+						for (String tlable : tlabels) {
+							double [] rates = calSemRate(tlable, NP, VP);
+//							System.out.println(tlable);
+							fout.write(tlable);
+							fout.write("\n");
+							for (int j = 0; j < rates.length; j++) {
+//								System.out.println(rates[j]);
+								fout.write(String.valueOf(rates[j]));
+								fout.write("\t");
+							}
+//							System.out.println();
+							fout.write("\n");
+						}
+						rankingSet.add(rate);
+						rateMap.put(predict, rate);
+					}
+				}
+//				ArrayList<Double> ranking = new ArrayList<Double>(rankingSet);
+//				Collections.sort(ranking);
+//				Collections.reverse(ranking);
+//				
+//				int count = 0;
+//				boolean isIn = false;
+//				for(int k=0; count<5 && k<ranking.size(); ++k){
+//					double currentRanking = ranking.get(k);
+//					if(currentRanking > threshold){
+//						for (String key : rateMap.keySet()) {
+//							if(rateMap.get(key).equals(currentRanking)){
+//								++count;
+//								fout.write(key);
+//								fout.write("\t");
+//								fout.write(ranking.get(k).toString());
+//								fout.write("\n");
+//								for (int j = 1; j < list.length; j++) {
+//									if(list[j].equals(key)){
+//										isIn = true;
+//									}
+//								}
+//							}
+//						}
+//					}else{
+//						break;
+//					}
+//				}
+//				fout.write("\n");
+//				if(isIn){
+//					++matched;
+//				}
+			}
+			fout.close();
+			System.out.println(matched);
+			System.out.println(questions.size());
+			System.out.println((double)matched/questions.size());
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public static void semWSFJ(){
+		String questionPath = "./data/zch/question-semantic.txt";
+		LinkedList<String> questions = FileOps.LoadFilebyLine(questionPath);
+		
+		HashSet<String> stopwords = new HashSet<String>();
+		LinkedList<String> stopwordslist = FileOps.LoadFilebyLine("./data/zch/stopwords.txt");
+		for (String stopword : stopwordslist) {
+			stopwords.add(stopword);
+		}
+		
+		try {
+			BufferedWriter fout = new BufferedWriter(new FileWriter("./data/zch/semantic-com-prefix.txt"));
+			int matched = 0;
+//			System.out.println(questions.size());
+			for (String question : questions) {
+				String[] list = question.split("\t");
+				int questionId = Integer.parseInt(list[0]);
+				QuestionSingle q = pipeline.preProcess(questionId);
+				if(q==null)
+					return;
+				
+				fout.write(q.question);
+				fout.write("\n");
+				
+				LinkedList<String> words = q.getWordList();
+				LinkedList<String> postags = q.getPOSList();
+				HashSet<Integer> entityindexes = q.getEntityPositions();
+				LinkedList<String> predicts = q.getSurPredicates();
+							
+				ArrayList<String> NP = new ArrayList<String>();
+				ArrayList<String> VP = new ArrayList<String>();
+				
+				fout.write(words.toString());
+				fout.write("\n");
+				fout.write(postags.toString());
+				fout.write("\n");
+				
+				int i = 0;
+				String postag;
+				StringBuilder phrase = new StringBuilder();
+				
+				while(i<postags.size()){
+					postag = postags.get(i);
+					if(entityindexes.contains(i)){
+						++i;
+						continue;
+					}
+					if(!postag.startsWith("VB") && !postag.startsWith("NN")){
+						++i;
+						continue;
+					}
+					
+					boolean first = true;
+					while(i<postags.size() && (postag = postags.get(i)).startsWith("NN")){
+						if(!first){
+							phrase.append(" ");
+						}
+						phrase.append(words.get(i));
+						first = false;
+						++i;
+					}
+					if(phrase.length() > 0){
+						NP.add(phrase.toString());
+						phrase.setLength(0);
+					}else{
+						while(i<postags.size() && (postag = postags.get(i)).startsWith("VB")){
+							if(!stopwords.contains(words.get(i).toLowerCase())){
+								if(!first){
+									phrase.append(" ");
+								}
+								phrase.append(words.get(i));
+								first = false;
+							}
+							++i;
+						}
+						if(phrase.length() > 0){
+							VP.add(phrase.toString());
+							phrase.setLength(0);
+						}
+					}
+				}
+				fout.write(NP.toString());
+				fout.write("\n");
+				fout.write(VP.toString());
+				fout.write("\n");
+				fout.write(question);
+				fout.write("\n");
+				
+				double rate;
+				HashMap<String, double[]> rateMap = new HashMap<String, double[]>();
+				ArrayList<double[]> rankingSet = new ArrayList<double[]>();
+				
+				for (String predict : predicts) {
+					LinkedList<String> labels = ClientManagement.getLabel(predict);
+					for (String label : labels) {
+						rate = 0;
+						LinkedList<String> tlabels = pipeline.getLemma(label);
+						for (String tlable : tlabels) {
+							double [] rates = calSemRate(tlable, NP, VP);
+							rankingSet.add(rates);
+							rateMap.put(predict, rates);
+						}
+					}
+				}
+				
+				for(int t=0; t<8; ++t){
+					HashSet<Double> tArraySet = new HashSet<Double>();
+					for (double[] rankingList : rankingSet) {
+						tArraySet.add(rankingList[t]);
+					}
+					
+					ArrayList<Double> tArrayList = new ArrayList<Double>(tArraySet);
+					Collections.sort(tArrayList);
+					Collections.reverse(tArrayList);
+					
+					for(int tmp=0; tmp<10&&tmp<tArrayList.size(); ++tmp){
+						if(tArrayList.get(tmp) > 0){
+							for (String key : rateMap.keySet()) {
+								for (double dd : rateMap.get(key)) {
+									if(dd == tArrayList.get(tmp)){
+										fout.write(key);
+										fout.write("\t");
+										fout.write(tArrayList.get(tmp).toString());
+										fout.write("\n");
+									}
+								}
+							}
+						}
+					}
+					fout.write("\n");
+				}
+			}
+			fout.close();
+			System.out.println(matched);
+			System.out.println(questions.size());
+			System.out.println((double)matched/questions.size());
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	
+	
+	public static void main(String [] args){
+//		comSub();
+//		comPre();
+		semWSFJ();
+	}
 }

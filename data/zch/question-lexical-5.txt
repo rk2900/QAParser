@@ -1,0 +1,5 @@
+76	http://dbpedia.org/property/shipNamesake
+83	http://dbpedia.org/property/location	http://dbpedia.org/ontology/location
+87	http://dbpedia.org/property/children	http://dbpedia.org/ontology/child	
+96	http://dbpedia.org/property/creators	http://dbpedia.org/ontology/creator
+99	http://dbpedia.org/ontology/musicComposer
