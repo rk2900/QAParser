@@ -61,10 +61,24 @@ public class UMBC {
 	public static Double getSimilarity(String phrase1,String phrase2){ 
 		String query = queryBuilder(phrase1, phrase2);
 		String response = queryResult(query);
+		
+		int count = 0;
 		while(response == null || response.length() == 0){
+			++count;
+			if(count > 5){
+				break;
+			}
 			response = queryResult(query);
 		}
-		Double result = Double.parseDouble(response);
+		
+		Double result = -1.0;
+		if(count <= 5){
+			if(response.startsWith("-")){
+				result = -0.5;
+			}else{
+				result = Double.parseDouble(response);
+			}
+		}
 		return result;
 	}
 	

@@ -10,6 +10,7 @@ import java.util.HashSet;
 import java.util.LinkedList;
 
 import paser.QuestionSingle;
+import umbc.umbcDB;
 import basic.FileOps;
 import knowledgebase.ClientManagement;
 import finder.Pipeline;
@@ -18,10 +19,12 @@ public class Extraction2 {
 
 	public static Pipeline pipeline;
 	public static int rankingSize;
+	public static umbcDB db;
 //	public static double UMBC_threshold = 0.1;
 	static {
 		pipeline = new Pipeline();
 		rankingSize = 10;
+		db = new umbcDB();
 	}
 	
 //	public static LinkedList<String> getNNPhrase(String text){
@@ -46,7 +49,8 @@ public class Extraction2 {
 			for (String labelWord : labelWords) {
 				double wordScore = 0;
 				for (String questionWord : questionList) {
-					double tmpScore = UMBC.getSimilarity(labelWord, questionWord);
+//					double tmpScore = UMBC.getSimilarity(labelWord, questionWord);
+					double tmpScore = db.getScore(labelWord, questionWord);
 					wordScore = (wordScore<tmpScore)?tmpScore:wordScore;
 				}
 				currentScore += wordScore;
