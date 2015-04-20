@@ -65,18 +65,19 @@ public class Extraction2 {
 	}
 	
 	public static void main(String[] args) {
-		String questionPath = "./data/zch/question-lexical-5.txt";
+		String questionPath = "./data/zch/manual-selected-question.txt";
 		LinkedList<String> questions = FileOps.LoadFilebyLine(questionPath);
 		
 		try {
-			BufferedWriter fout = new BufferedWriter(new FileWriter("./data/zch/lexical-UMBC-5.txt"));
+			BufferedWriter fout = new BufferedWriter(new FileWriter("./data/zch/manual-selected-question-top10.txt"));
 			for (String question : questions) {
 				String[] list = question.split("\t");
 				int questionId = Integer.parseInt(list[0]);
 				QuestionSingle q = pipeline.preProcess(questionId);
-				if(q==null)
-					return;
-				
+				if(q==null){
+					continue;
+				}
+				System.out.println(q.question+"\tbegin");
 				fout.write(q.question);
 				fout.write("\n");
 				
@@ -96,22 +97,21 @@ public class Extraction2 {
 						questionContext.add(words.get(i));
 					}
 				}
-				System.out.println(questionContext);
 				
 				HashMap<Double, ArrayList<String>> scoreMap = new HashMap<Double, ArrayList<String>>();
-//				System.out.println(predicts.size());
 				
-				int predictNum = 0;
+//				int predictNum = 0;
 				for (String predict : predicts) {
 					double score = rankingUMBC(predict, questionContext);
 					if(!scoreMap.containsKey(score)){
 						scoreMap.put(score, new ArrayList<String>());
 					}
 					scoreMap.get(score).add(predict);
-					LinkedList<String> lls = ClientManagement.getLabel(predict);
-					++predictNum;
-					System.out.println(predictNum+"\t"+predict+"\t"+lls);
+//					LinkedList<String> lls = ClientManagement.getLabel(predict);
+//					++predictNum;
+//					System.out.println(predictNum+"\t"+predict+"\t"+lls);
 				}
+				System.out.println("***end***");
 				
 				ArrayList<Double> scores = new ArrayList<Double>(scoreMap.keySet());
 				Collections.sort(scores,Collections.reverseOrder());
