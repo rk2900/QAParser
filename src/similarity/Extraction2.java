@@ -69,7 +69,7 @@ public class Extraction2 {
 		LinkedList<String> questions = FileOps.LoadFilebyLine(questionPath);
 		
 		try {
-			BufferedWriter fout = new BufferedWriter(new FileWriter("./data/zch/manual-selected-question-top10.txt"));
+			BufferedWriter fout = new BufferedWriter(new FileWriter("./data/zch/manual-selected-question-top10-fixed.txt"));
 			for (String question : questions) {
 				String[] list = question.split("\t");
 				int questionId = Integer.parseInt(list[0]);
@@ -78,6 +78,8 @@ public class Extraction2 {
 					continue;
 				}
 				System.out.println(q.question+"\tbegin");
+				fout.write(list[0]);
+				fout.write("\n");
 				fout.write(q.question);
 				fout.write("\n");
 				

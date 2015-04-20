@@ -1,0 +1,505 @@
+2
+In which country does the Ganges start?
+[In, which, country, does, the, Ganges, start]
+[IN, WDT, NN, VBZ, DT, NNP, VB]
+1.0	http://dbpedia.org/ontology/country
+1.0	http://dbpedia.org/property/country
+0.9468969	http://dbpedia.org/ontology/state
+0.9468969	http://dbpedia.org/property/state
+0.60695458	http://dbpedia.org/ontology/sourceCountry
+0.60695458	http://dbpedia.org/property/sourceCountry
+0.535137713	http://dbpedia.org/ontology/mouthCountry
+0.535137713	http://dbpedia.org/property/mouthCountry
+0.436955	http://dbpedia.org/ontology/city
+0.436955	http://dbpedia.org/property/city
+
+5
+Who was John F. Kennedy's vice president?
+[Who, was, John, F., Kennedy, 's, vice, president]
+[WP, VBD, NNP, NNP, NNP, POS, NN, NN]
+1.0	http://dbpedia.org/property/vicePresident
+1.0	http://dbpedia.org/property/president
+1.0	http://dbpedia.org/ontology/vicePresident
+1.0	http://dbpedia.org/ontology/president
+0.6691448171666666	http://dbpedia.org/property/vicePresidentStart
+0.6666666666666666	http://dbpedia.org/property/vicePresidentEnd
+0.533914175	http://dbpedia.org/property/presidentialNominee
+0.50371722575	http://dbpedia.org/property/presidentStart
+0.5	http://dbpedia.org/property/presidentEnd
+0.25945273	http://dbpedia.org/property/appointed
+
+6
+Who is the mayor of Berlin?
+[Who, is, the, mayor, of, Berlin]
+[WP, VBZ, DT, NN, IN, NNP]
+0.46235546	http://dbpedia.org/ontology/leader
+0.46235546	http://dbpedia.org/property/leader
+0.3575939	http://dbpedia.org/ontology/person
+0.26237383999999997	http://dbpedia.org/property/leaderName
+0.23858388	http://dbpedia.org/ontology/city
+0.23858388	http://dbpedia.org/property/city
+0.23858388	http://dbpedia.org/property/cities
+0.231304313805	http://dbpedia.org/ontology/leaderParty
+0.231304313805	http://dbpedia.org/property/leaderParty
+0.23117773	http://dbpedia.org/ontology/leaderTitle
+0.23117773	http://dbpedia.org/property/leaderTitle
+
+11
+To which countries does the Himalayan mountain system extend?
+[To, which, countries, does, the, Himalayan, mountain, system, extend]
+[TO, WDT, NNS, VBZ, DT, JJ, NN, NN, VB]
+1.0	http://dbpedia.org/property/country
+1.0	http://dbpedia.org/ontology/country
+0.82823336	http://dbpedia.org/ontology/region
+0.82823336	http://dbpedia.org/property/region
+0.71075278	http://dbpedia.org/property/regionCode
+0.58544529	http://dbpedia.org/ontology/mountainRange
+0.54867725	http://dbpedia.org/ontology/sourceMountain
+0.46279393	http://dbpedia.org/ontology/sourceRegion
+0.46279393	http://dbpedia.org/property/sourceRegion
+0.376159025	http://dbpedia.org/property/reverseDesign
+
+15
+Who produces Orangina?
+[Who, produces, Orangina]
+[WP, VBZ, NNP]
+0.6877408	http://dbpedia.org/property/products
+0.6877408	http://dbpedia.org/ontology/product
+0.23622258	http://dbpedia.org/property/ingredients
+0.1495203	http://dbpedia.org/property/introduced
+0.13144282	http://dbpedia.org/ontology/origin
+0.1292241	http://dbpedia.org/property/colour
+0.06348214	http://dbpedia.org/property/website
+0.053247187	http://dbpedia.org/property/caption
+0.023707367	http://dbpedia.org/property/name
+0.023592379	http://dbpedia.org/ontology/thumbnail
+
+19
+Give me all members of Prodigy.
+[Give, me, all, members, of, Prodigy]
+[VB, PRP, DT, NNS, IN, NNP]
+0.606934465	http://dbpedia.org/property/formerMembers
+0.58152678	http://dbpedia.org/ontology/bandMember
+0.523977127	http://dbpedia.org/property/currentMembers
+0.5	http://dbpedia.org/property/pastMembers
+0.45897416333333335	http://dbpedia.org/ontology/formerBandMember
+0.29297243250000005	http://dbpedia.org/property/associatedActs
+0.19568588	http://dbpedia.org/property/class
+0.18466124499999997	http://dbpedia.org/property/yearsActive
+0.15467242399999998	http://dbpedia.org/ontology/activeYearsStartYear
+0.1442005	http://dbpedia.org/property/name
+
+27
+What is the capital of Canada?
+[What, is, the, capital, of, Canada]
+[WP, VBZ, DT, NN, IN, NNP]
+1.0	http://dbpedia.org/ontology/capital
+1.0	http://dbpedia.org/property/capital
+0.46166903	http://dbpedia.org/property/place
+0.3199085	http://dbpedia.org/ontology/city
+0.3199085	http://dbpedia.org/property/city
+0.3199085	http://dbpedia.org/property/cities
+0.282437965	http://dbpedia.org/ontology/foundationPlace
+0.277366	http://dbpedia.org/ontology/populationPlace
+0.272448665	http://dbpedia.org/property/worldPlace
+0.26788062	http://dbpedia.org/property/markets
+
+28
+Who is the governor of Wyoming?
+[Who, is, the, governor, of, Wyoming]
+[WP, VBZ, DT, NN, IN, NNP]
+1.0	http://dbpedia.org/property/governor
+0.6518837	http://dbpedia.org/property/lieutenantGovernor
+0.57773167	http://dbpedia.org/property/legislature
+0.5767761	http://dbpedia.org/property/senators
+0.4345891333333333	http://dbpedia.org/property/lieutenantGovernorAlt
+0.303101475	http://dbpedia.org/property/vicePresidentialNomineeState
+0.23928879	http://dbpedia.org/property/authority
+0.22960393	http://dbpedia.org/property/state/province
+0.20680709	http://dbpedia.org/property/state
+0.20680709	http://dbpedia.org/ontology/state
+0.20680709	http://dbpedia.org/property/states
+
+30
+Who was the father of Queen Elizabeth II?
+[Who, was, the, father, of, Queen, Elizabeth, II]
+[WP, VBD, DT, NN, IN, NNP, NNP, NNP]
+1.0	http://dbpedia.org/property/father
+0.8712777	http://dbpedia.org/ontology/parent
+0.7052168	http://dbpedia.org/property/mother
+0.55115354	http://dbpedia.org/property/leader
+0.55115354	http://dbpedia.org/ontology/leader
+0.49730504	http://dbpedia.org/ontology/person
+0.35145574	http://dbpedia.org/property/leaderName
+0.35145574	http://dbpedia.org/ontology/leaderName
+0.31796834	http://dbpedia.org/property/spouse
+0.31796834	http://dbpedia.org/ontology/spouse
+
+34
+Give me all movies directed by Francis Ford Coppola.
+[Give, me, all, movies, directed, by, Francis, Ford, Coppola]
+[VB, PRP, DT, NNS, VBN, IN, NNP, NNP, NNP]
+0.8294736	http://dbpedia.org/ontology/director
+0.6589472	http://dbpedia.org/property/director
+0.56779504	http://dbpedia.org/property/producer
+0.56779504	http://dbpedia.org/ontology/producer
+0.47328934	http://dbpedia.org/property/creator
+0.47328934	http://dbpedia.org/ontology/creator
+0.41514176	http://dbpedia.org/property/starring
+0.41514176	http://dbpedia.org/ontology/starring
+0.3521141	http://dbpedia.org/ontology/wikiPageRedirects
+0.34788871	http://dbpedia.org/property/executiveProducer
+0.34788871	http://dbpedia.org/ontology/executiveProducer
+
+41
+In which military conflicts did Lawrence of Arabia participate?
+[In, which, military, conflicts, did, Lawrence, of, Arabia, participate]
+[IN, WDT, JJ, NNS, VBD, NNP, IN, NNP, VB]
+0.54509401	http://dbpedia.org/ontology/militaryBranch
+0.49356037	http://dbpedia.org/property/commanders
+0.49356037	http://dbpedia.org/ontology/commander
+0.3129266	http://dbpedia.org/ontology/battle
+0.3129266	http://dbpedia.org/property/battles
+0.14001476666666665	http://dbpedia.org/ontology/serviceStartYear
+0.13228023	http://dbpedia.org/property/rank
+0.1322662	http://dbpedia.org/ontology/allegiance
+0.1322662	http://dbpedia.org/property/allegiance
+0.12230418	http://dbpedia.org/ontology/deathYear
+
+42
+Who developed Minecraft?
+[Who, developed, Minecraft]
+[WP, VBD, NNP]
+0.5167513	http://dbpedia.org/ontology/developer
+0.5167513	http://dbpedia.org/property/developer
+0.502757	http://dbpedia.org/ontology/product
+0.14006178	http://dbpedia.org/ontology/designer
+0.14006178	http://dbpedia.org/property/designer
+0.1330638	http://dbpedia.org/property/small
+0.115087956	http://dbpedia.org/property/gspot
+0.11118685	http://dbpedia.org/property/composer
+0.088337995	http://dbpedia.org/ontology/publisher
+0.088337995	http://dbpedia.org/property/publisher
+
+49
+Who founded Intel?
+[Who, founded, Intel]
+[WP, VBD, NNP]
+0.97232264	http://dbpedia.org/property/founder
+0.74511755	http://dbpedia.org/property/foundation
+0.5	http://dbpedia.org/ontology/foundedBy
+0.2202772	http://dbpedia.org/property/sponsors
+0.2202772	http://dbpedia.org/property/sponsor
+0.19717490999999998	http://dbpedia.org/property/workInstitution
+0.17185913	http://dbpedia.org/property/name
+0.16588518	http://dbpedia.org/property/inventName
+0.12774116	http://dbpedia.org/property/revenue
+0.10311012	http://dbpedia.org/ontology/publisher
+0.10311012	http://dbpedia.org/property/publisher
+
+50
+Who is the husband of Amanda Palmer?
+[Who, is, the, husband, of, Amanda, Palmer]
+[WP, VBZ, DT, NN, IN, NNP, NNP]
+0.9129618	http://dbpedia.org/property/spouse
+0.9129618	http://dbpedia.org/ontology/spouse
+0.10927122	http://dbpedia.org/ontology/writer
+0.10927122	http://dbpedia.org/property/writer
+0.10161986	http://dbpedia.org/property/author
+0.10161986	http://dbpedia.org/ontology/author
+0.096819545	http://dbpedia.org/property/birthName
+0.08585012	http://dbpedia.org/property/occupation
+0.07996132	http://dbpedia.org/property/name
+0.071471676	http://dbpedia.org/property/width
+
+58
+Who created Goofy?
+[Who, created, Goofy]
+[WP, VBD, NNP]
+0.53708327	http://dbpedia.org/ontology/creator
+0.53708327	http://dbpedia.org/property/creators
+0.53708327	http://dbpedia.org/property/creator
+0.14663032	http://dbpedia.org/ontology/series
+0.14663032	http://dbpedia.org/property/series
+0.11557377	http://dbpedia.org/property/publisher
+0.10937645500000001	http://dbpedia.org/property/comicColor
+0.09493817800000001	http://dbpedia.org/property/allianceColor
+0.065311754	http://dbpedia.org/property/characterName
+0.056139484	http://dbpedia.org/property/powers
+
+62
+What is the ruling party in Lisbon?
+[What, is, the, ruling, party, in, Lisbon]
+[WP, VBZ, DT, VBG, NN, IN, NNP]
+0.625054685	http://dbpedia.org/property/leaderParty
+0.520057898	http://dbpedia.org/property/mayorParty
+0.30992782	http://dbpedia.org/ontology/owningOrganisation
+0.30221474	http://dbpedia.org/property/government
+0.30221474	http://dbpedia.org/ontology/government
+0.250364945	http://dbpedia.org/property/governmentState
+0.25010937	http://dbpedia.org/property/leader
+0.19870324	http://dbpedia.org/property/country
+0.19870324	http://dbpedia.org/ontology/country
+0.19851515	http://dbpedia.org/property/state
+0.19851515	http://dbpedia.org/ontology/state
+
+75
+Which instruments does Cat Stevens play?
+[Which, instruments, does, Cat, Stevens, play]
+[WDT, NNS, VBZ, NNP, NNP, VB]
+1.0	http://dbpedia.org/ontology/instrument
+1.0	http://dbpedia.org/property/instrument
+0.6571595	http://dbpedia.org/property/music
+0.5257410185	http://dbpedia.org/property/notableInstruments
+0.44188259500000004	http://dbpedia.org/ontology/musicalBand
+0.430190825	http://dbpedia.org/property/associatedActs
+0.42339137	http://dbpedia.org/ontology/artist
+0.39787115500000003	http://dbpedia.org/ontology/musicComposer
+0.33164147	http://dbpedia.org/property/genre
+0.33164147	http://dbpedia.org/ontology/genre
+
+76
+Which ships were called after Benjamin Franklin?
+[Which, ships, were, called, after, Benjamin, Franklin]
+[WDT, NNS, VBD, VBN, IN, NNP, NNP]
+0.7663415	http://dbpedia.org/property/name
+0.6670693	http://dbpedia.org/property/appointed
+0.5544061775	http://dbpedia.org/property/shipNamesake
+0.45106623	http://dbpedia.org/property/order
+0.4264086	http://dbpedia.org/property/namedFor
+0.4264086	http://dbpedia.org/property/namedAfter
+0.31960808	http://dbpedia.org/property/termStart
+0.31241852	http://dbpedia.org/property/title
+0.275626615	http://dbpedia.org/property/termEnd
+0.265206635	http://dbpedia.org/ontology/knownFor
+
+87
+List the children of Margaret Thatcher.
+[List, the, children, of, Margaret, Thatcher]
+[VB, DT, NNS, IN, NNP, NNP]
+1.0	http://dbpedia.org/property/children
+1.0	http://dbpedia.org/ontology/child
+0.6763612	http://dbpedia.org/property/setting
+0.6311516	http://dbpedia.org/ontology/parent
+0.6311516	http://dbpedia.org/property/parents
+0.4092732	http://dbpedia.org/property/name
+0.333189885	http://dbpedia.org/ontology/birthName
+0.255736025	http://dbpedia.org/ontology/notableStudent
+0.255736025	http://dbpedia.org/property/notableStudents
+0.25519874499999995	http://dbpedia.org/ontology/birthDate
+0.25519874499999995	http://dbpedia.org/property/birthDate
+
+96
+Who created the comic Captain America?
+[Who, created, the, comic, Captain, America]
+[WP, VBD, DT, JJ, NNP, NNP]
+0.53708327	http://dbpedia.org/property/creators
+0.53708327	http://dbpedia.org/ontology/creator
+0.30945215	http://dbpedia.org/property/debut
+0.22765599	http://dbpedia.org/property/publisher
+0.15160832	http://dbpedia.org/property/hero
+0.14767347	http://dbpedia.org/property/caption
+0.11829164	http://dbpedia.org/property/characters
+0.0940488045	http://dbpedia.org/property/notableWorks
+0.09263525	http://dbpedia.org/property/converted
+0.08031188	http://dbpedia.org/ontology/basedOn
+
+99
+Who composed the music for Harold and Maude?
+[Who, composed, the, music, for, Harold, and, Maude]
+[WP, VBN, DT, NN, IN, NNP, CC, NNP]
+1.0	http://dbpedia.org/property/music
+0.7834626	http://dbpedia.org/ontology/musicComposer
+0.5762162	http://dbpedia.org/property/writer
+0.5762162	http://dbpedia.org/ontology/writer
+0.31708702	http://dbpedia.org/property/artist
+0.23261379	http://dbpedia.org/property/language
+0.216811635	http://dbpedia.org/ontology/director
+0.09943608	http://dbpedia.org/ontology/producer
+0.09943608	http://dbpedia.org/property/producer
+0.09255634	http://dbpedia.org/ontology/distributor
+0.09255634	http://dbpedia.org/property/distributor
+
+101
+In which city was the former Dutch queen Juliana buried?
+[In, which, city, was, the, former, Dutch, queen, Juliana, buried]
+[IN, WDT, NN, VBD, DT, JJ, NNP, NN, NNP, VBN]
+0.4895161666666667	http://dbpedia.org/property/placeOfBurial
+0.3771175	http://dbpedia.org/property/dateOfBurial
+0.35091144	http://dbpedia.org/property/name
+0.34637997	http://dbpedia.org/property/house
+0.30998127	http://dbpedia.org/ontology/restingPlace
+0.30070021	http://dbpedia.org/ontology/deathPlace
+0.30070021	http://dbpedia.org/property/deathPlace
+0.24570802	http://dbpedia.org/property/father
+0.242486	http://dbpedia.org/property/birthPlace
+0.242486	http://dbpedia.org/ontology/birthPlace
+
+106
+Which movies did Kurosawa direct?
+[Which, movies, did, Kurosawa, direct]
+[WDT, NNS, VBD, NNP, VB]
+0.8294736	http://dbpedia.org/ontology/director
+0.6589472	http://dbpedia.org/property/director
+0.41514176	http://dbpedia.org/property/starring
+0.41514176	http://dbpedia.org/ontology/starring
+0.3521141	http://dbpedia.org/ontology/wikiPageRedirects
+0.30347136	http://dbpedia.org/property/screenplay
+0.21468158	http://dbpedia.org/property/studio
+0.214089933	http://dbpedia.org/property/deathPlace
+0.214089933	http://dbpedia.org/ontology/deathPlace
+0.2018832	http://dbpedia.org/property/birthPlace
+0.2018832	http://dbpedia.org/ontology/birthPlace
+
+115
+Which states border Illinois?
+[Which, states, border, Illinois]
+[WDT, NNS, VBP, NNP]
+1.0	http://dbpedia.org/property/state
+1.0	http://dbpedia.org/property/states
+1.0	http://dbpedia.org/ontology/state
+0.95445323	http://dbpedia.org/property/state/province
+0.9468969	http://dbpedia.org/ontology/country
+0.9468969	http://dbpedia.org/property/country
+0.81781304	http://dbpedia.org/property/province
+0.7872688	http://dbpedia.org/property/borderingstates
+0.685198	http://dbpedia.org/ontology/district
+0.56800747	http://dbpedia.org/property/populatedStates
+
+117
+Which television shows were created by John Cleese?
+[Which, television, shows, were, created, by, John, Cleese]
+[WDT, NN, NNS, VBD, VBN, IN, NNP, NNP]
+0.7047592	http://dbpedia.org/property/portrayed
+0.53823036	http://dbpedia.org/property/producer
+0.53823036	http://dbpedia.org/ontology/producer
+0.53708327	http://dbpedia.org/property/creator
+0.53708327	http://dbpedia.org/ontology/creator
+0.36113313	http://dbpedia.org/property/writer
+0.36113313	http://dbpedia.org/ontology/writer
+0.32556461999999997	http://dbpedia.org/ontology/director
+0.25659406	http://dbpedia.org/property/director
+0.23129715	http://dbpedia.org/property/starring
+0.23129715	http://dbpedia.org/ontology/starring
+
+123
+Which awards did Douglas Hofstadter win?
+[Which, awards, did, Douglas, Hofstadter, win]
+[WDT, NNS, VBD, NNP, NNP, VB]
+1.0	http://dbpedia.org/ontology/award
+1.0	http://dbpedia.org/property/awards
+0.20544106	http://dbpedia.org/ontology/knownFor
+0.20544106	http://dbpedia.org/property/knownFor
+0.19073117	http://dbpedia.org/property/thesisTitle
+0.142517675	http://dbpedia.org/property/thesisYear
+0.1145127	http://dbpedia.org/property/name
+0.09997644	http://dbpedia.org/property/fields
+0.09997644	http://dbpedia.org/ontology/field
+0.094448487	http://dbpedia.org/ontology/birthYear
+
+127
+Which countries adopted the Euro?
+[Which, countries, adopted, the, Euro]
+[WDT, NNS, VBD, DT, NNP]
+0.20259771	http://dbpedia.org/property/nickname
+0.14740444	http://dbpedia.org/property/issuingAuthority
+0.13994628	http://dbpedia.org/ontology/currency
+0.13994628	http://dbpedia.org/property/currency
+0.134037725	http://dbpedia.org/property/currencyNameInLocal
+0.10488996699999999	http://dbpedia.org/ontology/wikiPageRevisionID
+0.099971248	http://dbpedia.org/property/inflationMethod
+0.09863566280000001	http://dbpedia.org/property/issuingAuthorityWebsite
+0.08616233	http://dbpedia.org/property/symbol
+0.08214381200000001	http://dbpedia.org/property/usedCoins
+
+130
+Who is the owner of Rolls-Royce?
+[Who, is, the, owner, of, Rolls-Royce]
+[WP, VBZ, DT, NN, IN, NNP]
+1.0	http://dbpedia.org/ontology/owner
+1.0	http://dbpedia.org/property/owner
+0.2498022	http://dbpedia.org/property/manufacturer
+0.2498022	http://dbpedia.org/ontology/manufacturer
+0.20486204	http://dbpedia.org/ontology/industry
+0.20486204	http://dbpedia.org/property/industry
+0.15212324	http://dbpedia.org/property/name
+0.14118959	http://dbpedia.org/ontology/owningCompany
+0.13636865	http://dbpedia.org/property/title
+0.095551886	http://dbpedia.org/ontology/successor
+0.095551886	http://dbpedia.org/property/successor
+
+135
+Which river does the Brooklyn Bridge cross?
+[Which, river, does, the, Brooklyn, Bridge, cross]
+[WDT, NN, VBZ, DT, NNP, NNP, VB]
+1.0	http://dbpedia.org/ontology/crosses
+1.0	http://dbpedia.org/property/crosses
+0.7470085	http://dbpedia.org/property/bridge
+0.44131073	http://dbpedia.org/ontology/bridgeCarries
+0.4138829	http://dbpedia.org/property/road
+0.401341001	http://dbpedia.org/property/bridgeName
+0.31558058	http://dbpedia.org/property/downstream
+0.2916621	http://dbpedia.org/property/upstream
+0.20982395	http://dbpedia.org/property/traffic
+0.20544106	http://dbpedia.org/property/knownFor
+
+138
+What is the official language of Suriname?
+[What, is, the, official, language, of, Suriname]
+[WP, VBZ, DT, JJ, NN, IN, NNP]
+1.0	http://dbpedia.org/ontology/officialLanguage
+1.0	http://dbpedia.org/ontology/language
+1.0	http://dbpedia.org/property/officialLanguages
+0.5327685600000001	http://dbpedia.org/ontology/regionalLanguage
+0.5327685600000001	http://dbpedia.org/property/regionalLanguages
+0.40158835	http://dbpedia.org/ontology/leader
+0.354450225	http://dbpedia.org/ontology/spokenIn
+0.29148998	http://dbpedia.org/property/leaderName
+0.290797147	http://dbpedia.org/property/callingCode
+0.2882992115	http://dbpedia.org/property/currencyCode
+
+139
+Who is the mayor of Tel Aviv?
+[Who, is, the, mayor, of, Tel, Aviv]
+[WP, VBZ, DT, NN, IN, NNP, NNP]
+0.26237383999999997	http://dbpedia.org/ontology/leaderName
+0.26237383999999997	http://dbpedia.org/property/leaderName
+0.23858388	http://dbpedia.org/property/city
+0.23858388	http://dbpedia.org/ontology/city
+0.23858388	http://dbpedia.org/property/cities
+0.23117773	http://dbpedia.org/ontology/leaderTitle
+0.23117773	http://dbpedia.org/property/leaderTitle
+0.16060814	http://dbpedia.org/ontology/stadium
+0.16060814	http://dbpedia.org/property/stadium
+0.1389607575	http://dbpedia.org/property/hostCity
+
+140
+Who designed the Brooklyn Bridge?
+[Who, designed, the, Brooklyn, Bridge]
+[WP, VBD, DT, NNP, NNP]
+0.87549794	http://dbpedia.org/property/design
+0.6420208	http://dbpedia.org/property/designer
+0.4914469	http://dbpedia.org/ontology/architect
+0.23459421	http://dbpedia.org/property/structure
+0.11854878	http://dbpedia.org/property/place
+0.1048170022	http://dbpedia.org/ontology/significantBuilding
+0.10015947	http://dbpedia.org/property/space
+0.09430429	http://dbpedia.org/property/imageSize
+0.08796797	http://dbpedia.org/property/title
+0.08109407	http://dbpedia.org/property/current
+
+144
+Who is the editor of Forbes?
+[Who, is, the, editor, of, Forbes]
+[WP, VBZ, DT, NN, IN, NNP]
+1.0	http://dbpedia.org/property/editor
+1.0	http://dbpedia.org/ontology/editor
+0.55884692	http://dbpedia.org/property/editorTitle
+0.55884692	http://dbpedia.org/ontology/editorTitle
+0.34802678	http://dbpedia.org/property/journal
+0.21026123	http://dbpedia.org/ontology/thumbnail
+0.150276778	http://dbpedia.org/property/imageCaption
+0.142093403	http://dbpedia.org/property/imageFile
+0.13629669	http://dbpedia.org/ontology/circulation
+0.12598474	http://dbpedia.org/ontology/owner
+
