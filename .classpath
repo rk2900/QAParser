@@ -47,5 +47,6 @@
 	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.34.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/AllegroGraphClient"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/BasicOps"/>
+	<classpathentry kind="lib" path="lib/edu.mit.jwi_2.3.3.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
