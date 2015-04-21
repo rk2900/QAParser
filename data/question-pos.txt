@@ -1,0 +1,1500 @@
+1
+Give me all cosmonauts.
+[Give, me, all, cosmonauts, .]
+[VB, PRP, DT, NNS, .]
+
+2
+In which country does the Ganges start?
+[In, which, country, does, the, Ganges, start, ?]
+[IN, WDT, NN, VBZ, DT, NNP, VB, .]
+
+3
+When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?
+[When, is, the, movie, Worst, Case, Scenario, going, to, be, in, cinemas, in, the, Netherlands, ?]
+[WRB, VBZ, DT, NN, JJS, NN, NN, VBG, TO, VB, IN, NNS, IN, DT, NNP, .]
+
+4
+Which German cities have more than 250000 inhabitants?
+[Which, German, cities, have, more, than, 250000, inhabitants, ?]
+[WDT, JJ, NNS, VBP, JJR, IN, CD, NNS, .]
+
+5
+Who was John F. Kennedy's vice president?
+[Who, was, John, F., Kennedy, 's, vice, president, ?]
+[WP, VBD, NNP, NNP, NNP, POS, NN, NN, .]
+
+6
+Who is the mayor of Berlin?
+[Who, is, the, mayor, of, Berlin, ?]
+[WP, VBZ, DT, NN, IN, NNP, .]
+
+7
+How many students does the Free University in Amsterdam have?
+[How, many, students, does, the, Free, University, in, Amsterdam, have, ?]
+[WRB, JJ, NNS, VBZ, DT, NNP, NNP, IN, NNP, VB, .]
+
+8
+What is the second highest mountain on Earth?
+[What, is, the, second, highest, mountain, on, Earth, ?]
+[WP, VBZ, DT, JJ, JJS, NN, IN, NNP, .]
+
+9
+Give me all professional skateboarders from Sweden.
+[Give, me, all, professional, skateboarders, from, Sweden, .]
+[VB, PRP, DT, JJ, NNS, IN, NNP, .]
+
+10
+When was Alberta admitted as province?
+[When, was, Alberta, admitted, as, province, ?]
+[WRB, VBD, NNP, VBD, IN, NN, .]
+
+11
+To which countries does the Himalayan mountain system extend?
+[To, which, countries, does, the, Himalayan, mountain, system, extend, ?]
+[TO, WDT, NNS, VBZ, DT, JJ, NN, NN, VB, .]
+
+12
+Give me a list of all bandleaders that play trumpet.
+[Give, me, a, list, of, all, bandleaders, that, play, trumpet, .]
+[VB, PRP, DT, NN, IN, DT, NNS, WDT, VBP, NN, .]
+
+13
+Which countries have more than ten caves?
+[Which, countries, have, more, than, ten, caves, ?]
+[WDT, NNS, VBP, JJR, IN, CD, NNS, .]
+
+14
+What is the total amount of men and women serving in the FDNY?
+[What, is, the, total, amount, of, men, and, women, serving, in, the, FDNY, ?]
+[WP, VBZ, DT, JJ, NN, IN, NNS, CC, NNS, VBG, IN, DT, NNP, .]
+
+15
+Who produces Orangina?
+[Who, produces, Orangina, ?]
+[WP, VBZ, NNP, .]
+
+16
+Who is the Formula 1 race driver with the most races?
+[Who, is, the, Formula, 1, race, driver, with, the, most, races, ?]
+[WP, VBZ, DT, NN, CD, NN, NN, IN, DT, RBS, NNS, .]
+
+17
+Give me all world heritage sites designated within the past two years.
+[Give, me, all, world, heritage, sites, designated, within, the, past, two, years, .]
+[VB, PRP, DT, NN, NN, NNS, VBN, IN, DT, JJ, CD, NNS, .]
+
+18
+Who is the youngest player in the Premier League?
+[Who, is, the, youngest, player, in, the, Premier, League, ?]
+[WP, VBZ, DT, JJS, NN, IN, DT, NNP, NNP, .]
+
+19
+Give me all members of Prodigy.
+[Give, me, all, members, of, Prodigy, .]
+[VB, PRP, DT, NNS, IN, NNP, .]
+
+20
+What is the longest river?
+[What, is, the, longest, river, ?]
+[WP, VBZ, DT, JJS, NN, .]
+
+21
+Does Breaking Bad have more episodes than Game of Thrones?
+[Does, Breaking, Bad, have, more, episodes, than, Game, of, Thrones, ?]
+[VBZ, VBG, JJ, VBP, JJR, NNS, IN, NN, IN, NNPS, .]
+
+22
+Give me all cars that are produced in Germany.
+[Give, me, all, cars, that, are, produced, in, Germany, .]
+[VB, PRP, DT, NNS, WDT, VBP, VBN, IN, NNP, .]
+
+23
+What were the main discoveries of the Mars rover Curiosity?
+[What, were, the, main, discoveries, of, the, Mars, rover, Curiosity, ?]
+[WP, VBD, DT, JJ, NNS, IN, DT, NNP, NN, NN, .]
+
+24
+Give me all people that were born in Vienna and died in Berlin.
+[Give, me, all, people, that, were, born, in, Vienna, and, died, in, Berlin, .]
+[VB, PRP, DT, NNS, WDT, VBD, VBN, IN, NNP, CC, VBD, IN, NNP, .]
+
+25
+Is proinsulin a protein?
+[Is, proinsulin, a, protein, ?]
+[VBZ, NN, DT, NN, .]
+
+26
+How tall is Michael Jordan?
+[How, tall, is, Michael, Jordan, ?]
+[WRB, JJ, VBZ, NNP, NNP, .]
+
+27
+What is the capital of Canada?
+[What, is, the, capital, of, Canada, ?]
+[WP, VBZ, DT, NN, IN, NNP, .]
+
+28
+Who is the governor of Wyoming?
+[Who, is, the, governor, of, Wyoming, ?]
+[WP, VBZ, DT, NN, IN, NNP, .]
+
+29
+Do Prince Harry and Prince William have the same parents?
+[Do, Prince, Harry, and, Prince, William, have, the, same, parents, ?]
+[VB, NNP, NNP, CC, NNP, NNP, VBP, DT, JJ, NNS, .]
+
+30
+Who was the father of Queen Elizabeth II?
+[Who, was, the, father, of, Queen, Elizabeth, II, ?]
+[WP, VBD, DT, NN, IN, NNP, NNP, NNP, .]
+
+31
+Which U.S. state has been admitted latest?
+[Which, U.S., state, has, been, admitted, latest, ?]
+[WDT, NNP, NN, VBZ, VBN, VBN, JJS, .]
+
+32
+How many languages are spoken in Turkmenistan?
+[How, many, languages, are, spoken, in, Turkmenistan, ?]
+[WRB, JJ, NNS, VBP, VBN, IN, NNP, .]
+
+33
+Sean Parnell is the governor of which U.S. state?
+[Sean, Parnell, is, the, governor, of, which, U.S., state, ?]
+[NNP, NNP, VBZ, DT, NN, IN, WDT, NNP, NN, .]
+
+34
+Give me all movies directed by Francis Ford Coppola.
+[Give, me, all, movies, directed, by, Francis, Ford, Coppola, .]
+[VB, PRP, DT, NNS, VBN, IN, NNP, NNP, NNP, .]
+
+35
+Give me all actors starring in movies directed by William Shatner.
+[Give, me, all, actors, starring, in, movies, directed, by, William, Shatner, .]
+[VB, PRP, DT, NNS, VBG, IN, NNS, VBN, IN, NNP, NNP, .]
+
+36
+Are tree frogs a type of amphibian?
+[Are, tree, frogs, a, type, of, amphibian, ?]
+[VBP, NN, NNS, DT, NN, IN, NN, .]
+
+37
+What is the birth name of Angela Merkel?
+[What, is, the, birth, name, of, Angela, Merkel, ?]
+[WP, VBZ, DT, NN, NN, IN, NNP, NNP, .]
+
+38
+Give me all Methodist politicians.
+[Give, me, all, Methodist, politicians, .]
+[VB, PRP, DT, JJ, NNS, .]
+
+39
+How often did Jane Fonda marry?
+[How, often, did, Jane, Fonda, marry, ?]
+[WRB, RB, VBD, NNP, NNP, VB, .]
+
+40
+Give me all Australian nonprofit organizations.
+[Give, me, all, Australian, nonprofit, organizations, .]
+[VB, PRP, DT, JJ, JJ, NNS, .]
+
+41
+In which military conflicts did Lawrence of Arabia participate?
+[In, which, military, conflicts, did, Lawrence, of, Arabia, participate, ?]
+[IN, WDT, JJ, NNS, VBD, NNP, IN, NNP, VB, .]
+
+42
+Who developed Minecraft?
+[Who, developed, Minecraft, ?]
+[WP, VBD, NNP, .]
+
+43
+What is the melting point of copper?
+[What, is, the, melting, point, of, copper, ?]
+[WP, VBZ, DT, JJ, NN, IN, NN, .]
+
+44
+Give me all sister cities of Brno.
+[Give, me, all, sister, cities, of, Brno, .]
+[VB, PRP, DT, NN, NNS, IN, NNP, .]
+
+45
+How many inhabitants does Maribor have?
+[How, many, inhabitants, does, Maribor, have, ?]
+[WRB, JJ, NNS, VBZ, NNP, VB, .]
+
+46
+Give me all companies in Munich.
+[Give, me, all, companies, in, Munich, .]
+[VB, PRP, DT, NNS, IN, NNP, .]
+
+47
+How tall is Claudia Schiffer?
+[How, tall, is, Claudia, Schiffer, ?]
+[WRB, JJ, VBZ, NNP, NNP, .]
+
+48
+List all games by GMT.
+[List, all, games, by, GMT, .]
+[VB, DT, NNS, IN, NNP, .]
+
+49
+Who founded Intel?
+[Who, founded, Intel, ?]
+[WP, VBD, NNP, .]
+
+50
+Who is the husband of Amanda Palmer?
+[Who, is, the, husband, of, Amanda, Palmer, ?]
+[WP, VBZ, DT, NN, IN, NNP, NNP, .]
+
+51
+Give me all breeds of the German Shepherd dog.
+[Give, me, all, breeds, of, the, German, Shepherd, dog, .]
+[VB, PRP, DT, NNS, IN, DT, JJ, NNP, NN, .]
+
+52
+Which cities does the Weser flow through?
+[Which, cities, does, the, Weser, flow, through, ?]
+[WDT, NNS, VBZ, DT, NNP, NN, IN, .]
+
+53
+Which countries are connected by the Rhine?
+[Which, countries, are, connected, by, the, Rhine, ?]
+[WDT, NNS, VBP, VBN, IN, DT, NNP, .]
+
+54
+Which professional surfers were born in Australia?
+[Which, professional, surfers, were, born, in, Australia, ?]
+[WDT, JJ, NNS, VBD, VBN, IN, NNP, .]
+
+55
+What is the average temperature on Hawaii?
+[What, is, the, average, temperature, on, Hawaii, ?]
+[WP, VBZ, DT, JJ, NN, IN, NNP, .]
+
+56
+In which UK city are the headquarters of the MI6?
+[In, which, UK, city, are, the, headquarters, of, the, MI6, ?]
+[IN, WDT, NNP, NN, VBP, DT, NN, IN, DT, NN, .]
+
+57
+Which other weapons did the designer of the Uzi develop?
+[Which, other, weapons, did, the, designer, of, the, Uzi, develop, ?]
+[WDT, JJ, NNS, VBD, DT, NN, IN, DT, NNP, VB, .]
+
+58
+Who created Goofy?
+[Who, created, Goofy, ?]
+[WP, VBD, NNP, .]
+
+59
+Was the Cuban Missile Crisis earlier than the Bay of Pigs Invasion?
+[Was, the, Cuban, Missile, Crisis, earlier, than, the, Bay, of, Pigs, Invasion, ?]
+[VBD, DT, JJ, NNP, NNP, JJR, IN, DT, NNP, IN, NNP, NNP, .]
+
+60
+Give me all islands that belong to Japan.
+[Give, me, all, islands, that, belong, to, Japan, .]
+[VB, PRP, DT, NNS, WDT, VBP, TO, NNP, .]
+
+61
+Who invented the zipper?
+[Who, invented, the, zipper, ?]
+[WP, VBD, DT, NN, .]
+
+62
+What is the ruling party in Lisbon?
+[What, is, the, ruling, party, in, Lisbon, ?]
+[WP, VBZ, DT, VBG, NN, IN, NNP, .]
+
+63
+What are the nicknames of San Francisco?
+[What, are, the, nicknames, of, San, Francisco, ?]
+[WP, VBP, DT, NNS, IN, NNP, NNP, .]
+
+64
+Which Greek goddesses dwelt on Mount Olympus?
+[Which, Greek, goddesses, dwelt, on, Mount, Olympus, ?]
+[WDT, JJ, NNS, VBP, IN, NNP, NNP, .]
+
+65
+When were the Hells Angels founded?
+[When, were, the, Hells, Angels, founded, ?]
+[WRB, VBD, DT, NNP, NNPS, VBN, .]
+
+66
+Give me all Apollo 14 astronauts.
+[Give, me, all, Apollo, 14, astronauts, .]
+[VB, PRP, DT, NNP, CD, NNS, .]
+
+67
+What is the time zone of Salt Lake City?
+[What, is, the, time, zone, of, Salt, Lake, City, ?]
+[WP, VBZ, DT, NN, NN, IN, NNP, NNP, NNP, .]
+
+68
+Which U.S. states are in the same time zone as Utah?
+[Which, U.S., states, are, in, the, same, time, zone, as, Utah, ?]
+[WDT, NNP, NNS, VBP, IN, DT, JJ, NN, NN, IN, NNP, .]
+
+69
+Give me the capitals of all countries in Africa.
+[Give, me, the, capitals, of, all, countries, in, Africa, .]
+[VB, PRP, DT, NNS, IN, DT, NNS, IN, NNP, .]
+
+70
+Give me a list of all lakes in Denmark.
+[Give, me, a, list, of, all, lakes, in, Denmark, .]
+[VB, PRP, DT, NN, IN, DT, NNS, IN, NNP, .]
+
+71
+How many missions does the Soyuz programme have?
+[How, many, missions, does, the, Soyuz, programme, have, ?]
+[WRB, JJ, NNS, VBZ, DT, NNP, NN, VB, .]
+
+72
+Did Socrates influence Aristotle?
+[Did, Socrates, influence, Aristotle, ?]
+[VBD, NNP, VB, NNP, .]
+
+73
+Give me all Danish movies.
+[Give, me, all, Danish, movies, .]
+[VB, PRP, DT, JJ, NNS, .]
+
+74
+Give me all launch pads operated by NASA.
+[Give, me, all, launch, pads, operated, by, NASA, .]
+[VB, PRP, DT, NN, NNS, VBN, IN, NNP, .]
+
+75
+Which instruments does Cat Stevens play?
+[Which, instruments, does, Cat, Stevens, play, ?]
+[WDT, NNS, VBZ, NNP, NNP, VB, .]
+
+76
+Which ships were called after Benjamin Franklin?
+[Which, ships, were, called, after, Benjamin, Franklin, ?]
+[WDT, NNS, VBD, VBN, IN, NNP, NNP, .]
+
+77
+Who are the parents of the wife of Juan Carlos I?
+[Who, are, the, parents, of, the, wife, of, Juan, Carlos, I, ?]
+[WP, VBP, DT, NNS, IN, DT, NN, IN, NNP, NNP, PRP, .]
+
+78
+How many employees does Google have?
+[How, many, employees, does, Google, have, ?]
+[WRB, JJ, NNS, VBZ, NNP, VB, .]
+
+79
+Did Tesla win a nobel prize in physics?
+[Did, Tesla, win, a, nobel, prize, in, physics, ?]
+[VBD, NNP, VB, DT, JJ, NN, IN, NNS, .]
+
+80
+Give me all cities in New Jersey with more than 100000 inhabitants.
+[Give, me, all, cities, in, New, Jersey, with, more, than, 100000, inhabitants, .]
+[VB, PRP, DT, NNS, IN, NNP, NNP, IN, JJR, IN, CD, NNS, .]
+
+81
+Is Rita Wilson the wife of Tom Hanks?
+[Is, Rita, Wilson, the, wife, of, Tom, Hanks, ?]
+[VBZ, NNP, NNP, DT, NN, IN, NNP, NNP, .]
+
+82
+When was the Statue of Liberty built?
+[When, was, the, Statue, of, Liberty, built, ?]
+[WRB, VBD, DT, NNP, IN, NNP, VBN, .]
+
+83
+In which U.S. state is Fort Knox located?
+[In, which, U.S., state, is, Fort, Knox, located, ?]
+[IN, WDT, NNP, NN, VBZ, NNP, NNP, JJ, .]
+
+84
+How many children did Benjamin Franklin have?
+[How, many, children, did, Benjamin, Franklin, have, ?]
+[WRB, JJ, NNS, VBD, NNP, NNP, VB, .]
+
+85
+When did Michael Jackson die?
+[When, did, Michael, Jackson, die, ?]
+[WRB, VBD, NNP, NNP, VB, .]
+
+86
+Which Chess players died in the same place they were born in?
+[Which, Chess, players, died, in, the, same, place, they, were, born, in, ?]
+[WDT, NN, NNS, VBD, IN, DT, JJ, NN, PRP, VBD, VBN, IN, .]
+
+87
+List the children of Margaret Thatcher.
+[List, the, children, of, Margaret, Thatcher, .]
+[VB, DT, NNS, IN, NNP, NNP, .]
+
+88
+Who was called Frank The Tank?
+[Who, was, called, Frank, The, Tank, ?]
+[WP, VBD, VBN, NNP, NNP, NNP, .]
+
+89
+Was Margaret Thatcher a chemist?
+[Was, Margaret, Thatcher, a, chemist, ?]
+[VBD, NNP, NNP, DT, NN, .]
+
+90
+Was Marc Chagall a jew?
+[Was, Marc, Chagall, a, jew, ?]
+[VBD, NNP, NNP, DT, NN, .]
+
+91
+Which museum exhibits The Scream by Munch?
+[Which, museum, exhibits, The, Scream, by, Munch, ?]
+[WDT, NN, VBZ, DT, NN, IN, NNP, .]
+
+92
+Give me all books by William Goldman with more than 300 pages.
+[Give, me, all, books, by, William, Goldman, with, more, than, 300, pages, .]
+[VB, PRP, DT, NNS, IN, NNP, NNP, IN, JJR, IN, CD, NNS, .]
+
+93
+Which books by Kerouac were published by Viking Press?
+[Which, books, by, Kerouac, were, published, by, Viking, Press, ?]
+[WDT, NNS, IN, NNP, VBD, VBN, IN, JJ, NNP, .]
+
+94
+Give me a list of all American inventions.
+[Give, me, a, list, of, all, American, inventions, .]
+[VB, PRP, DT, NN, IN, DT, JJ, NNS, .]
+
+95
+How high is the Mount Everest?
+[How, high, is, the, Mount, Everest, ?]
+[WRB, JJ, VBZ, DT, NNP, NNP, .]
+
+96
+Who created the comic Captain America?
+[Who, created, the, comic, Captain, America, ?]
+[WP, VBD, DT, JJ, NNP, NNP, .]
+
+97
+How many people live in the capital of Australia?
+[How, many, people, live, in, the, capital, of, Australia, ?]
+[WRB, JJ, NNS, VBP, IN, DT, NN, IN, NNP, .]
+
+98
+What is the largest city in Australia?
+[What, is, the, largest, city, in, Australia, ?]
+[WP, VBZ, DT, JJS, NN, IN, NNP, .]
+
+99
+Who composed the music for Harold and Maude?
+[Who, composed, the, music, for, Harold, and, Maude, ?]
+[WP, VBN, DT, NN, IN, NNP, CC, NNP, .]
+
+100
+Which films starring Clint Eastwood did he direct himself?
+[Which, films, starring, Clint, Eastwood, did, he, direct, himself, ?]
+[WDT, NNS, VBG, NNP, NNP, VBD, PRP, VB, PRP, .]
+
+101
+In which city was the former Dutch queen Juliana buried?
+[In, which, city, was, the, former, Dutch, queen, Juliana, buried, ?]
+[IN, WDT, NN, VBD, DT, JJ, NNP, NN, NNP, VBN, .]
+
+102
+Is Egypts largest city also its capital?
+[Is, Egypts, largest, city, also, its, capital, ?]
+[VBZ, RB, JJS, NN, RB, PRP$, NN, .]
+
+103
+Where is the residence of the prime minister of Spain?
+[Where, is, the, residence, of, the, prime, minister, of, Spain, ?]
+[WRB, VBZ, DT, NN, IN, DT, JJ, NN, IN, NNP, .]
+
+104
+Which U.S. state has the abbreviation MN?
+[Which, U.S., state, has, the, abbreviation, MN, ?]
+[WDT, NNP, NN, VBZ, DT, NN, NN, .]
+
+105
+Show me all songs from Bruce Springsteen released between 1980 and 1990.
+[Show, me, all, songs, from, Bruce, Springsteen, released, between, 1980, and, 1990, .]
+[NN, PRP, DT, NNS, IN, NNP, NNP, VBD, IN, CD, CC, CD, .]
+
+106
+Which movies did Kurosawa direct?
+[Which, movies, did, Kurosawa, direct, ?]
+[WDT, NNS, VBD, NNP, VB, .]
+
+107
+What is the founding year of the brewery that produces Pilsner Urquell?
+[What, is, the, founding, year, of, the, brewery, that, produces, Pilsner, Urquell, ?]
+[WP, VBZ, DT, NN, NN, IN, DT, NN, WDT, VBZ, NNP, NNP, .]
+
+108
+Who wrote the lyrics for the Polish national anthem?
+[Who, wrote, the, lyrics, for, the, Polish, national, anthem, ?]
+[WP, VBD, DT, NNS, IN, DT, JJ, JJ, NN, .]
+
+109
+Give me all B-sides of the Ramones.
+[Give, me, all, B-sides, of, the, Ramones, .]
+[VB, PRP, DT, NNS, IN, DT, NNPS, .]
+
+110
+Who painted The Storm on the Sea of Galilee?
+[Who, painted, The, Storm, on, the, Sea, of, Galilee, ?]
+[WP, VBD, DT, NN, IN, DT, NN, IN, NNP, .]
+
+111
+Which country does the creator of Miffy come from?
+[Which, country, does, the, creator, of, Miffy, come, from, ?]
+[WDT, NN, VBZ, DT, NN, IN, NNP, VB, IN, .]
+
+112
+For which label did Elvis record his first album?
+[For, which, label, did, Elvis, record, his, first, album, ?]
+[IN, WDT, NN, VBD, NNP, VB, PRP$, JJ, NN, .]
+
+113
+Give me the birthdays of all actors of the television show Charmed.
+[Give, me, the, birthdays, of, all, actors, of, the, television, show, Charmed, .]
+[VB, PRP, DT, NNS, IN, DT, NNS, IN, DT, NN, NN, NNP, .]
+
+114
+How many employees does IBM have?
+[How, many, employees, does, IBM, have, ?]
+[WRB, JJ, NNS, VBZ, NNP, VB, .]
+
+115
+Which states border Illinois?
+[Which, states, border, Illinois, ?]
+[WDT, NNS, VBP, NNP, .]
+
+116
+In which country is the Limerick Lake?
+[In, which, country, is, the, Limerick, Lake, ?]
+[IN, WDT, NN, VBZ, DT, NNP, NNP, .]
+
+117
+Which television shows were created by John Cleese?
+[Which, television, shows, were, created, by, John, Cleese, ?]
+[WDT, NN, NNS, VBD, VBN, IN, NNP, NNP, .]
+
+118
+Which mountain is the highest after the Annapurna?
+[Which, mountain, is, the, highest, after, the, Annapurna, ?]
+[WDT, NN, VBZ, DT, JJS, IN, DT, NNP, .]
+
+119
+In which films directed by Garry Marshall was Julia Roberts starring?
+[In, which, films, directed, by, Garry, Marshall, was, Julia, Roberts, starring, ?]
+[IN, WDT, NNS, VBN, IN, NNP, NNP, VBD, NNP, NNP, VBG, .]
+
+120
+Which bridges are of the same type as the Manhattan Bridge?
+[Which, bridges, are, of, the, same, type, as, the, Manhattan, Bridge, ?]
+[WDT, NNS, VBP, IN, DT, JJ, NN, IN, DT, NNP, NNP, .]
+
+121
+Was U.S. president Jackson involved in a war?
+[Was, U.S., president, Jackson, involved, in, a, war, ?]
+[VBD, NNP, NN, NNP, VBN, IN, DT, NN, .]
+
+122
+Give me all communist countries.
+[Give, me, all, communist, countries, .]
+[VB, PRP, DT, JJ, NNS, .]
+
+123
+Which awards did Douglas Hofstadter win?
+[Which, awards, did, Douglas, Hofstadter, win, ?]
+[WDT, NNS, VBD, NNP, NNP, VB, .]
+
+124
+Who is the daughter of Robert Kennedy married to?
+[Who, is, the, daughter, of, Robert, Kennedy, married, to, ?]
+[WP, VBZ, DT, NN, IN, NNP, NNP, VBN, TO, .]
+
+125
+Which U.S. state has the highest population density?
+[Which, U.S., state, has, the, highest, population, density, ?]
+[WDT, NNP, NN, VBZ, DT, JJS, NN, NN, .]
+
+126
+What is the currency of the Czech Republic?
+[What, is, the, currency, of, the, Czech, Republic, ?]
+[WP, VBZ, DT, NN, IN, DT, NNP, NNP, .]
+
+127
+Which countries adopted the Euro?
+[Which, countries, adopted, the, Euro, ?]
+[WDT, NNS, VBD, DT, NNP, .]
+
+128
+What is the area code of Berlin?
+[What, is, the, area, code, of, Berlin, ?]
+[WP, VBZ, DT, NN, NN, IN, NNP, .]
+
+129
+Which countries have more than two official languages?
+[Which, countries, have, more, than, two, official, languages, ?]
+[WDT, NNS, VBP, JJR, IN, CD, JJ, NNS, .]
+
+130
+Who is the owner of Rolls-Royce?
+[Who, is, the, owner, of, Rolls-Royce, ?]
+[WP, VBZ, DT, NN, IN, NNP, .]
+
+131
+Through which countries does the Yenisei river flow?
+[Through, which, countries, does, the, Yenisei, river, flow, ?]
+[IN, WDT, NNS, VBZ, DT, NNP, NN, NN, .]
+
+132
+When did Latvia join the EU?
+[When, did, Latvia, join, the, EU, ?]
+[WRB, VBD, NNP, VB, DT, NNP, .]
+
+133
+Which monarchs were married to a German?
+[Which, monarchs, were, married, to, a, German, ?]
+[WDT, NNS, VBD, VBN, TO, DT, JJ, .]
+
+134
+When was the Battle of Gettysburg?
+[When, was, the, Battle, of, Gettysburg, ?]
+[WRB, VBD, DT, NN, IN, NNP, .]
+
+135
+Which river does the Brooklyn Bridge cross?
+[Which, river, does, the, Brooklyn, Bridge, cross, ?]
+[WDT, NN, VBZ, DT, NNP, NNP, VB, .]
+
+136
+What is the highest mountain in Australia?
+[What, is, the, highest, mountain, in, Australia, ?]
+[WP, VBZ, DT, JJS, NN, IN, NNP, .]
+
+137
+Give me all soccer clubs in Spain.
+[Give, me, all, soccer, clubs, in, Spain, .]
+[VB, PRP, DT, NN, NNS, IN, NNP, .]
+
+138
+What is the official language of Suriname?
+[What, is, the, official, language, of, Suriname, ?]
+[WP, VBZ, DT, JJ, NN, IN, NNP, .]
+
+139
+Who is the mayor of Tel Aviv?
+[Who, is, the, mayor, of, Tel, Aviv, ?]
+[WP, VBZ, DT, NN, IN, NNP, NNP, .]
+
+140
+Who designed the Brooklyn Bridge?
+[Who, designed, the, Brooklyn, Bridge, ?]
+[WP, VBD, DT, NNP, NNP, .]
+
+141
+Which telecommunications organizations are located in Belgium?
+[Which, telecommunications, organizations, are, located, in, Belgium, ?]
+[WDT, NNS, NNS, VBP, JJ, IN, NNP, .]
+
+142
+Is Frank Herbert still alive?
+[Is, Frank, Herbert, still, alive, ?]
+[VBZ, NNP, NNP, RB, JJ, .]
+
+143
+What is the highest place of the Urals?
+[What, is, the, highest, place, of, the, Urals, ?]
+[WP, VBZ, DT, JJS, NN, IN, DT, NNS, .]
+
+144
+Who is the editor of Forbes?
+[Who, is, the, editor, of, Forbes, ?]
+[WP, VBZ, DT, NN, IN, NNP, .]
+
+145
+Give me all companies in the advertising industry.
+[Give, me, all, companies, in, the, advertising, industry, .]
+[VB, PRP, DT, NNS, IN, DT, NN, NN, .]
+
+146
+How many countries are there in Europe?
+[How, many, countries, are, there, in, Europe, ?]
+[WRB, JJ, NNS, VBP, EX, IN, NNP, .]
+
+147
+What did Bruce Carver die from?
+[What, did, Bruce, Carver, die, from, ?]
+[WP, VBD, NNP, NNP, VB, IN, .]
+
+148
+Give me all libraries established earlier than 1400.
+[Give, me, all, libraries, established, earlier, than, 1400, .]
+[VB, PRP, DT, NNS, VBN, JJR, IN, CD, .]
+
+149
+Which presidents were born in 1945?
+[Which, presidents, were, born, in, 1945, ?]
+[WDT, NNS, VBD, VBN, IN, CD, .]
+
+150
+Give me all federal chancellors of Germany.
+[Give, me, all, federal, chancellors, of, Germany, .]
+[VB, PRP, DT, JJ, NNS, IN, NNP, .]
+
+151
+Who was the wife of U.S. president Lincoln?
+[Who, was, the, wife, of, U.S., president, Lincoln, ?]
+[WP, VBD, DT, NN, IN, NNP, NN, NNP, .]
+
+152
+Who developed the video game World of Warcraft?
+[Who, developed, the, video, game, World, of, Warcraft, ?]
+[WP, VBD, DT, NN, NN, NN, IN, NNP, .]
+
+153
+What is the official website of Tom Cruise?
+[What, is, the, official, website, of, Tom, Cruise, ?]
+[WP, VBZ, DT, JJ, NN, IN, NNP, NNP, .]
+
+154
+List all episodes of the first season of the HBO television series The Sopranos.
+[List, all, episodes, of, the, first, season, of, the, HBO, television, series, The, Sopranos, .]
+[VB, DT, NNS, IN, DT, JJ, NN, IN, DT, NNP, NN, NN, DT, NNPS, .]
+
+155
+Who produced the most films?
+[Who, produced, the, most, films, ?]
+[WP, VBD, DT, RBS, NNS, .]
+
+156
+Give me all people with first name Jimmy.
+[Give, me, all, people, with, first, name, Jimmy, .]
+[VB, PRP, DT, NNS, IN, JJ, NN, NNP, .]
+
+157
+In which city did John F. Kennedy die?
+[In, which, city, did, John, F., Kennedy, die, ?]
+[IN, WDT, NN, VBD, NNP, NNP, NNP, VB, .]
+
+158
+Is there a video game called Battle Chess?
+[Is, there, a, video, game, called, Battle, Chess, ?]
+[VBZ, EX, DT, NN, NN, VBN, NNP, NNP, .]
+
+159
+Which mountains are higher than the Nanga Parbat?
+[Which, mountains, are, higher, than, the, Nanga, Parbat, ?]
+[WDT, NNS, VBP, JJR, IN, DT, NNP, NNP, .]
+
+160
+Who created Wikipedia?
+[Who, created, Wikipedia, ?]
+[WP, VBD, NNP, .]
+
+161
+Give me all actors starring in Last Action Hero.
+[Give, me, all, actors, starring, in, Last, Action, Hero, .]
+[VB, PRP, DT, NNS, VBG, IN, JJ, NNP, NNP, .]
+
+162
+Which software has been developed by organizations founded in California?
+[Which, software, has, been, developed, by, organizations, founded, in, California, ?]
+[WDT, NN, VBZ, VBN, VBN, IN, NNS, VBN, IN, NNP, .]
+
+163
+Which companies work in the aerospace industry as well as in medicine?
+[Which, companies, work, in, the, aerospace, industry, as, well, as, in, medicine, ?]
+[WDT, NNS, VBP, IN, DT, NN, NN, RB, RB, IN, IN, NN, .]
+
+164
+Is Christian Bale starring in Velvet Goldmine?
+[Is, Christian, Bale, starring, in, Velvet, Goldmine, ?]
+[VBZ, NNP, NNP, VBG, IN, NNP, NNP, .]
+
+165
+Give me the websites of companies with more than 500000 employees.
+[Give, me, the, websites, of, companies, with, more, than, 500000, employees, .]
+[VB, PRP, DT, NNS, IN, NNS, IN, JJR, IN, CD, NNS, .]
+
+166
+Which actors were born in Germany?
+[Which, actors, were, born, in, Germany, ?]
+[WDT, NNS, VBD, VBN, IN, NNP, .]
+
+167
+Which caves have more than 3 entrances?
+[Which, caves, have, more, than, 3, entrances, ?]
+[WDT, NNS, VBP, JJR, IN, CD, NNS, .]
+
+168
+Was the wife of president Lincoln called Mary?
+[Was, the, wife, of, president, Lincoln, called, Mary, ?]
+[VBD, DT, NN, IN, NN, NNP, VBD, NNP, .]
+
+169
+Give me all films produced by Hal Roach.
+[Give, me, all, films, produced, by, Hal, Roach, .]
+[VB, PRP, DT, NNS, VBN, IN, NNP, NNP, .]
+
+170
+Give me all video games published by Mean Hamster Software.
+[Give, me, all, video, games, published, by, Mean, Hamster, Software, .]
+[VB, PRP, DT, NN, NNS, VBN, IN, NN, NNP, NNP, .]
+
+171
+Which languages are spoken in Estonia?
+[Which, languages, are, spoken, in, Estonia, ?]
+[WDT, NNS, VBP, VBN, IN, NNP, .]
+
+172
+How many Aldi stores are there?
+[How, many, Aldi, stores, are, there, ?]
+[WRB, JJ, NNP, NNS, VBP, EX, .]
+
+173
+Which capitals in Europe were host cities of the summer olympic games?
+[Which, capitals, in, Europe, were, host, cities, of, the, summer, olympic, games, ?]
+[WDT, NNS, IN, NNP, VBD, NN, NNS, IN, DT, NN, JJ, NNS, .]
+
+174
+Who was the 16th president of the United States?
+[Who, was, the, 16th, president, of, the, United, States, ?]
+[WP, VBD, DT, JJ, NN, IN, DT, NNP, NNPS, .]
+
+175
+How many films did Hal Roach produce?
+[How, many, films, did, Hal, Roach, produce, ?]
+[WRB, JJ, NNS, VBD, NNP, NNP, VB, .]
+
+176
+Which music albums contain the song Last Christmas?
+[Which, music, albums, contain, the, song, Last, Christmas, ?]
+[WDT, NN, NNS, VBP, DT, NN, JJ, NNP, .]
+
+177
+Give me all books written by Danielle Steel.
+[Give, me, all, books, written, by, Danielle, Steel, .]
+[VB, PRP, DT, NNS, VBN, IN, NNP, NNP, .]
+
+178
+Which airports are located in California, USA?
+[Which, airports, are, located, in, California, ,, USA, ?]
+[WDT, NNS, VBP, JJ, IN, NNP, ,, NNP, .]
+
+179
+Which states of Germany are governed by the Social Democratic Party?
+[Which, states, of, Germany, are, governed, by, the, Social, Democratic, Party, ?]
+[WDT, NNS, IN, NNP, VBP, VBN, IN, DT, NNP, NNP, NNP, .]
+
+180
+Give me all Canadian Grunge record labels.
+[Give, me, all, Canadian, Grunge, record, labels, .]
+[VB, PRP, DT, JJ, NN, NN, NNS, .]
+
+181
+Which country has the most official languages?
+[Which, country, has, the, most, official, languages, ?]
+[WDT, NN, VBZ, DT, RBS, JJ, NNS, .]
+
+182
+In which programming language is GIMP written?
+[In, which, programming, language, is, GIMP, written, ?]
+[IN, WDT, NN, NN, VBZ, NNP, VBN, .]
+
+183
+Who produced films starring Natalie Portman?
+[Who, produced, films, starring, Natalie, Portman, ?]
+[WP, VBD, NNS, VBG, NNP, NNP, .]
+
+184
+Give me all movies with Tom Cruise.
+[Give, me, all, movies, with, Tom, Cruise, .]
+[VB, PRP, DT, NNS, IN, NNP, NNP, .]
+
+185
+In which films did Julia Roberts as well as Richard Gere play?
+[In, which, films, did, Julia, Roberts, as, well, as, Richard, Gere, play, ?]
+[IN, WDT, NNS, VBD, NNP, NNP, RB, RB, IN, NNP, NNP, VB, .]
+
+186
+Give me all female given names.
+[Give, me, all, female, given, names, .]
+[VB, PRP, DT, JJ, JJ, NNS, .]
+
+187
+Who wrote the book The Pillars of the Earth?
+[Who, wrote, the, book, The, Pillars, of, the, Earth, ?]
+[WP, VBD, DT, NN, DT, NNPS, IN, DT, NNP, .]
+
+188
+How many films did Leonardo DiCaprio star in?
+[How, many, films, did, Leonardo, DiCaprio, star, in, ?]
+[WRB, JJ, NNS, VBD, NNP, NNP, NN, IN, .]
+
+189
+Give me all soccer clubs in the Premier League.
+[Give, me, all, soccer, clubs, in, the, Premier, League, .]
+[VB, PRP, DT, NN, NNS, IN, DT, NNP, NNP, .]
+
+190
+In which U.S. state is Mount McKinley located?
+[In, which, U.S., state, is, Mount, McKinley, located, ?]
+[IN, WDT, NNP, NN, VBZ, NNP, NNP, JJ, .]
+
+191
+When was Capcom founded?
+[When, was, Capcom, founded, ?]
+[WRB, VBD, NNP, VBN, .]
+
+192
+Which organizations were founded in 1930?
+[Which, organizations, were, founded, in, 1930, ?]
+[WDT, NNS, VBD, VBN, IN, CD, .]
+
+193
+What is the highest mountain?
+[What, is, the, highest, mountain, ?]
+[WP, VBZ, DT, JJS, NN, .]
+
+194
+Was Natalie Portman born in the United States?
+[Was, Natalie, Portman, born, in, the, United, States, ?]
+[VBD, NNP, NNP, VBN, IN, DT, NNP, NNPS, .]
+
+195
+Which budget did the first movie of Zdenek Sverak have?
+[Which, budget, did, the, first, movie, of, Zdenek, Sverak, have, ?]
+[WDT, NN, VBD, DT, JJ, NN, IN, NNP, NNP, VB, .]
+
+196
+How many big fires struck Paris during the Middle Ages?
+[How, many, big, fires, struck, Paris, during, the, Middle, Ages, ?]
+[WRB, JJ, JJ, NNS, VBD, NNP, IN, DT, NNP, NNPS, .]
+
+197
+Is Pamela Anderson a vegan?
+[Is, Pamela, Anderson, a, vegan, ?]
+[VBZ, NNP, NNP, DT, NN, .]
+
+198
+How often was Michael Jordan divorced?
+[How, often, was, Michael, Jordan, divorced, ?]
+[WRB, RB, VBD, NNP, NNP, VBN, .]
+
+199
+What is the most beautiful painting?
+[What, is, the, most, beautiful, painting, ?]
+[WP, VBZ, DT, RBS, JJ, NN, .]
+
+200
+Give me all animal species that live in the Amazon rainforest.
+[Give, me, all, animal, species, that, live, in, the, Amazon, rainforest, .]
+[VB, PRP, DT, NN, NNS, WDT, VBP, IN, DT, NNP, NN, .]
+
+201
+How many inhabitants does the largest city in Canada have?
+[How, many, inhabitants, does, the, largest, city, in, Canada, have, ?]
+[WRB, JJ, NNS, VBZ, DT, JJS, NN, IN, NNP, VB, .]
+
+202
+In which studio did the Beatles record their first album?
+[In, which, studio, did, the, Beatles, record, their, first, album, ?]
+[IN, WDT, NN, VBD, DT, NNPS, VB, PRP$, JJ, NN, .]
+
+203
+Who was the first to climb Mount Everest?
+[Who, was, the, first, to, climb, Mount, Everest, ?]
+[WP, VBD, DT, JJ, TO, VB, NNP, NNP, .]
+
+204
+How many programming languages are there?
+[How, many, programming, languages, are, there, ?]
+[WRB, JJ, NN, NNS, VBP, EX, .]
+
+205
+What is the official color of the University of Oxford?
+[What, is, the, official, color, of, the, University, of, Oxford, ?]
+[WP, VBZ, DT, JJ, NN, IN, DT, NNP, IN, NNP, .]
+
+206
+How many gold medals did Michael Phelps win at the 2008 Olympics?
+[How, many, gold, medals, did, Michael, Phelps, win, at, the, 2008, Olympics, ?]
+[WRB, JJ, NN, NNS, VBD, NNP, NNP, VB, IN, DT, CD, NNPS, .]
+
+207
+To which artistic movement did the painter of The Three Dancers belong?
+[To, which, artistic, movement, did, the, painter, of, The, Three, Dancers, belong, ?]
+[TO, WDT, JJ, NN, VBD, DT, NN, IN, DT, CD, NNS, VB, .]
+
+208
+Give me all animals that are extinct.
+[Give, me, all, animals, that, are, extinct, .]
+[VB, PRP, DT, NNS, WDT, VBP, JJ, .]
+
+209
+Does Abraham Lincoln's death place have a website?
+[Does, Abraham, Lincoln, 's, death, place, have, a, website, ?]
+[VBZ, NNP, NNP, POS, NN, NN, VBP, DT, NN, .]
+
+210
+How deep is Lake Placid?
+[How, deep, is, Lake, Placid, ?]
+[WRB, JJ, VBZ, NNP, NNP, .]
+
+211
+Give me the grandchildren of Bruce Lee.
+[Give, me, the, grandchildren, of, Bruce, Lee, .]
+[VB, PRP, DT, NNS, IN, NNP, NNP, .]
+
+212
+Who is the youngest Darts player?
+[Who, is, the, youngest, Darts, player, ?]
+[WP, VBZ, DT, JJS, NNS, NN, .]
+
+213
+Where was Bach born?
+[Where, was, Bach, born, ?]
+[WRB, VBD, NNP, VBN, .]
+
+214
+In which countries can you pay using the West African CFA franc?
+[In, which, countries, can, you, pay, using, the, West, African, CFA, franc, ?]
+[IN, WDT, NNS, MD, PRP, VB, VBG, DT, NNP, NNP, NNP, NN, .]
+
+215
+What are the top-10 action role-playing video games according to IGN?
+[What, are, the, top-10, action, role-playing, video, games, according, to, IGN, ?]
+[WP, VBP, DT, JJ, NN, JJ, NN, NNS, VBG, TO, NNP, .]
+
+216
+What is the most frequent cause of death?
+[What, is, the, most, frequent, cause, of, death, ?]
+[WP, VBZ, DT, RBS, JJ, NN, IN, NN, .]
+
+217
+Does the Isar flow into a lake?
+[Does, the, Isar, flow, into, a, lake, ?]
+[VBZ, DT, NN, NN, IN, DT, NN, .]
+
+218
+Give me all films produced by Steven Spielberg with a budget of at least $80 million.
+[Give, me, all, films, produced, by, Steven, Spielberg, with, a, budget, of, at, least, $, 80, million, .]
+[VB, PRP, DT, NNS, VBN, IN, NNP, NNP, IN, DT, NN, IN, IN, JJS, $, CD, CD, .]
+
+219
+Give me all writers that won the Nobel Prize in literature.
+[Give, me, all, writers, that, won, the, Nobel, Prize, in, literature, .]
+[VB, PRP, DT, NNS, WDT, VBD, DT, NNP, NNP, IN, NN, .]
+
+220
+Give me all taikonauts.
+[Give, me, all, taikonauts, .]
+[VB, PRP, DT, NNS, .]
+
+221
+How many pages does War and Peace have?
+[How, many, pages, does, War, and, Peace, have, ?]
+[WRB, JJ, NNS, VBZ, NNP, CC, NNP, VB, .]
+
+222
+What is the bridge with the longest span?
+[What, is, the, bridge, with, the, longest, span, ?]
+[WP, VBZ, DT, NN, IN, DT, JJS, NN, .]
+
+223
+Give me all actors called Baldwin.
+[Give, me, all, actors, called, Baldwin, .]
+[VB, PRP, DT, NNS, VBN, NNP, .]
+
+224
+Who is the tallest player of the Atlanta Falcons?
+[Who, is, the, tallest, player, of, the, Atlanta, Falcons, ?]
+[WP, VBZ, DT, JJS, NN, IN, DT, NNP, NNPS, .]
+
+225
+Which rivers flow into a German lake?
+[Which, rivers, flow, into, a, German, lake, ?]
+[WDT, NNS, VBP, IN, DT, JJ, NN, .]
+
+226
+How many James Bond movies are there?
+[How, many, James, Bond, movies, are, there, ?]
+[WRB, JJ, NNP, NNP, NNS, VBP, EX, .]
+
+227
+Which rockets were launched from Baikonur?
+[Which, rockets, were, launched, from, Baikonur, ?]
+[WDT, NNS, VBD, VBN, IN, NNP, .]
+
+228
+Which pope succeeded John Paul II?
+[Which, pope, succeeded, John, Paul, II, ?]
+[WDT, NN, VBD, NNP, NNP, NNP, .]
+
+229
+Give me all Dutch parties.
+[Give, me, all, Dutch, parties, .]
+[VB, PRP, DT, JJ, NNS, .]
+
+230
+When is Halloween?
+[When, is, Halloween, ?]
+[WRB, VBZ, NNP, .]
+
+231
+Give me all Swedish oceanographers.
+[Give, me, all, Swedish, oceanographers, .]
+[VB, PRP, DT, JJ, NNS, .]
+
+232
+Give me all actors who were born in Berlin.
+[Give, me, all, actors, who, were, born, in, Berlin, .]
+[VB, PRP, DT, NNS, WP, VBD, VBN, IN, NNP, .]
+
+233
+What was the last movie with Alec Guinness?
+[What, was, the, last, movie, with, Alec, Guinness, ?]
+[WP, VBD, DT, JJ, NN, IN, NNP, NNP, .]
+
+234
+Which poet wrote the most books?
+[Which, poet, wrote, the, most, books, ?]
+[WDT, NN, VBD, DT, RBS, NNS, .]
+
+235
+How many languages are spoken in Colombia?
+[How, many, languages, are, spoken, in, Colombia, ?]
+[WRB, JJ, NNS, VBP, VBN, IN, NNP, .]
+
+236
+What does IYCM stand for?
+[What, does, IYCM, stand, for, ?]
+[WP, VBZ, NNP, VB, IN, .]
+
+237
+What was Brazil's lowest rank in the FIFA World Ranking?
+[What, was, Brazil, 's, lowest, rank, in, the, FIFA, World, Ranking, ?]
+[WP, VBD, NNP, POS, JJS, NN, IN, DT, NNP, NNP, NNP, .]
+
+238
+Give me the capitals of all countries that the Himalayas run through.
+[Give, me, the, capitals, of, all, countries, that, the, Himalayas, run, through, .]
+[VB, PRP, DT, NNS, IN, DT, NNS, IN, DT, NNPS, VBP, IN, .]
+
+239
+Which actor played Chewbacca?
+[Which, actor, played, Chewbacca, ?]
+[WDT, NN, VBD, NNP, .]
+
+240
+Which ingredients do I need for carrot cake?
+[Which, ingredients, do, I, need, for, carrot, cake, ?]
+[WDT, NNS, VBP, PRP, VB, IN, NN, NN, .]
+
+241
+Is Cola a beverage?
+[Is, Cola, a, beverage, ?]
+[VBZ, NNP, DT, NN, .]
+
+242
+Who has Tom Cruise been married to?
+[Who, has, Tom, Cruise, been, married, to, ?]
+[WP, VBZ, NNP, NNP, VBN, VBN, TO, .]
+
+243
+Which of Tim Burton's films had the highest budget?
+[Which, of, Tim, Burton, 's, films, had, the, highest, budget, ?]
+[WDT, IN, NNP, NNP, POS, NNS, VBD, DT, JJS, NN, .]
+
+244
+How heavy is Jupiter's lightest moon?
+[How, heavy, is, Jupiter, 's, lightest, moon, ?]
+[WRB, JJ, VBZ, NNP, POS, JJS, NN, .]
+
+245
+Which actor was casted in the most movies?
+[Which, actor, was, casted, in, the, most, movies, ?]
+[WDT, NN, VBD, VBN, IN, DT, RBS, NNS, .]
+
+246
+Is James Bond married?
+[Is, James, Bond, married, ?]
+[VBZ, NNP, NNP, VBN, .]
+
+247
+Give me all Australian metalcore bands.
+[Give, me, all, Australian, metalcore, bands, .]
+[VB, PRP, DT, JJ, NN, NNS, .]
+
+248
+Give me all actors who were born in Paris after 1950.
+[Give, me, all, actors, who, were, born, in, Paris, after, 1950, .]
+[VB, PRP, DT, NNS, WP, VBD, VBN, IN, NNP, IN, CD, .]
+
+249
+When was Carlo Giuliani shot?
+[When, was, Carlo, Giuliani, shot, ?]
+[WRB, VBD, NNP, NNP, NN, .]
+
+250
+Who are the four youngest MVP basketball players?
+[Who, are, the, four, youngest, MVP, basketball, players, ?]
+[WP, VBP, DT, CD, JJS, NN, NN, NNS, .]
+
+251
+Which companies have more than 1 million employees?
+[Which, companies, have, more, than, 1, million, employees, ?]
+[WDT, NNS, VBP, JJR, IN, CD, CD, NNS, .]
+
+252
+Give all swimmers that were born in Moscow.
+[Give, all, swimmers, that, were, born, in, Moscow, .]
+[VB, DT, NNS, WDT, VBD, VBN, IN, NNP, .]
+
+253
+Who was called Rodzilla?
+[Who, was, called, Rodzilla, ?]
+[WP, VBD, VBN, NNP, .]
+
+254
+Show me the book that Muhammad Ali wrote.
+[Show, me, the, book, that, Muhammad, Ali, wrote, .]
+[NN, PRP, DT, NN, WDT, NNP, NNP, VBD, .]
+
+255
+How many museums does Paris have?
+[How, many, museums, does, Paris, have, ?]
+[WRB, JJ, NNS, VBZ, NNP, VB, .]
+
+256
+Which city has the most inhabitants?
+[Which, city, has, the, most, inhabitants, ?]
+[WDT, NN, VBZ, DT, RBS, NNS, .]
+
+257
+Which city has the least inhabitants?
+[Which, city, has, the, least, inhabitants, ?]
+[WDT, NN, VBZ, DT, JJS, NNS, .]
+
+258
+Give me all the TV shows with Neil Patrick Harris.
+[Give, me, all, the, TV, shows, with, Neil, Patrick, Harris, .]
+[VB, PRP, PDT, DT, NN, VBZ, IN, NNP, NNP, NNP, .]
+
+259
+Who wrote The Hunger Games?
+[Who, wrote, The, Hunger, Games, ?]
+[WP, VBD, DT, NNP, NNPS, .]
+
+260
+Show a list of soccer clubs that play in the Bundesliga.
+[Show, a, list, of, soccer, clubs, that, play, in, the, Bundesliga, .]
+[NN, DT, NN, IN, NN, NNS, WDT, VBP, IN, DT, NNP, .]
+
+261
+What country is Mount Everest in?
+[What, country, is, Mount, Everest, in, ?]
+[WDT, NN, VBZ, NNP, NNP, IN, .]
+
+262
+Who is the founder of Penguin Books?
+[Who, is, the, founder, of, Penguin, Books, ?]
+[WP, VBZ, DT, NN, IN, NNP, NNPS, .]
+
+263
+Which programming languages influenced Javascript?
+[Which, programming, languages, influenced, Javascript, ?]
+[WDT, NN, NNS, VBD, NNP, .]
+
+264
+Did Che Guevara have children?
+[Did, Che, Guevara, have, children, ?]
+[VBD, NNP, NNP, VBP, NNS, .]
+
+265
+List all the musicals with music by Elton John.
+[List, all, the, musicals, with, music, by, Elton, John, .]
+[VB, PDT, DT, NNS, IN, NN, IN, NNP, NNP, .]
+
+266
+Show me all the breweries in Australia.
+[Show, me, all, the, breweries, in, Australia, .]
+[NN, PRP, PDT, DT, NNS, IN, NNP, .]
+
+267
+When was the Titanic completed?
+[When, was, the, Titanic, completed, ?]
+[WRB, VBD, DT, NNP, VBN, .]
+
+268
+How much did Pulp Fiction cost?
+[How, much, did, Pulp, Fiction, cost, ?]
+[WRB, RB, VBD, NNP, NNP, VB, .]
+
+269
+How many airlines are there?
+[How, many, airlines, are, there, ?]
+[WRB, JJ, NNS, VBP, EX, .]
+
+270
+Who played Agent Smith in Matrix?
+[Who, played, Agent, Smith, in, Matrix, ?]
+[WP, VBD, NNP, NNP, IN, NNP, .]
+
+271
+How much carbs does peanut butter have?
+[How, much, carbs, does, peanut, butter, have, ?]
+[WRB, JJ, NNS, VBZ, NN, NN, VB, .]
+
+272
+Which book has the most pages?
+[Which, book, has, the, most, pages, ?]
+[WDT, NN, VBZ, DT, RBS, NNS, .]
+
+273
+Which bridges cross the Seine?
+[Which, bridges, cross, the, Seine, ?]
+[WDT, NNS, VBP, DT, NNP, .]
+
+274
+Who is the mayor of the capital of French Polynesia?
+[Who, is, the, mayor, of, the, capital, of, French, Polynesia, ?]
+[WP, VBZ, DT, NN, IN, DT, NN, IN, JJ, NN, .]
+
+275
+When did Dracula's creator die?
+[When, did, Dracula, 's, creator, die, ?]
+[WRB, VBD, NNP, POS, NN, VB, .]
+
+276
+What is the location of the Houses of Parliament?
+[What, is, the, location, of, the, Houses, of, Parliament, ?]
+[WP, VBZ, DT, NN, IN, DT, NNS, IN, NNP, .]
+
+277
+Show me all English Gothic buildings in Kent.
+[Show, me, all, English, Gothic, buildings, in, Kent, .]
+[NN, PRP, DT, JJ, JJ, NNS, IN, NNP, .]
+
+278
+Who was the pope that founded the Vatican Television?
+[Who, was, the, pope, that, founded, the, Vatican, Television, ?]
+[WP, VBD, DT, NN, WDT, VBD, DT, NNP, NNP, .]
+
+279
+What airlines are part of the SkyTeam alliance?
+[What, airlines, are, part, of, the, SkyTeam, alliance, ?]
+[WDT, NNS, VBP, NN, IN, DT, NNP, NN, .]
+
+280
+What is the total population of Melbourne, Florida?
+[What, is, the, total, population, of, Melbourne, ,, Florida, ?]
+[WP, VBZ, DT, JJ, NN, IN, NNP, ,, NNP, .]
+
+281
+Which airports does Air China serve?
+[Which, airports, does, Air, China, serve, ?]
+[WDT, NNS, VBZ, NNP, NNP, VB, .]
+
+282
+In which year was Rachel Stevens born?
+[In, which, year, was, Rachel, Stevens, born, ?]
+[IN, WDT, NN, VBD, NNP, NNP, VBN, .]
+
+283
+Where was JFK assassinated?
+[Where, was, JFK, assassinated, ?]
+[WRB, VBD, NNP, VBN, .]
+
+284
+How many politicians graduated from Columbia University?
+[How, many, politicians, graduated, from, Columbia, University, ?]
+[WRB, JJ, NNS, VBD, IN, NNP, NNP, .]
+
+285
+Which scientist is known for the Manhattan Project and the Nobel Peace Prize?
+[Which, scientist, is, known, for, the, Manhattan, Project, and, the, Nobel, Peace, Prize, ?]
+[WDT, NN, VBZ, VBN, IN, DT, NNP, NNP, CC, DT, NNP, NNP, NNP, .]
+
+286
+What is the highest volcano in Africa?
+[What, is, the, highest, volcano, in, Africa, ?]
+[WP, VBZ, DT, JJS, NN, IN, NNP, .]
+
+287
+Which beer originated in Ireland?
+[Which, beer, originated, in, Ireland, ?]
+[WDT, NN, VBD, IN, NNP, .]
+
+288
+What are the specialities of the UNC Health Care?
+[What, are, the, specialities, of, the, UNC, Health, Care, ?]
+[WP, VBP, DT, NNS, IN, DT, NNP, NNP, NNP, .]
+
+289
+Who is the owner of Facebook?
+[Who, is, the, owner, of, Facebook, ?]
+[WP, VBZ, DT, NN, IN, NNP, .]
+
+290
+From which region is the Melon de Bourgogne?
+[From, which, region, is, the, Melon, de, Bourgogne, ?]
+[IN, WDT, NN, VBZ, DT, NNP, IN, NNP, .]
+
+291
+Who was influenced by Socrates?
+[Who, was, influenced, by, Socrates, ?]
+[WP, VBD, VBN, IN, NNP, .]
+
+292
+Who was president of Pakistan in 1978?
+[Who, was, president, of, Pakistan, in, 1978, ?]
+[WP, VBD, NN, IN, NNP, IN, CD, .]
+
+293
+Give me English actors starring in Lovesick.
+[Give, me, English, actors, starring, in, Lovesick, .]
+[VB, PRP, JJ, NNS, VBG, IN, NNP, .]
+
+294
+Give me all types of eating disorders.
+[Give, me, all, types, of, eating, disorders, .]
+[VB, PRP, DT, NNS, IN, VBG, NNS, .]
+
+295
+Who was married to president Chirac?
+[Who, was, married, to, president, Chirac, ?]
+[WP, VBD, VBN, TO, NN, NNP, .]
+
+296
+What is the largest metropolitan area in Washington state?
+[What, is, the, largest, metropolitan, area, in, Washington, state, ?]
+[WP, VBZ, DT, JJS, JJ, NN, IN, NNP, NN, .]
+
+297
+Where in France is sparkling wine produced?
+[Where, in, France, is, sparkling, wine, produced, ?]
+[WRB, IN, NNP, VBZ, JJ, NN, VBN, .]
+
+298
+Where did Hillel Slovak die?
+[Where, did, Hillel, Slovak, die, ?]
+[WRB, VBD, NNP, NNP, VB, .]
+
+299
+What is the timezone in San Pedro de Atacama?
+[What, is, the, timezone, in, San, Pedro, de, Atacama, ?]
+[WP, VBZ, DT, NN, IN, NNP, NNP, IN, NNP, .]
+
+300
+In which city does the Chile Route 68 end?
+[In, which, city, does, the, Chile, Route, 68, end, ?]
+[IN, WDT, NN, VBZ, DT, NNP, NNP, CD, VB, .]
+

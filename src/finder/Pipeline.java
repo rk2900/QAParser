@@ -1,5 +1,6 @@
 package finder;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Properties;
@@ -19,6 +20,7 @@ import basic.FileOps;
 import paser.Question;
 import paser.QuestionSingle;
 import paser.XMLParser;
+import tool.OutputRedirector;
 import knowledgebase.ClientManagement;
 
 public class Pipeline {
@@ -143,21 +145,35 @@ public class Pipeline {
 
 	public static void main(String[] args) {
 		Pipeline pipeline = new Pipeline();
-		int pseudoId = 5;
+//		int pseudoId = 72;
+//		
+//		QuestionSingle q = pipeline.preProcess(pseudoId);
+//		if(q==null)
+//			return;
+//		System.out.println(q.getWordList());
+//		System.out.println(q.getPOSList());
+//		System.out.println(q.mention);
+//		System.out.println(q.entityPositions);
+//		System.out.println(q.surPredicates);
+//		
+//		System.out.println(pipeline.getLemma(q.question));
 		
-		QuestionSingle q = pipeline.preProcess(pseudoId);
-		if(q==null)
-			return;
-		System.out.println(q.getWordList());
-		System.out.println(q.getPOSList());
-		System.out.println(q.mention);
-		System.out.println(q.entityPositions);
-		System.out.println(q.surPredicates);
-		
-		System.out.println(pipeline.getLemma(q.question));
+		ArrayList<Question> qList = pipeline.xmlParser.getQuestions();
+		System.err.println(qList.size());
+		OutputRedirector.openFileOutput("./data/question-pos.txt");
+		for(int i=1; i<=300; i++) {
+			QuestionSingle qs = pipeline.xmlParser.getQuestionWithPseudoId(i).toQuestionSingle();
+			qs.qPOSList = pipeline.getPOSTag(qs);
+			System.out.println(i);
+			System.out.println(qs.question);
+			System.out.println(qs.getWordList());
+			System.out.println(qs.getPOSList());
+			System.out.println();
+		}
+		OutputRedirector.closeFileOutput();
 		
 	}
-
+	
 	public QuestionSingle preProcess(int pseudoId) {
 		// Read question text and entity inside
 		LinkedList<String> qeLines = FileOps.LoadFilebyLine("./data/q-e/all-mark-wiki-entity.txt");
@@ -210,6 +226,11 @@ public class Pipeline {
 		return tags;
 	}
 	
+	/**
+	 * Get POS tag results of each word in sentence
+	 * @param sentence
+	 * @return list of POS tags
+	 */
 	public LinkedList<String> getPOSTag(String sentence) {
 		LinkedList<String> tags = new LinkedList<String>();
 		Annotation annotation = new Annotation(sentence);
@@ -221,6 +242,11 @@ public class Pipeline {
 		return tags;
 	}
 	
+	/**
+	 * Get lemma form of words in sentence.
+	 * @param sentence
+	 * @return
+	 */
 	public LinkedList<String> getLemma(String sentence) {
 		LinkedList<String> lemma = new LinkedList<>();
 		Annotation annotation = new Annotation(sentence);
