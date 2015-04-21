@@ -139,6 +139,7 @@ public class onestep {
 						sb.append(score);
 						sb.append("\n");
 						LinkedList<RDFNode> resourceNodes = ClientManagement.getNode(entityUri, p);
+						
 						for(String type:types){
 							sb.append("\ttype:\t");
 							sb.append(type);
@@ -147,6 +148,7 @@ public class onestep {
 								if(!resourceNode.isResource()){
 									continue;
 								}
+								
 								String resource = resourceNode.toString();
 								sb.append("\t\t");
 								System.out.println(p+"\t"+resource);
