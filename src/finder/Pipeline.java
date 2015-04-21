@@ -207,6 +207,7 @@ public class Pipeline {
 		
 		// Get entity and surrounding predicates
 		String entityUri = itemsOfQe[4];
+		question.entityUri = entityUri;
 		LinkedList<RDFNode> predicates = ClientManagement.getSurroundingPred(entityUri);
 		for (RDFNode predNode : predicates)
 			question.surPredicates.add(predNode.toString());

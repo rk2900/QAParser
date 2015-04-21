@@ -19,8 +19,8 @@ public class umbcDB {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(
-							"jdbc:mysql://localhost:3306/similarity?characterEncoding=utf8",
-							"root", "");
+							"jdbc:mysql://172.16.7.87:3306/similarity?characterEncoding=utf8",
+							"qald", "qald");
 		} catch (Exception ex) {
 			// TODO Auto-generated catch block
 			ex.printStackTrace();
@@ -160,7 +160,8 @@ public class umbcDB {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		umbcDB db = new umbcDB();
+		System.out.println(db.getScore("Link","In"));
 	}
 
 }

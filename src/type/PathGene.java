@@ -55,7 +55,7 @@ public class PathGene {
 				map.put(tmp[0],Integer.valueOf(tmp[1]));
 			}
 			br.close();
-			String path="./file/dict";
+			String path="./data/lx/dict";
 			URL url=new URL("file",null,path);
 		
 			dict=new Dictionary(url);
@@ -201,7 +201,7 @@ public class PathGene {
 					+"PREFIX dbp: <http://dbpedia.org/property/> "
 					+"PREFIX res: <http://dbpedia.org/resource/> ";
 			queryString +="SELECT DISTINCT ?o ?p WHERE { <"+src+"> rdf:type ?o . ?o rdfs:label ?p . } ";
-
+			System.out.println(queryString);
 			AGQuery sparql = AGQueryFactory.create(queryString);
 			QueryExecution qe = AGQueryExecutionFactory.create(sparql, model);
 			try {
