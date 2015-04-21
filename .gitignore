@@ -45,3 +45,4 @@ Temporary Items
 *.class
 /target/classes/*
 target/classes/*
+/target/
