@@ -8,7 +8,7 @@ import paser.XMLParser;
 public class TypeExtraction {
 
 	protected String trainFile = "./data/qald-5_train.xml";
-	protected XMLParser xmlParser;
+	public XMLParser xmlParser;
 	
 	public TypeExtraction() {
 		initializeXMLParser();

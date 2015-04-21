@@ -1,0 +1,18 @@
+41
+In which military conflicts did Lawrence of Arabia participate?
+Predict:	http://dbpedia.org/ontology/militaryBranch	0.54509401
+	type:	conflicts
+		http://dbpedia.org/resource/Royal_Air_Force	0.041666666666666664			http://dbpedia.org/resource/British_Army	0.041666666666666664			http://dbpedia.org/resource/Royal_Air_Force	0.041666666666666664			http://dbpedia.org/resource/British_Army	0.041666666666666664	
+Predict:	http://dbpedia.org/property/commanders	0.49356037
+	type:	conflicts
+		http://dbpedia.org/resource/Qasr_Azraq	0.12272727272727273	
+Predict:	http://dbpedia.org/ontology/commander	0.49356037
+	type:	conflicts
+		http://dbpedia.org/resource/Siege_of_Medina	0.9			http://dbpedia.org/resource/Arab_Revolt	0.9			http://dbpedia.org/resource/Campaigns_of_the_Arab_Revolt	0.9			http://dbpedia.org/resource/Battle_of_Taif_(1916)	0.9			http://dbpedia.org/resource/Battle_of_Aqaba	0.9			http://dbpedia.org/resource/Capture_of_Yanbu	0.9	
+Predict:	http://dbpedia.org/ontology/battle	0.3129266
+	type:	conflicts
+		http://dbpedia.org/resource/Siege_of_Medina	0.9			http://dbpedia.org/resource/Arab_Revolt	0.9			http://dbpedia.org/resource/Battle_of_Fwelia	0.9			http://dbpedia.org/resource/Battle_of_Talifeh	0.9			http://dbpedia.org/resource/Battle_of_Deraa	0.9			http://dbpedia.org/resource/Battle_of_Aqaba	0.9			http://dbpedia.org/resource/Battle_of_Aba_el_Lissan	0.9			http://dbpedia.org/resource/Battle_of_Megiddo_(1918)	0.9			http://dbpedia.org/resource/Capture_of_Damascus_(1918)	0.9			http://dbpedia.org/resource/World_War_I	0.9			http://dbpedia.org/resource/Siege_of_Medina	0.9			http://dbpedia.org/resource/Arab_Revolt	0.9			http://dbpedia.org/resource/Battle_of_Fwelia	0.9			http://dbpedia.org/resource/Battle_of_Talifeh	0.9			http://dbpedia.org/resource/Battle_of_Deraa	0.9			http://dbpedia.org/resource/Battle_of_Aqaba	0.9			http://dbpedia.org/resource/Battle_of_Aba_el_Lissan	0.9			http://dbpedia.org/resource/Battle_of_Megiddo_(1918)	0.9			http://dbpedia.org/resource/Capture_of_Damascus_(1918)	0.9			http://dbpedia.org/resource/World_War_I	0.9	
+Predict:	http://dbpedia.org/property/battles	0.3129266
+	type:	conflicts
+		http://dbpedia.org/resource/Siege_of_Medina	0.9			http://dbpedia.org/resource/Arab_Revolt	0.9			http://dbpedia.org/resource/Battle_of_Fwelia	0.9			http://dbpedia.org/resource/Battle_of_Talifeh	0.9			http://dbpedia.org/resource/Battle_of_Deraa	0.9			http://dbpedia.org/resource/Battle_of_Aqaba	0.9			http://dbpedia.org/resource/Battle_of_Aba_el_Lissan	0.9			http://dbpedia.org/resource/Battle_of_Megiddo_(1918)	0.9			http://dbpedia.org/resource/Capture_of_Damascus_(1918)	0.9			http://dbpedia.org/resource/World_War_I	0.9	
+

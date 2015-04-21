@@ -9,8 +9,13 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 
+import com.hp.hpl.jena.rdf.model.RDFNode;
+
 import knowledgebase.ClientManagement;
+import paser.Question;
 import paser.QuestionSingle;
+import pattern.RuleBasedType;
+import type.PathGene;
 import umbc.umbcDB;
 import basic.FileOps;
 import finder.Pipeline;
@@ -28,7 +33,17 @@ public class onestep {
 		db = new umbcDB();
 	}
 	
-	//¼ÆËãpredictµÄscore
+	
+	public static HashSet<String> getTypes(int id){
+		RuleBasedType rbType = new RuleBasedType();
+//		rbType.initializeXMLParser();
+		Question q = rbType.xmlParser.getQuestionWithPseudoId(id);
+		String qText = q.question;
+		HashSet<String> types = rbType.typeExtractor(qText, false);
+		return types;
+	}
+	
+	//cal the predicts' scores
 	public static double rankingUMBC(String predict,LinkedList<String> questionList){
 		LinkedList<String> labels = ClientManagement.getLabel(predict);
 		double maxScore = 0;
@@ -58,17 +73,21 @@ public class onestep {
 	
 	public static void main(String[] args) {
 		String questionPath = "./data/zch/manual-selected-question.txt";
+//		questionPath = "./data/zch/question-semantic-1.txt";
 		LinkedList<String> questions = FileOps.LoadFilebyLine(questionPath);
-		
+//		System.out.println(questions.size());
 		try {
-			BufferedWriter fout = new BufferedWriter(new FileWriter("./data/zch/manual-selected-question-top10-result.txt"));
+			BufferedWriter fout = new BufferedWriter(new FileWriter("./data/zch/manual-selected-question-top5-result.txt"));
 			for (String question : questions) {
 				String[] list = question.split("\t");
 				int questionId = Integer.parseInt(list[0]);
 				QuestionSingle q = pipeline.preProcess(questionId);
 				if(q==null){
+					System.out.println("Null question:\t"+q.question);
 					continue;
 				}
+				String entityUri = q.getEntityUri();
+				HashSet<String> types = getTypes(questionId);
 				System.out.println(q.question+"\tbegin");
 				fout.write(list[0]);
 				fout.write("\n");
@@ -114,14 +133,36 @@ public class onestep {
 					}
 					for (String p : scoreMap.get(score)) {
 						StringBuilder sb = new StringBuilder();
-						sb.append(score);
-						sb.append("\t");
+						sb.append("Predict:\t");
 						sb.append(p);
+						sb.append("\t");
+						sb.append(score);
 						sb.append("\n");
+						LinkedList<RDFNode> resourceNodes = ClientManagement.getNode(entityUri, p);
+						for(String type:types){
+							sb.append("\ttype:\t");
+							sb.append(type);
+							sb.append("\n");
+							for(RDFNode resourceNode:resourceNodes){
+								if(!resourceNode.isResource()){
+									continue;
+								}
+								String resource = resourceNode.toString();
+								sb.append("\t\t");
+								System.out.println(p+"\t"+resource);
+								double typeScore = PathGene.haoge(resource,type);
+								sb.append(resource);
+								sb.append("\t");
+								sb.append(typeScore);
+								sb.append("\t");
+							}
+							sb.append("\n");
+						}
 						fout.write(sb.toString());
 						++count;
 					}
 				}fout.write("\n");
+				fout.flush();
 				System.out.println("***end***");
 			}
 			fout.close();
