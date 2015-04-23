@@ -11,15 +11,14 @@ import finder.Pipeline;
 public class QuestionClassifier {
 	
 	public enum Category {
-		RESOURCE, DATE, BOOLEAN, AGGREGATION
+		RESOURCE, DATE, BOOLEAN, NUMBER
 	}
-	public HashMap<Category, Boolean> cateMap;
-	
 	public enum Label {
 		COMPARISON
 	}
+	public HashMap<Category, Boolean> cateMap;
 	public HashMap<Label, Boolean> labelMap;
-	
+	public String category;
 	
 	public QuestionClassifier() {
 		cateMap = new HashMap<>();
@@ -37,9 +36,16 @@ public class QuestionClassifier {
 		// category
 		cateMap.put(Category.DATE, QuestionClassifier.judgeDate(wordList));
 		cateMap.put(Category.BOOLEAN, QuestionClassifier.judgeBool(wordList, POSList));
-		cateMap.put(Category.AGGREGATION, QuestionClassifier.judgeAggregation(wordList));
-		boolean resourceFlag = !(cateMap.get(Category.DATE) || cateMap.get(Category.BOOLEAN) || cateMap.get(Category.AGGREGATION));
+		cateMap.put(Category.NUMBER, QuestionClassifier.judgeAggregation(wordList));
+		boolean resourceFlag = !(cateMap.get(Category.DATE) || cateMap.get(Category.BOOLEAN) || cateMap.get(Category.NUMBER));
 		cateMap.put(Category.RESOURCE, resourceFlag);
+		
+		for (Category cat : cateMap.keySet()) {
+			if(cateMap.get(cat)) {
+				category = cat.toString();
+				break;
+			}
+		}
 		
 		// label
 		labelMap.put(Label.COMPARISON, QuestionClassifier.judgeComparison(wordList, POSList));
@@ -82,7 +88,7 @@ public class QuestionClassifier {
 		boolean judgeFlag = false;
 		String firstWord = wordList.get(0).toLowerCase();
 		String secondWord = wordList.get(1).toLowerCase();
-		if(firstWord.equals("how") && secondWord.equals("many"))
+		if(firstWord.equals("how") && (secondWord.equals("many") || secondWord.equals("much") || secondWord.equals("often")))
 			judgeFlag = true;
 		
 		for (String word : wordList) {
@@ -108,7 +114,10 @@ public class QuestionClassifier {
 		
 		boolean judgeFlag = false;
 		String firstPOS = POSList.get(0);
+		String firstWord = wordList.get(0);
 		if(firstPOS.equals("VBZ") || firstPOS.equals("VBD"))
+			judgeFlag = true;
+		if(firstWord.equalsIgnoreCase("DO") || firstWord.equalsIgnoreCase("ARE"))
 			judgeFlag = true;
 		
 		return judgeFlag;
@@ -130,6 +139,7 @@ public class QuestionClassifier {
 			type = 0;
 		else if (firstPOS.equals("VBD"))
 			type = 1;
+		// TODO
 
 		return type;
 	}
@@ -195,17 +205,32 @@ public class QuestionClassifier {
 		Pipeline pipeline = new Pipeline();
 		XMLParser parser = pipeline.getXMLParser();
 		
-		for(int i=1; i<=3; i++) {
+//		QuestionSingle qs = parser.getQuestionWithPseudoId(72).toQuestionSingle();
+//		pipeline.getPOSTag(qs);
+//		QuestionClassifier qc = new QuestionClassifier();
+//		qc.classify(qs);
+//		System.out.println(qs.question);
+//		System.out.println(qs.qPOSList);
+//		System.out.println(qc.category);
+		
+		int count = 0;
+		for(int i=1; i<=300; i++) {
 			QuestionSingle qs = parser.getQuestionWithPseudoId(i).toQuestionSingle();
 			pipeline.getPOSTag(qs);
 			
 			QuestionClassifier qc = new QuestionClassifier();
 			qc.classify(qs);
-			
-			System.out.println(qs.question);
-			System.out.println(qc.cateMap);
+			String trueCate = qs.answerType;
+			String predictCate = qc.category;
+			if(trueCate.equalsIgnoreCase(predictCate)) {
+				count++;
+			} else if (trueCate.equalsIgnoreCase("list") && predictCate.equalsIgnoreCase("resource")) {
+				count++;
+			} else {
+				System.out.println(qs.answerType+"\t\t"+qc.category+"\t"+qs.question);
+			}
 		}
-		
+		System.out.println(count);
 		
 	}
 

@@ -228,6 +228,7 @@ public class Pipeline {
 			question.qWordList.add(label.get(TextAnnotation.class));
 			tags.add(label.get(PartOfSpeechAnnotation.class));
 		}
+		question.qPOSList = tags;
 		return tags;
 	}
 	
