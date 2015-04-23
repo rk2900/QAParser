@@ -48,3 +48,4 @@ target/classes/*
 /target/
 /data/lx/
 *.class
+target/classes/finder/Pipeline.class

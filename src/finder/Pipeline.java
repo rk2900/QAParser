@@ -196,9 +196,13 @@ public class Pipeline {
 		// Get POS tags
 		LinkedList<String> POSList = getPOSTag(question);
 		// Eliminate punctuation
-		question.qWordList.remove(question.qWordList.size()-1);
-		POSList.remove(POSList.size()-1);
-		question.qPOSList = POSList;
+		if(question.qWordList.size() == 0)
+			System.err.println("qWord list error: size is 0 !");
+		else {
+			question.qWordList.remove(question.qWordList.size()-1);
+			POSList.remove(POSList.size()-1);
+			question.qPOSList = POSList;
+		}
 		
 		// Get mention words position
 		for (String string : question.qWordList)
@@ -224,6 +228,7 @@ public class Pipeline {
 			question.qWordList.add(label.get(TextAnnotation.class));
 			tags.add(label.get(PartOfSpeechAnnotation.class));
 		}
+		question.qPOSList = tags;
 		return tags;
 	}
 	
@@ -257,6 +262,10 @@ public class Pipeline {
 			lemma.add(label.get(LemmaAnnotation.class));
 		}
 		return lemma;
+	}
+	
+	public XMLParser getXMLParser() {
+		return xmlParser;
 	}
 
 }

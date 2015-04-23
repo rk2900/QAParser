@@ -5459,7 +5459,7 @@ WHERE {
 ]]></query>
 <answers><answer>Oxford Blue</answer></answers></question>
 
-<question aggregation="false" hybrid="false" answertype="resource" id="250" onlydbo="true">
+<question aggregation="false" hybrid="false" answertype="number" id="250" onlydbo="true">
 <string lang="en"><![CDATA[How many gold medals did Michael Phelps win at the 2008 Olympics?]]></string>
 <string lang="de"><![CDATA[Wieviele Goldmedaillen hat Michael Phelps während der Olympischen Spiele 2008 gewonnen?]]></string>
 <string lang="es"><![CDATA[¿Cuántas medallas de oro ganó Michael Phelps durante los juegos olímpicos de 2008?]]></string>
@@ -5849,7 +5849,7 @@ WHERE {
 ]]></query>
 <answers><answer>http://dbpedia.org/resource/Fei_Junlong</answer><answer>http://dbpedia.org/resource/Jing_Haipeng</answer><answer>http://dbpedia.org/resource/Nie_Haisheng</answer><answer>http://dbpedia.org/resource/Zhai_Zhigang</answer><answer>http://dbpedia.org/resource/Tao_Jiali</answer><answer>http://dbpedia.org/resource/Liu_Boming_(astronaut)</answer></answers></question>
 
-<question aggregation="false" hybrid="false" answertype="resource" id="212" onlydbo="true">
+<question aggregation="false" hybrid="false" answertype="number" id="212" onlydbo="true">
 <string lang="en"><![CDATA[How many pages does War and Peace have?]]></string>
 <string lang="de"><![CDATA[Wieviele Seiten hat Krieg und Frieden?]]></string>
 <string lang="es"><![CDATA[¿Cuántas páginas tiene Guerra y Paz?]]></string>
@@ -6015,7 +6015,7 @@ WHERE {
 ]]></query>
 <answers><answer>24</answer></answers></question>
 
-<question aggregation="false" hybrid="false" answertype="uri" id="246" onlydbo="true">
+<question aggregation="false" hybrid="false" answertype="resource" id="246" onlydbo="true">
 <string lang="en"><![CDATA[Which rockets were launched from Baikonur?]]></string>
 <string lang="de"><![CDATA[Welche Raketen sind von Baikonur gestartet?]]></string>
 <string lang="es"><![CDATA[¿Qué cohetes han sido lanzados desde Baionur?]]></string>
@@ -6524,7 +6524,7 @@ OFFSET 0 LIMIT 1
 ]]></query>
 <answers><answer>http://dbpedia.org/resource/Andy_Lau</answer></answers></question>
 
-<question aggregation="false" hybrid="false" answertype="resource" id="245" onlydbo="true">
+<question aggregation="false" hybrid="false" answertype="boolean" id="245" onlydbo="true">
 <string lang="en"><![CDATA[Is James Bond married?]]></string>
 <string lang="de"><![CDATA[Ist James Bond verheiratet?]]></string>
 <string lang="es"><![CDATA[¿Está James Bond casado?]]></string>
@@ -7306,7 +7306,7 @@ WHERE {
 ]]></query>
 <answers><answer>http://dbpedia.org/resource/Michel_Buillard</answer></answers></question>
 
-<question aggregation="false" hybrid="false" answertype="resource" id="275" onlydbo="true">
+<question aggregation="false" hybrid="false" answertype="date" id="275" onlydbo="true">
 <string lang="en"><![CDATA[When did Dracula's creator die?]]></string>
 <string lang="de"><![CDATA[Wann ist Draculas Schöpfer gestorben?]]></string>
 <string lang="es"><![CDATA[¿Cuando murió el creador de Drácula?]]></string>
