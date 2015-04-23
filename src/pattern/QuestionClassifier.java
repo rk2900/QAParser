@@ -26,6 +26,10 @@ public class QuestionClassifier {
 		labelMap = new HashMap<>();
 	}
 	
+	/**
+	 * Get
+	 * @param qs
+	 */
 	public void classify(QuestionSingle qs) {
 		LinkedList<String> wordList = qs.qWordList;
 		LinkedList<String> POSList = qs.qPOSList;
@@ -39,6 +43,12 @@ public class QuestionClassifier {
 		
 		// label
 		labelMap.put(Label.COMPARISON, QuestionClassifier.judgeComparison(wordList, POSList));
+	}
+	
+	public HashMap<Category, Boolean> getCategoryResult() {
+		if(cateMap.isEmpty())
+			System.err.println("No category result!");
+		return cateMap;
 	}
 	
 	/**
