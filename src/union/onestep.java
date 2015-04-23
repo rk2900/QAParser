@@ -83,7 +83,7 @@ public class onestep {
 				int questionId = Integer.parseInt(list[0]);
 				QuestionSingle q = pipeline.preProcess(questionId);
 				if(q==null){
-					System.out.println("Null question:\t"+q.question);
+					System.out.println("Null question:\t");
 					continue;
 				}
 				String entityUri = q.getEntityUri();

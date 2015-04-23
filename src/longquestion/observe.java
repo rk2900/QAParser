@@ -2,25 +2,23 @@ package longquestion;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashSet;
 import java.util.LinkedList;
 
-import org.openrdf.query.algebra.In;
-
 import paser.QuestionSingle;
+import phrase.EntityPhrase;
+import umbc.umbcDB;
 import basic.FileOps;
-import edu.stanford.nlp.dcoref.Mention;
 import finder.Pipeline;
 
 public class observe {
 	public static Pipeline pipeline = new Pipeline();
 
-	public static boolean observeOfEntitySurr(int questionId){
+	public static EntityPhrase observeOfEntitySurr(int questionId){
 		
 		QuestionSingle q = pipeline.preProcess(questionId);
 		if(q==null){
 //			System.out.println(questionId+"\tnull question");
-			return false;
+			return null;
 		}
 		
 		LinkedList<String> words = q.getWordList();
@@ -31,57 +29,60 @@ public class observe {
 		int startOffset = entityindexs.get(0);
 		int endOffest = entityindexs.get(entityindexs.size()-1);
 	
-//		System.out.println();
-//		System.out.println("**********************");
-//		System.out.println(questionId);
-////		System.out.println(predicts);
-//		System.out.println(words);
-//		System.out.println(postags);
-//		System.out.println(q.mention);
-////		System.out.println(startOffset+"\t"+endOffest);
-		
 		boolean matched = false;
 		int phraseStartOffset = startOffset - 1;
+		
+		EntityPhrase entityPhrase = new EntityPhrase();
+		entityPhrase.setEntityUri(q.entityUri);
+		entityPhrase.setQuestionText(q.question);
+		LinkedList<String> NNs = new LinkedList<String>();
 		if(phraseStartOffset>=0 && postags.get(phraseStartOffset).equals("DT")){
+			entityPhrase.setDT2(words.get(phraseStartOffset));
 			phraseStartOffset--;
 		}
 		if(postags.get(phraseStartOffset).equals("IN")){
+			entityPhrase.setIN(words.get(phraseStartOffset));
 			phraseStartOffset--;
 			if(postags.get(phraseStartOffset).startsWith("NN")){
+				NNs.add(words.get(phraseStartOffset));
 				phraseStartOffset--;
 				while(postags.get(phraseStartOffset).startsWith("NN")){
+					NNs.add(words.get(phraseStartOffset));
+					phraseStartOffset--;
+				}
+				entityPhrase.setNNs(NNs);
+				if(postags.get(phraseStartOffset).startsWith("JJ")){
+					entityPhrase.setJJ(words.get(phraseStartOffset));
 					phraseStartOffset--;
 				}
 				if(!postags.get(phraseStartOffset).equals("DT")){
 					phraseStartOffset++;
+				}else{
+					entityPhrase.setDT1(words.get(phraseStartOffset));
 				}
 				matched = true;
 			}
 		}
 		
-//		System.out.println("matched: "+matched);
-//		int count = 0;
 		if(matched){
-//			++count;
-			System.out.println();
-			System.out.println("**********************");
-			System.out.println(questionId);
-//			System.out.println(predicts);
-			System.out.println(words);
-			System.out.println(postags);
-			System.out.println(q.mention);
-//			System.out.println(startOffset+"\t"+endOffest);
-			StringBuilder matchedPhrase = new StringBuilder();
-			for(int i=phraseStartOffset; i<startOffset; ++i){
-				matchedPhrase.append(words.get(i));
-				matchedPhrase.append("\t");
-			}
-			System.out.println(matchedPhrase.toString());
-			System.out.println("**********************");
+//			System.out.println();
+//			System.out.println("**********************");
+//			System.out.println(questionId);
+//			System.out.println(words);
+//			System.out.println(postags);
+//			System.out.println(q.mention);
+//			StringBuilder matchedPhrase = new StringBuilder();
+//			for(int i=phraseStartOffset; i<startOffset; ++i){
+//				matchedPhrase.append(words.get(i));
+//				matchedPhrase.append("\t");
+//			}
+//			System.out.println(matchedPhrase.toString());
+//			System.out.println("**********************");
+			entityPhrase.setPredictDetails(new umbcDB(), q.getSurPredicates());
+			return entityPhrase;
+		}else{
+			return null;
 		}
-//		System.out.println("**********************");
-//		System.out.println(count);
-		return matched;
 	}
 	
 	public static void observeOfRule(){
@@ -95,7 +96,6 @@ public class observe {
 				continue;
 			}
 			LinkedList<String> postags = pipeline.getPOSTag(sentence);
-			LinkedList<String> matched = new LinkedList<String>();
 			
 			int i = 0;
 			while(i < postags.size()){
@@ -154,8 +154,11 @@ public class observe {
 //		observeOfEntitySurr(77);
 		int count = 0;
 		for(int i=1; i<=300; ++i){
-			if(observeOfEntitySurr(i)){
+			EntityPhrase entityPhrase = observeOfEntitySurr(i);
+			if(entityPhrase != null){
 				++count;
+				entityPhrase.printEntityPhrase();
+//				entityPhrase.ranking(new umbcDB(), predictUris);
 			}
 		}
 		System.out.println(count);
