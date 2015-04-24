@@ -1,0 +1,1419 @@
+Available catalogs: [/, chainyi, dbpedia2014, system, zhishime]
+
+Got a graph maker for the connection.
+
+Who is the mayor of Berlin?
+0.46235546	http://dbpedia.org/ontology/leader	<leader, mayor>	0.46235546	NN	
+0.46235546	http://dbpedia.org/property/leader	<leader, mayor>	0.46235546	NN	
+0.3575939	http://dbpedia.org/ontology/person	<person, mayor>	0.3575939	NN	
+0.26237383999999997	http://dbpedia.org/property/leaderName	<leader, mayor>	0.46235546	NN	<name, mayor>	0.06239222	NN	
+0.23858388	http://dbpedia.org/ontology/city	<city, mayor>	0.23858388	NN	
+0.23858388	http://dbpedia.org/property/city	<city, mayor>	0.23858388	NN	
+0.23858388	http://dbpedia.org/property/cities	<cities, mayor>	0.23858388	NN	
+0.231304313805	http://dbpedia.org/ontology/leaderParty	<leader, mayor>	0.46235546	NN	<party, mayor>	2.5316761E-4	NN	
+0.231304313805	http://dbpedia.org/property/leaderParty	<leader, mayor>	0.46235546	NN	<party, mayor>	2.5316761E-4	NN	
+0.23117773	http://dbpedia.org/ontology/leaderTitle	<leader, mayor>	0.46235546	NN	<title, null>	0.0	null	
+0.23117773	http://dbpedia.org/property/leaderTitle	<leader, mayor>	0.46235546	NN	<title, null>	0.0	null	
+0.18478703	http://dbpedia.org/property/cityServed	<city-served, mayor>	0.18478703	NN	
+0.17607182	http://dbpedia.org/property/hometown	<hometown, mayor>	0.17607182	NN	
+0.16060814	http://dbpedia.org/ontology/stadium	<Stadium, mayor>	0.16060814	NN	
+0.16060814	http://dbpedia.org/property/stadium	<stadium, mayor>	0.16060814	NN	
+0.14448057	http://dbpedia.org/ontology/predecessor	<predecessor, mayor>	0.14448057	NN	
+0.14365344	http://dbpedia.org/ontology/assembly	<assembly, mayor>	0.14365344	NN	
+0.14365344	http://dbpedia.org/property/assembly	<assembly, mayor>	0.14365344	NN	
+0.14214936	http://dbpedia.org/ontology/builder	<builder, mayor>	0.14214936	NN	
+0.1389607575	http://dbpedia.org/property/hostCity	<Host, mayor>	0.039337635	NN	<city, mayor>	0.23858388	NN	
+0.137256156	http://dbpedia.org/ontology/twinCity	<twin, mayor>	0.035928432	NN	<city, mayor>	0.23858388	NN	
+0.1263332	http://dbpedia.org/property/votes	<votes, mayor>	0.1263332	NN	
+0.11929194	http://dbpedia.org/ontology/largestCity	<largest, null>	0.0	null	<city, mayor>	0.23858388	NN	
+0.11929194	http://dbpedia.org/ontology/locationCity	<location, null>	0.0	null	<city, mayor>	0.23858388	NN	
+0.11929194	http://dbpedia.org/property/locationCity	<location, null>	0.0	null	<city, mayor>	0.23858388	NN	
+0.11633964	http://dbpedia.org/property/subdivisionName	<subdivision, mayor>	0.17028706	NN	<name, mayor>	0.06239222	NN	
+0.11144343	http://dbpedia.org/property/metroArea	<metro, mayor>	0.22288686	NN	<area, null>	0.0	null	
+
+Give me all professional skateboarders from Sweden.
+0.4023513	http://dbpedia.org/ontology/person	<person, professional>	0.4023513	JJ	
+0.28961203	http://dbpedia.org/property/education	<education, professional>	0.28961203	JJ	
+0.28961203	http://dbpedia.org/ontology/education	<education, professional>	0.28961203	JJ	
+0.20781028	http://dbpedia.org/ontology/leader	<leader, professional>	0.20781028	JJ	
+0.20117565	http://dbpedia.org/ontology/keyPerson	<key, professional>	0.0	JJ	<person, professional>	0.4023513	JJ	
+0.18729039150000001	http://dbpedia.org/ontology/managerClub	<manager, professional>	0.33557785	JJ	<club, skateboarders>	0.039002933	NN	
+0.1787956545	http://dbpedia.org/ontology/goldMedalist	<gold, skateboarders>	0.014327829	NN	<medalist, skateboarders>	0.34326348	NN	
+0.17303006	http://dbpedia.org/property/service	<service, professional>	0.17303006	JJ	
+0.17163174	http://dbpedia.org/ontology/silverMedalist	<siler, professional>	0.0	JJ	<medalist, skateboarders>	0.34326348	NN	
+0.16591549	http://dbpedia.org/ontology/team	<team, professional>	0.16591549	JJ	
+0.16591549	http://dbpedia.org/property/rd2Team	<RD2-team, professional>	0.16591549	JJ	
+0.15812027	http://dbpedia.org/property/venue	<venue, professional>	0.15812027	JJ	
+0.15627083	http://dbpedia.org/ontology/champion	<champion, skateboarders>	0.15627083	NN	
+0.12729552	http://dbpedia.org/ontology/network	<network, professional>	0.12729552	JJ	
+0.12036708	http://dbpedia.org/ontology/builder	<builder, skateboarders>	0.12036708	NN	
+0.12036708	http://dbpedia.org/property/builders	<Builders, skateboarders>	0.12036708	NN	
+0.11978276299999999	http://dbpedia.org/property/leaderName	<leader, professional>	0.20781028	JJ	<name, skateboarders>	0.031755246	NN	
+0.11481656	http://dbpedia.org/property/membership	<membership, professional>	0.11481656	JJ	
+0.1145078	http://dbpedia.org/ontology/college	<college, professional>	0.1145078	JJ	
+0.11445947	http://dbpedia.org/ontology/manufacturer	<manufacturer, professional>	0.11445947	JJ	
+0.109148726	http://dbpedia.org/property/stadium	<stadium, skateboarders>	0.109148726	NN	
+0.10390514	http://dbpedia.org/ontology/leaderTitle	<leader, professional>	0.20781028	JJ	<title, professional>	0.0	JJ	
+0.10390514	http://dbpedia.org/property/leaderTitle	<leader, professional>	0.20781028	JJ	<title, professional>	0.0	JJ	
+
+Who is the youngest player in the Premier League?
+0.5173573	http://dbpedia.org/property/teams	<teams, player>	0.5173573	NN	
+0.5173573	http://dbpedia.org/ontology/team	<team, player>	0.5173573	NN	
+0.42696396	http://dbpedia.org/property/season	<season, player>	0.42696396	NN	
+0.35481876	http://dbpedia.org/property/league	<league, player>	0.35481876	NN	
+0.35481876	http://dbpedia.org/ontology/league	<league, player>	0.35481876	NN	
+0.241424153	http://dbpedia.org/property/overseasTournament	<overseas, player>	0.027618246	NN	<tournament, player>	0.45523006	NN	
+0.21348198	http://dbpedia.org/ontology/currentSeason	<current, youngest>	0.0	JJ	<season, player>	0.42696396	NN	
+0.2122939	http://dbpedia.org/property/competition	<competition, player>	0.2122939	NN	
+0.20610815	http://dbpedia.org/property/champions	<champions, player>	0.20610815	NN	
+0.186136425	http://dbpedia.org/ontology/formationDate	<formation, player>	0.37227285	NN	<date, youngest>	0.0	JJ	
+0.18256347566666667	http://dbpedia.org/property/mostSuccessfulClub	<most, player>	0.028458642	NN	<successful, player>	0.082454905	NN	<club, player>	0.43677688	NN	
+0.17740938	http://dbpedia.org/property/leagueCup	<league, player>	0.35481876	NN	<cup, youngest>	0.0	JJ	
+0.10531044	http://dbpedia.org/property/title	<title, player>	0.10531044	NN	
+
+Give me all members of Prodigy.
+0.606934465	http://dbpedia.org/property/formerMembers	<former, members>	0.21386893	NN	<members, members>	1.0	NN	
+0.58152678	http://dbpedia.org/ontology/bandMember	<band, members>	0.16305356	NN	<member, members>	1.0	NN	
+0.523977127	http://dbpedia.org/property/currentMembers	<current, members>	0.047954254	NN	<members, members>	1.0	NN	
+0.5	http://dbpedia.org/property/pastMembers	<past, null>	0.0	null	<members, members>	1.0	NN	
+0.45897416333333335	http://dbpedia.org/ontology/formerBandMember	<former, members>	0.21386893	NN	<band, members>	0.16305356	NN	<member, members>	1.0	NN	
+0.19568588	http://dbpedia.org/property/class	<class, members>	0.19568588	NN	
+0.18466124499999997	http://dbpedia.org/property/yearsActive	<years, members>	0.15096405	NN	<active, members>	0.21835844	NN	
+0.1442005	http://dbpedia.org/property/name	<name, members>	0.1442005	NN	
+0.13345752975	http://dbpedia.org/ontology/activeYearsStartYear	<active, members>	0.21835844	NN	<years, members>	0.15096405	NN	<start, members>	0.013543579	NN	<year, members>	0.15096405	NN	
+0.1150983625	http://dbpedia.org/ontology/associatedBand	<associated, members>	0.067143165	NN	<band, members>	0.16305356	NN	
+
+What were the main discoveries of the Mars rover Curiosity?
+0.13552496	http://dbpedia.org/property/name	<name, main>	0.13552496	JJ	
+0.1341232	http://dbpedia.org/property/direction	<direction, main>	0.1341232	JJ	
+0.130521073	http://dbpedia.org/property/missionType	<mission, main>	0.13681267	JJ	<type, main>	0.124229476	JJ	
+0.1049659	http://dbpedia.org/ontology/thumbnail	<thumbnail, main>	0.1049659	JJ	
+
+What is the capital of Canada?
+1.0	http://dbpedia.org/ontology/capital	<capital, capital>	1.0	NN	
+1.0	http://dbpedia.org/property/capital	<Capital, capital>	1.0	NN	
+0.46166903	http://dbpedia.org/property/place	<place, capital>	0.46166903	NN	
+0.3199085	http://dbpedia.org/ontology/city	<city, capital>	0.3199085	NN	
+0.3199085	http://dbpedia.org/property/city	<city, capital>	0.3199085	NN	
+0.3199085	http://dbpedia.org/property/cities	<cities, capital>	0.3199085	NN	
+0.282437965	http://dbpedia.org/ontology/foundationPlace	<foundation, capital>	0.1032069	NN	<place, capital>	0.46166903	NN	
+0.277366	http://dbpedia.org/ontology/populationPlace	<population, capital>	0.09306297	NN	<place, capital>	0.46166903	NN	
+0.272448665	http://dbpedia.org/property/worldPlace	<world, capital>	0.0832283	NN	<place, capital>	0.46166903	NN	
+0.26788062	http://dbpedia.org/property/markets	<markets, capital>	0.26788062	NN	
+0.26653913	http://dbpedia.org/property/cityServed	<city-served, capital>	0.26653913	NN	
+0.2578415	http://dbpedia.org/ontology/country	<country, capital>	0.2578415	NN	
+0.2578415	http://dbpedia.org/property/country	<country, capital>	0.2578415	NN	
+0.2578415	http://dbpedia.org/property/countries	<countries, capital>	0.2578415	NN	
+0.257317218	http://dbpedia.org/ontology/restingPlace	<resting, capital>	0.052965406	NN	<place, capital>	0.46166903	NN	
+0.257317218	http://dbpedia.org/property/restingPlace	<resting, capital>	0.052965406	NN	<place, capital>	0.46166903	NN	
+0.2515401425	http://dbpedia.org/property/meetingPlace	<meeting, capital>	0.041411255	NN	<place, capital>	0.46166903	NN	
+0.250767843	http://dbpedia.org/property/panPlace	<pan, capital>	0.039866656	NN	<place, capital>	0.46166903	NN	
+0.250059833	http://dbpedia.org/property/foundedPlace	<founded, capital>	0.038450636	NN	<place, capital>	0.46166903	NN	
+0.24832551	http://dbpedia.org/property/headquarters	<headquarters, capital>	0.24832551	NN	
+0.24774224	http://dbpedia.org/ontology/currency	<currency, capital>	0.24774224	NN	
+0.24774224	http://dbpedia.org/property/currency	<currency, capital>	0.24774224	NN	
+0.2426390175	http://dbpedia.org/ontology/premierePlace	<premiere, capital>	0.023609005	NN	<place, capital>	0.46166903	NN	
+0.230834515	http://dbpedia.org/ontology/birthPlace	<birth, null>	0.0	null	<place, capital>	0.46166903	NN	
+0.230834515	http://dbpedia.org/ontology/deathPlace	<death, null>	0.0	null	<place, capital>	0.46166903	NN	
+0.230834515	http://dbpedia.org/property/birthPlace	<birth, null>	0.0	null	<place, capital>	0.46166903	NN	
+0.230834515	http://dbpedia.org/property/deathPlace	<death, null>	0.0	null	<place, capital>	0.46166903	NN	
+0.230834515	http://dbpedia.org/property/olympicPlace	<olympic, null>	0.0	null	<place, capital>	0.46166903	NN	
+0.230834515	http://dbpedia.org/property/asianPlace	<Asian, null>	0.0	null	<place, capital>	0.46166903	NN	
+0.23054433	http://dbpedia.org/property/country/region	<country/region, capital>	0.23054433	NN	
+0.21792099	http://dbpedia.org/ontology/province	<province, capital>	0.21792099	NN	
+0.21792099	http://dbpedia.org/property/province	<province, capital>	0.21792099	NN	
+0.2163709025	http://dbpedia.org/property/symbolType	<symbol, capital>	0.39199373	NN	<type, capital>	0.040748075	NN	
+0.19925021999999998	http://dbpedia.org/ontology/hometown	<home, capital>	0.11926654	NN	<town, capital>	0.2792339	NN	
+0.19925021999999998	http://dbpedia.org/property/homeTown	<home, capital>	0.11926654	NN	<town, capital>	0.2792339	NN	
+0.19808663	http://dbpedia.org/ontology/subsidiary	<subsidiary, capital>	0.19808663	NN	
+0.19558412	http://dbpedia.org/ontology/district	<district, capital>	0.19558412	NN	
+0.1819765215	http://dbpedia.org/ontology/locationCity	<location, capital>	0.044044543	NN	<city, capital>	0.3199085	NN	
+0.1819765215	http://dbpedia.org/property/locationCity	<location, capital>	0.044044543	NN	<city, capital>	0.3199085	NN	
+0.18168009666666665	http://dbpedia.org/property/placeOfArrest	<place, capital>	0.46166903	NN	<of, null>	0.0	null	<arrest, capital>	0.08337126	NN	
+0.18083594	http://dbpedia.org/property/hostCity	<Host, capital>	0.04176338	NN	<city, capital>	0.3199085	NN	
+0.1718353	http://dbpedia.org/property/returns	<returns, capital>	0.1718353	NN	
+0.17086207250000002	http://dbpedia.org/ontology/sourceCountry	<source, capital>	0.083882645	NN	<country, capital>	0.2578415	NN	
+0.17086207250000002	http://dbpedia.org/property/sourceCountry	<source, capital>	0.083882645	NN	<country, capital>	0.2578415	NN	
+0.17002918	http://dbpedia.org/property/territory	<territory, capital>	0.17002918	NN	
+0.16967541	http://dbpedia.org/property/countryFilmed	<country, capital>	0.2578415	NN	<filmed, capital>	0.08150932	NN	
+0.16430610299999998	http://dbpedia.org/property/currentCity	<current, capital>	0.008703706	NN	<city, capital>	0.3199085	NN	
+0.16163922149999999	http://dbpedia.org/property/locationTown	<location, capital>	0.044044543	NN	<town, capital>	0.2792339	NN	
+0.16102679	http://dbpedia.org/property/hometown	<hometown, capital>	0.16102679	NN	
+0.15995425	http://dbpedia.org/ontology/largestCity	<largest, null>	0.0	null	<city, capital>	0.3199085	NN	
+0.15995425	http://dbpedia.org/property/largestCity	<largest, null>	0.0	null	<city, capital>	0.3199085	NN	
+0.15995425	http://dbpedia.org/ontology/nearestCity	<nearest, null>	0.0	null	<city, capital>	0.3199085	NN	
+0.15995425	http://dbpedia.org/property/nearestCity	<nearest, null>	0.0	null	<city, capital>	0.3199085	NN	
+0.15995425	http://dbpedia.org/property/hqCity	<hq, null>	0.0	null	<city, capital>	0.3199085	NN	
+0.155073221	http://dbpedia.org/ontology/usingCountry	<using, capital>	0.052304942	NN	<country, capital>	0.2578415	NN	
+0.154406828	http://dbpedia.org/property/shipCountry	<Ship, capital>	0.050972156	NN	<country, capital>	0.2578415	NN	
+0.15388967666666667	http://dbpedia.org/property/placeOfBirth	<PLACE, capital>	0.46166903	NN	<OF, null>	0.0	null	<BIRTH, null>	0.0	null	
+0.15388967666666667	http://dbpedia.org/property/placeOfDeath	<PLACE, capital>	0.46166903	NN	<OF, null>	0.0	null	<DEATH, null>	0.0	null	
+0.1509430215	http://dbpedia.org/property/locationCountry	<location, capital>	0.044044543	NN	<country, capital>	0.2578415	NN	
+0.1509430215	http://dbpedia.org/property/locationCountries	<location, capital>	0.044044543	NN	<countries, capital>	0.2578415	NN	
+0.15033263	http://dbpedia.org/property/setting	<setting, capital>	0.15033263	NN	
+0.14914227	http://dbpedia.org/ontology/thirdDriverCountry	<third, capital>	0.1109664	NN	<driver, capital>	0.07861891	NN	<country, capital>	0.2578415	NN	
+0.14865282	http://dbpedia.org/ontology/region	<region, capital>	0.14865282	NN	
+0.14865282	http://dbpedia.org/property/region	<region, capital>	0.14865282	NN	
+0.1452313	http://dbpedia.org/property/ownership	<ownership, capital>	0.1452313	NN	
+0.14242086	http://dbpedia.org/property/factory	<factory, capital>	0.14242086	NN	
+0.1411122915	http://dbpedia.org/ontology/mouthCountry	<mouth, capital>	0.024383083	NN	<country, capital>	0.2578415	NN	
+0.1411122915	http://dbpedia.org/property/mouthCountry	<mouth, capital>	0.024383083	NN	<country, capital>	0.2578415	NN	
+0.13961695	http://dbpedia.org/property/nearestTown	<nearest, null>	0.0	null	<town, capital>	0.2792339	NN	
+0.139059716	http://dbpedia.org/property/countryName	<country, capital>	0.2578415	NN	<name, capital>	0.020277932	NN	
+0.13478604	http://dbpedia.org/property/nation	<nation, capital>	0.13478604	NN	
+0.13411546	http://dbpedia.org/property/bankOf	<bank, capital>	0.26823092	NN	<of, null>	0.0	null	
+0.1315115475	http://dbpedia.org/ontology/place	<place, capital>	0.46166903	NN	<of, null>	0.0	null	<military, capital>	0.03132948	NN	<conflict, capital>	0.03304768	NN	
+0.12947193965	http://dbpedia.org/property/otherCountries	<other, capital>	0.0011023793	NN	<countries, capital>	0.2578415	NN	
+0.12892075	http://dbpedia.org/property/basinCountries	<basin, null>	0.0	null	<countries, capital>	0.2578415	NN	
+0.12892075	http://dbpedia.org/property/countriesAffected	<countries, capital>	0.2578415	NN	<affected, null>	0.0	null	
+0.12892075	http://dbpedia.org/property/twin1Country	<twin1, null>	0.0	null	<country, capital>	0.2578415	NN	
+0.12892075	http://dbpedia.org/ontology/sportCountry	<sport, null>	0.0	null	<country, capital>	0.2578415	NN	
+0.12892075	http://dbpedia.org/ontology/twinCountry	<twin, null>	0.0	null	<country, capital>	0.2578415	NN	
+0.12892075	http://dbpedia.org/property/byCountry	<by, null>	0.0	null	<country, capital>	0.2578415	NN	
+0.12892075	http://dbpedia.org/property/twin3Country	<twin3, null>	0.0	null	<country, capital>	0.2578415	NN	
+0.12892075	http://dbpedia.org/property/twin2Country	<twin2, null>	0.0	null	<country, capital>	0.2578415	NN	
+0.1288896	http://dbpedia.org/property/stadium	<stadium, capital>	0.1288896	NN	
+0.1275419325	http://dbpedia.org/ontology/regionServed	<region, capital>	0.14865282	NN	<served, capital>	0.106431045	NN	
+0.1275419325	http://dbpedia.org/property/regionServed	<region, capital>	0.14865282	NN	<served, capital>	0.106431045	NN	
+0.12412313	http://dbpedia.org/property/east	<East, capital>	0.12412313	NN	
+0.12387112	http://dbpedia.org/property/currencyCode	<currency, capital>	0.24774224	NN	<code, null>	0.0	null	
+0.12344245	http://dbpedia.org/property/gold	<gold, capital>	0.12344245	NN	
+0.121637861	http://dbpedia.org/ontology/firstDriverCountry	<first, capital>	0.028453173	NN	<driver, capital>	0.07861891	NN	<country, capital>	0.2578415	NN	
+0.11926654	http://dbpedia.org/property/home	<Home, capital>	0.11926654	NN	
+0.11841449	http://dbpedia.org/property/workInstitutions	<work, null>	0.0	null	<institutions, capital>	0.23682898	NN	
+0.1149228	http://dbpedia.org/property/shooting	<shooting, capital>	0.1149228	NN	
+0.11248299	http://dbpedia.org/ontology/campus	<campus, capital>	0.11248299	NN	
+0.11055098	http://dbpedia.org/property/thumb	<thumb, capital>	0.11055098	NN	
+0.10577178	http://dbpedia.org/property/venue	<venue, capital>	0.10577178	NN	
+0.10577178	http://dbpedia.org/property/venues	<venues, capital>	0.10577178	NN	
+0.10516964	http://dbpedia.org/property/caption	<Caption, capital>	0.10516964	NN	
+0.103345536	http://dbpedia.org/property/office	<office, capital>	0.103345536	NN	
+0.1032069	http://dbpedia.org/property/foundation	<foundation, capital>	0.1032069	NN	
+0.102534316	http://dbpedia.org/property/countryOfProduction	<country, capital>	0.2578415	NN	<of, null>	0.0	null	<production, capital>	0.049761448	NN	
+0.101351945	http://dbpedia.org/property/populationEstimate	<population, capital>	0.09306297	NN	<estimate, capital>	0.10964092	NN	
+
+Who is the governor of Wyoming?
+1.0	http://dbpedia.org/property/governor	<Governor, governor>	1.0	NN	
+0.6518837	http://dbpedia.org/property/lieutenantGovernor	<Lieutenant, governor>	0.3037674	NN	<Governor, governor>	1.0	NN	
+0.57773167	http://dbpedia.org/property/legislature	<Legislature, governor>	0.57773167	NN	
+0.5767761	http://dbpedia.org/property/senators	<Senators, governor>	0.5767761	NN	
+0.4345891333333333	http://dbpedia.org/property/lieutenantGovernorAlt	<Lieutenant, governor>	0.3037674	NN	<Governor, governor>	1.0	NN	<alt, null>	0.0	null	
+0.303101475	http://dbpedia.org/property/vicePresidentialNomineeState	<vice, governor>	0.21287401	NN	<presidential, governor>	0.4637696	NN	<nominee, governor>	0.3289552	NN	<state, governor>	0.20680709	NN	
+0.23928879	http://dbpedia.org/property/authority	<authority, governor>	0.23928879	NN	
+0.22960393	http://dbpedia.org/property/state/province	<state/province, governor>	0.22960393	NN	
+0.20680709	http://dbpedia.org/property/state	<state, governor>	0.20680709	NN	
+0.20680709	http://dbpedia.org/ontology/state	<state, governor>	0.20680709	NN	
+0.20680709	http://dbpedia.org/property/states	<states, governor>	0.20680709	NN	
+0.193172443	http://dbpedia.org/property/officialName	<official, governor>	0.3156929	NN	<name, governor>	0.070651986	NN	
+0.17636284	http://dbpedia.org/property/representative	<Representative, governor>	0.17636284	NN	
+0.16694978	http://dbpedia.org/property/office	<office, governor>	0.16694978	NN	
+0.14071697	http://dbpedia.org/property/garrison	<garrison, governor>	0.14071697	NN	
+0.14071697	http://dbpedia.org/ontology/garrison	<garrison, governor>	0.14071697	NN	
+0.135353735	http://dbpedia.org/property/sourceState	<source, governor>	0.06390038	NN	<state, governor>	0.20680709	NN	
+0.13337676	http://dbpedia.org/property/succeeded	<succeeded, governor>	0.13337676	NN	
+0.118459605	http://dbpedia.org/ontology/jurisdiction	<jurisdiction, governor>	0.118459605	NN	
+0.118459605	http://dbpedia.org/property/jurisdiction	<jurisdiction, governor>	0.118459605	NN	
+0.107989416	http://dbpedia.org/property/former	<Former, governor>	0.107989416	NN	
+0.103403545	http://dbpedia.org/property/vpState	<vp, null>	0.0	null	<state, governor>	0.20680709	NN	
+
+Who was the father of Queen Elizabeth II?
+1.0	http://dbpedia.org/property/father	<father, father>	1.0	NN	
+0.8712777	http://dbpedia.org/ontology/parent	<parent, father>	0.8712777	NN	
+0.7052168	http://dbpedia.org/property/mother	<mother, father>	0.7052168	NN	
+0.55115354	http://dbpedia.org/property/leader	<leader, father>	0.55115354	NN	
+0.55115354	http://dbpedia.org/ontology/leader	<leader, father>	0.55115354	NN	
+0.49730504	http://dbpedia.org/ontology/person	<person, father>	0.49730504	NN	
+0.35145574	http://dbpedia.org/property/leaderName	<leader, father>	0.55115354	NN	<name, father>	0.15175794	NN	
+0.35145574	http://dbpedia.org/ontology/leaderName	<leader, father>	0.55115354	NN	<name, father>	0.15175794	NN	
+0.31796834	http://dbpedia.org/property/spouse	<spouse, father>	0.31796834	NN	
+0.31796834	http://dbpedia.org/ontology/spouse	<spouse, father>	0.31796834	NN	
+0.30431035	http://dbpedia.org/property/relatives	<relatives, father>	0.30431035	NN	
+0.30431035	http://dbpedia.org/ontology/relative	<relative, father>	0.30431035	NN	
+0.25163170549999997	http://dbpedia.org/ontology/keyPerson	<key, father>	0.005958371	NN	<person, father>	0.49730504	NN	
+0.24909071466666668	http://dbpedia.org/property/countryLeaderName	<country, father>	0.044360664	NN	<leader, father>	0.55115354	NN	<name, father>	0.15175794	NN	
+0.2421695	http://dbpedia.org/property/heir	<heir, father>	0.2421695	NN	
+0.1764872	http://dbpedia.org/property/owner	<owner, father>	0.1764872	NN	
+0.1764872	http://dbpedia.org/ontology/owner	<owner, father>	0.1764872	NN	
+0.16215713	http://dbpedia.org/property/head	<head, father>	0.16215713	NN	
+0.16215713	http://dbpedia.org/ontology/head	<head, father>	0.16215713	NN	
+0.15972518800000002	http://dbpedia.org/ontology/birthYear	<birth, father>	0.23345424	NN	<year, father>	0.085996136	NN	
+0.15175794	http://dbpedia.org/property/name	<name, father>	0.15175794	NN	
+0.14012642	http://dbpedia.org/property/predecessor	<predecessor, father>	0.14012642	NN	
+0.14012642	http://dbpedia.org/ontology/predecessor	<predecessor, father>	0.14012642	NN	
+0.12689503	http://dbpedia.org/property/commanderInChief	<commander-in-chief, father>	0.12689503	NN	
+0.12497405	http://dbpedia.org/property/monarch	<monarch, father>	0.12497405	NN	
+0.12497405	http://dbpedia.org/ontology/monarch	<monarch, father>	0.12497405	NN	
+0.1224514305	http://dbpedia.org/property/birthPlace	<birth, father>	0.23345424	NN	<place, father>	0.011448621	NN	
+0.1224514305	http://dbpedia.org/ontology/birthPlace	<birth, father>	0.23345424	NN	<place, father>	0.011448621	NN	
+0.1223132455	http://dbpedia.org/ontology/birthDate	<birth, father>	0.23345424	NN	<date, father>	0.011172251	NN	
+0.1223132455	http://dbpedia.org/property/birthDate	<birth, father>	0.23345424	NN	<date, father>	0.011172251	NN	
+0.11883003	http://dbpedia.org/property/house	<house, father>	0.11883003	NN	
+0.11163167	http://dbpedia.org/property/successor	<successor, father>	0.11163167	NN	
+0.11163167	http://dbpedia.org/ontology/successor	<successor, father>	0.11163167	NN	
+0.106601635	http://dbpedia.org/property/firstMonarch	<first, father>	0.08822922	NN	<monarch, father>	0.12497405	NN	
+
+What is the birth name of Angela Merkel?
+1.0	http://dbpedia.org/property/birthName	<birth, birth>	1.0	NN	<name, name>	1.0	NN	
+1.0	http://dbpedia.org/property/name	<name, name>	1.0	NN	
+0.8011833	http://dbpedia.org/property/title	<title, name>	0.8011833	NN	
+0.6469561	http://dbpedia.org/ontology/birthDate	<birth, birth>	1.0	NN	<date, name>	0.2939122	NN	
+0.6469561	http://dbpedia.org/property/birthDate	<birth, birth>	1.0	NN	<date, name>	0.2939122	NN	
+0.62019694	http://dbpedia.org/property/signature	<signature, name>	0.62019694	NN	
+0.577554315	http://dbpedia.org/ontology/birthYear	<birth, birth>	1.0	NN	<year, birth>	0.15510863	NN	
+0.55067731	http://dbpedia.org/property/leaderName	<leader, name>	0.10135462	NN	<name, name>	1.0	NN	
+0.54436156	http://dbpedia.org/ontology/birthPlace	<birth, birth>	1.0	NN	<place, name>	0.08872312	NN	
+0.54436156	http://dbpedia.org/property/birthPlace	<birth, birth>	1.0	NN	<place, name>	0.08872312	NN	
+0.4313040666666667	http://dbpedia.org/property/dateOfBirth	<DATE, name>	0.2939122	NN	<OF, null>	0.0	null	<BIRTH, birth>	1.0	NN	
+0.36290770666666666	http://dbpedia.org/property/placeOfBirth	<PLACE, name>	0.08872312	NN	<OF, null>	0.0	null	<BIRTH, birth>	1.0	NN	
+0.24787639	http://dbpedia.org/property/termStart	<term, name>	0.26374322	NN	<start, birth>	0.23200956	NN	
+0.200520895	http://dbpedia.org/ontology/termPeriod	<term, name>	0.26374322	NN	<period, birth>	0.13729857	NN	
+0.20047453250000002	http://dbpedia.org/ontology/activeYearsStartDate	<active, name>	0.12086774	NN	<years, birth>	0.15510863	NN	<start, birth>	0.23200956	NN	<date, name>	0.2939122	NN	
+0.18323983	http://dbpedia.org/ontology/president	<president, name>	0.18323983	NN	
+0.18323983	http://dbpedia.org/property/president	<President, name>	0.18323983	NN	
+0.15510863	http://dbpedia.org/property/years	<years, birth>	0.15510863	NN	
+0.15384349	http://dbpedia.org/ontology/firstLeader	<firstLeader, name>	0.15384349	NN	
+0.15023604699999998	http://dbpedia.org/ontology/activeYearsEndDate	<active, name>	0.12086774	NN	<years, birth>	0.15510863	NN	<end, birth>	0.031055618	NN	<date, name>	0.2939122	NN	
+0.147399419	http://dbpedia.org/property/termEnd	<term, name>	0.26374322	NN	<end, birth>	0.031055618	NN	
+0.14231315	http://dbpedia.org/ontology/wikiPageID	<Wikipage, null>	0.0	null	<page, name>	0.16405845	NN	<ID, name>	0.262881	NN	
+0.1314405	http://dbpedia.org/ontology/viafId	<VIAF, null>	0.0	null	<Id, name>	0.262881	NN	
+0.1314405	http://dbpedia.org/ontology/lccnId	<LCCN, null>	0.0	null	<Id, name>	0.262881	NN	
+0.115756996	http://dbpedia.org/ontology/deputy	<deputy, name>	0.115756996	NN	
+0.115756996	http://dbpedia.org/property/deputy	<deputy, name>	0.115756996	NN	
+0.114631124	http://dbpedia.org/property/chancellor	<chancellor, name>	0.114631124	NN	
+0.114631124	http://dbpedia.org/ontology/chancellor	<chancellor, name>	0.114631124	NN	
+0.11009413	http://dbpedia.org/property/display	<display, name>	0.11009413	NN	
+0.10135462	http://dbpedia.org/ontology/leader	<leader, name>	0.10135462	NN	
+0.10135462	http://dbpedia.org/property/leader	<leader, name>	0.10135462	NN	
+
+Give me all companies in Munich.
+0.5	http://dbpedia.org/ontology/owningCompany	<owning, null>	0.0	null	<company, companies>	1.0	NN	
+0.41855237	http://dbpedia.org/ontology/manufacturer	<manufacturer, companies>	0.41855237	NN	
+0.28237918	http://dbpedia.org/property/owner	<owner, companies>	0.28237918	NN	
+0.28237918	http://dbpedia.org/ontology/owner	<owner, companies>	0.28237918	NN	
+0.23939039	http://dbpedia.org/ontology/subsidiary	<subsidiary, companies>	0.23939039	NN	
+0.22293824	http://dbpedia.org/property/producer	<producer, companies>	0.22293824	NN	
+0.22293824	http://dbpedia.org/ontology/producer	<producer, companies>	0.22293824	NN	
+0.2035672675	http://dbpedia.org/property/headquartersOfParentOrganization	<Headquarters, companies>	0.06473871	NN	<of, null>	0.0	null	<parent, companies>	0.02999602	NN	<organization, companies>	0.71953434	NN	
+0.19702853	http://dbpedia.org/property/office	<office, companies>	0.19702853	NN	
+0.17769781	http://dbpedia.org/ontology/publisher	<publisher, companies>	0.17769781	NN	
+0.16986607	http://dbpedia.org/ontology/division	<division, companies>	0.16986607	NN	
+0.15002833	http://dbpedia.org/property/city	<city, companies>	0.15002833	NN	
+0.15002833	http://dbpedia.org/ontology/city	<city, companies>	0.15002833	NN	
+0.14380604	http://dbpedia.org/ontology/distributor	<distributor, companies>	0.14380604	NN	
+0.1436314	http://dbpedia.org/ontology/leaderName	<leader, companies>	0.17552054	NN	<name, companies>	0.11174226	NN	
+0.14122407	http://dbpedia.org/ontology/country	<country, companies>	0.14122407	NN	
+0.14122407	http://dbpedia.org/property/country	<country, companies>	0.14122407	NN	
+0.13180692	http://dbpedia.org/property/capital	<Capital, companies>	0.13180692	NN	
+0.13180692	http://dbpedia.org/ontology/capital	<capital, companies>	0.13180692	NN	
+0.13136952	http://dbpedia.org/property/garrison	<garrison, companies>	0.13136952	NN	
+0.13136952	http://dbpedia.org/ontology/garrison	<garrison, companies>	0.13136952	NN	
+0.11435508	http://dbpedia.org/property/site	<site, companies>	0.11435508	NN	
+0.112521246	http://dbpedia.org/property/cityServed	<city-served, companies>	0.112521246	NN	
+0.110780845	http://dbpedia.org/ontology/federalState	<federal, companies>	0.14137076	NN	<state, companies>	0.08019093	NN	
+0.10803407999999999	http://dbpedia.org/property/locationCity	<location, companies>	0.06603983	NN	<city, companies>	0.15002833	NN	
+0.10803407999999999	http://dbpedia.org/ontology/locationCity	<location, companies>	0.06603983	NN	<city, companies>	0.15002833	NN	
+0.10449404	http://dbpedia.org/property/start	<start, companies>	0.10449404	NN	
+0.103256291	http://dbpedia.org/property/hostCity	<Host, companies>	0.056484252	NN	<city, companies>	0.15002833	NN	
+
+List all games by GMT.
+
+Who is the husband of Amanda Palmer?
+0.9129618	http://dbpedia.org/property/spouse	<spouse, husband>	0.9129618	NN	
+0.9129618	http://dbpedia.org/ontology/spouse	<spouse, husband>	0.9129618	NN	
+0.10927122	http://dbpedia.org/ontology/writer	<writer, husband>	0.10927122	NN	
+0.10927122	http://dbpedia.org/property/writer	<writer, husband>	0.10927122	NN	
+0.10161986	http://dbpedia.org/property/author	<author, husband>	0.10161986	NN	
+0.10161986	http://dbpedia.org/ontology/author	<author, husband>	0.10161986	NN	
+
+Give me all breeds of the German Shepherd dog.
+
+Which other weapons did the designer of the Uzi develop?
+1.0	http://dbpedia.org/property/designer	<designer, designer>	1.0	NN	
+0.29947409999999997	http://dbpedia.org/property/designDate	<design, designer>	0.5620879	NN	<date, designer>	0.0368603	NN	
+0.24394657	http://dbpedia.org/property/manufacturer	<manufacturer, designer>	0.24394657	NN	
+
+Give me the capitals of all countries in Africa.
+1.0	http://dbpedia.org/property/countries	<countries, countries>	1.0	NN	
+1.0	http://dbpedia.org/ontology/country	<country, countries>	1.0	NN	
+1.0	http://dbpedia.org/property/country	<country, countries>	1.0	NN	
+0.82823336	http://dbpedia.org/property/region	<region, countries>	0.82823336	NN	
+0.547413	http://dbpedia.org/property/area	<area, countries>	0.547413	NN	
+0.533174415	http://dbpedia.org/property/listCountries	<list, countries>	0.06634883	NN	<countries, countries>	1.0	NN	
+0.529511595	http://dbpedia.org/property/locationCountry	<location, countries>	0.05902319	NN	<country, countries>	1.0	NN	
+0.5	http://dbpedia.org/ontology/mouthCountry	<mouth, null>	0.0	null	<country, countries>	1.0	NN	
+0.5	http://dbpedia.org/property/mouthCountry	<mouth, null>	0.0	null	<country, countries>	1.0	NN	
+0.447265785	http://dbpedia.org/ontology/regionServed	<region, countries>	0.82823336	NN	<served, countries>	0.06629821	NN	
+0.447265785	http://dbpedia.org/property/regionServed	<region, countries>	0.82823336	NN	<served, countries>	0.06629821	NN	
+0.436955	http://dbpedia.org/property/cities	<cities, countries>	0.436955	NN	
+0.40535972	http://dbpedia.org/property/continent	<continent, countries>	0.40535972	NN	
+0.34428626	http://dbpedia.org/ontology/division	<division, countries>	0.34428626	NN	
+0.30685560500000003	http://dbpedia.org/property/areaServed	<area, countries>	0.547413	NN	<served, countries>	0.06629821	NN	
+0.2885727625	http://dbpedia.org/ontology/broadcastArea	<broadcast, countries>	0.029732525	NN	<area, countries>	0.547413	NN	
+0.2885727625	http://dbpedia.org/property/broadcastArea	<broadcast, countries>	0.029732525	NN	<area, countries>	0.547413	NN	
+0.27568357	http://dbpedia.org/ontology/hometown	<home, countries>	0.18619466	NN	<town, countries>	0.36517248	NN	
+0.27129403	http://dbpedia.org/property/today	<today, countries>	0.27129403	NN	
+0.23241954	http://dbpedia.org/property/population	<population, countries>	0.23241954	NN	
+0.22146818499999998	http://dbpedia.org/ontology/populationPlace	<population, countries>	0.23241954	NN	<place, countries>	0.21051683	NN	
+0.21051683	http://dbpedia.org/property/place	<place, countries>	0.21051683	NN	
+0.18619466	http://dbpedia.org/property/home	<Home, countries>	0.18619466	NN	
+0.183271248	http://dbpedia.org/property/regionalScenes	<regional, countries>	0.3164526	NN	<scenes, countries>	0.050089896	NN	
+0.18247100000000002	http://dbpedia.org/ontology/PopulatedPlace/areaTotal	<area, countries>	0.547413	NN	<total, null>	0.0	null	<(km2), null>	0.0	null	
+0.18247100000000002	http://dbpedia.org/ontology/areaTotal	<area, countries>	0.547413	NN	<total, null>	0.0	null	<(m2), null>	0.0	null	
+0.17526984	http://dbpedia.org/ontology/industry	<industry, countries>	0.17526984	NN	
+0.16540968	http://dbpedia.org/property/originPlace	<origin-place, countries>	0.16540968	NN	
+0.12295637	http://dbpedia.org/ontology/field	<field, countries>	0.12295637	NN	
+0.12295637	http://dbpedia.org/property/field	<field, countries>	0.12295637	NN	
+0.122770401	http://dbpedia.org/ontology/deathPlace	<death, countries>	0.035023972	NN	<place, countries>	0.21051683	NN	
+0.122770401	http://dbpedia.org/property/deathPlace	<death, countries>	0.035023972	NN	<place, countries>	0.21051683	NN	
+0.11807899999999999	http://dbpedia.org/ontology/birthPlace	<birth, countries>	0.02564117	NN	<place, countries>	0.21051683	NN	
+0.11807899999999999	http://dbpedia.org/property/birthPlace	<birth, countries>	0.02564117	NN	<place, countries>	0.21051683	NN	
+0.11620977	http://dbpedia.org/ontology/populationTotal	<population, countries>	0.23241954	NN	<total, null>	0.0	null	
+0.10817617	http://dbpedia.org/property/time	<time, countries>	0.10817617	NN	
+0.105171666	http://dbpedia.org/property/category	<category, countries>	0.105171666	NN	
+
+Who are the parents of the wife of Juan Carlos I?
+0.8091827	http://dbpedia.org/property/spouse	<spouse, wife>	0.8091827	NN	
+0.8091827	http://dbpedia.org/ontology/spouse	<spouse, wife>	0.8091827	NN	
+0.7432766	http://dbpedia.org/property/father	<father, wife>	0.7432766	NN	
+0.6965676	http://dbpedia.org/property/mother	<mother, wife>	0.6965676	NN	
+0.49619436	http://dbpedia.org/ontology/person	<person, wife>	0.49619436	NN	
+0.37441257	http://dbpedia.org/ontology/parent	<parent, wife>	0.37441257	NN	
+0.2512050258	http://dbpedia.org/ontology/keyPerson	<key, wife>	0.0062156916	NN	<person, wife>	0.49619436	NN	
+0.17010035	http://dbpedia.org/property/heir	<heir, wife>	0.17010035	NN	
+0.16110848	http://dbpedia.org/property/name	<name, wife>	0.16110848	NN	
+0.15684557	http://dbpedia.org/property/house	<house, wife>	0.15684557	NN	
+0.15165403	http://dbpedia.org/property/head	<head, wife>	0.15165403	NN	
+0.116725914	http://dbpedia.org/property/commanderInChief	<commander-in-chief, wife>	0.116725914	NN	
+
+Give me all cities in New Jersey with more than 100000 inhabitants.
+1.0	http://dbpedia.org/ontology/city	<city, cities>	1.0	NN	
+1.0	http://dbpedia.org/property/city	<city, cities>	1.0	NN	
+0.75	http://dbpedia.org/property/largestcity	<LargestCity, cities>	0.75	NN	
+0.62860615	http://dbpedia.org/ontology/locationCity	<location, cities>	0.2572123	NN	<city, cities>	1.0	NN	
+0.62860615	http://dbpedia.org/property/locationCity	<location, cities>	0.2572123	NN	<city, cities>	1.0	NN	
+0.5985778	http://dbpedia.org/property/totalarea	<TotalArea, cities>	0.5985778	NN	
+0.5985778	http://dbpedia.org/property/areas	<Areas, cities>	0.5985778	NN	
+0.5985778	http://dbpedia.org/property/area	<area, cities>	0.5985778	NN	
+0.52799083	http://dbpedia.org/ontology/hometown	<home, cities>	0.29068133	NN	<town, cities>	0.76530033	NN	
+0.52799083	http://dbpedia.org/property/homeTown	<home, cities>	0.29068133	NN	<town, cities>	0.76530033	NN	
+0.5157072	http://dbpedia.org/property/landarea	<LandArea, cities>	0.5157072	NN	
+0.511256315	http://dbpedia.org/property/locationTown	<location, cities>	0.2572123	NN	<town, cities>	0.76530033	NN	
+0.5	http://dbpedia.org/ontology/largestCity	<largest, null>	0.0	null	<city, cities>	1.0	NN	
+0.5	http://dbpedia.org/ontology/nearestCity	<nearest, null>	0.0	null	<city, cities>	1.0	NN	
+0.5	http://dbpedia.org/property/nearestCity	<nearest, null>	0.0	null	<city, cities>	1.0	NN	
+0.5	http://dbpedia.org/property/hqCity	<hq, null>	0.0	null	<city, cities>	1.0	NN	
+0.5	http://dbpedia.org/ontology/twinCity	<twin, null>	0.0	null	<city, cities>	1.0	NN	
+0.47932678	http://dbpedia.org/property/waterarea	<WaterArea, cities>	0.47932678	NN	
+0.4780772	http://dbpedia.org/ontology/territory	<territory, cities>	0.4780772	NN	
+0.4767744	http://dbpedia.org/property/totalareaus	<TotalAreaUS, cities>	0.4767744	NN	
+0.47529912	http://dbpedia.org/property/arearank	<AreaRank, cities>	0.47529912	NN	
+0.46212846	http://dbpedia.org/property/landareaus	<LandAreaUS, cities>	0.46212846	NN	
+0.43787485	http://dbpedia.org/property/waterareaus	<WaterAreaUS, cities>	0.43787485	NN	
+0.436955	http://dbpedia.org/ontology/country	<country, cities>	0.436955	NN	
+0.436955	http://dbpedia.org/property/country	<country, cities>	0.436955	NN	
+0.36065266	http://dbpedia.org/property/serviceArea	<service, cities>	0.12272752	NN	<area, cities>	0.5985778	NN	
+0.35784814	http://dbpedia.org/property/place	<place, cities>	0.35784814	NN	
+0.34672195	http://dbpedia.org/ontology/region	<region, cities>	0.34672195	NN	
+0.34672195	http://dbpedia.org/property/region	<region, cities>	0.34672195	NN	
+0.32918924	http://dbpedia.org/property/state/province	<state/province, cities>	0.32918924	NN	
+0.32413376800000004	http://dbpedia.org/property/areaServed	<area, cities>	0.5985778	NN	<served, cities>	0.049689736	NN	
+0.32313147	http://dbpedia.org/ontology/campus	<campus, cities>	0.32313147	NN	
+0.3199085	http://dbpedia.org/ontology/capital	<capital, cities>	0.3199085	NN	
+0.3199085	http://dbpedia.org/property/capital	<Capital, cities>	0.3199085	NN	
+0.29977650773000003	http://dbpedia.org/property/areasAffected	<areas, cities>	0.5985778	NN	<affected, cities>	9.7521546E-4	NN	
+0.2992889	http://dbpedia.org/ontology/broadcastArea	<broadcast, null>	0.0	null	<area, cities>	0.5985778	NN	
+0.2992889	http://dbpedia.org/property/broadcastArea	<broadcast, null>	0.0	null	<area, cities>	0.5985778	NN	
+0.29287004	http://dbpedia.org/property/state	<state, cities>	0.29287004	NN	
+0.29287004	http://dbpedia.org/ontology/state	<state, cities>	0.29287004	NN	
+0.29287004	http://dbpedia.org/property/states	<states, cities>	0.29287004	NN	
+0.291775685	http://dbpedia.org/property/homeState	<home, cities>	0.29068133	NN	<state, cities>	0.29287004	NN	
+0.29068133	http://dbpedia.org/property/home	<Home, cities>	0.29068133	NN	
+0.28855771	http://dbpedia.org/ontology/areaLand	<area, cities>	0.5985778	NN	<land, cities>	0.26709533	NN	<(m2), null>	0.0	null	
+0.2572123	http://dbpedia.org/property/location	<location, cities>	0.2572123	NN	
+0.2572123	http://dbpedia.org/ontology/location	<location, cities>	0.2572123	NN	
+0.2572123	http://dbpedia.org/property/locations	<locations, cities>	0.2572123	NN	
+0.24239465333333335	http://dbpedia.org/ontology/locatedInArea	<located, cities>	0.12860616	NN	<in, null>	0.0	null	<area, cities>	0.5985778	NN	
+0.24005052333333335	http://dbpedia.org/ontology/areaWater	<area, cities>	0.5985778	NN	<water, cities>	0.12157377	NN	<(m2), null>	0.0	null	
+0.23967838	http://dbpedia.org/property/office	<office, cities>	0.23967838	NN	
+0.2394790775	http://dbpedia.org/ontology/populationPlace	<population, cities>	0.121110015	NN	<place, cities>	0.35784814	NN	
+0.228472	http://dbpedia.org/property/centre	<Centre, cities>	0.228472	NN	
+0.211876355	http://dbpedia.org/ontology/deathPlace	<death, cities>	0.06590457	NN	<place, cities>	0.35784814	NN	
+0.211876355	http://dbpedia.org/property/deathPlace	<death, cities>	0.06590457	NN	<place, cities>	0.35784814	NN	
+0.206571707	http://dbpedia.org/property/meetingPlace	<meeting, cities>	0.055295274	NN	<place, cities>	0.35784814	NN	
+0.20554529249999998	http://dbpedia.org/ontology/sourcePlace	<source, cities>	0.053242445	NN	<place, cities>	0.35784814	NN	
+0.19952593333333335	http://dbpedia.org/ontology/areaTotal	<area, cities>	0.5985778	NN	<total, null>	0.0	null	<(m2), null>	0.0	null	
+0.19952593333333335	http://dbpedia.org/ontology/PopulatedPlace/areaTotal	<area, cities>	0.5985778	NN	<total, null>	0.0	null	<(km2), null>	0.0	null	
+0.198205843	http://dbpedia.org/ontology/regionServed	<region, cities>	0.34672195	NN	<served, cities>	0.049689736	NN	
+0.198205843	http://dbpedia.org/property/regionServed	<region, cities>	0.34672195	NN	<served, cities>	0.049689736	NN	
+0.1930287705	http://dbpedia.org/ontology/foundationPlace	<foundation, cities>	0.028209401	NN	<place, cities>	0.35784814	NN	
+0.192981935	http://dbpedia.org/property/populatedStates	<populated, cities>	0.09309383	NN	<states, cities>	0.29287004	NN	
+0.1883400645	http://dbpedia.org/ontology/restingPlace	<resting, cities>	0.018831989	NN	<place, cities>	0.35784814	NN	
+0.18626502	http://dbpedia.org/property/hometown	<hometown, cities>	0.18626502	NN	
+0.185954055	http://dbpedia.org/property/regionalScenes	<regional, cities>	0.18462144	NN	<scenes, cities>	0.18728667	NN	
+0.18417889999999998	http://dbpedia.org/property/foundedPlace	<founded, cities>	0.01050966	NN	<place, cities>	0.35784814	NN	
+0.17892407	http://dbpedia.org/ontology/birthPlace	<birth, null>	0.0	null	<place, cities>	0.35784814	NN	
+0.17892407	http://dbpedia.org/property/birthPlace	<birth, null>	0.0	null	<place, cities>	0.35784814	NN	
+0.17892407	http://dbpedia.org/ontology/mouthPlace	<mouth, null>	0.0	null	<place, cities>	0.35784814	NN	
+0.17892407	http://dbpedia.org/ontology/premierePlace	<premiere, null>	0.0	null	<place, cities>	0.35784814	NN	
+0.1730562425	http://dbpedia.org/property/sourceState	<source, cities>	0.053242445	NN	<state, cities>	0.29287004	NN	
+0.17055565	http://dbpedia.org/property/venue	<venue, cities>	0.17055565	NN	
+0.16634855	http://dbpedia.org/property/largestmetro	<LargestMetro, cities>	0.16634855	NN	
+0.15522737250000002	http://dbpedia.org/property/sourceLocation	<source, cities>	0.053242445	NN	<location, cities>	0.2572123	NN	
+0.14643502	http://dbpedia.org/property/mouthState	<mouth, null>	0.0	null	<state, cities>	0.29287004	NN	
+0.14643502	http://dbpedia.org/property/vpState	<vp, null>	0.0	null	<state, cities>	0.29287004	NN	
+0.14551595	http://dbpedia.org/property/setting	<setting, cities>	0.14551595	NN	
+0.14507622	http://dbpedia.org/property/stadium	<stadium, cities>	0.14507622	NN	
+0.14125090333333332	http://dbpedia.org/property/placeOfDeath	<PLACE, cities>	0.35784814	NN	<OF, null>	0.0	null	<DEATH, cities>	0.06590457	NN	
+0.13474354	http://dbpedia.org/ontology/residence	<residence, cities>	0.13474354	NN	
+0.13474354	http://dbpedia.org/property/residence	<residence, cities>	0.13474354	NN	
+0.12860615	http://dbpedia.org/property/foundingLocation	<founding, null>	0.0	null	<location, cities>	0.2572123	NN	
+0.12409996000000001	http://dbpedia.org/property/building/propertyOwners	<building/Property, cities>	0.15421155	NN	<Owners, cities>	0.09398837	NN	
+0.12272752	http://dbpedia.org/property/services	<services, cities>	0.12272752	NN	
+0.12272752	http://dbpedia.org/ontology/service	<service, cities>	0.12272752	NN	
+0.12063761	http://dbpedia.org/property/quarter	<Quarter, cities>	0.12063761	NN	
+0.11928271333333333	http://dbpedia.org/property/placeOfBirth	<PLACE, cities>	0.35784814	NN	<OF, null>	0.0	null	<BIRTH, null>	0.0	null	
+0.117461726	http://dbpedia.org/property/locale	<locale, cities>	0.117461726	NN	
+0.115799055	http://dbpedia.org/property/east	<East, cities>	0.115799055	NN	
+0.11198305333333335	http://dbpedia.org/property/locationOfMill	<location, cities>	0.2572123	NN	<of, null>	0.0	null	<mill, cities>	0.07873686	NN	
+0.1094048975	http://dbpedia.org/ontology/sourceMountain	<source, cities>	0.053242445	NN	<mountain, cities>	0.16556735	NN	
+0.10822274500000001	http://dbpedia.org/property/shipBuilder	<Ship, cities>	0.13295302	NN	<builder, cities>	0.08349247	NN	
+0.1060033025	http://dbpedia.org/ontology/place	<place, cities>	0.35784814	NN	<of, null>	0.0	null	<military, cities>	0.03395105	NN	<conflict, cities>	0.03221402	NN	
+0.103207556	http://dbpedia.org/property/subdivisionName	<subdivision, cities>	0.15287508	NN	<name, cities>	0.053540032	NN	
+
+List the children of Margaret Thatcher.
+1.0	http://dbpedia.org/property/children	<children, children>	1.0	NN	
+1.0	http://dbpedia.org/ontology/child	<child, children>	1.0	NN	
+0.6311516	http://dbpedia.org/ontology/parent	<parent, children>	0.6311516	NN	
+0.6311516	http://dbpedia.org/property/parents	<parents, children>	0.6311516	NN	
+0.16365902	http://dbpedia.org/property/spouse	<spouse, children>	0.16365902	NN	
+0.16365902	http://dbpedia.org/ontology/spouse	<spouse, children>	0.16365902	NN	
+0.161074675	http://dbpedia.org/ontology/birthYear	<birth, children>	0.25710657	NN	<year, children>	0.06504278	NN	
+0.1513394125	http://dbpedia.org/property/birthPlace	<birth, children>	0.25710657	NN	<place, children>	0.045572255	NN	
+0.1513394125	http://dbpedia.org/ontology/birthPlace	<birth, children>	0.25710657	NN	<place, children>	0.045572255	NN	
+0.148688525	http://dbpedia.org/ontology/notableStudent	<notable, null>	0.0	null	<student, children>	0.29737705	NN	
+0.148688525	http://dbpedia.org/property/notableStudents	<notable, null>	0.0	null	<students, children>	0.29737705	NN	
+0.13831468	http://dbpedia.org/property/subject	<subject, children>	0.13831468	NN	
+0.13345690699999999	http://dbpedia.org/ontology/birthDate	<birth, children>	0.25710657	NN	<date, children>	0.009807244	NN	
+0.13345690699999999	http://dbpedia.org/property/birthDate	<birth, children>	0.25710657	NN	<date, children>	0.009807244	NN	
+0.128553285	http://dbpedia.org/ontology/birthName	<birth, children>	0.25710657	NN	<name, null>	0.0	null	
+0.10295929	http://dbpedia.org/ontology/deathYear	<death, children>	0.1408758	NN	<year, children>	0.06504278	NN	
+0.10089294166666667	http://dbpedia.org/property/placeOfBirth	<PLACE, children>	0.045572255	NN	<OF, null>	0.0	null	<BIRTH, children>	0.25710657	NN	
+
+Give me all books by William Goldman with more than 300 pages.
+0.4877366	http://dbpedia.org/ontology/author	<author, books>	0.4877366	NN	
+0.4877366	http://dbpedia.org/property/author	<author, books>	0.4877366	NN	
+0.35158023	http://dbpedia.org/ontology/writer	<writer, books>	0.35158023	NN	
+0.35158023	http://dbpedia.org/property/writer	<writer, books>	0.35158023	NN	
+0.157322929	http://dbpedia.org/ontology/wikiPageID	<Wikipage, null>	0.0	null	<page, books>	0.42047864	NN	<ID, books>	0.051490147	NN	
+0.10155251	http://dbpedia.org/property/name	<name, books>	0.10155251	NN	
+
+Which books by Kerouac were published by Viking Press?
+0.4877366	http://dbpedia.org/property/author	<author, books>	0.4877366	NN	
+0.4877366	http://dbpedia.org/ontology/author	<author, books>	0.4877366	NN	
+0.35158023	http://dbpedia.org/property/writer	<writer, books>	0.35158023	NN	
+0.35158023	http://dbpedia.org/ontology/writer	<writer, books>	0.35158023	NN	
+0.31322472279999997	http://dbpedia.org/ontology/notableWork	<notable, books>	0.0014307856	NN	<work, books>	0.62501866	NN	
+0.27525112	http://dbpedia.org/property/title	<title, books>	0.27525112	NN	
+0.212845935	http://dbpedia.org/property/allWriting	<all, null>	0.0	null	<writing, books>	0.42569187	NN	
+0.157322929	http://dbpedia.org/ontology/wikiPageID	<Wikipage, null>	0.0	null	<page, books>	0.42047864	NN	<ID, books>	0.051490147	NN	
+0.10440923	http://dbpedia.org/property/artist	<Artist, books>	0.10440923	NN	
+0.10155251	http://dbpedia.org/property/name	<name, books>	0.10155251	NN	
+
+How many people live in the capital of Australia?
+1.0	http://dbpedia.org/ontology/capital	<capital, capital>	1.0	NN	
+1.0	http://dbpedia.org/property/capital	<Capital, capital>	1.0	NN	
+0.46166903	http://dbpedia.org/property/place	<place, capital>	0.46166903	NN	
+0.3199085	http://dbpedia.org/ontology/city	<city, capital>	0.3199085	NN	
+0.3199085	http://dbpedia.org/property/city	<city, capital>	0.3199085	NN	
+0.282437965	http://dbpedia.org/ontology/foundationPlace	<foundation, capital>	0.1032069	NN	<place, capital>	0.46166903	NN	
+0.277366	http://dbpedia.org/ontology/populationPlace	<population, capital>	0.09306297	NN	<place, capital>	0.46166903	NN	
+0.272448665	http://dbpedia.org/property/worldPlace	<world, capital>	0.0832283	NN	<place, capital>	0.46166903	NN	
+0.26788062	http://dbpedia.org/property/markets	<markets, capital>	0.26788062	NN	
+0.26653913	http://dbpedia.org/property/cityServed	<city-served, capital>	0.26653913	NN	
+0.2578415	http://dbpedia.org/ontology/country	<country, capital>	0.2578415	NN	
+0.2578415	http://dbpedia.org/property/country	<country, capital>	0.2578415	NN	
+0.2578415	http://dbpedia.org/property/countries	<countries, capital>	0.2578415	NN	
+0.257317218	http://dbpedia.org/ontology/restingPlace	<resting, capital>	0.052965406	NN	<place, capital>	0.46166903	NN	
+0.257317218	http://dbpedia.org/property/restingPlace	<resting, capital>	0.052965406	NN	<place, capital>	0.46166903	NN	
+0.2515401425	http://dbpedia.org/property/meetingPlace	<meeting, capital>	0.041411255	NN	<place, capital>	0.46166903	NN	
+0.250059833	http://dbpedia.org/property/foundedPlace	<founded, capital>	0.038450636	NN	<place, capital>	0.46166903	NN	
+0.24832551	http://dbpedia.org/property/headquarters	<headquarters, capital>	0.24832551	NN	
+0.24774224	http://dbpedia.org/ontology/currency	<currency, capital>	0.24774224	NN	
+0.24774224	http://dbpedia.org/property/currency	<currency, capital>	0.24774224	NN	
+0.2426390175	http://dbpedia.org/ontology/premierePlace	<premiere, capital>	0.023609005	NN	<place, capital>	0.46166903	NN	
+0.23682898	http://dbpedia.org/ontology/institution	<institution, capital>	0.23682898	NN	
+0.23459433385	http://dbpedia.org/property/championshipPlace	<championship, capital>	0.0075196377	NN	<place, capital>	0.46166903	NN	
+0.23448810579999999	http://dbpedia.org/property/disappearedPlace	<disappeared, capital>	0.0073071816	NN	<place, capital>	0.46166903	NN	
+0.2323822538	http://dbpedia.org/property/gamesPlace	<games, capital>	0.0030954776	NN	<place, capital>	0.46166903	NN	
+0.230834515	http://dbpedia.org/ontology/birthPlace	<birth, null>	0.0	null	<place, capital>	0.46166903	NN	
+0.230834515	http://dbpedia.org/ontology/deathPlace	<death, null>	0.0	null	<place, capital>	0.46166903	NN	
+0.230834515	http://dbpedia.org/property/birthPlace	<birth, null>	0.0	null	<place, capital>	0.46166903	NN	
+0.230834515	http://dbpedia.org/property/deathPlace	<death, null>	0.0	null	<place, capital>	0.46166903	NN	
+0.230834515	http://dbpedia.org/property/asianPlace	<Asian, null>	0.0	null	<place, capital>	0.46166903	NN	
+0.230834515	http://dbpedia.org/property/olympicPlace	<olympic, null>	0.0	null	<place, capital>	0.46166903	NN	
+0.23054433	http://dbpedia.org/property/country/region	<country/region, capital>	0.23054433	NN	
+0.2171739633333333	http://dbpedia.org/property/worldPlaceQ	<world, capital>	0.0832283	NN	<place, capital>	0.46166903	NN	<Q, capital>	0.10662456	NN	
+0.19925021999999998	http://dbpedia.org/ontology/hometown	<home, capital>	0.11926654	NN	<town, capital>	0.2792339	NN	
+0.19925021999999998	http://dbpedia.org/property/homeTown	<home, capital>	0.11926654	NN	<town, capital>	0.2792339	NN	
+0.19808663	http://dbpedia.org/ontology/subsidiary	<subsidiary, capital>	0.19808663	NN	
+0.19550736	http://dbpedia.org/property/float	<float, capital>	0.19550736	NN	
+0.18943119666666666	http://dbpedia.org/property/asianPlaceQ	<Asian, null>	0.0	null	<place, capital>	0.46166903	NN	<Q, capital>	0.10662456	NN	
+0.1819765215	http://dbpedia.org/ontology/locationCity	<location, capital>	0.044044543	NN	<city, capital>	0.3199085	NN	
+0.1819765215	http://dbpedia.org/property/locationCity	<location, capital>	0.044044543	NN	<city, capital>	0.3199085	NN	
+0.18083594	http://dbpedia.org/property/hostCity	<Host, capital>	0.04176338	NN	<city, capital>	0.3199085	NN	
+0.1718353	http://dbpedia.org/property/returns	<returns, capital>	0.1718353	NN	
+0.17086207250000002	http://dbpedia.org/ontology/sourceCountry	<source, capital>	0.083882645	NN	<country, capital>	0.2578415	NN	
+0.17086207250000002	http://dbpedia.org/property/sourceCountry	<source, capital>	0.083882645	NN	<country, capital>	0.2578415	NN	
+0.17002918	http://dbpedia.org/ontology/territory	<territory, capital>	0.17002918	NN	
+0.17002918	http://dbpedia.org/property/territory	<territory, capital>	0.17002918	NN	
+0.16430610299999998	http://dbpedia.org/property/currentCity	<current, capital>	0.008703706	NN	<city, capital>	0.3199085	NN	
+0.16102679	http://dbpedia.org/property/hometown	<hometown, capital>	0.16102679	NN	
+0.15995425	http://dbpedia.org/property/largestCity	<largest, null>	0.0	null	<city, capital>	0.3199085	NN	
+0.15995425	http://dbpedia.org/ontology/largestCity	<largest, null>	0.0	null	<city, capital>	0.3199085	NN	
+0.15995425	http://dbpedia.org/ontology/nearestCity	<nearest, null>	0.0	null	<city, capital>	0.3199085	NN	
+0.15995425	http://dbpedia.org/property/nearestCity	<nearest, null>	0.0	null	<city, capital>	0.3199085	NN	
+0.15618710666666666	http://dbpedia.org/property/cityOrRegion	<city, capital>	0.3199085	NN	<or, null>	0.0	null	<region, capital>	0.14865282	NN	
+0.155073221	http://dbpedia.org/ontology/usingCountry	<using, capital>	0.052304942	NN	<country, capital>	0.2578415	NN	
+0.155073221	http://dbpedia.org/property/usingCountries	<using, capital>	0.052304942	NN	<countries, capital>	0.2578415	NN	
+0.154406828	http://dbpedia.org/property/shipCountry	<Ship, capital>	0.050972156	NN	<country, capital>	0.2578415	NN	
+0.15388967666666667	http://dbpedia.org/property/placeOfBirth	<PLACE, capital>	0.46166903	NN	<OF, null>	0.0	null	<BIRTH, null>	0.0	null	
+0.15388967666666667	http://dbpedia.org/property/placeOfDeath	<PLACE, capital>	0.46166903	NN	<OF, null>	0.0	null	<DEATH, null>	0.0	null	
+0.15388967666666667	http://dbpedia.org/property/placeOfMarriage	<PLACE, capital>	0.46166903	NN	<OF, null>	0.0	null	<MARRIAGE, null>	0.0	null	
+0.1509430215	http://dbpedia.org/property/locationCountry	<location, capital>	0.044044543	NN	<country, capital>	0.2578415	NN	
+0.15033263	http://dbpedia.org/property/setting	<setting, capital>	0.15033263	NN	
+0.1497856	http://dbpedia.org/property/nearestTownOrCity	<nearest, null>	0.0	null	<town, capital>	0.2792339	NN	<or, null>	0.0	null	<city, capital>	0.3199085	NN	
+0.14914227	http://dbpedia.org/ontology/thirdDriverCountry	<third, capital>	0.1109664	NN	<driver, capital>	0.07861891	NN	<country, capital>	0.2578415	NN	
+0.14865282	http://dbpedia.org/ontology/region	<region, capital>	0.14865282	NN	
+0.14865282	http://dbpedia.org/property/region	<region, capital>	0.14865282	NN	
+0.14865282	http://dbpedia.org/property/regions	<regions, capital>	0.14865282	NN	
+0.1411122915	http://dbpedia.org/ontology/mouthCountry	<mouth, capital>	0.024383083	NN	<country, capital>	0.2578415	NN	
+0.1411122915	http://dbpedia.org/property/mouthCountry	<mouth, capital>	0.024383083	NN	<country, capital>	0.2578415	NN	
+0.14096325833333334	http://dbpedia.org/ontology/secondDriverCountry	<second, capital>	0.086429365	NN	<driver, capital>	0.07861891	NN	<country, capital>	0.2578415	NN	
+0.13961695	http://dbpedia.org/property/nearestTown	<nearest, null>	0.0	null	<town, capital>	0.2792339	NN	
+0.139059716	http://dbpedia.org/property/countryName	<country, capital>	0.2578415	NN	<name, capital>	0.020277932	NN	
+0.13478604	http://dbpedia.org/property/nations	<nations, capital>	0.13478604	NN	
+0.13411546	http://dbpedia.org/property/bankOf	<bank, capital>	0.26823092	NN	<of, null>	0.0	null	
+0.13180692	http://dbpedia.org/property/company	<company, capital>	0.13180692	NN	
+0.1315115475	http://dbpedia.org/ontology/place	<place, capital>	0.46166903	NN	<of, null>	0.0	null	<military, capital>	0.03132948	NN	<conflict, capital>	0.03304768	NN	
+0.12892075	http://dbpedia.org/ontology/sportCountry	<sport, null>	0.0	null	<country, capital>	0.2578415	NN	
+0.12892075	http://dbpedia.org/property/basinCountries	<basin, null>	0.0	null	<countries, capital>	0.2578415	NN	
+0.12892075	http://dbpedia.org/property/byCountry	<by, null>	0.0	null	<country, capital>	0.2578415	NN	
+0.12892075	http://dbpedia.org/property/countriesAffected	<countries, capital>	0.2578415	NN	<affected, null>	0.0	null	
+0.1288896	http://dbpedia.org/property/stadium	<stadium, capital>	0.1288896	NN	
+0.1275419325	http://dbpedia.org/ontology/regionServed	<region, capital>	0.14865282	NN	<served, capital>	0.106431045	NN	
+0.1275419325	http://dbpedia.org/property/regionServed	<region, capital>	0.14865282	NN	<served, capital>	0.106431045	NN	
+0.12387112	http://dbpedia.org/property/currencyCode	<currency, capital>	0.24774224	NN	<code, null>	0.0	null	
+0.121637861	http://dbpedia.org/ontology/firstDriverCountry	<first, capital>	0.028453173	NN	<driver, capital>	0.07861891	NN	<country, capital>	0.2578415	NN	
+0.11926654	http://dbpedia.org/property/home	<Home, capital>	0.11926654	NN	
+0.11841449	http://dbpedia.org/property/workInstitution	<work, null>	0.0	null	<institution, capital>	0.23682898	NN	
+0.11841449	http://dbpedia.org/property/workInstitutions	<work, null>	0.0	null	<institutions, capital>	0.23682898	NN	
+0.11779448966666667	http://dbpedia.org/ontology/poleDriverCountry	<pole, capital>	0.016923059	NN	<driver, capital>	0.07861891	NN	<country, capital>	0.2578415	NN	
+0.115322754	http://dbpedia.org/property/continent	<continent, capital>	0.115322754	NN	
+0.11248299	http://dbpedia.org/ontology/campus	<campus, capital>	0.11248299	NN	
+0.11248299	http://dbpedia.org/property/campus	<campus, capital>	0.11248299	NN	
+0.112380115	http://dbpedia.org/ontology/significantBuilding	<significant, capital>	0.07385428	NN	<building, capital>	0.15090595	NN	
+0.11215346999999999	http://dbpedia.org/ontology/fastestDriverCountry	<fastest, null>	0.0	null	<driver, capital>	0.07861891	NN	<country, capital>	0.2578415	NN	
+0.10577178	http://dbpedia.org/property/venue	<venue, capital>	0.10577178	NN	
+0.10516964	http://dbpedia.org/property/caption	<Caption, capital>	0.10516964	NN	
+0.103345536	http://dbpedia.org/property/office	<office, capital>	0.103345536	NN	
+0.1032069	http://dbpedia.org/property/foundation	<foundation, capital>	0.1032069	NN	
+0.101351945	http://dbpedia.org/property/populationEstimate	<population, capital>	0.09306297	NN	<estimate, capital>	0.10964092	NN	
+
+What is the largest city in Australia?
+1.0	http://dbpedia.org/property/largestCity	<largest, largest>	1.0	JJ	<city, city>	1.0	NN	
+1.0	http://dbpedia.org/ontology/largestCity	<largest, largest>	1.0	JJ	<city, city>	1.0	NN	
+1.0	http://dbpedia.org/ontology/city	<city, city>	1.0	NN	
+1.0	http://dbpedia.org/property/city	<city, city>	1.0	NN	
+0.76242244	http://dbpedia.org/property/cityServed	<city-served, city>	0.76242244	NN	
+0.62860615	http://dbpedia.org/ontology/locationCity	<location, city>	0.2572123	NN	<city, city>	1.0	NN	
+0.62860615	http://dbpedia.org/property/locationCity	<location, city>	0.2572123	NN	<city, city>	1.0	NN	
+0.5985778	http://dbpedia.org/property/area	<area, city>	0.5985778	NN	
+0.5985778	http://dbpedia.org/property/areas	<Areas, city>	0.5985778	NN	
+0.52799083	http://dbpedia.org/ontology/hometown	<home, city>	0.29068133	NN	<town, city>	0.76530033	NN	
+0.52799083	http://dbpedia.org/property/homeTown	<home, city>	0.29068133	NN	<town, city>	0.76530033	NN	
+0.5059753485	http://dbpedia.org/property/currentCity	<current, city>	0.011950697	NN	<city, city>	1.0	NN	
+0.5	http://dbpedia.org/ontology/nearestCity	<nearest, largest>	0.0	JJ	<city, city>	1.0	NN	
+0.5	http://dbpedia.org/property/nearestCity	<nearest, largest>	0.0	JJ	<city, city>	1.0	NN	
+0.5	http://dbpedia.org/property/hostCity	<Host, largest>	0.0	JJ	<city, city>	1.0	NN	
+0.4780772	http://dbpedia.org/ontology/territory	<territory, city>	0.4780772	NN	
+0.4780772	http://dbpedia.org/property/territory	<territory, city>	0.4780772	NN	
+0.436955	http://dbpedia.org/ontology/country	<country, city>	0.436955	NN	
+0.436955	http://dbpedia.org/property/country	<country, city>	0.436955	NN	
+0.436955	http://dbpedia.org/property/countries	<countries, city>	0.436955	NN	
+0.42299676	http://dbpedia.org/ontology/county	<county, city>	0.42299676	NN	
+0.42299676	http://dbpedia.org/property/county	<county, city>	0.42299676	NN	
+0.41439673	http://dbpedia.org/property/country/region	<country/region, city>	0.41439673	NN	
+0.382650165	http://dbpedia.org/property/nearestTown	<nearest, largest>	0.0	JJ	<town, city>	0.76530033	NN	
+0.35784814	http://dbpedia.org/property/place	<place, city>	0.35784814	NN	
+0.3520204625	http://dbpedia.org/property/areaRank	<area, city>	0.5985778	NN	<rank, city>	0.105463125	NN	
+0.34708364999999997	http://dbpedia.org/property/locationCountry	<location, city>	0.2572123	NN	<country, city>	0.436955	NN	
+0.34672195	http://dbpedia.org/ontology/region	<region, city>	0.34672195	NN	
+0.34672195	http://dbpedia.org/property/region	<region, city>	0.34672195	NN	
+0.34672195	http://dbpedia.org/property/regions	<regions, city>	0.34672195	NN	
+0.34341356	http://dbpedia.org/property/nations	<nations, city>	0.34341356	NN	
+0.32676902	http://dbpedia.org/ontology/division	<division, city>	0.32676902	NN	
+0.32413376800000004	http://dbpedia.org/property/areaServed	<area, city>	0.5985778	NN	<served, city>	0.049689736	NN	
+0.32313147	http://dbpedia.org/ontology/campus	<campus, city>	0.32313147	NN	
+0.32313147	http://dbpedia.org/property/campus	<campus, city>	0.32313147	NN	
+0.3199085	http://dbpedia.org/ontology/capital	<capital, city>	0.3199085	NN	
+0.3199085	http://dbpedia.org/property/capital	<Capital, city>	0.3199085	NN	
+0.31818342	http://dbpedia.org/property/worldPlace	<world, city>	0.2785187	NN	<place, city>	0.35784814	NN	
+0.3163250825	http://dbpedia.org/property/nearestTownOrCity	<nearest, largest>	0.0	JJ	<town, city>	0.76530033	NN	<or, largest>	-0.5	JJ	<city, city>	1.0	NN	
+0.31033787500000004	http://dbpedia.org/property/areaMagnitude	<area, city>	0.5985778	NN	<magnitude, city>	0.02209795	NN	
+0.2992889	http://dbpedia.org/ontology/broadcastArea	<broadcast, largest>	0.0	JJ	<area, city>	0.5985778	NN	
+0.2992889	http://dbpedia.org/property/broadcastArea	<broadcast, largest>	0.0	JJ	<area, city>	0.5985778	NN	
+0.2992889	http://dbpedia.org/property/broadcastAreas	<broadcast, largest>	0.0	JJ	<areas, city>	0.5985778	NN	
+0.29287004	http://dbpedia.org/ontology/state	<state, city>	0.29287004	NN	
+0.29287004	http://dbpedia.org/property/states	<states, city>	0.29287004	NN	
+0.29287004	http://dbpedia.org/property/state	<state, city>	0.29287004	NN	
+0.29068133	http://dbpedia.org/property/home	<Home, city>	0.29068133	NN	
+0.28495401	http://dbpedia.org/property/shipCountry	<Ship, city>	0.13295302	NN	<country, city>	0.436955	NN	
+0.28224065000000004	http://dbpedia.org/property/cityOrRegion	<city, city>	1.0	NN	<or, largest>	-0.5	JJ	<region, city>	0.34672195	NN	
+0.2572123	http://dbpedia.org/ontology/location	<location, city>	0.2572123	NN	
+0.2572123	http://dbpedia.org/property/location	<location, city>	0.2572123	NN	
+0.2572123	http://dbpedia.org/property/locations	<locations, city>	0.2572123	NN	
+0.250671165	http://dbpedia.org/property/basinCountries	<basin, city>	0.06438733	NN	<countries, city>	0.436955	NN	
+0.24844534000000001	http://dbpedia.org/property/officeLocation	<Office, city>	0.23967838	NN	<Location, city>	0.2572123	NN	
+0.245247516	http://dbpedia.org/property/countryName	<country, city>	0.436955	NN	<name, city>	0.053540032	NN	
+0.24509872249999998	http://dbpedia.org/ontology/sourceCountry	<source, city>	0.053242445	NN	<country, city>	0.436955	NN	
+0.24509872249999998	http://dbpedia.org/property/sourceCountry	<source, city>	0.053242445	NN	<country, city>	0.436955	NN	
+0.23967838	http://dbpedia.org/property/office	<office, city>	0.23967838	NN	
+0.2394790775	http://dbpedia.org/ontology/populationPlace	<population, city>	0.121110015	NN	<place, city>	0.35784814	NN	
+0.2304894015	http://dbpedia.org/ontology/sportCountry	<sport, city>	0.024023803	NN	<country, city>	0.436955	NN	
+0.21896510773	http://dbpedia.org/property/countriesAffected	<countries, city>	0.436955	NN	<affected, city>	9.7521546E-4	NN	
+0.2184775	http://dbpedia.org/ontology/mouthCountry	<mouth, largest>	0.0	JJ	<country, city>	0.436955	NN	
+0.2184775	http://dbpedia.org/ontology/usingCountry	<using, largest>	0.0	JJ	<country, city>	0.436955	NN	
+0.2184775	http://dbpedia.org/property/mouthCountry	<mouth, largest>	0.0	JJ	<country, city>	0.436955	NN	
+0.2184775	http://dbpedia.org/property/usingCountries	<using, largest>	0.0	JJ	<countries, city>	0.436955	NN	
+0.21212228	http://dbpedia.org/property/worldPlaceQ	<world, city>	0.2785187	NN	<place, city>	0.35784814	NN	<Q, largest>	0.0	JJ	
+0.211876355	http://dbpedia.org/ontology/deathPlace	<death, city>	0.06590457	NN	<place, city>	0.35784814	NN	
+0.211876355	http://dbpedia.org/property/deathPlace	<death, city>	0.06590457	NN	<place, city>	0.35784814	NN	
+0.206571707	http://dbpedia.org/property/meetingPlace	<meeting, city>	0.055295274	NN	<place, city>	0.35784814	NN	
+0.203251661	http://dbpedia.org/property/championshipPlace	<championship, city>	0.048655182	NN	<place, city>	0.35784814	NN	
+0.2006463965	http://dbpedia.org/ontology/wineRegion	<wine, city>	0.054570843	NN	<region, city>	0.34672195	NN	
+0.198205843	http://dbpedia.org/ontology/regionServed	<region, city>	0.34672195	NN	<served, city>	0.049689736	NN	
+0.198205843	http://dbpedia.org/property/regionServed	<region, city>	0.34672195	NN	<served, city>	0.049689736	NN	
+0.19705692	http://dbpedia.org/property/site	<site, city>	0.19705692	NN	
+0.19449718	http://dbpedia.org/property/continent	<continent, city>	0.19449718	NN	
+0.1930287705	http://dbpedia.org/ontology/foundationPlace	<foundation, city>	0.028209401	NN	<place, city>	0.35784814	NN	
+0.19184078533333335	http://dbpedia.org/ontology/firstDriverCountry	<first, city>	0.06252641	NN	<driver, city>	0.076040946	NN	<country, city>	0.436955	NN	
+0.1883400645	http://dbpedia.org/ontology/restingPlace	<resting, city>	0.018831989	NN	<place, city>	0.35784814	NN	
+0.1883400645	http://dbpedia.org/property/restingPlace	<resting, city>	0.018831989	NN	<place, city>	0.35784814	NN	
+0.18626502	http://dbpedia.org/property/hometown	<hometown, city>	0.18626502	NN	
+0.185954055	http://dbpedia.org/property/regionalScenes	<regional, city>	0.18462144	NN	<scenes, city>	0.18728667	NN	
+0.18417889999999998	http://dbpedia.org/property/foundedPlace	<founded, city>	0.01050966	NN	<place, city>	0.35784814	NN	
+0.18334504239	http://dbpedia.org/ontology/significantBuilding	<significant, city>	5.338478E-5	NN	<building, city>	0.3666367	NN	
+0.1797827625	http://dbpedia.org/property/lowerHouse	<lower, city>	0.013185555	NN	<house, city>	0.34637997	NN	
+0.17892407	http://dbpedia.org/ontology/birthPlace	<birth, largest>	0.0	JJ	<place, city>	0.35784814	NN	
+0.17892407	http://dbpedia.org/ontology/premierePlace	<premiere, largest>	0.0	JJ	<place, city>	0.35784814	NN	
+0.17892407	http://dbpedia.org/property/birthPlace	<birth, largest>	0.0	JJ	<place, city>	0.35784814	NN	
+0.17892407	http://dbpedia.org/property/disappearedPlace	<disappeared, largest>	0.0	JJ	<place, city>	0.35784814	NN	
+0.17892407	http://dbpedia.org/property/gamesPlace	<games, largest>	0.0	JJ	<place, city>	0.35784814	NN	
+0.17509201	http://dbpedia.org/ontology/institution	<institution, city>	0.17509201	NN	
+0.17411305900000001	http://dbpedia.org/property/stateParty	<State, city>	0.29287004	NN	<Party, city>	0.055356078	NN	
+0.173360975	http://dbpedia.org/property/isoRegion	<iso, largest>	0.0	JJ	<region, city>	0.34672195	NN	
+0.173189985	http://dbpedia.org/property/upperHouse	<upper, largest>	0.0	JJ	<house, city>	0.34637997	NN	
+0.171885659	http://dbpedia.org/ontology/thirdDriverCountry	<third, city>	0.002661031	NN	<driver, city>	0.076040946	NN	<country, city>	0.436955	NN	
+0.17099864866666667	http://dbpedia.org/ontology/secondDriverCountry	<second, largest>	0.0	JJ	<driver, city>	0.076040946	NN	<country, city>	0.436955	NN	
+0.17099864866666667	http://dbpedia.org/ontology/poleDriverCountry	<pole, largest>	0.0	JJ	<driver, city>	0.076040946	NN	<country, city>	0.436955	NN	
+0.17099864866666667	http://dbpedia.org/ontology/fastestDriverCountry	<fastest, largest>	0.0	JJ	<driver, city>	0.076040946	NN	<country, city>	0.436955	NN	
+0.17055565	http://dbpedia.org/property/venue	<venue, city>	0.17055565	NN	
+0.15394585	http://dbpedia.org/ontology/club	<club, city>	0.15394585	NN	
+0.15093412650000002	http://dbpedia.org/ontology/homeArena	<home, city>	0.29068133	NN	<arena, city>	0.011186923	NN	
+0.15002833	http://dbpedia.org/property/company	<company, city>	0.15002833	NN	
+0.14551595	http://dbpedia.org/property/setting	<setting, city>	0.14551595	NN	
+0.14507622	http://dbpedia.org/property/stadium	<stadium, city>	0.14507622	NN	
+0.13986555	http://dbpedia.org/ontology/college	<college, city>	0.13986555	NN	
+0.13986555	http://dbpedia.org/property/college	<college, city>	0.13986555	NN	
+0.13474354	http://dbpedia.org/ontology/residence	<residence, city>	0.13474354	NN	
+0.13474354	http://dbpedia.org/property/residence	<residence, city>	0.13474354	NN	
+0.1320953712	http://dbpedia.org/property/locationSigned	<location, city>	0.2572123	NN	<signed, city>	0.0069784424	NN	
+0.12860615	http://dbpedia.org/property/foundingLocation	<founding, largest>	0.0	JJ	<location, city>	0.2572123	NN	
+0.12272752	http://dbpedia.org/ontology/service	<service, city>	0.12272752	NN	
+0.117461726	http://dbpedia.org/property/locale	<locale, city>	0.117461726	NN	
+0.11020948350000001	http://dbpedia.org/property/timeZone	<time, city>	0.052483667	NN	<zone, city>	0.1679353	NN	
+0.11020948350000001	http://dbpedia.org/ontology/timeZone	<time, city>	0.052483667	NN	<zone, city>	0.1679353	NN	
+0.10825922	http://dbpedia.org/ontology/destination	<destination, city>	0.10825922	NN	
+0.10825922	http://dbpedia.org/property/destination	<destination, city>	0.10825922	NN	
+0.10825922	http://dbpedia.org/property/destinations	<destinations, city>	0.10825922	NN	
+0.10822274500000001	http://dbpedia.org/property/shipBuilder	<Ship, city>	0.13295302	NN	<builder, city>	0.08349247	NN	
+0.103207556	http://dbpedia.org/property/subdivisionName	<subdivision, city>	0.15287508	NN	<name, city>	0.053540032	NN	
+0.1020709142	http://dbpedia.org/property/discoverySite	<discovery, city>	0.0070849084	NN	<site, city>	0.19705692	NN	
+
+Who composed the music for Harold and Maude?
+1.0	http://dbpedia.org/property/music	<music, music>	1.0	NN	
+0.64347309	http://dbpedia.org/ontology/musicComposer	<music, music>	1.0	NN	<composer, music>	0.28694618	NN	
+0.31708702	http://dbpedia.org/property/artist	<Artist, music>	0.31708702	NN	
+0.23261379	http://dbpedia.org/property/language	<language, music>	0.23261379	NN	
+0.211740965	http://dbpedia.org/ontology/director	<film, music>	0.34977663	NN	<director, music>	0.0737053	NN	
+0.10756983	http://dbpedia.org/property/writer	<writer, music>	0.10756983	NN	
+0.10756983	http://dbpedia.org/ontology/writer	<writer, music>	0.10756983	NN	
+
+Show me all songs from Bruce Springsteen released between 1980 and 1990.
+0.9531866	http://dbpedia.org/property/music	<music, songs>	0.9531866	NN	
+0.63884044	http://dbpedia.org/property/lyrics	<lyrics, songs>	0.63884044	NN	
+0.606329125	http://dbpedia.org/ontology/musicComposer	<music, songs>	0.9531866	NN	<composer, songs>	0.25947165	NN	
+0.4620412	http://dbpedia.org/ontology/musicalBand	<musical, songs>	0.52268827	NN	<band, songs>	0.40139413	NN	
+0.35575132	http://dbpedia.org/ontology/musicalArtist	<musical, songs>	0.52268827	NN	<artist, songs>	0.18881437	NN	
+0.25045062166666665	http://dbpedia.org/ontology/associatedMusicalArtist	<associated, songs>	0.039849225	NN	<musical, songs>	0.52268827	NN	<artist, songs>	0.18881437	NN	
+0.24725738	http://dbpedia.org/ontology/genre	<genre, songs>	0.24725738	NN	
+0.24725738	http://dbpedia.org/property/genre	<genre, songs>	0.24725738	NN	
+0.2206216775	http://dbpedia.org/ontology/associatedBand	<associated, songs>	0.039849225	NN	<band, songs>	0.40139413	NN	
+0.209524239	http://dbpedia.org/ontology/bandMember	<band, songs>	0.40139413	NN	<member, songs>	0.017654348	NN	
+0.19995132	http://dbpedia.org/property/note	<note, songs>	0.19995132	NN	
+0.18881437	http://dbpedia.org/property/artist	<Artist, songs>	0.18881437	NN	
+0.17408584	http://dbpedia.org/property/title	<title, songs>	0.17408584	NN	
+0.15886146	http://dbpedia.org/ontology/artist	<performer, songs>	0.15886146	NN	
+0.14261456	http://dbpedia.org/property/image	<image, songs>	0.14261456	NN	
+0.14249337	http://dbpedia.org/ontology/instrument	<instrument, songs>	0.14249337	NN	
+0.14249337	http://dbpedia.org/property/instrument	<Instrument, songs>	0.14249337	NN	
+0.12783578	http://dbpedia.org/ontology/writer	<writer, songs>	0.12783578	NN	
+0.12783578	http://dbpedia.org/property/writer	<writer, songs>	0.12783578	NN	
+
+What is the founding year of the brewery that produces Pilsner Urquell?
+0.105648264	http://dbpedia.org/property/title	<title, year>	0.105648264	NN	
+0.102636546	http://dbpedia.org/ontology/industry	<industry, year>	0.102636546	NN	
+0.102636546	http://dbpedia.org/property/industry	<industry, year>	0.102636546	NN	
+
+Give me all B-sides of the Ramones.
+0.13029204	http://dbpedia.org/property/label	<label, B-sides>	0.13029204	NN	
+
+Which country does the creator of Miffy come from?
+1.0	http://dbpedia.org/property/creator	<creator, creator>	1.0	NN	
+1.0	http://dbpedia.org/ontology/creator	<creator, creator>	1.0	NN	
+0.11222499	http://dbpedia.org/property/name	<name, creator>	0.11222499	NN	
+0.10422843	http://dbpedia.org/property/caption	<Caption, creator>	0.10422843	NN	
+
+Give me the birthdays of all actors of the television show Charmed.
+0.24659872	http://dbpedia.org/property/production	<production, actors>	0.24659872	NN	
+0.18983063	http://dbpedia.org/property/voice	<voice, actors>	0.18983063	NN	
+0.17047985	http://dbpedia.org/ontology/genre	<genre, actors>	0.17047985	NN	
+0.17047985	http://dbpedia.org/property/genre	<genre, actors>	0.17047985	NN	
+
+Which bridges are of the same type as the Manhattan Bridge?
+1.0	http://dbpedia.org/ontology/type	<type, type>	1.0	NN	
+0.130613397	http://dbpedia.org/property/imageSize	<image, same>	0.054813974	JJ	<size, type>	0.20641282	NN	
+0.11879264	http://dbpedia.org/property/caption	<Caption, type>	0.11879264	NN	
+0.11517500765	http://dbpedia.org/property/bridgeName	<bridge, same>	0.0046853153	JJ	<name, same>	0.2256647	JJ	
+0.10471691	http://dbpedia.org/property/carries	<carries, same>	0.10471691	JJ	
+0.10433816	http://dbpedia.org/property/locale	<locale, type>	0.10433816	NN	
+0.103702165	http://dbpedia.org/property/state	<state, same>	0.103702165	JJ	
+
+Who is the daughter of Robert Kennedy married to?
+0.77513444	http://dbpedia.org/ontology/child	<child, daughter>	0.77513444	NN	
+0.77513444	http://dbpedia.org/property/children	<children, daughter>	0.77513444	NN	
+0.5032247	http://dbpedia.org/property/parents	<parents, daughter>	0.5032247	NN	
+0.5032247	http://dbpedia.org/ontology/parent	<parent, daughter>	0.5032247	NN	
+0.26942363	http://dbpedia.org/ontology/relative	<relative, daughter>	0.26942363	NN	
+0.2652437	http://dbpedia.org/ontology/spouse	<spouse, daughter>	0.2652437	NN	
+0.2652437	http://dbpedia.org/property/spouse	<spouse, daughter>	0.2652437	NN	
+0.20130192	http://dbpedia.org/property/name	<name, daughter>	0.20130192	NN	
+0.1652714975	http://dbpedia.org/ontology/birthYear	<birth, daughter>	0.2816536	NN	<year, daughter>	0.048889395	NN	
+0.1408268	http://dbpedia.org/ontology/birthDate	<birth, daughter>	0.2816536	NN	<date, null>	0.0	null	
+0.1408268	http://dbpedia.org/ontology/birthPlace	<birth, daughter>	0.2816536	NN	<place, null>	0.0	null	
+0.1408268	http://dbpedia.org/property/birthPlace	<birth, daughter>	0.2816536	NN	<place, null>	0.0	null	
+0.1408268	http://dbpedia.org/property/birthDate	<birth, daughter>	0.2816536	NN	<date, null>	0.0	null	
+
+Who is the owner of Rolls-Royce?
+1.0	http://dbpedia.org/ontology/owner	<owner, owner>	1.0	NN	
+1.0	http://dbpedia.org/property/owner	<owner, owner>	1.0	NN	
+0.2498022	http://dbpedia.org/property/manufacturer	<manufacturer, owner>	0.2498022	NN	
+0.2498022	http://dbpedia.org/ontology/manufacturer	<manufacturer, owner>	0.2498022	NN	
+0.20486204	http://dbpedia.org/ontology/industry	<industry, owner>	0.20486204	NN	
+0.20486204	http://dbpedia.org/property/industry	<industry, owner>	0.20486204	NN	
+0.15212324	http://dbpedia.org/property/name	<name, owner>	0.15212324	NN	
+0.14118959	http://dbpedia.org/ontology/owningCompany	<owning, null>	0.0	null	<company, owner>	0.28237918	NN	
+0.13636865	http://dbpedia.org/property/title	<title, owner>	0.13636865	NN	
+
+What is the highest mountain in Australia?
+0.20898111	http://dbpedia.org/ontology/region	<region, mountain>	0.20898111	NN	
+0.20898111	http://dbpedia.org/property/region	<region, mountain>	0.20898111	NN	
+0.20898111	http://dbpedia.org/property/regions	<regions, mountain>	0.20898111	NN	
+0.19607003	http://dbpedia.org/ontology/ground	<ground, mountain>	0.19607003	NN	
+0.19607003	http://dbpedia.org/property/ground	<ground, mountain>	0.19607003	NN	
+0.19291909	http://dbpedia.org/property/country/region	<country/region, mountain>	0.19291909	NN	
+0.16556735	http://dbpedia.org/ontology/city	<city, mountain>	0.16556735	NN	
+0.16556735	http://dbpedia.org/property/city	<city, mountain>	0.16556735	NN	
+0.1603162	http://dbpedia.org/property/site	<site, mountain>	0.1603162	NN	
+0.14907736249999998	http://dbpedia.org/ontology/hometown	<home, mountain>	0.034319825	NN	<town, mountain>	0.2638349	NN	
+0.14907736249999998	http://dbpedia.org/property/homeTown	<home, mountain>	0.034319825	NN	<town, mountain>	0.2638349	NN	
+0.14473304	http://dbpedia.org/ontology/country	<country, mountain>	0.14473304	NN	
+0.14473304	http://dbpedia.org/property/country	<country, mountain>	0.14473304	NN	
+0.14473304	http://dbpedia.org/property/countries	<countries, mountain>	0.14473304	NN	
+0.1445490225	http://dbpedia.org/ontology/wineRegion	<wine, mountain>	0.080116935	NN	<region, mountain>	0.20898111	NN	
+0.14013627	http://dbpedia.org/property/area	<area, mountain>	0.14013627	NN	
+0.14013627	http://dbpedia.org/property/areas	<Areas, mountain>	0.14013627	NN	
+0.140046245	http://dbpedia.org/property/basinCountries	<basin, mountain>	0.13535945	NN	<countries, mountain>	0.14473304	NN	
+0.135873385	http://dbpedia.org/ontology/locationCity	<location, mountain>	0.10617942	NN	<city, mountain>	0.16556735	NN	
+0.135873385	http://dbpedia.org/property/locationCity	<location, mountain>	0.10617942	NN	<city, mountain>	0.16556735	NN	
+0.13191745	http://dbpedia.org/property/nearestTown	<nearest, highest>	0.0	JJ	<town, mountain>	0.2638349	NN	
+0.1261407	http://dbpedia.org/property/continent	<continent, mountain>	0.1261407	NN	
+0.12545623	http://dbpedia.org/property/locationCountry	<location, mountain>	0.10617942	NN	<country, mountain>	0.14473304	NN	
+0.12417552	http://dbpedia.org/property/cityServed	<city-served, mountain>	0.12417552	NN	
+0.12381484	http://dbpedia.org/ontology/destination	<destination, mountain>	0.12381484	NN	
+0.12381484	http://dbpedia.org/property/destination	<destination, mountain>	0.12381484	NN	
+0.12381484	http://dbpedia.org/property/destinations	<destinations, mountain>	0.12381484	NN	
+0.116643615	http://dbpedia.org/property/place	<place, mountain>	0.116643615	NN	
+0.108423032	http://dbpedia.org/property/hostCity	<Host, mountain>	0.051278714	NN	<city, mountain>	0.16556735	NN	
+0.10692284	http://dbpedia.org/ontology/sportCountry	<sport, mountain>	0.06911264	NN	<country, mountain>	0.14473304	NN	
+0.10617942	http://dbpedia.org/ontology/location	<location, mountain>	0.10617942	NN	
+0.10617942	http://dbpedia.org/property/location	<location, mountain>	0.10617942	NN	
+0.10617942	http://dbpedia.org/property/locations	<locations, mountain>	0.10617942	NN	
+0.104490555	http://dbpedia.org/ontology/regionServed	<region, mountain>	0.20898111	NN	<served, highest>	0.0	JJ	
+0.104490555	http://dbpedia.org/property/regionServed	<region, mountain>	0.20898111	NN	<served, highest>	0.0	JJ	
+0.104490555	http://dbpedia.org/property/isoRegion	<iso, highest>	0.0	JJ	<region, mountain>	0.20898111	NN	
+0.100488524	http://dbpedia.org/property/areaMagnitude	<area, mountain>	0.14013627	NN	<magnitude, mountain>	0.060840778	NN	
+
+What is the official language of Suriname?
+1.0	http://dbpedia.org/ontology/officialLanguage	<official, official>	1.0	JJ	<language, language>	1.0	NN	
+1.0	http://dbpedia.org/ontology/language	<language, language>	1.0	NN	
+1.0	http://dbpedia.org/property/officialLanguages	<official, official>	1.0	JJ	<languages, language>	1.0	NN	
+0.5327685600000001	http://dbpedia.org/ontology/regionalLanguage	<regional, official>	0.06553712	JJ	<language, language>	1.0	NN	
+0.5327685600000001	http://dbpedia.org/property/regionalLanguages	<regional, official>	0.06553712	JJ	<languages, language>	1.0	NN	
+0.40158835	http://dbpedia.org/ontology/leader	<leader, official>	0.40158835	JJ	
+0.29148998	http://dbpedia.org/property/leaderName	<leader, official>	0.40158835	JJ	<name, language>	0.18139161	NN	
+0.290797147	http://dbpedia.org/property/callingCode	<calling, language>	0.059432894	NN	<code, language>	0.5221614	NN	
+0.2882992115	http://dbpedia.org/property/currencyCode	<currency, language>	0.054437023	NN	<code, language>	0.5221614	NN	
+0.28737034	http://dbpedia.org/ontology/leaderTitle	<leader, official>	0.40158835	JJ	<title, language>	0.17315233	NN	
+0.28737034	http://dbpedia.org/property/leaderTitle	<leader, official>	0.40158835	JJ	<title, language>	0.17315233	NN	
+0.2767465065	http://dbpedia.org/ontology/governmentType	<government, official>	0.5258034	JJ	<type, language>	0.027689613	NN	
+0.2767465065	http://dbpedia.org/property/governmentType	<government, official>	0.5258034	JJ	<type, language>	0.027689613	NN	
+0.2196333	http://dbpedia.org/property/states	<states, official>	0.2196333	JJ	
+0.174802015	http://dbpedia.org/property/stateParty	<State, official>	0.2196333	JJ	<Party, official>	0.12997073	JJ	
+0.17315233	http://dbpedia.org/property/title	<title, language>	0.17315233	NN	
+0.15297607	http://dbpedia.org/property/book	<book, language>	0.15297607	NN	
+0.147756635	http://dbpedia.org/property/countryName	<country, official>	0.11412166	JJ	<name, language>	0.18139161	NN	
+0.13604371	http://dbpedia.org/ontology/longName	<longName, language>	0.13604371	NN	
+0.13500978	http://dbpedia.org/property/commonName	<common, language>	0.08862795	NN	<name, language>	0.18139161	NN	
+0.1318745	http://dbpedia.org/property/headquarters	<headquarters, official>	0.1318745	JJ	
+0.1185070825	http://dbpedia.org/property/subdivisionName	<subdivision, official>	0.055622555	JJ	<name, language>	0.18139161	NN	
+0.11698626	http://dbpedia.org/property/legislature	<Legislature, official>	0.11698626	JJ	
+0.11412166	http://dbpedia.org/ontology/country	<country, official>	0.11412166	JJ	
+0.11412166	http://dbpedia.org/property/country	<country, official>	0.11412166	JJ	
+0.108581394	http://dbpedia.org/ontology/origin	<origin, official>	0.108581394	JJ	
+0.108581394	http://dbpedia.org/property/origin	<origin, official>	0.108581394	JJ	
+0.10445022500000001	http://dbpedia.org/ontology/spokenIn	<spoken, language>	0.70890045	NN	<in, official>	-0.5	JJ	
+0.10220894999999999	http://dbpedia.org/ontology/sourceCountry	<source, official>	0.09029624	JJ	<country, official>	0.11412166	JJ	
+
+Who is the mayor of Tel Aviv?
+0.26237383999999997	http://dbpedia.org/ontology/leaderName	<leader, mayor>	0.46235546	NN	<name, mayor>	0.06239222	NN	
+0.26237383999999997	http://dbpedia.org/property/leaderName	<leader, mayor>	0.46235546	NN	<name, mayor>	0.06239222	NN	
+0.23858388	http://dbpedia.org/property/city	<city, mayor>	0.23858388	NN	
+0.23858388	http://dbpedia.org/ontology/city	<city, mayor>	0.23858388	NN	
+0.23858388	http://dbpedia.org/property/cities	<cities, mayor>	0.23858388	NN	
+0.23117773	http://dbpedia.org/ontology/leaderTitle	<leader, mayor>	0.46235546	NN	<title, null>	0.0	null	
+0.23117773	http://dbpedia.org/property/leaderTitle	<leader, mayor>	0.46235546	NN	<title, null>	0.0	null	
+0.16060814	http://dbpedia.org/ontology/stadium	<Stadium, mayor>	0.16060814	NN	
+0.16060814	http://dbpedia.org/property/stadium	<stadium, mayor>	0.16060814	NN	
+0.1389607575	http://dbpedia.org/property/hostCity	<Host, mayor>	0.039337635	NN	<city, mayor>	0.23858388	NN	
+0.128955258	http://dbpedia.org/ontology/populationMetro	<population, mayor>	0.035023656	NN	<metro, mayor>	0.22288686	NN	
+0.128955258	http://dbpedia.org/property/populationMetro	<population, mayor>	0.035023656	NN	<metro, mayor>	0.22288686	NN	
+0.11929194	http://dbpedia.org/ontology/locationCity	<location, null>	0.0	null	<city, mayor>	0.23858388	NN	
+0.11929194	http://dbpedia.org/property/locationCity	<location, null>	0.0	null	<city, mayor>	0.23858388	NN	
+0.11929194	http://dbpedia.org/property/openingCity	<Opening, null>	0.0	null	<city, mayor>	0.23858388	NN	
+0.11929194	http://dbpedia.org/property/hqCity	<hq, null>	0.0	null	<city, mayor>	0.23858388	NN	
+0.11633964	http://dbpedia.org/property/subdivisionName	<subdivision, mayor>	0.17028706	NN	<name, mayor>	0.06239222	NN	
+
+What is the highest place of the Urals?
+1.0	http://dbpedia.org/property/highest	<highest, highest>	1.0	JJ	
+0.5233084	http://dbpedia.org/ontology/birthPlace	<birth, place>	0.0466168	NN	<place, place>	1.0	NN	
+0.5233084	http://dbpedia.org/property/birthPlace	<birth, place>	0.0466168	NN	<place, place>	1.0	NN	
+0.383357495	http://dbpedia.org/ontology/regionServed	<region, place>	0.6265326	NN	<served, place>	0.14018239	NN	
+0.37302303	http://dbpedia.org/ontology/origin	<origin, place>	0.37302303	NN	
+0.37302303	http://dbpedia.org/property/origin	<origin, place>	0.37302303	NN	
+0.33581543	http://dbpedia.org/ontology/source	<source, place>	0.33581543	NN	
+0.33581543	http://dbpedia.org/property/source	<source, place>	0.33581543	NN	
+0.21051683	http://dbpedia.org/ontology/country	<country, place>	0.21051683	NN	
+0.21051683	http://dbpedia.org/property/country	<country, place>	0.21051683	NN	
+0.1822056	http://dbpedia.org/property/placeOfBirth	<PLACE, place>	1.0	NN	<OF, highest>	-0.5	JJ	<BIRTH, place>	0.0466168	NN	
+0.16254355	http://dbpedia.org/property/period	<period, place>	0.16254355	NN	
+
+Who is the editor of Forbes?
+1.0	http://dbpedia.org/property/editor	<editor, editor>	1.0	NN	
+1.0	http://dbpedia.org/ontology/editor	<editor, editor>	1.0	NN	
+0.55884692	http://dbpedia.org/property/editorTitle	<editor, editor>	1.0	NN	<title, editor>	0.11769384	NN	
+0.55884692	http://dbpedia.org/ontology/editorTitle	<editor, editor>	1.0	NN	<title, editor>	0.11769384	NN	
+0.34802678	http://dbpedia.org/property/journal	<journal, editor>	0.34802678	NN	
+0.21026123	http://dbpedia.org/ontology/thumbnail	<thumbnail, editor>	0.21026123	NN	
+0.150276778	http://dbpedia.org/property/imageCaption	<image, editor>	0.082614936	NN	<caption, editor>	0.21793862	NN	
+0.142093403	http://dbpedia.org/property/imageFile	<image, editor>	0.082614936	NN	<file, editor>	0.20157187	NN	
+0.13629669	http://dbpedia.org/ontology/circulation	<circulation, editor>	0.13629669	NN	
+0.12598474	http://dbpedia.org/ontology/owner	<owner, editor>	0.12598474	NN	
+0.11769384	http://dbpedia.org/property/title	<title, editor>	0.11769384	NN	
+
+List all episodes of the first season of the HBO television series The Sopranos.
+0.4004638333333333	http://dbpedia.org/ontology/firstAirDate	<first, first>	1.0	JJ	<air, season>	0.06794528	NN	<date, season>	0.13344622	NN	
+0.17133978	http://dbpedia.org/property/name	<name, first>	0.17133978	JJ	
+0.14204469	http://dbpedia.org/ontology/formerName	<former, first>	0.1127496	JJ	<name, first>	0.17133978	JJ	
+0.12313795400000001	http://dbpedia.org/ontology/recordLabel	<record, season>	0.19941474	NN	<label, season>	0.046861168	NN	
+0.11013025	http://dbpedia.org/property/distributor	<distributor, season>	0.11013025	NN	
+0.11013025	http://dbpedia.org/ontology/distributor	<distributor, season>	0.11013025	NN	
+
+Was the wife of president Lincoln called Mary?
+0.8091827	http://dbpedia.org/property/spouse	<spouse, wife>	0.8091827	NN	
+0.8091827	http://dbpedia.org/ontology/spouse	<spouse, wife>	0.8091827	NN	
+0.5474278	http://dbpedia.org/ontology/relative	<relative, wife>	0.5474278	NN	
+0.37441257	http://dbpedia.org/property/parents	<parents, wife>	0.37441257	NN	
+0.37441257	http://dbpedia.org/ontology/parent	<parent, wife>	0.37441257	NN	
+0.30772454	http://dbpedia.org/property/children	<children, wife>	0.30772454	NN	
+0.30772454	http://dbpedia.org/ontology/child	<child, wife>	0.30772454	NN	
+0.16110848	http://dbpedia.org/property/name	<name, wife>	0.16110848	NN	
+0.15684557	http://dbpedia.org/property/houses	<houses, wife>	0.15684557	NN	
+0.13921624	http://dbpedia.org/property/president	<President, wife>	0.13921624	NN	
+0.13921624	http://dbpedia.org/ontology/president	<president, wife>	0.13921624	NN	
+0.1102992575	http://dbpedia.org/ontology/deathYear	<death, wife>	0.1756129	NN	<year, wife>	0.044985615	NN	
+
+Which capitals in Europe were host cities of the summer olympic games?
+0.46166903	http://dbpedia.org/property/place	<place, capitals>	0.46166903	NN	
+0.3528785	http://dbpedia.org/property/originPlace	<origin-place, capitals>	0.3528785	NN	
+0.277366	http://dbpedia.org/ontology/populationPlace	<population, capitals>	0.09306297	NN	<place, capitals>	0.46166903	NN	
+0.26788062	http://dbpedia.org/property/markets	<markets, capitals>	0.26788062	NN	
+0.2578415	http://dbpedia.org/property/countries	<countries, capitals>	0.2578415	NN	
+0.2578415	http://dbpedia.org/property/country	<country, capitals>	0.2578415	NN	
+0.2578415	http://dbpedia.org/ontology/country	<country, capitals>	0.2578415	NN	
+0.24832551	http://dbpedia.org/property/headquarters	<headquarters, capitals>	0.24832551	NN	
+0.230834515	http://dbpedia.org/ontology/birthPlace	<birth, null>	0.0	null	<place, capitals>	0.46166903	NN	
+0.230834515	http://dbpedia.org/ontology/deathPlace	<death, null>	0.0	null	<place, capitals>	0.46166903	NN	
+0.230834515	http://dbpedia.org/property/birthPlace	<birth, null>	0.0	null	<place, capitals>	0.46166903	NN	
+0.230834515	http://dbpedia.org/property/deathPlace	<death, null>	0.0	null	<place, capitals>	0.46166903	NN	
+0.23054433	http://dbpedia.org/property/country/region	<country/region, capitals>	0.23054433	NN	
+0.21792099	http://dbpedia.org/ontology/province	<province, capitals>	0.21792099	NN	
+0.19925021999999998	http://dbpedia.org/ontology/hometown	<home, capitals>	0.11926654	NN	<town, capitals>	0.2792339	NN	
+0.17002918	http://dbpedia.org/property/territory	<territory, capitals>	0.17002918	NN	
+0.15388967666666667	http://dbpedia.org/property/placeOfBirth	<PLACE, capitals>	0.46166903	NN	<OF, null>	0.0	null	<BIRTH, null>	0.0	null	
+0.1509430215	http://dbpedia.org/property/locationCountry	<location, capitals>	0.044044543	NN	<country, capitals>	0.2578415	NN	
+0.15033263	http://dbpedia.org/property/setting	<setting, capitals>	0.15033263	NN	
+0.14865282	http://dbpedia.org/property/region	<region, capitals>	0.14865282	NN	
+0.14865282	http://dbpedia.org/ontology/region	<region, capitals>	0.14865282	NN	
+0.1421742425	http://dbpedia.org/ontology/countryOrigin	<country, capitals>	0.2578415	NN	<origin, capitals>	0.026506985	NN	
+0.1390471695	http://dbpedia.org/property/listCountries	<list, capitals>	0.020252839	NN	<countries, capitals>	0.2578415	NN	
+0.1315115475	http://dbpedia.org/ontology/place	<place, capitals>	0.46166903	NN	<of, null>	0.0	null	<military, capitals>	0.03132948	NN	<conflict, capitals>	0.03304768	NN	
+0.12892075	http://dbpedia.org/property/basinCountries	<basin, null>	0.0	null	<countries, capitals>	0.2578415	NN	
+0.1275419325	http://dbpedia.org/property/regionServed	<region, capitals>	0.14865282	NN	<served, capitals>	0.106431045	NN	
+0.1275419325	http://dbpedia.org/ontology/regionServed	<region, capitals>	0.14865282	NN	<served, capitals>	0.106431045	NN	
+0.115322754	http://dbpedia.org/property/continent	<continent, capitals>	0.115322754	NN	
+0.10516964	http://dbpedia.org/property/caption	<Caption, capitals>	0.10516964	NN	
+0.103345536	http://dbpedia.org/property/office	<office, capitals>	0.103345536	NN	
+
+Who was the 16th president of the United States?
+0.990284	http://dbpedia.org/ontology/chairman	<chairman, president>	0.990284	NN	
+0.8784588	http://dbpedia.org/ontology/leader	<leader, president>	0.8784588	NN	
+0.530849315	http://dbpedia.org/property/leaderName	<leader, president>	0.8784588	NN	<name, president>	0.18323983	NN	
+0.47653455	http://dbpedia.org/property/leaderTitle	<leader, president>	0.8784588	NN	<title, president>	0.0746103	NN	
+0.47653455	http://dbpedia.org/ontology/leaderTitle	<leader, president>	0.8784588	NN	<title, president>	0.0746103	NN	
+0.34009302	http://dbpedia.org/ontology/person	<person, president>	0.34009302	NN	
+0.33487064	http://dbpedia.org/property/founder	<founder, president>	0.33487064	NN	
+0.25576437	http://dbpedia.org/ontology/predecessor	<predecessor, president>	0.25576437	NN	
+0.2553478	http://dbpedia.org/property/legislature	<Legislature, president>	0.2553478	NN	
+0.2369716	http://dbpedia.org/property/members	<members, president>	0.2369716	NN	
+0.21829142	http://dbpedia.org/ontology/editor	<editor, president>	0.21829142	NN	
+0.21610318	http://dbpedia.org/ontology/commander	<commander, president>	0.21610318	NN	
+0.212083	http://dbpedia.org/ontology/coach	<coach, president>	0.212083	NN	
+0.20088121	http://dbpedia.org/ontology/manager	<manager, president>	0.20088121	NN	
+0.195543205	http://dbpedia.org/property/officialReligion	<official, president>	0.34225318	NN	<religion, president>	0.04883323	NN	
+0.19504115	http://dbpedia.org/ontology/party	<party, president>	0.19504115	NN	
+0.19504115	http://dbpedia.org/property/party	<party, president>	0.19504115	NN	
+0.19504115	http://dbpedia.org/property/parties	<parties, president>	0.19504115	NN	
+0.1939335	http://dbpedia.org/ontology/honours	<honours, president>	0.1939335	NN	
+0.18198377	http://dbpedia.org/property/office	<office, president>	0.18198377	NN	
+0.17739055	http://dbpedia.org/property/allies	<allies, president>	0.17739055	NN	
+0.1723966	http://dbpedia.org/property/founded	<founded, president>	0.1723966	NN	
+0.17004651	http://dbpedia.org/ontology/keyPerson	<key, 16th>	0.0	JJ	<person, president>	0.34009302	NN	
+0.16384873	http://dbpedia.org/ontology/assembly	<assembly, president>	0.16384873	NN	
+0.16384873	http://dbpedia.org/property/assembly	<assembly, president>	0.16384873	NN	
+0.1545525	http://dbpedia.org/ontology/opponent	<opponent, president>	0.1545525	NN	
+0.1545525	http://dbpedia.org/property/opponents	<opponents, president>	0.1545525	NN	
+0.15378476	http://dbpedia.org/property/corporateOffice	<corporate, president>	0.12558575	NN	<Office, president>	0.18198377	NN	
+0.145690725	http://dbpedia.org/property/governmentType	<government, president>	0.2657611	NN	<type, president>	0.02562035	NN	
+0.145690725	http://dbpedia.org/ontology/governmentType	<government, president>	0.2657611	NN	<type, president>	0.02562035	NN	
+0.13760857	http://dbpedia.org/ontology/longName	<longName, president>	0.13760857	NN	
+0.12845573	http://dbpedia.org/property/foundation	<foundation, president>	0.12845573	NN	
+0.126998596	http://dbpedia.org/property/stateParty	<State, president>	0.058956042	NN	<Party, president>	0.19504115	NN	
+0.116207425	http://dbpedia.org/property/meetingPlace	<meeting, president>	0.18006389	NN	<place, president>	0.05235096	NN	
+0.11469671	http://dbpedia.org/ontology/flag	<flag, president>	0.11469671	NN	
+0.11237378	http://dbpedia.org/property/foundedPlace	<founded, president>	0.1723966	NN	<place, president>	0.05235096	NN	
+0.10993753	http://dbpedia.org/property/organization	<organization, president>	0.10993753	NN	
+0.10844725	http://dbpedia.org/property/locationSigned	<location, president>	0.07392818	NN	<signed, president>	0.14296632	NN	
+0.107900955	http://dbpedia.org/property/membership	<membership, president>	0.107900955	NN	
+0.10578591999999999	http://dbpedia.org/property/subdivisionName	<subdivision, president>	0.02833201	NN	<name, president>	0.18323983	NN	
+0.1054354575	http://dbpedia.org/property/birthName	<birth, president>	0.027631085	NN	<name, president>	0.18323983	NN	
+0.10481442	http://dbpedia.org/ontology/team	<team, president>	0.10481442	NN	
+0.10481442	http://dbpedia.org/property/team	<Team, president>	0.10481442	NN	
+0.10048204	http://dbpedia.org/ontology/company	<company, president>	0.10048204	NN	
+0.10048204	http://dbpedia.org/property/company	<company, president>	0.10048204	NN	
+0.10046103499999999	http://dbpedia.org/property/countryName	<country, president>	0.01768224	NN	<name, president>	0.18323983	NN	
+
+Give me all movies with Tom Cruise.
+0.41514176	http://dbpedia.org/property/starring	<starring, movies>	0.41514176	NN	
+0.41514176	http://dbpedia.org/ontology/starring	<starring, movies>	0.41514176	NN	
+0.3657667	http://dbpedia.org/property/story	<story, movies>	0.3657667	NN	
+0.17364064	http://dbpedia.org/property/title	<title, movies>	0.17364064	NN	
+0.16994967	http://dbpedia.org/property/producer	<producer, movies>	0.16994967	NN	
+0.16994967	http://dbpedia.org/ontology/producer	<producer, movies>	0.16994967	NN	
+0.12932387	http://dbpedia.org/property/caption	<Caption, movies>	0.12932387	NN	
+0.11449173	http://dbpedia.org/ontology/thumbnail	<thumbnail, movies>	0.11449173	NN	
+
+Give me all soccer clubs in the Premier League.
+0.57106596	http://dbpedia.org/property/league	<league, soccer>	0.57106596	NN	
+0.57106596	http://dbpedia.org/ontology/league	<league, soccer>	0.57106596	NN	
+0.44914326	http://dbpedia.org/property/teams	<teams, clubs>	0.44914326	NN	
+0.44914326	http://dbpedia.org/ontology/team	<team, clubs>	0.44914326	NN	
+0.3969564	http://dbpedia.org/property/champions	<champions, soccer>	0.3969564	NN	
+0.36301506	http://dbpedia.org/property/membership	<membership, clubs>	0.36301506	NN	
+0.34165967756666665	http://dbpedia.org/property/mostSuccessfulClub	<most, soccer>	0.0064249337	NN	<successful, clubs>	0.018554099	NN	<club, clubs>	1.0	NN	
+0.3237547	http://dbpedia.org/property/leagueCup	<league, soccer>	0.57106596	NN	<cup, soccer>	0.07644344	NN	
+0.280142241	http://dbpedia.org/property/overseasTournament	<overseas, soccer>	0.031538982	NN	<tournament, soccer>	0.5287455	NN	
+0.2534223	http://dbpedia.org/property/event	<event, clubs>	0.2534223	NN	
+0.20740417	http://dbpedia.org/property/competition	<competition, soccer>	0.20740417	NN	
+0.20328858	http://dbpedia.org/property/owner	<owner, clubs>	0.20328858	NN	
+0.20328858	http://dbpedia.org/ontology/owner	<owner, clubs>	0.20328858	NN	
+0.16316056	http://dbpedia.org/property/founded	<founded, clubs>	0.16316056	NN	
+0.1546862	http://dbpedia.org/property/title	<title, soccer>	0.1546862	NN	
+0.13107517	http://dbpedia.org/property/season	<season, soccer>	0.13107517	NN	
+0.113621846	http://dbpedia.org/property/website	<Website, clubs>	0.113621846	NN	
+0.10247478	http://dbpedia.org/ontology/tenant	<tenant, clubs>	0.10247478	NN	
+
+How many inhabitants does the largest city in Canada have?
+1.0	http://dbpedia.org/ontology/largestCity	<largest, largest>	1.0	JJ	<city, city>	1.0	NN	
+1.0	http://dbpedia.org/property/largestCity	<largest, largest>	1.0	JJ	<city, city>	1.0	NN	
+1.0	http://dbpedia.org/ontology/city	<city, city>	1.0	NN	
+1.0	http://dbpedia.org/property/city	<city, city>	1.0	NN	
+1.0	http://dbpedia.org/property/cities	<cities, city>	1.0	NN	
+0.8302238	http://dbpedia.org/ontology/district	<district, city>	0.8302238	NN	
+0.76242244	http://dbpedia.org/property/cityServed	<city-served, city>	0.76242244	NN	
+0.6949792	http://dbpedia.org/property/municipality	<municipality, city>	0.6949792	NN	
+0.62860615	http://dbpedia.org/ontology/locationCity	<location, city>	0.2572123	NN	<city, city>	1.0	NN	
+0.62860615	http://dbpedia.org/property/locationCity	<location, city>	0.2572123	NN	<city, city>	1.0	NN	
+0.5985778	http://dbpedia.org/property/area	<area, city>	0.5985778	NN	
+0.5985778	http://dbpedia.org/property/areas	<Areas, city>	0.5985778	NN	
+0.52799083	http://dbpedia.org/ontology/hometown	<home, city>	0.29068133	NN	<town, city>	0.76530033	NN	
+0.52799083	http://dbpedia.org/property/homeTown	<home, city>	0.29068133	NN	<town, city>	0.76530033	NN	
+0.511256315	http://dbpedia.org/property/locationTown	<location, city>	0.2572123	NN	<town, city>	0.76530033	NN	
+0.5059753485	http://dbpedia.org/property/currentCity	<current, city>	0.011950697	NN	<city, city>	1.0	NN	
+0.5	http://dbpedia.org/ontology/nearestCity	<nearest, largest>	0.0	JJ	<city, city>	1.0	NN	
+0.5	http://dbpedia.org/property/hostCity	<Host, largest>	0.0	JJ	<city, city>	1.0	NN	
+0.5	http://dbpedia.org/property/nearestCity	<nearest, largest>	0.0	JJ	<city, city>	1.0	NN	
+0.4780772	http://dbpedia.org/property/territory	<territory, city>	0.4780772	NN	
+0.436955	http://dbpedia.org/ontology/country	<country, city>	0.436955	NN	
+0.436955	http://dbpedia.org/property/country	<country, city>	0.436955	NN	
+0.436955	http://dbpedia.org/property/countries	<countries, city>	0.436955	NN	
+0.42299676	http://dbpedia.org/ontology/county	<county, city>	0.42299676	NN	
+0.42299676	http://dbpedia.org/property/county	<county, city>	0.42299676	NN	
+0.41439673	http://dbpedia.org/property/country/region	<country/region, city>	0.41439673	NN	
+0.382650165	http://dbpedia.org/property/nearestTown	<nearest, largest>	0.0	JJ	<town, city>	0.76530033	NN	
+0.36065266	http://dbpedia.org/property/serviceArea	<service, city>	0.12272752	NN	<area, city>	0.5985778	NN	
+0.35784814	http://dbpedia.org/property/place	<place, city>	0.35784814	NN	
+0.3520204625	http://dbpedia.org/property/areaRank	<area, city>	0.5985778	NN	<rank, city>	0.105463125	NN	
+0.34708364999999997	http://dbpedia.org/property/locationCountry	<location, city>	0.2572123	NN	<country, city>	0.436955	NN	
+0.34708364999999997	http://dbpedia.org/property/locationCountries	<location, city>	0.2572123	NN	<countries, city>	0.436955	NN	
+0.34672195	http://dbpedia.org/ontology/region	<region, city>	0.34672195	NN	
+0.34672195	http://dbpedia.org/property/region	<region, city>	0.34672195	NN	
+0.34341356	http://dbpedia.org/property/nation	<nation, city>	0.34341356	NN	
+0.34129563	http://dbpedia.org/ontology/province	<province, city>	0.34129563	NN	
+0.34129563	http://dbpedia.org/property/province	<province, city>	0.34129563	NN	
+0.32676902	http://dbpedia.org/ontology/division	<division, city>	0.32676902	NN	
+0.32413376800000004	http://dbpedia.org/property/areaServed	<area, city>	0.5985778	NN	<served, city>	0.049689736	NN	
+0.32413376800000004	http://dbpedia.org/property/areasServed	<areas, city>	0.5985778	NN	<served, city>	0.049689736	NN	
+0.32313147	http://dbpedia.org/ontology/campus	<campus, city>	0.32313147	NN	
+0.3199085	http://dbpedia.org/ontology/capital	<capital, city>	0.3199085	NN	
+0.3199085	http://dbpedia.org/property/capital	<Capital, city>	0.3199085	NN	
+0.31818342	http://dbpedia.org/property/worldPlace	<world, city>	0.2785187	NN	<place, city>	0.35784814	NN	
+0.31033787500000004	http://dbpedia.org/property/areaMagnitude	<area, city>	0.5985778	NN	<magnitude, city>	0.02209795	NN	
+0.29977650773000003	http://dbpedia.org/property/areasAffected	<areas, city>	0.5985778	NN	<affected, city>	9.7521546E-4	NN	
+0.2992889	http://dbpedia.org/ontology/broadcastArea	<broadcast, largest>	0.0	JJ	<area, city>	0.5985778	NN	
+0.2992889	http://dbpedia.org/property/broadcastArea	<broadcast, largest>	0.0	JJ	<area, city>	0.5985778	NN	
+0.29287004	http://dbpedia.org/property/states	<states, city>	0.29287004	NN	
+0.29287004	http://dbpedia.org/ontology/state	<state, city>	0.29287004	NN	
+0.29287004	http://dbpedia.org/property/state	<state, city>	0.29287004	NN	
+0.29068133	http://dbpedia.org/property/home	<Home, city>	0.29068133	NN	
+0.28495401	http://dbpedia.org/property/shipCountry	<Ship, city>	0.13295302	NN	<country, city>	0.436955	NN	
+0.2572123	http://dbpedia.org/ontology/location	<location, city>	0.2572123	NN	
+0.2572123	http://dbpedia.org/property/location	<location, city>	0.2572123	NN	
+0.2572123	http://dbpedia.org/property/locations	<locations, city>	0.2572123	NN	
+0.25536805	http://dbpedia.org/property/church	<church, city>	0.25536805	NN	
+0.250671165	http://dbpedia.org/property/basinCountries	<basin, city>	0.06438733	NN	<countries, city>	0.436955	NN	
+0.25	http://dbpedia.org/property/hqCity	<hq, largest>	-0.5	JJ	<city, city>	1.0	NN	
+0.245247516	http://dbpedia.org/property/countryName	<country, city>	0.436955	NN	<name, city>	0.053540032	NN	
+0.24509872249999998	http://dbpedia.org/ontology/sourceCountry	<source, city>	0.053242445	NN	<country, city>	0.436955	NN	
+0.24509872249999998	http://dbpedia.org/property/sourceCountry	<source, city>	0.053242445	NN	<country, city>	0.436955	NN	
+0.23967838	http://dbpedia.org/property/office	<office, city>	0.23967838	NN	
+0.2394790775	http://dbpedia.org/ontology/populationPlace	<population, city>	0.121110015	NN	<place, city>	0.35784814	NN	
+0.23252147499999998	http://dbpedia.org/property/countryFilmed	<country, city>	0.436955	NN	<filmed, city>	0.02808795	NN	
+0.2304894015	http://dbpedia.org/ontology/sportCountry	<sport, city>	0.024023803	NN	<country, city>	0.436955	NN	
+0.21896510773	http://dbpedia.org/property/countriesAffected	<countries, city>	0.436955	NN	<affected, city>	9.7521546E-4	NN	
+0.2184775	http://dbpedia.org/ontology/mouthCountry	<mouth, largest>	0.0	JJ	<country, city>	0.436955	NN	
+0.2184775	http://dbpedia.org/property/mouthCountry	<mouth, largest>	0.0	JJ	<country, city>	0.436955	NN	
+0.2184775	http://dbpedia.org/property/otherCountries	<other, largest>	0.0	JJ	<countries, city>	0.436955	NN	
+0.2184775	http://dbpedia.org/ontology/usingCountry	<using, largest>	0.0	JJ	<country, city>	0.436955	NN	
+0.2184775	http://dbpedia.org/ontology/twinCountry	<twin, largest>	0.0	JJ	<country, city>	0.436955	NN	
+0.211876355	http://dbpedia.org/ontology/deathPlace	<death, city>	0.06590457	NN	<place, city>	0.35784814	NN	
+0.211876355	http://dbpedia.org/property/deathPlace	<death, city>	0.06590457	NN	<place, city>	0.35784814	NN	
+0.206571707	http://dbpedia.org/property/meetingPlace	<meeting, city>	0.055295274	NN	<place, city>	0.35784814	NN	
+0.2006463965	http://dbpedia.org/ontology/wineRegion	<wine, city>	0.054570843	NN	<region, city>	0.34672195	NN	
+0.198205843	http://dbpedia.org/ontology/regionServed	<region, city>	0.34672195	NN	<served, city>	0.049689736	NN	
+0.198205843	http://dbpedia.org/property/regionServed	<region, city>	0.34672195	NN	<served, city>	0.049689736	NN	
+0.19705692	http://dbpedia.org/property/site	<site, city>	0.19705692	NN	
+0.1930287705	http://dbpedia.org/ontology/foundationPlace	<foundation, city>	0.028209401	NN	<place, city>	0.35784814	NN	
+0.19184078533333335	http://dbpedia.org/ontology/firstDriverCountry	<first, city>	0.06252641	NN	<driver, city>	0.076040946	NN	<country, city>	0.436955	NN	
+0.1883400645	http://dbpedia.org/ontology/restingPlace	<resting, city>	0.018831989	NN	<place, city>	0.35784814	NN	
+0.1883400645	http://dbpedia.org/property/restingPlace	<resting, city>	0.018831989	NN	<place, city>	0.35784814	NN	
+0.18626502	http://dbpedia.org/property/hometown	<hometown, city>	0.18626502	NN	
+0.1861326595	http://dbpedia.org/property/panPlace	<pan, city>	0.014417179	NN	<place, city>	0.35784814	NN	
+0.185954055	http://dbpedia.org/property/regionalScenes	<regional, city>	0.18462144	NN	<scenes, city>	0.18728667	NN	
+0.18417889999999998	http://dbpedia.org/property/foundedPlace	<founded, city>	0.01050966	NN	<place, city>	0.35784814	NN	
+0.1797827625	http://dbpedia.org/property/lowerHouse	<lower, city>	0.013185555	NN	<house, city>	0.34637997	NN	
+0.17892407	http://dbpedia.org/ontology/birthPlace	<birth, largest>	0.0	JJ	<place, city>	0.35784814	NN	
+0.17892407	http://dbpedia.org/ontology/premierePlace	<premiere, largest>	0.0	JJ	<place, city>	0.35784814	NN	
+0.17892407	http://dbpedia.org/property/birthPlace	<birth, largest>	0.0	JJ	<place, city>	0.35784814	NN	
+0.175550243	http://dbpedia.org/property/locationMap	<location, city>	0.2572123	NN	<map, city>	0.093888186	NN	
+0.17411305900000001	http://dbpedia.org/property/stateParty	<State, city>	0.29287004	NN	<Party, city>	0.055356078	NN	
+0.173189985	http://dbpedia.org/property/upperHouse	<upper, largest>	0.0	JJ	<house, city>	0.34637997	NN	
+0.1730562425	http://dbpedia.org/property/sourceState	<source, city>	0.053242445	NN	<state, city>	0.29287004	NN	
+0.171885659	http://dbpedia.org/ontology/thirdDriverCountry	<third, city>	0.002661031	NN	<driver, city>	0.076040946	NN	<country, city>	0.436955	NN	
+0.17055565	http://dbpedia.org/property/venue	<venue, city>	0.17055565	NN	
+0.17055565	http://dbpedia.org/property/venues	<venues, city>	0.17055565	NN	
+0.15394585	http://dbpedia.org/property/club	<club, city>	0.15394585	NN	
+0.14643502	http://dbpedia.org/property/mouthState	<mouth, largest>	0.0	JJ	<state, city>	0.29287004	NN	
+0.14551595	http://dbpedia.org/property/setting	<setting, city>	0.14551595	NN	
+0.14507622	http://dbpedia.org/property/stadium	<stadium, city>	0.14507622	NN	
+0.14476192266666668	http://dbpedia.org/ontology/routeEndLocation	<route, city>	0.14012605	NN	<end, city>	0.036947418	NN	<location, city>	0.2572123	NN	
+0.13730226	http://dbpedia.org/property/factory	<factory, city>	0.13730226	NN	
+0.13474354	http://dbpedia.org/ontology/residence	<residence, city>	0.13474354	NN	
+0.13474354	http://dbpedia.org/property/residence	<residence, city>	0.13474354	NN	
+0.1320953712	http://dbpedia.org/property/locationSigned	<location, city>	0.2572123	NN	<signed, city>	0.0069784424	NN	
+0.1295455	http://dbpedia.org/property/west	<West, city>	0.1295455	NN	
+0.12860615	http://dbpedia.org/property/foundingLocation	<founding, largest>	0.0	JJ	<location, city>	0.2572123	NN	
+0.12605636	http://dbpedia.org/property/north	<North, city>	0.12605636	NN	
+0.12272752	http://dbpedia.org/property/service	<service, city>	0.12272752	NN	
+0.12131541	http://dbpedia.org/ontology/riverMouth	<river, city>	0.24263082	NN	<mouth, largest>	0.0	JJ	
+0.120038194	http://dbpedia.org/property/territorialExtent	<territorial, city>	0.22213872	NN	<extent, city>	0.017937668	NN	
+0.1179481675	http://dbpedia.org/property/returnSite	<return, city>	0.038839415	NN	<site, city>	0.19705692	NN	
+0.117461726	http://dbpedia.org/property/locale	<locale, city>	0.117461726	NN	
+0.115799055	http://dbpedia.org/property/east	<East, city>	0.115799055	NN	
+0.10825922	http://dbpedia.org/ontology/destination	<destination, city>	0.10825922	NN	
+0.10825922	http://dbpedia.org/property/destinations	<destinations, city>	0.10825922	NN	
+0.10825922	http://dbpedia.org/property/destination	<destination, city>	0.10825922	NN	
+0.10822274500000001	http://dbpedia.org/property/shipBuilder	<Ship, city>	0.13295302	NN	<builder, city>	0.08349247	NN	
+0.10405219	http://dbpedia.org/property/championSite	<champion, city>	0.01104746	NN	<site, city>	0.19705692	NN	
+0.103207556	http://dbpedia.org/property/subdivisionName	<subdivision, city>	0.15287508	NN	<name, city>	0.053540032	NN	
+
+Give me the grandchildren of Bruce Lee.
+0.5258086	http://dbpedia.org/ontology/child	<child, grandchildren>	0.5258086	NN	
+0.5258086	http://dbpedia.org/property/children	<children, grandchildren>	0.5258086	NN	
+0.45477188	http://dbpedia.org/ontology/spouse	<spouse, grandchildren>	0.45477188	NN	
+0.45477188	http://dbpedia.org/property/spouse	<spouse, grandchildren>	0.45477188	NN	
+0.2970675	http://dbpedia.org/ontology/parent	<parent, grandchildren>	0.2970675	NN	
+0.2970675	http://dbpedia.org/property/parents	<parents, grandchildren>	0.2970675	NN	
+0.13094138	http://dbpedia.org/property/ancestry	<ancestry, grandchildren>	0.13094138	NN	
+0.10629841300000001	http://dbpedia.org/property/birthName	<birth, grandchildren>	0.14842458	NN	<name, grandchildren>	0.064172246	NN	
+
+Who is the tallest player of the Atlanta Falcons?
+0.75867865	http://dbpedia.org/property/playerTeams	<player, player>	1.0	NN	<teams, player>	0.5173573	NN	
+0.5173573	http://dbpedia.org/property/teams	<teams, player>	0.5173573	NN	
+0.5173573	http://dbpedia.org/property/team	<Team, player>	0.5173573	NN	
+0.5173573	http://dbpedia.org/ontology/team	<team, player>	0.5173573	NN	
+0.449958285	http://dbpedia.org/property/coachTeams	<coach, player>	0.38255927	NN	<teams, player>	0.5173573	NN	
+0.38255927	http://dbpedia.org/ontology/coach	<coach, player>	0.38255927	NN	
+0.38255927	http://dbpedia.org/property/coach	<coach, player>	0.38255927	NN	
+0.36776698	http://dbpedia.org/ontology/coachedTeam	<coached, player>	0.21817666	NN	<team, player>	0.5173573	NN	
+0.35962185	http://dbpedia.org/property/nfldraftedteam	<NFLDraftedTeam, player>	0.35962185	NN	
+0.29819341	http://dbpedia.org/ontology/formerTeam	<former, player>	0.07902952	NN	<team, player>	0.5173573	NN	
+0.280277127	http://dbpedia.org/ontology/debutTeam	<debut, player>	0.043196954	NN	<team, player>	0.5173573	NN	
+0.25867865	http://dbpedia.org/property/playingTeams	<playing, tallest>	0.0	JJ	<teams, player>	0.5173573	NN	
+0.25867865	http://dbpedia.org/property/coachingTeams	<coaching, tallest>	0.0	JJ	<teams, player>	0.5173573	NN	
+0.25867865	http://dbpedia.org/property/administratingTeams	<administrating, tallest>	0.0	JJ	<teams, player>	0.5173573	NN	
+0.25867865	http://dbpedia.org/property/currentTeam	<current, tallest>	0.0	JJ	<team, player>	0.5173573	NN	
+0.10531044	http://dbpedia.org/property/title	<title, player>	0.10531044	NN	
+
+What was the last movie with Alec Guinness?
+0.41514176	http://dbpedia.org/ontology/starring	<starring, movie>	0.41514176	NN	
+0.41514176	http://dbpedia.org/property/starring	<starring, movie>	0.41514176	NN	
+0.35951634800000004	http://dbpedia.org/ontology/activeYearsStartYear	<active, movie>	0.019643052	NN	<years, last>	0.562463	JJ	<start, last>	0.29349634	JJ	<year, last>	0.562463	JJ	
+0.316519793	http://dbpedia.org/ontology/deathYear	<death, last>	0.070576586	JJ	<year, last>	0.562463	JJ	
+0.2812315	http://dbpedia.org/ontology/birthYear	<birth, last>	0.0	JJ	<year, last>	0.562463	JJ	
+0.17364064	http://dbpedia.org/property/title	<title, movie>	0.17364064	NN	
+0.16650885	http://dbpedia.org/ontology/writer	<writer, movie>	0.16650885	NN	
+0.16650885	http://dbpedia.org/property/writer	<writer, movie>	0.16650885	NN	
+0.12932387	http://dbpedia.org/property/caption	<Caption, movie>	0.12932387	NN	
+0.124355163	http://dbpedia.org/ontology/deathDate	<death, last>	0.070576586	JJ	<date, last>	0.17813374	JJ	
+0.124355163	http://dbpedia.org/property/deathDate	<death, last>	0.070576586	JJ	<date, last>	0.17813374	JJ	
+0.117904948	http://dbpedia.org/ontology/deathPlace	<death, last>	0.070576586	JJ	<place, last>	0.16523331	JJ	
+0.117904948	http://dbpedia.org/property/deathPlace	<death, last>	0.070576586	JJ	<place, last>	0.16523331	JJ	
+0.11449173	http://dbpedia.org/ontology/thumbnail	<thumbnail, movie>	0.11449173	NN	
+
+Give me the capitals of all countries that the Himalayas run through.
+1.0	http://dbpedia.org/property/country	<country, countries>	1.0	NN	
+1.0	http://dbpedia.org/ontology/country	<country, countries>	1.0	NN	
+0.82823336	http://dbpedia.org/ontology/region	<region, countries>	0.82823336	NN	
+0.82823336	http://dbpedia.org/property/region	<region, countries>	0.82823336	NN	
+0.434010492	http://dbpedia.org/property/regionCode	<region, countries>	0.82823336	NN	<code, countries>	0.039787624	NN	
+0.430040491	http://dbpedia.org/ontology/sourceRegion	<source, countries>	0.031847622	NN	<region, countries>	0.82823336	NN	
+0.430040491	http://dbpedia.org/property/sourceRegion	<source, countries>	0.031847622	NN	<region, countries>	0.82823336	NN	
+0.122770401	http://dbpedia.org/ontology/deathPlace	<death, countries>	0.035023972	NN	<place, countries>	0.21051683	NN	
+0.122770401	http://dbpedia.org/property/deathPlace	<death, countries>	0.035023972	NN	<place, countries>	0.21051683	NN	
+0.12118222599999999	http://dbpedia.org/ontology/sourcePlace	<source, countries>	0.031847622	NN	<place, countries>	0.21051683	NN	
+0.11807899999999999	http://dbpedia.org/ontology/birthPlace	<birth, countries>	0.02564117	NN	<place, countries>	0.21051683	NN	
+0.11807899999999999	http://dbpedia.org/property/birthPlace	<birth, countries>	0.02564117	NN	<place, countries>	0.21051683	NN	
+
+Who is the founder of Penguin Books?
+1.0	http://dbpedia.org/ontology/founder	<Founder, founder>	1.0	NN	
+1.0	http://dbpedia.org/property/founder	<founder, founder>	1.0	NN	
+0.97232264	http://dbpedia.org/property/founded	<founded, founder>	0.97232264	NN	
+0.13673596	http://dbpedia.org/property/publisher	<publisher, founder>	0.13673596	NN	
+0.13673596	http://dbpedia.org/property/publishers	<publishers, founder>	0.13673596	NN	
+0.13673596	http://dbpedia.org/ontology/publisher	<publisher, founder>	0.13673596	NN	
+0.13209035	http://dbpedia.org/property/published	<published, founder>	0.13209035	NN	
+0.12322514	http://dbpedia.org/property/headquarters	<headquarters, founder>	0.12322514	NN	
+0.10629639	http://dbpedia.org/property/imprints	<imprints, founder>	0.10629639	NN	
+
+List all the musicals with music by Elton John.
+1.0	http://dbpedia.org/property/music	<music, music>	1.0	NN	
+0.70707102	http://dbpedia.org/ontology/musicalBand	<musical, music>	1.0	NN	<band, music>	0.41414204	NN	
+0.65854351	http://dbpedia.org/ontology/musicalArtist	<musical, music>	1.0	NN	<artist, music>	0.31708702	NN	
+0.64347309	http://dbpedia.org/ontology/musicComposer	<music, music>	1.0	NN	<composer, music>	0.28694618	NN	
+0.5814414833333333	http://dbpedia.org/property/themeMusicComposer	<theme, music>	0.45737827	NN	<music, music>	1.0	NN	<composer, music>	0.28694618	NN	
+0.5	http://dbpedia.org/ontology/musicBy	<music, music>	1.0	NN	<by, null>	0.0	null	
+0.5	http://dbpedia.org/property/allMusic	<all, null>	0.0	null	<music, music>	1.0	NN	
+0.4416633856666667	http://dbpedia.org/ontology/associatedMusicalArtist	<associated, music>	0.007903137	NN	<musical, music>	1.0	NN	<artist, music>	0.31708702	NN	
+0.31708702	http://dbpedia.org/property/artist	<Artist, music>	0.31708702	NN	
+0.28694618	http://dbpedia.org/ontology/composer	<composer, music>	0.28694618	NN	
+0.28694618	http://dbpedia.org/property/composer	<Composer, music>	0.28694618	NN	
+0.24469334	http://dbpedia.org/ontology/artist	<performer, music>	0.24469334	NN	
+0.2110225885	http://dbpedia.org/ontology/associatedBand	<associated, music>	0.007903137	NN	<band, music>	0.41414204	NN	
+0.17600872	http://dbpedia.org/property/note	<note, music>	0.17600872	NN	
+0.15245043	http://dbpedia.org/property/title	<title, music>	0.15245043	NN	
+0.14908766566666667	http://dbpedia.org/ontology/formerBandMember	<former, music>	0.006576455	NN	<band, music>	0.41414204	NN	<member, music>	0.026544502	NN	
+0.12125335	http://dbpedia.org/property/rtitle	<RTitle, music>	0.12125335	NN	
+0.10892225850000001	http://dbpedia.org/ontology/recordLabel	<record, music>	0.16779785	NN	<label, music>	0.050046667	NN	
+0.10756983	http://dbpedia.org/ontology/writer	<writer, music>	0.10756983	NN	
+0.10756983	http://dbpedia.org/property/writer	<writer, music>	0.10756983	NN	
+
+Show me all the breweries in Australia.
+0.24392046	http://dbpedia.org/ontology/subsidiary	<subsidiary, breweries>	0.24392046	NN	
+0.19535685	http://dbpedia.org/property/hometown	<hometown, breweries>	0.19535685	NN	
+0.185576043	http://dbpedia.org/ontology/significantBuilding	<significant, breweries>	0.042769086	NN	<building, breweries>	0.328383	NN	
+0.18062162	http://dbpedia.org/property/birthplace	<birthplace, breweries>	0.18062162	NN	
+0.16795109	http://dbpedia.org/ontology/distributor	<distributor, breweries>	0.16795109	NN	
+0.16556099	http://dbpedia.org/property/stadium	<stadium, breweries>	0.16556099	NN	
+0.15471791000000001	http://dbpedia.org/ontology/wineRegion	<wine, breweries>	0.25318715	NN	<region, breweries>	0.05624867	NN	
+0.14734386	http://dbpedia.org/property/headquarters	<headquarters, breweries>	0.14734386	NN	
+0.13543439	http://dbpedia.org/ontology/garrison	<garrison, breweries>	0.13543439	NN	
+0.13543439	http://dbpedia.org/property/garrison	<garrison, breweries>	0.13543439	NN	
+0.12474263	http://dbpedia.org/property/diocese	<diocese, breweries>	0.12474263	NN	
+0.117172256	http://dbpedia.org/property/venue	<venue, breweries>	0.117172256	NN	
+0.10837258	http://dbpedia.org/ontology/coach	<coach, breweries>	0.10837258	NN	
+
+Who is the mayor of the capital of French Polynesia?
+1.0	http://dbpedia.org/property/capital	<Capital, capital>	1.0	NN	
+1.0	http://dbpedia.org/ontology/capital	<capital, capital>	1.0	NN	
+0.3199085	http://dbpedia.org/ontology/city	<city, capital>	0.3199085	NN	
+0.277366	http://dbpedia.org/ontology/populationPlace	<population, capital>	0.09306297	NN	<place, capital>	0.46166903	NN	
+0.26653913	http://dbpedia.org/property/cityServed	<city-served, capital>	0.26653913	NN	
+0.2578415	http://dbpedia.org/ontology/country	<country, capital>	0.2578415	NN	
+0.2578415	http://dbpedia.org/property/country	<country, capital>	0.2578415	NN	
+0.250059833	http://dbpedia.org/property/foundedPlace	<founded, capital>	0.038450636	NN	<place, capital>	0.46166903	NN	
+0.24832551	http://dbpedia.org/property/headquarters	<headquarters, capital>	0.24832551	NN	
+0.24774224	http://dbpedia.org/property/currency	<currency, capital>	0.24774224	NN	
+0.24774224	http://dbpedia.org/ontology/currency	<currency, capital>	0.24774224	NN	
+0.230834515	http://dbpedia.org/ontology/deathPlace	<death, null>	0.0	null	<place, capital>	0.46166903	NN	
+0.230834515	http://dbpedia.org/ontology/birthPlace	<birth, null>	0.0	null	<place, capital>	0.46166903	NN	
+0.230834515	http://dbpedia.org/property/deathPlace	<death, null>	0.0	null	<place, capital>	0.46166903	NN	
+0.230834515	http://dbpedia.org/property/birthPlace	<birth, null>	0.0	null	<place, capital>	0.46166903	NN	
+0.19925021999999998	http://dbpedia.org/ontology/hometown	<home, capital>	0.11926654	NN	<town, capital>	0.2792339	NN	
+0.17977093	http://dbpedia.org/property/overseasCountry	<overseas, capital>	0.10170036	NN	<country, capital>	0.2578415	NN	
+0.17086207250000002	http://dbpedia.org/ontology/sourceCountry	<source, capital>	0.083882645	NN	<country, capital>	0.2578415	NN	
+0.15995425	http://dbpedia.org/property/largestCity	<largest, null>	0.0	null	<city, capital>	0.3199085	NN	
+0.15995425	http://dbpedia.org/ontology/largestCity	<largest, null>	0.0	null	<city, capital>	0.3199085	NN	
+0.15388967666666667	http://dbpedia.org/property/placeOfBirth	<PLACE, capital>	0.46166903	NN	<OF, null>	0.0	null	<BIRTH, null>	0.0	null	
+0.15388967666666667	http://dbpedia.org/property/placeOfDeath	<PLACE, capital>	0.46166903	NN	<OF, null>	0.0	null	<DEATH, null>	0.0	null	
+0.1315115475	http://dbpedia.org/ontology/place	<place, capital>	0.46166903	NN	<of, null>	0.0	null	<military, capital>	0.03132948	NN	<conflict, capital>	0.03304768	NN	
+0.12892075	http://dbpedia.org/property/basinCountries	<basin, null>	0.0	null	<countries, capital>	0.2578415	NN	
+0.1275419325	http://dbpedia.org/ontology/regionServed	<region, capital>	0.14865282	NN	<served, capital>	0.106431045	NN	
+0.12387112	http://dbpedia.org/property/currencyCode	<currency, capital>	0.24774224	NN	<code, null>	0.0	null	
+0.102785455	http://dbpedia.org/property/footnoteB	<footnote, capital>	0.09133433	NN	<b, capital>	0.11423658	NN	
+
+What airlines are part of the SkyTeam alliance?
+0.129137872	http://dbpedia.org/property/fullMembers	<full, part>	0.14596336	NN	<members, part>	0.112312384	NN	
+0.121862225	http://dbpedia.org/property/name	<name, part>	0.121862225	NN	
+0.11945361	http://dbpedia.org/property/group	<group, part>	0.11945361	NN	
+
+What is the total population of Melbourne, Florida?
+0.4181834566666667	http://dbpedia.org/ontology/populationDensity	<population, population>	1.0	NN	<density, population>	0.25455037	NN	<(/sqkm), population>	0.0	NN	
+0.4181834566666667	http://dbpedia.org/ontology/PopulatedPlace/populationDensity	<population, population>	1.0	NN	<density, population>	0.25455037	NN	<(/sqkm), population>	0.0	NN	
+0.36184156	http://dbpedia.org/property/resides	<resides, population>	0.36184156	NN	
+0.25	http://dbpedia.org/ontology/populationTotal	<population, population>	1.0	NN	<total, total>	-0.5	JJ	
+0.25	http://dbpedia.org/property/populationTotal	<population, population>	1.0	NN	<total, total>	-0.5	JJ	
+0.24292082	http://dbpedia.org/property/area	<area, population>	0.24292082	NN	
+0.17663054733333336	http://dbpedia.org/property/areaWaterPercent	<area, population>	0.24292082	NN	<water, population>	0.020528192	NN	<percent, population>	0.26644263	NN	
+0.15572713000000002	http://dbpedia.org/property/coordinatesRegion	<coordinates, population>	0.02947682	NN	<region, population>	0.28197744	NN	
+0.1491755735	http://dbpedia.org/ontology/areaCode	<area, population>	0.24292082	NN	<code, population>	0.055430327	NN	
+0.1491755735	http://dbpedia.org/property/areaCode	<area, population>	0.24292082	NN	<code, population>	0.055430327	NN	
+0.14021464	http://dbpedia.org/property/locale	<locale, population>	0.14021464	NN	
+0.12705715650000002	http://dbpedia.org/ontology/broadcastArea	<broadcast, population>	0.011193493	NN	<area, population>	0.24292082	NN	
+0.121110015	http://dbpedia.org/ontology/city	<city, population>	0.121110015	NN	
+0.121110015	http://dbpedia.org/property/city	<city, population>	0.121110015	NN	
+0.11864014	http://dbpedia.org/property/cityServed	<city-served, population>	0.11864014	NN	
+0.11002429	http://dbpedia.org/property/southeast	<Southeast, population>	0.11002429	NN	
+0.10799959	http://dbpedia.org/ontology/hometown	<home, population>	0.09532483	NN	<town, population>	0.12067435	NN	
+0.10433010833333332	http://dbpedia.org/property/areaCodeType	<area, population>	0.24292082	NN	<code, population>	0.055430327	NN	<type, population>	0.014639178	NN	
+
+What is the highest volcano in Africa?
+0.14699765	http://dbpedia.org/property/continent	<continent, volcano>	0.14699765	NN	
+0.11362815	http://dbpedia.org/ontology/origin	<origin, volcano>	0.11362815	NN	
+0.11362815	http://dbpedia.org/property/origin	<origin, volcano>	0.11362815	NN	
+
+Who is the owner of Facebook?
+1.0	http://dbpedia.org/ontology/owner	<owner, owner>	1.0	NN	
+1.0	http://dbpedia.org/property/owner	<owner, owner>	1.0	NN	
+0.48281813	http://dbpedia.org/property/ownership	<ownership, owner>	0.48281813	NN	
+0.33525667000000003	http://dbpedia.org/ontology/keyPerson	<key, owner>	0.12932838	NN	<person, owner>	0.54118496	NN	
+0.28620532	http://dbpedia.org/ontology/developer	<developer, owner>	0.28620532	NN	
+0.28620532	http://dbpedia.org/property/developer	<developer, owner>	0.28620532	NN	
+0.22756463500000002	http://dbpedia.org/ontology/parentCompany	<parent, owner>	0.17275009	NN	<company, owner>	0.28237918	NN	
+0.22315006	http://dbpedia.org/ontology/distributor	<distributor, owner>	0.22315006	NN	
+0.22315006	http://dbpedia.org/property/distributor	<distributor, owner>	0.22315006	NN	
+0.21725121	http://dbpedia.org/property/companyName	<company, owner>	0.28237918	NN	<name, owner>	0.15212324	NN	
+0.20486204	http://dbpedia.org/property/industry	<industry, owner>	0.20486204	NN	
+0.20486204	http://dbpedia.org/ontology/industry	<industry, owner>	0.20486204	NN	
+0.19041747	http://dbpedia.org/ontology/employer	<employer, owner>	0.19041747	NN	
+0.19041747	http://dbpedia.org/property/employer	<employer, owner>	0.19041747	NN	
+0.17450462	http://dbpedia.org/property/assets	<assets, owner>	0.17450462	NN	
+0.17275009	http://dbpedia.org/property/parent	<parent, owner>	0.17275009	NN	
+0.1707513965	http://dbpedia.org/property/companyLogo	<company, owner>	0.28237918	NN	<logo, owner>	0.059123613	NN	
+0.15645105850000002	http://dbpedia.org/property/companyType	<company, owner>	0.28237918	NN	<type, owner>	0.030522937	NN	
+0.15005113	http://dbpedia.org/property/registration	<registration, owner>	0.15005113	NN	
+0.14000858	http://dbpedia.org/property/founder	<founder, owner>	0.14000858	NN	
+0.13849676	http://dbpedia.org/ontology/author	<author, owner>	0.13849676	NN	
+0.13849676	http://dbpedia.org/property/author	<author, owner>	0.13849676	NN	
+0.13636865	http://dbpedia.org/property/title	<title, owner>	0.13636865	NN	
+0.12610795	http://dbpedia.org/property/location	<location, owner>	0.12610795	NN	
+0.12610795	http://dbpedia.org/ontology/location	<location, owner>	0.12610795	NN	
+0.114924595	http://dbpedia.org/property/numEmployees	<num, null>	0.0	null	<employees, owner>	0.22984919	NN	
+
+Who was president of Pakistan in 1978?
+0.8784588	http://dbpedia.org/ontology/leader	<leader, president>	0.8784588	NN	
+0.530849315	http://dbpedia.org/property/leaderName	<leader, president>	0.8784588	NN	<name, president>	0.18323983	NN	
+0.47653455	http://dbpedia.org/ontology/leaderTitle	<leader, president>	0.8784588	NN	<title, president>	0.0746103	NN	
+0.47653455	http://dbpedia.org/property/leaderTitle	<leader, president>	0.8784588	NN	<title, president>	0.0746103	NN	
+0.429878565	http://dbpedia.org/property/headOffice	<Head, president>	0.67777336	NN	<Office, president>	0.18198377	NN	
+0.2553478	http://dbpedia.org/property/legislature	<Legislature, president>	0.2553478	NN	
+0.195543205	http://dbpedia.org/property/officialReligion	<official, president>	0.34225318	NN	<religion, president>	0.04883323	NN	
+0.18198377	http://dbpedia.org/property/office	<office, president>	0.18198377	NN	
+0.1723966	http://dbpedia.org/property/founded	<founded, president>	0.1723966	NN	
+0.17112659	http://dbpedia.org/ontology/officialLanguage	<official, president>	0.34225318	NN	<language, null>	0.0	null	
+0.17112659	http://dbpedia.org/property/officialLanguages	<official, president>	0.34225318	NN	<languages, null>	0.0	null	
+0.16384873	http://dbpedia.org/property/assembly	<assembly, president>	0.16384873	NN	
+0.16384873	http://dbpedia.org/ontology/assembly	<assembly, president>	0.16384873	NN	
+0.14865471	http://dbpedia.org/property/nation	<nation, president>	0.14865471	NN	
+0.14662969	http://dbpedia.org/property/subOffice	<Sub-Office, president>	0.14662969	NN	
+0.145690725	http://dbpedia.org/ontology/governmentType	<government, president>	0.2657611	NN	<type, president>	0.02562035	NN	
+0.145690725	http://dbpedia.org/property/governmentType	<government, president>	0.2657611	NN	<type, president>	0.02562035	NN	
+0.13760857	http://dbpedia.org/ontology/longName	<longName, president>	0.13760857	NN	
+0.12845573	http://dbpedia.org/property/foundation	<foundation, president>	0.12845573	NN	
+0.126998596	http://dbpedia.org/property/stateParty	<State, president>	0.058956042	NN	<Party, president>	0.19504115	NN	
+0.11469671	http://dbpedia.org/ontology/flag	<flag, president>	0.11469671	NN	
+0.11237378	http://dbpedia.org/property/foundedPlace	<founded, president>	0.1723966	NN	<place, president>	0.05235096	NN	
+0.10844725	http://dbpedia.org/property/locationSigned	<location, president>	0.07392818	NN	<signed, president>	0.14296632	NN	
+0.10578591999999999	http://dbpedia.org/property/subdivisionName	<subdivision, president>	0.02833201	NN	<name, president>	0.18323983	NN	
+0.10481442	http://dbpedia.org/ontology/team	<team, president>	0.10481442	NN	
+0.10046103499999999	http://dbpedia.org/property/countryName	<country, president>	0.01768224	NN	<name, president>	0.18323983	NN	

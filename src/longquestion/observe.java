@@ -1,5 +1,8 @@
 package longquestion;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
@@ -152,8 +155,20 @@ public class observe {
 //		System.out.println(postag);
 //		observeOfRule();
 //		observeOfEntitySurr(77);
+		
+		PrintStream old = System.out;
+		
+//		FileOutputStream fout;
+//		try {
+//			fout = new FileOutputStream("./data/zch/entity-phrase-pattern.txt");
+//			System.setOut(new PrintStream(fout));
+//		} catch (FileNotFoundException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		
 		int count = 0;
-		for(int i=1; i<=300; ++i){
+		for(int i=280; i<=280; ++i){
 			EntityPhrase entityPhrase = observeOfEntitySurr(i);
 			if(entityPhrase != null){
 				++count;
@@ -161,7 +176,9 @@ public class observe {
 //				entityPhrase.ranking(new umbcDB(), predictUris);
 			}
 		}
+		System.setOut(old);
 		System.out.println(count);
+//		System.out.println(count);
 	}
 
 }

@@ -145,9 +145,13 @@ public class EntityPhrase {
 			double wordScore = 0;
 			if(JJ != null && JJ.length() > 0){
 				wordScore = db.getScore(labelWord, JJ);
-				wordDetail.setScore(wordScore);
-				wordDetail.setWordInQuestion(JJ);
-				wordDetail.setPosInQuestion("JJ");
+				if(wordScore > 0){
+					wordDetail.setScore(wordScore);
+					wordDetail.setWordInQuestion(JJ);
+					wordDetail.setPosInQuestion("JJ");
+				}else{
+					wordScore = 0;
+				}
 			}
 			for (String nn : NNs) {
 				double tmpScore = db.getScore(labelWord, nn);
