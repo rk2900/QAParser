@@ -6464,7 +6464,7 @@ OFFSET 0 LIMIT 1
 ]]></query>
 <answers><answer>http://dbpedia.org/resource/Big_Eyes</answer></answers></question>
 
-<question aggregation="true" hybrid="false" answertype="resource" id="209" onlydbo="false">
+<question aggregation="true" hybrid="false" answertype="number" id="209" onlydbo="false">
 <string lang="en"><![CDATA[How heavy is Jupiter's lightest moon?]]></string>
 <string lang="de"><![CDATA[Wie schwer ist Jupiters leichtester Mond?]]></string>
 <string lang="es"><![CDATA[¿Cuánto pesa el satélite más ligero de Júpiter?]]></string>

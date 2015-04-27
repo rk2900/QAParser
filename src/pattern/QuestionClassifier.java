@@ -26,7 +26,7 @@ public class QuestionClassifier {
 	}
 	
 	/**
-	 * Get
+	 * Get question target by classifier
 	 * @param qs
 	 */
 	public void classify(QuestionSingle qs) {
@@ -36,7 +36,7 @@ public class QuestionClassifier {
 		// category
 		cateMap.put(Category.DATE, QuestionClassifier.judgeDate(wordList));
 		cateMap.put(Category.BOOLEAN, QuestionClassifier.judgeBool(wordList, POSList));
-		cateMap.put(Category.NUMBER, QuestionClassifier.judgeAggregation(wordList));
+		cateMap.put(Category.NUMBER, QuestionClassifier.judgeNumber(wordList));
 		boolean resourceFlag = !(cateMap.get(Category.DATE) || cateMap.get(Category.BOOLEAN) || cateMap.get(Category.NUMBER));
 		cateMap.put(Category.RESOURCE, resourceFlag);
 		
@@ -77,11 +77,11 @@ public class QuestionClassifier {
 	}
 	
 	/**
-	 * To judge if the question focuses on Number (aggregation)
+	 * To judge if the question focuses on Number
 	 * @param wordList
 	 * @return
 	 */
-	public static boolean judgeAggregation(LinkedList<String> wordList) {
+	public static boolean judgeNumber(LinkedList<String> wordList) {
 		if(wordList.size() == 0) 
 			return false;
 		
