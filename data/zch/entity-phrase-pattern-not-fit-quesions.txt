@@ -1,0 +1,399 @@
+Available catalogs: [/, chainyi, dbpedia2014, system, zhishime]
+
+Got a graph maker for the connection.
+
+2	In which country does the Ganges start?	[IN, WDT, NN, VBZ, DT, NNP, VB]
+
+3	When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?	[WRB, VBZ, DT, NN, JJS, NN, NN, VBG, TO, VB, IN, NNS, IN, DT, NNP]
+
+4	Which German cities have more than 250000 inhabitants?	[WDT, JJ, NNS, VBP, JJR, IN, CD, NNS]
+
+5	Who was John F. Kennedy's vice president?	[WP, VBD, NNP, NNP, NNP, POS, NN, NN]
+
+7	How many students does the Free University in Amsterdam have?	[WRB, JJ, NNS, VBZ, DT, NNP, NNP, IN, NNP, VB]
+
+10	When was Alberta admitted as province?	[WRB, VBD, NNP, VBD, IN, NN]
+
+11	To which countries does the Himalayan mountain system extend?	[TO, WDT, NNS, VBZ, DT, JJ, NN, NN, VB]
+
+12	Give me a list of all bandleaders that play trumpet.	[VB, PRP, DT, NN, IN, DT, NNS, WDT, VBP, NN]
+
+14	What is the total amount of men and women serving in the FDNY?	[WP, VBZ, DT, JJ, NN, IN, NNS, CC, NNS, VBG, IN, DT, NNP]
+
+15	Who produces Orangina?	[WP, VBZ, NNP]
+
+16	Who is the Formula 1 race driver with the most races?	[WP, VBZ, DT, NN, CD, NN, NN, IN, DT, RBS, NNS]
+
+17	Give me all world heritage sites designated within the past two years.	[VB, PRP, DT, NN, NN, NNS, VBN, IN, DT, JJ, CD, NNS]
+
+21	Does Breaking Bad have more episodes than Game of Thrones?	[VBZ, VBG, JJ, VBP, JJR, NNS, IN, NN, IN, NNPS]
+
+22	Give me all cars that are produced in Germany.	[VB, PRP, DT, NNS, WDT, VBP, VBN, IN, NNP]
+
+24	Give me all people that were born in Vienna and died in Berlin.	[VB, PRP, DT, NNS, WDT, VBD, VBN, IN, NNP, CC, VBD, IN, NNP]
+
+25	Is proinsulin a protein?	[VBZ, NN, DT, NN]
+
+26	How tall is Michael Jordan?	[WRB, JJ, VBZ, NNP, NNP]
+
+29	Do Prince Harry and Prince William have the same parents?	[VB, NNP, NNP, CC, NNP, NNP, VBP, DT, JJ, NNS]
+
+32	How many languages are spoken in Turkmenistan?	[WRB, JJ, NNS, VBP, VBN, IN, NNP]
+
+33	Sean Parnell is the governor of which U.S. state?	[NNP, NNP, VBZ, DT, NN, IN, WDT, NNP, NN]
+
+34	Give me all movies directed by Francis Ford Coppola.	[VB, PRP, DT, NNS, VBN, IN, NNP, NNP, NNP]
+
+35	Give me all actors starring in movies directed by William Shatner.	[VB, PRP, DT, NNS, VBG, IN, NNS, VBN, IN, NNP, NNP]
+
+36	Are tree frogs a type of amphibian?	[VBP, NN, NNS, DT, NN, IN, NN]
+
+38	Give me all Methodist politicians.	[VB, PRP, DT, JJ, NNS]
+
+39	How often did Jane Fonda marry?	[WRB, RB, VBD, NNP, NNP, VB]
+
+40	Give me all Australian nonprofit organizations.	[VB, PRP, DT, JJ, JJ, NNS]
+
+41	In which military conflicts did Lawrence of Arabia participate?	[IN, WDT, JJ, NNS, VBD, NNP, IN, NNP, VB]
+
+42	Who developed Minecraft?	[WP, VBD, NNP]
+
+43	What is the melting point of copper?	[WP, VBZ, DT, JJ, NN, IN, NN]
+
+44	Give me all sister cities of Brno.	[VB, PRP, DT, NN, NNS, IN, NNP]
+
+45	How many inhabitants does Maribor have?	[WRB, JJ, NNS, VBZ, NNP, VB]
+
+47	How tall is Claudia Schiffer?	[WRB, JJ, VBZ, NNP, NNP]
+
+49	Who founded Intel?	[WP, VBD, NNP]
+
+52	Which cities does the Weser flow through?	[WDT, NNS, VBZ, DT, NNP, NN, IN]
+
+53	Which countries are connected by the Rhine?	[WDT, NNS, VBP, VBN, IN, DT, NNP]
+
+54	Which professional surfers were born in Australia?	[WDT, JJ, NNS, VBD, VBN, IN, NNP]
+
+55	What is the average temperature on Hawaii?	[WP, VBZ, DT, JJ, NN, IN, NNP]
+
+56	In which UK city are the headquarters of the MI6?	[IN, WDT, NNP, NN, VBP, DT, NN, IN, DT, NN]
+
+58	Who created Goofy?	[WP, VBD, NNP]
+
+59	Was the Cuban Missile Crisis earlier than the Bay of Pigs Invasion?	[VBD, DT, JJ, NNP, NNP, JJR, IN, DT, NNP, IN, NNP, NNP]
+
+60	Give me all islands that belong to Japan.	[VB, PRP, DT, NNS, WDT, VBP, TO, NNP]
+
+61	Who invented the zipper?	[WP, VBD, DT, NN]
+
+62	What is the ruling party in Lisbon?	[WP, VBZ, DT, VBG, NN, IN, NNP]
+
+63	What are the nicknames of San Francisco?	[WP, VBP, DT, NNS, IN, NNP, NNP]
+
+64	Which Greek goddesses dwelt on Mount Olympus?	[WDT, JJ, NNS, VBP, IN, NNP, NNP]
+
+65	When were the Hells Angels founded?	[WRB, VBD, DT, NNP, NNPS, VBN]
+
+66	Give me all Apollo 14 astronauts.	[VB, PRP, DT, NNP, CD, NNS]
+
+67	What is the time zone of Salt Lake City?	[WP, VBZ, DT, NN, NN, IN, NNP, NNP, NNP]
+
+68	Which U.S. states are in the same time zone as Utah?	[WDT, NNP, NNS, VBP, IN, DT, JJ, NN, NN, IN, NNP]
+
+70	Give me a list of all lakes in Denmark.	[VB, PRP, DT, NN, IN, DT, NNS, IN, NNP]
+
+71	How many missions does the Soyuz programme have?	[WRB, JJ, NNS, VBZ, DT, NNP, NN, VB]
+
+72	Did Socrates influence Aristotle?	[VBD, NNP, VB, NNP]
+
+73	Give me all Danish movies.	[VB, PRP, DT, JJ, NNS]
+
+74	Give me all launch pads operated by NASA.	[VB, PRP, DT, NN, NNS, VBN, IN, NNP]
+
+75	Which instruments does Cat Stevens play?	[WDT, NNS, VBZ, NNP, NNP, VB]
+
+76	Which ships were called after Benjamin Franklin?	[WDT, NNS, VBD, VBN, IN, NNP, NNP]
+
+78	How many employees does Google have?	[WRB, JJ, NNS, VBZ, NNP, VB]
+
+79	Did Tesla win a nobel prize in physics?	[VBD, NNP, VB, DT, JJ, NN, IN, NNS]
+
+81	Is Rita Wilson the wife of Tom Hanks?	[VBZ, NNP, NNP, DT, NN, IN, NNP, NNP]
+
+82	When was the Statue of Liberty built?	[WRB, VBD, DT, NNP, IN, NNP, VBN]
+
+83	In which U.S. state is Fort Knox located?	[IN, WDT, NNP, NN, VBZ, NNP, NNP, JJ]
+
+84	How many children did Benjamin Franklin have?	[WRB, JJ, NNS, VBD, NNP, NNP, VB]
+
+85	When did Michael Jackson die?	[WRB, VBD, NNP, NNP, VB]
+
+89	Was Margaret Thatcher a chemist?	[VBD, NNP, NNP, DT, NN]
+
+90	Was Marc Chagall a jew?	[VBD, NNP, NNP, DT, NN]
+
+91	Which museum exhibits The Scream by Munch?	[WDT, NN, VBZ, DT, NN, IN, NNP]
+
+95	How high is the Mount Everest?	[WRB, JJ, VBZ, DT, NNP, NNP]
+
+96	Who created the comic Captain America?	[WP, VBD, DT, JJ, NNP, NNP]
+
+100	Which films starring Clint Eastwood did he direct himself?	[WDT, NNS, VBG, NNP, NNP, VBD, PRP, VB, PRP]
+
+101	In which city was the former Dutch queen Juliana buried?	[IN, WDT, NN, VBD, DT, JJ, NNP, NN, NNP, VBN]
+
+103	Where is the residence of the prime minister of Spain?	[WRB, VBZ, DT, NN, IN, DT, JJ, NN, IN, NNP]
+
+106	Which movies did Kurosawa direct?	[WDT, NNS, VBD, NNP, VB]
+
+108	Who wrote the lyrics for the Polish national anthem?	[WP, VBD, DT, NNS, IN, DT, JJ, JJ, NN]
+
+112	For which label did Elvis record his first album?	[IN, WDT, NN, VBD, NNP, VB, PRP$, JJ, NN]
+
+114	How many employees does IBM have?	[WRB, JJ, NNS, VBZ, NNP, VB]
+
+115	Which states border Illinois?	[WDT, NNS, VBP, NNP]
+
+117	Which television shows were created by John Cleese?	[WDT, NN, NNS, VBD, VBN, IN, NNP, NNP]
+
+118	Which mountain is the highest after the Annapurna?	[WDT, NN, VBZ, DT, JJS, IN, DT, NNP]
+
+119	In which films directed by Garry Marshall was Julia Roberts starring?	[IN, WDT, NNS, VBN, IN, NNP, NNP, VBD, NNP, NNP, VBG]
+
+121	Was U.S. president Jackson involved in a war?	[VBD, NNP, NN, NNP, VBN, IN, DT, NN]
+
+123	Which awards did Douglas Hofstadter win?	[WDT, NNS, VBD, NNP, NNP, VB]
+
+125	Which U.S. state has the highest population density?	[WDT, NNP, NN, VBZ, DT, JJS, NN, NN]
+
+126	What is the currency of the Czech Republic?	[WP, VBZ, DT, NN, IN, DT, NNP, NNP]
+
+127	Which countries adopted the Euro?	[WDT, NNS, VBD, DT, NNP]
+
+128	What is the area code of Berlin?	[WP, VBZ, DT, NN, NN, IN, NNP]
+
+131	Through which countries does the Yenisei river flow?	[IN, WDT, NNS, VBZ, DT, NNP, NN, NN]
+
+132	When did Latvia join the EU?	[WRB, VBD, NNP, VB, DT, NNP]
+
+133	Which monarchs were married to a German?	[WDT, NNS, VBD, VBN, TO, DT, JJ]
+
+134	When was the Battle of Gettysburg?	[WRB, VBD, DT, NN, IN, NNP]
+
+135	Which river does the Brooklyn Bridge cross?	[WDT, NN, VBZ, DT, NNP, NNP, VB]
+
+137	Give me all soccer clubs in Spain.	[VB, PRP, DT, NN, NNS, IN, NNP]
+
+140	Who designed the Brooklyn Bridge?	[WP, VBD, DT, NNP, NNP]
+
+141	Which telecommunications organizations are located in Belgium?	[WDT, NNS, NNS, VBP, JJ, IN, NNP]
+
+142	Is Frank Herbert still alive?	[VBZ, NNP, NNP, RB, JJ]
+
+145	Give me all companies in the advertising industry.	[VB, PRP, DT, NNS, IN, DT, NN, NN]
+
+146	How many countries are there in Europe?	[WRB, JJ, NNS, VBP, EX, IN, NNP]
+
+151	Who was the wife of U.S. president Lincoln?	[WP, VBD, DT, NN, IN, NNP, NN, NNP]
+
+152	Who developed the video game World of Warcraft?	[WP, VBD, DT, NN, NN, NN, IN, NNP]
+
+153	What is the official website of Tom Cruise?	[WP, VBZ, DT, JJ, NN, IN, NNP, NNP]
+
+156	Give me all people with first name Jimmy.	[VB, PRP, DT, NNS, IN, JJ, NN, NNP]
+
+157	In which city did John F. Kennedy die?	[IN, WDT, NN, VBD, NNP, NNP, NNP, VB]
+
+158	Is there a video game called Battle Chess?	[VBZ, EX, DT, NN, NN, VBN, NNP, NNP]
+
+159	Which mountains are higher than the Nanga Parbat?	[WDT, NNS, VBP, JJR, IN, DT, NNP, NNP]
+
+160	Who created Wikipedia?	[WP, VBD, NNP]
+
+161	Give me all actors starring in Last Action Hero.	[VB, PRP, DT, NNS, VBG, IN, JJ, NNP, NNP]
+
+162	Which software has been developed by organizations founded in California?	[WDT, NN, VBZ, VBN, VBN, IN, NNS, VBN, IN, NNP]
+
+163	Which companies work in the aerospace industry as well as in medicine?	[WDT, NNS, VBP, IN, DT, NN, NN, RB, RB, IN, IN, NN]
+
+164	Is Christian Bale starring in Velvet Goldmine?	[VBZ, NNP, NNP, VBG, IN, NNP, NNP]
+
+166	Which actors were born in Germany?	[WDT, NNS, VBD, VBN, IN, NNP]
+
+169	Give me all films produced by Hal Roach.	[VB, PRP, DT, NNS, VBN, IN, NNP, NNP]
+
+171	Which languages are spoken in Estonia?	[WDT, NNS, VBP, VBN, IN, NNP]
+
+172	How many Aldi stores are there?	[WRB, JJ, NNP, NNS, VBP, EX]
+
+175	How many films did Hal Roach produce?	[WRB, JJ, NNS, VBD, NNP, NNP, VB]
+
+176	Which music albums contain the song Last Christmas?	[WDT, NN, NNS, VBP, DT, NN, JJ, NNP]
+
+177	Give me all books written by Danielle Steel.	[VB, PRP, DT, NNS, VBN, IN, NNP, NNP]
+
+178	Which airports are located in California, USA?	[WDT, NNS, VBP, JJ, IN, NNP, ,, NNP]
+
+179	Which states of Germany are governed by the Social Democratic Party?	[WDT, NNS, IN, NNP, VBP, VBN, IN, DT, NNP, NNP, NNP]
+
+180	Give me all Canadian Grunge record labels.	[VB, PRP, DT, JJ, NN, NN, NNS]
+
+182	In which programming language is GIMP written?	[IN, WDT, NN, NN, VBZ, NNP, VBN]
+
+183	Who produced films starring Natalie Portman?	[WP, VBD, NNS, VBG, NNP, NNP]
+
+185	In which films did Julia Roberts as well as Richard Gere play?	[IN, WDT, NNS, VBD, NNP, NNP, RB, RB, IN, NNP, NNP, VB]
+
+186	Give me all female given names.	[VB, PRP, DT, JJ, JJ, NNS]
+
+187	Who wrote the book The Pillars of the Earth?	[WP, VBD, DT, NN, DT, NNPS, IN, DT, NNP]
+
+188	How many films did Leonardo DiCaprio star in?	[WRB, JJ, NNS, VBD, NNP, NNP, NN, IN]
+
+190	In which U.S. state is Mount McKinley located?	[IN, WDT, NNP, NN, VBZ, NNP, NNP, JJ]
+
+191	When was Capcom founded?	[WRB, VBD, NNP, VBN]
+
+194	Was Natalie Portman born in the United States?	[VBD, NNP, NNP, VBN, IN, DT, NNP, NNPS]
+
+195	Which budget did the first movie of Zdenek Sverak have?	[WDT, NN, VBD, DT, JJ, NN, IN, NNP, NNP, VB]
+
+196	How many big fires struck Paris during the Middle Ages?	[WRB, JJ, JJ, NNS, VBD, NNP, IN, DT, NNP, NNPS]
+
+197	Is Pamela Anderson a vegan?	[VBZ, NNP, NNP, DT, NN]
+
+198	How often was Michael Jordan divorced?	[WRB, RB, VBD, NNP, NNP, VBN]
+
+200	Give me all animal species that live in the Amazon rainforest.	[VB, PRP, DT, NN, NNS, WDT, VBP, IN, DT, NNP, NN]
+
+202	In which studio did the Beatles record their first album?	[IN, WDT, NN, VBD, DT, NNPS, VB, PRP$, JJ, NN]
+
+203	Who was the first to climb Mount Everest?	[WP, VBD, DT, JJ, TO, VB, NNP, NNP]
+
+205	What is the official color of the University of Oxford?	[WP, VBZ, DT, JJ, NN, IN, DT, NNP, IN, NNP]
+
+206	How many gold medals did Michael Phelps win at the 2008 Olympics?	[WRB, JJ, NN, NNS, VBD, NNP, NNP, VB, IN, DT, CD, NNPS]
+
+209	Does Abraham Lincoln's death place have a website?	[VBZ, NNP, NNP, POS, NN, NN, VBP, DT, NN]
+
+212	Who is the youngest Darts player?	[WP, VBZ, DT, JJS, NNS, NN]
+
+213	Where was Bach born?	[WRB, VBD, NNP, VBN]
+
+214	In which countries can you pay using the West African CFA franc?	[IN, WDT, NNS, MD, PRP, VB, VBG, DT, NNP, NNP, NNP, NN]
+
+215	What are the top-10 action role-playing video games according to IGN?	[WP, VBP, DT, JJ, NN, JJ, NN, NNS, VBG, TO, NNP]
+
+217	Does the Isar flow into a lake?	[VBZ, DT, NN, NN, IN, DT, NN]
+
+218	Give me all films produced by Steven Spielberg with a budget of at least $80 million.	[VB, PRP, DT, NNS, VBN, IN, NNP, NNP, IN, DT, NN, IN, IN, JJS, $, CD, CD]
+
+219	Give me all writers that won the Nobel Prize in literature.	[VB, PRP, DT, NNS, WDT, VBD, DT, NNP, NNP, IN, NN]
+
+221	How many pages does War and Peace have?	[WRB, JJ, NNS, VBZ, NNP, CC, NNP, VB]
+
+225	Which rivers flow into a German lake?	[WDT, NNS, VBP, IN, DT, JJ, NN]
+
+226	How many James Bond movies are there?	[WRB, JJ, NNP, NNP, NNS, VBP, EX]
+
+227	Which rockets were launched from Baikonur?	[WDT, NNS, VBD, VBN, IN, NNP]
+
+228	Which pope succeeded John Paul II?	[WDT, NN, VBD, NNP, NNP, NNP]
+
+229	Give me all Dutch parties.	[VB, PRP, DT, JJ, NNS]
+
+230	When is Halloween?	[WRB, VBZ, NNP]
+
+231	Give me all Swedish oceanographers.	[VB, PRP, DT, JJ, NNS]
+
+232	Give me all actors who were born in Berlin.	[VB, PRP, DT, NNS, WP, VBD, VBN, IN, NNP]
+
+235	How many languages are spoken in Colombia?	[WRB, JJ, NNS, VBP, VBN, IN, NNP]
+
+237	What was Brazil's lowest rank in the FIFA World Ranking?	[WP, VBD, NNP, POS, JJS, NN, IN, DT, NNP, NNP, NNP]
+
+239	Which actor played Chewbacca?	[WDT, NN, VBD, NNP]
+
+240	Which ingredients do I need for carrot cake?	[WDT, NNS, VBP, PRP, VB, IN, NN, NN]
+
+241	Is Cola a beverage?	[VBZ, NNP, DT, NN]
+
+242	Who has Tom Cruise been married to?	[WP, VBZ, NNP, NNP, VBN, VBN, TO]
+
+243	Which of Tim Burton's films had the highest budget?	[WDT, IN, NNP, NNP, POS, NNS, VBD, DT, JJS, NN]
+
+244	How heavy is Jupiter's lightest moon?	[WRB, JJ, VBZ, NNP, POS, JJS, NN]
+
+246	Is James Bond married?	[VBZ, NNP, NNP, VBN]
+
+247	Give me all Australian metalcore bands.	[VB, PRP, DT, JJ, NN, NNS]
+
+248	Give me all actors who were born in Paris after 1950.	[VB, PRP, DT, NNS, WP, VBD, VBN, IN, NNP, IN, CD]
+
+249	When was Carlo Giuliani shot?	[WRB, VBD, NNP, NNP, NN]
+
+250	Who are the four youngest MVP basketball players?	[WP, VBP, DT, CD, JJS, NN, NN, NNS]
+
+252	Give all swimmers that were born in Moscow.	[VB, DT, NNS, WDT, VBD, VBN, IN, NNP]
+
+254	Show me the book that Muhammad Ali wrote.	[NN, PRP, DT, NN, WDT, NNP, NNP, VBD]
+
+255	How many museums does Paris have?	[WRB, JJ, NNS, VBZ, NNP, VB]
+
+258	Give me all the TV shows with Neil Patrick Harris.	[VB, PRP, PDT, DT, NN, VBZ, IN, NNP, NNP, NNP]
+
+259	Who wrote The Hunger Games?	[WP, VBD, DT, NNP, NNPS]
+
+260	Show a list of soccer clubs that play in the Bundesliga.	[NN, DT, NN, IN, NN, NNS, WDT, VBP, IN, DT, NNP]
+
+261	What country is Mount Everest in?	[WDT, NN, VBZ, NNP, NNP, IN]
+
+263	Which programming languages influenced Javascript?	[WDT, NN, NNS, VBD, NNP]
+
+264	Did Che Guevara have children?	[VBD, NNP, NNP, VBP, NNS]
+
+267	When was the Titanic completed?	[WRB, VBD, DT, NNP, VBN]
+
+268	How much did Pulp Fiction cost?	[WRB, RB, VBD, NNP, NNP, VB]
+
+270	Who played Agent Smith in Matrix?	[WP, VBD, NNP, NNP, IN, NNP]
+
+271	How much carbs does peanut butter have?	[WRB, JJ, NNS, VBZ, NN, NN, VB]
+
+273	Which bridges cross the Seine?	[WDT, NNS, VBP, DT, NNP]
+
+275	When did Dracula's creator die?	[WRB, VBD, NNP, POS, NN, VB]
+
+276	What is the location of the Houses of Parliament?	[WP, VBZ, DT, NN, IN, DT, NNS, IN, NNP]
+
+277	Show me all English Gothic buildings in Kent.	[NN, PRP, DT, JJ, JJ, NNS, IN, NNP]
+
+278	Who was the pope that founded the Vatican Television?	[WP, VBD, DT, NN, WDT, VBD, DT, NNP, NNP]
+
+281	Which airports does Air China serve?	[WDT, NNS, VBZ, NNP, NNP, VB]
+
+282	In which year was Rachel Stevens born?	[IN, WDT, NN, VBD, NNP, NNP, VBN]
+
+283	Where was JFK assassinated?	[WRB, VBD, NNP, VBN]
+
+284	How many politicians graduated from Columbia University?	[WRB, JJ, NNS, VBD, IN, NNP, NNP]
+
+285	Which scientist is known for the Manhattan Project and the Nobel Peace Prize?	[WDT, NN, VBZ, VBN, IN, DT, NNP, NNP, CC, DT, NNP, NNP, NNP]
+
+287	Which beer originated in Ireland?	[WDT, NN, VBD, IN, NNP]
+
+288	What are the specialities of the UNC Health Care?	[WP, VBP, DT, NNS, IN, DT, NNP, NNP, NNP]
+
+290	From which region is the Melon de Bourgogne?	[IN, WDT, NN, VBZ, DT, NNP, IN, NNP]
+
+291	Who was influenced by Socrates?	[WP, VBD, VBN, IN, NNP]
+
+293	Give me English actors starring in Lovesick.	[VB, PRP, JJ, NNS, VBG, IN, NNP]
+
+295	Who was married to president Chirac?	[WP, VBD, VBN, TO, NN, NNP]
+
+296	What is the largest metropolitan area in Washington state?	[WP, VBZ, DT, JJS, JJ, NN, IN, NNP, NN]
+
+297	Where in France is sparkling wine produced?	[WRB, IN, NNP, VBZ, JJ, NN, VBN]
+
+298	Where did Hillel Slovak die?	[WRB, VBD, NNP, NNP, VB]

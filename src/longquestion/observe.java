@@ -70,69 +70,90 @@ public class observe {
 		}
 		
 		if(matched){
-			StringBuilder phrase1 = new StringBuilder("Phrase1: ");
-			for(int t=phraseStartOffset; t<=endOffest; ++t){
-				phrase1.append(" ");
-				phrase1.append(words.get(t));
+//			entityPhrase.setPredictDetails(db, predicts);
+			System.out.println();
+//			System.out.print(questionId+"\t"+q.question+"\t");
+			StringBuilder phrase = new StringBuilder(words.get(phraseStartOffset));
+			for(int t=phraseStartOffset+1; t<=endOffest; ++t){
+				phrase.append(" ");
+				phrase.append(words.get(t));
 			}
-//			System.out.println(q.question);
-//			System.out.println(phrase1.toString());
-			
-			boolean isTwoStep = false;
-			startOffset = phraseStartOffset--;
-			
-			EntityPhrase twoStepPhrase = new EntityPhrase();
-			if(phraseStartOffset>=0 && postags.get(phraseStartOffset).equals("DT")){
-				twoStepPhrase.setDT2(words.get(phraseStartOffset));
-				phraseStartOffset--;
-			}
-			if(postags.get(phraseStartOffset).equals("IN")){
-				twoStepPhrase.setIN(words.get(phraseStartOffset));
-				phraseStartOffset--;
-				LinkedList<String> newNNs = new LinkedList<String>(); 
-				if(postags.get(phraseStartOffset).startsWith("NN")){
-					newNNs.add(words.get(phraseStartOffset));
-					phraseStartOffset--;
-					while(postags.get(phraseStartOffset).startsWith("NN")){
-						newNNs.add(words.get(phraseStartOffset));
-						phraseStartOffset--;
-					}
-					twoStepPhrase.setNNs(newNNs);
-					if(postags.get(phraseStartOffset).startsWith("JJ")){
-						twoStepPhrase.setJJ(words.get(phraseStartOffset));
-						phraseStartOffset--;
-					}
-					if(!postags.get(phraseStartOffset).equals("DT")){
-						phraseStartOffset++;
-					}else{
-						twoStepPhrase.setDT1(words.get(phraseStartOffset));
-					}
-					isTwoStep = true;
-				}
-			}
-			
-			if(isTwoStep){
-				StringBuilder phrase2 = new StringBuilder("Phrase2: ");
-				for(int t=phraseStartOffset; t<startOffset; ++t){
-					phrase2.append(" ");
-					phrase2.append(words.get(t));
-				}
-				System.out.println();
-				System.out.println(questionId);
-				System.out.println(q.question);
-				System.out.println(phrase1.toString());
-				System.out.println(phrase2.toString());
-				entityPhrase.setPredictDetails(db, predicts);
-				twoStepPhrase.insidEntityPhrase = entityPhrase;
-				return twoStepPhrase;
-			}
-//			System.out.println(phraseStartOffset+"\t"+endOffest);
-//			System.out.println(words.get(phraseStartOffset)+"\t"+words.get(endOffest));
-//			entityPhrase.setPredictDetails(new umbcDB(), predicts);
+			String replaceQuestion = q.question.replace(phrase.toString(), "***");
+			System.out.println(questionId+"\t"+q.question);
+			System.out.println(replaceQuestion);
+//			System.out.println(phrase.toString());
 			return entityPhrase;
 		}else{
+//			System.out.println();
+//			System.out.print(questionId+"\t"+q.question+"\t");
+//			System.out.println(postags);
 			return null;
 		}
+		
+//		if(matched){
+//			StringBuilder phrase1 = new StringBuilder("Phrase1: ");
+//			for(int t=phraseStartOffset; t<=endOffest; ++t){
+//				phrase1.append(" ");
+//				phrase1.append(words.get(t));
+//			}
+////			System.out.println(q.question);
+////			System.out.println(phrase1.toString());
+//			
+//			boolean isTwoStep = false;
+//			startOffset = phraseStartOffset--;
+//			
+//			EntityPhrase twoStepPhrase = new EntityPhrase();
+//			if(phraseStartOffset>=0 && postags.get(phraseStartOffset).equals("DT")){
+//				twoStepPhrase.setDT2(words.get(phraseStartOffset));
+//				phraseStartOffset--;
+//			}
+//			if(postags.get(phraseStartOffset).equals("IN")){
+//				twoStepPhrase.setIN(words.get(phraseStartOffset));
+//				phraseStartOffset--;
+//				LinkedList<String> newNNs = new LinkedList<String>(); 
+//				if(postags.get(phraseStartOffset).startsWith("NN")){
+//					newNNs.add(words.get(phraseStartOffset));
+//					phraseStartOffset--;
+//					while(postags.get(phraseStartOffset).startsWith("NN")){
+//						newNNs.add(words.get(phraseStartOffset));
+//						phraseStartOffset--;
+//					}
+//					twoStepPhrase.setNNs(newNNs);
+//					if(postags.get(phraseStartOffset).startsWith("JJ")){
+//						twoStepPhrase.setJJ(words.get(phraseStartOffset));
+//						phraseStartOffset--;
+//					}
+//					if(!postags.get(phraseStartOffset).equals("DT")){
+//						phraseStartOffset++;
+//					}else{
+//						twoStepPhrase.setDT1(words.get(phraseStartOffset));
+//					}
+//					isTwoStep = true;
+//				}
+//			}
+//			
+//			if(isTwoStep){
+//				StringBuilder phrase2 = new StringBuilder("Phrase2: ");
+//				for(int t=phraseStartOffset; t<startOffset; ++t){
+//					phrase2.append(" ");
+//					phrase2.append(words.get(t));
+//				}
+//				System.out.println();
+//				System.out.println(questionId);
+//				System.out.println(q.question);
+//				System.out.println(phrase1.toString());
+//				System.out.println(phrase2.toString());
+//				entityPhrase.setPredictDetails(db, predicts);
+//				twoStepPhrase.insidEntityPhrase = entityPhrase;
+//				return twoStepPhrase;
+//			}
+////			System.out.println(phraseStartOffset+"\t"+endOffest);
+////			System.out.println(words.get(phraseStartOffset)+"\t"+words.get(endOffest));
+////			entityPhrase.setPredictDetails(new umbcDB(), predicts);
+//			return entityPhrase;
+//		}else{
+//			return null;
+//		}
 	}
 	
 	public static void observeOfRule(){
@@ -203,34 +224,34 @@ public class observe {
 //		observeOfRule();
 //		observeOfEntitySurr(77);
 		
-//		PrintStream old = System.out;
+		PrintStream old = System.out;
 		
-//		FileOutputStream fout;
-//		try {
-//			fout = new FileOutputStream("./data/zch/entity-phrase-pattern.txt");
-//			System.setOut(new PrintStream(fout));
-//		} catch (FileNotFoundException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+		FileOutputStream fout;
+		try {
+			fout = new FileOutputStream("./data/zch/entity-phrase-pattern-fit-replaced.txt");
+			System.setOut(new PrintStream(fout));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
-//		int count = 0;
+		int count = 0;
 		
 		for(int i=1; i<=300; ++i){
 			EntityPhrase entityPhrase = observeOfEntitySurr(i);
-			if(entityPhrase != null){
-				if(entityPhrase.insidEntityPhrase != null){
-					System.out.println(entityPhrase.insidEntityPhrase.getPredictDetails().get(0).getPredictUri());
-				}
-			}
 //			if(entityPhrase != null){
-//				++count;
-//				entityPhrase.printEntityPhrase();
-////				entityPhrase.ranking(db, predictUris);
+//				if(entityPhrase.insidEntityPhrase != null){
+//					System.out.println(entityPhrase.insidEntityPhrase.getPredictDetails().get(0).getPredictUri());
+//				}
 //			}
+			if(entityPhrase != null){
+				++count;
+//				entityPhrase.printEntityPhrase();
+//				entityPhrase.ranking(db, predictUris);
+			}
 		}
-//		System.setOut(old);
-//		System.out.println(count);
+		System.setOut(old);
+		System.out.println(count);
 	}
 
 }
