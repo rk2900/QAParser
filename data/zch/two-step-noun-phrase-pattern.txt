@@ -1,0 +1,34 @@
+69
+Give me the capitals of all countries in Africa.
+Phrase1:  all countries in Africa
+Phrase2:  the capitals of
+
+77
+Who are the parents of the wife of Juan Carlos I?
+Phrase1:  the wife of Juan Carlos I
+Phrase2:  the parents of
+
+113
+Give me the birthdays of all actors of the television show Charmed.
+Phrase1:  all actors of the television show
+Phrase2:  the birthdays of
+
+154
+List all episodes of the first season of the HBO television series The Sopranos.
+Phrase1:  the first season of the HBO
+Phrase2:  all episodes of
+
+238
+Give me the capitals of all countries that the Himalayas run through.
+Phrase1:  all countries that the Himalayas
+Phrase2:  the capitals of
+
+265
+List all the musicals with music by Elton John.
+Phrase1:  music by Elton John
+Phrase2:  the musicals with
+
+274
+Who is the mayor of the capital of French Polynesia?
+Phrase1:  the capital of French Polynesia
+Phrase2:  the mayor of

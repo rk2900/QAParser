@@ -28,6 +28,8 @@ public class EntityPhrase {
 	private String entityUri;
 	private ArrayList<PredictDetail> predictDetails;
 	
+	public EntityPhrase insidEntityPhrase;
+	
 	public String getQuestionText() {
 		return questionText;
 	}
