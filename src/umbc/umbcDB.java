@@ -7,9 +7,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.LinkedList;
-
-import basic.FileOps;
 
 public class umbcDB {
 
@@ -136,7 +133,6 @@ public class umbcDB {
 		query.append("\" and word2 = \"");
 		query.append(word2);
 		query.append("\"");
-//		System.out.println(query.toString());
 		try {
 			stat = conn.createStatement();
 			ResultSet r=stat.executeQuery(query.toString());
@@ -153,9 +149,11 @@ public class umbcDB {
 	public double getScore(String word1, String word2){
 		if(isContain(word1, word2)){
 			return getOrderedScore(word1, word2);
-		}else{
+		}
+		if(isContain(word2, word1)){
 			return getOrderedScore(word2, word1);
 		}
+		return -1;
 	}
 	
 	public static void main(String[] args) {
