@@ -1,810 +1,813 @@
 230
 1
-8 17 http://en.wikipedia.org/wiki/Halloween http://dbpedia.org/resource/Halloween
+2 2 http://en.wikipedia.org/wiki/Halloween http://dbpedia.org/resource/Halloween
 231
 2
-12 19 http://en.wikipedia.org/wiki/Sweden http://dbpedia.org/resource/Sweden
-20 34 http://en.wikipedia.org/wiki/Oceanography http://dbpedia.org/resource/Oceanography
+3 3 http://en.wikipedia.org/wiki/Sweden http://dbpedia.org/resource/Sweden
+4 4 http://en.wikipedia.org/wiki/Oceanography http://dbpedia.org/resource/Oceanography
 111
 1
-34 39 http://en.wikipedia.org/wiki/Miffy http://dbpedia.org/resource/Miffy
+6 6 http://en.wikipedia.org/wiki/Miffy http://dbpedia.org/resource/Miffy
 232
 1
-36 42 http://en.wikipedia.org/wiki/Berlin http://dbpedia.org/resource/Berlin
+8 8 http://en.wikipedia.org/wiki/Berlin http://dbpedia.org/resource/Berlin
 112
 1
-20 25 http://en.wikipedia.org/wiki/Elvis_Presley http://dbpedia.org/resource/Elvis_Presley
+4 4 http://en.wikipedia.org/wiki/Elvis_Presley http://dbpedia.org/resource/Elvis_Presley
 233
 1
-29 42 http://en.wikipedia.org/wiki/Alec_Guinness http://dbpedia.org/resource/Alec_Guinness
+6 7 http://en.wikipedia.org/wiki/Alec_Guinness http://dbpedia.org/resource/Alec_Guinness
 113
 2
-43 58 http://en.wikipedia.org/wiki/Television_program http://dbpedia.org/resource/Television_program
-59 66 http://en.wikipedia.org/wiki/Charmed http://dbpedia.org/resource/Charmed
+9 10 http://en.wikipedia.org/wiki/Television_program http://dbpedia.org/resource/Television_program
+11 11 http://en.wikipedia.org/wiki/Charmed http://dbpedia.org/resource/Charmed
 114
 1
-24 27 http://en.wikipedia.org/wiki/IBM http://dbpedia.org/resource/IBM
+4 4 http://en.wikipedia.org/wiki/IBM http://dbpedia.org/resource/IBM
 235
 1
-33 41 http://en.wikipedia.org/wiki/Colombia http://dbpedia.org/resource/Colombia
+6 6 http://en.wikipedia.org/wiki/Colombia http://dbpedia.org/resource/Colombia
 115
 1
-20 28 http://en.wikipedia.org/wiki/Illinois http://dbpedia.org/resource/Illinois
+3 3 http://en.wikipedia.org/wiki/Illinois http://dbpedia.org/resource/Illinois
 237
 2
-9 15 http://en.wikipedia.org/wiki/Brazil_national_football_team http://dbpedia.org/resource/Brazil_national_football_team
-37 55 http://en.wikipedia.org/wiki/FIFA_World_Rankings http://dbpedia.org/resource/FIFA_World_Rankings
+2 2 http://en.wikipedia.org/wiki/Brazil_national_football_team http://dbpedia.org/resource/Brazil_national_football_team
+8 10 http://en.wikipedia.org/wiki/FIFA_World_Rankings http://dbpedia.org/resource/FIFA_World_Rankings
 117
 1
-39 50 http://en.wikipedia.org/wiki/John_Cleese http://dbpedia.org/resource/John_Cleese
+6 7 http://en.wikipedia.org/wiki/John_Cleese http://dbpedia.org/resource/John_Cleese
 238
 1
-47 56 http://en.wikipedia.org/wiki/Himalayas http://dbpedia.org/resource/Himalayas
+9 9 http://en.wikipedia.org/wiki/Himalayas http://dbpedia.org/resource/Himalayas
 118
 1
-40 49 http://en.wikipedia.org/wiki/Annapurna http://dbpedia.org/resource/Annapurna
+7 7 http://en.wikipedia.org/wiki/Annapurna http://dbpedia.org/resource/Annapurna
 239
 1
-19 28 http://en.wikipedia.org/wiki/Chewbacca http://dbpedia.org/resource/Chewbacca
+3 3 http://en.wikipedia.org/wiki/Chewbacca http://dbpedia.org/resource/Chewbacca
 119
 2
-27 41 http://en.wikipedia.org/wiki/Garry_Marshall http://dbpedia.org/resource/Garry_Marshall
-46 59 http://en.wikipedia.org/wiki/Julia_Roberts http://dbpedia.org/resource/Julia_Roberts
+5 6 http://en.wikipedia.org/wiki/Garry_Marshall http://dbpedia.org/resource/Garry_Marshall
+8 9 http://en.wikipedia.org/wiki/Julia_Roberts http://dbpedia.org/resource/Julia_Roberts
 10
 1
-9 16 http://en.wikipedia.org/wiki/Alberta http://dbpedia.org/resource/Alberta
+2 2 http://en.wikipedia.org/wiki/Alberta http://dbpedia.org/resource/Alberta
 11
-1
-28 46 http://en.wikipedia.org/wiki/Himalayas http://dbpedia.org/resource/Himalayas
+2
+5 5 http://en.wikipedia.org/wiki/Himalayas http://dbpedia.org/resource/Himalayas
+5 6 http://en.wikipedia.org/wiki/Himalayas http://dbpedia.org/resource/Himalayas
 12
 2
-22 33 http://en.wikipedia.org/wiki/Bandleader http://dbpedia.org/resource/Bandleader
-44 51 http://en.wikipedia.org/wiki/Trumpet http://dbpedia.org/resource/Trumpet
+6 6 http://en.wikipedia.org/wiki/Bandleader http://dbpedia.org/resource/Bandleader
+9 9 http://en.wikipedia.org/wiki/Trumpet http://dbpedia.org/resource/Trumpet
 14
 1
-57 61 http://en.wikipedia.org/wiki/New_York_City_Fire_Department http://dbpedia.org/resource/New_York_City_Fire_Department
+12 12 http://en.wikipedia.org/wiki/New_York_City_Fire_Department http://dbpedia.org/resource/New_York_City_Fire_Department
 15
 1
-13 21 http://en.wikipedia.org/wiki/Orangina http://dbpedia.org/resource/Orangina
+2 2 http://en.wikipedia.org/wiki/Orangina http://dbpedia.org/resource/Orangina
 16
 1
-11 25 http://en.wikipedia.org/wiki/Formula_One http://dbpedia.org/resource/Formula_One
+3 5 http://en.wikipedia.org/wiki/Formula_One http://dbpedia.org/resource/Formula_One
 17
 1
-12 32 http://en.wikipedia.org/wiki/World_Heritage_Site http://dbpedia.org/resource/World_Heritage_Site
+3 5 http://en.wikipedia.org/wiki/World_Heritage_Site http://dbpedia.org/resource/World_Heritage_Site
 18
 1
-34 48 http://en.wikipedia.org/wiki/Premier_League http://dbpedia.org/resource/Premier_League
+7 8 http://en.wikipedia.org/wiki/Premier_League http://dbpedia.org/resource/Premier_League
 19
 1
-23 30 http://en.wikipedia.org/wiki/The_Prodigy http://dbpedia.org/resource/The_Prodigy
+5 5 http://en.wikipedia.org/wiki/The_Prodigy http://dbpedia.org/resource/The_Prodigy
 240
 1
-32 43 http://en.wikipedia.org/wiki/Carrot_cake http://dbpedia.org/resource/Carrot_cake
+6 7 http://en.wikipedia.org/wiki/Carrot_cake http://dbpedia.org/resource/Carrot_cake
 120
 1
-42 58 http://en.wikipedia.org/wiki/Manhattan_Bridge http://dbpedia.org/resource/Manhattan_Bridge
+9 10 http://en.wikipedia.org/wiki/Manhattan_Bridge http://dbpedia.org/resource/Manhattan_Bridge
 241
 1
-3 7 http://en.wikipedia.org/wiki/Cola http://dbpedia.org/resource/Cola
+1 1 http://en.wikipedia.org/wiki/Cola http://dbpedia.org/resource/Cola
 121
 2
-4 18 http://en.wikipedia.org/wiki/President_of_the_United_States http://dbpedia.org/resource/President_of_the_United_States
-19 26 http://en.wikipedia.org/wiki/Andrew_Jackson http://dbpedia.org/resource/Andrew_Jackson
+1 2 http://en.wikipedia.org/wiki/President_of_the_United_States http://dbpedia.org/resource/President_of_the_United_States
+3 3 http://en.wikipedia.org/wiki/Andrew_Jackson http://dbpedia.org/resource/Andrew_Jackson
 242
 1
-8 18 http://en.wikipedia.org/wiki/Tom_Cruise http://dbpedia.org/resource/Tom_Cruise
+2 3 http://en.wikipedia.org/wiki/Tom_Cruise http://dbpedia.org/resource/Tom_Cruise
 243
 1
-9 19 http://en.wikipedia.org/wiki/Tim_Burton http://dbpedia.org/resource/Tim_Burton
+2 3 http://en.wikipedia.org/wiki/Tim_Burton http://dbpedia.org/resource/Tim_Burton
 2
 1
-26 32 http://en.wikipedia.org/wiki/Ganges http://dbpedia.org/resource/Ganges
+5 5 http://en.wikipedia.org/wiki/Ganges http://dbpedia.org/resource/Ganges
 123
 1
-17 35 http://en.wikipedia.org/wiki/Douglas_Hofstadter http://dbpedia.org/resource/Douglas_Hofstadter
+3 4 http://en.wikipedia.org/wiki/Douglas_Hofstadter http://dbpedia.org/resource/Douglas_Hofstadter
 244
 2
-13 20 http://en.wikipedia.org/wiki/Jupiter http://dbpedia.org/resource/Jupiter
-32 36 http://en.wikipedia.org/wiki/Natural_satellite http://dbpedia.org/resource/Natural_satellite
+3 3 http://en.wikipedia.org/wiki/Jupiter http://dbpedia.org/resource/Jupiter
+6 6 http://en.wikipedia.org/wiki/Natural_satellite http://dbpedia.org/resource/Natural_satellite
 3
-2
-18 37 http://en.wikipedia.org/wiki/Worst_Case_Scenario_(film) http://dbpedia.org/resource/Worst_Case_Scenario_(film)
-64 79 http://en.wikipedia.org/wiki/Netherlands http://dbpedia.org/resource/Netherlands
+3
+4 6 http://en.wikipedia.org/wiki/Worst_Case_Scenario_(film) http://dbpedia.org/resource/Worst_Case_Scenario_(film)
+13 14 http://en.wikipedia.org/wiki/Netherlands http://dbpedia.org/resource/Netherlands
+14 14 http://en.wikipedia.org/wiki/Netherlands http://dbpedia.org/resource/Netherlands
 124
 1
-23 37 http://en.wikipedia.org/wiki/Robert_F._Kennedy http://dbpedia.org/resource/Robert_F._Kennedy
+5 6 http://en.wikipedia.org/wiki/Robert_F._Kennedy http://dbpedia.org/resource/Robert_F._Kennedy
 4
 1
-6 12 http://en.wikipedia.org/wiki/Germany http://dbpedia.org/resource/Germany
+1 1 http://en.wikipedia.org/wiki/Germany http://dbpedia.org/resource/Germany
 125
 1
-33 51 http://en.wikipedia.org/wiki/Population_density http://dbpedia.org/resource/Population_density
+6 7 http://en.wikipedia.org/wiki/Population_density http://dbpedia.org/resource/Population_density
 246
 1
-3 13 http://en.wikipedia.org/wiki/James_Bond http://dbpedia.org/resource/James_Bond
+1 2 http://en.wikipedia.org/wiki/James_Bond http://dbpedia.org/resource/James_Bond
 5
 1
-8 23 http://en.wikipedia.org/wiki/John_F._Kennedy http://dbpedia.org/resource/John_F._Kennedy
+2 4 http://en.wikipedia.org/wiki/John_F._Kennedy http://dbpedia.org/resource/John_F._Kennedy
 126
 2
-12 20 http://en.wikipedia.org/wiki/Currency http://dbpedia.org/resource/Currency
-28 42 http://en.wikipedia.org/wiki/Czech_Republic http://dbpedia.org/resource/Czech_Republic
+3 3 http://en.wikipedia.org/wiki/Currency http://dbpedia.org/resource/Currency
+6 7 http://en.wikipedia.org/wiki/Czech_Republic http://dbpedia.org/resource/Czech_Republic
 247
 2
-12 22 http://en.wikipedia.org/wiki/Australia http://dbpedia.org/resource/Australia
-23 32 http://en.wikipedia.org/wiki/Metalcore http://dbpedia.org/resource/Metalcore
+3 3 http://en.wikipedia.org/wiki/Australia http://dbpedia.org/resource/Australia
+4 4 http://en.wikipedia.org/wiki/Metalcore http://dbpedia.org/resource/Metalcore
 6
 1
-20 26 http://en.wikipedia.org/wiki/Berlin http://dbpedia.org/resource/Berlin 
+5 5 http://en.wikipedia.org/wiki/Berlin http://dbpedia.org/resource/Berlin 
 127
 1
-28 32 http://en.wikipedia.org/wiki/Euro http://dbpedia.org/resource/Euro
+4 4 http://en.wikipedia.org/wiki/Euro http://dbpedia.org/resource/Euro
 248
 1
-36 41 http://en.wikipedia.org/wiki/Paris http://dbpedia.org/resource/Paris
+8 8 http://en.wikipedia.org/wiki/Paris http://dbpedia.org/resource/Paris
 7
 2
-27 42 http://en.wikipedia.org/wiki/Vrije_Universiteit http://dbpedia.org/resource/Vrije_Universiteit
-46 55 http://en.wikipedia.org/wiki/Amsterdam http://dbpedia.org/resource/Amsterdam
+5 6 http://en.wikipedia.org/wiki/Vrije_Universiteit http://dbpedia.org/resource/Vrije_Universiteit
+8 8 http://en.wikipedia.org/wiki/Amsterdam http://dbpedia.org/resource/Amsterdam
 128
 2
-12 21 http://en.wikipedia.org/wiki/Area_code http://dbpedia.org/resource/Area_code
-25 31 http://en.wikipedia.org/wiki/Berlin http://dbpedia.org/resource/Berlin
+3 4 http://en.wikipedia.org/wiki/Area_code http://dbpedia.org/resource/Area_code
+6 6 http://en.wikipedia.org/wiki/Berlin http://dbpedia.org/resource/Berlin
 249
 1
-9 23 http://en.wikipedia.org/wiki/Death_of_Carlo_Giuliani http://dbpedia.org/resource/Death_of_Carlo_Giuliani
+2 3 http://en.wikipedia.org/wiki/Death_of_Carlo_Giuliani http://dbpedia.org/resource/Death_of_Carlo_Giuliani
 9
 1
-44 50 http://en.wikipedia.org/wiki/Sweden http://dbpedia.org/resource/Sweden
+6 6 http://en.wikipedia.org/wiki/Sweden http://dbpedia.org/resource/Sweden
 21
 2
-5 17 http://en.wikipedia.org/wiki/Breaking_Bad http://dbpedia.org/resource/Breaking_Bad
-42 57 http://en.wikipedia.org/wiki/Game_of_Thrones http://dbpedia.org/resource/Game_of_Thrones
+1 2 http://en.wikipedia.org/wiki/Breaking_Bad http://dbpedia.org/resource/Breaking_Bad
+7 9 http://en.wikipedia.org/wiki/Game_of_Thrones http://dbpedia.org/resource/Game_of_Thrones
 22
 1
-38 45 http://en.wikipedia.org/wiki/Germany http://dbpedia.org/resource/Germany
+8 8 http://en.wikipedia.org/wiki/Germany http://dbpedia.org/resource/Germany
 23
 1
-38 58 http://en.wikipedia.org/wiki/Curiosity_(rover) http://dbpedia.org/resource/Curiosity_(rover)
+7 9 http://en.wikipedia.org/wiki/Curiosity_(rover) http://dbpedia.org/resource/Curiosity_(rover)
 24
 2
-37 43 http://en.wikipedia.org/wiki/Vienna http://dbpedia.org/resource/Vienna
-56 62 http://en.wikipedia.org/wiki/Berlin http://dbpedia.org/resource/Berlin
+8 8 http://en.wikipedia.org/wiki/Vienna http://dbpedia.org/resource/Vienna
+12 12 http://en.wikipedia.org/wiki/Berlin http://dbpedia.org/resource/Berlin
 25
 2
-3 13 http://en.wikipedia.org/wiki/Proinsulin http://dbpedia.org/resource/Proinsulin
-16 23 http://en.wikipedia.org/wiki/Protein http://dbpedia.org/resource/Protein
+1 1 http://en.wikipedia.org/wiki/Proinsulin http://dbpedia.org/resource/Proinsulin
+3 3 http://en.wikipedia.org/wiki/Protein http://dbpedia.org/resource/Protein
 26
 1
-12 26 http://en.wikipedia.org/wiki/Michael_Jordan http://dbpedia.org/resource/Michael_Jordan
+3 4 http://en.wikipedia.org/wiki/Michael_Jordan http://dbpedia.org/resource/Michael_Jordan
 27
 1
-23 29 http://en.wikipedia.org/wiki/Canada http://dbpedia.org/resource/Canada
+5 5 http://en.wikipedia.org/wiki/Canada http://dbpedia.org/resource/Canada
 28
 1
-23 30 http://en.wikipedia.org/wiki/Wyoming http://dbpedia.org/resource/Wyoming
+5 5 http://en.wikipedia.org/wiki/Wyoming http://dbpedia.org/resource/Wyoming
 29
 2
-3 15 http://en.wikipedia.org/wiki/Prince_Harry_of_Wales http://dbpedia.org/resource/Prince_Harry_of_Wales
-20 34 http://en.wikipedia.org/wiki/Prince_William,_Duke_of_Cambridge http://dbpedia.org/resource/Prince_William,_Duke_of_Cambridge
+1 2 http://en.wikipedia.org/wiki/Prince_Harry_of_Wales http://dbpedia.org/resource/Prince_Harry_of_Wales
+4 5 http://en.wikipedia.org/wiki/Prince_William,_Duke_of_Cambridge http://dbpedia.org/resource/Prince_William,_Duke_of_Cambridge
 250
 1
-26 29 http://en.wikipedia.org/wiki/Most_Valuable_Player http://dbpedia.org/resource/Most_Valuable_Player
+5 5 http://en.wikipedia.org/wiki/Most_Valuable_Player http://dbpedia.org/resource/Most_Valuable_Player
 130
 1
-20 31 http://en.wikipedia.org/wiki/Rolls-Royce_Motors http://dbpedia.org/resource/Rolls-Royce_Motors
+5 5 http://en.wikipedia.org/wiki/Rolls-Royce_Motors http://dbpedia.org/resource/Rolls-Royce_Motors
 131
 1
-33 46 http://en.wikipedia.org/wiki/Yenisei_River http://dbpedia.org/resource/Yenisei_River
+5 6 http://en.wikipedia.org/wiki/Yenisei_River http://dbpedia.org/resource/Yenisei_River
 252
 1
-36 42 http://en.wikipedia.org/wiki/Moscow http://dbpedia.org/resource/Moscow
+7 7 http://en.wikipedia.org/wiki/Moscow http://dbpedia.org/resource/Moscow
 132
 1
-9 15 http://en.wikipedia.org/wiki/Latvia http://dbpedia.org/resource/Latvia
+2 2 http://en.wikipedia.org/wiki/Latvia http://dbpedia.org/resource/Latvia
 133
 1
-33 39 http://en.wikipedia.org/wiki/Germany http://dbpedia.org/resource/Germany
+6 6 http://en.wikipedia.org/wiki/Germany http://dbpedia.org/resource/Germany
 254
 1
-22 34 http://en.wikipedia.org/wiki/Muhammad_Ali http://dbpedia.org/resource/Muhammad_Ali
+5 6 http://en.wikipedia.org/wiki/Muhammad_Ali http://dbpedia.org/resource/Muhammad_Ali
 134
 1
-13 33 http://en.wikipedia.org/wiki/Battle_of_Gettysburg http://dbpedia.org/resource/Battle_of_Gettysburg
-255
-1
-22 27 http://en.wikipedia.org/wiki/Paris http://dbpedia.org/resource/Paris
+3 5 http://en.wikipedia.org/wiki/Battle_of_Gettysburg http://dbpedia.org/resource/Battle_of_Gettysburg
 135
 1
-21 36 http://en.wikipedia.org/wiki/Brooklyn_Bridge http://dbpedia.org/resource/Brooklyn_Bridge
+4 5 http://en.wikipedia.org/wiki/Brooklyn_Bridge http://dbpedia.org/resource/Brooklyn_Bridge
 136
 1
-32 41 http://en.wikipedia.org/wiki/Australia http://dbpedia.org/resource/Australia
+6 6 http://en.wikipedia.org/wiki/Australia http://dbpedia.org/resource/Australia
 137
 1
-28 33 http://en.wikipedia.org/wiki/Spain http://dbpedia.org/resource/Spain
+6 6 http://en.wikipedia.org/wiki/Spain http://dbpedia.org/resource/Spain
 258
 1
-30 49 http://en.wikipedia.org/wiki/Neil_Patrick_Harris http://dbpedia.org/resource/Neil_Patrick_Harris
+7 9 http://en.wikipedia.org/wiki/Neil_Patrick_Harris http://dbpedia.org/resource/Neil_Patrick_Harris
 138
 1
-33 41 http://en.wikipedia.org/wiki/Suriname http://dbpedia.org/resource/Suriname
+6 6 http://en.wikipedia.org/wiki/Suriname http://dbpedia.org/resource/Suriname
 259
 1
-10 26 http://en.wikipedia.org/wiki/The_Hunger_Games http://dbpedia.org/resource/The_Hunger_Games
+2 4 http://en.wikipedia.org/wiki/The_Hunger_Games http://dbpedia.org/resource/The_Hunger_Games
 139
 1
-20 28 http://en.wikipedia.org/wiki/Tel_Aviv http://dbpedia.org/resource/Tel_Aviv
+5 6 http://en.wikipedia.org/wiki/Tel_Aviv http://dbpedia.org/resource/Tel_Aviv
 30
 1
-22 40 http://en.wikipedia.org/wiki/Elizabeth_II http://dbpedia.org/resource/Elizabeth_II
+5 7 http://en.wikipedia.org/wiki/Elizabeth_II http://dbpedia.org/resource/Elizabeth_II
 32
 1
-33 45 http://en.wikipedia.org/wiki/Turkmenistan http://dbpedia.org/resource/Turkmenistan
+6 6 http://en.wikipedia.org/wiki/Turkmenistan http://dbpedia.org/resource/Turkmenistan
 33
 1
-38 48 http://en.wikipedia.org/wiki/U.S._state http://dbpedia.org/resource/U.S._state
+7 8 http://en.wikipedia.org/wiki/U.S._state http://dbpedia.org/resource/U.S._state
 34
 1
-31 51 http://en.wikipedia.org/wiki/Francis_Ford_Coppola http://dbpedia.org/resource/Francis_Ford_Coppola
+6 8 http://en.wikipedia.org/wiki/Francis_Ford_Coppola http://dbpedia.org/resource/Francis_Ford_Coppola
 35
 1
-50 65 http://en.wikipedia.org/wiki/William_Shatner http://dbpedia.org/resource/William_Shatner
+9 10 http://en.wikipedia.org/wiki/William_Shatner http://dbpedia.org/resource/William_Shatner
 36
 1
-4 14 http://en.wikipedia.org/wiki/Tree_frog http://dbpedia.org/resource/Tree_frog
+1 2 http://en.wikipedia.org/wiki/Tree_frog http://dbpedia.org/resource/Tree_frog
 37
 1
-26 39 http://en.wikipedia.org/wiki/Angela_Merkel http://dbpedia.org/resource/Angela_Merkel
+6 7 http://en.wikipedia.org/wiki/Angela_Merkel http://dbpedia.org/resource/Angela_Merkel
 38
 1
-12 21 http://en.wikipedia.org/wiki/Methodism http://dbpedia.org/resource/Methodism
+3 3 http://en.wikipedia.org/wiki/Methodism http://dbpedia.org/resource/Methodism
 39
 1
-14 24 http://en.wikipedia.org/wiki/Jane_Fonda http://dbpedia.org/resource/Jane_Fonda
+3 4 http://en.wikipedia.org/wiki/Jane_Fonda http://dbpedia.org/resource/Jane_Fonda
 260
 1
-45 55 http://en.wikipedia.org/wiki/Bundesliga http://dbpedia.org/resource/Bundesliga
+10 10 http://en.wikipedia.org/wiki/Bundesliga http://dbpedia.org/resource/Bundesliga
 140
 1
-17 32 http://en.wikipedia.org/wiki/Brooklyn_Bridge http://dbpedia.org/resource/Brooklyn_Bridge
+3 4 http://en.wikipedia.org/wiki/Brooklyn_Bridge http://dbpedia.org/resource/Brooklyn_Bridge
 261
 1
-16 29 http://en.wikipedia.org/wiki/Mount_Everest http://dbpedia.org/resource/Mount_Everest
+3 4 http://en.wikipedia.org/wiki/Mount_Everest http://dbpedia.org/resource/Mount_Everest
 141
 2
-6 24 http://en.wikipedia.org/wiki/Telecommunication http://dbpedia.org/resource/Telecommunication
-54 61 http://en.wikipedia.org/wiki/Belgium http://dbpedia.org/resource/Belgium
+1 1 http://en.wikipedia.org/wiki/Telecommunication http://dbpedia.org/resource/Telecommunication
+6 6 http://en.wikipedia.org/wiki/Belgium http://dbpedia.org/resource/Belgium
 262
 1
-22 35 http://en.wikipedia.org/wiki/Penguin_Books http://dbpedia.org/resource/Penguin_Books
+5 6 http://en.wikipedia.org/wiki/Penguin_Books http://dbpedia.org/resource/Penguin_Books
 142
 1
-3 16 http://en.wikipedia.org/wiki/Frank_Herbert http://dbpedia.org/resource/Frank_Herbert
+1 2 http://en.wikipedia.org/wiki/Frank_Herbert http://dbpedia.org/resource/Frank_Herbert
 263
 1
-39 49 http://en.wikipedia.org/wiki/JavaScript http://dbpedia.org/resource/JavaScript
+4 4 http://en.wikipedia.org/wiki/JavaScript http://dbpedia.org/resource/JavaScript
 143
 1
-33 38 http://en.wikipedia.org/wiki/Ural_Mountains http://dbpedia.org/resource/Ural_Mountains
+7 7 http://en.wikipedia.org/wiki/Ural_Mountains http://dbpedia.org/resource/Ural_Mountains
 264
 1
-4 15 http://en.wikipedia.org/wiki/Che_Guevara http://dbpedia.org/resource/Che_Guevara
+1 2 http://en.wikipedia.org/wiki/Che_Guevara http://dbpedia.org/resource/Che_Guevara
 144
 1
-21 27 http://en.wikipedia.org/wiki/Forbes http://dbpedia.org/resource/Forbes
+5 5 http://en.wikipedia.org/wiki/Forbes http://dbpedia.org/resource/Forbes
 265
 1
-36 46 http://en.wikipedia.org/wiki/Elton_John http://dbpedia.org/resource/Elton_John
+7 8 http://en.wikipedia.org/wiki/Elton_John http://dbpedia.org/resource/Elton_John
 145
 1
-29 40 http://en.wikipedia.org/wiki/Advertising http://dbpedia.org/resource/Advertising
+6 6 http://en.wikipedia.org/wiki/Advertising http://dbpedia.org/resource/Advertising
 266
 1
-29 38 http://en.wikipedia.org/wiki/Australia http://dbpedia.org/resource/Australia
+6 6 http://en.wikipedia.org/wiki/Australia http://dbpedia.org/resource/Australia
 146
 1
-32 38 http://en.wikipedia.org/wiki/Europe http://dbpedia.org/resource/Europe
+6 6 http://en.wikipedia.org/wiki/Europe http://dbpedia.org/resource/Europe
 267
 1
-13 20 http://en.wikipedia.org/wiki/RMS_Titanic http://dbpedia.org/resource/RMS_Titanic
+3 3 http://en.wikipedia.org/wiki/RMS_Titanic http://dbpedia.org/resource/RMS_Titanic
 268
 1
-13 25 http://en.wikipedia.org/wiki/Pulp_Fiction http://dbpedia.org/resource/Pulp_Fiction
+3 4 http://en.wikipedia.org/wiki/Pulp_Fiction http://dbpedia.org/resource/Pulp_Fiction
 40
 1
-12 22 http://en.wikipedia.org/wiki/Australia http://dbpedia.org/resource/Australia
+3 3 http://en.wikipedia.org/wiki/Australia http://dbpedia.org/resource/Australia
 41
 1
-32 50 http://en.wikipedia.org/wiki/T._E._Lawrence http://dbpedia.org/resource/T._E._Lawrence
+5 7 http://en.wikipedia.org/wiki/T._E._Lawrence http://dbpedia.org/resource/T._E._Lawrence
 42
 1
-14 23 http://en.wikipedia.org/wiki/Minecraft http://dbpedia.org/resource/Minecraft
+2 2 http://en.wikipedia.org/wiki/Minecraft http://dbpedia.org/resource/Minecraft
 43
 2
-12 25 http://en.wikipedia.org/wiki/Melting_point http://dbpedia.org/resource/Melting_point
-29 35 http://en.wikipedia.org/wiki/Copper http://dbpedia.org/resource/Copper
+3 4 http://en.wikipedia.org/wiki/Melting_point http://dbpedia.org/resource/Melting_point
+6 6 http://en.wikipedia.org/wiki/Copper http://dbpedia.org/resource/Copper
 44
 2
-12 25 http://en.wikipedia.org/wiki/Twin_towns_and_sister_cities http://dbpedia.org/resource/Twin_towns_and_sister_cities
-29 33 http://en.wikipedia.org/wiki/Brno http://dbpedia.org/resource/Brno
+3 4 http://en.wikipedia.org/wiki/Twin_towns_and_sister_cities http://dbpedia.org/resource/Twin_towns_and_sister_cities
+6 6 http://en.wikipedia.org/wiki/Brno http://dbpedia.org/resource/Brno
 45
 1
-26 33 http://en.wikipedia.org/wiki/Maribor http://dbpedia.org/resource/Maribor
+4 4 http://en.wikipedia.org/wiki/Maribor http://dbpedia.org/resource/Maribor
 46
 1
-25 31 http://en.wikipedia.org/wiki/Munich http://dbpedia.org/resource/Munich
+5 5 http://en.wikipedia.org/wiki/Munich http://dbpedia.org/resource/Munich
 47
 1
-12 28 http://en.wikipedia.org/wiki/Claudia_Schiffer http://dbpedia.org/resource/Claudia_Schiffer
+3 4 http://en.wikipedia.org/wiki/Claudia_Schiffer http://dbpedia.org/resource/Claudia_Schiffer
 48
 1
-18 21 http://en.wikipedia.org/wiki/GMT_Games http://dbpedia.org/resource/GMT_Games
+4 4 http://en.wikipedia.org/wiki/GMT_Games http://dbpedia.org/resource/GMT_Games
 49
 1
-12 17 http://en.wikipedia.org/wiki/Intel http://dbpedia.org/resource/Intel
+2 2 http://en.wikipedia.org/wiki/Intel http://dbpedia.org/resource/Intel
 270
 1
-11 22 http://en.wikipedia.org/wiki/Agent_Smith http://dbpedia.org/resource/Agent_Smith
+2 3 http://en.wikipedia.org/wiki/Agent_Smith http://dbpedia.org/resource/Agent_Smith
 271
 1
-20 33 http://en.wikipedia.org/wiki/Peanut_butter http://dbpedia.org/resource/Peanut_butter
+4 5 http://en.wikipedia.org/wiki/Peanut_butter http://dbpedia.org/resource/Peanut_butter
 151
-1
-25 42 http://en.wikipedia.org/wiki/Abraham_Lincoln http://dbpedia.org/resource/Abraham_Lincoln
+2
+6 7 http://en.wikipedia.org/wiki/Abraham_Lincoln http://dbpedia.org/resource/Abraham_Lincoln
+7 7 http://en.wikipedia.org/wiki/Abraham_Lincoln http://dbpedia.org/resource/Abraham_Lincoln
 152
 1
-29 46 http://en.wikipedia.org/wiki/World_of_Warcraft http://dbpedia.org/resource/World_of_Warcraft
+5 7 http://en.wikipedia.org/wiki/World_of_Warcraft http://dbpedia.org/resource/World_of_Warcraft
 273
 1
-24 29 http://en.wikipedia.org/wiki/Seine http://dbpedia.org/resource/Seine
+4 4 http://en.wikipedia.org/wiki/Seine http://dbpedia.org/resource/Seine
 153
 1
-32 42 http://en.wikipedia.org/wiki/Tom_Cruise http://dbpedia.org/resource/Tom_Cruise
+6 7 http://en.wikipedia.org/wiki/Tom_Cruise http://dbpedia.org/resource/Tom_Cruise
 274
 1
-35 51 http://en.wikipedia.org/wiki/French_Polynesia http://dbpedia.org/resource/French_Polynesia
+8 9 http://en.wikipedia.org/wiki/French_Polynesia http://dbpedia.org/resource/French_Polynesia
 154
 2
-45 48 http://en.wikipedia.org/wiki/HBO http://dbpedia.org/resource/HBO
-67 79 http://en.wikipedia.org/wiki/The_Sopranos http://dbpedia.org/resource/The_Sopranos
+9 9 http://en.wikipedia.org/wiki/HBO http://dbpedia.org/resource/HBO
+12 13 http://en.wikipedia.org/wiki/The_Sopranos http://dbpedia.org/resource/The_Sopranos
 275
 1
-9 16 http://en.wikipedia.org/wiki/Count_Dracula http://dbpedia.org/resource/Count_Dracula
+2 2 http://en.wikipedia.org/wiki/Count_Dracula http://dbpedia.org/resource/Count_Dracula
 276
 1
-28 48 http://en.wikipedia.org/wiki/Palace_of_Westminster http://dbpedia.org/resource/Palace_of_Westminster
+6 8 http://en.wikipedia.org/wiki/Palace_of_Westminster http://dbpedia.org/resource/Palace_of_Westminster
 277
 2
-12 26 http://en.wikipedia.org/wiki/English_Gothic_architecture http://dbpedia.org/resource/English_Gothic_architecture
-40 44 http://en.wikipedia.org/wiki/Kent http://dbpedia.org/resource/Kent
+3 4 http://en.wikipedia.org/wiki/English_Gothic_architecture http://dbpedia.org/resource/English_Gothic_architecture
+7 7 http://en.wikipedia.org/wiki/Kent http://dbpedia.org/resource/Kent
 157
 1
-18 33 http://en.wikipedia.org/wiki/John_F._Kennedy http://dbpedia.org/resource/John_F._Kennedy
+4 6 http://en.wikipedia.org/wiki/John_F._Kennedy http://dbpedia.org/resource/John_F._Kennedy
 278
 1
-34 52 http://en.wikipedia.org/wiki/Vatican_Television_Center http://dbpedia.org/resource/Vatican_Television_Center
+7 8 http://en.wikipedia.org/wiki/Vatican_Television_Center http://dbpedia.org/resource/Vatican_Television_Center
 158
 1
-29 41 http://en.wikipedia.org/wiki/Battle_Chess http://dbpedia.org/resource/Battle_Chess
+6 7 http://en.wikipedia.org/wiki/Battle_Chess http://dbpedia.org/resource/Battle_Chess
 279
 1
-30 37 http://en.wikipedia.org/wiki/SkyTeam http://dbpedia.org/resource/SkyTeam
+6 6 http://en.wikipedia.org/wiki/SkyTeam http://dbpedia.org/resource/SkyTeam
 159
 1
-36 48 http://en.wikipedia.org/wiki/Nanga_Parbat http://dbpedia.org/resource/Nanga_Parbat
+6 7 http://en.wikipedia.org/wiki/Nanga_Parbat http://dbpedia.org/resource/Nanga_Parbat
 50
 1
-22 35 http://en.wikipedia.org/wiki/Amanda_Palmer http://dbpedia.org/resource/Amanda_Palmer
+5 6 http://en.wikipedia.org/wiki/Amanda_Palmer http://dbpedia.org/resource/Amanda_Palmer
 51
 1
-26 45 http://en.wikipedia.org/wiki/German_Shepherd http://dbpedia.org/resource/German_Shepherd
+6 8 http://en.wikipedia.org/wiki/German_Shepherd http://dbpedia.org/resource/German_Shepherd
 52
 1
-22 27 http://en.wikipedia.org/wiki/Weser http://dbpedia.org/resource/Weser
+4 4 http://en.wikipedia.org/wiki/Weser http://dbpedia.org/resource/Weser
 53
 1
-37 42 http://en.wikipedia.org/wiki/Rhine http://dbpedia.org/resource/Rhine
+6 6 http://en.wikipedia.org/wiki/Rhine http://dbpedia.org/resource/Rhine
 54
 2
-19 26 http://en.wikipedia.org/wiki/Surfing http://dbpedia.org/resource/Surfing
-40 49 http://en.wikipedia.org/wiki/Australia http://dbpedia.org/resource/Australia
+2 2 http://en.wikipedia.org/wiki/Surfing http://dbpedia.org/resource/Surfing
+6 6 http://en.wikipedia.org/wiki/Australia http://dbpedia.org/resource/Australia
 55
 2
-20 31 http://en.wikipedia.org/wiki/Temperature http://dbpedia.org/resource/Temperature
-35 41 http://en.wikipedia.org/wiki/Hawaii http://dbpedia.org/resource/Hawaii
+4 4 http://en.wikipedia.org/wiki/Temperature http://dbpedia.org/resource/Temperature
+6 6 http://en.wikipedia.org/wiki/Hawaii http://dbpedia.org/resource/Hawaii
 56
 3
-9 11 http://en.wikipedia.org/wiki/United_Kingdom http://dbpedia.org/resource/United_Kingdom
-25 37 http://en.wikipedia.org/wiki/Headquarters http://dbpedia.org/resource/Headquarters
-45 48 http://en.wikipedia.org/wiki/Secret_Intelligence_Service http://dbpedia.org/resource/Secret_Intelligence_Service
+2 2 http://en.wikipedia.org/wiki/United_Kingdom http://dbpedia.org/resource/United_Kingdom
+6 6 http://en.wikipedia.org/wiki/Headquarters http://dbpedia.org/resource/Headquarters
+9 9 http://en.wikipedia.org/wiki/Secret_Intelligence_Service http://dbpedia.org/resource/Secret_Intelligence_Service
 57
 1
-44 47 http://en.wikipedia.org/wiki/Uzi http://dbpedia.org/resource/Uzi
+8 8 http://en.wikipedia.org/wiki/Uzi http://dbpedia.org/resource/Uzi
 58
 1
-12 17 http://en.wikipedia.org/wiki/Goofy http://dbpedia.org/resource/Goofy
+2 2 http://en.wikipedia.org/wiki/Goofy http://dbpedia.org/resource/Goofy
 59
 2
-8 28 http://en.wikipedia.org/wiki/Cuban_Missile_Crisis http://dbpedia.org/resource/Cuban_Missile_Crisis
-46 66 http://en.wikipedia.org/wiki/Bay_of_Pigs_Invasion http://dbpedia.org/resource/Bay_of_Pigs_Invasion
-280
-1
-32 50 http://en.wikipedia.org/wiki/Melbourne,_Florida http://dbpedia.org/resource/Melbourne,_Florida
+2 4 http://en.wikipedia.org/wiki/Cuban_Missile_Crisis http://dbpedia.org/resource/Cuban_Missile_Crisis
+8 11 http://en.wikipedia.org/wiki/Bay_of_Pigs_Invasion http://dbpedia.org/resource/Bay_of_Pigs_Invasion
 160
 1
-12 21 http://en.wikipedia.org/wiki/Wikipedia http://dbpedia.org/resource/Wikipedia
+2 2 http://en.wikipedia.org/wiki/Wikipedia http://dbpedia.org/resource/Wikipedia
 281
 1
-20 29 http://en.wikipedia.org/wiki/Air_China http://dbpedia.org/resource/Air_China
+3 4 http://en.wikipedia.org/wiki/Air_China http://dbpedia.org/resource/Air_China
 161
 1
-31 47 http://en.wikipedia.org/wiki/Last_Action_Hero http://dbpedia.org/resource/Last_Action_Hero
+6 8 http://en.wikipedia.org/wiki/Last_Action_Hero http://dbpedia.org/resource/Last_Action_Hero
 282
 1
-18 32 http://en.wikipedia.org/wiki/Rachel_Stevens http://dbpedia.org/resource/Rachel_Stevens
+4 5 http://en.wikipedia.org/wiki/Rachel_Stevens http://dbpedia.org/resource/Rachel_Stevens
 162
 1
-62 72 http://en.wikipedia.org/wiki/California http://dbpedia.org/resource/California
+9 9 http://en.wikipedia.org/wiki/California http://dbpedia.org/resource/California
 283
 1
-10 13 http://en.wikipedia.org/wiki/John_F._Kennedy http://dbpedia.org/resource/John_F._Kennedy
+2 2 http://en.wikipedia.org/wiki/John_F._Kennedy http://dbpedia.org/resource/John_F._Kennedy
 163
 2
-28 37 http://en.wikipedia.org/wiki/Aerospace http://dbpedia.org/resource/Aerospace
-61 69 http://en.wikipedia.org/wiki/Medicine http://dbpedia.org/resource/Medicine
+5 5 http://en.wikipedia.org/wiki/Aerospace http://dbpedia.org/resource/Aerospace
+11 11 http://en.wikipedia.org/wiki/Medicine http://dbpedia.org/resource/Medicine
 284
 1
-36 55 http://en.wikipedia.org/wiki/Columbia_University http://dbpedia.org/resource/Columbia_University
+5 6 http://en.wikipedia.org/wiki/Columbia_University http://dbpedia.org/resource/Columbia_University
 164
 2
-3 17 http://en.wikipedia.org/wiki/Christian_Bale http://dbpedia.org/resource/Christian_Bale
-30 45 http://en.wikipedia.org/wiki/Velvet_Goldmine http://dbpedia.org/resource/Velvet_Goldmine
+1 2 http://en.wikipedia.org/wiki/Christian_Bale http://dbpedia.org/resource/Christian_Bale
+5 6 http://en.wikipedia.org/wiki/Velvet_Goldmine http://dbpedia.org/resource/Velvet_Goldmine
 285
 2
-33 50 http://en.wikipedia.org/wiki/Manhattan_Project http://dbpedia.org/resource/Manhattan_Project
-59 76 http://en.wikipedia.org/wiki/Nobel_Peace_Prize http://dbpedia.org/resource/Nobel_Peace_Prize
+6 7 http://en.wikipedia.org/wiki/Manhattan_Project http://dbpedia.org/resource/Manhattan_Project
+10 12 http://en.wikipedia.org/wiki/Nobel_Peace_Prize http://dbpedia.org/resource/Nobel_Peace_Prize
 286
 1
-31 37 http://en.wikipedia.org/wiki/Africa http://dbpedia.org/resource/Africa
+6 6 http://en.wikipedia.org/wiki/Africa http://dbpedia.org/resource/Africa
 166
 1
-26 33 http://en.wikipedia.org/wiki/Germany http://dbpedia.org/resource/Germany
+5 5 http://en.wikipedia.org/wiki/Germany http://dbpedia.org/resource/Germany
 287
 1
-25 32 http://en.wikipedia.org/wiki/Ireland http://dbpedia.org/resource/Ireland
+4 4 http://en.wikipedia.org/wiki/Ireland http://dbpedia.org/resource/Ireland
 288
 1
-33 48 http://en.wikipedia.org/wiki/UNC_Health_Care http://dbpedia.org/resource/UNC_Health_Care
+6 8 http://en.wikipedia.org/wiki/UNC_Health_Care http://dbpedia.org/resource/UNC_Health_Care
 168
-1
-16 33 http://en.wikipedia.org/wiki/Abraham_Lincoln http://dbpedia.org/resource/Abraham_Lincoln
+2
+4 5 http://en.wikipedia.org/wiki/Abraham_Lincoln http://dbpedia.org/resource/Abraham_Lincoln
+5 5 http://en.wikipedia.org/wiki/Abraham_Lincoln http://dbpedia.org/resource/Abraham_Lincoln
 289
 1
-20 28 http://en.wikipedia.org/wiki/Facebook http://dbpedia.org/resource/Facebook
+5 5 http://en.wikipedia.org/wiki/Facebook http://dbpedia.org/resource/Facebook
 169
 1
-30 39 http://en.wikipedia.org/wiki/Hal_Roach http://dbpedia.org/resource/Hal_Roach
+6 7 http://en.wikipedia.org/wiki/Hal_Roach http://dbpedia.org/resource/Hal_Roach
 60
 1
-35 40 http://en.wikipedia.org/wiki/Japan http://dbpedia.org/resource/Japan
+7 7 http://en.wikipedia.org/wiki/Japan http://dbpedia.org/resource/Japan
 61
 1
-17 23 http://en.wikipedia.org/wiki/Zipper http://dbpedia.org/resource/Zipper
+3 3 http://en.wikipedia.org/wiki/Zipper http://dbpedia.org/resource/Zipper
 62
 1
-28 34 http://en.wikipedia.org/wiki/Lisbon http://dbpedia.org/resource/Lisbon
+6 6 http://en.wikipedia.org/wiki/Lisbon http://dbpedia.org/resource/Lisbon
 63
 2
-13 22 http://en.wikipedia.org/wiki/Nickname http://dbpedia.org/resource/Nickname
-26 39 http://en.wikipedia.org/wiki/San_Francisco http://dbpedia.org/resource/San_Francisco
+3 3 http://en.wikipedia.org/wiki/Nickname http://dbpedia.org/resource/Nickname
+5 6 http://en.wikipedia.org/wiki/San_Francisco http://dbpedia.org/resource/San_Francisco
 64
 1
-31 44 http://en.wikipedia.org/wiki/Mount_Olympus http://dbpedia.org/resource/Mount_Olympus
+5 6 http://en.wikipedia.org/wiki/Mount_Olympus http://dbpedia.org/resource/Mount_Olympus
 65
 1
-14 26 http://en.wikipedia.org/wiki/Hells_Angels http://dbpedia.org/resource/Hells_Angels
+3 4 http://en.wikipedia.org/wiki/Hells_Angels http://dbpedia.org/resource/Hells_Angels
 66
 1
-12 21 http://en.wikipedia.org/wiki/Apollo_14 http://dbpedia.org/resource/Apollo_14
+3 4 http://en.wikipedia.org/wiki/Apollo_14 http://dbpedia.org/resource/Apollo_14
 67
 2
-12 21 http://en.wikipedia.org/wiki/Time_zone http://dbpedia.org/resource/Time_zone
-25 39 http://en.wikipedia.org/wiki/Salt_Lake_City http://dbpedia.org/resource/Salt_Lake_City
+3 4 http://en.wikipedia.org/wiki/Time_zone http://dbpedia.org/resource/Time_zone
+6 8 http://en.wikipedia.org/wiki/Salt_Lake_City http://dbpedia.org/resource/Salt_Lake_City
 68
 2
-34 43 http://en.wikipedia.org/wiki/Time_zone http://dbpedia.org/resource/Time_zone
-47 51 http://en.wikipedia.org/wiki/Utah http://dbpedia.org/resource/Utah
+7 8 http://en.wikipedia.org/wiki/Time_zone http://dbpedia.org/resource/Time_zone
+10 10 http://en.wikipedia.org/wiki/Utah http://dbpedia.org/resource/Utah
 69
 1
-41 47 http://en.wikipedia.org/wiki/Africa http://dbpedia.org/resource/Africa
+8 8 http://en.wikipedia.org/wiki/Africa http://dbpedia.org/resource/Africa
 290
 1
-25 43 http://en.wikipedia.org/wiki/Melon_de_Bourgogne http://dbpedia.org/resource/Melon_de_Bourgogne
+5 7 http://en.wikipedia.org/wiki/Melon_de_Bourgogne http://dbpedia.org/resource/Melon_de_Bourgogne
 291
 1
-22 30 http://en.wikipedia.org/wiki/Socrates http://dbpedia.org/resource/Socrates
+4 4 http://en.wikipedia.org/wiki/Socrates http://dbpedia.org/resource/Socrates
 171
 1
-30 37 http://en.wikipedia.org/wiki/Estonia http://dbpedia.org/resource/Estonia
+5 5 http://en.wikipedia.org/wiki/Estonia http://dbpedia.org/resource/Estonia
 292
 1
-21 29 http://en.wikipedia.org/wiki/Pakistan http://dbpedia.org/resource/Pakistan
+4 4 http://en.wikipedia.org/wiki/Pakistan http://dbpedia.org/resource/Pakistan
 172
 1
-9 13 http://en.wikipedia.org/wiki/Aldi http://dbpedia.org/resource/Aldi
+2 2 http://en.wikipedia.org/wiki/Aldi http://dbpedia.org/resource/Aldi
 293
 2
-8 15 http://en.wikipedia.org/wiki/England http://dbpedia.org/resource/England
-35 43 http://en.wikipedia.org/wiki/Lovesick http://dbpedia.org/resource/Lovesick
+2 2 http://en.wikipedia.org/wiki/England http://dbpedia.org/resource/England
+6 6 http://en.wikipedia.org/wiki/Lovesick http://dbpedia.org/resource/Lovesick
 173
 2
-18 24 http://en.wikipedia.org/wiki/Europe http://dbpedia.org/resource/Europe
-49 69 http://en.wikipedia.org/wiki/Summer_Olympic_Games http://dbpedia.org/resource/Summer_Olympic_Games
+3 3 http://en.wikipedia.org/wiki/Europe http://dbpedia.org/resource/Europe
+9 11 http://en.wikipedia.org/wiki/Summer_Olympic_Games http://dbpedia.org/resource/Summer_Olympic_Games
 174
 1
-12 47 http://en.wikipedia.org/wiki/United_States http://dbpedia.org/resource/United_States
+3 8 http://en.wikipedia.org/wiki/United_States http://dbpedia.org/resource/United_States
 295
 1
-29 35 http://en.wikipedia.org/wiki/Jacques_Chirac http://dbpedia.org/resource/Jacques_Chirac
+5 5 http://en.wikipedia.org/wiki/Jacques_Chirac http://dbpedia.org/resource/Jacques_Chirac
 175
 1
-19 28 http://en.wikipedia.org/wiki/Hal_Roach http://dbpedia.org/resource/Hal_Roach
+4 5 http://en.wikipedia.org/wiki/Hal_Roach http://dbpedia.org/resource/Hal_Roach
 296
-1
-41 57 http://en.wikipedia.org/wiki/Washington_State http://dbpedia.org/resource/Washington_State
+2
+7 7 http://en.wikipedia.org/wiki/Washington_(state) http://dbpedia.org/resource/Washington_(state)
+7 8 http://en.wikipedia.org/wiki/Washington_State http://dbpedia.org/resource/Washington_State
 176
 1
-36 50 http://en.wikipedia.org/wiki/Last_Christmas http://dbpedia.org/resource/Last_Christmas
+6 7 http://en.wikipedia.org/wiki/Last_Christmas http://dbpedia.org/resource/Last_Christmas
 297
 2
-9 15 http://en.wikipedia.org/wiki/France http://dbpedia.org/resource/France
-19 33 http://en.wikipedia.org/wiki/Sparkling_wine http://dbpedia.org/resource/Sparkling_wine
+2 2 http://en.wikipedia.org/wiki/France http://dbpedia.org/resource/France
+4 5 http://en.wikipedia.org/wiki/Sparkling_wine http://dbpedia.org/resource/Sparkling_wine
 177
 1
-29 43 http://en.wikipedia.org/wiki/Danielle_Steel http://dbpedia.org/resource/Danielle_Steel
+6 7 http://en.wikipedia.org/wiki/Danielle_Steel http://dbpedia.org/resource/Danielle_Steel
 298
 1
-10 23 http://en.wikipedia.org/wiki/Hillel_Slovak http://dbpedia.org/resource/Hillel_Slovak
+2 3 http://en.wikipedia.org/wiki/Hillel_Slovak http://dbpedia.org/resource/Hillel_Slovak
 178
 2
-30 40 http://en.wikipedia.org/wiki/California http://dbpedia.org/resource/California
-42 45 http://en.wikipedia.org/wiki/United_States http://dbpedia.org/resource/United_States
+5 5 http://en.wikipedia.org/wiki/California http://dbpedia.org/resource/California
+7 7 http://en.wikipedia.org/wiki/United_States http://dbpedia.org/resource/United_States
 299
 1
-24 44 http://en.wikipedia.org/wiki/San_Pedro_de_Atacama http://dbpedia.org/resource/San_Pedro_de_Atacama
+5 8 http://en.wikipedia.org/wiki/San_Pedro_de_Atacama http://dbpedia.org/resource/San_Pedro_de_Atacama
 179
 1
-44 67 http://en.wikipedia.org/wiki/Social_Democratic_Party_of_Germany http://dbpedia.org/resource/Social_Democratic_Party_of_Germany
+8 10 http://en.wikipedia.org/wiki/Social_Democratic_Party_of_Germany http://dbpedia.org/resource/Social_Democratic_Party_of_Germany
 70
 1
-31 38 http://en.wikipedia.org/wiki/Denmark http://dbpedia.org/resource/Denmark
+8 8 http://en.wikipedia.org/wiki/Denmark http://dbpedia.org/resource/Denmark
 71
 1
-27 42 http://en.wikipedia.org/wiki/Soyuz_programme http://dbpedia.org/resource/Soyuz_programme
+5 6 http://en.wikipedia.org/wiki/Soyuz_programme http://dbpedia.org/resource/Soyuz_programme
 72
 2
-4 12 http://en.wikipedia.org/wiki/Socrates http://dbpedia.org/resource/Socrates
-23 32 http://en.wikipedia.org/wiki/Aristotle http://dbpedia.org/resource/Aristotle
+1 1 http://en.wikipedia.org/wiki/Socrates http://dbpedia.org/resource/Socrates
+3 3 http://en.wikipedia.org/wiki/Aristotle http://dbpedia.org/resource/Aristotle
 73
 1
-12 18 http://en.wikipedia.org/wiki/Denmark http://dbpedia.org/resource/Denmark
+3 3 http://en.wikipedia.org/wiki/Denmark http://dbpedia.org/resource/Denmark
 74
 2
-12 23 http://en.wikipedia.org/wiki/Launch_pad http://dbpedia.org/resource/Launch_pad
-36 40 http://en.wikipedia.org/wiki/NASA http://dbpedia.org/resource/NASA
+3 4 http://en.wikipedia.org/wiki/Launch_pad http://dbpedia.org/resource/Launch_pad
+7 7 http://en.wikipedia.org/wiki/NASA http://dbpedia.org/resource/NASA
 75
 1
-23 34 http://en.wikipedia.org/wiki/Cat_Stevens http://dbpedia.org/resource/Cat_Stevens
+3 4 http://en.wikipedia.org/wiki/Cat_Stevens http://dbpedia.org/resource/Cat_Stevens
 76
 1
-30 47 http://en.wikipedia.org/wiki/Benjamin_Franklin http://dbpedia.org/resource/Benjamin_Franklin
+5 6 http://en.wikipedia.org/wiki/Benjamin_Franklin http://dbpedia.org/resource/Benjamin_Franklin
 77
 1
-35 48 http://en.wikipedia.org/wiki/Juan_Carlos_I_of_Spain http://dbpedia.org/resource/Juan_Carlos_I_of_Spain
+8 10 http://en.wikipedia.org/wiki/Juan_Carlos_I_of_Spain http://dbpedia.org/resource/Juan_Carlos_I_of_Spain
 78
 1
-24 30 http://en.wikipedia.org/wiki/Google http://dbpedia.org/resource/Google
+4 4 http://en.wikipedia.org/wiki/Google http://dbpedia.org/resource/Google
 79
 3
-4 9 http://en.wikipedia.org/wiki/Nikola_Tesla http://dbpedia.org/resource/Nikola_Tesla
-16 27 http://en.wikipedia.org/wiki/Nobel_Prize http://dbpedia.org/resource/Nobel_Prize
-31 38 http://en.wikipedia.org/wiki/Physics http://dbpedia.org/resource/Physics
+1 1 http://en.wikipedia.org/wiki/Nikola_Tesla http://dbpedia.org/resource/Nikola_Tesla
+4 5 http://en.wikipedia.org/wiki/Nobel_Prize http://dbpedia.org/resource/Nobel_Prize
+7 7 http://en.wikipedia.org/wiki/Physics http://dbpedia.org/resource/Physics
 180
 2
-12 20 http://en.wikipedia.org/wiki/Canada http://dbpedia.org/resource/Canada
-21 27 http://en.wikipedia.org/wiki/Grunge http://dbpedia.org/resource/Grunge
+3 3 http://en.wikipedia.org/wiki/Canada http://dbpedia.org/resource/Canada
+4 4 http://en.wikipedia.org/wiki/Grunge http://dbpedia.org/resource/Grunge
 182
 1
-33 37 http://en.wikipedia.org/wiki/GIMP http://dbpedia.org/resource/GIMP
+5 5 http://en.wikipedia.org/wiki/GIMP http://dbpedia.org/resource/GIMP
 183
 1
-28 43 http://en.wikipedia.org/wiki/Natalie_Portman http://dbpedia.org/resource/Natalie_Portman
+4 5 http://en.wikipedia.org/wiki/Natalie_Portman http://dbpedia.org/resource/Natalie_Portman
 184
 1
-24 34 http://en.wikipedia.org/wiki/Tom_Cruise http://dbpedia.org/resource/Tom_Cruise
+5 6 http://en.wikipedia.org/wiki/Tom_Cruise http://dbpedia.org/resource/Tom_Cruise
 185
 2
-19 32 http://en.wikipedia.org/wiki/Julia_Roberts http://dbpedia.org/resource/Julia_Roberts
-44 56 http://en.wikipedia.org/wiki/Richard_Gere http://dbpedia.org/resource/Richard_Gere
+4 5 http://en.wikipedia.org/wiki/Julia_Roberts http://dbpedia.org/resource/Julia_Roberts
+9 10 http://en.wikipedia.org/wiki/Richard_Gere http://dbpedia.org/resource/Richard_Gere
 186
 1
-12 18 http://en.wikipedia.org/wiki/Female http://dbpedia.org/resource/Female
+3 3 http://en.wikipedia.org/wiki/Female http://dbpedia.org/resource/Female
 187
 1
-19 43 http://en.wikipedia.org/wiki/The_Pillars_of_the_Earth http://dbpedia.org/resource/The_Pillars_of_the_Earth
+4 8 http://en.wikipedia.org/wiki/The_Pillars_of_the_Earth http://dbpedia.org/resource/The_Pillars_of_the_Earth
 188
 1
-19 36 http://en.wikipedia.org/wiki/Leonardo_DiCaprio http://dbpedia.org/resource/Leonardo_DiCaprio
+4 5 http://en.wikipedia.org/wiki/Leonardo_DiCaprio http://dbpedia.org/resource/Leonardo_DiCaprio
 189
 1
-32 46 http://en.wikipedia.org/wiki/Premier_League http://dbpedia.org/resource/Premier_League
+7 8 http://en.wikipedia.org/wiki/Premier_League http://dbpedia.org/resource/Premier_League
 80
 1
-22 32 http://en.wikipedia.org/wiki/New_Jersey http://dbpedia.org/resource/New_Jersey
+5 6 http://en.wikipedia.org/wiki/New_Jersey http://dbpedia.org/resource/New_Jersey
 81
 2
-3 14 http://en.wikipedia.org/wiki/Rita_Wilson http://dbpedia.org/resource/Rita_Wilson
-27 36 http://en.wikipedia.org/wiki/Tom_Hanks http://dbpedia.org/resource/Tom_Hanks
+1 2 http://en.wikipedia.org/wiki/Rita_Wilson http://dbpedia.org/resource/Rita_Wilson
+6 7 http://en.wikipedia.org/wiki/Tom_Hanks http://dbpedia.org/resource/Tom_Hanks
 82
 1
-13 30 http://en.wikipedia.org/wiki/Statue_of_Liberty http://dbpedia.org/resource/Statue_of_Liberty
+3 5 http://en.wikipedia.org/wiki/Statue_of_Liberty http://dbpedia.org/resource/Statue_of_Liberty
 83
 1
-23 32 http://en.wikipedia.org/wiki/Fort_Knox http://dbpedia.org/resource/Fort_Knox
+5 6 http://en.wikipedia.org/wiki/Fort_Knox http://dbpedia.org/resource/Fort_Knox
 84
 1
-22 39 http://en.wikipedia.org/wiki/Benjamin_Franklin http://dbpedia.org/resource/Benjamin_Franklin
+4 5 http://en.wikipedia.org/wiki/Benjamin_Franklin http://dbpedia.org/resource/Benjamin_Franklin
 85
 1
-9 24 http://en.wikipedia.org/wiki/Michael_Jackson http://dbpedia.org/resource/Michael_Jackson
+2 3 http://en.wikipedia.org/wiki/Michael_Jackson http://dbpedia.org/resource/Michael_Jackson
 87
 1
-21 38 http://en.wikipedia.org/wiki/Margaret_Thatcher http://dbpedia.org/resource/Margaret_Thatcher
+4 5 http://en.wikipedia.org/wiki/Margaret_Thatcher http://dbpedia.org/resource/Margaret_Thatcher
 89
 1
-4 21 http://en.wikipedia.org/wiki/Margaret_Thatcher http://dbpedia.org/resource/Margaret_Thatcher
+1 2 http://en.wikipedia.org/wiki/Margaret_Thatcher http://dbpedia.org/resource/Margaret_Thatcher
 190
 1
-23 37 http://en.wikipedia.org/wiki/Mount_McKinley http://dbpedia.org/resource/Mount_McKinley
+5 6 http://en.wikipedia.org/wiki/Mount_McKinley http://dbpedia.org/resource/Mount_McKinley
 191
 1
-9 15 http://en.wikipedia.org/wiki/Capcom http://dbpedia.org/resource/Capcom
+2 2 http://en.wikipedia.org/wiki/Capcom http://dbpedia.org/resource/Capcom
 194
 2
-4 19 http://en.wikipedia.org/wiki/Natalie_Portman http://dbpedia.org/resource/Natalie_Portman
-32 45 http://en.wikipedia.org/wiki/United_States http://dbpedia.org/resource/United_States
+1 2 http://en.wikipedia.org/wiki/Natalie_Portman http://dbpedia.org/resource/Natalie_Portman
+6 7 http://en.wikipedia.org/wiki/United_States http://dbpedia.org/resource/United_States
 195
 1
-6 12 http://en.wikipedia.org/wiki/Budget http://dbpedia.org/resource/Budget
+1 1 http://en.wikipedia.org/wiki/Budget http://dbpedia.org/resource/Budget
 196
 2
-26 31 http://en.wikipedia.org/wiki/Paris http://dbpedia.org/resource/Paris
-43 54 http://en.wikipedia.org/wiki/Middle_Ages http://dbpedia.org/resource/Middle_Ages
+5 5 http://en.wikipedia.org/wiki/Paris http://dbpedia.org/resource/Paris
+8 9 http://en.wikipedia.org/wiki/Middle_Ages http://dbpedia.org/resource/Middle_Ages
 197
 1
-3 18 http://en.wikipedia.org/wiki/Pamela_Anderson http://dbpedia.org/resource/Pamela_Anderson
+1 2 http://en.wikipedia.org/wiki/Pamela_Anderson http://dbpedia.org/resource/Pamela_Anderson
 198
 1
-14 28 http://en.wikipedia.org/wiki/Michael_Jordan http://dbpedia.org/resource/Michael_Jordan
+3 4 http://en.wikipedia.org/wiki/Michael_Jordan http://dbpedia.org/resource/Michael_Jordan
 90
 1
-4 16 http://en.wikipedia.org/wiki/Marc_Chagall http://dbpedia.org/resource/Marc_Chagall
+1 2 http://en.wikipedia.org/wiki/Marc_Chagall http://dbpedia.org/resource/Marc_Chagall
 91
 2
-22 32 http://en.wikipedia.org/wiki/The_Scream http://dbpedia.org/resource/The_Scream
-36 41 http://en.wikipedia.org/wiki/Edvard_Munch http://dbpedia.org/resource/Edvard_Munch
+3 4 http://en.wikipedia.org/wiki/The_Scream http://dbpedia.org/resource/The_Scream
+6 6 http://en.wikipedia.org/wiki/Edvard_Munch http://dbpedia.org/resource/Edvard_Munch
 92
 1
-21 36 http://en.wikipedia.org/wiki/William_Goldman http://dbpedia.org/resource/William_Goldman
+5 6 http://en.wikipedia.org/wiki/William_Goldman http://dbpedia.org/resource/William_Goldman
 93
 2
-15 22 http://en.wikipedia.org/wiki/Jack_Kerouac http://dbpedia.org/resource/Jack_Kerouac
-41 53 http://en.wikipedia.org/wiki/Viking_Press http://dbpedia.org/resource/Viking_Press
+3 3 http://en.wikipedia.org/wiki/Jack_Kerouac http://dbpedia.org/resource/Jack_Kerouac
+7 8 http://en.wikipedia.org/wiki/Viking_Press http://dbpedia.org/resource/Viking_Press
 95
 1
-16 29 http://en.wikipedia.org/wiki/Mount_Everest http://dbpedia.org/resource/Mount_Everest
+4 5 http://en.wikipedia.org/wiki/Mount_Everest http://dbpedia.org/resource/Mount_Everest
 96
 1
-22 37 http://en.wikipedia.org/wiki/Captain_America http://dbpedia.org/resource/Captain_America
+4 5 http://en.wikipedia.org/wiki/Captain_America http://dbpedia.org/resource/Captain_America
 97
 1
-39 48 http://en.wikipedia.org/wiki/Australia http://dbpedia.org/resource/Australia
+8 8 http://en.wikipedia.org/wiki/Australia http://dbpedia.org/resource/Australia
 98
 1
-28 37 http://en.wikipedia.org/wiki/Australia http://dbpedia.org/resource/Australia
+6 6 http://en.wikipedia.org/wiki/Australia http://dbpedia.org/resource/Australia
 99
 1
-27 43 http://en.wikipedia.org/wiki/Harold_and_Maude http://dbpedia.org/resource/Harold_and_Maude
+5 7 http://en.wikipedia.org/wiki/Harold_and_Maude http://dbpedia.org/resource/Harold_and_Maude
 200
 1
-44 61 http://en.wikipedia.org/wiki/Amazon_rainforest http://dbpedia.org/resource/Amazon_rainforest
+9 10 http://en.wikipedia.org/wiki/Amazon_rainforest http://dbpedia.org/resource/Amazon_rainforest
 201
 1
-46 52 http://en.wikipedia.org/wiki/Canada http://dbpedia.org/resource/Canada
+8 8 http://en.wikipedia.org/wiki/Canada http://dbpedia.org/resource/Canada
 203
 1
-27 40 http://en.wikipedia.org/wiki/Mount_Everest http://dbpedia.org/resource/Mount_Everest
+6 7 http://en.wikipedia.org/wiki/Mount_Everest http://dbpedia.org/resource/Mount_Everest
 205
 1
-34 54 http://en.wikipedia.org/wiki/University_of_Oxford http://dbpedia.org/resource/University_of_Oxford
+7 9 http://en.wikipedia.org/wiki/University_of_Oxford http://dbpedia.org/resource/University_of_Oxford
 206
 3
-9 20 http://en.wikipedia.org/wiki/Olympic_medal http://dbpedia.org/resource/Olympic_medal
-25 39 http://en.wikipedia.org/wiki/Michael_Phelps http://dbpedia.org/resource/Michael_Phelps
-51 64 http://en.wikipedia.org/wiki/2008_Summer_Olympics http://dbpedia.org/resource/2008_Summer_Olympics
+2 3 http://en.wikipedia.org/wiki/Olympic_medal http://dbpedia.org/resource/Olympic_medal
+5 6 http://en.wikipedia.org/wiki/Michael_Phelps http://dbpedia.org/resource/Michael_Phelps
+10 11 http://en.wikipedia.org/wiki/2008_Summer_Olympics http://dbpedia.org/resource/2008_Summer_Olympics
 209
 1
-5 20 http://en.wikipedia.org/wiki/Abraham_Lincoln http://dbpedia.org/resource/Abraham_Lincoln
+1 2 http://en.wikipedia.org/wiki/Abraham_Lincoln http://dbpedia.org/resource/Abraham_Lincoln
 211
 1
-29 38 http://en.wikipedia.org/wiki/Bruce_Lee http://dbpedia.org/resource/Bruce_Lee
+5 6 http://en.wikipedia.org/wiki/Bruce_Lee http://dbpedia.org/resource/Bruce_Lee
 212
 1
-20 25 http://en.wikipedia.org/wiki/Darts http://dbpedia.org/resource/Darts
+4 4 http://en.wikipedia.org/wiki/Darts http://dbpedia.org/resource/Darts
 213
 1
-10 14 http://en.wikipedia.org/wiki/Johann_Sebastian_Bach http://dbpedia.org/resource/Johann_Sebastian_Bach
+2 2 http://en.wikipedia.org/wiki/Johann_Sebastian_Bach http://dbpedia.org/resource/Johann_Sebastian_Bach
 214
 1
-41 63 http://en.wikipedia.org/wiki/West_African_CFA_franc http://dbpedia.org/resource/West_African_CFA_franc
+8 11 http://en.wikipedia.org/wiki/West_African_CFA_franc http://dbpedia.org/resource/West_African_CFA_franc
 215
 1
-65 68 http://en.wikipedia.org/wiki/IGN http://dbpedia.org/resource/IGN
+10 10 http://en.wikipedia.org/wiki/IGN http://dbpedia.org/resource/IGN
 217
 1
-9 13 http://en.wikipedia.org/wiki/Isar http://dbpedia.org/resource/Isar
+2 2 http://en.wikipedia.org/wiki/Isar http://dbpedia.org/resource/Isar
 218
 1
-30 46 http://en.wikipedia.org/wiki/Steven_Spielberg http://dbpedia.org/resource/Steven_Spielberg
+6 7 http://en.wikipedia.org/wiki/Steven_Spielberg http://dbpedia.org/resource/Steven_Spielberg
 219
 1
-33 58 http://en.wikipedia.org/wiki/Nobel_Prize_in_Literature http://dbpedia.org/resource/Nobel_Prize_in_Literature
+7 10 http://en.wikipedia.org/wiki/Nobel_Prize_in_Literature http://dbpedia.org/resource/Nobel_Prize_in_Literature
 100
 1
-21 35 http://en.wikipedia.org/wiki/Clint_Eastwood http://dbpedia.org/resource/Clint_Eastwood
+3 4 http://en.wikipedia.org/wiki/Clint_Eastwood http://dbpedia.org/resource/Clint_Eastwood
 221
 1
-20 33 http://en.wikipedia.org/wiki/War_and_Peace http://dbpedia.org/resource/War_and_Peace
+4 6 http://en.wikipedia.org/wiki/War_and_Peace http://dbpedia.org/resource/War_and_Peace
 101
-1
-29 48 http://en.wikipedia.org/wiki/Juliana_of_the_Netherlands http://dbpedia.org/resource/Juliana_of_the_Netherlands
+2
+6 8 http://en.wikipedia.org/wiki/Juliana_of_the_Netherlands http://dbpedia.org/resource/Juliana_of_the_Netherlands
+8 8 http://en.wikipedia.org/wiki/Juliana_of_the_Netherlands http://dbpedia.org/resource/Juliana_of_the_Netherlands
 103
-1
-30 53 http://en.wikipedia.org/wiki/Spain http://dbpedia.org/resource/Spain
+2
+6 9 http://en.wikipedia.org/wiki/Prime_Minister_of_Spain http://dbpedia.org/resource/Prime_Minister_of_Spain
+9 9 http://en.wikipedia.org/wiki/Spain http://dbpedia.org/resource/Spain
 224
 1
-33 48 http://en.wikipedia.org/wiki/Atlanta_Falcons http://dbpedia.org/resource/Atlanta_Falcons
+7 8 http://en.wikipedia.org/wiki/Atlanta_Falcons http://dbpedia.org/resource/Atlanta_Falcons
 225
 1
-25 31 http://en.wikipedia.org/wiki/Germany http://dbpedia.org/resource/Germany
+5 5 http://en.wikipedia.org/wiki/Germany http://dbpedia.org/resource/Germany
 105
 1
-23 40 http://en.wikipedia.org/wiki/Bruce_Springsteen http://dbpedia.org/resource/Bruce_Springsteen
+5 6 http://en.wikipedia.org/wiki/Bruce_Springsteen http://dbpedia.org/resource/Bruce_Springsteen
 226
 1
-9 19 http://en.wikipedia.org/wiki/James_Bond http://dbpedia.org/resource/James_Bond
+2 3 http://en.wikipedia.org/wiki/James_Bond http://dbpedia.org/resource/James_Bond
 106
 1
-17 25 http://en.wikipedia.org/wiki/Akira_Kurosawa http://dbpedia.org/resource/Akira_Kurosawa
+3 3 http://en.wikipedia.org/wiki/Akira_Kurosawa http://dbpedia.org/resource/Akira_Kurosawa
 227
 1
-33 41 http://en.wikipedia.org/wiki/Baikonur_Cosmodrome http://dbpedia.org/resource/Baikonur_Cosmodrome
+5 5 http://en.wikipedia.org/wiki/Baikonur_Cosmodrome http://dbpedia.org/resource/Baikonur_Cosmodrome
 107
 2
-33 40 http://en.wikipedia.org/wiki/Brewery http://dbpedia.org/resource/Brewery
-55 70 http://en.wikipedia.org/wiki/Pilsner_Urquell http://dbpedia.org/resource/Pilsner_Urquell
+7 7 http://en.wikipedia.org/wiki/Brewery http://dbpedia.org/resource/Brewery
+10 11 http://en.wikipedia.org/wiki/Pilsner_Urquell http://dbpedia.org/resource/Pilsner_Urquell
 228
 1
-21 33 http://en.wikipedia.org/wiki/Pope_John_Paul_II http://dbpedia.org/resource/Pope_John_Paul_II
+3 5 http://en.wikipedia.org/wiki/Pope_John_Paul_II http://dbpedia.org/resource/Pope_John_Paul_II
 108
-2
-14 20 http://en.wikipedia.org/wiki/Lyrics http://dbpedia.org/resource/Lyrics
-29 51 http://en.wikipedia.org/wiki/National_anthem http://dbpedia.org/resource/National_anthem
+3
+3 3 http://en.wikipedia.org/wiki/Lyrics http://dbpedia.org/resource/Lyrics
+6 6 http://en.wikipedia.org/wiki/Poland http://dbpedia.org/resource/Poland
+6 8 http://en.wikipedia.org/wiki/National_anthem http://dbpedia.org/resource/National_anthem
 229
 1
-12 17 http://en.wikipedia.org/wiki/Netherlands http://dbpedia.org/resource/Netherlands
+3 3 http://en.wikipedia.org/wiki/Netherlands http://dbpedia.org/resource/Netherlands
 109
-1
-23 34 http://en.wikipedia.org/wiki/Ramones http://dbpedia.org/resource/Ramones
+2
+5 6 http://en.wikipedia.org/wiki/Ramones http://dbpedia.org/resource/Ramones
+6 6 http://en.wikipedia.org/wiki/Ramones http://dbpedia.org/resource/Ramones

@@ -28,7 +28,7 @@ public class Pipeline {
 	public static final double matchThreshold = 0.5;
 	public static final int edThreshold = 2;
 	
-	private XMLParser xmlParser;
+	public XMLParser xmlParser;
 	
 	public static StanfordCoreNLP pipeline;
 	

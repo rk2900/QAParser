@@ -8,12 +8,13 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
 
+import paser.QuestionFrame;
 import finder.Pipeline;
 import basic.FileOps;
 
 public class Main {
 
-	public static void entityExtraction(String inPath,String outPath){
+	public static void entityExtraction(String inPath,String outPath, Pipeline pipeline){
 		LinkedList<String> wikiLines = FileOps.LoadFilebyLine(inPath);
 		HashMap<String, ArrayList<Entity>> map = new HashMap<String, ArrayList<Entity>>();
 		for (String wikiLine : wikiLines) {
@@ -32,7 +33,53 @@ public class Main {
 			}
 			
 			//需要将char index 转化为 word index
-			map.get(wikiText[0]).add(new Entity(wikiText[4],wikiText[3],Integer.parseInt(wikiText[1]),Integer.parseInt(wikiText[2])));
+			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(Integer.parseInt(wikiText[0]));
+			content = qf.question;
+			LinkedList<String> wordList = qf.getWordList();
+			String curEntity = content.substring(Integer.parseInt(wikiText[1]),Integer.parseInt(wikiText[2]));
+			
+//			curEntity = curEntity.replace(" ", "");
+//			for(int i=0; i<wordList.size();++i){
+//				if(curEntity.startsWith(wordList.get(i))){
+//					StringBuilder sb = new StringBuilder();
+//					sb.append(wordList.get(i));
+//					int k;
+//					for(k=i+1; k<wordList.size();++k){
+//						if(curEntity.startsWith(sb.toString()+wordList.get(k))){
+//							sb.append(wordList.get(k));
+//						}else{
+//							--k;
+//							break;
+//						}
+//					}
+//					if(sb.toString().contains(curEntity)){
+//						map.get(wikiText[0]).add(new Entity(wikiText[4],wikiText[3],i,k));
+//						break;
+//					}
+//				}
+//			}
+			
+			String [] wList = curEntity.split(" ");
+			
+			int i;
+			for(i=0; i<wordList.size(); ++i){
+				boolean mark = true;
+				if(wordList.get(i).equals(wList[0])){
+					for(int k=1;k<wList.length; ++k){
+						if(!wordList.get(i+k).equals(wList[k])){
+							mark = false;
+							break;
+						}
+					}
+					if(mark){
+						map.get(wikiText[0]).add(new Entity(wikiText[4],wikiText[3],i,i+wList.length-1));
+						break;
+					}
+				}
+			}
+//			if(i == wordList.size()){
+//				System.out.println(content);
+//			}
 		}
 		System.out.println("Load finished");
 		
@@ -40,12 +87,17 @@ public class Main {
 			BufferedWriter fout = new BufferedWriter(new FileWriter(outPath));
 			int count = 0;
 			for (String question : map.keySet()) {
+				
 				ArrayList<Entity> questionEntityList = map.get(question);
 				Collections.sort(questionEntityList);
 //				System.out.println("sort finished");
 				LinkedList<Entity> result = new LinkedList<Entity>();
 				int index = 1;
 //				System.out.println(questionEntityList.size());
+				if(questionEntityList.size() == 0){
+					System.err.println(question);
+					continue;
+				}
 				Entity beforeEntity = questionEntityList.get(0);
 				
 				while(index <= questionEntityList.size()){
@@ -72,6 +124,7 @@ public class Main {
 					++index;
 				}
 //				System.out.println("OK");
+				
 				StringBuilder sb = new StringBuilder();
 				sb.append(question);
 				sb.append("\n");
@@ -99,13 +152,47 @@ public class Main {
 		}
 	}
 	
+	public static void setEntity(Pipeline pipeline){
+		String inPath = "./data/zch/newEntity.txt";
+		LinkedList<String> lines = FileOps.LoadFilebyLine(inPath);
+		
+		HashMap<Integer, LinkedList<Entity>> map = new HashMap<Integer, LinkedList<Entity>>();
+		int index = 0;
+		while(index < lines.size()){
+			int id = Integer.parseInt(lines.get(index++));
+			int size = Integer.parseInt(lines.get(index++));
+			map.put(id, new LinkedList<Entity>());
+			for(int k=0; k<size; ++k){
+				String [] texts = lines.get(index++).split(" ");
+				map.get(id).add(new Entity(texts[3], texts[2], Integer.parseInt(texts[0]), Integer.parseInt(texts[1])));
+			}
+		}
+		
+		for(int i=1; i<=300; ++i){
+			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
+			if(map.containsKey(i)){
+				qf.setEntityList(map.get(i));
+			}else{
+				qf.setEntityList(new LinkedList<Entity>());
+			}
+		}
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String wikiPath = "./data/q-e/all-mark-wiki-entity.txt";
 		String outPath = "./data/zch/newEntity.txt";
+		
+		 
 		Pipeline pipeline = new Pipeline();
-//		QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
-		entityExtraction(wikiPath,outPath);
+		setEntity(pipeline);
+		
+//		QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(id);
+//		for(int i=1; i<=300; ++i){
+//			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
+//			
+//		}
+		entityExtraction(wikiPath,outPath,pipeline);
 //		LinkedList<String> wikiLines = FileOps.LoadFilebyLine(wikiPath);
 //		
 //		for (String wikiLine : wikiLines) {
@@ -119,6 +206,14 @@ public class Main {
 //				continue;
 //			}
 //		}
+		
+//		String test;
+//		Pipeline pipeline = new Pipeline();
+//		QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(255);
+//		test = qf.question;
+//		LinkedList<String> wordList = qf.getWordList();
+//		System.out.println(test);
+//		System.out.println(wordList);
 	}
 
 }
