@@ -36,6 +36,20 @@ public class QuestionFrame extends Question {
 		return !focus.isEmpty();
 	}
 	
+	public boolean isIntegralByWord(int loc) {
+		for (Entity e:entityList) {
+			if(loc>e.getStart()&&loc<=e.getEnd()) return true;
+		}
+		return false;
+	}
+	public boolean isIntegralByChar(int loc) {
+		int tmp=0;
+		for (int i=0;i<wordList.size();i++) {
+			if(tmp==loc) return isIntegralByWord(i);
+			tmp+=wordList.get(i).length();
+		}
+		return false;
+	}
 	public boolean setWordList(LinkedList<String> list) {
 		if(list == null) {
 			System.err.println("List of words is NULL!");

@@ -8,6 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import paser.QuestionFrame;
 import edu.stanford.nlp.trees.Tree;
 
 public class Main {
@@ -21,17 +22,17 @@ public class Main {
 			String str=br.readLine();
 			if(str==null) break;
 			str=str.split("\t")[1];
-			bw.write(get(str)+"\r\n");
+		//	bw.write(get(str)+"\r\n");
 			
 		}
 		bw.close();
 	}
-	public static String get(String str) {
+	public static String get(QuestionFrame qf, String str) {
 		String ret=str+"\r\n";
 		Tree t=stringParser.parse(str);
 		ret+=t.pennString();
 		ConstraintSet c=new ConstraintSet();
-		constraintExtractor.extract(t, t, c.ans, c);
+		constraintExtractor.extract(qf, t, t, c.ans, c);
 		ret+=c.toString()+"\r\n";
 		return ret;
 	}
