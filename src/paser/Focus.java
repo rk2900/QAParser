@@ -17,8 +17,8 @@ public class Focus {
 	public void setFocus(LinkedList<Integer> focusWordList) {
 		this.leftIndex = focusWordList.get(0);
 		this.rightIndex = focusWordList.get(focusWordList.size()-1);
-		System.out.println(leftIndex);
-		System.out.println(rightIndex);
+//		System.out.println(leftIndex);
+//		System.out.println(rightIndex);
 	}
 	
 	public String getFocusContent(LinkedList<String> wordList) {
@@ -27,7 +27,8 @@ public class Focus {
 			return "";
 		}
 		for(int i=leftIndex; i<=rightIndex; i++) {
-			sb.append(sb.length()>0?" ":"" + wordList.get(i));
+			String w = wordList.get(i);
+			sb.append(sb.length()>0?" ":"").append(w);
 		}
 		
 		return sb.toString();

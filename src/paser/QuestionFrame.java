@@ -23,14 +23,13 @@ public class QuestionFrame extends Question {
 		
 		super(id, onlydbo, aggregation, hybrid, answerType, keywords, question,
 				new ArrayList<>(), new String());
-//		System.out.println("=======================================================");
 		wordList = new LinkedList<>();
 		posList = new LinkedList<>();
 		entityList = new LinkedList<>();
 		PreProcess.processWordAndPOS(this);
 		questionClassifier = new QuestionClassifier();
 		questionClassifier.classify(wordList, posList);
-//		focus = FocusExtraction.extract(this);
+		focus = FocusExtraction.extract(this);
 	}
 	
 	public boolean hasFocus() {
@@ -93,7 +92,8 @@ public class QuestionFrame extends Question {
 		System.out.println("ID: "+"\t"+id);
 		System.out.println("Category: "+"\t"+this.questionClassifier.category);
 		System.out.println("Content: "+"\t"+this.question);
-//		System.out.println("Focus: "+"\t"+this.focus.leftIndex+"\t"+this.focus.rightIndex);
+		System.out.println("Focus Index:"+"\t"+this.focus.leftIndex+"\t"+this.focus.rightIndex);
+		System.out.println("Focus Content: "+"\t"+this.focus.getFocusContent(wordList));
 		System.out.println("Word List: "+"\t"+this.wordList);
 		System.out.println("POS List: "+"\t"+this.posList);
 		System.out.println("Entity List: "+"\t"+this.entityList.size());
