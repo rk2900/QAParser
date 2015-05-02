@@ -9,6 +9,10 @@ import java.util.HashMap;
 import java.util.LinkedList;
 
 import paser.QuestionFrame;
+import syntacticParser.ConstraintSet;
+import syntacticParser.constraintExtractor;
+import syntacticParser.stringParser;
+import edu.stanford.nlp.trees.Tree;
 import finder.Pipeline;
 import basic.FileOps;
 
@@ -166,22 +170,35 @@ public class Main {
 		
 		setEntity(pipeline);
 		
-		int [] intersection = {51,174,296,103,108};
-		for(int i=0; i<intersection.length; ++i){
-			System.out.println("*************");
-			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(intersection[i]);
+//		int [] intersection = {51,174,296,103,108};
+//		for(int i=0; i<intersection.length; ++i){
+//			System.out.println("*************");
+//			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(intersection[i]);
+//			
+//			System.out.println(qf.question);
+//			System.out.println(qf.wordList);
+//			
+//			for(Entity e:qf.getEntityList()){
+//				for(int k=e.getStart(); k<=e.getEnd(); ++k){
+//					System.out.print(qf.wordList.get(k)+" ");
+//				}
+//				System.out.println();
+//				System.out.println(e.start+" "+e.end+" "+e.uri);
+//			}
+//		}
+		
+		for(int id=1; id<=300; ++id){
+			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(id);
+			LinkedList<Entity> entityList = qf.getEntityList();
 			
-			System.out.println(qf.question);
-			System.out.println(qf.wordList);
-			
-			for(Entity e:qf.getEntityList()){
-				for(int k=e.getStart(); k<=e.getEnd(); ++k){
-					System.out.print(qf.wordList.get(k)+" ");
-				}
-				System.out.println();
-				System.out.println(e.start+" "+e.end+" "+e.uri);
+			Tree tree = stringParser.parse(qf.question);
+			ConstraintSet constraintSet=new ConstraintSet();
+			constraintExtractor.extract(tree, tree, constraintSet.getAns(), constraintSet);
+			if(entityList.size() > 0){
+				
 			}
 		}
+		
 	}
 
 }
