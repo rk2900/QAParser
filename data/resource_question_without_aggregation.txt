@@ -1,0 +1,198 @@
+1	Give me all cosmonauts.
+10	In which country does the Ganges start?
+102	Who was John F. Kennedy's vice president?
+103	Who is the mayor of Berlin?
+106	Give me all professional skateboarders from Sweden.
+108	To which countries does the Himalayan mountain system extend?
+109	Give me a list of all bandleaders that play trumpet.
+200	Who produces Orangina?
+112	Give me all world heritage sites designated within the past two years.
+114	Give me all members of Prodigy.
+117	Give me all cars that are produced in Germany.
+118	What were the main discoveries of the Mars rover Curiosity?
+119	Give me all people that were born in Vienna and died in Berlin.
+120	How tall is Michael Jordan?
+121	What is the capital of Canada?
+122	Who is the governor of Wyoming?
+124	Who was the father of Queen Elizabeth II?
+127	Sean Parnell is the governor of which U.S. state?
+128	Give me all movies directed by Francis Ford Coppola.
+129	Give me all actors starring in movies directed by William Shatner.
+130	What is the birth name of Angela Merkel?
+131	Give me all Methodist politicians.
+133	Give me all Australian nonprofit organizations.
+134	In which military conflicts did Lawrence of Arabia participate?
+135	Who developed Minecraft?
+136	What is the melting point of copper?
+137	Give me all sister cities of Brno.
+139	Give me all companies in Munich.
+14	How tall is Claudia Schiffer?
+140	List all games by GMT.
+141	Who founded Intel?
+142	Who is the husband of Amanda Palmer?
+143	Give me all breeds of the German Shepherd dog.
+144	Which cities does the Weser flow through?
+145	Which countries are connected by the Rhine?
+146	Which professional surfers were born in Australia?
+147	What is the average temperature on Hawaii?
+148	In which UK city are the headquarters of the MI6?
+149	Which other weapons did the designer of the Uzi develop?
+15	Who created Goofy?
+151	Give me all islands that belong to Japan.
+152	Who invented the zipper?
+153	What is the ruling party in Lisbon?
+154	What are the nicknames of San Francisco?
+155	Which Greek goddesses dwelt on Mount Olympus?
+157	Give me all Apollo 14 astronauts.
+158	What is the time zone of Salt Lake City?
+159	Which U.S. states are in the same time zone as Utah?
+16	Give me the capitals of all countries in Africa.
+160	Give me a list of all lakes in Denmark.
+163	Give me all Danish movies.
+164	Give me all launch pads operated by NASA.
+165	Which instruments does Cat Stevens play?
+166	Which ships were called after Benjamin Franklin?
+167	Who are the parents of the wife of Juan Carlos I?
+172	In which U.S. state is Fort Knox located?
+175	Which Chess players died in the same place they were born in?
+176	List the children of Margaret Thatcher.
+177	Who was called Frank The Tank?
+18	Which museum exhibits The Scream by Munch?
+181	Which books by Kerouac were published by Viking Press?
+182	Give me a list of all American inventions.
+183	How high is the Mount Everest?
+184	Who created the comic Captain America?
+187	Who composed the music for Harold and Maude?
+188	Which films starring Clint Eastwood did he direct himself?
+189	In which city was the former Dutch queen Juliana buried?
+190	Where is the residence of the prime minister of Spain?
+191	Which U.S. state has the abbreviation MN?
+192	Show me all songs from Bruce Springsteen released between 1980 and 1990.
+193	Which movies did Kurosawa direct?
+194	What is the founding year of the brewery that produces Pilsner Urquell?
+195	Who wrote the lyrics for the Polish national anthem?
+196	Give me all B-sides of the Ramones.
+197	Who painted The Storm on the Sea of Galilee?
+198	Which country does the creator of Miffy come from?
+199	For which label did Elvis record his first album?
+2	Give me the birthdays of all actors of the television show Charmed.
+21	Which states border Illinois?
+22	In which country is the Limerick Lake?
+23	Which television shows were created by John Cleese?
+25	In which films directed by Garry Marshall was Julia Roberts starring?
+26	Which bridges are of the same type as the Manhattan Bridge?
+28	Give me all communist countries.
+29	Which awards did Douglas Hofstadter win?
+3	Who is the daughter of Robert Kennedy married to?
+31	What is the currency of the Czech Republic?
+32	Which countries adopted the Euro?
+33	What is the area code of Berlin?
+35	Who is the owner of Rolls-Royce?
+36	Through which countries does the Yenisei river flow?
+38	Which monarchs were married to a German?
+4	Which river does the Brooklyn Bridge cross?
+41	Give me all soccer clubs in Spain.
+42	What is the official language of Suriname?
+43	Who is the mayor of Tel Aviv?
+44	Who designed the Brooklyn Bridge?
+45	Which telecommunications organizations are located in Belgium?
+48	Who is the editor of Forbes?
+49	Give me all companies in the advertising industry.
+50	What did Bruce Carver die from?
+52	Which presidents were born in 1945?
+53	Give me all federal chancellors of Germany.
+54	Who was the wife of U.S. president Lincoln?
+55	Who developed the video game World of Warcraft?
+56	What is the official website of Tom Cruise?
+57	List all episodes of the first season of the HBO television series The Sopranos.
+59	Give me all people with first name Jimmy.
+6	In which city did John F. Kennedy die?
+62	Who created Wikipedia?
+63	Give me all actors starring in Last Action Hero.
+64	Which software has been developed by organizations founded in California?
+65	Which companies work in the aerospace industry as well as in medicine?
+68	Which actors were born in Germany?
+70	Give me all films produced by Hal Roach.
+71	Give me all video games published by Mean Hamster Software.
+72	Which languages are spoken in Estonia?
+74	Which capitals in Europe were host cities of the summer olympic games?
+75	Who was the 16th president of the United States?
+77	Which music albums contain the song Last Christmas?
+78	Give me all books written by Danielle Steel.
+79	Which airports are located in California, USA?
+8	Which states of Germany are governed by the Social Democratic Party?
+80	Give me all Canadian Grunge record labels.
+82	In which programming language is GIMP written?
+83	Who produced films starring Natalie Portman?
+84	Give me all movies with Tom Cruise.
+85	In which films did Julia Roberts as well as Richard Gere play?
+86	Give me all female given names.
+87	Who wrote the book The Pillars of the Earth?
+89	Give me all soccer clubs in the Premier League.
+9	In which U.S. state is Mount McKinley located?
+91	Which organizations were founded in 1930?
+94	Which budget did the first movie of Zdenek Sverak have?
+99	Give me all animal species that live in the Amazon rainforest.
+249	In which studio did the Beatles record their first album?
+234	Who was the first to climb Mount Everest?
+242	What is the official color of the University of Oxford?
+235	To which artistic movement did the painter of The Three Dancers belong?
+211	Give me all animals that are extinct.
+244	How deep is Lake Placid?
+240	Give me the grandchildren of Bruce Lee.
+221	Where was Bach born?
+232	In which countries can you pay using the West African CFA franc?
+225	What are the top-10 action role-playing video games according to IGN?
+241	Give me all writers that won the Nobel Prize in literature.
+201	Give me all taikonauts.
+247	Give me all actors called Baldwin.
+208	Which rivers flow into a German lake?
+246	Which rockets were launched from Baikonur?
+236	Which pope succeeded John Paul II?
+205	Give me all Dutch parties.
+243	Give me all Swedish oceanographers.
+226	Give me all actors who were born in Berlin.
+237	What was the last movie with Alec Guinness?
+248	What does IYCM stand for?
+233	Give me the capitals of all countries that the Himalayas run through.
+239	Which actor played Chewbacca?
+213	Which ingredients do I need for carrot cake?
+215	Who has Tom Cruise been married to?
+229	Give me all Australian metalcore bands.
+227	Give me all actors who were born in Paris after 1950.
+252	Give all swimmers that were born in Moscow.
+253	Who was called Rodzilla?
+254	Show me the book that Muhammad Ali wrote.
+258	Give me all the TV shows with Neil Patrick Harris.
+259	Who wrote The Hunger Games?
+260	Show a list of soccer clubs that play in the Bundesliga.
+261	What country is Mount Everest in?
+262	Who is the founder of Penguin Books?
+263	Which programming languages influenced Javascript?
+265	List all the musicals with music by Elton John.
+266	Show me all the breweries in Australia.
+270	Who played Agent Smith in Matrix?
+273	Which bridges cross the Seine?
+274	Who is the mayor of the capital of French Polynesia?
+276	What is the location of the Houses of Parliament?
+277	Show me all English Gothic buildings in Kent.
+278	Who was the pope that founded the Vatican Television?
+279	What airlines are part of the SkyTeam alliance?
+280	What is the total population of Melbourne, Florida?
+281	Which airports does Air China serve?
+282	In which year was Rachel Stevens born?
+283	Where was JFK assassinated?
+285	Which scientist is known for the Manhattan Project and the Nobel Peace Prize?
+287	Which beer originated in Ireland?
+288	What are the specialities of the UNC Health Care?
+289	Who is the owner of Facebook?
+290	From which region is the Melon de Bourgogne?
+291	Who was influenced by Socrates?
+292	Who was president of Pakistan in 1978?
+293	Give me English actors starring in Lovesick.
+294	Give me all types of eating disorders.
+295	Who was married to president Chirac?
+297	Where in France is sparkling wine produced?
+298	Where did Hillel Slovak die?
+299	What is the timezone in San Pedro de Atacama?
+300	In which city does the Chile Route 68 end?

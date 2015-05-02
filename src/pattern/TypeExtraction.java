@@ -1,7 +1,9 @@
 package pattern;
 
 import java.util.HashSet;
+import java.util.Properties;
 
+import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import paser.Question;
 import paser.XMLParser;
 
@@ -9,6 +11,8 @@ public class TypeExtraction {
 
 	protected String trainFile = "./data/qald-5_train.xml";
 	public XMLParser xmlParser;
+	
+	
 	
 	public TypeExtraction() {
 		initializeXMLParser();

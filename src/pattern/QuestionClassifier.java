@@ -18,7 +18,7 @@ public class QuestionClassifier {
 	}
 	public HashMap<Category, Boolean> cateMap;
 	public HashMap<Label, Boolean> labelMap;
-	public String category;
+	public Category category;
 	
 	public QuestionClassifier() {
 		cateMap = new HashMap<>();
@@ -26,12 +26,17 @@ public class QuestionClassifier {
 	}
 	
 	/**
-	 * Get question target by classifier
+	 * Get question category by classifier
 	 * @param qs
 	 */
-	public void classify(QuestionSingle qs) {
+	public Category classify(QuestionSingle qs) {
 		LinkedList<String> wordList = qs.qWordList;
 		LinkedList<String> POSList = qs.qPOSList;
+		
+		if(POSList == null || wordList == null) {
+			System.err.println("POS List or Word List is null!");
+			return null;
+		}
 		
 		// category
 		cateMap.put(Category.DATE, QuestionClassifier.judgeDate(wordList));
@@ -42,13 +47,14 @@ public class QuestionClassifier {
 		
 		for (Category cat : cateMap.keySet()) {
 			if(cateMap.get(cat)) {
-				category = cat.toString();
+				category = cat;
 				break;
 			}
 		}
 		
-		// label
-		labelMap.put(Label.COMPARISON, QuestionClassifier.judgeComparison(wordList, POSList));
+		return category;
+//		// label
+//		labelMap.put(Label.COMPARISON, QuestionClassifier.judgeComparison(wordList, POSList));
 	}
 	
 	public HashMap<Category, Boolean> getCategoryResult() {
@@ -205,13 +211,15 @@ public class QuestionClassifier {
 		Pipeline pipeline = new Pipeline();
 		XMLParser parser = pipeline.getXMLParser();
 		
-//		QuestionSingle qs = parser.getQuestionWithPseudoId(72).toQuestionSingle();
-//		pipeline.getPOSTag(qs);
-//		QuestionClassifier qc = new QuestionClassifier();
-//		qc.classify(qs);
-//		System.out.println(qs.question);
-//		System.out.println(qs.qPOSList);
-//		System.out.println(qc.category);
+		LinkedList<QuestionSingle> resourceList = new LinkedList<>();
+		LinkedList<QuestionSingle> dateList = new LinkedList<>();
+		LinkedList<QuestionSingle> numberList = new LinkedList<>();
+		LinkedList<QuestionSingle> booleanList = new LinkedList<>();
+		HashMap<Category, LinkedList<QuestionSingle>> categoryMap = new HashMap<>();
+		categoryMap.put(Category.RESOURCE, resourceList);
+		categoryMap.put(Category.DATE, dateList);
+		categoryMap.put(Category.NUMBER, numberList);
+		categoryMap.put(Category.BOOLEAN, booleanList);
 		
 		int count = 0;
 		for(int i=1; i<=300; i++) {
@@ -221,16 +229,12 @@ public class QuestionClassifier {
 			QuestionClassifier qc = new QuestionClassifier();
 			qc.classify(qs);
 			String trueCate = qs.answerType;
-			String predictCate = qc.category;
-			if(trueCate.equalsIgnoreCase(predictCate)) {
-				count++;
-			} else if (trueCate.equalsIgnoreCase("list") && predictCate.equalsIgnoreCase("resource")) {
-				count++;
-			} else {
-				System.out.println(qs.answerType+"\t\t"+qc.category+"\t"+qs.question);
-			}
+			String predictCate = qc.category.toString();
+			
+			if(QuestionClassifier.judgeComparison(qs.qWordList, qs.qPOSList));
+			else if(qc.category == Category.RESOURCE)
+				System.out.println(qs.id+"\t"+qs.question);
 		}
-		System.out.println(count);
 		
 	}
 

@@ -6775,7 +6775,7 @@ WHERE {
 <answers><answer>http://dbpedia.org/resource/The_Soul_of_a_Butterfly</answer></answers></question>
 
 <question aggregation="false" hybrid="false" answertype="resource" id="255" onlydbo="true">
-<string lang="en"><![CDATA[How many museums does Paris have?]]></string>
+<string lang="en"><![CDATA[Which museums does Paris have?]]></string>
 <string lang="de"><![CDATA[Wieviele Museen hat Paris?]]></string>
 <string lang="es"><![CDATA[¿Cuantos museos hay en Paris?]]></string>
 <string lang="it"><![CDATA[Quanti musei ha Parigi?]]></string>

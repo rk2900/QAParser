@@ -1,0 +1,950 @@
+Give me all cosmonauts.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NNS cosmonauts)))
+    (. .)))
+focus: all cosmonauts
+
+List of cosmonauts 0.7571222843286786 [(12,22)]
+Astronaut 0.7479571593520724 [(12,22)]
+Give me all professional skateboarders from Sweden.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (JJ professional) (NNS skateboarders))
+        (PP (IN from)
+          (NP (NNP Sweden)))))
+    (. .)))
+focus: all professional skateboarders
+""	"Sweden"
+
+Sweden 0.6778174852257474 [(44,50)]
+Skateboarding 0.49030119533884653 [(25,38)]
+Professional sports 0.30586278184319193 [(12,24)]
+Professional 0.2582821366819016 [(12,24)]
+Skateboard 0.14020942319100643 [(25,38)]
+Give me all world heritage sites designated within the past two years.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NN world) (NN heritage) (NNS sites))
+        (VP (VBN designated)
+          (PP (IN within)
+            (NP (DT the) (JJ past) (CD two) (NNS years))))))
+    (. .)))
+focus: all world heritage sites
+"designated within"	"the past two years"
+
+World Heritage Site 0.5231473691840023 [(12,32)(12,26)]
+Cultural heritage 0.41624289561104855 [(18,26)]
+Kinship 0.38086278184319194 [(18,26)]
+Natural heritage 0.3417478023326394 [(18,26)]
+Industrial heritage 0.2445350029362956 [(18,26)]
+Heritage tourism 0.23983164503816426 [(18,26)]
+Tradition 0.23939174299865135 [(18,26)]
+Give me all members of Prodigy.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS members))
+        (PP (IN of)
+          (NP (NNP Prodigy)))))
+    (. .)))
+focus: all members
+"all members"	"Prodigy"
+
+Prodigy (comics) 0.7910250708928384 [(23,30)]
+Prodigy (David Alleyne) 0.7550704611046427 [(23,30)]
+Prodigy (online service) 0.6790217041743213 [(23,30)]
+Prodigy (rapper) 0.6280697503725887 [(23,30)]
+The Prodigy 0.5740300566600093 [(23,30)]
+Prodigy (Ritchie Gilmore) 0.2766528246994734 [(23,30)]
+Give me all cars that are produced in Germany.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS cars))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP are)
+              (VP (VBN produced)
+                (PP (IN in)
+                  (NP (NNP Germany)))))))))
+    (. .)))
+focus: all cars
+"produced in"	"Germany"
+
+Germany 0.8512428233933436 [(38,45)]
+Germany national football team 0.7758903187939425 [(38,45)]
+Give me all people that were born in Vienna and died in Berlin.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS people))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD were)
+              (VP
+                (VP (VBN born)
+                  (PP (IN in)
+                    (NP (NNP Vienna))))
+                (CC and)
+                (VP (VBN died)
+                  (PP (IN in)
+                    (NP (NNP Berlin))))))))))
+    (. .)))
+focus: all people
+"born in"	"Vienna"
+"died in"	"Berlin"
+
+Vienna 0.925114728936415 [(37,43)]
+Humboldt University of Berlin 0.7431715355393032 [(56,62)]
+Berlin 0.721167203375128 [(56,62)]
+Give me all movies directed by Francis Ford Coppola.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS movies))
+        (VP (VBN directed)
+          (PP (IN by)
+            (NP (NNP Francis) (NNP Ford) (NNP Coppola))))))
+    (. .)))
+focus: all movies
+"directed by"	"Francis Ford Coppola"
+
+Francis Ford Coppola 0.867326018398089 [(31,51)(44,51)]
+Film director 0.2621390507678063 [(19,27)]
+Ford Motor Company 0.2562951010769831 [(39,43)]
+Film 0.24220812319667168 [(12,18)]
+Francis Ford (actor) 0.22758674811420693 [(31,43)]
+Give me all actors starring in movies directed by William Shatner.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS actors))
+        (VP (VBG starring)
+          (PP (IN in)
+            (NP
+              (NP (NNS movies))
+              (VP (VBN directed)
+                (PP (IN by)
+                  (NP (NNP William) (NNP Shatner)))))))))
+    (. .)))
+focus: all actors
+"starring in"	"movies directed by William Shatner"
+"directed by"	"William Shatner"
+
+William Shatner 0.8512378993255071 [(50,65)]
+Film director 0.8449322992372567 [(38,46)]
+Television director 0.7252991072072715 [(38,46)]
+Film 0.5800135324417093 [(31,37)]
+Theatre director 0.423679917161855 [(38,46)]
+Give me all Methodist politicians.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NNP Methodist) (NNS politicians)))
+    (. .)))
+focus: all Methodist politicians
+
+Methodist Church of Great Britain 0.7915914499550312 [(12,21)]
+Methodism 0.7618439119493805 [(12,21)]
+Give me all Australian nonprofit organizations.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Australian) (JJ nonprofit) (NNS organizations)))
+    (. .)))
+focus: all Australian nonprofit organizations
+
+Australians 0.736072088343285 [(12,22)]
+Nonprofit organization 0.3297753154019169 [(23,46)(23,32)]
+Australia 0.3022906009229902 [(12,22)]
+Give me all sister cities of Brno.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (JJ sister) (NNS cities))
+        (PP (IN of)
+          (NP (NNP Brno)))))
+    (. .)))
+focus: all sister cities
+"all sister cities"	"Brno"
+
+Twin towns and sister cities 0.48706612314706915 [(12,25)]
+Brno 0.41430691474075354 [(29,33)]
+City 0.21528762082645994 [(19,25)]
+Give me all companies in Munich.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS companies))
+        (PP (IN in)
+          (NP (NNP Munich)))))
+    (. .)))
+focus: all companies
+""	"Munich"
+
+Munich 0.9115720361738363 [(25,31)]
+Ludwig Maximilian University of Munich 0.3531986228603201 [(25,31)]
+Munich (film) 0.15726615646258502 [(25,31)]
+Give me all breeds of the German Shepherd dog.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NN breeds))
+        (PP (IN of)
+          (NP (DT the) (JJ German) (NNP Shepherd) (NN dog)))))
+    (. .)))
+focus: all breeds
+"all breeds"	"the German Shepherd dog"
+
+Dog 0.6525096249659141 [(42,45)]
+German Shepherd Dog 0.6095287715994392 [(26,45)(26,41)]
+Germany 0.3497865335633601 [(26,32)]
+Breed 0.349166930148868 [(12,18)]
+German language 0.31020675482543386 [(26,32)]
+List of horse breeds 0.2402820166127917 [(12,18)]
+Germans 0.14379058441558437 [(26,32)]
+Dog breed 0.14257699118765216 [(12,18)]
+Give me all islands that belong to Japan.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS islands))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP belong)
+              (PP (TO to)
+                (NP (NNP Japan))))))))
+    (. .)))
+focus: all islands
+"belong to"	"Japan"
+
+Japan 0.6053220840269846 [(35,40)]
+Give me all Apollo 14 astronauts.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NNP Apollo) (CD 14) (NNS astronauts)))
+    (. .)))
+focus: all Apollo 14 astronauts
+
+Apollo 14 0.9365255862070494 [(12,21)]
+Apollo program 0.8347409773435113 [(12,18)]
+Astronaut 0.7695354738404313 [(22,32)]
+Apollo 0.49127693101947545 [(12,18)]
+List of Apollo asteroids 0.2577377140173348 [(12,18)]
+Give me the capitals of all countries in Africa.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NN capitals))
+        (PP (IN of)
+          (NP
+            (NP (DT all) (NNS countries))
+            (PP (IN in)
+              (NP (NNP Africa)))))))
+    (. .)))
+focus: the capitals
+"the capitals"	"all countries in Africa"
+""	"Africa"
+
+Capital (architecture) 0.7478058342663644 [(12,20)]
+Africa 0.3361865810621339 [(41,47)]
+Capital city 0.19872406734546227 [(12,20)]
+Letter case 0.18271993585363183 [(12,20)]
+Africa (Roman province) 0.15973517319634653 [(41,47)]
+Give me all Danish movies.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Danish) (NNS movies)))
+    (. .)))
+focus: all Danish movies
+
+Danish language 0.7359763865818081 [(12,18)]
+Denmark 0.7280498756120899 [(12,18)]
+Danes 0.6010630488559834 [(12,18)]
+Cinema of Denmark 0.47403005666000936 [(12,18)]
+Film 0.18394805295838 [(19,25)]
+Give me all launch pads operated by NASA.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NN launch) (NNS pads))
+        (VP (VBN operated)
+          (PP (IN by)
+            (NP (NNP NASA))))))
+    (. .)))
+focus: all launch pads
+"operated by"	"NASA"
+
+NASA 0.688065857678094 [(36,40)]
+Launch pad 0.1806475807068778 [(19,23)]
+Ship naming and launching 0.149166930148868 [(12,18)]
+Paw 0.14616436955396814 [(19,23)]
+Pads 0.14616436955396814 [(19,23)]
+Give me all cities in New Jersey with more than 100000 inhabitants.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS cities))
+        (PP (IN in)
+          (NP
+            (NP (NNP New) (NNP Jersey))
+            (PP (IN with)
+              (NP
+                (QP (JJR more) (IN than) (CD 100000))
+                (NNS inhabitants)))))))
+    (. .)))
+focus: all cities
+""	"New Jersey with more than 100000 inhabitants"
+""	"more than 100000 inhabitants"
+
+New Jersey 0.4449869174022738 [(22,32)]
+Jersey 0.3085299622771315 [(26,32)]
+City 0.23681258708826833 [(12,18)]
+Give me all books by William Goldman with more than 300 pages.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NNS books))
+      (PP (IN by)
+        (NP
+          (NP (NNP William) (NNP Goldman))
+          (PP (IN with)
+            (NP
+              (QP (JJR more) (IN than) (CD 300))
+              (NNS pages))))))
+    (. .)))
+focus: all books
+""	"more than 300 pages"
+
+William Goldman 0.538422651997833 [(21,36)]
+Give me all B-sides of the Ramones.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNP B-sides))
+        (PP (IN of)
+          (NP (DT the) (NNPS Ramones)))))
+    (. .)))
+focus: all B-sides
+"all B-sides"	"the Ramones"
+
+Ramones 0.9201147289364149 [(23,34)(27,34)]
+Ramones (album) 0.9106684791513914 [(27,34)]
+A-side and B-side 0.808537506361887 [(12,19)]
+Ramones (Screeching Weasel album) 0.26572952034123126 [(27,34)]
+Give me the birthdays of all actors of the television show Charmed.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NNS birthdays))
+        (PP (IN of)
+          (NP
+            (NP (DT all) (NNS actors))
+            (PP (IN of)
+              (NP (DT the) (NN television) (NN show) (NN Charmed)))))))
+    (. .)))
+focus: the birthdays
+"the birthdays"	"all actors of the television show Charmed"
+"all actors"	"the television show Charmed"
+
+Charmed 0.9007096517335251 [(59,66)]
+Television 0.8084243627293202 [(43,53)]
+Television program 0.7436505279903252 [(43,58)]
+Give me all communist countries.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ communist) (NNS countries)))
+    (. .)))
+focus: all communist countries
+
+Communism 0.7782432234850563 [(12,31)(12,21)]
+Soviet Union 0.7298784805778781 [(12,31)]
+Communist state 0.7089442931022307 [(12,31)]
+Communist Party of China 0.1812853227124155 [(12,21)]
+Give me all soccer clubs in Spain.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NN soccer) (NNS clubs))
+        (PP (IN in)
+          (NP (NNP Spain)))))
+    (. .)))
+focus: all soccer clubs
+""	"Spain"
+
+Spain 0.8749706928792973 [(28,33)]
+Association football 0.850819228017565 [(12,18)]
+Spain national football team 0.6847328066367714 [(28,33)]
+Give me all companies in the advertising industry.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS companies))
+        (PP (IN in)
+          (NP (DT the) (NN advertising) (NN industry)))))
+    (. .)))
+focus: all companies
+""	"the advertising industry"
+
+Industry 0.8257946001163878 [(41,49)]
+Advertising 0.4687023152659241 [(29,40)]
+Secondary sector of the economy 0.4567523819533165 [(41,49)]
+Give me all libraries established earlier than 1400.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS libraries))
+        (VP (VBN established)
+          (ADVP (RBR earlier)
+            (PP (IN than)
+              (NP (CD 1400)))))))
+    (. .)))
+focus: all libraries
+
+Library 0.4423780004625044 [(12,21)]
+1400 0.18394805295838 [(47,51)]
+Give me all federal chancellors of Germany.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (JJ federal) (NNS chancellors))
+        (PP (IN of)
+          (NP (NNP Germany)))))
+    (. .)))
+focus: all federal chancellors
+"all federal chancellors"	"Germany"
+
+Germany 0.4476115597296914 [(35,42)]
+Federalism 0.349166930148868 [(12,19)]
+Federation 0.341628635110573 [(12,19)]
+Federal republic 0.23453646257722394 [(12,19)]
+Chancellor (education) 0.18200681615700603 [(20,31)]
+Federal government of the United States 0.17401014678775026 [(12,19)]
+Give me all people with first name Jimmy.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS people))
+        (PP (IN with)
+          (NP (JJ first) (NN name) (NNS Jimmy)))))
+    (. .)))
+focus: all people
+""	"first name Jimmy"
+
+Given name 0.27862749246576646 [(24,34)]
+Give me all actors starring in Last Action Hero.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS actors))
+        (VP (VBG starring)
+          (PP (IN in)
+            (NP (JJ Last) (NNP Action) (NNP Hero))))))
+    (. .)))
+focus: all actors
+"starring in"	"Last Action Hero"
+
+Last Action Hero 0.7257600656422667 [(31,47)]
+Hero 0.18577096223006484 [(43,47)]
+Hero (1992 film) 0.1656475807068778 [(43,47)]
+Give me the websites of companies with more than 500000 employees.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NNS websites))
+        (PP (IN of)
+          (NP
+            (NP (NNS companies))
+            (PP (IN with)
+              (NP
+                (QP (JJR more) (IN than) (CD 500000))
+                (NNS employees)))))))
+    (. .)))
+focus: the websites
+"the websites"	"companies with more than 500000 employees"
+""	"more than 500000 employees"
+
+Website 0.24049363337447466 [(12,20)]
+Give me all films produced by Hal Roach.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS films))
+        (VP (VBN produced)
+          (PP (IN by)
+            (NP (NNP Hal) (NNP Roach))))))
+    (. .)))
+focus: all films
+"produced by"	"Hal Roach"
+
+Rutilus 0.7431053738696786 [(34,39)]
+Common Roach 0.7340336954038851 [(34,39)]
+Hal Roach 0.3430749479922059 [(30,39)]
+Cockroach 0.30316709664903446 [(34,39)]
+Give me all video games published by Mean Hamster Software.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (JJ video) (NNS games))
+        (VP (VBN published)
+          (PP (IN by)
+            (NP (NNP Mean) (NNP Hamster) (NNP Software))))))
+    (. .)))
+focus: all video games
+"published by"	"Mean Hamster Software"
+
+Hamster 0.4800912270992659 [(42,49)]
+Video game 0.24661678395997302 [(12,23)(12,17)]
+Computer software 0.20913602288319205 [(50,58)]
+Mean 0.16079483712561218 [(37,41)]
+Music video 0.16079483712561218 [(12,17)]
+Video 0.13318486135242366 [(12,17)]
+Give me all books written by Danielle Steel.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS books))
+        (VP (VBN written)
+          (PP (IN by)
+            (NP (NNP Danielle) (NNP Steel))))))
+    (. .)))
+focus: all books
+"written by"	"Danielle Steel"
+
+Danielle Steel 0.9402439510401596 [(29,43)]
+Riley Keough 0.10028842327412124 [(29,37)]
+Give me all Canadian Grunge record labels.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Canadian) (NNP Grunge) (NN record) (NNS labels)))
+    (. .)))
+focus: all Canadian Grunge record labels
+
+Grunge 0.5786391822048353 [(21,27)]
+Record label 0.4856900726981115 [(28,41)]
+Canada 0.4579050850708383 [(12,20)]
+Canadians 0.35336763659320247 [(12,20)]
+Television in Canada 0.14985119047619047 [(12,20)]
+Give me all movies with Tom Cruise.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS movies))
+        (PP (IN with)
+          (NP (NNP Tom) (NNP Cruise)))))
+    (. .)))
+focus: all movies
+""	"Tom Cruise"
+
+Tom Cruise 0.9648670020046465 [(24,34)]
+Film 0.8449322992372567 [(12,18)]
+Give me all female given names.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ female) (JJ given) (NNS names)))
+    (. .)))
+focus: all female given names
+
+Germanic name 0.7884325990720868 [(19,30)]
+Vietnamese name 0.7112485724742859 [(19,30)]
+List of most popular given names 0.6921156041838255 [(19,30)]
+Given name 0.6903143849986384 [(19,30)]
+Give me all soccer clubs in the Premier League.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NN soccer) (NNS clubs))
+        (PP (IN in)
+          (NP (DT the) (NNP Premier) (NNP League)))))
+    (. .)))
+focus: all soccer clubs
+""	"the Premier League"
+
+Association football 0.6133866485335099 [(12,18)]
+Premier of Alberta 0.40616540908812127 [(32,39)]
+Premier of Quebec 0.4012574336279985 [(32,39)]
+Premier 0.3870666958240556 [(32,39)]
+Premier of British Columbia 0.31779331606486544 [(32,39)]
+Premier of New Brunswick 0.31779331606486544 [(32,39)]
+Premier of Manitoba 0.3169854798888436 [(32,39)]
+Premier of Ontario 0.3128853406047427 [(32,39)]
+Premier League 0.26678542686607204 [(32,46)]
+Premier (Canada) 0.23464326575829828 [(32,39)]
+Give me all animal species that live in the Amazon rainforest.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NN animal) (NN species))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP live)
+              (PP (IN in)
+                (NP (DT the) (NNP Amazon) (NN rainforest))))))))
+    (. .)))
+focus: all animal species
+"live in"	"the Amazon rainforest"
+
+Amazon Rainforest 0.8756702844919705 [(44,61)(44,50)]
+Rainforest 0.7380592299723812 [(51,61)]
+Amazon River 0.6505297198610911 [(44,50)]
+Animal 0.592212439220478 [(12,18)]
+Amazon Basin 0.5417101285996393 [(44,50)]
+Species 0.5237179523064528 [(19,26)]
+Amazon.com 0.26214820040181736 [(44,50)]
+Amazons (DC Comics) 0.18060974723129458 [(44,50)]
+Amazons 0.17721149807951864 [(44,50)]
+Give me all animals that are extinct.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS animals))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP are)
+              (ADJP (JJ extinct)))))))
+    (. .)))
+focus: all animals
+
+Extinct language 0.7845754067649652 [(29,36)]
+Language death 0.7041821888717472 [(29,36)]
+Extinction 0.6361346776610491 [(29,36)]
+Give me the grandchildren of Bruce Lee.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NNS grandchildren))
+        (PP (IN of)
+          (NP (NNP Bruce) (NNP Lee)))))
+    (. .)))
+focus: the grandchildren
+"the grandchildren"	"Bruce Lee"
+
+Bruce Lee 0.5992142899771377 [(29,38)]
+Give me all films produced by Steven Spielberg with a budget of at least $80 million.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS films))
+        (VP (VBN produced)
+          (PP (IN by)
+            (NP
+              (NP (NNP Steven) (NNP Spielberg))
+              (PP (IN with)
+                (NP
+                  (NP (DT a) (NN budget))
+                  (PP (IN of)
+                    (NP
+                      (QP (IN at) (JJS least) ($ $) (CD 80) (CD million)))))))))))
+    (. .)))
+focus: all films
+"produced by"	"Steven Spielberg with a budget of at least $ 80 million"
+""	"a budget of at least $ 80 million"
+"a budget"	"at least $ 80 million"
+
+Budget 0.9038458143506327 [(54,60)]
+Steven Spielberg 0.8744129065713638 [(30,46)(37,46)]
+Canadian federal budget 0.834822916731081 [(54,60)]
+Government budget 0.7646013205599961 [(54,60)]
+United Kingdom budget 0.7646013205599961 [(54,60)]
+Film budgeting 0.7583513205599961 [(54,60)]
+Give me all writers that won the Nobel Prize in literature.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS writers))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD won)
+              (NP (DT the) (NNP Nobel) (NNP Prize))
+              (PP (IN in)
+                (NP (NN literature))))))))
+    (. .)))
+focus: all writers
+
+Nobel Prize in Literature 0.8931970822841073 [(33,58)(33,44)(33,38)]
+Nobel Prize in Physics 0.8420764789062568 [(33,44)(33,38)]
+Nobel Prize in Physiology or Medicine 0.8420764789062568 [(33,44)(33,38)]
+Nobel Memorial Prize in Economic Sciences 0.8420764789062568 [(33,44)(33,38)]
+Nobel Prize in Chemistry 0.8420764789062568 [(33,44)(33,38)]
+Nobel Prize 0.7962554565860721 [(33,44)(33,38)]
+Alfred Nobel 0.6446896412094723 [(33,38)]
+Nobel Peace Prize 0.6446896412094723 [(33,38)]
+Literature 0.23959490516040477 [(48,58)]
+Nobel, Ontario 0.1524851805259419 [(33,38)]
+Give me all taikonauts.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NNS taikonauts)))
+    (. .)))
+focus: all taikonauts
+
+Give me all actors called Baldwin.
+(ROOT
+  (S
+    (S
+      (VP (VB Give)
+        (NP (PRP me))
+        (NP (DT all) (NNS actors))))
+    (VP (VBD called)
+      (NP (NNP Baldwin)))
+    (. .)))
+focus: all actors
+
+Baldwin, Nassau County, New York 0.8408270424990384 [(26,33)]
+Baldwin of Luxembourg 0.8408270424990384 [(26,33)]
+Baldwin of Forde 0.8249557250688971 [(26,33)]
+Baldwin 0.7859027056764119 [(26,33)]
+Baldwin, Florida 0.7797527165462749 [(26,33)]
+Baldwin I of Constantinople 0.7664009900435738 [(26,33)]
+Baldwin Piano Company 0.7408270424990383 [(26,33)]
+Baldwin, Pennsylvania 0.7207931789740205 [(26,33)]
+Baldwin, Maine 0.7186008438124054 [(26,33)]
+Baldwin, Michigan 0.7178501865548987 [(26,33)]
+Baldwin, Wisconsin 0.7178501865548987 [(26,33)]
+Baldwin, Ontario 0.7178501865548987 [(26,33)]
+Baldwin I of Jerusalem 0.6292615553192089 [(26,33)]
+Baldwin Locomotive Works 0.5315048452047471 [(26,33)]
+Stanley Baldwin 0.12894452088358782 [(26,33)]
+Give me all Dutch parties.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Dutch) (NNS parties)))
+    (. .)))
+focus: all Dutch parties
+
+Dutch language 0.8417989653410848 [(12,17)]
+Netherlands 0.8270155227967344 [(12,17)]
+Dutch people 0.7856028686928596 [(12,17)]
+Give me all Swedish oceanographers.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Swedish) (NNS oceanographers)))
+    (. .)))
+focus: all Swedish oceanographers
+
+Swedish language 0.8473545208966403 [(12,19)]
+Sweden 0.68608183813833 [(12,19)]
+Oceanography 0.6758549147724635 [(20,34)]
+Swedes 0.5266691672986707 [(12,19)]
+Finland Swedish 0.35026202528983263 [(12,19)]
+Give me all actors who were born in Berlin.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS actors))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD were)
+              (VP (VBN born)
+                (PP (IN in)
+                  (NP (NNP Berlin)))))))))
+    (. .)))
+focus: all actors
+"born in"	"Berlin"
+
+Humboldt University of Berlin 0.7376159799837474 [(36,42)]
+Berlin 0.721167203375128 [(36,42)]
+Give me the capitals of all countries that the Himalayas run through.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NN capitals))
+        (PP (IN of)
+          (NP
+            (NP (DT all) (NNS countries))
+            (SBAR (IN that)
+              (S
+                (NP (DT the) (NNPS Himalayas))
+                (VP (VBP run)
+                  (PRT (RP through)))))))))
+    (. .)))
+focus: the capitals
+"the capitals"	"all countries that the Himalayas run through"
+
+Capital (architecture) 0.6256481673718554 [(12,20)]
+Himalayas 0.6254272485418514 [(47,56)]
+Capital city 0.20504487831743604 [(12,20)]
+Give me all Australian metalcore bands.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Australian) (NN metalcore) (NNS bands)))
+    (. .)))
+focus: all Australian metalcore bands
+
+Australians 0.736072088343285 [(12,22)]
+Metalcore 0.527260916931916 [(23,32)]
+Australia 0.45369220157053036 [(12,22)]
+Give me all actors who were born in Paris after 1950.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS actors))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD were)
+              (VP (VBN born)
+                (PP (IN in)
+                  (NP (NNP Paris)))
+                (PP (IN after)
+                  (NP (CD 1950)))))))))
+    (. .)))
+focus: all actors
+
+Paris 0.25147895470550397 [(36,41)]
+1950 0.1201792917709857 [(48,52)]
+Give me all the TV shows with Neil Patrick Harris.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (PDT all) (DT the) (NN TV) (NNS shows))
+        (PP (IN with)
+          (NP (NNP Neil) (NNP Patrick) (NNP Harris)))))
+    (. .)))
+focus: all the TV shows
+""	"Neil Patrick Harris"
+
+Neil Patrick Harris 0.8567111015333703 [(30,49)]
+Television 0.29242317696011255 [(16,24)(16,18)]
+Television program 0.24554714868528346 [(16,24)(16,18)]
+Lists of television programs 0.2286541096360475 [(16,24)]
+Television film 0.16079483712561218 [(16,18)]
+Give me English actors starring in Lovesick.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (JJ English) (NNS actors))
+        (VP (VBG starring)
+          (PP (IN in)
+            (NP (NNP Lovesick))))))
+    (. .)))
+focus: English actors
+"starring in"	"Lovesick"
+
+English language 0.4949703430372529 [(8,15)]
+English people 0.4181012866907179 [(8,15)]
+England 0.3589833146789477 [(8,15)]
+English studies 0.33101232791694873 [(8,15)]
+Give me all types of eating disorders.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS types))
+        (PP (IN of)
+          (NP (JJ eating) (NNS disorders)))))
+    (. .)))
+focus: all types
+"all types"	"eating disorders"
+
+Eating disorder 0.5566937887586128 [(21,37)]

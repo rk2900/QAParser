@@ -1,0 +1,195 @@
+1	cosmonauts
+2	country
+5	person	organization
+6	person	organization
+9	professional skateboarders
+11	countries
+12	a list
+15	person	organization
+17	world heritage sites
+19	members
+22	cars
+23	the main discoveries
+24	people
+27	the capital
+28	person	organization
+30	person	organization
+33	u.s. state
+34	movies
+35	actors
+37	the birth name
+38	methodist politicians
+40	australian nonprofit organizations
+41	military conflicts
+42	person	organization
+43	the melting point
+44	sister cities
+46	companies
+48	games
+49	person	organization
+50	person	organization
+51	breeds
+52	cities
+53	countries
+54	professional surfers
+55	the average temperature
+56	uk city
+57	other weapons
+58	person	organization
+60	islands
+61	person	organization
+62	the party
+63	the nicknames
+64	greek goddesses
+66	apollo
+67	the time zone
+68	u.s. states
+69	the capitals
+70	a list
+73	danish movies
+74	launch pads
+75	instruments
+76	ships
+77	person	organization
+83	u.s. state
+86	chess players
+87	
+88	person	organization
+91	museum
+93	books
+94	a list
+96	person	organization
+99	person	organization
+100	films
+101	city
+103	place
+104	u.s. state
+105	songs
+106	movies
+107	the founding year
+108	person	organization
+109	b-sides
+110	person	organization
+111	country
+112	label
+113	the birthdays
+115	states
+116	country
+117	television shows
+119	films
+120	bridges
+122	communist countries
+123	awards
+124	person	organization
+126	the currency
+127	countries
+128	the area code
+130	person	organization
+131	countries
+133	monarchs
+135	river
+137	soccer clubs
+138	the official language
+139	person	organization
+140	person	organization
+141	telecommunications organizations
+144	person	organization
+145	companies
+147	bruce carver
+149	presidents
+150	federal chancellors
+151	person	organization
+152	person	organization
+153	the official website
+154	episodes
+156	people
+157	city
+160	person	organization
+161	actors
+162	software
+163	companies
+166	actors
+169	films
+170	video games
+171	languages
+173	capitals
+174	person	organization
+176	music albums
+177	books
+178	airports
+179	states
+180	canadian grunge record labels
+182	programming language
+183	person	organization
+184	movies
+185	films
+186	female given names
+187	person	organization
+189	soccer clubs
+190	u.s. state
+192	organizations
+195	budget
+200	animal species
+202	studio
+203	person	organization
+205	the official color
+207	artistic movement
+208	animals
+211	the grandchildren
+213	place
+214	countries
+215	the top-10 action
+219	writers
+220	taikonauts
+223	actors
+225	rivers
+227	rockets
+228	pope
+229	dutch parties
+231	swedish oceanographers
+232	actors
+233	the last movie
+236	iycm
+238	the capitals
+239	actor
+240	ingredients
+242	person	organization
+247	australian metalcore bands
+248	actors
+252	swimmers
+253	person	organization
+254	the book
+255	museums
+258	the tv
+259	person	organization
+260	soccer clubs
+261	country
+262	person	organization
+263	programming languages
+265	the musicals
+266	the breweries
+270	person	organization
+273	bridges
+274	person	organization
+276	the location
+277	english gothic buildings
+278	person	organization
+279	airlines
+280	the total population
+281	airports
+282	year
+283	place
+285	scientist
+287	beer
+288	the specialities
+289	person	organization
+290	region
+291	person	organization
+292	person	organization
+293	english actors
+294	types
+295	person	organization
+297	place
+298	place
+299	the timezone
+300	city
