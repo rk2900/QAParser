@@ -2,6 +2,7 @@ package pattern;
 
 import java.util.LinkedList;
 
+import paser.Focus;
 import paser.Question;
 import paser.QuestionFrame;
 import paser.QuestionSingle;
@@ -43,56 +44,54 @@ public class FocusExtraction extends TypeExtraction {
 		System.out.println(notGetCount);
 	}
 	
+	@Deprecated
 	public LinkedList<String> focusExtraction(String text, LinkedList<String> oriWordList, LinkedList<String> posList) {
 		LinkedList<String> focusList = new LinkedList<String>();
-		
-		// change to lower case
-		String sentence = new String(text.toLowerCase());
-		LinkedList<String> wordList = new LinkedList<String>();
-		for (String string : oriWordList) {
-			wordList.add(string.toLowerCase());
-		}
-		
-		// extraction based on rule
-		if(sentence.startsWith("give")) {
-			if(sentence.startsWith("give me all")) {
-				focusList.add(getFocusPhrase("all", wordList, posList));
-			} else if(sentence.contains("give all")) {
-				focusList.add(getFocusPhrase("all", wordList, posList));
-			} else if(sentence.startsWith("give me")) {
-				focusList.add(getFocusPhrase("me", wordList, posList));
-			} else if(sentence.startsWith("give me a list of")) {
-				focusList.add(getFocusPhrase("of", wordList, posList));
-			}
-		} else if(sentence.contains("list all")) {
-			focusList.add(getFocusPhrase("all", wordList, posList));
-		} else if(sentence.startsWith("list")) {
-			focusList.add(getFocusPhrase("lsit", wordList, posList));
-		} else if(sentence.startsWith("show me all")) {
-			focusList.add(getFocusPhrase("all", wordList, posList));
-		} else if(sentence.contains("show me")) {
-			focusList.add(getFocusPhrase("me", wordList, posList));
-		} else if(sentence.contains("show a list of")) {
-			focusList.add(getFocusPhrase("of", wordList, posList));
-		} else if(sentence.contains("which")) {
-			focusList.add(getFocusPhrase("which", wordList, posList));
-		} else if(sentence.contains("what")) {
-			focusList.add(getFocusPhrase("what", wordList, posList));
-		} else if(sentence.startsWith("who")) {
-			focusList.add("person");
-			focusList.add("organization");
-		} else if(sentence.startsWith("where")) {
-			focusList.add("place");
-		} 
-		
+//		
+//		// change to lower case
+//		String sentence = new String(text.toLowerCase());
+//		LinkedList<String> wordList = new LinkedList<String>();
+//		for (String string : oriWordList) {
+//			wordList.add(string.toLowerCase());
+//		}
+//
+//		// extraction based on rule
+//		if(sentence.startsWith("give")) {
+//			if(sentence.startsWith("give me all")) {
+//				focusList.add(getFocusPhrase("all", wordList, posList));
+//			} else if(sentence.startsWith("give me a list of")) {
+//				focusList.add(getFocusPhrase("of", wordList, posList));
+//			} else if(sentence.contains("give all")) {
+//				focusList.add(getFocusPhrase("all", wordList, posList));
+//			} else if(sentence.startsWith("give me")) {
+//				focusList.add(getFocusPhrase("me", wordList, posList));
+//			} 
+//		} else if(sentence.contains("list all")) {
+//			focusList.add(getFocusPhrase("all", wordList, posList));
+//		} else if(sentence.startsWith("list")) {
+//			focusList.add(getFocusPhrase("list", wordList, posList));
+//		} else if(sentence.startsWith("show me all")) {
+//			focusList.add(getFocusPhrase("all", wordList, posList));
+//		} else if(sentence.contains("show me")) {
+//			focusList.add(getFocusPhrase("me", wordList, posList));
+//		} else if(sentence.contains("show a list of")) {
+//			focusList.add(getFocusPhrase("of", wordList, posList));
+//		} else if(sentence.contains("which")) {
+//			focusList.add(getFocusPhrase("which", wordList, posList));
+//		} else if(sentence.contains("what")) {
+//			focusList.add(getFocusPhrase("what", wordList, posList));
+//		} 
+//		
 		return focusList;
 	}
 	
-	public LinkedList<String> focusExtraction(QuestionFrame qf) {
+	public static Focus extract(QuestionFrame qf) {
+		System.out.println(qf.id);
 		String text = qf.question;
 		LinkedList<String> oriWordList = qf.wordList;
 		LinkedList<String> posList = qf.wordList;
-		LinkedList<String> focusList = new LinkedList<String>();
+		
+		Focus focus = new Focus();
 		
 		// change to lower case
 		String sentence = new String(text.toLowerCase());
@@ -104,42 +103,43 @@ public class FocusExtraction extends TypeExtraction {
 		// extraction based on rule
 		if(sentence.startsWith("give")) {
 			if(sentence.startsWith("give me all")) {
-				focusList.add(getFocusPhrase("all", wordList, posList));
+				focus.setFocus(getFocusPhrase("all", wordList, posList));
 			} else if(sentence.contains("give all")) {
-				focusList.add(getFocusPhrase("all", wordList, posList));
+				focus.setFocus(getFocusPhrase("all", wordList, posList));
 			} else if(sentence.startsWith("give me")) {
-				focusList.add(getFocusPhrase("me", wordList, posList));
+				focus.setFocus(getFocusPhrase("me", wordList, posList));
 			} else if(sentence.startsWith("give me a list of")) {
-				focusList.add(getFocusPhrase("of", wordList, posList));
+				focus.setFocus(getFocusPhrase("of", wordList, posList));
 			}
 		} else if(sentence.contains("list all")) {
-			focusList.add(getFocusPhrase("all", wordList, posList));
+			focus.setFocus(getFocusPhrase("all", wordList, posList));
 		} else if(sentence.startsWith("list")) {
-			focusList.add(getFocusPhrase("lsit", wordList, posList));
+			LinkedList<Integer> list = getFocusPhrase("lsit", wordList, posList);
+			System.out.println(list);
+			focus.setFocus(list);
 		} else if(sentence.startsWith("show me all")) {
-			focusList.add(getFocusPhrase("all", wordList, posList));
+			focus.setFocus(getFocusPhrase("all", wordList, posList));
 		} else if(sentence.contains("show me")) {
-			focusList.add(getFocusPhrase("me", wordList, posList));
+			focus.setFocus(getFocusPhrase("me", wordList, posList));
 		} else if(sentence.contains("show a list of")) {
-			focusList.add(getFocusPhrase("of", wordList, posList));
+			focus.setFocus(getFocusPhrase("of", wordList, posList));
 		} else if(sentence.contains("which")) {
-			focusList.add(getFocusPhrase("which", wordList, posList));
+			focus.setFocus(getFocusPhrase("which", wordList, posList));
 		} else if(sentence.contains("what")) {
-			focusList.add(getFocusPhrase("what", wordList, posList));
-		} else if(sentence.startsWith("who")) {
-			focusList.add("person");
-			focusList.add("organization");
-		} else if(sentence.startsWith("where")) {
-			focusList.add("place");
-		} 
+			focus.setFocus(getFocusPhrase("what", wordList, posList));
+		} else if(sentence.contains("how many")) {
+			focus.setFocus(getFocusPhrase("many", wordList, posList));
+		} else if(sentence.contains("amount of")) {
+			focus.setFocus(getFocusPhrase("of", wordList, posList));
+		}
 		
-		return focusList;
+		return focus;
 	}
 	
 	
-	private String getFocusPhrase(String startWord, LinkedList<String> wordList,
+	private static LinkedList<Integer> getFocusPhrase(String startWord, LinkedList<String> wordList,
 			LinkedList<String> posList) {
-		StringBuilder focus = new StringBuilder();
+		LinkedList<Integer> focusWordList = new LinkedList<>();
 		
 //		System.err.println(startWord);
 //		System.err.println(wordList);
@@ -157,7 +157,8 @@ public class FocusExtraction extends TypeExtraction {
 					break;
 				}
 				else {
-					focus.append(focus.length()>0?" "+word:word);
+					System.out.println(word);
+					focusWordList.add(i);
 					if(pos.startsWith("NN")) {
 						mayendFlag = true;
 					}
@@ -168,12 +169,12 @@ public class FocusExtraction extends TypeExtraction {
 				startFlag = true;
 			}
 		}
-		return focus.toString();
+		return focusWordList;
 	}
 
 	public static void main(String[] args) {
-		FocusExtraction fe = new FocusExtraction();
-		fe.printQuestionListWithPOS();
+//		FocusExtraction fe = new FocusExtraction();
+//		fe.printQuestionListWithPOS();
 	}
 
 }

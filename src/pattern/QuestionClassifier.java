@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 
+import org.apache.commons.io.output.ThresholdingOutputStream;
+
 import paser.QuestionSingle;
 import paser.XMLParser;
 import finder.Pipeline;
@@ -14,10 +16,15 @@ public class QuestionClassifier {
 		RESOURCE, DATE, BOOLEAN, NUMBER
 	}
 	public enum Label {
-		COMPARISON
+		COMPARISON, WHO, WHERE
 	}
 
 	public Category category;
+	public HashMap<Label, Boolean> label;
+	
+	public QuestionClassifier() {
+		label = new HashMap<>();
+	}
 	
 	/**
 	 * Get question category by classifier
@@ -187,6 +194,12 @@ public class QuestionClassifier {
 		}
 		
 		return type;
+	}
+	
+	public void judgeRule(LinkedList<String> wordList, LinkedList<String> posList) {
+		label.put(Label.WHO, wordList.get(0).equalsIgnoreCase("who"));
+		label.put(Label.WHERE, wordList.get(0).equalsIgnoreCase("where"));
+		label.put(Label.COMPARISON, judgeComparison(wordList, posList));
 	}
 	
 	public static void main(String[] args) {

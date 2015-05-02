@@ -3,6 +3,7 @@ package paser;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
+import pattern.FocusExtraction;
 import pattern.QuestionClassifier;
 import finder.PreProcess;
 import baseline.Entity;
@@ -14,6 +15,7 @@ public class QuestionFrame extends Question {
 	public LinkedList<Entity> entityList;
 	
 	QuestionClassifier questionClassifier;
+	Focus focus;
 	
 	public QuestionFrame(int id, boolean onlydbo, boolean aggregation,
 			boolean hybrid, String answerType, ArrayList<String> keywords,
@@ -27,7 +29,12 @@ public class QuestionFrame extends Question {
 		PreProcess.processWordAndPOS(this);
 		questionClassifier = new QuestionClassifier();
 		questionClassifier.classify(wordList, posList);
-		
+		//TODO get focus
+		focus = FocusExtraction.extract(this);
+	}
+	
+	public boolean hasFocus() {
+		return !focus.isEmpty();
 	}
 	
 	public boolean setWordList(LinkedList<String> list) {
