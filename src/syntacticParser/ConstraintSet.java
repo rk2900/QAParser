@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ConstraintSet {
-	List<Constraint> list=new ArrayList<Constraint>();
-	Node ans=new Node();
+	public List<Constraint> list=new ArrayList<Constraint>();
+	public Node ans=new Node();
 	public ConstraintSet() {
 		
 	}
@@ -18,5 +18,10 @@ public class ConstraintSet {
 			ret+=c.getString()+"\r\n";
 		}
 		return ret;
+	}
+	public void transform(List<String> w) {
+		for (Constraint c:list) {
+			
+		}
 	}
 }
