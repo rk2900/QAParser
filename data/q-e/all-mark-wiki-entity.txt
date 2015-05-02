@@ -276,7 +276,7 @@
 250	26	29	http://en.wikipedia.org/wiki/Most_Valuable_Player	http://dbpedia.org/resource/Most_Valuable_Player
 252	36	42	http://en.wikipedia.org/wiki/Moscow	http://dbpedia.org/resource/Moscow
 254	22	34	http://en.wikipedia.org/wiki/Muhammad_Ali	http://dbpedia.org/resource/Muhammad_Ali
-255	22	27	http://en.wikipedia.org/wiki/Paris	http://dbpedia.org/resource/Paris
+255	19	24	http://en.wikipedia.org/wiki/Paris	http://dbpedia.org/resource/Paris
 258	30	49	http://en.wikipedia.org/wiki/Neil_Patrick_Harris	http://dbpedia.org/resource/Neil_Patrick_Harris
 259	10	26	http://en.wikipedia.org/wiki/The_Hunger_Games	http://dbpedia.org/resource/The_Hunger_Games
 260	45	55	http://en.wikipedia.org/wiki/Bundesliga	http://dbpedia.org/resource/Bundesliga

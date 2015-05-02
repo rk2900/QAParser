@@ -23,8 +23,7 @@ public class Main {
 			
 			String [] wikiText = wikiLine.split("\t");
 			if(wikiText.length != 5){
-				System.err.println("Wrong wiki-entity format");
-				System.err.println(wikiLine);
+				System.err.println("Wrong wiki-entity format"+"\t"+wikiLine);
 				continue;
 			}
 			
@@ -38,51 +37,59 @@ public class Main {
 			LinkedList<String> wordList = qf.getWordList();
 			String curEntity = content.substring(Integer.parseInt(wikiText[1]),Integer.parseInt(wikiText[2]));
 			
-//			curEntity = curEntity.replace(" ", "");
-//			for(int i=0; i<wordList.size();++i){
-//				if(curEntity.startsWith(wordList.get(i))){
-//					StringBuilder sb = new StringBuilder();
-//					sb.append(wordList.get(i));
-//					int k;
-//					for(k=i+1; k<wordList.size();++k){
-//						if(curEntity.startsWith(sb.toString()+wordList.get(k))){
-//							sb.append(wordList.get(k));
-//						}else{
-//							--k;
-//							break;
-//						}
-//					}
-//					if(sb.toString().contains(curEntity)){
-//						map.get(wikiText[0]).add(new Entity(wikiText[4],wikiText[3],i,k));
-//						break;
-//					}
-//				}
-//			}
+			curEntity = curEntity.replace(" ", "");
 			
-			String [] wList = curEntity.split(" ");
+			boolean isMatched = false;
 			
-			int i;
-			for(i=0; i<wordList.size(); ++i){
-				boolean mark = true;
-				if(wordList.get(i).equals(wList[0])){
-					for(int k=1;k<wList.length; ++k){
-						if(!wordList.get(i+k).equals(wList[k])){
-							mark = false;
+			for(int i=0; i<wordList.size();++i){
+				if(curEntity.startsWith(wordList.get(i))){
+					StringBuilder sb = new StringBuilder();
+					sb.append(wordList.get(i));
+					int k=i+1;
+					for(; k<wordList.size();++k){
+						if(curEntity.startsWith(sb.toString()+wordList.get(k))){
+							sb.append(wordList.get(k));
+						}else{
+							--k;
 							break;
 						}
 					}
-					if(mark){
-						map.get(wikiText[0]).add(new Entity(wikiText[4],wikiText[3],i,i+wList.length-1));
+					if(k == wordList.size()){
+						--k;
+					}
+					if(sb.toString().equals(curEntity)){
+						map.get(wikiText[0]).add(new Entity(wikiText[4],wikiText[3],i,k));
+						isMatched = true;
 						break;
 					}
 				}
 			}
-//			if(i == wordList.size()){
-//				System.out.println(content);
+			
+			if(!isMatched){
+				System.out.println(content);
+				System.out.println(curEntity);
+			}
+			
+//			String [] wList = curEntity.split(" ");
+//			int i;
+//			for(i=0; i<wordList.size(); ++i){
+//				boolean mark = true;
+//				if(wordList.get(i).equals(wList[0])){
+//					for(int k=1;k<wList.length; ++k){
+//						if(!wordList.get(i+k).equals(wList[k])){
+//							mark = false;
+//							break;
+//						}
+//					}
+//					if(mark){
+//						map.get(wikiText[0]).add(new Entity(wikiText[4],wikiText[3],i,i+wList.length-1));
+//						break;
+//					}
+//				}
 //			}
 		}
-		System.out.println("Load finished");
-		
+//		System.out.println("Load finished");
+//		
 		try {
 			BufferedWriter fout = new BufferedWriter(new FileWriter(outPath));
 			int count = 0;
@@ -95,35 +102,34 @@ public class Main {
 				int index = 1;
 //				System.out.println(questionEntityList.size());
 				if(questionEntityList.size() == 0){
-					System.err.println(question);
+					System.err.println(question+"\tszie = 0");
 					continue;
 				}
 				Entity beforeEntity = questionEntityList.get(0);
 				
 				while(index <= questionEntityList.size()){
-//					System.out.println(index + "\t"+ questionEntityList.size());
 					if(index == questionEntityList.size()){
 						result.add(beforeEntity);
 						break;
 					}
-//					System.out.println("...");
 					Entity currentEntity = questionEntityList.get(index);
-					if(currentEntity.start < beforeEntity.end){
+					if(currentEntity.start <= beforeEntity.end){
 						if(!currentEntity.wiki.equals(beforeEntity.wiki) || !currentEntity.uri.equals(beforeEntity.uri)){
-							System.err.println(question);
+							System.err.println("different entities for intersection\t"+question);
 						}
 						
 						beforeEntity.setEnd(currentEntity.end);
-						beforeEntity.setUri(currentEntity.uri);
-						beforeEntity.setWiki(currentEntity.wiki);
+						
+						if(currentEntity.start == beforeEntity.start){
+							beforeEntity.setUri(currentEntity.uri);
+							beforeEntity.setWiki(currentEntity.wiki);
+						}
 					}else{
 						result.add(beforeEntity);
-//						System.out.println(beforeEntity.uri);
 						beforeEntity = currentEntity;	
 					}
 					++index;
 				}
-//				System.out.println("OK");
 				
 				StringBuilder sb = new StringBuilder();
 				sb.append(question);
@@ -142,8 +148,6 @@ public class Main {
 				}
 				fout.write(sb.toString());
 				++count;
-//				System.out.println(count+"****");
-//				break;
 			}
 			fout.close();
 		} catch (IOException e) {
@@ -182,38 +186,28 @@ public class Main {
 		// TODO Auto-generated method stub
 		String wikiPath = "./data/q-e/all-mark-wiki-entity.txt";
 		String outPath = "./data/zch/newEntity.txt";
-		
 		 
 		Pipeline pipeline = new Pipeline();
+//		entityExtraction(wikiPath,outPath,pipeline);
+		
 		setEntity(pipeline);
 		
-//		QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(id);
-//		for(int i=1; i<=300; ++i){
-//			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
-//			
-//		}
-		entityExtraction(wikiPath,outPath,pipeline);
-//		LinkedList<String> wikiLines = FileOps.LoadFilebyLine(wikiPath);
-//		
-//		for (String wikiLine : wikiLines) {
-//			String content;
-//			LinkedList<Entity> entityList = new LinkedList<Entity>();
-//			
-//			String [] wikiText = wikiLine.split("\t");
-//			if(wikiText.length != 5){
-//				System.err.println("Wrong wiki-entity format");
-//				System.err.println(wikiLine);
-//				continue;
-//			}
-//		}
-		
-//		String test;
-//		Pipeline pipeline = new Pipeline();
-//		QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(255);
-//		test = qf.question;
-//		LinkedList<String> wordList = qf.getWordList();
-//		System.out.println(test);
-//		System.out.println(wordList);
+		int [] intersection = {51,174,296,103,108};
+		for(int i=0; i<intersection.length; ++i){
+			System.out.println("*************");
+			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(intersection[i]);
+			
+			System.out.println(qf.question);
+			System.out.println(qf.wordList);
+			
+			for(Entity e:qf.getEntityList()){
+				for(int k=e.getStart(); k<=e.getEnd(); ++k){
+					System.out.print(qf.wordList.get(k)+" ");
+				}
+				System.out.println();
+				System.out.println(e.start+" "+e.end+" "+e.uri);
+			}
+		}
 	}
 
 }
