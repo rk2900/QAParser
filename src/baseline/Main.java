@@ -7,12 +7,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
 import paser.QuestionFrame;
+import syntacticParser.Constraint;
 import syntacticParser.ConstraintSet;
-import syntacticParser.constraintExtractor;
-import syntacticParser.stringParser;
-import edu.stanford.nlp.trees.Tree;
+import syntacticParser.Node;
 import finder.Pipeline;
 import basic.FileOps;
 
@@ -160,42 +161,77 @@ public class Main {
 		}
 	}
 	
+	//entityList 已经排过序了 
+	public static Entity getEntity(LinkedList<Entity> entityList, Node node){
+		for (Entity entity : entityList) {
+			if(node.left <= entity.start && node.right >= entity.end){
+				return entity;
+			}
+		}
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Pipeline pipeline = new Pipeline();
 		
-//		String wikiPath = "./data/q-e/all-mark-wiki-entity.txt";
-//		String outPath = "./data/zch/newEntity.txt";
-//		entityExtraction(wikiPath,outPath,pipeline);
-		
+/*		String wikiPath = "./data/q-e/all-mark-wiki-entity.txt";
+		String outPath = "./data/zch/newEntity.txt";
+		entityExtraction(wikiPath,outPath,pipeline);
+*/		
 		setEntity(pipeline);
-		
-//		int [] intersection = {51,174,296,103,108};
-//		for(int i=0; i<intersection.length; ++i){
-//			System.out.println("*************");
-//			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(intersection[i]);
-//			
-//			System.out.println(qf.question);
-//			System.out.println(qf.wordList);
-//			
-//			for(Entity e:qf.getEntityList()){
-//				for(int k=e.getStart(); k<=e.getEnd(); ++k){
-//					System.out.print(qf.wordList.get(k)+" ");
-//				}
-//				System.out.println();
-//				System.out.println(e.start+" "+e.end+" "+e.uri);
-//			}
-//		}
-		
+/*	
+		int [] intersection = {51,174,296,103,108};
+		for(int i=0; i<intersection.length; ++i){
+			System.out.println("*************");
+			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(intersection[i]);
+			
+			System.out.println(qf.question);
+			System.out.println(qf.wordList);
+			
+			for(Entity e:qf.getEntityList()){
+				for(int k=e.getStart(); k<=e.getEnd(); ++k){
+					System.out.print(qf.wordList.get(k)+" ");
+				}
+				System.out.println();
+				System.out.println(e.start+" "+e.end+" "+e.uri);
+			}
+		}
+*/		
 		for(int id=1; id<=300; ++id){
+			LinkedList<String> nullConstrainListQuestion = new LinkedList<String>();
+			LinkedList<String> nullEntityQuestion = new LinkedList<String>();
+			
 			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(id);
 			LinkedList<Entity> entityList = qf.getEntityList();
 			
-			Tree tree = stringParser.parse(qf.question);
-			ConstraintSet constraintSet=new ConstraintSet();
-			constraintExtractor.extract(tree, tree, constraintSet.getAns(), constraintSet);
-			if(entityList.size() > 0){
-				
+			ConstraintSet constraintSet=ConstraintSet.getConstraintSet(qf.question, qf);
+			Node answer = constraintSet.ans;
+			List<Constraint> costraintList = constraintSet.list;
+			
+			if(costraintList.size() == 0){
+				nullConstrainListQuestion.add(qf.question);
+				continue;
+			}
+			
+			if(entityList.size() == 0){
+				nullEntityQuestion.add(qf.question);
+				continue;
+			}
+			
+			if(entityList.size() > 0 && costraintList.size() > 0){
+				Queue<Node> queue = new LinkedList<Node>();
+				for (Constraint constraint : costraintList) {
+					Node left = constraint.left;
+					Node right = constraint.right;
+					
+					if(!left.isx){
+						
+					}
+					
+					if(!right.isx){
+						
+					}
+				}
 			}
 		}
 		
