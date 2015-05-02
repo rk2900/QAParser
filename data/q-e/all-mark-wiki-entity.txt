@@ -4,7 +4,7 @@
 3	18	37	http://en.wikipedia.org/wiki/Worst_Case_Scenario_(film)	http://dbpedia.org/resource/Worst_Case_Scenario_(film)
 4	6	12	http://en.wikipedia.org/wiki/Germany	http://dbpedia.org/resource/Germany
 5	8	23	http://en.wikipedia.org/wiki/John_F._Kennedy	http://dbpedia.org/resource/John_F._Kennedy
-6	20	26	http://en.wikipedia.org/wiki/Berlin	http://dbpedia.org/resource/Berlin
+6	20	26	http://en.wikipedia.org/wiki/Berlin	http://dbpedia.org/resource/Berlin 
 7	27	42	http://en.wikipedia.org/wiki/Vrije_Universiteit	http://dbpedia.org/resource/Vrije_Universiteit
 7	46	55	http://en.wikipedia.org/wiki/Amsterdam	http://dbpedia.org/resource/Amsterdam
 9	44	50	http://en.wikipedia.org/wiki/Sweden	http://dbpedia.org/resource/Sweden
