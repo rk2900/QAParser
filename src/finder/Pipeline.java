@@ -145,43 +145,6 @@ public class Pipeline {
 		return distance[lenL][lenT];
 	}
 
-	public static void main(String[] args) {
-		Pipeline pipeline = new Pipeline();
-//		int pseudoId = 72;
-//		
-//		QuestionSingle q = pipeline.preProcess(pseudoId);
-//		if(q==null)
-//			return;
-//		System.out.println(q.getWordList());
-//		System.out.println(q.getPOSList());
-//		System.out.println(q.mention);
-//		System.out.println(q.entityPositions);
-//		System.out.println(q.surPredicates);
-//		
-//		System.out.println(pipeline.getLemma(q.question));
-		
-//		ArrayList<Question> qList = pipeline.xmlParser.getQuestions();
-//		System.err.println(qList.size());
-//		OutputRedirector.openFileOutput("./data/question-pos.txt");
-//		for(int i=1; i<=300; i++) {
-//			QuestionSingle qs = pipeline.xmlParser.getQuestionWithPseudoId(i).toQuestionSingle();
-//			qs.qPOSList = pipeline.getPOSTag(qs);
-//			System.out.println(i);
-//			System.out.println(qs.question);
-//			System.out.println(qs.getWordList());
-//			System.out.println(qs.getPOSList());
-//			System.out.println();
-//		}
-//		OutputRedirector.closeFileOutput();
-		
-//		for(int i=1; i<=300; i++) {
-////			Question q = pipeline.xmlParser.getQuestionWithPseudoId(i);
-//			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
-//			qf.print();
-//		}
-		
-	}
-	
 	public QuestionSingle preProcess(int pseudoId) {
 		// Read question text and entity inside
 		LinkedList<String> qeLines = FileOps.LoadFilebyLine("./data/q-e/all-mark-wiki-entity.txt");
@@ -274,6 +237,15 @@ public class Pipeline {
 	
 	public XMLParser getXMLParser() {
 		return xmlParser;
+	}
+	
+	public static void main(String[] args) {
+		Pipeline pipeline = new Pipeline();
+		for(int i=1; i<=10; i++) {
+			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
+			qf.print();
+		}
+		
 	}
 
 }

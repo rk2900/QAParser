@@ -11,6 +11,7 @@ import finder.Pipeline;
 
 public class FocusExtraction extends TypeExtraction {
 
+	@Deprecated
 	public void printQuestionListWithPOS() {
 		Pipeline pipeline = new Pipeline();
 		
@@ -86,7 +87,6 @@ public class FocusExtraction extends TypeExtraction {
 	}
 	
 	public static Focus extract(QuestionFrame qf) {
-		System.out.println(qf.id);
 		String text = qf.question;
 		LinkedList<String> oriWordList = qf.wordList;
 		LinkedList<String> posList = qf.wordList;
@@ -114,9 +114,7 @@ public class FocusExtraction extends TypeExtraction {
 		} else if(sentence.contains("list all")) {
 			focus.setFocus(getFocusPhrase("all", wordList, posList));
 		} else if(sentence.startsWith("list")) {
-			LinkedList<Integer> list = getFocusPhrase("lsit", wordList, posList);
-			System.out.println(list);
-			focus.setFocus(list);
+			focus.setFocus(getFocusPhrase("list", wordList, posList));
 		} else if(sentence.startsWith("show me all")) {
 			focus.setFocus(getFocusPhrase("all", wordList, posList));
 		} else if(sentence.contains("show me")) {
@@ -157,8 +155,8 @@ public class FocusExtraction extends TypeExtraction {
 					break;
 				}
 				else {
-					System.out.println(word);
 					focusWordList.add(i);
+					System.out.println(i);
 					if(pos.startsWith("NN")) {
 						mayendFlag = true;
 					}
