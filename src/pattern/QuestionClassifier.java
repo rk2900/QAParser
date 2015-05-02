@@ -16,14 +16,8 @@ public class QuestionClassifier {
 	public enum Label {
 		COMPARISON
 	}
-	public HashMap<Category, Boolean> cateMap;
-	public HashMap<Label, Boolean> labelMap;
+
 	public Category category;
-	
-	public QuestionClassifier() {
-		cateMap = new HashMap<>();
-		labelMap = new HashMap<>();
-	}
 	
 	/**
 	 * Get question category by classifier
@@ -38,29 +32,23 @@ public class QuestionClassifier {
 			return null;
 		}
 		
+		Category cate = Category.RESOURCE;
 		// category
-		cateMap.put(Category.DATE, QuestionClassifier.judgeDate(wordList));
-		cateMap.put(Category.BOOLEAN, QuestionClassifier.judgeBool(wordList, POSList));
-		cateMap.put(Category.NUMBER, QuestionClassifier.judgeNumber(wordList));
-		boolean resourceFlag = !(cateMap.get(Category.DATE) || cateMap.get(Category.BOOLEAN) || cateMap.get(Category.NUMBER));
-		cateMap.put(Category.RESOURCE, resourceFlag);
-		
-		for (Category cat : cateMap.keySet()) {
-			if(cateMap.get(cat)) {
-				category = cat;
-				break;
-			}
+		if (QuestionClassifier.judgeDate(wordList)) {
+			cate = Category.DATE;
+		} else if (QuestionClassifier.judgeBool(wordList, POSList)) {
+			cate = Category.BOOLEAN;
+		} else if (QuestionClassifier.judgeNumber(wordList)) {
+			cate = Category.NUMBER;
+		} else {
+			cate = Category.RESOURCE;
 		}
+		
+		this.category = cate;
 		
 		return category;
 //		// label
 //		labelMap.put(Label.COMPARISON, QuestionClassifier.judgeComparison(wordList, POSList));
-	}
-	
-	public HashMap<Category, Boolean> getCategoryResult() {
-		if(cateMap.isEmpty())
-			System.err.println("No category result!");
-		return cateMap;
 	}
 	
 	/**
@@ -231,9 +219,7 @@ public class QuestionClassifier {
 			String trueCate = qs.answerType;
 			String predictCate = qc.category.toString();
 			
-			if(QuestionClassifier.judgeComparison(qs.qWordList, qs.qPOSList));
-			else if(qc.category == Category.RESOURCE)
-				System.out.println(qs.id+"\t"+qs.question);
+			
 		}
 		
 	}

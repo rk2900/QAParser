@@ -1,6 +1,5 @@
 package finder;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Properties;
@@ -18,9 +17,9 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
 import basic.FileOps;
 import paser.Question;
+import paser.QuestionFrame;
 import paser.QuestionSingle;
 import paser.XMLParser;
-import tool.OutputRedirector;
 import knowledgebase.ClientManagement;
 
 public class Pipeline {
@@ -31,7 +30,7 @@ public class Pipeline {
 	
 	private XMLParser xmlParser;
 	
-	private static StanfordCoreNLP pipeline;
+	public static StanfordCoreNLP pipeline;
 	
 	static {
 		Properties props = new Properties();
@@ -54,6 +53,7 @@ public class Pipeline {
 		return questionSplitted;
 	}
 	
+	@Deprecated
 	public void proceed(int pseudoId) {
 		// Read question text and entity inside
 		LinkedList<String> qeLines = FileOps.LoadFilebyLine(wikiEntityFilePath);
@@ -91,6 +91,7 @@ public class Pipeline {
 		System.out.println("\t"+matchedPredicates);
 	}
 	
+	@Deprecated
 	private double getMatchScore(String splitText, RDFNode predicate) {
 		LinkedList<String> labels = ClientManagement.getLabel(predicate.toString());
 		String[] wordsInText = splitText.split(" ");
@@ -108,6 +109,7 @@ public class Pipeline {
 		return matchedFlag?1:0;
 	}
 
+	@Deprecated
 	private int editDistance(String wordL, String wordT, boolean visible) {
 		int lenL = wordL.length();
 		int lenT = wordT.length();
@@ -158,19 +160,25 @@ public class Pipeline {
 //		
 //		System.out.println(pipeline.getLemma(q.question));
 		
-		ArrayList<Question> qList = pipeline.xmlParser.getQuestions();
-		System.err.println(qList.size());
-		OutputRedirector.openFileOutput("./data/question-pos.txt");
-		for(int i=1; i<=300; i++) {
-			QuestionSingle qs = pipeline.xmlParser.getQuestionWithPseudoId(i).toQuestionSingle();
-			qs.qPOSList = pipeline.getPOSTag(qs);
-			System.out.println(i);
-			System.out.println(qs.question);
-			System.out.println(qs.getWordList());
-			System.out.println(qs.getPOSList());
-			System.out.println();
+//		ArrayList<Question> qList = pipeline.xmlParser.getQuestions();
+//		System.err.println(qList.size());
+//		OutputRedirector.openFileOutput("./data/question-pos.txt");
+//		for(int i=1; i<=300; i++) {
+//			QuestionSingle qs = pipeline.xmlParser.getQuestionWithPseudoId(i).toQuestionSingle();
+//			qs.qPOSList = pipeline.getPOSTag(qs);
+//			System.out.println(i);
+//			System.out.println(qs.question);
+//			System.out.println(qs.getWordList());
+//			System.out.println(qs.getPOSList());
+//			System.out.println();
+//		}
+//		OutputRedirector.closeFileOutput();
+		
+		for(int i=1; i<=1; i++) {
+			Question q = pipeline.xmlParser.getQuestionWithPseudoId(i);
+			QuestionFrame qf = q.toQuestionFrame();
+			qf.print();
 		}
-		OutputRedirector.closeFileOutput();
 		
 	}
 	

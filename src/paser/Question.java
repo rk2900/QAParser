@@ -54,8 +54,13 @@ public class Question {
 	}
 	
 	public QuestionSingle toQuestionSingle() {
-		QuestionSingle qPred = new QuestionSingle(id, onlydbo, aggregation, hybrid, answerType, keywords, question, answers, query);
-		return qPred;
+		QuestionSingle qSingle = new QuestionSingle(id, onlydbo, aggregation, hybrid, answerType, keywords, question, answers, query);
+		return qSingle;
+	}
+	
+	public QuestionFrame toQuestionFrame() {
+		QuestionFrame qFrame = new QuestionFrame(id, onlydbo, aggregation, hybrid, answerType, keywords, question, answers, query);
+		return qFrame;
 	}
 	
 }
