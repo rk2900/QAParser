@@ -19,8 +19,6 @@ public class Main {
 		HashMap<String, ArrayList<Entity>> map = new HashMap<String, ArrayList<Entity>>();
 		for (String wikiLine : wikiLines) {
 			String content;
-			LinkedList<Entity> entityList = new LinkedList<Entity>();
-			
 			String [] wikiText = wikiLine.split("\t");
 			if(wikiText.length != 5){
 				System.err.println("Wrong wiki-entity format"+"\t"+wikiLine);
@@ -31,16 +29,14 @@ public class Main {
 				map.put(wikiText[0], new ArrayList<Entity>());
 			}
 			
-			//需要将char index 转化为 word index
+			//将char index 转化为 word index
 			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(Integer.parseInt(wikiText[0]));
 			content = qf.question;
 			LinkedList<String> wordList = qf.getWordList();
 			String curEntity = content.substring(Integer.parseInt(wikiText[1]),Integer.parseInt(wikiText[2]));
 			
 			curEntity = curEntity.replace(" ", "");
-			
 			boolean isMatched = false;
-			
 			for(int i=0; i<wordList.size();++i){
 				if(curEntity.startsWith(wordList.get(i))){
 					StringBuilder sb = new StringBuilder();
@@ -66,41 +62,20 @@ public class Main {
 			}
 			
 			if(!isMatched){
-				System.out.println(content);
-				System.out.println(curEntity);
+				System.err.print("UnMatched\t");
+				System.err.print(wikiText[0]+" ");
+				System.err.println(content);
 			}
 			
-//			String [] wList = curEntity.split(" ");
-//			int i;
-//			for(i=0; i<wordList.size(); ++i){
-//				boolean mark = true;
-//				if(wordList.get(i).equals(wList[0])){
-//					for(int k=1;k<wList.length; ++k){
-//						if(!wordList.get(i+k).equals(wList[k])){
-//							mark = false;
-//							break;
-//						}
-//					}
-//					if(mark){
-//						map.get(wikiText[0]).add(new Entity(wikiText[4],wikiText[3],i,i+wList.length-1));
-//						break;
-//					}
-//				}
-//			}
 		}
-//		System.out.println("Load finished");
-//		
 		try {
 			BufferedWriter fout = new BufferedWriter(new FileWriter(outPath));
-			int count = 0;
 			for (String question : map.keySet()) {
 				
 				ArrayList<Entity> questionEntityList = map.get(question);
 				Collections.sort(questionEntityList);
-//				System.out.println("sort finished");
 				LinkedList<Entity> result = new LinkedList<Entity>();
 				int index = 1;
-//				System.out.println(questionEntityList.size());
 				if(questionEntityList.size() == 0){
 					System.err.println(question+"\tszie = 0");
 					continue;
@@ -147,7 +122,6 @@ public class Main {
 					sb.append("\n");
 				}
 				fout.write(sb.toString());
-				++count;
 			}
 			fout.close();
 		} catch (IOException e) {
@@ -184,10 +158,10 @@ public class Main {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String wikiPath = "./data/q-e/all-mark-wiki-entity.txt";
-		String outPath = "./data/zch/newEntity.txt";
-		 
 		Pipeline pipeline = new Pipeline();
+		
+//		String wikiPath = "./data/q-e/all-mark-wiki-entity.txt";
+//		String outPath = "./data/zch/newEntity.txt";
 //		entityExtraction(wikiPath,outPath,pipeline);
 		
 		setEntity(pipeline);
