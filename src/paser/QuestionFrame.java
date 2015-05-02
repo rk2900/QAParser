@@ -3,6 +3,7 @@ package paser;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
+import pattern.QuestionClassifier;
 import finder.PreProcess;
 import baseline.Entity;
 
@@ -11,6 +12,8 @@ public class QuestionFrame extends Question {
 	public LinkedList<String> wordList;
 	public LinkedList<String> posList;
 	public LinkedList<Entity> entityList;
+	
+	QuestionClassifier questionClassifier;
 	
 	public QuestionFrame(int id, boolean onlydbo, boolean aggregation,
 			boolean hybrid, String answerType, ArrayList<String> keywords,
@@ -22,6 +25,9 @@ public class QuestionFrame extends Question {
 		posList = new LinkedList<>();
 		entityList = new LinkedList<>();
 		PreProcess.processWordAndPOS(this);
+		questionClassifier = new QuestionClassifier();
+		questionClassifier.classify(wordList, posList);
+		
 	}
 	
 	public boolean setWordList(LinkedList<String> list) {
@@ -78,11 +84,11 @@ public class QuestionFrame extends Question {
 	public void print() {
 		System.out.println("-------------------------");
 		System.out.println("ID: "+"\t"+id);
+		System.out.println("Category: "+"\t"+this.questionClassifier.category);
 		System.out.println("Content: "+"\t"+this.question);
 		System.out.println("Word List: "+"\t"+this.wordList);
 		System.out.println("POS List: "+"\t"+this.posList);
 		System.out.println("Entity List: "+"\t"+this.entityList.size());
-		System.out.println();
 		System.out.println("-------------------------");
 	}
 }

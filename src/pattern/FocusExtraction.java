@@ -21,7 +21,7 @@ public class FocusExtraction extends TypeExtraction {
 			LinkedList<String> wordList = qs.qWordList;
 			LinkedList<String> posList = pipeline.getPOSTag(qs);
 			
-			if(qc.classify(qs) == Category.RESOURCE) { //&& !QuestionClassifier.judgeComparison(wordList, posList)) {
+			if(qc.classify(qs.qWordList, qs.qPOSList) == Category.RESOURCE) { //&& !QuestionClassifier.judgeComparison(wordList, posList)) {
 //				System.out.println(i+"\t"+wordList);
 //				System.out.println("\t"+posList);
 				

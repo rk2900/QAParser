@@ -23,10 +23,7 @@ public class QuestionClassifier {
 	 * Get question category by classifier
 	 * @param qs
 	 */
-	public Category classify(QuestionSingle qs) {
-		LinkedList<String> wordList = qs.qWordList;
-		LinkedList<String> POSList = qs.qPOSList;
-		
+	public Category classify(LinkedList<String> wordList, LinkedList<String> POSList) {
 		if(POSList == null || wordList == null) {
 			System.err.println("POS List or Word List is null!");
 			return null;
@@ -45,10 +42,7 @@ public class QuestionClassifier {
 		}
 		
 		this.category = cate;
-		
 		return category;
-//		// label
-//		labelMap.put(Label.COMPARISON, QuestionClassifier.judgeComparison(wordList, POSList));
 	}
 	
 	/**
@@ -209,15 +203,14 @@ public class QuestionClassifier {
 		categoryMap.put(Category.NUMBER, numberList);
 		categoryMap.put(Category.BOOLEAN, booleanList);
 		
-		int count = 0;
 		for(int i=1; i<=300; i++) {
 			QuestionSingle qs = parser.getQuestionWithPseudoId(i).toQuestionSingle();
 			pipeline.getPOSTag(qs);
 			
 			QuestionClassifier qc = new QuestionClassifier();
-			qc.classify(qs);
-			String trueCate = qs.answerType;
-			String predictCate = qc.category.toString();
+			qc.classify(qs.qWordList, qs.qPOSList);
+//			String trueCate = qs.answerType;
+//			String predictCate = qc.category.toString();
 			
 			
 		}
