@@ -3,6 +3,7 @@ package pattern;
 import java.util.LinkedList;
 
 import paser.Question;
+import paser.QuestionFrame;
 import paser.QuestionSingle;
 import pattern.QuestionClassifier.Category;
 import finder.Pipeline;
@@ -43,6 +44,54 @@ public class FocusExtraction extends TypeExtraction {
 	}
 	
 	public LinkedList<String> focusExtraction(String text, LinkedList<String> oriWordList, LinkedList<String> posList) {
+		LinkedList<String> focusList = new LinkedList<String>();
+		
+		// change to lower case
+		String sentence = new String(text.toLowerCase());
+		LinkedList<String> wordList = new LinkedList<String>();
+		for (String string : oriWordList) {
+			wordList.add(string.toLowerCase());
+		}
+		
+		// extraction based on rule
+		if(sentence.startsWith("give")) {
+			if(sentence.startsWith("give me all")) {
+				focusList.add(getFocusPhrase("all", wordList, posList));
+			} else if(sentence.contains("give all")) {
+				focusList.add(getFocusPhrase("all", wordList, posList));
+			} else if(sentence.startsWith("give me")) {
+				focusList.add(getFocusPhrase("me", wordList, posList));
+			} else if(sentence.startsWith("give me a list of")) {
+				focusList.add(getFocusPhrase("of", wordList, posList));
+			}
+		} else if(sentence.contains("list all")) {
+			focusList.add(getFocusPhrase("all", wordList, posList));
+		} else if(sentence.startsWith("list")) {
+			focusList.add(getFocusPhrase("lsit", wordList, posList));
+		} else if(sentence.startsWith("show me all")) {
+			focusList.add(getFocusPhrase("all", wordList, posList));
+		} else if(sentence.contains("show me")) {
+			focusList.add(getFocusPhrase("me", wordList, posList));
+		} else if(sentence.contains("show a list of")) {
+			focusList.add(getFocusPhrase("of", wordList, posList));
+		} else if(sentence.contains("which")) {
+			focusList.add(getFocusPhrase("which", wordList, posList));
+		} else if(sentence.contains("what")) {
+			focusList.add(getFocusPhrase("what", wordList, posList));
+		} else if(sentence.startsWith("who")) {
+			focusList.add("person");
+			focusList.add("organization");
+		} else if(sentence.startsWith("where")) {
+			focusList.add("place");
+		} 
+		
+		return focusList;
+	}
+	
+	public LinkedList<String> focusExtraction(QuestionFrame qf) {
+		String text = qf.question;
+		LinkedList<String> oriWordList = qf.wordList;
+		LinkedList<String> posList = qf.wordList;
 		LinkedList<String> focusList = new LinkedList<String>();
 		
 		// change to lower case

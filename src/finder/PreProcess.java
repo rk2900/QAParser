@@ -13,19 +13,10 @@ import edu.stanford.nlp.util.CoreMap;
 
 public class PreProcess {
 	
-//	private static StanfordCoreNLP pipeline;
-//		
-//	static {
-//		Properties props = new Properties();
-//		props.setProperty("annotators", "tokenize, ssplit, pos, lemma");
-//		pipeline = new StanfordCoreNLP(props);
-//	}
-	
 	public static void processWordAndPOS(QuestionFrame q) {
 		LinkedList<String> wordList = new LinkedList<>();
 		LinkedList<String> posList = new LinkedList<>();
 		String sentence = q.question;
-		//TODO word & POS extraction
 		Annotation annotation = new Annotation(sentence);
 		Pipeline.pipeline.annotate(annotation);
 		CoreMap labeledSentence = annotation.get(SentencesAnnotation.class).get(0);

@@ -174,9 +174,9 @@ public class Pipeline {
 //		}
 //		OutputRedirector.closeFileOutput();
 		
-		for(int i=1; i<=1; i++) {
-			Question q = pipeline.xmlParser.getQuestionWithPseudoId(i);
-			QuestionFrame qf = q.toQuestionFrame();
+		for(int i=1; i<=300; i++) {
+//			Question q = pipeline.xmlParser.getQuestionWithPseudoId(i);
+			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
 			qf.print();
 		}
 		

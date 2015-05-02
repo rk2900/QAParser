@@ -28,6 +28,7 @@ public class XMLParser {
 	private String filePath;
 	private Document doc;
 	private ArrayList<Question> questions;
+	private HashMap<Question, QuestionFrame> mappedQuestionFrames;
 	private HashMap<Integer, Question> mappedQuestions;
 	private static HashSet<String> types;
 	
@@ -46,6 +47,7 @@ public class XMLParser {
 		filePath = new String();
 		questions = new ArrayList<Question>();
 		mappedQuestions = new HashMap<>();
+		mappedQuestionFrames = new HashMap<>();
 	}
 	
 	public XMLParser(String file) {
@@ -155,6 +157,8 @@ public class XMLParser {
 					answerType, keywords, question, answers, query);
 			
 			questions.add(q);
+			QuestionFrame qf = q.toQuestionFrame();
+			mappedQuestionFrames.put(q, qf);
 			mappedQuestions.put(id, q);
 		}
 		System.out.println("Parsing finished.");
@@ -197,6 +201,10 @@ public class XMLParser {
 		return mappedQuestions.get(qid);
 	}
 	
+	public QuestionFrame getQuestionFrameWithId(int qid) {
+		return mappedQuestionFrames.get(getQuestionWithId(qid));
+	}
+	
 	/**
 	 * To get specified question with pseudo q-id in XML file.
 	 * @param id pseudo q-id
@@ -204,6 +212,10 @@ public class XMLParser {
 	 */
 	public Question getQuestionWithPseudoId(int id) {
 		return questions.get(id-1);
+	}
+	
+	public QuestionFrame getQuestionFrameWithPseudoId(int id) {
+		return mappedQuestionFrames.get(getQuestionWithPseudoId(id));
 	}
 
 	public static void main(String[] args) {
