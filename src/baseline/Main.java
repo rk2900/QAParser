@@ -168,6 +168,7 @@ public class Main {
 				return entity;
 			}
 		}
+		return null;
 	}
 	
 	public static void main(String[] args) {
@@ -219,13 +220,16 @@ public class Main {
 			}
 			
 			if(entityList.size() > 0 && costraintList.size() > 0){
-				Queue<Node> queue = new LinkedList<Node>();
+				Queue<matchNode> queue = new LinkedList<matchNode>();
 				for (Constraint constraint : costraintList) {
 					Node left = constraint.left;
 					Node right = constraint.right;
 					
 					if(!left.isx){
-						
+						Entity e = getEntity(entityList, left);
+						if(e == null){
+							System.err.println("No matched entity in the left Node");
+						}
 					}
 					
 					if(!right.isx){
