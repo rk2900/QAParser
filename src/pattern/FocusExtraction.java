@@ -109,7 +109,7 @@ public class FocusExtraction extends TypeExtraction {
 				if(!mayendFlag && (pos.startsWith("V") || pos.startsWith("DT")) ) {
 					continue;
 				}
-				else if(mayendFlag && !pos.startsWith("NN")) {
+				else if(mayendFlag && !pos.startsWith("NN") && !pos.startsWith("CD")) {
 					startFlag = false;
 					break;
 				}
