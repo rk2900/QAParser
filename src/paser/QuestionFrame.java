@@ -29,6 +29,7 @@ public class QuestionFrame extends Question {
 		PreProcess.processWordAndPOS(this);
 		questionClassifier = new QuestionClassifier();
 		questionClassifier.classify(wordList, posList);
+		questionClassifier.judgeRule(wordList, posList);
 		focus = FocusExtraction.extract(this);
 	}
 	
@@ -105,12 +106,20 @@ public class QuestionFrame extends Question {
 		System.out.println("-------------------------");
 		System.out.println("ID: "+"\t"+id);
 		System.out.println("Category: "+"\t"+this.questionClassifier.category);
+		System.out.println("Rule Judgement:"+"\t"+this.questionClassifier.label);
 		System.out.println("Content: "+"\t"+this.question);
-		System.out.println("Focus Index:"+"\t"+this.focus.leftIndex+"\t"+this.focus.rightIndex);
 		System.out.println("Focus Content: "+"\t"+this.focus.getFocusContent(wordList));
 		System.out.println("Word List: "+"\t"+this.wordList);
 		System.out.println("POS List: "+"\t"+this.posList);
 		System.out.println("Entity List: "+"\t"+this.entityList.size());
 		System.out.println("-------------------------");
+	}
+	
+	public void printFocus() {
+		if(!this.focus.isEmpty()) {
+			System.out.println(this.focus.getFocusContent(wordList));
+		} else {
+			System.out.println();
+		}
 	}
 }
