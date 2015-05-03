@@ -80,6 +80,8 @@ public class FocusExtraction extends TypeExtraction {
 			focus.setFocus(getFocusPhrase("me", wordList, posList));
 		} else if(sentence.contains("show a list of")) {
 			focus.setFocus(getFocusPhrase("of", wordList, posList));
+		} else if(sentence.contains("which of")) {
+			focus.setFocus(getFocusPhrase("of", wordList, posList));
 		} else if(sentence.contains("which")) {
 			focus.setFocus(getFocusPhrase("which", wordList, posList));
 		} else if(sentence.contains("what")) {
