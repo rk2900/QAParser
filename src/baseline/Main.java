@@ -8,7 +8,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
+
+import com.hp.hpl.jena.sparql.function.library.print;
 
 import paser.QuestionFrame;
 import syntacticParser.Constraint;
@@ -171,94 +172,258 @@ public class Main {
 		return null;
 	}
 	
+	public static void stat(){
+		Pipeline pipeline = new Pipeline();
+		
+		/*		String wikiPath = "./data/q-e/all-mark-wiki-entity.txt";
+				String outPath = "./data/zch/newEntity.txt";
+				entityExtraction(wikiPath,outPath,pipeline);
+		*/		
+				setEntity(pipeline);
+		/*	
+				int [] intersection = {51,174,296,103,108};
+				for(int i=0; i<intersection.length; ++i){
+					System.out.println("*************");
+					QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(intersection[i]);
+					
+					System.out.println(qf.question);
+					System.out.println(qf.wordList);
+					
+					for(Entity e:qf.getEntityList()){
+						for(int k=e.getStart(); k<=e.getEnd(); ++k){
+							System.out.print(qf.wordList.get(k)+" ");
+						}
+						System.out.println();
+						System.out.println(e.start+" "+e.end+" "+e.uri);
+					}
+				}
+		*/		
+				LinkedList<String> nullConstrainListQuestion = new LinkedList<String>();
+				LinkedList<String> nullEntityQuestion = new LinkedList<String>();
+				HashMap<Integer, Integer> statMap = new HashMap<Integer, Integer>();
+				
+				for(int id=1; id<=300; ++id){
+					
+					
+					QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(id);
+					LinkedList<Entity> entityList = qf.getEntityList();
+					
+					ConstraintSet constraintSet=ConstraintSet.getConstraintSet(qf.question, qf);
+					Node answer = constraintSet.ans;
+					List<Constraint> constraintList = constraintSet.list;
+					
+					if(!statMap.containsKey(constraintList.size())){
+						statMap.put(constraintList.size(), 1);
+					}else{
+						statMap.put(constraintList.size(),statMap.get(constraintList.size())+1);
+					}
+					
+					if(constraintList.size() == 0){
+						nullConstrainListQuestion.add(qf.question);
+//						continue;
+					}
+					
+					if(entityList.size() == 0){
+						nullEntityQuestion.add(qf.question);
+//						continue;
+					}
+					
+					if(entityList.size() > 0 && constraintList.size() > 0){
+						//首先将匹配有实体的constraint封装 放入queue中
+//						Queue<MatchDetail> queue = new LinkedList<MatchDetail>();
+//						for (Constraint constraint : costraintList) {
+//							Node left = constraint.left;
+//							Node right = constraint.right;
+							
+							
+							
+//							if(!left.isx && !right.isx){
+//								System.err.println("Both nodes in Constraint are Strings");
+//								continue;
+//							}
+//							
+//							if(!left.isx){
+//								Entity e = getEntity(entityList, left);
+//								if(e == null){
+//									System.err.println("No matched entity in the left Node");
+//								}else{
+//									queue.add(new MatchDetail(e, left, constraint, 0));
+//								}
+//							}
+//							
+//							if(!right.isx){
+//								Entity e = getEntity(entityList, right);
+//								if(e == null){
+//									System.err.println("No matched entity in the right Node");
+//								}else{
+//									queue.add(new MatchDetail(e, right, constraint, 1));
+//								}
+//							}
+//						}
+						
+//						while(!queue.isEmpty()){
+//							MatchDetail curMatchDetail = queue.poll();
+//							
+//						}
+					}
+				}
+				System.out.println("null entity question Num: "+nullEntityQuestion.size());
+//				System.out.println("null constrainList question Num: "+nullConstrainListQuestion.size());
+				
+				for (Integer size : statMap.keySet()) {
+					System.out.println("ConstrainList size = "+size+" Num = "+statMap.get(size));
+				}
+	}
 	
+	//一步走
+	public static void step(MatchDetail step){
+		
+	}
+	
+	//链式问题
+	public static void pipe(MatchDetail pipe1, Constraint cs){
+		
+	}
+	
+	//2对1的映射问题
+	public static void map(MatchDetail step1, MatchDetail step2){
+		
+	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Pipeline pipeline = new Pipeline();
-		
-/*		String wikiPath = "./data/q-e/all-mark-wiki-entity.txt";
-		String outPath = "./data/zch/newEntity.txt";
-		entityExtraction(wikiPath,outPath,pipeline);
-*/		
 		setEntity(pipeline);
-/*	
-		int [] intersection = {51,174,296,103,108};
-		for(int i=0; i<intersection.length; ++i){
-			System.out.println("*************");
-			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(intersection[i]);
-			
-			System.out.println(qf.question);
-			System.out.println(qf.wordList);
-			
-			for(Entity e:qf.getEntityList()){
-				for(int k=e.getStart(); k<=e.getEnd(); ++k){
-					System.out.print(qf.wordList.get(k)+" ");
-				}
-				System.out.println();
-				System.out.println(e.start+" "+e.end+" "+e.uri);
-			}
-		}
-*/		
+		
+		LinkedList<String> nullConstrainListQuestion = new LinkedList<String>();
+		LinkedList<String> nullEntityQuestion = new LinkedList<String>();
+		
 		for(int id=1; id<=300; ++id){
-			LinkedList<String> nullConstrainListQuestion = new LinkedList<String>();
-			LinkedList<String> nullEntityQuestion = new LinkedList<String>();
-			
 			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(id);
 			LinkedList<Entity> entityList = qf.getEntityList();
 			
 			ConstraintSet constraintSet=ConstraintSet.getConstraintSet(qf.question, qf);
 			Node answer = constraintSet.ans;
-			List<Constraint> costraintList = constraintSet.list;
+			List<Constraint> constraintList = constraintSet.list;
 			
-			if(costraintList.size() == 0){
+			if(constraintList.size() == 0){
 				nullConstrainListQuestion.add(qf.question);
-				continue;
+//				continue;
 			}
 			
 			if(entityList.size() == 0){
 				nullEntityQuestion.add(qf.question);
-				continue;
+//				continue;
 			}
 			
-			if(entityList.size() > 0 && costraintList.size() > 0){
-				//首先将匹配有实体的constraint封装 放入queue中
-				Queue<MatchDetail> queue = new LinkedList<MatchDetail>();
-				for (Constraint constraint : costraintList) {
+			if(entityList.size() > 0 && constraintList.size() > 0){
+				if(constraintList.size() == 1){
+					Constraint constraint = constraintList.get(0);
+					Entity e;
 					Node left = constraint.left;
 					Node right = constraint.right;
+					int location;
 					
 					if(!left.isx && !right.isx){
-						System.err.println("Both nodes in Constraint are Strings");
+						System.err.println(id + ": Both nodes in Constraint are Strings");
 						continue;
 					}
 					
 					if(!left.isx){
-						Entity e = getEntity(entityList, left);
-						if(e == null){
-							System.err.println("No matched entity in the left Node");
+						e = getEntity(entityList, left);
+						location = 0;
+					}else{
+						e = getEntity(entityList, right);
+						location = 1;
+					}
+					if(e == null){
+						System.err.println(id + ": No matched entity in the Node");
+						System.out.println(constraint.getString());
+						
+						continue;
+					}
+					
+					MatchDetail onestep = new MatchDetail(e, constraint, location);
+					step(onestep);
+					onestep.print();
+				}
+				
+				if(constraintList.size() == 2){
+					int eCount = 0;
+					int cs1Location = -1;
+					int cs2Location = -1;
+					
+					Constraint cs1 = constraintList.get(0);
+					Constraint cs2 = constraintList.get(1);
+					
+					if(!cs1.left.isx){
+						cs1Location = 0;
+						++eCount;
+					}
+					if(!cs1.right.isx){
+						cs1Location = 1;
+						++eCount;
+					}
+					if(!cs2.left.isx){
+						cs2Location = 0;
+						++eCount;
+					}
+					if(!cs2.right.isx){
+						cs2Location = 1;
+						++eCount;
+					}
+					
+					if(eCount == 1){
+						Entity e;
+						MatchDetail pipe1;
+						if(cs1Location >= 0){
+							if(cs1Location == 0){
+								e = getEntity(entityList, cs1.left);
+							}else{
+								e = getEntity(entityList, cs1.right);
+							}
+							pipe1 = new MatchDetail(e, cs1, cs1Location);
+							pipe(pipe1,cs2);
 						}else{
-							queue.add(new MatchDetail(e, left, constraint, 0));
+							if(cs2Location == 0){
+								e = getEntity(entityList, cs2.left);
+							}else{
+								e = getEntity(entityList, cs2.right);
+							}
+							pipe1 = new MatchDetail(e, cs2, cs2Location);
+							pipe(pipe1, cs1);
 						}
 					}
 					
-					if(!right.isx){
-						Entity e = getEntity(entityList, right);
-						if(e == null){
-							System.err.println("No matched entity in the right Node");
+					if(eCount == 2){
+						MatchDetail step1,step2;
+						Entity e;
+						if(cs1Location == 0){
+							e = getEntity(entityList, cs1.left);
 						}else{
-							queue.add(new MatchDetail(e, right, constraint, 1));
+							e = getEntity(entityList, cs1.right);
 						}
+						step1 = new MatchDetail(e, cs1, cs1Location);
+						
+						if(cs2Location == 0){
+							e = getEntity(entityList, cs2.left);
+						}else{
+							e = getEntity(entityList, cs2.right);
+						}
+						step2 = new MatchDetail(e, cs2, cs2Location);
+						map(step1, step2);
+					}
+					
+					if(eCount > 2){
+						System.err.println(id + ": eCount > 2");
+						continue;
 					}
 				}
 				
-				while(!queue.isEmpty()){
-					MatchDetail curMatchDetail = queue.poll();
-					
+				if(constraintList.size() > 2){
+					System.err.println("constraintList size > 2");
 				}
 			}
 		}
-		
 	}
-
 }
