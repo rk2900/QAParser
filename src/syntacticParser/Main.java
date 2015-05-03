@@ -34,9 +34,7 @@ public class Main {
 		String ret=str+"\r\n";
 		Tree t=stringParser.parse(str);
 		ret+=t.pennString();
-		ConstraintSet c=new ConstraintSet();
-		constraintExtractor.extract(qf, t, t, c.ans, c);
-		c.transform(qf.wordList);
+		ConstraintSet c=ConstraintSet.getConstraintSet(str,qf);
 		ret+=c.toString();
 		return ret;
 	}
