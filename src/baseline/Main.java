@@ -9,10 +9,6 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
-import knowledgebase.ClientManagement;
-
-import com.hp.hpl.jena.rdf.model.RDFNode;
-
 import paser.QuestionFrame;
 import syntacticParser.Constraint;
 import syntacticParser.ConstraintSet;
@@ -21,7 +17,7 @@ import finder.Pipeline;
 import basic.FileOps;
 
 public class Main {
-
+	
 	public static void entityExtraction(String inPath,String outPath, Pipeline pipeline){
 		LinkedList<String> wikiLines = FileOps.LoadFilebyLine(inPath);
 		HashMap<String, ArrayList<Entity>> map = new HashMap<String, ArrayList<Entity>>();
@@ -277,28 +273,16 @@ public class Main {
 				}
 	}
 	
+	
 	//一步走
 	public static void step(MatchDetail step){
 		String entityUri = step.entity.uri;
-		String NL = step.constraint.edge;
-		
-		LinkedList<RDFNode> predictUriList = ClientManagement.getSurroundingPred(entityUri);
-		for (RDFNode predictUri : predictUriList) {
-			LinkedList<String> predictlabels = ClientManagement.getLabel(predictUri.toString());
-			double maxScore = 0;
-			for (String predictlabel : predictlabels) {
-				double score = SimilarityFunction.umbcWordRanking(predictlabel, NL);
-				if(score > maxScore){
-					maxScore = score;
-				}
-			}
-		}
-
+		ArrayList<Predict> predictList = SimilarityFunction.getTopNPredicts(step);
 	}
 	
 	//链式问题
 	public static void pipe(MatchDetail pipe1, Constraint cs){
-		
+		ArrayList<Predict> predictList = SimilarityFunction.getTopNPredicts(pipe1);
 	}
 	
 	//2对1的映射问题
