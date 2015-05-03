@@ -9,7 +9,9 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.hp.hpl.jena.sparql.function.library.print;
+import knowledgebase.ClientManagement;
+
+import com.hp.hpl.jena.rdf.model.RDFNode;
 
 import paser.QuestionFrame;
 import syntacticParser.Constraint;
@@ -277,7 +279,21 @@ public class Main {
 	
 	//一步走
 	public static void step(MatchDetail step){
+		String entityUri = step.entity.uri;
+		String NL = step.constraint.edge;
 		
+		LinkedList<RDFNode> predictUriList = ClientManagement.getSurroundingPred(entityUri);
+		for (RDFNode predictUri : predictUriList) {
+			LinkedList<String> predictlabels = ClientManagement.getLabel(predictUri.toString());
+			double maxScore = 0;
+			for (String predictlabel : predictlabels) {
+				double score = SimilarityFunction.umbcWordRanking(predictlabel, NL);
+				if(score > maxScore){
+					maxScore = score;
+				}
+			}
+		}
+
 	}
 	
 	//链式问题
@@ -339,7 +355,6 @@ public class Main {
 					if(e == null){
 						System.err.println(id + ": No matched entity in the Node");
 						System.out.println(constraint.getString());
-						
 						continue;
 					}
 					

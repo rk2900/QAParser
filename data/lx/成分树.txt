@@ -1,0 +1,3345 @@
+Give me all cosmonauts.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NNS cosmonauts)))
+    (. .)))
+
+In which country does the Ganges start?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN country)))
+    (SQ (VBZ does)
+      (NP (DT the) (NNPS Ganges))
+      (VP (VB start)))
+    (. ?)))
+
+When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBZ is)
+      (NP (DT the) (NN movie) (NNP Worst) (NNP Case) (NNP Scenario))
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (PP (IN in)
+                (NP
+                  (NP (NNS cinemas))
+                  (PP (IN in)
+                    (NP (DT the) (NNPS Netherlands))))))))))
+    (. ?)))
+
+Which German cities have more than 250000 inhabitants?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (JJ German) (NNS cities))
+    (SQ
+      (VP (VBP have)
+        (NP
+          (QP (JJR more) (IN than) (CD 250000))
+          (NNS inhabitants))))
+    (. ?)))
+
+Who was John F. Kennedy's vice president?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (NNP John) (NNP F.) (NNP Kennedy) (POS 's))
+        (NN vice) (NN president)))
+    (. ?)))
+
+Who is the mayor of Berlin?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN mayor))
+        (PP (IN of)
+          (NP (NNP Berlin)))))
+    (. ?)))
+
+How many students does the Free University in Amsterdam have?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS students))
+    (SQ (VBZ does)
+      (NP
+        (NP (DT the) (NNP Free) (NNP University))
+        (PP (IN in)
+          (NP (NNP Amsterdam))))
+      (VP (VB have)))
+    (. ?)))
+
+What is the second highest mountain on Earth?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP (DT the) (JJ second) (JJS highest) (NN mountain))
+      (PP (IN on)
+        (NP (NNP Earth))))
+    (. ?)))
+
+Give me all professional skateboarders from Sweden.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (JJ professional) (NNS skateboarders))
+        (PP (IN from)
+          (NP (NNP Sweden)))))
+    (. .)))
+
+When was Alberta admitted as province?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD was)
+      (NP (NNP Alberta))
+      (VP (VBN admitted)
+        (PP (IN as)
+          (NP (NN province)))))
+    (. ?)))
+
+To which countries does the Himalayan mountain system extend?
+(ROOT
+  (SBARQ
+    (WHPP (TO To)
+      (WHNP (WDT which) (NNS countries)))
+    (SQ (VBZ does)
+      (NP (DT the) (NNP Himalayan) (NN mountain) (NN system))
+      (VP (VB extend)))
+    (. ?)))
+
+Give me a list of all bandleaders that play trumpet.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT a) (NN list))
+        (PP (IN of)
+          (NP
+            (NP (DT all) (NNS bandleaders))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP play)
+                  (NP (NN trumpet)))))))))
+    (. .)))
+
+Which countries have more than ten caves?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS countries))
+    (SQ
+      (VP (VBP have)
+        (NP
+          (QP (JJR more) (IN than) (CD ten))
+          (NNS caves))))
+    (. ?)))
+
+What is the total amount of men and women serving in the FDNY?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ total) (NN amount))
+        (PP (IN of)
+          (NP (NNS men)
+            (CC and)
+            (NNS women))))
+      (VP (VBG serving)
+        (PP (IN in)
+          (NP (DT the) (NNP FDNY)))))
+    (. ?)))
+
+Who produces Orangina?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBZ produces)
+        (NP (NNP Orangina))))
+    (. ?)))
+
+Who is the Formula 1 race driver with the most races?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NNP Formula) (CD 1) (NN race) (NN driver))
+        (PP (IN with)
+          (NP (DT the) (JJS most) (NNS races)))))
+    (. ?)))
+
+Give me all world heritage sites designated within the past two years.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NN world) (NN heritage) (NNS sites))
+        (VP (VBN designated)
+          (PP (IN within)
+            (NP (DT the) (JJ past) (CD two) (NNS years))))))
+    (. .)))
+
+Who is the youngest player in the Premier League?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJS youngest) (NN player))
+        (PP (IN in)
+          (NP (DT the) (NNP Premier) (NNP League)))))
+    (. ?)))
+
+Give me all members of Prodigy.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS members))
+        (PP (IN of)
+          (NP (NNP Prodigy)))))
+    (. .)))
+
+What is the longest river?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP (DT the) (JJS longest) (NN river)))
+    (. ?)))
+
+Does Breaking Bad have more episodes than Game of Thrones?
+(ROOT
+  (SQ (NNP Does)
+    (NP (NNP Breaking) (NNP Bad))
+    (VP (VB have)
+      (NP (JJR more) (NNS episodes))
+      (PP (IN than)
+        (NP
+          (NP (NNP Game))
+          (PP (IN of)
+            (NP (NNP Thrones))))))
+    (. ?)))
+
+Give me all cars that are produced in Germany.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS cars))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP are)
+              (VP (VBN produced)
+                (PP (IN in)
+                  (NP (NNP Germany)))))))))
+    (. .)))
+
+What were the main discoveries of the Mars rover Curiosity?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD were)
+      (NP
+        (NP (DT the) (JJ main) (NNS discoveries))
+        (PP (IN of)
+          (NP (DT the) (NNP Mars) (NNP rover) (NNP Curiosity)))))
+    (. ?)))
+
+Give me all people that were born in Vienna and died in Berlin.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS people))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD were)
+              (VP
+                (VP (VBN born)
+                  (PP (IN in)
+                    (NP (NNP Vienna))))
+                (CC and)
+                (VP (VBN died)
+                  (PP (IN in)
+                    (NP (NNP Berlin))))))))))
+    (. .)))
+
+Is proinsulin a protein?
+(ROOT
+  (SQ (VBZ Is)
+    (NP (NN proinsulin))
+    (NP (DT a) (NN protein))
+    (. ?)))
+
+How tall is Michael Jordan?
+(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ tall))
+    (SQ (VBZ is)
+      (NP (NNP Michael) (NNP Jordan)))
+    (. ?)))
+
+What is the capital of Canada?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN capital))
+        (PP (IN of)
+          (NP (NNP Canada)))))
+    (. ?)))
+
+Who is the governor of Wyoming?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN governor))
+        (PP (IN of)
+          (NP (NNP Wyoming)))))
+    (. ?)))
+
+Do Prince Harry and Prince William have the same parents?
+(ROOT
+  (SQ (VBP Do)
+    (NP
+      (NP (NNP Prince) (NNP Harry))
+      (CC and)
+      (NP (NNP Prince) (NNP William)))
+    (VP (VB have)
+      (NP (DT the) (JJ same) (NNS parents)))
+    (. ?)))
+
+Who was the father of Queen Elizabeth II?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NN father))
+        (PP (IN of)
+          (NP (NNP Queen) (NNP Elizabeth) (NNP II)))))
+    (. ?)))
+
+Which U.S. state has been admitted latest?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNP U.S.) (NN state))
+    (SQ
+      (VP (VBZ has)
+        (VP (VBN been)
+          (VP (VBN admitted)
+            (S
+              (NP (JJS latest)))))))
+    (. ?)))
+
+How many languages are spoken in Turkmenistan?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS languages))
+    (SQ (VBP are)
+      (VP (VBN spoken)
+        (PP (IN in)
+          (NP (NNP Turkmenistan)))))
+    (. ?)))
+
+Sean Parnell is the governor of which U.S. state?
+(ROOT
+  (S
+    (NP (NNP Sean) (NNP Parnell))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN governor))
+        (WHPP (IN of)
+          (WHNP (WDT which) (NNP U.S.) (NN state)))))
+    (. ?)))
+
+Give me all movies directed by Francis Ford Coppola.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS movies))
+        (VP (VBN directed)
+          (PP (IN by)
+            (NP (NNP Francis) (NNP Ford) (NNP Coppola))))))
+    (. .)))
+
+Give me all actors starring in movies directed by William Shatner.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS actors))
+        (VP (VBG starring)
+          (PP (IN in)
+            (NP
+              (NP (NNS movies))
+              (VP (VBN directed)
+                (PP (IN by)
+                  (NP (NNP William) (NNP Shatner)))))))))
+    (. .)))
+
+Are tree frogs a type of amphibian?
+(ROOT
+  (SQ (VBP Are)
+    (NP (NN tree))
+    (VP (VBG frogs)
+      (NP
+        (NP (DT a) (NN type))
+        (PP (IN of)
+          (NP (NN amphibian)))))
+    (. ?)))
+
+What is the birth name of Angela Merkel?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN birth) (NN name))
+        (PP (IN of)
+          (NP (NNP Angela) (NNP Merkel)))))
+    (. ?)))
+
+Give me all Methodist politicians.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NNP Methodist) (NNS politicians)))
+    (. .)))
+
+How often did Jane Fonda marry?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How) (RB often))
+    (SQ (VBD did)
+      (NP (NNP Jane) (NNP Fonda))
+      (VP (VB marry)))
+    (. ?)))
+
+Give me all Australian nonprofit organizations.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Australian) (JJ nonprofit) (NNS organizations)))
+    (. .)))
+
+In which military conflicts did Lawrence of Arabia participate?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which)
+        (NP (JJ military) (NNS conflicts))))
+    (SQ (VBD did)
+      (NP
+        (NP (NNP Lawrence))
+        (PP (IN of)
+          (NP (NNP Arabia))))
+      (VP (VB participate)))
+    (. ?)))
+
+Who developed Minecraft?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD developed)
+        (NP (NNP Minecraft))))
+    (. ?)))
+
+What is the melting point of copper?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ melting) (NN point))
+        (PP (IN of)
+          (NP (NN copper)))))
+    (. ?)))
+
+Give me all sister cities of Brno.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (JJ sister) (NNS cities))
+        (PP (IN of)
+          (NP (NNP Brno)))))
+    (. .)))
+
+How many inhabitants does Maribor have?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS inhabitants))
+    (SQ (VBZ does)
+      (NP (NNP Maribor))
+      (VP (VB have)))
+    (. ?)))
+
+Give me all companies in Munich.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS companies))
+        (PP (IN in)
+          (NP (NNP Munich)))))
+    (. .)))
+
+How tall is Claudia Schiffer?
+(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ tall))
+    (SQ (VBZ is)
+      (NP (NNP Claudia) (NNP Schiffer)))
+    (. ?)))
+
+List all games by GMT.
+(ROOT
+  (S
+    (VP (VB List)
+      (NP (DT all) (NNS games))
+      (PP (IN by)
+        (NP (NNP GMT))))
+    (. .)))
+
+Who founded Intel?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD founded)
+        (NP (NNP Intel))))
+    (. ?)))
+
+Who is the husband of Amanda Palmer?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN husband))
+        (PP (IN of)
+          (NP (NNP Amanda) (NNP Palmer)))))
+    (. ?)))
+
+Give me all breeds of the German Shepherd dog.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NN breeds))
+        (PP (IN of)
+          (NP (DT the) (JJ German) (NNP Shepherd) (NN dog)))))
+    (. .)))
+
+Which cities does the Weser flow through?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS cities))
+    (SQ (VBZ does)
+      (NP (DT the) (NNP Weser))
+      (VP (VB flow)
+        (PRT (RP through))))
+    (. ?)))
+
+Which countries are connected by the Rhine?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS countries))
+    (SQ (VBP are)
+      (VP (VBN connected)
+        (PP (IN by)
+          (NP (DT the) (NNP Rhine)))))
+    (. ?)))
+
+Which professional surfers were born in Australia?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which)
+      (NP (JJ professional) (NNS surfers)))
+    (SQ (VBD were)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Australia)))))
+    (. ?)))
+
+What is the average temperature on Hawaii?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ average) (NN temperature))
+        (PP (IN on)
+          (NP (NNP Hawaii)))))
+    (. ?)))
+
+In which UK city are the headquarters of the MI6?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NNP UK) (NN city)))
+    (SQ (VBP are)
+      (NP
+        (NP (DT the) (NN headquarters))
+        (PP (IN of)
+          (NP (DT the) (NN MI6)))))
+    (. ?)))
+
+Which other weapons did the designer of the Uzi develop?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (JJ other) (NNS weapons))
+    (SQ (VBD did)
+      (NP
+        (NP (DT the) (NN designer))
+        (PP (IN of)
+          (NP (DT the) (NNP Uzi))))
+      (VP (VB develop)))
+    (. ?)))
+
+Who created Goofy?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD created)
+        (NP (NNP Goofy))))
+    (. ?)))
+
+Was the Cuban Missile Crisis earlier than the Bay of Pigs Invasion?
+(ROOT
+  (SQ (VBD Was)
+    (NP (DT the) (JJ Cuban) (NNP Missile) (NNP Crisis))
+    (ADJP (JJR earlier)
+      (PP (IN than)
+        (NP
+          (NP (DT the) (NNP Bay))
+          (PP (IN of)
+            (NP (NNPS Pigs)
+              (NX (NNP Invasion)))))))
+    (. ?)))
+
+Give me all islands that belong to Japan.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS islands))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP belong)
+              (PP (TO to)
+                (NP (NNP Japan))))))))
+    (. .)))
+
+Who invented the zipper?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD invented)
+        (NP (DT the) (NN zipper))))
+    (. ?)))
+
+What is the ruling party in Lisbon?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN ruling) (NN party))
+        (PP (IN in)
+          (NP (NNP Lisbon)))))
+    (. ?)))
+
+What are the nicknames of San Francisco?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP are)
+      (NP
+        (NP (DT the) (NNS nicknames))
+        (PP (IN of)
+          (NP (NNP San) (NNP Francisco)))))
+    (. ?)))
+
+Which Greek goddesses dwelt on Mount Olympus?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN Greek))
+    (SQ
+      (VP (VBZ goddesses)
+        (NP (NN dwelt))
+        (PP (IN on)
+          (NP (NNP Mount) (NNP Olympus)))))
+    (. ?)))
+
+When were the Hells Angels founded?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD were)
+      (NP (DT the) (NNP Hells) (NNPS Angels))
+      (VP (VBN founded)))
+    (. ?)))
+
+Give me all Apollo 14 astronauts.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NNP Apollo) (CD 14) (NNS astronauts)))
+    (. .)))
+
+What is the time zone of Salt Lake City?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN time) (NN zone))
+        (PP (IN of)
+          (NP (NNP Salt) (NNP Lake) (NNP City)))))
+    (. ?)))
+
+Which U.S. states are in the same time zone as Utah?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNP U.S.) (NNS states))
+    (SQ (VBP are)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (JJ same) (NN time) (NN zone))
+          (PP (IN as)
+            (NP (NNP Utah))))))
+    (. ?)))
+
+Give me the capitals of all countries in Africa.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NN capitals))
+        (PP (IN of)
+          (NP
+            (NP (DT all) (NNS countries))
+            (PP (IN in)
+              (NP (NNP Africa)))))))
+    (. .)))
+
+Give me a list of all lakes in Denmark.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT a) (NN list))
+        (PP (IN of)
+          (NP
+            (NP (DT all) (NNS lakes))
+            (PP (IN in)
+              (NP (NNP Denmark)))))))
+    (. .)))
+
+How many missions does the Soyuz programme have?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS missions))
+    (SQ (VBZ does)
+      (NP (DT the) (NNP Soyuz) (NN programme))
+      (VP (VB have)))
+    (. ?)))
+
+Did Socrates influence Aristotle?
+(ROOT
+  (SQ (VBD Did)
+    (NP (NNP Socrates))
+    (VP (VB influence)
+      (NP (NNP Aristotle)))
+    (. ?)))
+
+Give me all Danish movies.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Danish) (NNS movies)))
+    (. .)))
+
+Give me all launch pads operated by NASA.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NN launch) (NNS pads))
+        (VP (VBN operated)
+          (PP (IN by)
+            (NP (NNP NASA))))))
+    (. .)))
+
+Which instruments does Cat Stevens play?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN instruments))
+    (SQ (VBZ does)
+      (NP (NNP Cat) (NNP Stevens))
+      (VP (VB play)))
+    (. ?)))
+
+Which ships were called after Benjamin Franklin?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN ships))
+    (SQ (VBD were)
+      (VP (VBN called)
+        (PP (IN after)
+          (NP (NNP Benjamin) (NNP Franklin)))))
+    (. ?)))
+
+Who are the parents of the wife of Juan Carlos I?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBP are)
+      (NP
+        (NP (DT the) (NNS parents))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN wife))
+            (PP (IN of)
+              (NP (NNP Juan) (NNP Carlos))))))
+      (NP (PRP I)))
+    (. ?)))
+
+How many employees does Google have?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS employees))
+    (SQ (VBZ does)
+      (NP (NNP Google))
+      (VP (VB have)))
+    (. ?)))
+
+Did Tesla win a nobel prize in physics?
+(ROOT
+  (SQ (VBD Did)
+    (NP (NNP Tesla))
+    (VP (VB win)
+      (NP (DT a) (JJ nobel) (NN prize))
+      (PP (IN in)
+        (NP (NN physics))))
+    (. ?)))
+
+Give me all cities in New Jersey with more than 100000 inhabitants.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS cities))
+        (PP (IN in)
+          (NP
+            (NP (NNP New) (NNP Jersey))
+            (PP (IN with)
+              (NP
+                (QP (JJR more) (IN than) (CD 100000))
+                (NNS inhabitants)))))))
+    (. .)))
+
+Is Rita Wilson the wife of Tom Hanks?
+(ROOT
+  (SQ (VBZ Is)
+    (NP (NNP Rita) (NNP Wilson))
+    (NP
+      (NP (DT the) (NN wife))
+      (PP (IN of)
+        (NP (NNP Tom) (NNP Hanks))))
+    (. ?)))
+
+When was the Statue of Liberty built?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NNP Statue))
+        (PP (IN of)
+          (NP (NNP Liberty))))
+      (VP (VBN built)))
+    (. ?)))
+
+In which U.S. state is Fort Knox located?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NNP U.S.) (NN state)))
+    (SQ (VBZ is)
+      (NP (NNP Fort) (NNP Knox))
+      (VP (VBN located)))
+    (. ?)))
+
+How many children did Benjamin Franklin have?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS children))
+    (SQ (VBD did)
+      (NP (NNP Benjamin) (NNP Franklin))
+      (VP (VB have)))
+    (. ?)))
+
+When did Michael Jackson die?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD did)
+      (NP (NNP Michael) (NNP Jackson))
+      (VP (VB die)))
+    (. ?)))
+
+Which Chess players died in the same place they were born in?
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WDT Which))
+      (S
+        (NP (NNP Chess) (NNS players))
+        (VP (VBD died)
+          (PP (IN in)
+            (NP (DT the) (JJ same) (NN place))))))
+    (NP (PRP they))
+    (VP (VBD were)
+      (VP (VBN born)
+        (PP (IN in))))
+    (. ?)))
+
+List the children of Margaret Thatcher.
+(ROOT
+  (S
+    (VP (VB List)
+      (NP
+        (NP (DT the) (NNS children))
+        (PP (IN of)
+          (NP (NNP Margaret) (NNP Thatcher)))))
+    (. .)))
+
+Who was called Frank The Tank?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (VP (VBN called)
+        (NP (NNP Frank) (NNP The) (NNP Tank))))
+    (. ?)))
+
+Was Margaret Thatcher a chemist?
+(ROOT
+  (SQ (VBD Was)
+    (NP (NNP Margaret) (NNP Thatcher))
+    (NP (DT a) (NN chemist))
+    (. ?)))
+
+Was Marc Chagall a jew?
+(ROOT
+  (SQ (VBD Was)
+    (NP (NNP Marc) (NNP Chagall))
+    (NP (DT a) (NN jew))
+    (. ?)))
+
+Which museum exhibits The Scream by Munch?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN museum))
+    (SQ
+      (VP (VBZ exhibits)
+        (NP (DT The) (NNP Scream))
+        (PP (IN by)
+          (NP (NNP Munch)))))
+    (. ?)))
+
+Give me all books by William Goldman with more than 300 pages.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NNS books))
+      (PP (IN by)
+        (NP
+          (NP (NNP William) (NNP Goldman))
+          (PP (IN with)
+            (NP
+              (QP (JJR more) (IN than) (CD 300))
+              (NNS pages))))))
+    (. .)))
+
+Which books by Kerouac were published by Viking Press?
+(ROOT
+  (SBARQ
+    (WHNP
+      (NP (WDT Which) (NNS books))
+      (PP (IN by)
+        (NP (NNP Kerouac))))
+    (SQ (VBD were)
+      (VP (VBN published)
+        (PP (IN by)
+          (NP (JJ Viking) (NNP Press)))))
+    (. ?)))
+
+Give me a list of all American inventions.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT a) (NN list))
+        (PP (IN of)
+          (NP (DT all) (JJ American) (NNS inventions)))))
+    (. .)))
+
+How high is the Mount Everest?
+(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ high))
+    (SQ (VBZ is)
+      (NP (DT the) (NNP Mount) (NNP Everest)))
+    (. ?)))
+
+Who created the comic Captain America?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD created)
+        (NP (DT the) (JJ comic) (NNP Captain) (NNP America))))
+    (. ?)))
+
+How many people live in the capital of Australia?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS people))
+    (SQ
+      (VP (VBP live)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN capital))
+            (PP (IN of)
+              (NP (NNP Australia)))))))
+    (. ?)))
+
+What is the largest city in Australia?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJS largest) (NN city))
+        (PP (IN in)
+          (NP (NNP Australia)))))
+    (. ?)))
+
+Who composed the music for Harold and Maude?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBN composed)
+        (NP
+          (NP (DT the) (NN music))
+          (PP (IN for)
+            (NP (NNP Harold)
+              (CC and)
+              (NNP Maude))))))
+    (. ?)))
+
+Which films starring Clint Eastwood did he direct himself?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHNP (WDT Which) (NNS films))
+      (PP (IN starring)
+        (NP (NNP Clint) (NNP Eastwood))))
+    (SQ (VBD did)
+      (NP (PRP he))
+      (VP (VB direct)
+        (NP (PRP himself))))
+    (. ?)))
+
+In which city was the former Dutch queen Juliana buried?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN city)))
+    (SQ (VBD was)
+      (NP (DT the) (JJ former) (JJ Dutch) (NN queen) (NNP Juliana))
+      (VP (VBN buried)))
+    (. ?)))
+
+Is Egypts largest city also its capital?
+(ROOT
+  (SQ (VBZ Is)
+    (NP (NNPS Egypts))
+    (NP
+      (NP (JJS largest) (NN city))
+      (PP (RB also)
+        (NP (PRP$ its) (NN capital))))
+    (. ?)))
+
+Where is the residence of the prime minister of Spain?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN residence))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (JJ prime) (NN minister))
+            (PP (IN of)
+              (NP (NNP Spain)))))))
+    (. ?)))
+
+Which U.S. state has the abbreviation MN?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNP U.S.) (NN state))
+    (SQ
+      (VP (VBZ has)
+        (NP (DT the) (NN abbreviation) (NN MN))))
+    (. ?)))
+
+Show me all songs from Bruce Springsteen released between 1980 and 1990.
+(ROOT
+  (S
+    (VP (VB Show)
+      (S
+        (NP (PRP me))
+        (NP
+          (NP (DT all) (NNS songs))
+          (PP (IN from)
+            (NP
+              (NP (NNP Bruce) (NNP Springsteen))
+              (VP (VBN released)
+                (PP (IN between)
+                  (NP (CD 1980)
+                    (CC and)
+                    (CD 1990)))))))))
+    (. .)))
+
+Which movies did Kurosawa direct?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN movies))
+    (SQ (VBD did)
+      (NP (NNP Kurosawa))
+      (VP (VB direct)))
+    (. ?)))
+
+What is the founding year of the brewery that produces Pilsner Urquell?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ founding) (NN year))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN brewery))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBZ produces)
+                  (NP (NNP Pilsner) (NNP Urquell)))))))))
+    (. ?)))
+
+Who wrote the lyrics for the Polish national anthem?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD wrote)
+        (NP (DT the) (NNS lyrics))
+        (PP (IN for)
+          (NP (DT the) (JJ Polish) (JJ national) (NN anthem)))))
+    (. ?)))
+
+Give me all B-sides of the Ramones.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNP B-sides))
+        (PP (IN of)
+          (NP (DT the) (NNPS Ramones)))))
+    (. .)))
+
+Who painted The Storm on the Sea of Galilee?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD painted)
+        (NP (DT The) (NN Storm))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN Sea))
+            (PP (IN of)
+              (NP (NNP Galilee)))))))
+    (. ?)))
+
+Which country does the creator of Miffy come from?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN country))
+    (SQ (VBZ does)
+      (NP
+        (NP (DT the) (NN creator))
+        (PP (IN of)
+          (NP (NNP Miffy))))
+      (VP (VB come)
+        (PP (IN from))))
+    (. ?)))
+
+For which label did Elvis record his first album?
+(ROOT
+  (SBARQ
+    (WHPP (IN For)
+      (WHNP (WDT which) (NN label)))
+    (SQ (VBD did)
+      (NP (NNP Elvis))
+      (VP (VB record)
+        (NP (PRP$ his) (JJ first) (NN album))))
+    (. ?)))
+
+Give me the birthdays of all actors of the television show Charmed.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NNS birthdays))
+        (PP (IN of)
+          (NP
+            (NP (DT all) (NNS actors))
+            (PP (IN of)
+              (NP (DT the) (NN television) (NN show) (NN Charmed)))))))
+    (. .)))
+
+How many employees does IBM have?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS employees))
+    (SQ (VBZ does)
+      (NP (NNP IBM))
+      (VP (VB have)))
+    (. ?)))
+
+Which states border Illinois?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS states))
+    (SQ
+      (VP (VB border)
+        (NP (NNP Illinois))))
+    (. ?)))
+
+In which country is the Limerick Lake?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN country)))
+    (SQ (VBZ is)
+      (NP (DT the) (NNP Limerick) (NNP Lake)))
+    (. ?)))
+
+Which television shows were created by John Cleese?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which)
+      (NP
+        (NP (NN television))
+        (NP (NNS shows))))
+    (SQ (VBD were)
+      (VP (VBN created)
+        (PP (IN by)
+          (NP (NNP John) (NNP Cleese)))))
+    (. ?)))
+
+Which mountain is the highest after the Annapurna?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN mountain))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJS highest))
+        (PP (IN after)
+          (NP (DT the) (NNP Annapurna)))))
+    (. ?)))
+
+In which films directed by Garry Marshall was Julia Roberts starring?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP
+        (WHNP (WDT which) (NNS films))
+        (PP
+          (ADVP (RB directed))
+          (IN by)
+          (NP (NNP Garry) (NNP Marshall)))))
+    (SQ (VBD was)
+      (NP (NNP Julia) (NNP Roberts))
+      (VP (VBG starring)))
+    (. ?)))
+
+Which bridges are of the same type as the Manhattan Bridge?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN bridges))
+    (SQ (VBP are)
+      (PP (IN of)
+        (NP
+          (NP (DT the) (JJ same) (NN type))
+          (PP (IN as)
+            (NP (DT the) (NNP Manhattan) (NNP Bridge))))))
+    (. ?)))
+
+Was U.S. president Jackson involved in a war?
+(ROOT
+  (SQ (VBD Was)
+    (NP (NNP U.S.) (NNP president) (NNP Jackson))
+    (VP (VBN involved)
+      (PP (IN in)
+        (NP (DT a) (NN war))))
+    (. ?)))
+
+Give me all communist countries.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ communist) (NNS countries)))
+    (. .)))
+
+Which awards did Douglas Hofstadter win?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN awards))
+    (SQ (VBD did)
+      (NP (NNP Douglas) (NNP Hofstadter))
+      (VP (VB win)))
+    (. ?)))
+
+Who is the daughter of Robert Kennedy married to?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN daughter))
+        (PP (IN of)
+          (NP (NNP Robert) (NNP Kennedy))))
+      (VP (VBN married)
+        (S
+          (VP (TO to)))))
+    (. ?)))
+
+Which U.S. state has the highest population density?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNP U.S.) (NN state))
+    (SQ
+      (VP (VBZ has)
+        (NP (DT the) (JJS highest) (NN population) (NN density))))
+    (. ?)))
+
+What is the currency of the Czech Republic?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN currency))
+        (PP (IN of)
+          (NP (DT the) (NNP Czech) (NNP Republic)))))
+    (. ?)))
+
+Which countries adopted the Euro?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS countries))
+    (SQ
+      (VP (VBD adopted)
+        (NP (DT the) (NNP Euro))))
+    (. ?)))
+
+What is the area code of Berlin?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN area) (NN code))
+        (PP (IN of)
+          (NP (NNP Berlin)))))
+    (. ?)))
+
+Which countries have more than two official languages?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS countries))
+    (SQ
+      (VP (VBP have)
+        (NP
+          (QP (JJR more) (IN than) (CD two))
+          (JJ official) (NNS languages))))
+    (. ?)))
+
+Who is the owner of Rolls-Royce?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN owner))
+        (PP (IN of)
+          (NP (NNP Rolls-Royce)))))
+    (. ?)))
+
+Through which countries does the Yenisei river flow?
+(ROOT
+  (SBARQ
+    (ADVP (RB Through))
+    (WHNP (WDT which) (NNS countries))
+    (SQ
+      (VP (VBZ does)
+        (NP (DT the) (NNP Yenisei) (NN river) (NN flow))))
+    (. ?)))
+
+When did Latvia join the EU?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD did)
+      (NP (NNP Latvia))
+      (VP (VB join)
+        (NP (DT the) (NN EU))))
+    (. ?)))
+
+Which monarchs were married to a German?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN monarchs))
+    (SQ (VBD were)
+      (VP (VBN married)
+        (PP (TO to)
+          (NP (DT a) (NNP German)))))
+    (. ?)))
+
+When was the Battle of Gettysburg?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NN Battle))
+        (PP (IN of)
+          (NP (NNP Gettysburg)))))
+    (. ?)))
+
+Which river does the Brooklyn Bridge cross?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN river))
+    (SQ (VBZ does)
+      (NP (DT the) (NNP Brooklyn) (NNP Bridge))
+      (VP (VB cross)))
+    (. ?)))
+
+What is the highest mountain in Australia?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJS highest) (NN mountain))
+        (PP (IN in)
+          (NP (NNP Australia)))))
+    (. ?)))
+
+Give me all soccer clubs in Spain.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NN soccer) (NNS clubs))
+        (PP (IN in)
+          (NP (NNP Spain)))))
+    (. .)))
+
+What is the official language of Suriname?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ official) (NN language))
+        (PP (IN of)
+          (NP (NNP Suriname)))))
+    (. ?)))
+
+Who is the mayor of Tel Aviv?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN mayor))
+        (PP (IN of)
+          (NP (NNP Tel) (NNP Aviv)))))
+    (. ?)))
+
+Who designed the Brooklyn Bridge?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD designed)
+        (NP (DT the) (NNP Brooklyn) (NNP Bridge))))
+    (. ?)))
+
+Which telecommunications organizations are located in Belgium?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which)
+      (NP
+        (NP (NNS telecommunications))
+        (NP (NNS organizations))))
+    (SQ (VBP are)
+      (VP (VBN located)
+        (PP (IN in)
+          (NP (NNP Belgium)))))
+    (. ?)))
+
+Is Frank Herbert still alive?
+(ROOT
+  (SQ (VBZ Is)
+    (NP (NNP Frank) (NNP Herbert))
+    (ADJP (RB still) (JJ alive))
+    (. ?)))
+
+What is the highest place of the Urals?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJS highest) (NN place))
+        (PP (IN of)
+          (NP (DT the) (NNS Urals)))))
+    (. ?)))
+
+Who is the editor of Forbes?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN editor))
+        (PP (IN of)
+          (NP (NNP Forbes)))))
+    (. ?)))
+
+Give me all companies in the advertising industry.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS companies))
+        (PP (IN in)
+          (NP (DT the) (NN advertising) (NN industry)))))
+    (. .)))
+
+How many countries are there in Europe?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS countries))
+    (SQ (VBP are)
+      (NP (EX there))
+      (PP (IN in)
+        (NP (NNP Europe))))
+    (. ?)))
+
+What did Bruce Carver die from?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Bruce) (NNP Carver))
+      (VP (VB die)
+        (PP (IN from))))
+    (. ?)))
+
+Give me all libraries established earlier than 1400.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS libraries))
+        (VP (VBN established)
+          (ADVP (RBR earlier)
+            (PP (IN than)
+              (NP (CD 1400)))))))
+    (. .)))
+
+Which presidents were born in 1945?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS presidents))
+    (SQ (VBD were)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (CD 1945)))))
+    (. ?)))
+
+Give me all federal chancellors of Germany.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (JJ federal) (NNS chancellors))
+        (PP (IN of)
+          (NP (NNP Germany)))))
+    (. .)))
+
+Who was the wife of U.S. president Lincoln?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NN wife))
+        (PP (IN of)
+          (NP (NNP U.S.) (NN president) (NNP Lincoln)))))
+    (. ?)))
+
+Who developed the video game World of Warcraft?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD developed)
+        (NP
+          (NP (DT the) (JJ video) (NN game) (NN World))
+          (PP (IN of)
+            (NP (NNP Warcraft))))))
+    (. ?)))
+
+What is the official website of Tom Cruise?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ official) (NN website))
+        (PP (IN of)
+          (NP (NNP Tom) (NNP Cruise)))))
+    (. ?)))
+
+List all episodes of the first season of the HBO television series The Sopranos.
+(ROOT
+  (S
+    (VP (VB List)
+      (S
+        (NP
+          (NP (DT all) (NNS episodes))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (JJ first) (NN season))
+              (PP (IN of)
+                (NP (DT the) (NNP HBO) (NN television) (NN series))))))
+        (NP (DT The) (NNPS Sopranos))))
+    (. .)))
+
+Who produced the most films?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD produced)
+        (NP (DT the) (JJS most) (NNS films))))
+    (. ?)))
+
+Give me all people with first name Jimmy.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS people))
+        (PP (IN with)
+          (NP (JJ first) (NN name) (NNS Jimmy)))))
+    (. .)))
+
+In which city did John F. Kennedy die?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN city)))
+    (SQ (VBD did)
+      (NP (NNP John) (NNP F.) (NNP Kennedy))
+      (VP (VB die)))
+    (. ?)))
+
+Is there a video game called Battle Chess?
+(ROOT
+  (SQ (VBZ Is)
+    (NP (EX there))
+    (NP
+      (NP (DT a) (JJ video) (NN game))
+      (VP (VBN called)
+        (NP (NNP Battle) (NNP Chess))))
+    (. ?)))
+
+Which mountains are higher than the Nanga Parbat?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS mountains))
+    (SQ (VBP are)
+      (NP
+        (NP (JJR higher))
+        (PP (IN than)
+          (NP (DT the) (NNP Nanga) (NNP Parbat)))))
+    (. ?)))
+
+Who created Wikipedia?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD created)
+        (NP (NNP Wikipedia))))
+    (. ?)))
+
+Give me all actors starring in Last Action Hero.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS actors))
+        (VP (VBG starring)
+          (PP (IN in)
+            (NP (JJ Last) (NNP Action) (NNP Hero))))))
+    (. .)))
+
+Which software has been developed by organizations founded in California?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN software))
+    (SQ
+      (VP (VBZ has)
+        (VP (VBN been)
+          (VP (VBN developed)
+            (PP (IN by)
+              (NP
+                (NP (NNS organizations))
+                (VP (VBN founded)
+                  (PP (IN in)
+                    (NP (NNP California))))))))))
+    (. ?)))
+
+Which companies work in the aerospace industry as well as in medicine?
+(ROOT
+  (SBARQ
+    (WHNP (WP Which))
+    (SQ
+      (NP (NNS companies))
+      (VP (VB work)
+        (PP
+          (PP (IN in)
+            (NP (DT the) (NN aerospace) (NN industry)))
+          (CONJP (RB as) (RB well) (IN as))
+          (PP (IN in)
+            (NP (NN medicine))))))
+    (. ?)))
+
+Is Christian Bale starring in Velvet Goldmine?
+(ROOT
+  (SQ (VBZ Is)
+    (NP (NNP Christian) (NNP Bale))
+    (VP (VBG starring)
+      (PP (IN in)
+        (NP (NNP Velvet) (NNP Goldmine))))
+    (. ?)))
+
+Give me the websites of companies with more than 500000 employees.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NNS websites))
+        (PP (IN of)
+          (NP
+            (NP (NNS companies))
+            (PP (IN with)
+              (NP
+                (QP (JJR more) (IN than) (CD 500000))
+                (NNS employees)))))))
+    (. .)))
+
+Which actors were born in Germany?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN actors))
+    (SQ (VBD were)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Germany)))))
+    (. ?)))
+
+Which caves have more than 3 entrances?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN caves))
+    (SQ
+      (VP (VBP have)
+        (NP
+          (QP (JJR more) (IN than) (CD 3))
+          (NNS entrances))))
+    (. ?)))
+
+Was the wife of president Lincoln called Mary?
+(ROOT
+  (SQ (VBD Was)
+    (NP
+      (NP (DT the) (NN wife))
+      (PP (IN of)
+        (NP
+          (NP (NN president) (NN Lincoln))
+          (VP (VBN called)))))
+    (VP (VBG Mary))
+    (. ?)))
+
+Give me all films produced by Hal Roach.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS films))
+        (VP (VBN produced)
+          (PP (IN by)
+            (NP (NNP Hal) (NNP Roach))))))
+    (. .)))
+
+Give me all video games published by Mean Hamster Software.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (JJ video) (NNS games))
+        (VP (VBN published)
+          (PP (IN by)
+            (NP (NNP Mean) (NNP Hamster) (NNP Software))))))
+    (. .)))
+
+Which languages are spoken in Estonia?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS languages))
+    (SQ (VBP are)
+      (VP (VBN spoken)
+        (PP (IN in)
+          (NP (NNP Estonia)))))
+    (. ?)))
+
+How many Aldi stores are there?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (ADJP (JJ Aldi))
+      (NNS stores))
+    (SQ (VBP are)
+      (NP (EX there)))
+    (. ?)))
+
+Which capitals in Europe were host cities of the summer olympic games?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHNP (WDT Which) (NNS capitals))
+      (PP (IN in)
+        (NP (NNP Europe))))
+    (SQ (VBD were)
+      (NP
+        (NP (NN host) (NNS cities))
+        (PP (IN of)
+          (NP (DT the) (NN summer) (JJ olympic) (NNS games)))))
+    (. ?)))
+
+Who was the 16th president of the United States?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (JJ 16th) (NN president))
+        (PP (IN of)
+          (NP (DT the) (NNP United) (NNPS States)))))
+    (. ?)))
+
+How many films did Hal Roach produce?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS films))
+    (SQ (VBD did)
+      (NP (NNP Hal) (NNP Roach))
+      (VP (VB produce)))
+    (. ?)))
+
+Which music albums contain the song Last Christmas?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN music))
+    (SQ
+      (NP (NNS albums))
+      (VP (VB contain)
+        (NP (DT the) (NN song))
+        (NP (JJ Last) (NNP Christmas))))
+    (. ?)))
+
+Give me all books written by Danielle Steel.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS books))
+        (VP (VBN written)
+          (PP (IN by)
+            (NP (NNP Danielle) (NNP Steel))))))
+    (. .)))
+
+Which airports are located in California, USA?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN airports))
+    (SQ (VBP are)
+      (VP (VBN located)
+        (PP (IN in)
+          (NP (NNP California) (, ,) (NNP USA)))))
+    (. ?)))
+
+Which states of Germany are governed by the Social Democratic Party?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHNP (WDT Which) (NNS states))
+      (PP (IN of)
+        (NP (NNP Germany))))
+    (SQ (VBP are)
+      (VP (VBN governed)
+        (PP (IN by)
+          (NP (DT the) (NNP Social) (NNP Democratic) (NNP Party)))))
+    (. ?)))
+
+Give me all Canadian Grunge record labels.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Canadian) (NNP Grunge) (NN record) (NNS labels)))
+    (. .)))
+
+Which country has the most official languages?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN country))
+    (SQ
+      (VP (VBZ has)
+        (NP (DT the) (JJS most) (NN official) (NNS languages))))
+    (. ?)))
+
+In which programming language is GIMP written?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NNP programming) (NN language)))
+    (SQ (VBZ is)
+      (NP (NNP GIMP))
+      (VP (VBN written)))
+    (. ?)))
+
+Who produced films starring Natalie Portman?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD produced)
+        (NP (NNS films))
+        (S
+          (VP (VBG starring)
+            (NP (NNP Natalie) (NNP Portman))))))
+    (. ?)))
+
+Give me all movies with Tom Cruise.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS movies))
+        (PP (IN with)
+          (NP (NNP Tom) (NNP Cruise)))))
+    (. .)))
+
+In which films did Julia Roberts as well as Richard Gere play?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NNS films)))
+    (SQ (VBD did)
+      (NP (NNP Julia) (NNP Roberts))
+      (VP
+        (ADVP
+          (ADVP (RB as) (RB well))
+          (PP (IN as)
+            (NP (NNP Richard) (NNP Gere))))
+        (VB play)))
+    (. ?)))
+
+Give me all female given names.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ female) (JJ given) (NNS names)))
+    (. .)))
+
+Who wrote the book The Pillars of the Earth?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD wrote)
+        (NP (DT the) (NN book))
+        (NP
+          (NP (DT The) (NNPS Pillars))
+          (PP (IN of)
+            (NP (DT the) (NN Earth))))))
+    (. ?)))
+
+How many films did Leonardo DiCaprio star in?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS films))
+    (SQ (VBD did)
+      (NP (NNP Leonardo) (NNP DiCaprio))
+      (VP (VB star)
+        (PRT (RP in))))
+    (. ?)))
+
+Give me all soccer clubs in the Premier League.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NN soccer) (NNS clubs))
+        (PP (IN in)
+          (NP (DT the) (NNP Premier) (NNP League)))))
+    (. .)))
+
+In which U.S. state is Mount McKinley located?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NNP U.S.) (NN state)))
+    (SQ (VBZ is)
+      (NP (NNP Mount) (NNP McKinley))
+      (VP (VBN located)))
+    (. ?)))
+
+When was Capcom founded?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD was)
+      (NP (NNP Capcom))
+      (VP (VBN founded)))
+    (. ?)))
+
+Which organizations were founded in 1930?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN organizations))
+    (SQ (VBD were)
+      (VP (VBN founded)
+        (PP (IN in)
+          (NP (CD 1930)))))
+    (. ?)))
+
+What is the highest mountain?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP (DT the) (JJS highest) (NN mountain)))
+    (. ?)))
+
+Was Natalie Portman born in the United States?
+(ROOT
+  (SQ (VBD Was)
+    (NP (NNP Natalie) (NNP Portman))
+    (VP (VBN born)
+      (PP (IN in)
+        (NP (DT the) (NNP United) (NNPS States))))
+    (. ?)))
+
+Which budget did the first movie of Zdenek Sverak have?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which)
+      (NP (NN budget)))
+    (SQ (VBD did)
+      (NP
+        (NP (DT the) (JJ first) (NN movie))
+        (PP (IN of)
+          (NP (NNP Zdenek) (NNP Sverak))))
+      (VP (VB have)))
+    (. ?)))
+
+How many big fires struck Paris during the Middle Ages?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (JJ big) (NNS fires))
+    (SQ
+      (VP (VBD struck)
+        (NP (NNP Paris))
+        (PP (IN during)
+          (NP (DT the) (NNP Middle) (NNPS Ages)))))
+    (. ?)))
+
+Is Pamela Anderson a vegan?
+(ROOT
+  (SQ (VBZ Is)
+    (NP (NNP Pamela) (NNP Anderson))
+    (NP (DT a) (NN vegan))
+    (. ?)))
+
+How often was Michael Jordan divorced?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How) (RB often))
+    (SQ (VBD was)
+      (NP (NNP Michael) (NNP Jordan))
+      (VP (VBN divorced)))
+    (. ?)))
+
+What is the most beautiful painting?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP (DT the)
+        (ADJP (RBS most) (JJ beautiful))
+        (NN painting)))
+    (. ?)))
+
+Give me all animal species that live in the Amazon rainforest.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NN animal) (NN species))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP live)
+              (PP (IN in)
+                (NP (DT the) (NNP Amazon) (NN rainforest))))))))
+    (. .)))
+
+How many inhabitants does the largest city in Canada have?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS inhabitants))
+    (SQ (VBZ does)
+      (NP
+        (NP (DT the) (JJS largest) (NN city))
+        (PP (IN in)
+          (NP (NNP Canada))))
+      (VP (VB have)))
+    (. ?)))
+
+In which studio did the Beatles record their first album?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN studio)))
+    (SQ (VBD did)
+      (NP (DT the) (NNPS Beatles))
+      (VP (VB record)
+        (NP (PRP$ their) (JJ first) (NN album))))
+    (. ?)))
+
+Who was the first to climb Mount Everest?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (JJ first))
+        (S
+          (VP (TO to)
+            (VP (VB climb)
+              (NP (NNP Mount) (NNP Everest)))))))
+    (. ?)))
+
+How many programming languages are there?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNP programming) (NNS languages))
+    (SQ (VBP are)
+      (NP (EX there)))
+    (. ?)))
+
+What is the official color of the University of Oxford?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ official) (NN color))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Oxford)))))))
+    (. ?)))
+
+How many gold medals did Michael Phelps win at the 2008 Olympics?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NP
+        (NP (NN gold))
+        (NP (NNS medals))))
+    (SQ (VBD did)
+      (NP (NNP Michael) (NNP Phelps))
+      (VP (VB win)
+        (PP (IN at)
+          (NP (DT the) (CD 2008) (NNPS Olympics)))))
+    (. ?)))
+
+To which artistic movement did the painter of The Three Dancers belong?
+(ROOT
+  (SBARQ
+    (WHPP (TO To)
+      (WHNP (WDT which)
+        (NP (JJ artistic) (NN movement))))
+    (SQ (VBD did)
+      (NP
+        (NP (DT the) (NN painter))
+        (PP (IN of)
+          (NP (DT The) (CD Three) (NNS Dancers))))
+      (VP (VB belong)))
+    (. ?)))
+
+Give me all animals that are extinct.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS animals))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP are)
+              (ADJP (JJ extinct)))))))
+    (. .)))
+
+Does Abraham Lincoln's death place have a website?
+(ROOT
+  (SQ (VBZ Does) (RB Abraham)
+    (NP
+      (NP (NNP Lincoln) (POS 's))
+      (NN death) (NN place))
+    (VP (VB have)
+      (NP (DT a) (NN website)))
+    (. ?)))
+
+How deep is Lake Placid?
+(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ deep))
+    (SQ (VBZ is)
+      (NP (NNP Lake) (NNP Placid)))
+    (. ?)))
+
+Give me the grandchildren of Bruce Lee.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NNS grandchildren))
+        (PP (IN of)
+          (NP (NNP Bruce) (NNP Lee)))))
+    (. .)))
+
+Who is the youngest Darts player?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP (DT the) (JJS youngest) (NNP Darts) (NN player)))
+    (. ?)))
+
+Where was Bach born?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP (NNP Bach))
+      (VP (VBN born)))
+    (. ?)))
+
+In which countries can you pay using the West African CFA franc?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NNS countries)))
+    (SQ (MD can)
+      (NP (PRP you))
+      (VP (VB pay)
+        (S
+          (VP (VBG using)
+            (NP (DT the)
+              (ADJP (NNP West) (JJ African))
+              (NNP CFA) (NN franc))))))
+    (. ?)))
+
+What are the top-10 action role-playing video games according to IGN?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP are)
+      (NP (DT the) (JJ top-10) (NN action) (NN role-playing))
+      (NP (NN video) (NNS games))
+      (PP (VBG according)
+        (PP (TO to)
+          (NP (NNP IGN)))))
+    (. ?)))
+
+What is the most frequent cause of death?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the)
+          (ADJP (RBS most) (JJ frequent))
+          (NN cause))
+        (PP (IN of)
+          (NP (NN death)))))
+    (. ?)))
+
+Does the Isar flow into a lake?
+(ROOT
+  (SQ (NNP Does)
+    (NP (DT the) (NNP Isar))
+    (VP (VB flow)
+      (PP (IN into)
+        (NP (DT a) (NN lake))))
+    (. ?)))
+
+Give me all films produced by Steven Spielberg with a budget of at least $80 million.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS films))
+        (VP (VBN produced)
+          (PP (IN by)
+            (NP
+              (NP (NNP Steven) (NNP Spielberg))
+              (PP (IN with)
+                (NP
+                  (NP (DT a) (NN budget))
+                  (PP (IN of)
+                    (NP
+                      (QP (IN at) (JJS least) ($ $) (CD 80) (CD million)))))))))))
+    (. .)))
+
+Give me all writers that won the Nobel Prize in literature.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS writers))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD won)
+              (NP (DT the) (NNP Nobel) (NNP Prize))
+              (PP (IN in)
+                (NP (NN literature))))))))
+    (. .)))
+
+Give me all taikonauts.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NNS taikonauts)))
+    (. .)))
+
+How many pages does War and Peace have?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS pages))
+    (SQ (VBZ does)
+      (NP (NNP War)
+        (CC and)
+        (NNP Peace))
+      (VP (VB have)))
+    (. ?)))
+
+What is the bridge with the longest span?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN bridge))
+        (PP (IN with)
+          (NP (DT the) (JJS longest) (NN span)))))
+    (. ?)))
+
+Give me all actors called Baldwin.
+(ROOT
+  (S
+    (S
+      (VP (VB Give)
+        (NP (PRP me))
+        (NP (DT all) (NNS actors))))
+    (VP (VBD called)
+      (NP (NNP Baldwin)))
+    (. .)))
+
+Who is the tallest player of the Atlanta Falcons?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJS tallest) (NN player))
+        (PP (IN of)
+          (NP (DT the) (NNP Atlanta) (NNPS Falcons)))))
+    (. ?)))
+
+Which rivers flow into a German lake?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN rivers))
+    (SQ
+      (VP (VBP flow)
+        (PP (IN into)
+          (NP (DT a) (JJ German) (NN lake)))))
+    (. ?)))
+
+How many James Bond movies are there?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNP James) (NNP Bond) (NNS movies))
+    (SQ (VBP are)
+      (NP (EX there)))
+    (. ?)))
+
+Which rockets were launched from Baikonur?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN rockets))
+    (SQ (VBD were)
+      (VP (VBN launched)
+        (PP (IN from)
+          (NP (NNP Baikonur)))))
+    (. ?)))
+
+Which pope succeeded John Paul II?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN pope))
+    (SQ
+      (VP (VBD succeeded)
+        (NP (NNP John) (NNP Paul) (NNP II))))
+    (. ?)))
+
+Give me all Dutch parties.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Dutch) (NNS parties)))
+    (. .)))
+
+When is Halloween?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBZ is)
+      (NP (NNP Halloween)))
+    (. ?)))
+
+Give me all Swedish oceanographers.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Swedish) (NNS oceanographers)))
+    (. .)))
+
+Give me all actors who were born in Berlin.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS actors))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD were)
+              (VP (VBN born)
+                (PP (IN in)
+                  (NP (NNP Berlin)))))))))
+    (. .)))
+
+What was the last movie with Alec Guinness?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (JJ last) (NN movie))
+        (PP (IN with)
+          (NP (NNP Alec) (NNP Guinness)))))
+    (. ?)))
+
+Which poet wrote the most books?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN poet))
+    (SQ
+      (VP (VBD wrote)
+        (NP (DT the) (JJS most) (NNS books))))
+    (. ?)))
+
+How many languages are spoken in Colombia?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS languages))
+    (SQ (VBP are)
+      (VP (VBN spoken)
+        (PP (IN in)
+          (NP (NNP Colombia)))))
+    (. ?)))
+
+What does IYCM stand for?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ does)
+      (NP (NNP IYCM))
+      (VP (VB stand)
+        (PP (IN for))))
+    (. ?)))
+
+What was Brazil's lowest rank in the FIFA World Ranking?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP
+        (NP
+          (NP (NNP Brazil) (POS 's))
+          (JJS lowest) (NN rank))
+        (PP (IN in)
+          (NP (DT the) (NNP FIFA) (NNP World) (NNP Ranking)))))
+    (. ?)))
+
+Give me the capitals of all countries that the Himalayas run through.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NN capitals))
+        (PP (IN of)
+          (NP
+            (NP (DT all) (NNS countries))
+            (SBAR (IN that)
+              (S
+                (NP (DT the) (NNPS Himalayas))
+                (VP (VBP run)
+                  (PRT (RP through)))))))))
+    (. .)))
+
+Which actor played Chewbacca?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN actor))
+    (SQ
+      (VP (VBD played)
+        (NP (NNP Chewbacca))))
+    (. ?)))
+
+Which ingredients do I need for carrot cake?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN ingredients))
+    (SQ (VBP do)
+      (NP (PRP I))
+      (VP (VB need)
+        (PP (IN for)
+          (NP (NN carrot) (NN cake)))))
+    (. ?)))
+
+Is Cola a beverage?
+(ROOT
+  (SQ (VBZ Is)
+    (NP (NNP Cola))
+    (NP (DT a) (NN beverage))
+    (. ?)))
+
+Who has Tom Cruise been married to?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ has)
+      (NP (NNP Tom) (NNP Cruise))
+      (VP (VBN been)
+        (VP (VBN married)
+          (S
+            (VP (TO to))))))
+    (. ?)))
+
+Which of Tim Burton's films had the highest budget?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHNP (WDT Which))
+      (PP (IN of)
+        (NP
+          (NP (NNP Tim) (NNP Burton) (POS 's))
+          (NNS films))))
+    (SQ
+      (VP (VBD had)
+        (NP (DT the) (JJS highest) (NN budget))))
+    (. ?)))
+
+How heavy is Jupiter's lightest moon?
+(ROOT
+  (SBARQ
+    (WHADJP (WRB How)
+      (ADJP (JJ heavy)))
+    (SQ (VBZ is)
+      (NP
+        (NP (NNP Jupiter) (POS 's))
+        (JJS lightest) (NN moon)))
+    (. ?)))
+
+Which actor was casted in the most movies?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN actor))
+    (SQ (VBD was)
+      (VP (VBN casted)
+        (PP (IN in)
+          (NP (DT the) (JJS most) (NNS movies)))))
+    (. ?)))
+
+Is James Bond married?
+(ROOT
+  (SQ (VBZ Is)
+    (NP (NNP James) (NNP Bond))
+    (VP (VBN married))
+    (. ?)))
+
+Give me all Australian metalcore bands.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Australian) (NN metalcore) (NNS bands)))
+    (. .)))
+
+Give me all actors who were born in Paris after 1950.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS actors))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD were)
+              (VP (VBN born)
+                (PP (IN in)
+                  (NP (NNP Paris)))
+                (PP (IN after)
+                  (NP (CD 1950)))))))))
+    (. .)))
+
+When was Carlo Giuliani shot?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD was)
+      (NP (NNP Carlo) (NNP Giuliani))
+      (VP (VBN shot)))
+    (. ?)))
+
+Who are the four youngest MVP basketball players?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBP are)
+      (NP
+        (NP (DT the) (CD four) (JJS youngest))
+        (NP (NNP MVP) (NN basketball) (NNS players))))
+    (. ?)))
+
+Which companies have more than 1 million employees?
+(ROOT
+  (SBARQ
+    (WHNP (WP Which))
+    (SQ
+      (NP (NNS companies))
+      (VP (VB have)
+        (NP
+          (QP (JJR more) (IN than) (CD 1) (CD million))
+          (NNS employees))))
+    (. ?)))
+
+Give all swimmers that were born in Moscow.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (DT all))
+      (NP
+        (NP (NNS swimmers))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD were)
+              (VP (VBN born)
+                (PP (IN in)
+                  (NP (NNP Moscow)))))))))
+    (. .)))
+
+Who was called Rodzilla?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (VP (VBN called)
+        (NP (NNP Rodzilla))))
+    (. ?)))
+
+Show me the book that Muhammad Ali wrote.
+(ROOT
+  (S
+    (VP (VB Show)
+      (S
+        (NP (PRP me))
+        (NP (DT the) (NN book)))
+      (SBAR (IN that)
+        (S
+          (NP (NNP Muhammad) (NNP Ali))
+          (VP (VBD wrote)))))
+    (. .)))
+
+How many museums does Paris have?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS museums))
+    (SQ (VBZ does)
+      (NP (NNP Paris))
+      (VP (VB have)))
+    (. ?)))
+
+Which city has the most inhabitants?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN city))
+    (SQ
+      (VP (VBZ has)
+        (NP (DT the) (JJS most) (NN inhabitants))))
+    (. ?)))
+
+Which city has the least inhabitants?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN city))
+    (SQ
+      (VP (VBZ has)
+        (NP (DT the) (JJS least) (NN inhabitants))))
+    (. ?)))
+
+Give me all the TV shows with Neil Patrick Harris.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (PDT all) (DT the) (NN TV) (NNS shows))
+        (PP (IN with)
+          (NP (NNP Neil) (NNP Patrick) (NNP Harris)))))
+    (. .)))
+
+Who wrote The Hunger Games?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD wrote)
+        (NP (DT The) (NNP Hunger) (NNPS Games))))
+    (. ?)))
+
+Show a list of soccer clubs that play in the Bundesliga.
+(ROOT
+  (S
+    (VP (VB Show)
+      (NP
+        (NP (DT a) (NN list))
+        (PP (IN of)
+          (NP (NN soccer) (NNS clubs)))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP play)
+              (PP (IN in)
+                (NP (DT the) (NNP Bundesliga))))))))
+    (. .)))
+
+What country is Mount Everest in?
+(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN country))
+    (SQ (VBZ is)
+      (NP (NNP Mount) (NNP Everest))
+      (PP (IN in)))
+    (. ?)))
+
+Who is the founder of Penguin Books?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN founder))
+        (PP (IN of)
+          (NP (NNP Penguin) (NNPS Books)))))
+    (. ?)))
+
+Which programming languages influenced Javascript?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (JJ programming) (NNS languages))
+    (SQ
+      (VP (VBD influenced)
+        (NP (NNP Javascript))))
+    (. ?)))
+
+Did Che Guevara have children?
+(ROOT
+  (SQ (VBD Did)
+    (NP (NNP Che) (NNP Guevara))
+    (VP (VB have)
+      (NP (NNS children)))
+    (. ?)))
+
+List all the musicals with music by Elton John.
+(ROOT
+  (S
+    (VP (VB List)
+      (NP
+        (NP (PDT all) (DT the) (NNS musicals))
+        (PP (IN with)
+          (NP (NN music))))
+      (PP (IN by)
+        (NP (NNP Elton) (NNP John))))
+    (. .)))
+
+Show me all the breweries in Australia.
+(ROOT
+  (S
+    (VP (VB Show)
+      (S
+        (NP (PRP me))
+        (NP
+          (NP (PDT all) (DT the) (NNS breweries))
+          (PP (IN in)
+            (NP (NNP Australia))))))
+    (. .)))
+
+When was the Titanic completed?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD was)
+      (NP (DT the) (NNP Titanic))
+      (VP (VBN completed)))
+    (. ?)))
+
+How much did Pulp Fiction cost?
+(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ much))
+    (SQ (VBD did)
+      (NP (NNP Pulp) (NNP Fiction))
+      (VP (VB cost)))
+    (. ?)))
+
+How many airlines are there?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS airlines))
+    (SQ (VBP are)
+      (NP (EX there)))
+    (. ?)))
+
+Who played Agent Smith in Matrix?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD played)
+        (NP
+          (NP (NNP Agent) (NNP Smith))
+          (PP (IN in)
+            (NP (NNP Matrix))))))
+    (. ?)))
+
+How much carbs does peanut butter have?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHNP (WRB How) (RB much))
+      (ADJP (JJ carbs)))
+    (SQ (VBZ does)
+      (NP (NN peanut) (NN butter))
+      (VP (VB have)))
+    (. ?)))
+
+Which book has the most pages?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN book))
+    (SQ
+      (VP (VBZ has)
+        (NP (DT the) (JJS most) (NNS pages))))
+    (. ?)))
+
+Which bridges cross the Seine?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN bridges))
+    (SQ
+      (VP (VBP cross)
+        (NP (DT the) (NN Seine))))
+    (. ?)))
+
+Who is the mayor of the capital of French Polynesia?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN mayor))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN capital))
+            (PP (IN of)
+              (NP (NNP French) (NNP Polynesia)))))))
+    (. ?)))
+
+When did Dracula's creator die?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD did)
+      (NP
+        (NP (NNP Dracula) (POS 's))
+        (NN creator))
+      (VP (VB die)))
+    (. ?)))
+
+What is the location of the Houses of Parliament?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN location))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNPS Houses))
+            (PP (IN of)
+              (NP (NNP Parliament)))))))
+    (. ?)))
+
+Show me all English Gothic buildings in Kent.
+(ROOT
+  (S
+    (VP (VB Show)
+      (S
+        (NP (PRP me))
+        (NP
+          (NP (DT all) (JJ English) (JJ Gothic) (NNS buildings))
+          (PP (IN in)
+            (NP (NNP Kent))))))
+    (. .)))
+
+Who was the pope that founded the Vatican Television?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NN pope))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD founded)
+              (NP (DT the) (NNP Vatican) (NNP Television)))))))
+    (. ?)))
+
+What airlines are part of the SkyTeam alliance?
+(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN airlines))
+    (SQ (VBP are)
+      (NP
+        (NP (NN part))
+        (PP (IN of)
+          (NP (DT the) (NNP SkyTeam) (NN alliance)))))
+    (. ?)))
+
+What is the total population of Melbourne, Florida?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ total) (NN population))
+        (PP (IN of)
+          (NP (NNP Melbourne) (, ,) (NNP Florida)))))
+    (. ?)))
+
+Which airports does Air China serve?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN airports))
+    (SQ (VBZ does)
+      (NP (NNP Air) (NNP China))
+      (VP (VB serve)))
+    (. ?)))
+
+In which year was Rachel Stevens born?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN year)))
+    (SQ (VBD was)
+      (NP (NNP Rachel) (NNP Stevens))
+      (VP (VBN born)))
+    (. ?)))
+
+Where was JFK assassinated?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP (NNP JFK))
+      (VP (VBN assassinated)))
+    (. ?)))
+
+How many politicians graduated from Columbia University?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS politicians))
+    (SQ
+      (VP (VBD graduated)
+        (PP (IN from)
+          (NP (NNP Columbia) (NNP University)))))
+    (. ?)))
+
+Which scientist is known for the Manhattan Project and the Nobel Peace Prize?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN scientist))
+    (SQ (VBZ is)
+      (VP (VBN known)
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NNP Manhattan) (NNP Project))
+            (CC and)
+            (NP (DT the) (NNP Nobel) (NNP Peace) (NNP Prize))))))
+    (. ?)))
+
+What is the highest volcano in Africa?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJS highest) (NN volcano))
+        (PP (IN in)
+          (NP (NNP Africa)))))
+    (. ?)))
+
+Which beer originated in Ireland?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN beer))
+    (SQ
+      (VP (VBP originated)
+        (PP (IN in)
+          (NP (NNP Ireland)))))
+    (. ?)))
+
+What are the specialities of the UNC Health Care?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP are)
+      (NP
+        (NP (DT the) (NNS specialities))
+        (PP (IN of)
+          (NP (DT the) (NNP UNC) (NNP Health) (NNP Care)))))
+    (. ?)))
+
+Who is the owner of Facebook?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN owner))
+        (PP (IN of)
+          (NP (NNP Facebook)))))
+    (. ?)))
+
+From which region is the Melon de Bourgogne?
+(ROOT
+  (SBARQ
+    (ADVP (RB From))
+    (WHNP (WDT which) (NN region))
+    (SQ
+      (VP (VBZ is)
+        (NP (DT the) (NNP Melon) (IN de) (NNP Bourgogne))))
+    (. ?)))
+
+Who was influenced by Socrates?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (VP (VBN influenced)
+        (PP (IN by)
+          (NP (NNP Socrates)))))
+    (. ?)))
+
+Who was president of Pakistan in 1978?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (NN president))
+        (PP (IN of)
+          (NP
+            (NP (NNP Pakistan))
+            (PP (IN in)
+              (NP (CD 1978)))))))
+    (. ?)))
+
+Give me English actors starring in Lovesick.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (JJ English) (NNS actors))
+        (VP (VBG starring)
+          (PP (IN in)
+            (NP (NNP Lovesick))))))
+    (. .)))
+
+Give me all types of eating disorders.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS types))
+        (PP (IN of)
+          (NP (JJ eating) (NNS disorders)))))
+    (. .)))
+
+Who was married to president Chirac?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (VP (VBN married)
+        (PP (TO to)
+          (NP (NN president) (NNS Chirac)))))
+    (. ?)))
+
+What is the largest metropolitan area in Washington state?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJS largest) (JJ metropolitan) (NN area))
+        (PP (IN in)
+          (NP (NNP Washington) (NN state)))))
+    (. ?)))
+
+Where in France is sparkling wine produced?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where)
+      (PP (IN in)
+        (NP (NNP France))))
+    (SQ (VBZ is)
+      (NP (JJ sparkling) (NN wine))
+      (VP (VBN produced)))
+    (. ?)))
+
+Where did Hillel Slovak die?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (NNP Hillel) (NNP Slovak))
+      (VP (VB die)))
+    (. ?)))
+
+What is the timezone in San Pedro de Atacama?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN timezone))
+        (PP (IN in)
+          (NP (NNP San) (NNP Pedro) (IN de) (NNP Atacama)))))
+    (. ?)))
+
+In which city does the Chile Route 68 end?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN city)))
+    (SQ (VBZ does)
+      (NP (DT the) (NNP Chile) (NNP Route) (NNP 68))
+      (VP (VB end)))
+    (. ?)))
+

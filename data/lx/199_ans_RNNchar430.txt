@@ -1,0 +1,2821 @@
+Give me all cosmonauts.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NNS cosmonauts)))
+    (. .)))
+Ans: syntacticParser.Node@3bd82cf5
+
+
+In which country does the Ganges start?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN country)))
+    (SQ (VBZ does)
+      (NP (DT the) (NNS Ganges))
+      (VP (VB start)))
+    (. ?)))
+Ans: syntacticParser.Node@6c45ee6e
+"the Ganges [18,27]"	"start "	"syntacticParser.Node@6c45ee6e"
+
+
+Who was John F. Kennedy's vice president?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (NNP John) (NNP F.) (NNP Kennedy) (POS 's))
+        (JJ vice) (NN president)))
+    (. ?)))
+Ans: syntacticParser.Node@61942c1
+
+
+Who is the mayor of Berlin?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN mayor))
+        (PP (IN of)
+          (NP (NNP Berlin)))))
+    (. ?)))
+Ans: syntacticParser.Node@571a9686
+"syntacticParser.Node@571a9686"	"the mayor "	"Berlin [15,21]"
+
+
+Give me all professional skateboarders from Sweden.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (JJ professional) (NNS skateboarders))
+        (PP (IN from)
+          (NP (NNP Sweden)))))
+    (. .)))
+Ans: syntacticParser.Node@51c8f62c
+"syntacticParser.Node@51c8f62c"	"all professional skateboarders "	"Sweden [38,44]"
+
+
+To which countries does the Himalayan mountain system extend?
+(ROOT
+  (SBARQ
+    (WHPP (TO To)
+      (WHNP (WDT which) (NNS countries)))
+    (SQ (VBZ does)
+      (NP (DT the) (JJ Himalayan) (NN mountain) (NN system))
+      (VP (VB extend)))
+    (. ?)))
+Ans: syntacticParser.Node@64518270
+"the Himalayan mountain system [20,46]"	"extend "	"syntacticParser.Node@64518270"
+
+
+Give me a list of all bandleaders that play trumpet.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT a) (NN list))
+        (PP (IN of)
+          (NP (DT all) (NNS bandleaders)))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP play)
+              (NP (NN trumpet)))))))
+    (. .)))
+Ans: syntacticParser.Node@349312d5
+"syntacticParser.Node@349312d5"	"play"	"trumpet [35,42]"
+
+
+Who produces Orangina?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBZ produces)
+        (NP (NNP Orangina))))
+    (. ?)))
+Ans: syntacticParser.Node@13dd7887
+"syntacticParser.Node@13dd7887"	"produces"	"Orangina [11,19]"
+
+
+Give me all world heritage sites designated within the past two years.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NN world) (NN heritage) (NNS sites))
+        (VP (VBN designated)
+          (PP (IN within)
+            (NP (DT the) (JJ past) (CD two) (NNS years))))))
+    (. .)))
+Ans: syntacticParser.Node@185a0811
+"syntacticParser.Node@185a0811"	"designated within"	"the past two years [43,58]"
+
+
+Give me all members of Prodigy.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS members))
+        (PP (IN of)
+          (NP (NNP Prodigy)))))
+    (. .)))
+Ans: syntacticParser.Node@44a98a23
+"syntacticParser.Node@44a98a23"	"all members "	"Prodigy [18,25]"
+
+
+Give me all cars that are produced in Germany.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS cars))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP are)
+              (VP (VBN produced)
+                (PP (IN in)
+                  (NP (NNP Germany)))))))))
+    (. .)))
+Ans: syntacticParser.Node@49bc1f6c
+"syntacticParser.Node@49bc1f6c"	"produced in"	"Germany [30,37]"
+
+
+What were the main discoveries of the Mars rover Curiosity?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD were)
+      (NP
+        (NP (DT the) (JJ main) (NNS discoveries))
+        (PP (IN of)
+          (NP (DT the) (NNP Mars) (NN rover) (NNP Curiosity)))))
+    (. ?)))
+Ans: syntacticParser.Node@31887330
+"syntacticParser.Node@31887330"	"the main discoveries "	"the Mars rover Curiosity [28,49]"
+
+
+Give me all people that were born in Vienna and died in Berlin.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS people))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP
+              (VP (VBD were)
+                (VP (VBN born)
+                  (PP (IN in)
+                    (NP (NNP Vienna)))))
+              (CC and)
+              (VP (VBN died)
+                (PP (IN in)
+                  (NP (NNP Berlin)))))))))
+    (. .)))
+Ans: syntacticParser.Node@5ea24702
+"syntacticParser.Node@5ea24702"	"born in"	"Vienna [29,35]"
+"syntacticParser.Node@5ea24702"	"died in"	"Berlin [44,50]"
+
+
+How tall is Michael Jordan?
+(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ tall))
+    (SQ (VBZ is)
+      (NP (NNP Michael) (NNP Jordan)))
+    (. ?)))
+Ans: syntacticParser.Node@2fb006dc
+
+
+What is the capital of Canada?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN capital))
+        (PP (IN of)
+          (NP (NNP Canada)))))
+    (. ?)))
+Ans: syntacticParser.Node@47db20e0
+"syntacticParser.Node@47db20e0"	"the capital "	"Canada [18,24]"
+
+
+Who is the governor of Wyoming?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN governor))
+        (PP (IN of)
+          (NP (NNP Wyoming)))))
+    (. ?)))
+Ans: syntacticParser.Node@59464f08
+"syntacticParser.Node@59464f08"	"the governor "	"Wyoming [18,25]"
+
+
+Who was the father of Queen Elizabeth II?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NN father))
+        (PP (IN of)
+          (NP (NNP Queen) (NNP Elizabeth) (NNP II)))))
+    (. ?)))
+Ans: syntacticParser.Node@6eefc125
+"syntacticParser.Node@6eefc125"	"the father "	"Queen Elizabeth II [17,33]"
+
+
+Sean Parnell is the governor of which U.S. state?
+(ROOT
+  (S
+    (NP (NNP Sean) (NNP Parnell))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN governor))
+        (WHPP (IN of)
+          (WHNP (WDT which) (NNP U.S.) (NN state)))))
+    (. ?)))
+Ans: syntacticParser.Node@18a8a42b
+"syntacticParser.Node@18a8a42b"	"is"	"the governor of which U.S. state [13,40]"
+
+
+Give me all movies directed by Francis Ford Coppola.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS movies))
+        (VP (VBN directed)
+          (PP (IN by)
+            (NP (NNP Francis) (NNP Ford) (NNP Coppola))))))
+    (. .)))
+Ans: syntacticParser.Node@d4c6a43
+"syntacticParser.Node@d4c6a43"	"directed by"	"Francis Ford Coppola [25,43]"
+
+
+Give me all actors starring in movies directed by William Shatner.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS actors))
+        (VP (VBG starring)
+          (PP (IN in)
+            (NP
+              (NP (NNS movies))
+              (VP (VBN directed)
+                (PP (IN by)
+                  (NP (NNP William) (NNP Shatner)))))))))
+    (. .)))
+Ans: syntacticParser.Node@20309fde
+"syntacticParser.Node@4e6fb132"	"directed by"	"William Shatner [41,55]"
+"syntacticParser.Node@20309fde"	"starring in"	"syntacticParser.Node@4e6fb132"
+
+
+What is the birth name of Angela Merkel?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN birth) (NN name))
+        (PP (IN of)
+          (NP (NNP Angela) (NNP Merkel)))))
+    (. ?)))
+Ans: syntacticParser.Node@22ccf63d
+"syntacticParser.Node@22ccf63d"	"the birth name "	"Angela Merkel [20,32]"
+
+
+Give me all Methodist politicians.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Methodist) (NNS politicians)))
+    (. .)))
+Ans: syntacticParser.Node@1a7ca7a3
+
+
+Give me all Australian nonprofit organizations.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Australian) (JJ nonprofit) (NNS organizations)))
+    (. .)))
+Ans: syntacticParser.Node@326312ac
+
+
+In which military conflicts did Lawrence of Arabia participate?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which)
+        (NP (JJ military) (NNS conflicts))))
+    (SQ (VBD did)
+      (NP
+        (NP (NN Lawrence))
+        (PP (IN of)
+          (NP (NNP Arabia))))
+      (VP (VB participate)))
+    (. ?)))
+Ans: syntacticParser.Node@203cab01
+"syntacticParser.Node@588ad442"	"Lawrence "	"Arabia [37,43]"
+"syntacticParser.Node@588ad442"	"participate "	"syntacticParser.Node@203cab01"
+
+
+Who developed Minecraft?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD developed)
+        (NP (NNP Minecraft))))
+    (. ?)))
+Ans: syntacticParser.Node@58c7073f
+"syntacticParser.Node@58c7073f"	"developed"	"Minecraft [12,21]"
+
+
+What is the melting point of copper?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJS melting) (NN point))
+        (PP (IN of)
+          (NP (NN copper)))))
+    (. ?)))
+Ans: syntacticParser.Node@1847e32d
+"syntacticParser.Node@1847e32d"	"the melting point "	"copper [23,29]"
+
+
+Give me all sister cities of Brno.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (JJ sister) (NNS cities))
+        (PP (IN of)
+          (NP (NNP Brno)))))
+    (. .)))
+Ans: syntacticParser.Node@2c9d9931
+"syntacticParser.Node@2c9d9931"	"all sister cities "	"Brno [23,27]"
+
+
+Give me all companies in Munich.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NNS companies))
+      (PP (IN in)
+        (NP (NNP Munich))))
+    (. .)))
+Ans: syntacticParser.Node@73f0d4f
+
+
+How tall is Claudia Schiffer?
+(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ tall))
+    (SQ (VBZ is)
+      (NP (NNP Claudia) (NNP Schiffer)))
+    (. ?)))
+Ans: syntacticParser.Node@3677b9f0
+
+
+List all games by GMT.
+(ROOT
+  (S
+    (VP (VB List)
+      (NP (DT all) (NNS games))
+      (PP (IN by)
+        (NP (NNS GMT))))
+    (. .)))
+Ans: syntacticParser.Node@33ad9708
+
+
+Who founded Intel?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD founded)
+        (NP (NNP Intel))))
+    (. ?)))
+Ans: syntacticParser.Node@1a52608f
+"syntacticParser.Node@1a52608f"	"founded"	"Intel [10,15]"
+
+
+Who is the husband of Amanda Palmer?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN husband))
+        (PP (IN of)
+          (NP (NNP Amanda) (NNP Palmer)))))
+    (. ?)))
+Ans: syntacticParser.Node@72ac14c6
+"syntacticParser.Node@72ac14c6"	"the husband "	"Amanda Palmer [17,29]"
+
+
+Give me all breeds of the German Shepherd dog.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NN breeds))
+        (PP (IN of)
+          (NP (DT the) (JJ German) (NNP Shepherd) (NN dog)))))
+    (. .)))
+Ans: syntacticParser.Node@50c1af3
+"syntacticParser.Node@50c1af3"	"all breeds "	"the German Shepherd dog [17,37]"
+
+
+Which cities does the Weser flow through?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS cities))
+    (SQ (VBZ does)
+      (NP (DT the) (NNP Weser))
+      (VP (VB flow)
+        (PP (IN through))))
+    (. ?)))
+Ans: syntacticParser.Node@1007c1c9
+"the Weser [15,23]"	"flow through "	"syntacticParser.Node@1007c1c9"
+
+
+Which countries are connected by the Rhine?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS countries))
+    (SQ (VBP are)
+      (VP (VBN connected)
+        (PP (IN by)
+          (NP (DT the) (NN Rhine)))))
+    (. ?)))
+Ans: syntacticParser.Node@69fd854d
+"syntacticParser.Node@69fd854d"	"connected by"	"the Rhine [28,36]"
+
+
+Which professional surfers were born in Australia?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN professional) (NNS surfers))
+    (SQ (VBD were)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Australia)))))
+    (. ?)))
+Ans: syntacticParser.Node@6abd6a12
+"syntacticParser.Node@6abd6a12"	"born in"	"Australia [34,43]"
+
+
+What is the average temperature on Hawaii?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ average) (NN temperature))
+        (PP (IN on)
+          (NP (NNP Hawaii)))))
+    (. ?)))
+Ans: syntacticParser.Node@150fb7be
+"syntacticParser.Node@150fb7be"	"the average temperature "	"Hawaii [29,35]"
+
+
+In which UK city are the headquarters of the MI6?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN UK) (NN city)))
+    (SQ (VBP are)
+      (NP
+        (NP (DT the) (NN headquarters))
+        (PP (IN of)
+          (NP (DT the) (NNP MI6)))))
+    (. ?)))
+Ans: syntacticParser.Node@30d9004d
+"syntacticParser.Node@30d9004d"	"the headquarters "	"the MI6 [33,39]"
+
+
+Which other weapons did the designer of the Uzi develop?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (JJ other) (NNS weapons))
+    (SQ (VBD did)
+      (NP
+        (NP (DT the) (NN designer))
+        (PP (IN of)
+          (NP (DT the) (NN Uzi))))
+      (VP (VB develop)))
+    (. ?)))
+Ans: syntacticParser.Node@64d1b804
+"syntacticParser.Node@7084cbb2"	"the designer "	"the Uzi [33,39]"
+"syntacticParser.Node@7084cbb2"	"develop "	"syntacticParser.Node@64d1b804"
+
+
+Who created Goofy?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD created)
+        (NP (NNP Goofy))))
+    (. ?)))
+Ans: syntacticParser.Node@79302976
+"syntacticParser.Node@79302976"	"created"	"Goofy [10,15]"
+
+
+Give me all islands that belong to Japan.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS islands))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP belong)
+              (PP (TO to)
+                (NP (NNP Japan))))))))
+    (. .)))
+Ans: syntacticParser.Node@38d425f
+"syntacticParser.Node@38d425f"	"belong to"	"Japan [28,33]"
+
+
+Who invented the zipper?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD invented)
+        (NP (DT the) (NN zipper))))
+    (. ?)))
+Ans: syntacticParser.Node@11570993
+"syntacticParser.Node@11570993"	"invented"	"the zipper [11,20]"
+
+
+What is the ruling party in Lisbon?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ ruling) (NN party))
+        (PP (IN in)
+          (NP (NNP Lisbon)))))
+    (. ?)))
+Ans: syntacticParser.Node@6d76bf47
+"syntacticParser.Node@6d76bf47"	"the ruling party "	"Lisbon [22,28]"
+
+
+What are the nicknames of San Francisco?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP are)
+      (NP
+        (NP (DT the) (NN nicknames))
+        (PP (IN of)
+          (NP (NNP San) (NNP Francisco)))))
+    (. ?)))
+Ans: syntacticParser.Node@76df0c48
+"syntacticParser.Node@76df0c48"	"the nicknames "	"San Francisco [21,33]"
+
+
+Which Greek goddesses dwelt on Mount Olympus?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which)
+      (NP (JJ Greek) (NNS goddesses)))
+    (SQ
+      (VP (VBZ dwelt)
+        (PP (IN on)
+          (NP (NNP Mount) (NNP Olympus)))))
+    (. ?)))
+Ans: syntacticParser.Node@7e72fa68
+"syntacticParser.Node@7e72fa68"	"dwelt on"	"Mount Olympus [26,38]"
+
+
+Give me all Apollo 14 astronauts.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NN Apollo) (CD 14) (NNS astronauts)))
+    (. .)))
+Ans: syntacticParser.Node@4863c6af
+
+
+What is the time zone of Salt Lake City?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the)
+          (ADVP (NN time))
+          (NN zone))
+        (PP (IN of)
+          (NP (NNP Salt) (NNP Lake) (NNP City)))))
+    (. ?)))
+Ans: syntacticParser.Node@2d8a7544
+"syntacticParser.Node@2d8a7544"	"the time zone "	"Salt Lake City [19,31]"
+
+
+Which U.S. states are in the same time zone as Utah?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNP U.S.) (NNS states))
+    (SQ (VBP are)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (JJ same) (NN time))
+          (ADVP (RB zone)
+            (PP (IN as)
+              (NP (NNP Utah)))))))
+    (. ?)))
+Ans: syntacticParser.Node@2dc3187f
+
+
+Give me the capitals of all countries in Africa.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NNS capitals))
+        (PP (IN of)
+          (NP
+            (NP (DT all) (NNS countries))
+            (PP (IN in)
+              (NP (NNP Africa)))))))
+    (. .)))
+Ans: syntacticParser.Node@4facd62a
+"syntacticParser.Node@7831da98"	"all countries "	"Africa [33,39]"
+"syntacticParser.Node@4facd62a"	"the capitals "	"syntacticParser.Node@7831da98"
+
+
+Give me a list of all lakes in Denmark.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT a) (NN list))
+        (PP (IN of)
+          (NP
+            (NP (DT all) (NN lakes))
+            (PP (IN in)
+              (NP (NNP Denmark)))))))
+    (. .)))
+Ans: syntacticParser.Node@7fe5f48a
+"syntacticParser.Node@7fe5f48a"	"all lakes "	"Denmark [23,30]"
+
+
+Give me all Danish movies.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (PDT all) (PRP$ Danish) (NNS movies)))
+    (. .)))
+Ans: syntacticParser.Node@224eb415
+
+
+Give me all launch pads operated by NASA.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (JJ launch) (NNS pads))
+        (VP (VBN operated)
+          (PP (IN by)
+            (NP (NNP NASA))))))
+    (. .)))
+Ans: syntacticParser.Node@651c593a
+"syntacticParser.Node@651c593a"	"operated by"	"NASA [29,33]"
+
+
+Which instruments does Cat Stevens play?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS instruments))
+    (SQ (VBZ does)
+      (NP (NNP Cat) (NNP Stevens))
+      (VP (VB play)))
+    (. ?)))
+Ans: syntacticParser.Node@696ba097
+"Cat Stevens [20,30]"	"play "	"syntacticParser.Node@696ba097"
+
+
+Which ships were called after Benjamin Franklin?
+(ROOT
+  (S
+    (NP (JJ Which) (NNS ships))
+    (VP (VBD were)
+      (VP (VBN called)
+        (PP (IN after)
+          (NP (NNP Benjamin) (NNP Franklin)))))
+    (. ?)))
+Ans: syntacticParser.Node@2baa145
+"syntacticParser.Node@2baa145"	"called after"	"Benjamin Franklin [25,41]"
+
+
+Who are the parents of the wife of Juan Carlos I?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBP are)
+      (NP
+        (NP (DT the) (NNS parents))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN wife))
+            (PP (IN of)
+              (NP (NNP Juan) (NNP Carlos) (NNP I)))))))
+    (. ?)))
+Ans: syntacticParser.Node@363eab6b
+"syntacticParser.Node@2a4e1b6"	"the wife "	"Juan Carlos I [27,38]"
+"syntacticParser.Node@363eab6b"	"the parents "	"syntacticParser.Node@2a4e1b6"
+
+
+In which U.S. state is Fort Knox located?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NNP U.S.) (NN state)))
+    (SQ (VBZ is)
+      (NP (NNP Fort) (NNP Knox))
+      (VP (VBN located)))
+    (. ?)))
+Ans: syntacticParser.Node@4863452b
+"Fort Knox [18,26]"	"located "	"syntacticParser.Node@4863452b"
+
+
+Which Chess players died in the same place they were born in?
+(ROOT
+  (FRAG
+    (SBAR
+      (WHNP (WDT Which))
+      (S
+        (NP (NNP Chess) (NNS players))
+        (VP (VBD died)
+          (PP (IN in)
+            (NP
+              (NP (DT the) (JJ same) (NN place))
+              (SBAR
+                (S
+                  (NP (PRP they))
+                  (VP (VBD were)
+                    (VP (VBN born)
+                      (PP (IN in)))))))))))
+    (. ?)))
+Ans: syntacticParser.Node@28ac61ca
+"syntacticParser.Node@28ac61ca"	"died in"	"the same place they were born in [23,49]"
+
+
+List the children of Margaret Thatcher.
+(ROOT
+  (S
+    (VP (VB List)
+      (NP
+        (NP (DT the) (NN children))
+        (PP (IN of)
+          (NP (NNP Margaret) (NNP Thatcher)))))
+    (. .)))
+Ans: syntacticParser.Node@24a622bb
+"syntacticParser.Node@24a622bb"	"the children "	"Margaret Thatcher [17,33]"
+
+
+Who was called Frank The Tank?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (VP (VBN called)
+        (NP (NNP Frank) (DT The) (NN Tank))))
+    (. ?)))
+Ans: syntacticParser.Node@676e6003
+"syntacticParser.Node@676e6003"	"called"	"Frank The Tank [12,24]"
+
+
+Which museum exhibits The Scream by Munch?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN museum))
+    (SQ
+      (VP (VBZ exhibits)
+        (NP (DT The) (NN Scream))
+        (PP (IN by)
+          (NP (NNP Munch)))))
+    (. ?)))
+Ans: syntacticParser.Node@171c1f7b
+
+
+Which books by Kerouac were published by Viking Press?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which)
+      (NP
+        (NP (NNS books))
+        (PP (IN by)
+          (NP (NNP Kerouac)))))
+    (SQ (VBD were)
+      (VP (VBN published)
+        (PP (IN by)
+          (NP (NNP Viking) (NNP Press)))))
+    (. ?)))
+Ans: syntacticParser.Node@7ca81f0f
+"syntacticParser.Node@7ca81f0f"	"books "	"Kerouac [12,19]"
+"syntacticParser.Node@7ca81f0f"	"published by"	"Viking Press [34,45]"
+
+
+Give me a list of all American inventions.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT a) (NN list))
+        (PP (IN of)
+          (NP (DT all) (JJ American) (NNS inventions)))))
+    (. .)))
+Ans: syntacticParser.Node@6e513171
+
+
+How high is the Mount Everest?
+(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ high))
+    (SQ (VBZ is)
+      (NP (DT the) (NNP Mount) (NNP Everest)))
+    (. ?)))
+Ans: syntacticParser.Node@642f17ef
+
+
+Who created the comic Captain America?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD created)
+        (NP (DT the) (JJ comic) (NNP Captain) (NNP America))))
+    (. ?)))
+Ans: syntacticParser.Node@2f818541
+"syntacticParser.Node@2f818541"	"created"	"the comic Captain America [10,32]"
+
+
+Who composed the music for Harold and Maude?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD composed)
+        (NP
+          (NP (DT the) (NN music))
+          (PP (IN for)
+            (NP (NNP Harold)
+              (CC and)
+              (NNP Maude))))))
+    (. ?)))
+Ans: syntacticParser.Node@12a57fe
+"syntacticParser.Node@754c2c05"	"the music "	"Harold and Maude [22,36]"
+"syntacticParser.Node@12a57fe"	"composed"	"syntacticParser.Node@754c2c05"
+
+
+Which films starring Clint Eastwood did he direct himself?
+(ROOT
+  (SBARQ
+    (WHNP
+      (NP (WDT Which) (NNS films))
+      (PP (VBG starring)
+        (NP (NNP Clint) (NNP Eastwood))))
+    (SQ (VBD did)
+      (NP (PRP he))
+      (VP (VB direct)
+        (NP (PRP himself))))
+    (. ?)))
+Ans: syntacticParser.Node@2c06fba2
+"he [34,36]"	"direct himself "	"syntacticParser.Node@2c06fba2"
+
+
+In which city was the former Dutch queen Juliana buried?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN city)))
+    (SQ (VBD was)
+      (NP (DT the) (JJ former) (JJ Dutch) (NN queen) (NNP Juliana))
+      (VP (VBN buried)))
+    (. ?)))
+Ans: syntacticParser.Node@1ee6285d
+"the former Dutch queen Juliana [14,40]"	"buried "	"syntacticParser.Node@1ee6285d"
+
+
+Where is the residence of the prime minister of Spain?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN residence))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (JJ prime) (NN minister))
+            (PP (IN of)
+              (NP (NNP Spain)))))))
+    (. ?)))
+Ans: syntacticParser.Node@5ae4fe0f
+"syntacticParser.Node@7c66b053"	"the prime minister "	"Spain [39,44]"
+"syntacticParser.Node@5ae4fe0f"	"the residence "	"syntacticParser.Node@7c66b053"
+
+
+Which U.S. state has the abbreviation MN?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNP U.S.) (NN state))
+    (SQ
+      (VP (VBZ has)
+        (NP (DT the) (NN abbreviation) (NNP MN))))
+    (. ?)))
+Ans: syntacticParser.Node@1e111cff
+"syntacticParser.Node@1e111cff"	"has"	"the abbreviation MN [17,34]"
+
+
+Show me all songs from Bruce Springsteen released between 1980 and 1990.
+(ROOT
+  (S
+    (VP (VB Show)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS songs))
+        (PP (IN from)
+          (NP
+            (NP (NNP Bruce) (NNP Springsteen))
+            (VP (VBN released)
+              (PP (IN between)
+                (NP (CD 1980)
+                  (CC and)
+                  (CD 1990))))))))
+    (. .)))
+Ans: syntacticParser.Node@3563426c
+"syntacticParser.Node@17c61787"	"released between"	"1980 and 1990 [49,60]"
+"syntacticParser.Node@3563426c"	"all songs "	"syntacticParser.Node@17c61787"
+
+
+Which movies did Kurosawa direct?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN movies))
+    (SQ (VBD did)
+      (NP (NNP Kurosawa))
+      (VP (NN direct)))
+    (. ?)))
+Ans: syntacticParser.Node@2b7bbed0
+"Kurosawa [14,22]"	"direct "	"syntacticParser.Node@2b7bbed0"
+
+
+What is the founding year of the brewery that produces Pilsner Urquell?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ founding) (NN year))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN brewery))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBZ produces)
+                  (NP (JJ Pilsner) (NN Urquell)))))))))
+    (. ?)))
+Ans: syntacticParser.Node@7d00934a
+"syntacticParser.Node@5515470e"	"produces"	"Pilsner Urquell [45,59]"
+"syntacticParser.Node@7d00934a"	"the founding year "	"syntacticParser.Node@5515470e"
+
+
+Who wrote the lyrics for the Polish national anthem?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD wrote)
+        (NP
+          (NP (DT the) (NNS lyrics))
+          (PP (IN for)
+            (NP (DT the) (JJ Polish) (JJ national) (NN anthem))))))
+    (. ?)))
+Ans: syntacticParser.Node@6f053971
+"syntacticParser.Node@d7f914b"	"the lyrics "	"the Polish national anthem [20,43]"
+"syntacticParser.Node@6f053971"	"wrote"	"syntacticParser.Node@d7f914b"
+
+
+Give me all B-sides of the Ramones.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS B-sides))
+        (PP (IN of)
+          (NP (DT the) (NNP Ramones)))))
+    (. .)))
+Ans: syntacticParser.Node@7befdfcd
+"syntacticParser.Node@7befdfcd"	"all B-sides "	"the Ramones [18,28]"
+
+
+Who painted The Storm on the Sea of Galilee?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD painted)
+        (NP (DT The) (NNS Storm))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN Sea))
+            (PP (IN of)
+              (NP (NNP Galilee)))))))
+    (. ?)))
+Ans: syntacticParser.Node@913b472
+"syntacticParser.Node@913b472"	"the Sea "	"Galilee [28,35]"
+
+
+Which country does the creator of Miffy come from?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN country))
+    (SQ (VBZ does)
+      (NP
+        (NP (DT the) (NN creator))
+        (PP (IN of)
+          (NP (NNP Miffy))))
+      (VP (VBN come)
+        (PP (IN from))))
+    (. ?)))
+Ans: syntacticParser.Node@4a5dc798
+"syntacticParser.Node@47d40901"	"the creator "	"Miffy [28,33]"
+"syntacticParser.Node@47d40901"	"come from "	"syntacticParser.Node@4a5dc798"
+
+
+For which label did Elvis record his first album?
+(ROOT
+  (SBARQ
+    (WHPP (IN For)
+      (WHNP (WDT which) (NN label)))
+    (SQ (VBD did)
+      (NP (NN Elvis))
+      (VP (VB record)
+        (NP (PRP$ his) (JJ first) (NN album))))
+    (. ?)))
+Ans: syntacticParser.Node@59e6e35d
+"Elvis [16,21]"	"record his first album "	"syntacticParser.Node@59e6e35d"
+
+
+Give me the birthdays of all actors of the television show Charmed.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NN birthdays))
+        (PP (IN of)
+          (NP
+            (NP (DT all) (NNS actors))
+            (PP (IN of)
+              (NP (DT the) (NN television) (NN show) (NNP Charmed)))))))
+    (. .)))
+Ans: syntacticParser.Node@1860a39c
+"syntacticParser.Node@67e6968f"	"all actors "	"the television show Charmed [31,55]"
+"syntacticParser.Node@1860a39c"	"the birthdays "	"syntacticParser.Node@67e6968f"
+
+
+Which states border Illinois?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which))
+    (SQ
+      (VP (VBZ states)
+        (NP (NN border) (NNP Illinois))))
+    (. ?)))
+Ans: syntacticParser.Node@f68ef5c
+"syntacticParser.Node@f68ef5c"	"states"	"border Illinois [11,25]"
+
+
+In which country is the Limerick Lake?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN country)))
+    (SQ (VBZ is)
+      (NP (DT the) (NN Limerick) (NNP Lake)))
+    (. ?)))
+Ans: syntacticParser.Node@4ed94d7a
+
+
+Which television shows were created by John Cleese?
+(ROOT
+  (S
+    (NP (JJ Which) (NN television) (NNS shows))
+    (VP (VBD were)
+      (VP (VBN created)
+        (PP (IN by)
+          (NP (NNP John) (NNP Cleese)))))
+    (. ?)))
+Ans: syntacticParser.Node@4d4186fa
+"syntacticParser.Node@4d4186fa"	"created by"	"John Cleese [33,43]"
+
+
+In which films directed by Garry Marshall was Julia Roberts starring?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which)
+        (S
+          (NP (NNS films))
+          (VP (VBD directed)
+            (PP (IN by)
+              (NP (NNP Garry) (NNP Marshall)))))))
+    (SQ (VBD was)
+      (NP (NNP Julia) (NNP Roberts))
+      (VP (VBN starring)))
+    (. ?)))
+Ans: syntacticParser.Node@72fc136f
+"syntacticParser.Node@72fc136f"	"directed by"	"Garry Marshall [22,35]"
+"Julia Roberts [38,50]"	"starring "	"syntacticParser.Node@72fc136f"
+
+
+Which bridges are of the same type as the Manhattan Bridge?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN bridges))
+    (SQ (VBP are)
+      (PP (IN of)
+        (NP
+          (NP (DT the) (JJ same) (NN type))
+          (PP (IN as)
+            (NP (DT the) (NNP Manhattan) (NNP Bridge))))))
+    (. ?)))
+Ans: syntacticParser.Node@58871204
+"syntacticParser.Node@58871204"	"the same type "	"the Manhattan Bridge [30,48]"
+
+
+Give me all communist countries.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ communist) (NNS countries)))
+    (. .)))
+Ans: syntacticParser.Node@3e67f586
+
+
+Which awards did Douglas Hofstadter win?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN awards))
+    (SQ (VBD did)
+      (NP (NNP Douglas) (NNP Hofstadter))
+      (VP (VB win)))
+    (. ?)))
+Ans: syntacticParser.Node@2bb2e232
+"Douglas Hofstadter [14,31]"	"win "	"syntacticParser.Node@2bb2e232"
+
+
+Who is the daughter of Robert Kennedy married to?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP
+          (NP (DT the) (NN daughter))
+          (PP (IN of)
+            (NP (NNP Robert) (NNP Kennedy))))
+        (VP (VBN married)
+          (PP (TO to)))))
+    (. ?)))
+Ans: syntacticParser.Node@7f076e8d
+"syntacticParser.Node@7f076e8d"	"the daughter "	"Robert Kennedy [18,31]"
+
+
+What is the currency of the Czech Republic?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN currency))
+        (PP (IN of)
+          (NP (DT the) (JJ Czech) (NN Republic)))))
+    (. ?)))
+Ans: syntacticParser.Node@66efc9d4
+"syntacticParser.Node@66efc9d4"	"the currency "	"the Czech Republic [19,35]"
+
+
+Which countries adopted the Euro?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS countries))
+    (SQ
+      (VP (VBD adopted)
+        (NP (DT the) (NN Euro))))
+    (. ?)))
+Ans: syntacticParser.Node@4eba9bef
+"syntacticParser.Node@4eba9bef"	"adopted"	"the Euro [21,28]"
+
+
+What is the area code of Berlin?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN area) (NN code))
+        (PP (IN of)
+          (NP (NNP Berlin)))))
+    (. ?)))
+Ans: syntacticParser.Node@2ef6547
+"syntacticParser.Node@2ef6547"	"the area code "	"Berlin [19,25]"
+
+
+Who is the owner of Rolls-Royce?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN owner))
+        (PP (IN of)
+          (NP (NNP Rolls-Royce)))))
+    (. ?)))
+Ans: syntacticParser.Node@1992566c
+"syntacticParser.Node@1992566c"	"the owner "	"Rolls-Royce [15,26]"
+
+
+Through which countries does the Yenisei river flow?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Through)
+      (NP (WDT which) (NNS countries)))
+    (SQ (VBZ does)
+      (NP (DT the) (NNP Yenisei) (NN river))
+      (VP (VB flow)))
+    (. ?)))
+Ans: syntacticParser.Node@61af7e51
+"the Yenisei river [25,40]"	"flow "	"syntacticParser.Node@61af7e51"
+
+
+Which monarchs were married to a German?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN monarchs))
+    (SQ (VBD were)
+      (VP (VBN married)
+        (PP (TO to)
+          (NP (DT a) (NNP German)))))
+    (. ?)))
+Ans: syntacticParser.Node@3cfa8586
+"syntacticParser.Node@3cfa8586"	"married to"	"a German [26,33]"
+
+
+Which river does the Brooklyn Bridge cross?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN river))
+    (SQ (VBZ does)
+      (NP (DT the) (NNP Brooklyn) (NNP Bridge))
+      (VP (VB cross)))
+    (. ?)))
+Ans: syntacticParser.Node@4599ef1c
+"the Brooklyn Bridge [14,31]"	"cross "	"syntacticParser.Node@4599ef1c"
+
+
+Give me all soccer clubs in Spain.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NN soccer) (NNS clubs))
+      (PP (IN in)
+        (NP (NNP Spain))))
+    (. .)))
+Ans: syntacticParser.Node@554a10a2
+
+
+What is the official language of Suriname?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ official) (NN language))
+        (PP (IN of)
+          (NP (NNP Suriname)))))
+    (. ?)))
+Ans: syntacticParser.Node@747c4e93
+"syntacticParser.Node@747c4e93"	"the official language "	"Suriname [27,35]"
+
+
+Who is the mayor of Tel Aviv?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN mayor))
+        (PP (IN of)
+          (NP (NNP Tel) (NNP Aviv)))))
+    (. ?)))
+Ans: syntacticParser.Node@4e626ff2
+"syntacticParser.Node@4e626ff2"	"the mayor "	"Tel Aviv [15,22]"
+
+
+Who designed the Brooklyn Bridge?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD designed)
+        (NP (DT the) (NNP Brooklyn) (NNP Bridge))))
+    (. ?)))
+Ans: syntacticParser.Node@a860795
+"syntacticParser.Node@a860795"	"designed"	"the Brooklyn Bridge [11,28]"
+
+
+Which telecommunications organizations are located in Belgium?
+(ROOT
+  (S
+    (NP (JJ Which) (NNS telecommunications) (NNS organizations))
+    (VP (VBP are)
+      (VP (VBN located)
+        (PP (IN in)
+          (NP (NNP Belgium)))))
+    (. ?)))
+Ans: syntacticParser.Node@4ffb6ccb
+"syntacticParser.Node@4ffb6ccb"	"located in"	"Belgium [48,55]"
+
+
+Who is the editor of Forbes?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN editor))
+        (PP (IN of)
+          (NP (NNP Forbes)))))
+    (. ?)))
+Ans: syntacticParser.Node@4e3ba5ce
+"syntacticParser.Node@4e3ba5ce"	"the editor "	"Forbes [16,22]"
+
+
+Give me all companies in the advertising industry.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NNS companies))
+      (PP (IN in)
+        (NP (DT the) (NN advertising) (NN industry))))
+    (. .)))
+Ans: syntacticParser.Node@3abee3fe
+
+
+What did Bruce Carver die from?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Bruce) (NNP Carver))
+      (VP (VB die)
+        (PP (IN from))))
+    (. ?)))
+Ans: syntacticParser.Node@12b2c9a1
+"Bruce Carver [7,18]"	"die from "	"syntacticParser.Node@12b2c9a1"
+
+
+Which presidents were born in 1945?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS presidents))
+    (SQ (VBD were)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (CD 1945)))))
+    (. ?)))
+Ans: syntacticParser.Node@79dba873
+"syntacticParser.Node@79dba873"	"born in"	"1945 [25,29]"
+
+
+Give me all federal chancellors of Germany.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (JJ federal) (NN chancellors))
+        (PP (IN of)
+          (NP (NNP Germany)))))
+    (. .)))
+Ans: syntacticParser.Node@6c0e2039
+"syntacticParser.Node@6c0e2039"	"all federal chancellors "	"Germany [29,36]"
+
+
+Who was the wife of U.S. president Lincoln?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NN wife))
+        (PP (IN of)
+          (NP (NNP U.S.) (NNP president) (NNP Lincoln)))))
+    (. ?)))
+Ans: syntacticParser.Node@27a6a2d7
+"syntacticParser.Node@27a6a2d7"	"the wife "	"U.S. president Lincoln [15,35]"
+
+
+Who developed the video game World of Warcraft?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD developed)
+        (NP
+          (NP (DT the) (NN video) (NN game) (NNP World))
+          (PP (IN of)
+            (NP (NNP Warcraft))))))
+    (. ?)))
+Ans: syntacticParser.Node@8b52a0c
+"syntacticParser.Node@19d5ef78"	"the video game World "	"Warcraft [31,39]"
+"syntacticParser.Node@8b52a0c"	"developed"	"syntacticParser.Node@19d5ef78"
+
+
+What is the official website of Tom Cruise?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ official) (NN website))
+        (PP (IN of)
+          (NP (NNP Tom) (NNP Cruise)))))
+    (. ?)))
+Ans: syntacticParser.Node@4c76256
+"syntacticParser.Node@4c76256"	"the official website "	"Tom Cruise [26,35]"
+
+
+List all episodes of the first season of the HBO television series The Sopranos.
+(ROOT
+  (S
+    (VP (VB List)
+      (NP
+        (NP (DT all) (NNS episodes))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (JJ first) (NN season))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNP HBO) (NN television) (NN series))
+                (NP (DT The) (NN Sopranos))))))))
+    (. .)))
+Ans: syntacticParser.Node@416d59b9
+"syntacticParser.Node@3551122d"	"the first season "	"the HBO television series The Sopranos [33,66]"
+"syntacticParser.Node@416d59b9"	"all episodes "	"syntacticParser.Node@3551122d"
+
+
+Give me all people with first name Jimmy.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NNS people))
+      (PP (IN with)
+        (NP (JJ first) (NN name) (NNP Jimmy))))
+    (. .)))
+Ans: syntacticParser.Node@16644d59
+
+
+In which city did John F. Kennedy die?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN city)))
+    (SQ (VBD did)
+      (NP (NNP John) (NNP F.) (NNP Kennedy))
+      (VP (VB die)))
+    (. ?)))
+Ans: syntacticParser.Node@9bff456
+"John F. Kennedy [14,27]"	"die "	"syntacticParser.Node@9bff456"
+
+
+Who created Wikipedia?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD created)
+        (NP (NNP Wikipedia))))
+    (. ?)))
+Ans: syntacticParser.Node@6a402b7d
+"syntacticParser.Node@6a402b7d"	"created"	"Wikipedia [10,19]"
+
+
+Give me all actors starring in Last Action Hero.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS actors))
+        (VP (VBG starring)
+          (PP (IN in)
+            (NP (JJ Last) (NN Action) (NNP Hero))))))
+    (. .)))
+Ans: syntacticParser.Node@e168fbf
+"syntacticParser.Node@e168fbf"	"starring in"	"Last Action Hero [25,39]"
+
+
+Which software has been developed by organizations founded in California?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN software))
+    (SQ
+      (VP (VBZ has)
+        (VP (VBN been)
+          (VP (VBN developed)
+            (PP (IN by)
+              (NP
+                (NP (NNS organizations))
+                (VP (VBN founded)
+                  (PP (IN in)
+                    (NP (NNP California))))))))))
+    (. ?)))
+Ans: syntacticParser.Node@4d24f1b0
+"syntacticParser.Node@2c57b1ca"	"founded in"	"California [53,63]"
+"syntacticParser.Node@4d24f1b0"	"developed by"	"syntacticParser.Node@2c57b1ca"
+
+
+Which companies work in the aerospace industry as well as in medicine?
+(ROOT
+  (SQ (MD Which)
+    (NP (NNS companies))
+    (VP (VB work)
+      (PP
+        (PP (IN in)
+          (NP (DT the) (NN aerospace) (NN industry)))
+        (CONJP (RB as) (RB well) (IN as))
+        (PP (IN in)
+          (NP (NN medicine)))))
+    (. ?)))
+Ans: syntacticParser.Node@3cdf34c6
+
+
+Which actors were born in Germany?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS actors))
+    (SQ (VBD were)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Germany)))))
+    (. ?)))
+Ans: syntacticParser.Node@49fc2d9f
+"syntacticParser.Node@49fc2d9f"	"born in"	"Germany [21,28]"
+
+
+Give me all films produced by Hal Roach.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS films))
+        (VP (VBN produced)
+          (PP (IN by)
+            (NP (NNP Hal) (NNP Roach))))))
+    (. .)))
+Ans: syntacticParser.Node@4279b530
+"syntacticParser.Node@4279b530"	"produced by"	"Hal Roach [24,32]"
+
+
+Give me all video games published by Mean Hamster Software.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NN video) (NNS games))
+        (VP (VBN published)
+          (PP (IN by)
+            (NP (NN Mean) (NNP Hamster) (NNP Software))))))
+    (. .)))
+Ans: syntacticParser.Node@660fa103
+"syntacticParser.Node@660fa103"	"published by"	"Mean Hamster Software [30,49]"
+
+
+Which languages are spoken in Estonia?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS languages))
+    (SQ (VBP are)
+      (VP (VBN spoken)
+        (PP (IN in)
+          (NP (NNP Estonia)))))
+    (. ?)))
+Ans: syntacticParser.Node@2580d729
+"syntacticParser.Node@2580d729"	"spoken in"	"Estonia [25,32]"
+
+
+Which capitals in Europe were host cities of the summer olympic games?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHNP (WDT Which) (NNS capitals))
+      (PP (IN in)
+        (NP (NNP Europe))))
+    (SQ (VBD were)
+      (NP
+        (NP (JJ host) (NNS cities))
+        (PP (IN of)
+          (NP (DT the) (NN summer) (NN olympic) (NNS games)))))
+    (. ?)))
+Ans: syntacticParser.Node@5eaf1ba7
+"syntacticParser.Node@5eaf1ba7"	"host cities "	"the summer olympic games [37,58]"
+
+
+Who was the 16th president of the United States?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (JJ 16th) (NN president))
+        (PP (IN of)
+          (NP (DT the) (NNP United) (NNPS States)))))
+    (. ?)))
+Ans: syntacticParser.Node@6991e29f
+"syntacticParser.Node@6991e29f"	"the 16th president "	"the United States [24,39]"
+
+
+Which music albums contain the song Last Christmas?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN music) (NNS albums))
+    (SQ
+      (VP (VBP contain)
+        (NP
+          (NP (DT the) (NN song))
+          (NP (JJ Last) (NNP Christmas)))))
+    (. ?)))
+Ans: syntacticParser.Node@273b60da
+"syntacticParser.Node@273b60da"	"contain"	"the song Last Christmas [23,43]"
+
+
+Give me all books written by Danielle Steel.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS books))
+        (VP (VBN written)
+          (PP (IN by)
+            (NP (NNP Danielle) (NNP Steel))))))
+    (. .)))
+Ans: syntacticParser.Node@7b5bfc10
+"syntacticParser.Node@7b5bfc10"	"written by"	"Danielle Steel [23,36]"
+
+
+Which airports are located in California, USA?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS airports))
+    (SQ (VBP are)
+      (VP (VBN located)
+        (PP (IN in)
+          (NP
+            (NP (NNP California))
+            (, ,)
+            (NP (NNP USA))))))
+    (. ?)))
+Ans: syntacticParser.Node@232313cd
+"syntacticParser.Node@232313cd"	"located in"	"California , USA [25,39]"
+
+
+Which states of Germany are governed by the Social Democratic Party?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHNP (WDT Which) (NNS states))
+      (PP (IN of)
+        (NP (NNP Germany))))
+    (SQ (VBP are)
+      (VP (VBN governed)
+        (PP (IN by)
+          (NP (DT the) (JJ Social) (JJ Democratic) (NNP Party)))))
+    (. ?)))
+Ans: syntacticParser.Node@29977223
+"syntacticParser.Node@29977223"	"governed by"	"the Social Democratic Party [33,57]"
+
+
+Give me all Canadian Grunge record labels.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Canadian) (NNP Grunge) (NN record) (NNS labels)))
+    (. .)))
+Ans: syntacticParser.Node@3e23e0f4
+
+
+In which programming language is GIMP written?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN programming) (NN language)))
+    (SQ (VBZ is)
+      (NP (NNP GIMP))
+      (VP (VBN written)))
+    (. ?)))
+Ans: syntacticParser.Node@ebad6b8
+"GIMP [28,32]"	"written "	"syntacticParser.Node@ebad6b8"
+
+
+Who produced films starring Natalie Portman?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD produced)
+        (NP
+          (NP (NNS films))
+          (VP (VBG starring)
+            (NP (NNP Natalie) (NNP Portman))))))
+    (. ?)))
+Ans: syntacticParser.Node@1aaa99f
+"syntacticParser.Node@69dc97f"	"starring"	"Natalie Portman [24,38]"
+"syntacticParser.Node@1aaa99f"	"produced"	"syntacticParser.Node@69dc97f"
+
+
+Give me all movies with Tom Cruise.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NNS movies))
+      (PP (IN with)
+        (NP (NNP Tom) (NNP Cruise))))
+    (. .)))
+Ans: syntacticParser.Node@48ff5bff
+
+
+In which films did Julia Roberts as well as Richard Gere play?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NNS films)))
+    (SQ (VBD did)
+      (NP (NNP Julia) (NNP Roberts))
+      (VP
+        (ADVP (RB as) (RB well))
+        (PP (IN as)
+          (NP (NNP Richard) (NNP Gere) (NN play)))))
+    (. ?)))
+Ans: syntacticParser.Node@29d81f5d
+"Julia Roberts [15,27]"	"as well as Richard Gere play "	"syntacticParser.Node@29d81f5d"
+
+
+Give me all female given names.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NN female))
+      (PP (VBN given)
+        (NP (NNS names))))
+    (. .)))
+Ans: syntacticParser.Node@2b30a1c7
+
+
+Who wrote the book The Pillars of the Earth?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD wrote)
+        (NP
+          (NP (DT the) (NN book))
+          (NP
+            (NP (DT The) (NNPS Pillars))
+            (PP (IN of)
+              (NP (DT the) (NNP Earth)))))))
+    (. ?)))
+Ans: syntacticParser.Node@37cb7de2
+"syntacticParser.Node@24995d3b"	"The Pillars "	"the Earth [27,35]"
+"syntacticParser.Node@37cb7de2"	"wrote"	"syntacticParser.Node@24995d3b"
+
+
+Give me all soccer clubs in the Premier League.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NN soccer) (NNS clubs))
+      (PP (IN in)
+        (NP (DT the) (NN Premier) (NN League))))
+    (. .)))
+Ans: syntacticParser.Node@6c03b1a5
+
+
+In which U.S. state is Mount McKinley located?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NNP U.S.) (NN state)))
+    (SQ (VBZ is)
+      (NP (NNP Mount) (NNP McKinley))
+      (VP (VBN located)))
+    (. ?)))
+Ans: syntacticParser.Node@675018d3
+"Mount McKinley [18,31]"	"located "	"syntacticParser.Node@675018d3"
+
+
+Which organizations were founded in 1930?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS organizations))
+    (SQ (VBD were)
+      (VP (VBN founded)
+        (PP (IN in)
+          (NP (CD 1930)))))
+    (. ?)))
+Ans: syntacticParser.Node@7dc720a1
+"syntacticParser.Node@7dc720a1"	"founded in"	"1930 [31,35]"
+
+
+Which budget did the first movie of Zdenek Sverak have?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which)
+      (NP (NN budget)))
+    (SQ (VBD did)
+      (NP
+        (NP (DT the) (JJ first) (NN movie))
+        (PP (IN of)
+          (NP (NNP Zdenek) (NNP Sverak))))
+      (VP (VB have)))
+    (. ?)))
+Ans: syntacticParser.Node@7c1248f3
+"syntacticParser.Node@2e868f64"	"the first movie "	"Zdenek Sverak [29,41]"
+"syntacticParser.Node@2e868f64"	"have "	"syntacticParser.Node@7c1248f3"
+
+
+Give me all animal species that live in the Amazon rainforest.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NN animal) (NN species))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP live)
+              (PP (IN in)
+                (NP (DT the) (NN Amazon) (NN rainforest))))))))
+    (. .)))
+Ans: syntacticParser.Node@31ce5052
+"syntacticParser.Node@31ce5052"	"live in"	"the Amazon rainforest [32,51]"
+
+
+In which studio did the Beatles record their first album?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN studio)))
+    (SQ (VBD did)
+      (NP (DT the) (NN Beatles))
+      (VP (VB record)
+        (NP (PRP$ their) (JJ first) (NN album))))
+    (. ?)))
+Ans: syntacticParser.Node@35c0da0a
+"the Beatles [16,26]"	"record their first album "	"syntacticParser.Node@35c0da0a"
+
+
+Who was the first to climb Mount Everest?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (JJ first))
+        (SBAR
+          (S
+            (VP (TO to)
+              (VP (VB climb)
+                (NP (NNP Mount) (NNP Everest))))))))
+    (. ?)))
+Ans: syntacticParser.Node@406bfb
+"syntacticParser.Node@406bfb"	"climb"	"Mount Everest [21,33]"
+
+
+What is the official color of the University of Oxford?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ official) (NN color))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Oxford)))))))
+    (. ?)))
+Ans: syntacticParser.Node@27cad561
+"syntacticParser.Node@453fd228"	"the University "	"Oxford [39,45]"
+"syntacticParser.Node@27cad561"	"the official color "	"syntacticParser.Node@453fd228"
+
+
+To which artistic movement did the painter of The Three Dancers belong?
+(ROOT
+  (SBARQ
+    (WHPP (TO To)
+      (WHNP (WDT which)
+        (NP (JJ artistic) (NN movement))))
+    (SQ (VBD did)
+      (NP
+        (NP (DT the) (NN painter))
+        (PP (IN of)
+          (NP (DT The) (JJ Three) (NN Dancers))))
+      (VP (VB belong)))
+    (. ?)))
+Ans: syntacticParser.Node@4379070
+"syntacticParser.Node@6829df44"	"the painter "	"The Three Dancers [38,53]"
+"syntacticParser.Node@6829df44"	"belong "	"syntacticParser.Node@4379070"
+
+
+Give me all animals that are extinct.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS animals))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP are)
+              (ADJP (JJ extinct)))))))
+    (. .)))
+Ans: syntacticParser.Node@7efd65e4
+
+
+How deep is Lake Placid?
+(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ deep))
+    (SQ (VBZ is)
+      (NP (NNP Lake) (NNP Placid)))
+    (. ?)))
+Ans: syntacticParser.Node@6850cd63
+
+
+Give me the grandchildren of Bruce Lee.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NN grandchildren))
+        (PP (IN of)
+          (NP (NNP Bruce) (NNP Lee)))))
+    (. .)))
+Ans: syntacticParser.Node@10a8178b
+"syntacticParser.Node@10a8178b"	"the grandchildren "	"Bruce Lee [24,32]"
+
+
+Where was Bach born?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP (NNP Bach))
+      (VP (VBN born)))
+    (. ?)))
+Ans: syntacticParser.Node@65acbc1f
+"Bach [8,12]"	"born "	"syntacticParser.Node@65acbc1f"
+
+
+In which countries can you pay using the West African CFA franc?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NNS countries)))
+    (SQ (MD can)
+      (NP (PRP you))
+      (VP (VB pay)
+        (S
+          (VP (VBG using)
+            (NP (DT the)
+              (ADJP (JJ West) (JJ African))
+              (NN CFA) (NN franc))))))
+    (. ?)))
+Ans: syntacticParser.Node@5950324a
+"syntacticParser.Node@5950324a"	"using"	"the West African CFA franc [30,52]"
+
+
+What are the top-10 action role-playing video games according to IGN?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP are)
+      (NP
+        (NP (DT the) (JJ top-10) (NN action) (NN role-playing) (NN video) (NNS games))
+        (PP (VBG according)
+          (PP (TO to)
+            (NP (NNP IGN))))))
+    (. ?)))
+Ans: syntacticParser.Node@7439dd69
+
+
+Give me all writers that won the Nobel Prize in literature.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS writers))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD won)
+              (NP (DT the) (NNP Nobel) (NNP Prize))
+              (PP (IN in)
+                (NP (NNS literature))))))))
+    (. .)))
+Ans: syntacticParser.Node@5d65a3bb
+
+
+Give me all taikonauts.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NN taikonauts)))
+    (. .)))
+Ans: syntacticParser.Node@133f1a
+
+
+Give me all actors called Baldwin.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS actors))
+        (VP (VBN called)
+          (S
+            (NP (NNP Baldwin))))))
+    (. .)))
+Ans: syntacticParser.Node@54a7e7e4
+
+
+Which rivers flow into a German lake?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS rivers))
+    (SQ
+      (VP (VBP flow)
+        (PP (IN into)
+          (NP (DT a) (JJ German) (NN lake)))))
+    (. ?)))
+Ans: syntacticParser.Node@3e2dc1c8
+"syntacticParser.Node@3e2dc1c8"	"flow into"	"a German lake [19,30]"
+
+
+Which rockets were launched from Baikonur?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS rockets))
+    (SQ (VBD were)
+      (VP (VBN launched)
+        (PP (IN from)
+          (NP (NNP Baikonur)))))
+    (. ?)))
+Ans: syntacticParser.Node@36cb9439
+"syntacticParser.Node@36cb9439"	"launched from"	"Baikonur [28,36]"
+
+
+Which pope succeeded John Paul II?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN pope))
+    (SQ
+      (VP (VBD succeeded)
+        (NP (NNP John) (NNP Paul) (NNP II))))
+    (. ?)))
+Ans: syntacticParser.Node@289e7cac
+"syntacticParser.Node@289e7cac"	"succeeded"	"John Paul II [18,28]"
+
+
+Give me all Dutch parties.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Dutch) (NNS parties)))
+    (. .)))
+Ans: syntacticParser.Node@5d821375
+
+
+Give me all Swedish oceanographers.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (PDT all) (JJ Swedish) (NNP oceanographers)))
+    (. .)))
+Ans: syntacticParser.Node@5f56352
+
+
+Give me all actors who were born in Berlin.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS actors))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD were)
+              (VP (VBN born)
+                (PP (IN in)
+                  (NP (NNP Berlin)))))))))
+    (. .)))
+Ans: syntacticParser.Node@1d5fa1bd
+"syntacticParser.Node@1d5fa1bd"	"born in"	"Berlin [28,34]"
+
+
+What was the last movie with Alec Guinness?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (JJ last) (NN movie))
+        (PP (IN with)
+          (S
+            (VP (VBG Alec)
+              (NP (NNP Guinness)))))))
+    (. ?)))
+Ans: syntacticParser.Node@5f22036f
+"syntacticParser.Node@5f22036f"	"Alec"	"Guinness [27,35]"
+
+
+What does IYCM stand for?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ does)
+      (NP (NNP IYCM))
+      (VP (VB stand)
+        (PP (IN for))))
+    (. ?)))
+Ans: syntacticParser.Node@19994059
+"IYCM [8,12]"	"stand for "	"syntacticParser.Node@19994059"
+
+
+Give me the capitals of all countries that the Himalayas run through.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NNS capitals))
+        (PP (IN of)
+          (NP (DT all) (NNS countries)))
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (NNPS Himalayas))
+            (VP (VBP run)
+              (ADVP (RB through)))))))
+    (. .)))
+Ans: syntacticParser.Node@3f8d26e3
+
+
+Which actor played Chewbacca?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN actor))
+    (SQ
+      (VP (VBD played)
+        (NP (NNP Chewbacca))))
+    (. ?)))
+Ans: syntacticParser.Node@11e3182b
+"syntacticParser.Node@11e3182b"	"played"	"Chewbacca [16,25]"
+
+
+Which ingredients do I need for carrot cake?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS ingredients))
+    (SQ (VBP do)
+      (NP (PRP I))
+      (VP (VB need)
+        (PP (IN for)
+          (NP (NN carrot) (NN cake)))))
+    (. ?)))
+Ans: syntacticParser.Node@11d77d16
+"I [18,19]"	"need for carrot cake "	"syntacticParser.Node@11d77d16"
+
+
+Who has Tom Cruise been married to?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBZ has)
+        (NP (NNP Tom) (NNP Cruise))
+        (VP (VBN been)
+          (VP (VBN married)
+            (PP (TO to))))))
+    (. ?)))
+Ans: syntacticParser.Node@1c10a0c4
+
+
+Give me all Australian metalcore bands.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Australian) (NNP metalcore) (NNS bands)))
+    (. .)))
+Ans: syntacticParser.Node@4a770cdf
+
+
+Give me all actors who were born in Paris after 1950.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS actors))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD were)
+              (VP (VBN born)
+                (PP (IN in)
+                  (NP (NNP Paris)))
+                (PP (IN after)
+                  (NP (CD 1950)))))))))
+    (. .)))
+Ans: syntacticParser.Node@68ccdab6
+
+
+Give all swimmers that were born in Moscow.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP
+        (NP (DT all) (NNS swimmers))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD were)
+              (VP (VBN born)
+                (PP (IN in)
+                  (NP (NNP Moscow)))))))))
+    (. .)))
+Ans: syntacticParser.Node@1adaeda3
+"syntacticParser.Node@7361c50a"	"born in"	"Moscow [29,35]"
+"syntacticParser.Node@1adaeda3"	"Give"	"syntacticParser.Node@7361c50a"
+
+
+Who was called Rodzilla?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (VP (VBN called)
+        (NP (NNP Rodzilla))))
+    (. ?)))
+Ans: syntacticParser.Node@1352034b
+"syntacticParser.Node@1352034b"	"called"	"Rodzilla [12,20]"
+
+
+Show me the book that Muhammad Ali wrote.
+(ROOT
+  (S
+    (VP (VB Show)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NN book))
+        (SBAR
+          (WHNP (IN that))
+          (S
+            (NP (NNP Muhammad) (NNP Ali))
+            (VP (VBD wrote))))))
+    (. .)))
+Ans: syntacticParser.Node@21cfa726
+
+
+Give me all the TV shows with Neil Patrick Harris.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (DT the) (NN TV) (NNS shows))
+      (PP (IN with)
+        (NP (NNP Neil) (NNP Patrick) (NNP Harris))))
+    (. .)))
+Ans: syntacticParser.Node@322cd54
+
+
+Who wrote The Hunger Games?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD wrote)
+        (NP (DT The) (NN Hunger) (NN Games))))
+    (. ?)))
+Ans: syntacticParser.Node@33c4b78f
+"syntacticParser.Node@33c4b78f"	"wrote"	"The Hunger Games [8,22]"
+
+
+Show a list of soccer clubs that play in the Bundesliga.
+(ROOT
+  (S
+    (VP (VB Show)
+      (NP
+        (NP (DT a) (NN list))
+        (PP (IN of)
+          (NP
+            (NP (NN soccer) (NNS clubs))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP play)
+                  (PP (IN in)
+                    (NP (DT the) (NNP Bundesliga))))))))))
+    (. .)))
+Ans: syntacticParser.Node@35573e07
+"syntacticParser.Node@7b2a93fc"	"play in"	"the Bundesliga [32,45]"
+"syntacticParser.Node@35573e07"	"Show"	"syntacticParser.Node@7b2a93fc"
+
+
+What country is Mount Everest in?
+(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN country))
+    (SQ (VBZ is)
+      (NP (NNP Mount) (NNP Everest))
+      (PP (IN in)))
+    (. ?)))
+Ans: syntacticParser.Node@1a3e73c6
+
+
+Who is the founder of Penguin Books?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN founder))
+        (PP (IN of)
+          (NP (NNP Penguin) (NNP Books)))))
+    (. ?)))
+Ans: syntacticParser.Node@36c6b295
+"syntacticParser.Node@36c6b295"	"the founder "	"Penguin Books [17,29]"
+
+
+Which programming languages influenced Javascript?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN programming) (NNS languages))
+    (SQ
+      (VP (VBD influenced)
+        (NP (NNP Javascript))))
+    (. ?)))
+Ans: syntacticParser.Node@21b28aad
+"syntacticParser.Node@21b28aad"	"influenced"	"Javascript [35,45]"
+
+
+List all the musicals with music by Elton John.
+(ROOT
+  (S
+    (VP (VB List)
+      (NP (DT all) (DT the) (NNS musicals))
+      (PP (IN with)
+        (NP
+          (NP (NN music))
+          (PP (IN by)
+            (NP (NNP Elton) (NNP John))))))
+    (. .)))
+Ans: syntacticParser.Node@3d184d48
+"syntacticParser.Node@3d184d48"	"music "	"Elton John [29,38]"
+
+
+Show me all the breweries in Australia.
+(ROOT
+  (S
+    (VP (VB Show)
+      (NP (PRP me))
+      (NP (PDT all) (DT the) (NNS breweries))
+      (PP (IN in)
+        (NP (NNP Australia))))
+    (. .)))
+Ans: syntacticParser.Node@4e033263
+
+
+Who played Agent Smith in Matrix?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD played)
+        (NP (NNP Agent) (NNP Smith))
+        (PP (IN in)
+          (NP (NNP Matrix)))))
+    (. ?)))
+Ans: syntacticParser.Node@3c678c51
+
+
+Which bridges cross the Seine?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN bridges))
+    (SQ
+      (VP (VBP cross)
+        (NP (DT the) (NN Seine))))
+    (. ?)))
+Ans: syntacticParser.Node@4296bc67
+"syntacticParser.Node@4296bc67"	"cross"	"the Seine [17,25]"
+
+
+Who is the mayor of the capital of French Polynesia?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN mayor))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN capital))
+            (PP (IN of)
+              (NP (JJ French) (NNS Polynesia)))))))
+    (. ?)))
+Ans: syntacticParser.Node@1d707307
+"syntacticParser.Node@7e0f5ad3"	"the capital "	"French Polynesia [27,42]"
+"syntacticParser.Node@1d707307"	"the mayor "	"syntacticParser.Node@7e0f5ad3"
+
+
+What is the location of the Houses of Parliament?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN location))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNPS Houses))
+            (PP (IN of)
+              (NP (NNP Parliament)))))))
+    (. ?)))
+Ans: syntacticParser.Node@1230a010
+"syntacticParser.Node@1bb17c9"	"the Houses "	"Parliament [30,40]"
+"syntacticParser.Node@1230a010"	"the location "	"syntacticParser.Node@1bb17c9"
+
+
+Show me all English Gothic buildings in Kent.
+(ROOT
+  (S
+    (VP (VB Show)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNP English) (JJ Gothic) (NNS buildings))
+        (PP (IN in)
+          (NP (NNP Kent)))))
+    (. .)))
+Ans: syntacticParser.Node@6231b850
+"syntacticParser.Node@6231b850"	"all English Gothic buildings "	"Kent [33,37]"
+
+
+Who was the pope that founded the Vatican Television?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NN pope))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD founded)
+              (NP (DT the) (NNP Vatican) (NNP Television)))))))
+    (. ?)))
+Ans: syntacticParser.Node@4eee010d
+"syntacticParser.Node@4eee010d"	"founded"	"the Vatican Television [24,44]"
+
+
+What airlines are part of the SkyTeam alliance?
+(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NNS airlines))
+    (SQ (VBP are)
+      (NP
+        (NP (NN part))
+        (PP (IN of)
+          (NP (DT the) (NNP SkyTeam) (NN alliance)))))
+    (. ?)))
+Ans: syntacticParser.Node@56f48119
+"syntacticParser.Node@56f48119"	"part "	"the SkyTeam alliance [21,39]"
+
+
+What is the total population of Melbourne, Florida?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ total) (NN population))
+        (PP (IN of)
+          (NP (NNP Melbourne) (, ,)
+            (NP (NNP Florida))))))
+    (. ?)))
+Ans: syntacticParser.Node@6a220e79
+"syntacticParser.Node@6a220e79"	"the total population "	"Melbourne , Florida [26,43]"
+
+
+Which airports does Air China serve?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS airports))
+    (SQ (VBZ does)
+      (NP (NN Air) (NNP China))
+      (VP (VB serve)))
+    (. ?)))
+Ans: syntacticParser.Node@54983b5d
+"Air China [17,25]"	"serve "	"syntacticParser.Node@54983b5d"
+
+
+In which year was Rachel Stevens born?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN year)))
+    (SQ (VBD was)
+      (NP (NNP Rachel) (NNP Stevens))
+      (VP (VBN born)))
+    (. ?)))
+Ans: syntacticParser.Node@7f32995a
+"Rachel Stevens [14,27]"	"born "	"syntacticParser.Node@7f32995a"
+
+
+Where was JFK assassinated?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP (NNP JFK))
+      (VP (VBN assassinated)))
+    (. ?)))
+Ans: syntacticParser.Node@61ea6d59
+"JFK [8,11]"	"assassinated "	"syntacticParser.Node@61ea6d59"
+
+
+Which scientist is known for the Manhattan Project and the Nobel Peace Prize?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN scientist))
+    (SQ (VBZ is)
+      (VP (VBN known)
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NNP Manhattan) (NNP Project))
+            (CC and)
+            (NP (DT the) (NNP Nobel) (NNP Peace) (NNP Prize))))))
+    (. ?)))
+Ans: syntacticParser.Node@2a5ac9dd
+"syntacticParser.Node@2a5ac9dd"	"known for"	"the Manhattan Project and the Nobel Peace Prize [24,64]"
+
+
+Which beer originated in Ireland?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN beer))
+    (SQ
+      (VP (VBZ originated)
+        (PP (IN in)
+          (NP (NNP Ireland)))))
+    (. ?)))
+Ans: syntacticParser.Node@5e24258c
+"syntacticParser.Node@5e24258c"	"originated in"	"Ireland [21,28]"
+
+
+What are the specialities of the UNC Health Care?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP are)
+      (NP
+        (NP (DT the) (NNS specialities))
+        (PP (IN of)
+          (NP (DT the) (NNP UNC) (NNP Health) (NNP Care)))))
+    (. ?)))
+Ans: syntacticParser.Node@36ae5417
+"syntacticParser.Node@36ae5417"	"the specialities "	"the UNC Health Care [24,40]"
+
+
+Who is the owner of Facebook?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN owner))
+        (PP (IN of)
+          (NP (NNP Facebook)))))
+    (. ?)))
+Ans: syntacticParser.Node@6839ae19
+"syntacticParser.Node@6839ae19"	"the owner "	"Facebook [15,23]"
+
+
+From which region is the Melon de Bourgogne?
+(ROOT
+  (SBARQ (RB From)
+    (WHNP (WDT which) (NN region))
+    (SQ (VBZ is)
+      (NP (DT the) (JJ Melon) (JJ de) (NNP Bourgogne)))
+    (. ?)))
+Ans: syntacticParser.Node@6148fc0b
+
+
+Who was influenced by Socrates?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (VP (VBN influenced)
+        (PP (IN by)
+          (NP (NNS Socrates)))))
+    (. ?)))
+Ans: syntacticParser.Node@3b75ba0b
+"syntacticParser.Node@3b75ba0b"	"influenced by"	"Socrates [18,26]"
+
+
+Who was president of Pakistan in 1978?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (NN president))
+        (PP (IN of)
+          (NP (NNP Pakistan))))
+      (PP (IN in)
+        (NP (CD 1978))))
+    (. ?)))
+Ans: syntacticParser.Node@38f57dcd
+"syntacticParser.Node@38f57dcd"	"president "	"Pakistan [17,25]"
+
+
+Give me English actors starring in Lovesick.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (CD English) (NNS actors))
+        (VP (VBG starring)
+          (PP (IN in)
+            (NP (NNP Lovesick))))))
+    (. .)))
+Ans: syntacticParser.Node@1fdd782
+"syntacticParser.Node@1fdd782"	"starring in"	"Lovesick [29,37]"
+
+
+Give me all types of eating disorders.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS types))
+        (PP (IN of)
+          (S
+            (VP (VBG eating)
+              (NP (NNS disorders)))))))
+    (. .)))
+Ans: syntacticParser.Node@3cf55bdc
+"syntacticParser.Node@3cf55bdc"	"eating"	"disorders [22,31]"
+
+
+Who was married to president Chirac?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (VP (VBN married)
+        (PP (TO to)
+          (NP (NNP president) (NNP Chirac)))))
+    (. ?)))
+Ans: syntacticParser.Node@41691896
+"syntacticParser.Node@41691896"	"married to"	"president Chirac [15,30]"
+
+
+Where in France is sparkling wine produced?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where)
+      (PP (IN in)
+        (NP (NNP France))))
+    (SQ (VBZ is)
+      (NP (JJ sparkling) (NN wine))
+      (VP (VBN produced)))
+    (. ?)))
+Ans: syntacticParser.Node@7f8c12b5
+"sparkling wine [15,28]"	"produced "	"syntacticParser.Node@7f8c12b5"
+
+
+Where did Hillel Slovak die?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (NNP Hillel) (NNP Slovak))
+      (VP (VB die)))
+    (. ?)))
+Ans: syntacticParser.Node@2168e512
+"Hillel Slovak [8,20]"	"die "	"syntacticParser.Node@2168e512"
+
+
+What is the timezone in San Pedro de Atacama?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN timezone))
+        (PP (IN in)
+          (NP (NNP San) (NNP Pedro) (NNP de) (NNP Atacama)))))
+    (. ?)))
+Ans: syntacticParser.Node@87dbadc
+"syntacticParser.Node@87dbadc"	"the timezone "	"San Pedro de Atacama [19,36]"
+
+
+In which city does the Chile Route 68 end?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN city)))
+    (SQ (VBZ does)
+      (NP (DT the) (NNP Chile) (NNP Route))
+      (VP
+        (ADVP (RB 68))
+        (VB end)))
+    (. ?)))
+Ans: syntacticParser.Node@6f5c1c4f
+"the Chile Route [15,28]"	"68 end "	"syntacticParser.Node@6f5c1c4f"
+
+
