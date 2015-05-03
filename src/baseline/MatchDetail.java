@@ -1,20 +1,18 @@
 package baseline;
 
 import syntacticParser.Constraint;
-import syntacticParser.Node;
 
 public class MatchDetail {
 
 	Entity entity;
-	Node node;
 	Constraint constraint;
 	int location;
+	
 	//0->node in the left of constraint 
 	//1->node in the right of constraint
 	
-	public MatchDetail(Entity e, Node n, Constraint c, int l){
+	public MatchDetail(Entity e,  Constraint c, int l){
 		entity = e;
-		node = n;
 		constraint = c;
 		location = l;
 	}
@@ -25,14 +23,6 @@ public class MatchDetail {
 
 	public void setEntity(Entity entity) {
 		this.entity = entity;
-	}
-
-	public Node getNode() {
-		return node;
-	}
-
-	public void setNode(Node node) {
-		this.node = node;
 	}
 
 	public Constraint getConstraint() {
@@ -51,4 +41,12 @@ public class MatchDetail {
 		this.location = location;
 	}
 
+	public void print(){
+		StringBuilder sb = new StringBuilder();
+		sb.append(entity.uri);
+		sb.append(" ");
+		sb.append(constraint.edge);
+		sb.append(" ");
+		sb.append("X\n");
+	}
 }
