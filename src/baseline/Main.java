@@ -171,6 +171,8 @@ public class Main {
 		return null;
 	}
 	
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Pipeline pipeline = new Pipeline();
@@ -220,21 +222,39 @@ public class Main {
 			}
 			
 			if(entityList.size() > 0 && costraintList.size() > 0){
-				Queue<matchNode> queue = new LinkedList<matchNode>();
+				//首先将匹配有实体的constraint封装 放入queue中
+				Queue<MatchDetail> queue = new LinkedList<MatchDetail>();
 				for (Constraint constraint : costraintList) {
 					Node left = constraint.left;
 					Node right = constraint.right;
+					
+					if(!left.isx && !right.isx){
+						System.err.println("Both nodes in Constraint are Strings");
+						continue;
+					}
 					
 					if(!left.isx){
 						Entity e = getEntity(entityList, left);
 						if(e == null){
 							System.err.println("No matched entity in the left Node");
+						}else{
+							queue.add(new MatchDetail(e, left, constraint, 0));
 						}
 					}
 					
 					if(!right.isx){
-						
+						Entity e = getEntity(entityList, right);
+						if(e == null){
+							System.err.println("No matched entity in the right Node");
+						}else{
+							queue.add(new MatchDetail(e, right, constraint, 1));
+						}
 					}
+				}
+				
+				while(!queue.isEmpty()){
+					MatchDetail curMatchDetail = queue.poll();
+					
 				}
 			}
 		}
