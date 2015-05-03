@@ -86,12 +86,12 @@ public class QuestionClassifier {
 		if(firstWord.equals("how") && (secondWord.equals("many") || secondWord.equals("much") || secondWord.equals("often")))
 			judgeFlag = true;
 		
-		for (String word : wordList) {
-			if(word.equals("amount")) {
-				judgeFlag = true;
-				break;
-			}
-		}
+//		for (String word : wordList) {
+//			if(word.equals("amount")) {
+//				judgeFlag = true;
+//				break;
+//			}
+//		}
 		
 		return judgeFlag;
 	}
