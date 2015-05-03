@@ -22,7 +22,7 @@ public class QuestionFrame extends Question {
 			String question, ArrayList<String> answers, String query) {
 		
 		super(id, onlydbo, aggregation, hybrid, answerType, keywords, question,
-				new ArrayList<>(), new String());
+				new ArrayList<>(), query);
 		wordList = new LinkedList<>();
 		posList = new LinkedList<>();
 		entityList = new LinkedList<>();
