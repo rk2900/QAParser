@@ -65,11 +65,11 @@ public class FocusExtraction extends TypeExtraction {
 				focus.setFocus(getFocusPhrase("all", wordList, posList));
 			} else if(sentence.contains("give all")) {
 				focus.setFocus(getFocusPhrase("all", wordList, posList));
-			} else if(sentence.startsWith("give me")) {
-				focus.setFocus(getFocusPhrase("me", wordList, posList));
 			} else if(sentence.startsWith("give me a list of")) {
 				focus.setFocus(getFocusPhrase("of", wordList, posList));
-			}
+			} else if(sentence.startsWith("give me")) {
+				focus.setFocus(getFocusPhrase("me", wordList, posList));
+			} 
 		} else if(sentence.contains("list all")) {
 			focus.setFocus(getFocusPhrase("all", wordList, posList));
 		} else if(sentence.startsWith("list")) {
@@ -106,7 +106,7 @@ public class FocusExtraction extends TypeExtraction {
 			String word = wordList.get(i);
 			String pos = posList.get(i);
 			if(startFlag) {
-				if(!mayendFlag && pos.startsWith("V")) {
+				if(!mayendFlag && (pos.startsWith("V") || pos.startsWith("DT")) ) {
 					continue;
 				}
 				else if(mayendFlag && !pos.startsWith("NN")) {
@@ -126,12 +126,6 @@ public class FocusExtraction extends TypeExtraction {
 			}
 		}
 		return focusWordList;
-	}
-
-	public static void main(String[] args) {
-//		FocusExtraction fe = new FocusExtraction();
-//		fe.printQuestionListWithPOS();
-		Pipeline pipeline = new Pipeline();
 	}
 
 }

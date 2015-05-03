@@ -247,7 +247,8 @@ public class Pipeline {
 //		OutputRedirector.openFileOutput("./data/problem_detail.txt");
 		for(int i=1; i<=300; i++) {
 			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
-			System.out.println(qf.query);
+			System.out.print(qf.id+"\t");
+			qf.printFocus();
 		}
 //		OutputRedirector.closeFileOutput();
 	}
