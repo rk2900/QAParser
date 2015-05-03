@@ -24,10 +24,10 @@ public class ConstraintSet {
 	}
 	public void transform(List<String> w) {
 		for (Constraint c:list) {
-			if(c.left.isx&&!c.left.transformed) {
+			if(!c.left.isx&&!c.left.transformed) {
 				c.left.transform(w);
 			}
-			if(c.right.isx&&!c.right.transformed) {
+			if(!c.right.isx&&!c.right.transformed) {
 				c.right.transform(w);
 			}
 		}
