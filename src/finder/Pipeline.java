@@ -20,6 +20,7 @@ import paser.Question;
 import paser.QuestionFrame;
 import paser.QuestionSingle;
 import paser.XMLParser;
+import tool.OutputRedirector;
 import knowledgebase.ClientManagement;
 
 public class Pipeline {
@@ -145,6 +146,7 @@ public class Pipeline {
 		return distance[lenL][lenT];
 	}
 
+	@Deprecated
 	public QuestionSingle preProcess(int pseudoId) {
 		// Read question text and entity inside
 		LinkedList<String> qeLines = FileOps.LoadFilebyLine("./data/q-e/all-mark-wiki-entity.txt");
@@ -241,11 +243,13 @@ public class Pipeline {
 	
 	public static void main(String[] args) {
 		Pipeline pipeline = new Pipeline();
-		for(int i=1; i<=10; i++) {
-			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
-			qf.print();
-		}
 		
+//		OutputRedirector.openFileOutput("./data/problem_detail.txt");
+		for(int i=1; i<=300; i++) {
+			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
+			System.out.println(qf.query);
+		}
+//		OutputRedirector.closeFileOutput();
 	}
 
 }

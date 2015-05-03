@@ -1,0 +1,3300 @@
+-------------------------
+ID: 	1
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all cosmonauts.
+Focus Content: 	cosmonauts
+Word List: 	[Give, me, all, cosmonauts]
+POS List: 	[VB, PRP, DT, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	10
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	In which country does the Ganges start?
+Focus Content: 	country
+Word List: 	[In, which, country, does, the, Ganges, start]
+POS List: 	[IN, WDT, NN, VBZ, DT, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	100
+Category: 	DATE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?
+Focus Content: 	
+Word List: 	[When, is, the, movie, Worst, Case, Scenario, going, to, be, in, cinemas, in, the, Netherlands]
+POS List: 	[WRB, VBZ, DT, NN, JJS, NN, NN, VBG, TO, VB, IN, NNS, IN, DT, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	101
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Which German cities have more than 250000 inhabitants?
+Focus Content: 	German cities
+Word List: 	[Which, German, cities, have, more, than, 250000, inhabitants]
+POS List: 	[WDT, JJ, NNS, VBP, JJR, IN, CD, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	102
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who was John F. Kennedy's vice president?
+Focus Content: 	
+Word List: 	[Who, was, John, F., Kennedy, 's, vice, president]
+POS List: 	[WP, VBD, NNP, NNP, NNP, POS, NN, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	103
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who is the mayor of Berlin?
+Focus Content: 	
+Word List: 	[Who, is, the, mayor, of, Berlin]
+POS List: 	[WP, VBZ, DT, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	104
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How many students does the Free University in Amsterdam have?
+Focus Content: 	students
+Word List: 	[How, many, students, does, the, Free, University, in, Amsterdam, have]
+POS List: 	[WRB, JJ, NNS, VBZ, DT, NNP, NNP, IN, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	105
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	What is the second highest mountain on Earth?
+Focus Content: 	the second highest mountain
+Word List: 	[What, is, the, second, highest, mountain, on, Earth]
+POS List: 	[WP, VBZ, DT, JJ, JJS, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	106
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all professional skateboarders from Sweden.
+Focus Content: 	professional skateboarders
+Word List: 	[Give, me, all, professional, skateboarders, from, Sweden]
+POS List: 	[VB, PRP, DT, JJ, NNS, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	107
+Category: 	DATE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	When was Alberta admitted as province?
+Focus Content: 	
+Word List: 	[When, was, Alberta, admitted, as, province]
+POS List: 	[WRB, VBD, NNP, VBD, IN, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	108
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	To which countries does the Himalayan mountain system extend?
+Focus Content: 	countries
+Word List: 	[To, which, countries, does, the, Himalayan, mountain, system, extend]
+POS List: 	[TO, WDT, NNS, VBZ, DT, JJ, NN, NN, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	109
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me a list of all bandleaders that play trumpet.
+Focus Content: 	a list
+Word List: 	[Give, me, a, list, of, all, bandleaders, that, play, trumpet]
+POS List: 	[VB, PRP, DT, NN, IN, DT, NNS, WDT, VBP, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	11
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Which countries have more than ten caves?
+Focus Content: 	countries
+Word List: 	[Which, countries, have, more, than, ten, caves]
+POS List: 	[WDT, NNS, VBP, JJR, IN, CD, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	110
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What is the total amount of men and women serving in the FDNY?
+Focus Content: 	the total amount
+Word List: 	[What, is, the, total, amount, of, men, and, women, serving, in, the, FDNY]
+POS List: 	[WP, VBZ, DT, JJ, NN, IN, NNS, CC, NNS, VBG, IN, DT, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	200
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who produces Orangina?
+Focus Content: 	
+Word List: 	[Who, produces, Orangina]
+POS List: 	[WP, VBZ, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	111
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=true, WHERE=false}
+Content: 	Who is the Formula 1 race driver with the most races?
+Focus Content: 	
+Word List: 	[Who, is, the, Formula, 1, race, driver, with, the, most, races]
+POS List: 	[WP, VBZ, DT, NN, CD, NN, NN, IN, DT, RBS, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	112
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all world heritage sites designated within the past two years.
+Focus Content: 	world heritage sites
+Word List: 	[Give, me, all, world, heritage, sites, designated, within, the, past, two, years]
+POS List: 	[VB, PRP, DT, NN, NN, NNS, VBN, IN, DT, JJ, CD, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	113
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=true, WHERE=false}
+Content: 	Who is the youngest player in the Premier League?
+Focus Content: 	
+Word List: 	[Who, is, the, youngest, player, in, the, Premier, League]
+POS List: 	[WP, VBZ, DT, JJS, NN, IN, DT, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	114
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all members of Prodigy.
+Focus Content: 	members
+Word List: 	[Give, me, all, members, of, Prodigy]
+POS List: 	[VB, PRP, DT, NNS, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	115
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	What is the longest river?
+Focus Content: 	the longest river
+Word List: 	[What, is, the, longest, river]
+POS List: 	[WP, VBZ, DT, JJS, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	116
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Does Breaking Bad have more episodes than Game of Thrones?
+Focus Content: 	
+Word List: 	[Does, Breaking, Bad, have, more, episodes, than, Game, of, Thrones]
+POS List: 	[VBZ, VBG, JJ, VBP, JJR, NNS, IN, NN, IN, NNPS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	117
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all cars that are produced in Germany.
+Focus Content: 	cars
+Word List: 	[Give, me, all, cars, that, are, produced, in, Germany]
+POS List: 	[VB, PRP, DT, NNS, WDT, VBP, VBN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	118
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What were the main discoveries of the Mars rover Curiosity?
+Focus Content: 	the main discoveries
+Word List: 	[What, were, the, main, discoveries, of, the, Mars, rover, Curiosity]
+POS List: 	[WP, VBD, DT, JJ, NNS, IN, DT, NNP, NN, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	119
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all people that were born in Vienna and died in Berlin.
+Focus Content: 	people
+Word List: 	[Give, me, all, people, that, were, born, in, Vienna, and, died, in, Berlin]
+POS List: 	[VB, PRP, DT, NNS, WDT, VBD, VBN, IN, NNP, CC, VBD, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	12
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Is proinsulin a protein?
+Focus Content: 	
+Word List: 	[Is, proinsulin, a, protein]
+POS List: 	[VBZ, NN, DT, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	120
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How tall is Michael Jordan?
+Focus Content: 	
+Word List: 	[How, tall, is, Michael, Jordan]
+POS List: 	[WRB, JJ, VBZ, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	121
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What is the capital of Canada?
+Focus Content: 	the capital
+Word List: 	[What, is, the, capital, of, Canada]
+POS List: 	[WP, VBZ, DT, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	122
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who is the governor of Wyoming?
+Focus Content: 	
+Word List: 	[Who, is, the, governor, of, Wyoming]
+POS List: 	[WP, VBZ, DT, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	123
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Do Prince Harry and Prince William have the same parents?
+Focus Content: 	
+Word List: 	[Do, Prince, Harry, and, Prince, William, have, the, same, parents]
+POS List: 	[VB, NNP, NNP, CC, NNP, NNP, VBP, DT, JJ, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	124
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who was the father of Queen Elizabeth II?
+Focus Content: 	
+Word List: 	[Who, was, the, father, of, Queen, Elizabeth, II]
+POS List: 	[WP, VBD, DT, NN, IN, NNP, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	125
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Which U.S. state has been admitted latest?
+Focus Content: 	U.S. state
+Word List: 	[Which, U.S., state, has, been, admitted, latest]
+POS List: 	[WDT, NNP, NN, VBZ, VBN, VBN, JJS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	126
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How many languages are spoken in Turkmenistan?
+Focus Content: 	languages
+Word List: 	[How, many, languages, are, spoken, in, Turkmenistan]
+POS List: 	[WRB, JJ, NNS, VBP, VBN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	127
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Sean Parnell is the governor of which U.S. state?
+Focus Content: 	U.S. state
+Word List: 	[Sean, Parnell, is, the, governor, of, which, U.S., state]
+POS List: 	[NNP, NNP, VBZ, DT, NN, IN, WDT, NNP, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	128
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all movies directed by Francis Ford Coppola.
+Focus Content: 	movies
+Word List: 	[Give, me, all, movies, directed, by, Francis, Ford, Coppola]
+POS List: 	[VB, PRP, DT, NNS, VBN, IN, NNP, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	129
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all actors starring in movies directed by William Shatner.
+Focus Content: 	actors
+Word List: 	[Give, me, all, actors, starring, in, movies, directed, by, William, Shatner]
+POS List: 	[VB, PRP, DT, NNS, VBG, IN, NNS, VBN, IN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	13
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Are tree frogs a type of amphibian?
+Focus Content: 	
+Word List: 	[Are, tree, frogs, a, type, of, amphibian]
+POS List: 	[VBP, NN, NNS, DT, NN, IN, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	130
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What is the birth name of Angela Merkel?
+Focus Content: 	the birth name
+Word List: 	[What, is, the, birth, name, of, Angela, Merkel]
+POS List: 	[WP, VBZ, DT, NN, NN, IN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	131
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all Methodist politicians.
+Focus Content: 	Methodist politicians
+Word List: 	[Give, me, all, Methodist, politicians]
+POS List: 	[VB, PRP, DT, JJ, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	132
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How often did Jane Fonda marry?
+Focus Content: 	
+Word List: 	[How, often, did, Jane, Fonda, marry]
+POS List: 	[WRB, RB, VBD, NNP, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	133
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all Australian nonprofit organizations.
+Focus Content: 	Australian nonprofit organizations
+Word List: 	[Give, me, all, Australian, nonprofit, organizations]
+POS List: 	[VB, PRP, DT, JJ, JJ, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	134
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	In which military conflicts did Lawrence of Arabia participate?
+Focus Content: 	military conflicts
+Word List: 	[In, which, military, conflicts, did, Lawrence, of, Arabia, participate]
+POS List: 	[IN, WDT, JJ, NNS, VBD, NNP, IN, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	135
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who developed Minecraft?
+Focus Content: 	
+Word List: 	[Who, developed, Minecraft]
+POS List: 	[WP, VBD, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	136
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What is the melting point of copper?
+Focus Content: 	the melting point
+Word List: 	[What, is, the, melting, point, of, copper]
+POS List: 	[WP, VBZ, DT, JJ, NN, IN, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	137
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all sister cities of Brno.
+Focus Content: 	sister cities
+Word List: 	[Give, me, all, sister, cities, of, Brno]
+POS List: 	[VB, PRP, DT, NN, NNS, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	138
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How many inhabitants does Maribor have?
+Focus Content: 	inhabitants
+Word List: 	[How, many, inhabitants, does, Maribor, have]
+POS List: 	[WRB, JJ, NNS, VBZ, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	139
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all companies in Munich.
+Focus Content: 	companies
+Word List: 	[Give, me, all, companies, in, Munich]
+POS List: 	[VB, PRP, DT, NNS, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	14
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How tall is Claudia Schiffer?
+Focus Content: 	
+Word List: 	[How, tall, is, Claudia, Schiffer]
+POS List: 	[WRB, JJ, VBZ, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	140
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	List all games by GMT.
+Focus Content: 	games
+Word List: 	[List, all, games, by, GMT]
+POS List: 	[VB, DT, NNS, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	141
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who founded Intel?
+Focus Content: 	
+Word List: 	[Who, founded, Intel]
+POS List: 	[WP, VBD, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	142
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who is the husband of Amanda Palmer?
+Focus Content: 	
+Word List: 	[Who, is, the, husband, of, Amanda, Palmer]
+POS List: 	[WP, VBZ, DT, NN, IN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	143
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all breeds of the German Shepherd dog.
+Focus Content: 	breeds
+Word List: 	[Give, me, all, breeds, of, the, German, Shepherd, dog]
+POS List: 	[VB, PRP, DT, NNS, IN, DT, JJ, NNP, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	144
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which cities does the Weser flow through?
+Focus Content: 	cities
+Word List: 	[Which, cities, does, the, Weser, flow, through]
+POS List: 	[WDT, NNS, VBZ, DT, NNP, NN, IN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	145
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which countries are connected by the Rhine?
+Focus Content: 	countries
+Word List: 	[Which, countries, are, connected, by, the, Rhine]
+POS List: 	[WDT, NNS, VBP, VBN, IN, DT, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	146
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which professional surfers were born in Australia?
+Focus Content: 	professional surfers
+Word List: 	[Which, professional, surfers, were, born, in, Australia]
+POS List: 	[WDT, JJ, NNS, VBD, VBN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	147
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What is the average temperature on Hawaii?
+Focus Content: 	the average temperature
+Word List: 	[What, is, the, average, temperature, on, Hawaii]
+POS List: 	[WP, VBZ, DT, JJ, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	148
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	In which UK city are the headquarters of the MI6?
+Focus Content: 	UK city
+Word List: 	[In, which, UK, city, are, the, headquarters, of, the, MI6]
+POS List: 	[IN, WDT, NNP, NN, VBP, DT, NN, IN, DT, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	149
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which other weapons did the designer of the Uzi develop?
+Focus Content: 	other weapons
+Word List: 	[Which, other, weapons, did, the, designer, of, the, Uzi, develop]
+POS List: 	[WDT, JJ, NNS, VBD, DT, NN, IN, DT, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	15
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who created Goofy?
+Focus Content: 	
+Word List: 	[Who, created, Goofy]
+POS List: 	[WP, VBD, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	150
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Was the Cuban Missile Crisis earlier than the Bay of Pigs Invasion?
+Focus Content: 	
+Word List: 	[Was, the, Cuban, Missile, Crisis, earlier, than, the, Bay, of, Pigs, Invasion]
+POS List: 	[VBD, DT, JJ, NNP, NNP, JJR, IN, DT, NNP, IN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	151
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all islands that belong to Japan.
+Focus Content: 	islands
+Word List: 	[Give, me, all, islands, that, belong, to, Japan]
+POS List: 	[VB, PRP, DT, NNS, WDT, VBP, TO, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	152
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who invented the zipper?
+Focus Content: 	
+Word List: 	[Who, invented, the, zipper]
+POS List: 	[WP, VBD, DT, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	153
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What is the ruling party in Lisbon?
+Focus Content: 	the ruling party
+Word List: 	[What, is, the, ruling, party, in, Lisbon]
+POS List: 	[WP, VBZ, DT, VBG, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	154
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What are the nicknames of San Francisco?
+Focus Content: 	the nicknames
+Word List: 	[What, are, the, nicknames, of, San, Francisco]
+POS List: 	[WP, VBP, DT, NNS, IN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	155
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which Greek goddesses dwelt on Mount Olympus?
+Focus Content: 	Greek goddesses
+Word List: 	[Which, Greek, goddesses, dwelt, on, Mount, Olympus]
+POS List: 	[WDT, JJ, NNS, VBP, IN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	156
+Category: 	DATE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	When were the Hells Angels founded?
+Focus Content: 	
+Word List: 	[When, were, the, Hells, Angels, founded]
+POS List: 	[WRB, VBD, DT, NNP, NNPS, VBN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	157
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all Apollo 14 astronauts.
+Focus Content: 	Apollo
+Word List: 	[Give, me, all, Apollo, 14, astronauts]
+POS List: 	[VB, PRP, DT, NNP, CD, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	158
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What is the time zone of Salt Lake City?
+Focus Content: 	the time zone
+Word List: 	[What, is, the, time, zone, of, Salt, Lake, City]
+POS List: 	[WP, VBZ, DT, NN, NN, IN, NNP, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	159
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which U.S. states are in the same time zone as Utah?
+Focus Content: 	U.S. states
+Word List: 	[Which, U.S., states, are, in, the, same, time, zone, as, Utah]
+POS List: 	[WDT, NNP, NNS, VBP, IN, DT, JJ, NN, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	16
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me the capitals of all countries in Africa.
+Focus Content: 	the capitals
+Word List: 	[Give, me, the, capitals, of, all, countries, in, Africa]
+POS List: 	[VB, PRP, DT, NNS, IN, DT, NNS, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	160
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me a list of all lakes in Denmark.
+Focus Content: 	a list
+Word List: 	[Give, me, a, list, of, all, lakes, in, Denmark]
+POS List: 	[VB, PRP, DT, NN, IN, DT, NNS, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	161
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How many missions does the Soyuz programme have?
+Focus Content: 	missions
+Word List: 	[How, many, missions, does, the, Soyuz, programme, have]
+POS List: 	[WRB, JJ, NNS, VBZ, DT, NNP, NN, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	162
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Did Socrates influence Aristotle?
+Focus Content: 	
+Word List: 	[Did, Socrates, influence, Aristotle]
+POS List: 	[VBD, NNP, VB, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	163
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all Danish movies.
+Focus Content: 	Danish movies
+Word List: 	[Give, me, all, Danish, movies]
+POS List: 	[VB, PRP, DT, JJ, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	164
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all launch pads operated by NASA.
+Focus Content: 	launch pads
+Word List: 	[Give, me, all, launch, pads, operated, by, NASA]
+POS List: 	[VB, PRP, DT, NN, NNS, VBN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	165
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which instruments does Cat Stevens play?
+Focus Content: 	instruments
+Word List: 	[Which, instruments, does, Cat, Stevens, play]
+POS List: 	[WDT, NNS, VBZ, NNP, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	166
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which ships were called after Benjamin Franklin?
+Focus Content: 	ships
+Word List: 	[Which, ships, were, called, after, Benjamin, Franklin]
+POS List: 	[WDT, NNS, VBD, VBN, IN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	167
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who are the parents of the wife of Juan Carlos I?
+Focus Content: 	
+Word List: 	[Who, are, the, parents, of, the, wife, of, Juan, Carlos, I]
+POS List: 	[WP, VBP, DT, NNS, IN, DT, NN, IN, NNP, NNP, PRP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	168
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How many employees does Google have?
+Focus Content: 	employees
+Word List: 	[How, many, employees, does, Google, have]
+POS List: 	[WRB, JJ, NNS, VBZ, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	169
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Did Tesla win a nobel prize in physics?
+Focus Content: 	
+Word List: 	[Did, Tesla, win, a, nobel, prize, in, physics]
+POS List: 	[VBD, NNP, VB, DT, JJ, NN, IN, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	17
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Give me all cities in New Jersey with more than 100000 inhabitants.
+Focus Content: 	cities
+Word List: 	[Give, me, all, cities, in, New, Jersey, with, more, than, 100000, inhabitants]
+POS List: 	[VB, PRP, DT, NNS, IN, NNP, NNP, IN, JJR, IN, CD, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	170
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Is Rita Wilson the wife of Tom Hanks?
+Focus Content: 	
+Word List: 	[Is, Rita, Wilson, the, wife, of, Tom, Hanks]
+POS List: 	[VBZ, NNP, NNP, DT, NN, IN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	171
+Category: 	DATE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	When was the Statue of Liberty built?
+Focus Content: 	
+Word List: 	[When, was, the, Statue, of, Liberty, built]
+POS List: 	[WRB, VBD, DT, NNP, IN, NNP, VBN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	172
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	In which U.S. state is Fort Knox located?
+Focus Content: 	U.S. state
+Word List: 	[In, which, U.S., state, is, Fort, Knox, located]
+POS List: 	[IN, WDT, NNP, NN, VBZ, NNP, NNP, JJ]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	173
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How many children did Benjamin Franklin have?
+Focus Content: 	children
+Word List: 	[How, many, children, did, Benjamin, Franklin, have]
+POS List: 	[WRB, JJ, NNS, VBD, NNP, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	174
+Category: 	DATE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	When did Michael Jackson die?
+Focus Content: 	
+Word List: 	[When, did, Michael, Jackson, die]
+POS List: 	[WRB, VBD, NNP, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	175
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which Chess players died in the same place they were born in?
+Focus Content: 	Chess players
+Word List: 	[Which, Chess, players, died, in, the, same, place, they, were, born, in]
+POS List: 	[WDT, NN, NNS, VBD, IN, DT, JJ, NN, PRP, VBD, VBN, IN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	176
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	List the children of Margaret Thatcher.
+Focus Content: 	the children
+Word List: 	[List, the, children, of, Margaret, Thatcher]
+POS List: 	[VB, DT, NNS, IN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	177
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who was called Frank The Tank?
+Focus Content: 	
+Word List: 	[Who, was, called, Frank, The, Tank]
+POS List: 	[WP, VBD, VBN, NNP, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	178
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Was Margaret Thatcher a chemist?
+Focus Content: 	
+Word List: 	[Was, Margaret, Thatcher, a, chemist]
+POS List: 	[VBD, NNP, NNP, DT, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	179
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Was Marc Chagall a jew?
+Focus Content: 	
+Word List: 	[Was, Marc, Chagall, a, jew]
+POS List: 	[VBD, NNP, NNP, DT, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	18
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which museum exhibits The Scream by Munch?
+Focus Content: 	museum
+Word List: 	[Which, museum, exhibits, The, Scream, by, Munch]
+POS List: 	[WDT, NN, VBZ, DT, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	180
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Give me all books by William Goldman with more than 300 pages.
+Focus Content: 	books
+Word List: 	[Give, me, all, books, by, William, Goldman, with, more, than, 300, pages]
+POS List: 	[VB, PRP, DT, NNS, IN, NNP, NNP, IN, JJR, IN, CD, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	181
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which books by Kerouac were published by Viking Press?
+Focus Content: 	books
+Word List: 	[Which, books, by, Kerouac, were, published, by, Viking, Press]
+POS List: 	[WDT, NNS, IN, NNP, VBD, VBN, IN, JJ, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	182
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me a list of all American inventions.
+Focus Content: 	a list
+Word List: 	[Give, me, a, list, of, all, American, inventions]
+POS List: 	[VB, PRP, DT, NN, IN, DT, JJ, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	183
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How high is the Mount Everest?
+Focus Content: 	
+Word List: 	[How, high, is, the, Mount, Everest]
+POS List: 	[WRB, JJ, VBZ, DT, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	184
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who created the comic Captain America?
+Focus Content: 	
+Word List: 	[Who, created, the, comic, Captain, America]
+POS List: 	[WP, VBD, DT, JJ, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	185
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How many people live in the capital of Australia?
+Focus Content: 	people
+Word List: 	[How, many, people, live, in, the, capital, of, Australia]
+POS List: 	[WRB, JJ, NNS, VBP, IN, DT, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	186
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	What is the largest city in Australia?
+Focus Content: 	the largest city
+Word List: 	[What, is, the, largest, city, in, Australia]
+POS List: 	[WP, VBZ, DT, JJS, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	187
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who composed the music for Harold and Maude?
+Focus Content: 	
+Word List: 	[Who, composed, the, music, for, Harold, and, Maude]
+POS List: 	[WP, VBN, DT, NN, IN, NNP, CC, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	188
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which films starring Clint Eastwood did he direct himself?
+Focus Content: 	films
+Word List: 	[Which, films, starring, Clint, Eastwood, did, he, direct, himself]
+POS List: 	[WDT, NNS, VBG, NNP, NNP, VBD, PRP, VB, PRP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	189
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	In which city was the former Dutch queen Juliana buried?
+Focus Content: 	city
+Word List: 	[In, which, city, was, the, former, Dutch, queen, Juliana, buried]
+POS List: 	[IN, WDT, NN, VBD, DT, JJ, NNP, NN, NNP, VBN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	19
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Is Egypts largest city also its capital?
+Focus Content: 	
+Word List: 	[Is, Egypts, largest, city, also, its, capital]
+POS List: 	[VBZ, RB, JJS, NN, RB, PRP$, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	190
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=true}
+Content: 	Where is the residence of the prime minister of Spain?
+Focus Content: 	
+Word List: 	[Where, is, the, residence, of, the, prime, minister, of, Spain]
+POS List: 	[WRB, VBZ, DT, NN, IN, DT, JJ, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	191
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which U.S. state has the abbreviation MN?
+Focus Content: 	U.S. state
+Word List: 	[Which, U.S., state, has, the, abbreviation, MN]
+POS List: 	[WDT, NNP, NN, VBZ, DT, NN, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	192
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Show me all songs from Bruce Springsteen released between 1980 and 1990.
+Focus Content: 	songs
+Word List: 	[Show, me, all, songs, from, Bruce, Springsteen, released, between, 1980, and, 1990]
+POS List: 	[NN, PRP, DT, NNS, IN, NNP, NNP, VBD, IN, CD, CC, CD]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	193
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which movies did Kurosawa direct?
+Focus Content: 	movies
+Word List: 	[Which, movies, did, Kurosawa, direct]
+POS List: 	[WDT, NNS, VBD, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	194
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What is the founding year of the brewery that produces Pilsner Urquell?
+Focus Content: 	the founding year
+Word List: 	[What, is, the, founding, year, of, the, brewery, that, produces, Pilsner, Urquell]
+POS List: 	[WP, VBZ, DT, NN, NN, IN, DT, NN, WDT, VBZ, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	195
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who wrote the lyrics for the Polish national anthem?
+Focus Content: 	
+Word List: 	[Who, wrote, the, lyrics, for, the, Polish, national, anthem]
+POS List: 	[WP, VBD, DT, NNS, IN, DT, JJ, JJ, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	196
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all B-sides of the Ramones.
+Focus Content: 	B-sides
+Word List: 	[Give, me, all, B-sides, of, the, Ramones]
+POS List: 	[VB, PRP, DT, NNS, IN, DT, NNPS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	197
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who painted The Storm on the Sea of Galilee?
+Focus Content: 	
+Word List: 	[Who, painted, The, Storm, on, the, Sea, of, Galilee]
+POS List: 	[WP, VBD, DT, NN, IN, DT, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	198
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which country does the creator of Miffy come from?
+Focus Content: 	country
+Word List: 	[Which, country, does, the, creator, of, Miffy, come, from]
+POS List: 	[WDT, NN, VBZ, DT, NN, IN, NNP, VB, IN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	199
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	For which label did Elvis record his first album?
+Focus Content: 	label
+Word List: 	[For, which, label, did, Elvis, record, his, first, album]
+POS List: 	[IN, WDT, NN, VBD, NNP, VB, PRP$, JJ, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	2
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me the birthdays of all actors of the television show Charmed.
+Focus Content: 	the birthdays
+Word List: 	[Give, me, the, birthdays, of, all, actors, of, the, television, show, Charmed]
+POS List: 	[VB, PRP, DT, NNS, IN, DT, NNS, IN, DT, NN, NN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	20
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How many employees does IBM have?
+Focus Content: 	employees
+Word List: 	[How, many, employees, does, IBM, have]
+POS List: 	[WRB, JJ, NNS, VBZ, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	21
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which states border Illinois?
+Focus Content: 	states
+Word List: 	[Which, states, border, Illinois]
+POS List: 	[WDT, NNS, VBP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	22
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	In which country is the Limerick Lake?
+Focus Content: 	country
+Word List: 	[In, which, country, is, the, Limerick, Lake]
+POS List: 	[IN, WDT, NN, VBZ, DT, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	23
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which television shows were created by John Cleese?
+Focus Content: 	television shows
+Word List: 	[Which, television, shows, were, created, by, John, Cleese]
+POS List: 	[WDT, NN, NNS, VBD, VBN, IN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	24
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Which mountain is the highest after the Annapurna?
+Focus Content: 	mountain
+Word List: 	[Which, mountain, is, the, highest, after, the, Annapurna]
+POS List: 	[WDT, NN, VBZ, DT, JJS, IN, DT, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	25
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	In which films directed by Garry Marshall was Julia Roberts starring?
+Focus Content: 	films
+Word List: 	[In, which, films, directed, by, Garry, Marshall, was, Julia, Roberts, starring]
+POS List: 	[IN, WDT, NNS, VBN, IN, NNP, NNP, VBD, NNP, NNP, VBG]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	26
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which bridges are of the same type as the Manhattan Bridge?
+Focus Content: 	bridges
+Word List: 	[Which, bridges, are, of, the, same, type, as, the, Manhattan, Bridge]
+POS List: 	[WDT, NNS, VBP, IN, DT, JJ, NN, IN, DT, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	27
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Was U.S. president Jackson involved in a war?
+Focus Content: 	
+Word List: 	[Was, U.S., president, Jackson, involved, in, a, war]
+POS List: 	[VBD, NNP, NN, NNP, VBN, IN, DT, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	28
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all communist countries.
+Focus Content: 	communist countries
+Word List: 	[Give, me, all, communist, countries]
+POS List: 	[VB, PRP, DT, JJ, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	29
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which awards did Douglas Hofstadter win?
+Focus Content: 	awards
+Word List: 	[Which, awards, did, Douglas, Hofstadter, win]
+POS List: 	[WDT, NNS, VBD, NNP, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	3
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who is the daughter of Robert Kennedy married to?
+Focus Content: 	
+Word List: 	[Who, is, the, daughter, of, Robert, Kennedy, married, to]
+POS List: 	[WP, VBZ, DT, NN, IN, NNP, NNP, VBN, TO]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	30
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Which U.S. state has the highest population density?
+Focus Content: 	U.S. state
+Word List: 	[Which, U.S., state, has, the, highest, population, density]
+POS List: 	[WDT, NNP, NN, VBZ, DT, JJS, NN, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	31
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What is the currency of the Czech Republic?
+Focus Content: 	the currency
+Word List: 	[What, is, the, currency, of, the, Czech, Republic]
+POS List: 	[WP, VBZ, DT, NN, IN, DT, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	32
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which countries adopted the Euro?
+Focus Content: 	countries
+Word List: 	[Which, countries, adopted, the, Euro]
+POS List: 	[WDT, NNS, VBD, DT, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	33
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What is the area code of Berlin?
+Focus Content: 	the area code
+Word List: 	[What, is, the, area, code, of, Berlin]
+POS List: 	[WP, VBZ, DT, NN, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	34
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Which countries have more than two official languages?
+Focus Content: 	countries
+Word List: 	[Which, countries, have, more, than, two, official, languages]
+POS List: 	[WDT, NNS, VBP, JJR, IN, CD, JJ, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	35
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who is the owner of Rolls-Royce?
+Focus Content: 	
+Word List: 	[Who, is, the, owner, of, Rolls-Royce]
+POS List: 	[WP, VBZ, DT, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	36
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Through which countries does the Yenisei river flow?
+Focus Content: 	countries
+Word List: 	[Through, which, countries, does, the, Yenisei, river, flow]
+POS List: 	[IN, WDT, NNS, VBZ, DT, NNP, NN, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	37
+Category: 	DATE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	When did Latvia join the EU?
+Focus Content: 	
+Word List: 	[When, did, Latvia, join, the, EU]
+POS List: 	[WRB, VBD, NNP, VB, DT, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	38
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which monarchs were married to a German?
+Focus Content: 	monarchs
+Word List: 	[Which, monarchs, were, married, to, a, German]
+POS List: 	[WDT, NNS, VBD, VBN, TO, DT, JJ]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	39
+Category: 	DATE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	When was the Battle of Gettysburg?
+Focus Content: 	
+Word List: 	[When, was, the, Battle, of, Gettysburg]
+POS List: 	[WRB, VBD, DT, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	4
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which river does the Brooklyn Bridge cross?
+Focus Content: 	river
+Word List: 	[Which, river, does, the, Brooklyn, Bridge, cross]
+POS List: 	[WDT, NN, VBZ, DT, NNP, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	40
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	What is the highest mountain in Australia?
+Focus Content: 	the highest mountain
+Word List: 	[What, is, the, highest, mountain, in, Australia]
+POS List: 	[WP, VBZ, DT, JJS, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	41
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all soccer clubs in Spain.
+Focus Content: 	soccer clubs
+Word List: 	[Give, me, all, soccer, clubs, in, Spain]
+POS List: 	[VB, PRP, DT, NN, NNS, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	42
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What is the official language of Suriname?
+Focus Content: 	the official language
+Word List: 	[What, is, the, official, language, of, Suriname]
+POS List: 	[WP, VBZ, DT, JJ, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	43
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who is the mayor of Tel Aviv?
+Focus Content: 	
+Word List: 	[Who, is, the, mayor, of, Tel, Aviv]
+POS List: 	[WP, VBZ, DT, NN, IN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	44
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who designed the Brooklyn Bridge?
+Focus Content: 	
+Word List: 	[Who, designed, the, Brooklyn, Bridge]
+POS List: 	[WP, VBD, DT, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	45
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which telecommunications organizations are located in Belgium?
+Focus Content: 	telecommunications organizations
+Word List: 	[Which, telecommunications, organizations, are, located, in, Belgium]
+POS List: 	[WDT, NNS, NNS, VBP, JJ, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	46
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Is Frank Herbert still alive?
+Focus Content: 	
+Word List: 	[Is, Frank, Herbert, still, alive]
+POS List: 	[VBZ, NNP, NNP, RB, JJ]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	47
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	What is the highest place of the Urals?
+Focus Content: 	the highest place
+Word List: 	[What, is, the, highest, place, of, the, Urals]
+POS List: 	[WP, VBZ, DT, JJS, NN, IN, DT, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	48
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who is the editor of Forbes?
+Focus Content: 	
+Word List: 	[Who, is, the, editor, of, Forbes]
+POS List: 	[WP, VBZ, DT, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	49
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all companies in the advertising industry.
+Focus Content: 	companies
+Word List: 	[Give, me, all, companies, in, the, advertising, industry]
+POS List: 	[VB, PRP, DT, NNS, IN, DT, NN, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	5
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How many countries are there in Europe?
+Focus Content: 	countries
+Word List: 	[How, many, countries, are, there, in, Europe]
+POS List: 	[WRB, JJ, NNS, VBP, EX, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	50
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What did Bruce Carver die from?
+Focus Content: 	Bruce Carver
+Word List: 	[What, did, Bruce, Carver, die, from]
+POS List: 	[WP, VBD, NNP, NNP, VB, IN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	51
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Give me all libraries established earlier than 1400.
+Focus Content: 	libraries
+Word List: 	[Give, me, all, libraries, established, earlier, than, 1400]
+POS List: 	[VB, PRP, DT, NNS, VBN, JJR, IN, CD]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	52
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which presidents were born in 1945?
+Focus Content: 	presidents
+Word List: 	[Which, presidents, were, born, in, 1945]
+POS List: 	[WDT, NNS, VBD, VBN, IN, CD]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	53
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all federal chancellors of Germany.
+Focus Content: 	federal chancellors
+Word List: 	[Give, me, all, federal, chancellors, of, Germany]
+POS List: 	[VB, PRP, DT, JJ, NNS, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	54
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who was the wife of U.S. president Lincoln?
+Focus Content: 	
+Word List: 	[Who, was, the, wife, of, U.S., president, Lincoln]
+POS List: 	[WP, VBD, DT, NN, IN, NNP, NN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	55
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who developed the video game World of Warcraft?
+Focus Content: 	
+Word List: 	[Who, developed, the, video, game, World, of, Warcraft]
+POS List: 	[WP, VBD, DT, NN, NN, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	56
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What is the official website of Tom Cruise?
+Focus Content: 	the official website
+Word List: 	[What, is, the, official, website, of, Tom, Cruise]
+POS List: 	[WP, VBZ, DT, JJ, NN, IN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	57
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	List all episodes of the first season of the HBO television series The Sopranos.
+Focus Content: 	episodes
+Word List: 	[List, all, episodes, of, the, first, season, of, the, HBO, television, series, The, Sopranos]
+POS List: 	[VB, DT, NNS, IN, DT, JJ, NN, IN, DT, NNP, NN, NN, DT, NNPS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	58
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=true, WHERE=false}
+Content: 	Who produced the most films?
+Focus Content: 	
+Word List: 	[Who, produced, the, most, films]
+POS List: 	[WP, VBD, DT, RBS, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	59
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all people with first name Jimmy.
+Focus Content: 	people
+Word List: 	[Give, me, all, people, with, first, name, Jimmy]
+POS List: 	[VB, PRP, DT, NNS, IN, JJ, NN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	6
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	In which city did John F. Kennedy die?
+Focus Content: 	city
+Word List: 	[In, which, city, did, John, F., Kennedy, die]
+POS List: 	[IN, WDT, NN, VBD, NNP, NNP, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	60
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Is there a video game called Battle Chess?
+Focus Content: 	
+Word List: 	[Is, there, a, video, game, called, Battle, Chess]
+POS List: 	[VBZ, EX, DT, NN, NN, VBN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	61
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Which mountains are higher than the Nanga Parbat?
+Focus Content: 	mountains
+Word List: 	[Which, mountains, are, higher, than, the, Nanga, Parbat]
+POS List: 	[WDT, NNS, VBP, JJR, IN, DT, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	62
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who created Wikipedia?
+Focus Content: 	
+Word List: 	[Who, created, Wikipedia]
+POS List: 	[WP, VBD, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	63
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all actors starring in Last Action Hero.
+Focus Content: 	actors
+Word List: 	[Give, me, all, actors, starring, in, Last, Action, Hero]
+POS List: 	[VB, PRP, DT, NNS, VBG, IN, JJ, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	64
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which software has been developed by organizations founded in California?
+Focus Content: 	software
+Word List: 	[Which, software, has, been, developed, by, organizations, founded, in, California]
+POS List: 	[WDT, NN, VBZ, VBN, VBN, IN, NNS, VBN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	65
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which companies work in the aerospace industry as well as in medicine?
+Focus Content: 	companies
+Word List: 	[Which, companies, work, in, the, aerospace, industry, as, well, as, in, medicine]
+POS List: 	[WDT, NNS, VBP, IN, DT, NN, NN, RB, RB, IN, IN, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	66
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Is Christian Bale starring in Velvet Goldmine?
+Focus Content: 	
+Word List: 	[Is, Christian, Bale, starring, in, Velvet, Goldmine]
+POS List: 	[VBZ, NNP, NNP, VBG, IN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	67
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Give me the websites of companies with more than 500000 employees.
+Focus Content: 	the websites
+Word List: 	[Give, me, the, websites, of, companies, with, more, than, 500000, employees]
+POS List: 	[VB, PRP, DT, NNS, IN, NNS, IN, JJR, IN, CD, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	68
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which actors were born in Germany?
+Focus Content: 	actors
+Word List: 	[Which, actors, were, born, in, Germany]
+POS List: 	[WDT, NNS, VBD, VBN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	69
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Which caves have more than 3 entrances?
+Focus Content: 	caves
+Word List: 	[Which, caves, have, more, than, 3, entrances]
+POS List: 	[WDT, NNS, VBP, JJR, IN, CD, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	7
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Was the wife of president Lincoln called Mary?
+Focus Content: 	
+Word List: 	[Was, the, wife, of, president, Lincoln, called, Mary]
+POS List: 	[VBD, DT, NN, IN, NN, NNP, VBD, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	70
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all films produced by Hal Roach.
+Focus Content: 	films
+Word List: 	[Give, me, all, films, produced, by, Hal, Roach]
+POS List: 	[VB, PRP, DT, NNS, VBN, IN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	71
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all video games published by Mean Hamster Software.
+Focus Content: 	video games
+Word List: 	[Give, me, all, video, games, published, by, Mean, Hamster, Software]
+POS List: 	[VB, PRP, DT, NN, NNS, VBN, IN, NN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	72
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which languages are spoken in Estonia?
+Focus Content: 	languages
+Word List: 	[Which, languages, are, spoken, in, Estonia]
+POS List: 	[WDT, NNS, VBP, VBN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	73
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How many Aldi stores are there?
+Focus Content: 	Aldi stores
+Word List: 	[How, many, Aldi, stores, are, there]
+POS List: 	[WRB, JJ, NNP, NNS, VBP, EX]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	74
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which capitals in Europe were host cities of the summer olympic games?
+Focus Content: 	capitals
+Word List: 	[Which, capitals, in, Europe, were, host, cities, of, the, summer, olympic, games]
+POS List: 	[WDT, NNS, IN, NNP, VBD, NN, NNS, IN, DT, NN, JJ, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	75
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who was the 16th president of the United States?
+Focus Content: 	
+Word List: 	[Who, was, the, 16th, president, of, the, United, States]
+POS List: 	[WP, VBD, DT, JJ, NN, IN, DT, NNP, NNPS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	76
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How many films did Hal Roach produce?
+Focus Content: 	films
+Word List: 	[How, many, films, did, Hal, Roach, produce]
+POS List: 	[WRB, JJ, NNS, VBD, NNP, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	77
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which music albums contain the song Last Christmas?
+Focus Content: 	music albums
+Word List: 	[Which, music, albums, contain, the, song, Last, Christmas]
+POS List: 	[WDT, NN, NNS, VBP, DT, NN, JJ, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	78
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all books written by Danielle Steel.
+Focus Content: 	books
+Word List: 	[Give, me, all, books, written, by, Danielle, Steel]
+POS List: 	[VB, PRP, DT, NNS, VBN, IN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	79
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which airports are located in California, USA?
+Focus Content: 	airports
+Word List: 	[Which, airports, are, located, in, California, ,, USA]
+POS List: 	[WDT, NNS, VBP, JJ, IN, NNP, ,, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	8
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which states of Germany are governed by the Social Democratic Party?
+Focus Content: 	states
+Word List: 	[Which, states, of, Germany, are, governed, by, the, Social, Democratic, Party]
+POS List: 	[WDT, NNS, IN, NNP, VBP, VBN, IN, DT, NNP, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	80
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all Canadian Grunge record labels.
+Focus Content: 	Canadian Grunge record labels
+Word List: 	[Give, me, all, Canadian, Grunge, record, labels]
+POS List: 	[VB, PRP, DT, JJ, NN, NN, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	81
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Which country has the most official languages?
+Focus Content: 	country
+Word List: 	[Which, country, has, the, most, official, languages]
+POS List: 	[WDT, NN, VBZ, DT, RBS, JJ, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	82
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	In which programming language is GIMP written?
+Focus Content: 	programming language
+Word List: 	[In, which, programming, language, is, GIMP, written]
+POS List: 	[IN, WDT, NN, NN, VBZ, NNP, VBN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	83
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who produced films starring Natalie Portman?
+Focus Content: 	
+Word List: 	[Who, produced, films, starring, Natalie, Portman]
+POS List: 	[WP, VBD, NNS, VBG, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	84
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all movies with Tom Cruise.
+Focus Content: 	movies
+Word List: 	[Give, me, all, movies, with, Tom, Cruise]
+POS List: 	[VB, PRP, DT, NNS, IN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	85
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	In which films did Julia Roberts as well as Richard Gere play?
+Focus Content: 	films
+Word List: 	[In, which, films, did, Julia, Roberts, as, well, as, Richard, Gere, play]
+POS List: 	[IN, WDT, NNS, VBD, NNP, NNP, RB, RB, IN, NNP, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	86
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all female given names.
+Focus Content: 	female given names
+Word List: 	[Give, me, all, female, given, names]
+POS List: 	[VB, PRP, DT, JJ, JJ, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	87
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who wrote the book The Pillars of the Earth?
+Focus Content: 	
+Word List: 	[Who, wrote, the, book, The, Pillars, of, the, Earth]
+POS List: 	[WP, VBD, DT, NN, DT, NNPS, IN, DT, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	88
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How many films did Leonardo DiCaprio star in?
+Focus Content: 	films
+Word List: 	[How, many, films, did, Leonardo, DiCaprio, star, in]
+POS List: 	[WRB, JJ, NNS, VBD, NNP, NNP, NN, IN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	89
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all soccer clubs in the Premier League.
+Focus Content: 	soccer clubs
+Word List: 	[Give, me, all, soccer, clubs, in, the, Premier, League]
+POS List: 	[VB, PRP, DT, NN, NNS, IN, DT, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	9
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	In which U.S. state is Mount McKinley located?
+Focus Content: 	U.S. state
+Word List: 	[In, which, U.S., state, is, Mount, McKinley, located]
+POS List: 	[IN, WDT, NNP, NN, VBZ, NNP, NNP, JJ]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	90
+Category: 	DATE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	When was Capcom founded?
+Focus Content: 	
+Word List: 	[When, was, Capcom, founded]
+POS List: 	[WRB, VBD, NNP, VBN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	91
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which organizations were founded in 1930?
+Focus Content: 	organizations
+Word List: 	[Which, organizations, were, founded, in, 1930]
+POS List: 	[WDT, NNS, VBD, VBN, IN, CD]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	92
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	What is the highest mountain?
+Focus Content: 	the highest mountain
+Word List: 	[What, is, the, highest, mountain]
+POS List: 	[WP, VBZ, DT, JJS, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	93
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Was Natalie Portman born in the United States?
+Focus Content: 	
+Word List: 	[Was, Natalie, Portman, born, in, the, United, States]
+POS List: 	[VBD, NNP, NNP, VBN, IN, DT, NNP, NNPS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	94
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which budget did the first movie of Zdenek Sverak have?
+Focus Content: 	budget
+Word List: 	[Which, budget, did, the, first, movie, of, Zdenek, Sverak, have]
+POS List: 	[WDT, NN, VBD, DT, JJ, NN, IN, NNP, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	95
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How many big fires struck Paris during the Middle Ages?
+Focus Content: 	big fires
+Word List: 	[How, many, big, fires, struck, Paris, during, the, Middle, Ages]
+POS List: 	[WRB, JJ, JJ, NNS, VBD, NNP, IN, DT, NNP, NNPS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	96
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Is Pamela Anderson a vegan?
+Focus Content: 	
+Word List: 	[Is, Pamela, Anderson, a, vegan]
+POS List: 	[VBZ, NNP, NNP, DT, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	97
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How often was Michael Jordan divorced?
+Focus Content: 	
+Word List: 	[How, often, was, Michael, Jordan, divorced]
+POS List: 	[WRB, RB, VBD, NNP, NNP, VBN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	98
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	What is the most beautiful painting?
+Focus Content: 	the most beautiful painting
+Word List: 	[What, is, the, most, beautiful, painting]
+POS List: 	[WP, VBZ, DT, RBS, JJ, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	99
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all animal species that live in the Amazon rainforest.
+Focus Content: 	animal species
+Word List: 	[Give, me, all, animal, species, that, live, in, the, Amazon, rainforest]
+POS List: 	[VB, PRP, DT, NN, NNS, WDT, VBP, IN, DT, NNP, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	231
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	How many inhabitants does the largest city in Canada have?
+Focus Content: 	inhabitants
+Word List: 	[How, many, inhabitants, does, the, largest, city, in, Canada, have]
+POS List: 	[WRB, JJ, NNS, VBZ, DT, JJS, NN, IN, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	249
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	In which studio did the Beatles record their first album?
+Focus Content: 	studio
+Word List: 	[In, which, studio, did, the, Beatles, record, their, first, album]
+POS List: 	[IN, WDT, NN, VBD, DT, NNPS, VB, PRP$, JJ, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	234
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who was the first to climb Mount Everest?
+Focus Content: 	
+Word List: 	[Who, was, the, first, to, climb, Mount, Everest]
+POS List: 	[WP, VBD, DT, JJ, TO, VB, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	204
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How many programming languages are there?
+Focus Content: 	programming languages
+Word List: 	[How, many, programming, languages, are, there]
+POS List: 	[WRB, JJ, NN, NNS, VBP, EX]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	242
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What is the official color of the University of Oxford?
+Focus Content: 	the official color
+Word List: 	[What, is, the, official, color, of, the, University, of, Oxford]
+POS List: 	[WP, VBZ, DT, JJ, NN, IN, DT, NNP, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	250
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How many gold medals did Michael Phelps win at the 2008 Olympics?
+Focus Content: 	gold medals
+Word List: 	[How, many, gold, medals, did, Michael, Phelps, win, at, the, 2008, Olympics]
+POS List: 	[WRB, JJ, NN, NNS, VBD, NNP, NNP, VB, IN, DT, CD, NNPS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	235
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	To which artistic movement did the painter of The Three Dancers belong?
+Focus Content: 	artistic movement
+Word List: 	[To, which, artistic, movement, did, the, painter, of, The, Three, Dancers, belong]
+POS List: 	[TO, WDT, JJ, NN, VBD, DT, NN, IN, DT, CD, NNS, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	211
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all animals that are extinct.
+Focus Content: 	animals
+Word List: 	[Give, me, all, animals, that, are, extinct]
+POS List: 	[VB, PRP, DT, NNS, WDT, VBP, JJ]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	223
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Does Abraham Lincoln's death place have a website?
+Focus Content: 	
+Word List: 	[Does, Abraham, Lincoln, 's, death, place, have, a, website]
+POS List: 	[VBZ, NNP, NNP, POS, NN, NN, VBP, DT, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	244
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How deep is Lake Placid?
+Focus Content: 	
+Word List: 	[How, deep, is, Lake, Placid]
+POS List: 	[WRB, JJ, VBZ, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	240
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me the grandchildren of Bruce Lee.
+Focus Content: 	the grandchildren
+Word List: 	[Give, me, the, grandchildren, of, Bruce, Lee]
+POS List: 	[VB, PRP, DT, NNS, IN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	210
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=true, WHERE=false}
+Content: 	Who is the youngest Darts player?
+Focus Content: 	
+Word List: 	[Who, is, the, youngest, Darts, player]
+POS List: 	[WP, VBZ, DT, JJS, NNS, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	221
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=true}
+Content: 	Where was Bach born?
+Focus Content: 	
+Word List: 	[Where, was, Bach, born]
+POS List: 	[WRB, VBD, NNP, VBN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	232
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	In which countries can you pay using the West African CFA franc?
+Focus Content: 	countries
+Word List: 	[In, which, countries, can, you, pay, using, the, West, African, CFA, franc]
+POS List: 	[IN, WDT, NNS, MD, PRP, VB, VBG, DT, NNP, NNP, NNP, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	225
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What are the top-10 action role-playing video games according to IGN?
+Focus Content: 	the top-10 action
+Word List: 	[What, are, the, top-10, action, role-playing, video, games, according, to, IGN]
+POS List: 	[WP, VBP, DT, JJ, NN, JJ, NN, NNS, VBG, TO, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	214
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	What is the most frequent cause of death?
+Focus Content: 	the most frequent cause
+Word List: 	[What, is, the, most, frequent, cause, of, death]
+POS List: 	[WP, VBZ, DT, RBS, JJ, NN, IN, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	207
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Does the Isar flow into a lake?
+Focus Content: 	
+Word List: 	[Does, the, Isar, flow, into, a, lake]
+POS List: 	[VBZ, DT, NN, NN, IN, DT, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	218
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Give me all films produced by Steven Spielberg with a budget of at least $80 million.
+Focus Content: 	films
+Word List: 	[Give, me, all, films, produced, by, Steven, Spielberg, with, a, budget, of, at, least, $, 80, million]
+POS List: 	[VB, PRP, DT, NNS, VBN, IN, NNP, NNP, IN, DT, NN, IN, IN, JJS, $, CD, CD]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	241
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all writers that won the Nobel Prize in literature.
+Focus Content: 	writers
+Word List: 	[Give, me, all, writers, that, won, the, Nobel, Prize, in, literature]
+POS List: 	[VB, PRP, DT, NNS, WDT, VBD, DT, NNP, NNP, IN, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	201
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all taikonauts.
+Focus Content: 	taikonauts
+Word List: 	[Give, me, all, taikonauts]
+POS List: 	[VB, PRP, DT, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	212
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How many pages does War and Peace have?
+Focus Content: 	pages
+Word List: 	[How, many, pages, does, War, and, Peace, have]
+POS List: 	[WRB, JJ, NNS, VBZ, NNP, CC, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	217
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	What is the bridge with the longest span?
+Focus Content: 	the bridge
+Word List: 	[What, is, the, bridge, with, the, longest, span]
+POS List: 	[WP, VBZ, DT, NN, IN, DT, JJS, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	247
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all actors called Baldwin.
+Focus Content: 	actors
+Word List: 	[Give, me, all, actors, called, Baldwin]
+POS List: 	[VB, PRP, DT, NNS, VBN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	216
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=true, WHERE=false}
+Content: 	Who is the tallest player of the Atlanta Falcons?
+Focus Content: 	
+Word List: 	[Who, is, the, tallest, player, of, the, Atlanta, Falcons]
+POS List: 	[WP, VBZ, DT, JJS, NN, IN, DT, NNP, NNPS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	208
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which rivers flow into a German lake?
+Focus Content: 	rivers
+Word List: 	[Which, rivers, flow, into, a, German, lake]
+POS List: 	[WDT, NNS, VBP, IN, DT, JJ, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	238
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How many James Bond movies are there?
+Focus Content: 	James Bond movies
+Word List: 	[How, many, James, Bond, movies, are, there]
+POS List: 	[WRB, JJ, NNP, NNP, NNS, VBP, EX]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	246
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which rockets were launched from Baikonur?
+Focus Content: 	rockets
+Word List: 	[Which, rockets, were, launched, from, Baikonur]
+POS List: 	[WDT, NNS, VBD, VBN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	236
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which pope succeeded John Paul II?
+Focus Content: 	pope
+Word List: 	[Which, pope, succeeded, John, Paul, II]
+POS List: 	[WDT, NN, VBD, NNP, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	205
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all Dutch parties.
+Focus Content: 	Dutch parties
+Word List: 	[Give, me, all, Dutch, parties]
+POS List: 	[VB, PRP, DT, JJ, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	230
+Category: 	DATE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	When is Halloween?
+Focus Content: 	
+Word List: 	[When, is, Halloween]
+POS List: 	[WRB, VBZ, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	243
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all Swedish oceanographers.
+Focus Content: 	Swedish oceanographers
+Word List: 	[Give, me, all, Swedish, oceanographers]
+POS List: 	[VB, PRP, DT, JJ, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	226
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all actors who were born in Berlin.
+Focus Content: 	actors
+Word List: 	[Give, me, all, actors, who, were, born, in, Berlin]
+POS List: 	[VB, PRP, DT, NNS, WP, VBD, VBN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	237
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What was the last movie with Alec Guinness?
+Focus Content: 	the last movie
+Word List: 	[What, was, the, last, movie, with, Alec, Guinness]
+POS List: 	[WP, VBD, DT, JJ, NN, IN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	203
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Which poet wrote the most books?
+Focus Content: 	poet
+Word List: 	[Which, poet, wrote, the, most, books]
+POS List: 	[WDT, NN, VBD, DT, RBS, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	202
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How many languages are spoken in Colombia?
+Focus Content: 	languages
+Word List: 	[How, many, languages, are, spoken, in, Colombia]
+POS List: 	[WRB, JJ, NNS, VBP, VBN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	248
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What does IYCM stand for?
+Focus Content: 	IYCM
+Word List: 	[What, does, IYCM, stand, for]
+POS List: 	[WP, VBZ, NNP, VB, IN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	228
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	What was Brazil's lowest rank in the FIFA World Ranking?
+Focus Content: 	Brazil
+Word List: 	[What, was, Brazil, 's, lowest, rank, in, the, FIFA, World, Ranking]
+POS List: 	[WP, VBD, NNP, POS, JJS, NN, IN, DT, NNP, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	233
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me the capitals of all countries that the Himalayas run through.
+Focus Content: 	the capitals
+Word List: 	[Give, me, the, capitals, of, all, countries, that, the, Himalayas, run, through]
+POS List: 	[VB, PRP, DT, NNS, IN, DT, NNS, IN, DT, NNPS, VBP, IN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	239
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which actor played Chewbacca?
+Focus Content: 	actor
+Word List: 	[Which, actor, played, Chewbacca]
+POS List: 	[WDT, NN, VBD, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	213
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which ingredients do I need for carrot cake?
+Focus Content: 	ingredients
+Word List: 	[Which, ingredients, do, I, need, for, carrot, cake]
+POS List: 	[WDT, NNS, VBP, PRP, VB, IN, NN, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	219
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Is Cola a beverage?
+Focus Content: 	
+Word List: 	[Is, Cola, a, beverage]
+POS List: 	[VBZ, NNP, DT, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	215
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who has Tom Cruise been married to?
+Focus Content: 	
+Word List: 	[Who, has, Tom, Cruise, been, married, to]
+POS List: 	[WP, VBZ, NNP, NNP, VBN, VBN, TO]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	222
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Which of Tim Burton's films had the highest budget?
+Focus Content: 	of Tim Burton
+Word List: 	[Which, of, Tim, Burton, 's, films, had, the, highest, budget]
+POS List: 	[WDT, IN, NNP, NNP, POS, NNS, VBD, DT, JJS, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	209
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	How heavy is Jupiter's lightest moon?
+Focus Content: 	
+Word List: 	[How, heavy, is, Jupiter, 's, lightest, moon]
+POS List: 	[WRB, JJ, VBZ, NNP, POS, JJS, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	220
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Which actor was casted in the most movies?
+Focus Content: 	actor
+Word List: 	[Which, actor, was, casted, in, the, most, movies]
+POS List: 	[WDT, NN, VBD, VBN, IN, DT, RBS, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	245
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Is James Bond married?
+Focus Content: 	
+Word List: 	[Is, James, Bond, married]
+POS List: 	[VBZ, NNP, NNP, VBN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	229
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all Australian metalcore bands.
+Focus Content: 	Australian metalcore bands
+Word List: 	[Give, me, all, Australian, metalcore, bands]
+POS List: 	[VB, PRP, DT, JJ, NN, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	227
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all actors who were born in Paris after 1950.
+Focus Content: 	actors
+Word List: 	[Give, me, all, actors, who, were, born, in, Paris, after, 1950]
+POS List: 	[VB, PRP, DT, NNS, WP, VBD, VBN, IN, NNP, IN, CD]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	206
+Category: 	DATE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	When was Carlo Giuliani shot?
+Focus Content: 	
+Word List: 	[When, was, Carlo, Giuliani, shot]
+POS List: 	[WRB, VBD, NNP, NNP, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	224
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=true, WHERE=false}
+Content: 	Who are the four youngest MVP basketball players?
+Focus Content: 	
+Word List: 	[Who, are, the, four, youngest, MVP, basketball, players]
+POS List: 	[WP, VBP, DT, CD, JJS, NN, NN, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	251
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Which companies have more than 1 million employees?
+Focus Content: 	companies
+Word List: 	[Which, companies, have, more, than, 1, million, employees]
+POS List: 	[WDT, NNS, VBP, JJR, IN, CD, CD, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	252
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give all swimmers that were born in Moscow.
+Focus Content: 	swimmers
+Word List: 	[Give, all, swimmers, that, were, born, in, Moscow]
+POS List: 	[VB, DT, NNS, WDT, VBD, VBN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	253
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who was called Rodzilla?
+Focus Content: 	
+Word List: 	[Who, was, called, Rodzilla]
+POS List: 	[WP, VBD, VBN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	254
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Show me the book that Muhammad Ali wrote.
+Focus Content: 	the book
+Word List: 	[Show, me, the, book, that, Muhammad, Ali, wrote]
+POS List: 	[NN, PRP, DT, NN, WDT, NNP, NNP, VBD]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	255
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which museums does Paris have?
+Focus Content: 	museums
+Word List: 	[Which, museums, does, Paris, have]
+POS List: 	[WDT, NNS, VBZ, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	256
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Which city has the most inhabitants?
+Focus Content: 	city
+Word List: 	[Which, city, has, the, most, inhabitants]
+POS List: 	[WDT, NN, VBZ, DT, RBS, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	257
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Which city has the least inhabitants?
+Focus Content: 	city
+Word List: 	[Which, city, has, the, least, inhabitants]
+POS List: 	[WDT, NN, VBZ, DT, JJS, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	258
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all the TV shows with Neil Patrick Harris.
+Focus Content: 	the TV
+Word List: 	[Give, me, all, the, TV, shows, with, Neil, Patrick, Harris]
+POS List: 	[VB, PRP, PDT, DT, NN, VBZ, IN, NNP, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	259
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who wrote The Hunger Games?
+Focus Content: 	
+Word List: 	[Who, wrote, The, Hunger, Games]
+POS List: 	[WP, VBD, DT, NNP, NNPS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	260
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Show a list of soccer clubs that play in the Bundesliga.
+Focus Content: 	soccer clubs
+Word List: 	[Show, a, list, of, soccer, clubs, that, play, in, the, Bundesliga]
+POS List: 	[NN, DT, NN, IN, NN, NNS, WDT, VBP, IN, DT, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	261
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What country is Mount Everest in?
+Focus Content: 	country
+Word List: 	[What, country, is, Mount, Everest, in]
+POS List: 	[WDT, NN, VBZ, NNP, NNP, IN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	262
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who is the founder of Penguin Books?
+Focus Content: 	
+Word List: 	[Who, is, the, founder, of, Penguin, Books]
+POS List: 	[WP, VBZ, DT, NN, IN, NNP, NNPS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	263
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which programming languages influenced Javascript?
+Focus Content: 	programming languages
+Word List: 	[Which, programming, languages, influenced, Javascript]
+POS List: 	[WDT, NN, NNS, VBD, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	264
+Category: 	BOOLEAN
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Did Che Guevara have children?
+Focus Content: 	
+Word List: 	[Did, Che, Guevara, have, children]
+POS List: 	[VBD, NNP, NNP, VBP, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	265
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	List all the musicals with music by Elton John.
+Focus Content: 	the musicals
+Word List: 	[List, all, the, musicals, with, music, by, Elton, John]
+POS List: 	[VB, PDT, DT, NNS, IN, NN, IN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	266
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Show me all the breweries in Australia.
+Focus Content: 	the breweries
+Word List: 	[Show, me, all, the, breweries, in, Australia]
+POS List: 	[NN, PRP, PDT, DT, NNS, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	267
+Category: 	DATE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	When was the Titanic completed?
+Focus Content: 	
+Word List: 	[When, was, the, Titanic, completed]
+POS List: 	[WRB, VBD, DT, NNP, VBN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	268
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How much did Pulp Fiction cost?
+Focus Content: 	
+Word List: 	[How, much, did, Pulp, Fiction, cost]
+POS List: 	[WRB, RB, VBD, NNP, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	269
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How many airlines are there?
+Focus Content: 	airlines
+Word List: 	[How, many, airlines, are, there]
+POS List: 	[WRB, JJ, NNS, VBP, EX]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	270
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who played Agent Smith in Matrix?
+Focus Content: 	
+Word List: 	[Who, played, Agent, Smith, in, Matrix]
+POS List: 	[WP, VBD, NNP, NNP, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	271
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How much carbs does peanut butter have?
+Focus Content: 	
+Word List: 	[How, much, carbs, does, peanut, butter, have]
+POS List: 	[WRB, JJ, NNS, VBZ, NN, NN, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	272
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	Which book has the most pages?
+Focus Content: 	book
+Word List: 	[Which, book, has, the, most, pages]
+POS List: 	[WDT, NN, VBZ, DT, RBS, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	273
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which bridges cross the Seine?
+Focus Content: 	bridges
+Word List: 	[Which, bridges, cross, the, Seine]
+POS List: 	[WDT, NNS, VBP, DT, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	274
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who is the mayor of the capital of French Polynesia?
+Focus Content: 	
+Word List: 	[Who, is, the, mayor, of, the, capital, of, French, Polynesia]
+POS List: 	[WP, VBZ, DT, NN, IN, DT, NN, IN, JJ, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	275
+Category: 	DATE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	When did Dracula's creator die?
+Focus Content: 	
+Word List: 	[When, did, Dracula, 's, creator, die]
+POS List: 	[WRB, VBD, NNP, POS, NN, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	276
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What is the location of the Houses of Parliament?
+Focus Content: 	the location
+Word List: 	[What, is, the, location, of, the, Houses, of, Parliament]
+POS List: 	[WP, VBZ, DT, NN, IN, DT, NNS, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	277
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Show me all English Gothic buildings in Kent.
+Focus Content: 	English Gothic buildings
+Word List: 	[Show, me, all, English, Gothic, buildings, in, Kent]
+POS List: 	[NN, PRP, DT, JJ, JJ, NNS, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	278
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who was the pope that founded the Vatican Television?
+Focus Content: 	
+Word List: 	[Who, was, the, pope, that, founded, the, Vatican, Television]
+POS List: 	[WP, VBD, DT, NN, WDT, VBD, DT, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	279
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What airlines are part of the SkyTeam alliance?
+Focus Content: 	airlines
+Word List: 	[What, airlines, are, part, of, the, SkyTeam, alliance]
+POS List: 	[WDT, NNS, VBP, NN, IN, DT, NNP, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	280
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What is the total population of Melbourne, Florida?
+Focus Content: 	the total population
+Word List: 	[What, is, the, total, population, of, Melbourne, ,, Florida]
+POS List: 	[WP, VBZ, DT, JJ, NN, IN, NNP, ,, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	281
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which airports does Air China serve?
+Focus Content: 	airports
+Word List: 	[Which, airports, does, Air, China, serve]
+POS List: 	[WDT, NNS, VBZ, NNP, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	282
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	In which year was Rachel Stevens born?
+Focus Content: 	year
+Word List: 	[In, which, year, was, Rachel, Stevens, born]
+POS List: 	[IN, WDT, NN, VBD, NNP, NNP, VBN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	283
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=true}
+Content: 	Where was JFK assassinated?
+Focus Content: 	
+Word List: 	[Where, was, JFK, assassinated]
+POS List: 	[WRB, VBD, NNP, VBN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	284
+Category: 	NUMBER
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	How many politicians graduated from Columbia University?
+Focus Content: 	politicians
+Word List: 	[How, many, politicians, graduated, from, Columbia, University]
+POS List: 	[WRB, JJ, NNS, VBD, IN, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	285
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which scientist is known for the Manhattan Project and the Nobel Peace Prize?
+Focus Content: 	scientist
+Word List: 	[Which, scientist, is, known, for, the, Manhattan, Project, and, the, Nobel, Peace, Prize]
+POS List: 	[WDT, NN, VBZ, VBN, IN, DT, NNP, NNP, CC, DT, NNP, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	286
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	What is the highest volcano in Africa?
+Focus Content: 	the highest volcano
+Word List: 	[What, is, the, highest, volcano, in, Africa]
+POS List: 	[WP, VBZ, DT, JJS, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	287
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Which beer originated in Ireland?
+Focus Content: 	beer
+Word List: 	[Which, beer, originated, in, Ireland]
+POS List: 	[WDT, NN, VBD, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	288
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What are the specialities of the UNC Health Care?
+Focus Content: 	the specialities
+Word List: 	[What, are, the, specialities, of, the, UNC, Health, Care]
+POS List: 	[WP, VBP, DT, NNS, IN, DT, NNP, NNP, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	289
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who is the owner of Facebook?
+Focus Content: 	
+Word List: 	[Who, is, the, owner, of, Facebook]
+POS List: 	[WP, VBZ, DT, NN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	290
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	From which region is the Melon de Bourgogne?
+Focus Content: 	region
+Word List: 	[From, which, region, is, the, Melon, de, Bourgogne]
+POS List: 	[IN, WDT, NN, VBZ, DT, NNP, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	291
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who was influenced by Socrates?
+Focus Content: 	
+Word List: 	[Who, was, influenced, by, Socrates]
+POS List: 	[WP, VBD, VBN, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	292
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who was president of Pakistan in 1978?
+Focus Content: 	
+Word List: 	[Who, was, president, of, Pakistan, in, 1978]
+POS List: 	[WP, VBD, NN, IN, NNP, IN, CD]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	293
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me English actors starring in Lovesick.
+Focus Content: 	English actors
+Word List: 	[Give, me, English, actors, starring, in, Lovesick]
+POS List: 	[VB, PRP, JJ, NNS, VBG, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	294
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	Give me all types of eating disorders.
+Focus Content: 	types
+Word List: 	[Give, me, all, types, of, eating, disorders]
+POS List: 	[VB, PRP, DT, NNS, IN, VBG, NNS]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	295
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=true, WHERE=false}
+Content: 	Who was married to president Chirac?
+Focus Content: 	
+Word List: 	[Who, was, married, to, president, Chirac]
+POS List: 	[WP, VBD, VBN, TO, NN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	296
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=true, WHO=false, WHERE=false}
+Content: 	What is the largest metropolitan area in Washington state?
+Focus Content: 	the largest metropolitan area
+Word List: 	[What, is, the, largest, metropolitan, area, in, Washington, state]
+POS List: 	[WP, VBZ, DT, JJS, JJ, NN, IN, NNP, NN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	297
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=true}
+Content: 	Where in France is sparkling wine produced?
+Focus Content: 	
+Word List: 	[Where, in, France, is, sparkling, wine, produced]
+POS List: 	[WRB, IN, NNP, VBZ, JJ, NN, VBN]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	298
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=true}
+Content: 	Where did Hillel Slovak die?
+Focus Content: 	
+Word List: 	[Where, did, Hillel, Slovak, die]
+POS List: 	[WRB, VBD, NNP, NNP, VB]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	299
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	What is the timezone in San Pedro de Atacama?
+Focus Content: 	the timezone
+Word List: 	[What, is, the, timezone, in, San, Pedro, de, Atacama]
+POS List: 	[WP, VBZ, DT, NN, IN, NNP, NNP, IN, NNP]
+Entity List: 	0
+-------------------------
+-------------------------
+ID: 	300
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHO=false, WHERE=false}
+Content: 	In which city does the Chile Route 68 end?
+Focus Content: 	city
+Word List: 	[In, which, city, does, the, Chile, Route, 68, end]
+POS List: 	[IN, WDT, NN, VBZ, DT, NNP, NNP, CD, VB]
+Entity List: 	0
+-------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
