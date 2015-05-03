@@ -46,6 +46,5 @@ Temporary Items
 /target/classes/*
 target/classes/*
 /target/
-/data/lx/
 *.class
 target/classes/finder/Pipeline.class
