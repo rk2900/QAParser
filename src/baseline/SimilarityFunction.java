@@ -24,10 +24,27 @@ public class SimilarityFunction {
 		return wordList;
 	}
 	
-	public static double umbcWordRanking(String predictLabel, String NL){
+	public static double umbcWordRanking(String predictLabel, String NL, String focusString){
 		double avgScore = 0;
-		String [] wordsNL = NL.split(" ");
+		
 		LinkedList<String> labelWords = getLabelWords(predictLabel);
+		LinkedList<String> resWords = new LinkedList<String>();
+		
+		String [] wordsNL = NL.split(" ");
+		for (String word : wordsNL) {
+			if(word.length() > 0){
+				resWords.add(word);
+			}
+		}
+		
+		if(focusString.length() > 0){
+			String [] focStrings = focusString.split(" ");
+			for (String word : focStrings) {
+				if(word.length() > 0){
+					resWords.add(word);
+				}
+			}
+		}
 		
 		for (String labelWord : labelWords) {
 			if(labelWord.length() == 0){
@@ -35,14 +52,11 @@ public class SimilarityFunction {
 			}
 			double maxScore = 0;
 			double score;
-			for (String wordNL : wordsNL) {
-				if(wordNL.length() == 0){
-					continue;
-				}
-				score = db.getScore(labelWord, wordNL);
+			for (String res : resWords) {
+				score = db.getScore(labelWord, res);
 				if(score == -1){
-					System.err.println("DB Not included: "+labelWord+" "+wordNL);
-					db.insertWords(labelWord, wordNL);
+					System.err.println("DB Not included: "+labelWord+" "+res);
+					db.insertWords(labelWord, res);
 				}
 				if(maxScore < score){
 					maxScore = score;
@@ -55,9 +69,10 @@ public class SimilarityFunction {
 		return avgScore;
 	}
 	
-	public static ArrayList<Predict> getSortedPredicts(MatchDetail detail){
+	private static ArrayList<Predict> getSortedPredicts(MatchDetail detail){
 		String entityUri = detail.entity.uri;
 		String NL = detail.constraint.edge;
+		String focusString = detail.focusString;
 		
 		ArrayList<Predict> predictList = new ArrayList<Predict>();
 		LinkedList<RDFNode> predictUriList = ClientManagement.getSurroundingPred(entityUri);
@@ -72,7 +87,7 @@ public class SimilarityFunction {
 				if (predictlabel.length() == 0) {
 					continue;
 				}
-				double score = SimilarityFunction.umbcWordRanking(predictlabel, NL);
+				double score = SimilarityFunction.umbcWordRanking(predictlabel, NL, focusString);
 				if(score > maxScore){
 					maxScore = score;
 					matchedLabel = predictlabel;

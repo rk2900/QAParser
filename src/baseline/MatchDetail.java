@@ -7,14 +7,24 @@ public class MatchDetail {
 	Entity entity;
 	Constraint constraint;
 	int location;
-	
 	//0->node in the left of constraint 
 	//1->node in the right of constraint
+	String focusString;
+	//
 	
-	public MatchDetail(Entity e,  Constraint c, int l){
+	public String getFocusString() {
+		return focusString;
+	}
+
+	public void setFocusString(String focusString) {
+		this.focusString = focusString;
+	}
+
+	public MatchDetail(Entity e,  Constraint c, int l, String f){
 		entity = e;
 		constraint = c;
 		location = l;
+		focusString = f;
 	}
 	
 	public Entity getEntity() {
