@@ -1,0 +1,300 @@
+1	cosmonauts
+10	country
+100	
+101	German cities
+102	
+103	
+104	students
+105	second highest mountain
+106	professional skateboarders
+107	
+108	countries
+109	bandleaders
+11	countries
+110	total amount
+200	
+111	
+112	world heritage sites
+113	
+114	members
+115	longest river
+116	
+117	cars
+118	main discoveries
+119	people
+12	
+120	
+121	capital
+122	
+123	
+124	
+125	U.S. state
+126	languages
+127	U.S. state
+128	movies
+129	actors
+13	
+130	birth name
+131	Methodist politicians
+132	
+133	Australian nonprofit organizations
+134	military conflicts
+135	
+136	melting point
+137	sister cities
+138	inhabitants
+139	companies
+14	
+140	games
+141	
+142	
+143	breeds
+144	cities
+145	countries
+146	professional surfers
+147	average temperature
+148	UK city
+149	other weapons
+15	
+150	
+151	islands
+152	
+153	party
+154	nicknames
+155	Greek goddesses
+156	
+157	Apollo 14 astronauts
+158	time zone
+159	U.S. states
+16	capitals
+160	lakes
+161	missions
+162	
+163	Danish movies
+164	launch pads
+165	instruments
+166	ships
+167	
+168	employees
+169	
+17	cities
+170	
+171	
+172	U.S. state
+173	children
+174	
+175	Chess players
+176	children
+177	
+178	
+179	
+18	museum
+180	books
+181	books
+182	American inventions
+183	
+184	
+185	people
+186	largest city
+187	
+188	films
+189	city
+19	
+190	
+191	U.S. state
+192	songs
+193	movies
+194	founding year
+195	
+196	B-sides
+197	
+198	country
+199	label
+2	birthdays
+20	employees
+21	states
+22	country
+23	television shows
+24	mountain
+25	films
+26	bridges
+27	
+28	communist countries
+29	awards
+3	
+30	U.S. state
+31	currency
+32	countries
+33	area code
+34	countries
+35	
+36	countries
+37	
+38	monarchs
+39	
+4	river
+40	highest mountain
+41	soccer clubs
+42	official language
+43	
+44	
+45	telecommunications organizations
+46	
+47	highest place
+48	
+49	companies
+5	countries
+50	Bruce Carver
+51	libraries
+52	presidents
+53	federal chancellors
+54	
+55	
+56	official website
+57	episodes
+58	
+59	people
+6	city
+60	
+61	mountains
+62	
+63	actors
+64	software
+65	companies
+66	
+67	websites
+68	actors
+69	caves
+7	
+70	films
+71	video games
+72	languages
+73	Aldi stores
+74	capitals
+75	
+76	films
+77	music albums
+78	books
+79	airports
+8	states
+80	Canadian Grunge record labels
+81	country
+82	programming language
+83	
+84	movies
+85	films
+86	female given names
+87	
+88	films
+89	soccer clubs
+9	U.S. state
+90	
+91	organizations
+92	highest mountain
+93	
+94	budget
+95	big fires
+96	
+97	
+98	most beautiful painting
+99	animal species
+231	inhabitants
+249	studio
+234	
+204	programming languages
+242	official color
+250	gold medals
+235	artistic movement
+211	animals
+223	
+244	
+240	grandchildren
+210	
+221	
+232	countries
+225	top-10 action
+214	most frequent cause
+207	
+218	films
+241	writers
+201	taikonauts
+212	pages
+217	bridge
+247	actors
+216	
+208	rivers
+238	James Bond movies
+246	rockets
+236	pope
+205	Dutch parties
+230	
+243	Swedish oceanographers
+226	actors
+237	last movie
+203	poet
+202	languages
+248	IYCM
+228	Brazil
+233	capitals
+239	actor
+213	ingredients
+219	
+215	
+222	Tim Burton
+209	
+220	actor
+245	
+229	Australian metalcore bands
+227	actors
+206	
+224	
+251	companies
+252	swimmers
+253	
+254	book
+255	museums
+256	city
+257	city
+258	TV
+259	
+260	soccer clubs
+261	country
+262	
+263	programming languages
+264	
+265	musicals
+266	breweries
+267	
+268	
+269	airlines
+270	
+271	
+272	book
+273	bridges
+274	
+275	
+276	location
+277	English Gothic buildings
+278	
+279	airlines
+280	total population
+281	airports
+282	year
+283	
+284	politicians
+285	scientist
+286	highest volcano
+287	beer
+288	specialities
+289	
+290	region
+291	
+292	
+293	English actors
+294	types
+295	
+296	largest metropolitan area
+297	
+298	
+299	timezone
+300	city
