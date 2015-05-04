@@ -1,14 +1,14 @@
 package baseline;
 
-public class Predict implements Comparable<Predict>{
+public class Predicate implements Comparable<Predicate>{
 	String uri;
 	double maxScore;
 	String matchedLabel;
 	
-	public Predict(){
+	public Predicate(){
 		
 	}
-	public Predict(String uri, double maxScore, String matchedLabel) {
+	public Predicate(String uri, double maxScore, String matchedLabel) {
 		super();
 		this.uri = uri;
 		this.maxScore = maxScore;
@@ -38,7 +38,7 @@ public class Predict implements Comparable<Predict>{
 	 * 首先按照score排名，
 	 * 对于score相同的，取label较长的
 	 */
-	public int compareTo(Predict o) {
+	public int compareTo(Predicate o) {
 		// TODO Auto-generated method stub
 		if(maxScore > o.maxScore){
 			return 1;

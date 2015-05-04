@@ -282,9 +282,9 @@ public class Main {
 	//一步走
 	public static void step(MatchDetail step){
 		String entityUri = step.entity.uri;
-		ArrayList<Predict> predictList = SimilarityFunction.getTopNPredicts(step);
+		ArrayList<Predicate> predictList = SimilarityFunction.getTopNPredicts(step);
 		System.out.println(entityUri);
-		for (Predict predict : predictList) {
+		for (Predicate predict : predictList) {
 			System.out.print(predict.maxScore + "\t"+ predict.matchedLabel +"\t" + predict.uri);
 			LinkedList<RDFNode> resources = ClientManagement.getNode(entityUri, predict.uri);
 			for (RDFNode rdfNode : resources) {

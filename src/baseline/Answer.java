@@ -10,7 +10,7 @@ import com.hp.hpl.jena.rdf.model.RDFNode;
 import paser.QuestionFrame;
 
 public class Answer {
-	public ArrayList<Predict> predictList;
+	public ArrayList<Predicate> predictList;
 	public String entityUri;
 	public QuestionFrame qf;
 	public String exceptionString;
@@ -31,7 +31,7 @@ public class Answer {
 		if(!isException()){
 			sb.append(entityUri);
 			sb.append("\n");
-			for (Predict predict : predictList) {
+			for (Predicate predict : predictList) {
 				sb.append(predict.maxScore + "\t"+ predict.matchedLabel +"\t" + predict.uri);
 				LinkedList<RDFNode> resources = ClientManagement.getNode(entityUri, predict.uri);
 				for (RDFNode rdfNode : resources) {

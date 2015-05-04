@@ -69,12 +69,12 @@ public class SimilarityFunction {
 		return avgScore;
 	}
 	
-	private static ArrayList<Predict> getSortedPredicts(MatchDetail detail){
+	private static ArrayList<Predicate> getSortedPredicts(MatchDetail detail){
 		String entityUri = detail.entity.uri;
 		String NL = detail.constraint.edge;
 		String focusString = detail.focusString;
 		
-		ArrayList<Predict> predictList = new ArrayList<Predict>();
+		ArrayList<Predicate> predictList = new ArrayList<Predicate>();
 		LinkedList<RDFNode> predictUriList = ClientManagement.getSurroundingPred(entityUri);
 		
 		for (RDFNode predictUri : predictUriList) {
@@ -95,7 +95,7 @@ public class SimilarityFunction {
 			}
 			
 			if(maxScore > 0){
-				Predict predict = new Predict();
+				Predicate predict = new Predicate();
 				predict.setUri(predictUri.toString());
 				predict.setMaxScore(maxScore);
 				predict.setMatchedLabel(matchedLabel);
@@ -107,9 +107,9 @@ public class SimilarityFunction {
 		return predictList;
 	}
 	
-	public static ArrayList<Predict> getTopNPredicts(MatchDetail detail){
-		ArrayList<Predict> predicts = getSortedPredicts(detail);
-		ArrayList<Predict> result = new ArrayList<Predict>();
+	public static ArrayList<Predicate> getTopNPredicts(MatchDetail detail){
+		ArrayList<Predicate> predicts = getSortedPredicts(detail);
+		ArrayList<Predicate> result = new ArrayList<Predicate>();
 		for(int i=0; i<predictNum && i<predicts.size(); ++i){
 			if(predicts.get(i).maxScore > minSimilarityScore){
 				result.add(predicts.get(i));
