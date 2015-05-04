@@ -14,8 +14,8 @@ public class QuestionFrame extends Question {
 	public LinkedList<String> posList;
 	public LinkedList<Entity> entityList;
 	
-	QuestionClassifier questionClassifier;
-	Focus focus;
+	public QuestionClassifier questionClassifier;
+	public Focus focus;
 	
 	public QuestionFrame(int id, boolean onlydbo, boolean aggregation,
 			boolean hybrid, String answerType, ArrayList<String> keywords,

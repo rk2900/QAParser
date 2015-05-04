@@ -11,40 +11,6 @@ import finder.Pipeline;
 
 public class FocusExtraction extends TypeExtraction {
 
-//	@Deprecated
-//	public void printQuestionListWithPOS() {
-//		Pipeline pipeline = new Pipeline();
-//		
-//		int notGetCount = 0;
-//		for(int i=1; i<=300; i++) {
-//			Question q = xmlParser.getQuestionWithPseudoId(i);
-//			QuestionSingle qs = q.toQuestionSingle();
-//			QuestionClassifier qc = new QuestionClassifier();
-//			LinkedList<String> wordList = qs.qWordList;
-//			LinkedList<String> posList = pipeline.getPOSTag(qs);
-//			
-//			if(qc.classify(qs.qWordList, qs.qPOSList) == Category.RESOURCE) { //&& !QuestionClassifier.judgeComparison(wordList, posList)) {
-////				System.out.println(i+"\t"+wordList);
-////				System.out.println("\t"+posList);
-//				
-//				LinkedList<String> focusList = focusExtraction(qs.question, wordList, posList);
-//				if(focusList.size()>0) {
-//					System.out.print(i);
-//					for (String focus : focusList) {
-//						System.out.print("\t"+focus);
-//					}
-//					System.out.println();
-//				}
-//				else {
-////					System.out.println(i+"\t"+qs.question);
-//					notGetCount++;
-//				}
-//				
-//			}
-//		}
-//		System.out.println(notGetCount);
-//	}
-	
 	public static Focus extract(QuestionFrame qf) {
 		String text = qf.question;
 		LinkedList<String> oriWordList = qf.wordList;
