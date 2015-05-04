@@ -51,13 +51,23 @@ public class Type {
 	public static String getType(String str) {
 		String tmp=lemma(str);
 		for (int i=0;i<type.labellist.size();i++) {
-			if(WordNet.isSynset(tmp, type.labellist.get(i))) {
+			if(tmp.toLowerCase().replace(" ", "").equals(lemma(type.labellist.get(i)).toLowerCase().replace(" ", ""))||WordNet.isSynset(tmp, type.labellist.get(i))) {
 				return type.ontolist.get(i);
 			}
 		}
 		return null;
 	}
+	public static String getTypeFromFocus(String str) {
+		while(true) {
+			String tmp=getType(str);
+			if(tmp!=null) return tmp;
+			int index=str.indexOf(' ');
+			if(index==-1) break;
+			str=str.substring(index+1,str.length());
+		}
+		return null;
+	}
 	public static void main(String[] args) {
-		System.out.println(getType("Movies"));
+		System.out.println(getTypeFromFocus("movies"));
 	}
 }

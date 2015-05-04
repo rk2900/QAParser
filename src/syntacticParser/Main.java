@@ -16,7 +16,7 @@ import finder.Pipeline;
 public class Main {
 	public static void main(String[] args) throws IOException {
 		
-		BufferedWriter bw=new BufferedWriter(new FileWriter("./data/lx/199_ans_RNNchar.txt"));
+		BufferedWriter bw=new BufferedWriter(new FileWriter("./data/lx/showsss.txt"));
 		Pipeline pipeline=new Pipeline();
 		baseline.Main.setEntity(pipeline);
 		for (int i=1;i<=300;i++) {
@@ -26,7 +26,7 @@ public class Main {
 			for (Entity e:qf.getEntityList()) {
 				bw.write(e.getUri()+"["+e.getStart()+","+e.getEnd()+"]\r\n");
 			}
-			bw.write("\r\n");
+			bw.write("\r\n"+qf.query+"\r\n\r\n\r\n");
 		}
 		bw.close();
 	}

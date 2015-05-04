@@ -1,0 +1,7677 @@
+Give me all cosmonauts.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NNS cosmonauts)))
+    (. .)))
+Ans: syntacticParser.Node@7096b474
+
+ 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type dbo:Astronaut . 
+      { ?uri dbo:nationality res:Russia . } 
+      UNION 
+      { ?uri dbo:nationality res:Soviet_Union . } 
+} 
+
+
+
+
+In which country does the Ganges start?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN country)))
+    (SQ (VBZ does)
+      (NP (DT the) (NNS Ganges))
+      (VP (VB start)))
+    (. ?)))
+Ans: syntacticParser.Node@7be71476
+"the Ganges [4,5]"	"start "	"syntacticParser.Node@7be71476"
+http://dbpedia.org/resource/Ganges[5,5]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Ganges dbo:sourceCountry ?uri .
+} 
+
+
+
+
+When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBZ is)
+      (NP (DT the) (NN movie) (NN Worst) (NNP Case) (NNP Scenario))
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (PP (IN in)
+                (NP
+                  (NP (NNS cinemas))
+                  (PP (IN in)
+                    (NP (DT the) (NNP Netherlands))))))))))
+    (. ?)))
+Ans: syntacticParser.Node@284d4885
+"the movie Worst Case Scenario [2,6]"	"going to be in cinemas in the Netherlands "	"syntacticParser.Node@284d4885"
+http://dbpedia.org/resource/Worst_Case_Scenario_(film)[4,6]
+http://dbpedia.org/resource/Netherlands[13,14]
+
+OUT OF SCOPE
+
+
+Which German cities have more than 250000 inhabitants?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (JJ German) (NNS cities))
+    (SQ
+      (VP (VBP have)
+        (NP
+          (QP (JJR more) (IN than) (CD 250000))
+          (NNS inhabitants))))
+    (. ?)))
+Ans: syntacticParser.Node@7b2f8152
+"syntacticParser.Node@7b2f8152"	"have"	"more than 250000 inhabitants [4,7]"
+http://dbpedia.org/resource/Germany[1,1]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+       { ?uri rdf:type dbo:City . } 
+       UNION 
+       { ?uri rdf:type dbo:Town . } 
+         ?uri dbo:country res:Germany . 
+         ?uri dbo:populationTotal ?population . 
+         FILTER ( ?population > 250000 ) } 
+
+
+
+Who was John F. Kennedy's vice president?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (NNP John) (NNP F.) (NNP Kennedy) (POS 's))
+        (JJ vice) (NN president)))
+    (. ?)))
+Ans: syntacticParser.Node@61d9dd15
+http://dbpedia.org/resource/John_F._Kennedy[2,4]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { res:John_F._Kennedy dbo:vicePresident ?uri . 
+} 
+
+
+
+
+Who is the mayor of Berlin?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN mayor))
+        (PP (IN of)
+          (NP (NNP Berlin)))))
+    (. ?)))
+Ans: syntacticParser.Node@5f1bd673
+"syntacticParser.Node@5f1bd673"	"the mayor "	"Berlin [5,5]"
+http://dbpedia.org/resource/Berlin[5,5]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Berlin dbo:leader ?uri . 
+} 
+
+
+
+
+How many students does the Free University in Amsterdam have?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS students))
+    (SQ (VBZ does)
+      (NP
+        (NP (DT the) (JJ Free) (NNP University))
+        (PP (IN in)
+          (NP (NNP Amsterdam))))
+      (VP (VB have)))
+    (. ?)))
+Ans: syntacticParser.Node@33e69162
+"syntacticParser.Node@791b9887"	"the Free University "	"Amsterdam [8,8]"
+"syntacticParser.Node@791b9887"	"have "	"syntacticParser.Node@33e69162"
+http://dbpedia.org/resource/Vrije_Universiteit[5,6]
+http://dbpedia.org/resource/Amsterdam[8,8]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?num 
+WHERE { 
+        res:VU_University_Amsterdam dbo:numberOfStudents ?num . 
+} 
+
+
+
+
+What is the second highest mountain on Earth?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ second) (JJS highest) (NN mountain))
+        (PP (IN on)
+          (NP (NNP Earth)))))
+    (. ?)))
+Ans: syntacticParser.Node@79a68d19
+"syntacticParser.Node@79a68d19"	"the second highest mountain "	"Earth [7,7]"
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type dbo:Mountain . 
+        ?uri dbo:elevation ?elevation . 
+} 
+ORDER BY DESC(?elevation) 
+OFFSET 1 LIMIT 1 
+
+
+
+
+Give me all professional skateboarders from Sweden.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (JJ professional) (NNS skateboarders))
+        (PP (IN from)
+          (NP (NNP Sweden)))))
+    (. .)))
+Ans: syntacticParser.Node@46ab3c70
+"syntacticParser.Node@46ab3c70"	"all professional skateboarders "	"Sweden [6,6]"
+http://dbpedia.org/resource/Sweden[6,6]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri dbo:occupation res:Skateboarding . 
+      { ?uri dbo:birthPlace res:Sweden . } 
+      UNION 
+      { ?uri dbo:birthPlace ?place . 
+        ?place dbo:country res:Sweden . } 
+} 
+
+
+
+
+When was Alberta admitted as province?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD was)
+      (NP (NNP Alberta))
+      (VP (VBN admitted)
+        (PP (IN as) (NN province))))
+    (. ?)))
+Ans: syntacticParser.Node@20e25fe7
+"Alberta [2,2]"	"admitted as province "	"syntacticParser.Node@20e25fe7"
+http://dbpedia.org/resource/Alberta[2,2]
+
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?date 
+WHERE { 
+        res:Alberta dbp:admittancedate ?date . 
+} 
+
+
+
+
+To which countries does the Himalayan mountain system extend?
+(ROOT
+  (SBARQ
+    (WHPP (TO To)
+      (WHNP (WDT which) (NNS countries)))
+    (SQ (VBZ does)
+      (NP (DT the) (JJ Himalayan) (NN mountain) (NN system))
+      (VP (VB extend)))
+    (. ?)))
+Ans: syntacticParser.Node@4a79c8cf
+"the Himalayan mountain system [4,7]"	"extend "	"syntacticParser.Node@4a79c8cf"
+http://dbpedia.org/resource/Himalayas[5,6]
+
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Himalayas dbp:country ?uri . 
+} 
+
+
+
+
+Give me a list of all bandleaders that play trumpet.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT a) (NN list))
+        (PP (IN of)
+          (NP (DT all) (NNS bandleaders)))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP play)
+              (NP (NN trumpet)))))))
+    (. .)))
+Ans: syntacticParser.Node@694d942
+"syntacticParser.Node@694d942"	"play"	"trumpet [9,9]"
+http://dbpedia.org/resource/Bandleader[6,6]
+http://dbpedia.org/resource/Trumpet[9,9]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri dbo:occupation res:Bandleader . 
+        ?uri dbo:instrument res:Trumpet . 
+} 
+
+
+
+
+Which countries have more than ten caves?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS countries))
+    (SQ
+      (VP (VBP have)
+        (NP
+          (QP (JJR more) (IN than) (CD ten))
+          (NNP caves))))
+    (. ?)))
+Ans: syntacticParser.Node@60931e00
+"syntacticParser.Node@60931e00"	"have"	"more than ten caves [3,6]"
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type dbo:Country . 
+        ?cave rdf:type dbo:Cave . 
+      { ?cave dbo:location ?uri . } 
+      UNION 
+      { ?cave dbo:location ?loc . 
+        ?loc dbo:country ?uri . } 
+} 
+GROUP BY ?uri 
+HAVING(COUNT(?cave) > 10) 
+
+
+
+
+What is the total amount of men and women serving in the FDNY?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ total) (NN amount))
+        (PP (IN of)
+          (NP
+            (NP (NNS men)
+              (CC and)
+              (NNS women))
+            (VP (VBG serving)
+              (PP (IN in)
+                (NP (DT the) (NNP FDNY))))))))
+    (. ?)))
+Ans: syntacticParser.Node@1ad833b4
+"syntacticParser.Node@23a6b5c3"	"serving in"	"the FDNY [11,12]"
+"syntacticParser.Node@1ad833b4"	"the total amount "	"syntacticParser.Node@23a6b5c3"
+http://dbpedia.org/resource/New_York_City_Fire_Department[12,12]
+
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?num 
+WHERE { 
+        res:New_York_City_Fire_Department dbp:employees ?num . 
+} 
+
+
+
+
+Who produces Orangina?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBZ produces)
+        (NP (NNP Orangina))))
+    (. ?)))
+Ans: syntacticParser.Node@170ba653
+"syntacticParser.Node@170ba653"	"produces"	"Orangina [2,2]"
+http://dbpedia.org/resource/Orangina[2,2]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri dbo:product res:Orangina . 
+}
+
+
+
+
+Who is the Formula 1 race driver with the most races?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN Formula) (CD 1) (NN race) (NN driver))
+        (PP (IN with)
+          (NP (DT the) (JJS most) (NNS races)))))
+    (. ?)))
+Ans: syntacticParser.Node@5db4c6c1
+"syntacticParser.Node@5db4c6c1"	"the Formula 1 race driver "	"the most races [8,10]"
+http://dbpedia.org/resource/Formula_One[3,5]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type dbo:FormulaOneRacer . 
+        ?uri dbo:races ?x . 
+} 
+ORDER BY DESC(?x) 
+OFFSET 0 LIMIT 1 
+
+
+
+
+Give me all world heritage sites designated within the past two years.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NN world) (NN heritage) (NNS sites))
+        (VP (VBN designated)
+          (PP (IN within)
+            (NP (DT the) (JJ past) (CD two) (NNS years))))))
+    (. .)))
+Ans: syntacticParser.Node@4efcd578
+"syntacticParser.Node@4efcd578"	"designated within"	"the past two years [8,11]"
+http://dbpedia.org/resource/World_Heritage_Site[3,5]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+SELECT DISTINCT ?uri
+WHERE { 
+        ?uri rdf:type dbo:WorldHeritageSite . 
+      { ?uri dbp:year '2013'^^xsd:integer . }
+      UNION 
+      { ?uri dbp:year '2014'^^xsd:integer . }
+} 
+
+
+
+
+Who is the youngest player in the Premier League?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJS youngest) (NN player))
+        (PP (IN in)
+          (NP (DT the) (NN Premier) (NN League)))))
+    (. ?)))
+Ans: syntacticParser.Node@44a1949b
+"syntacticParser.Node@44a1949b"	"the youngest player "	"the Premier League [6,8]"
+http://dbpedia.org/resource/Premier_League[7,8]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri dbo:team ?x . 
+        ?x dbo:league res:Premier_League . 
+        ?uri dbo:birthDate ?y . 
+} 
+ORDER BY DESC(?y) 
+OFFSET 0 LIMIT 1 
+
+
+
+
+Give me all members of Prodigy.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS members))
+        (PP (IN of)
+          (NP (NNP Prodigy)))))
+    (. .)))
+Ans: syntacticParser.Node@136a6e73
+"syntacticParser.Node@136a6e73"	"all members "	"Prodigy [5,5]"
+http://dbpedia.org/resource/The_Prodigy[5,5]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:The_Prodigy dbo:bandMember ?uri . 
+} 
+
+
+
+
+What is the longest river?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP (DT the) (JJS longest) (NN river)))
+    (. ?)))
+Ans: syntacticParser.Node@7165e154
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type dbo:River . 
+      { ?uri dbo:length ?l . } 
+      UNION 
+      { ?uri dbp:length ?l . } 
+} 
+ORDER BY DESC(?l) 
+OFFSET 0 LIMIT 1 
+
+
+
+
+Does Breaking Bad have more episodes than Game of Thrones?
+(ROOT
+  (SQ (VBZ Does)
+    (NP (NNP Breaking) (NNP Bad))
+    (VP (VB have)
+      (NP
+        (NP (JJR more) (NNS episodes))
+        (PP (IN than)
+          (NP
+            (NP (NN Game))
+            (PP (IN of)
+              (NP (NNP Thrones)))))))
+    (. ?)))
+Ans: syntacticParser.Node@4f6d7a7c
+"syntacticParser.Node@b12d8f6"	"more episodes "	"Game of Thrones [7,9]"
+"syntacticParser.Node@4f6d7a7c"	"have"	"syntacticParser.Node@b12d8f6"
+http://dbpedia.org/resource/Breaking_Bad[1,2]
+http://dbpedia.org/resource/Game_of_Thrones[7,9]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+ASK 
+WHERE { 
+        res:Breaking_Bad dbo:numberOfEpisodes ?x . 
+        res:Game_of_Thrones dbo:numberOfEpisodes ?y . 
+        FILTER (?x > ?y) 
+} 
+
+
+
+
+Give me all cars that are produced in Germany.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS cars))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP are)
+              (VP (VBN produced)
+                (PP (IN in)
+                  (NP (NNP Germany)))))))))
+    (. .)))
+Ans: syntacticParser.Node@f802032
+"syntacticParser.Node@f802032"	"produced in"	"Germany [8,8]"
+http://dbpedia.org/resource/Germany[8,8]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type dbo:Automobile . 
+      { ?uri dbo:assembly res:Germany . } 
+      UNION 
+      { ?uri dbp:assembly res:Germany . } 
+      UNION 
+      { { ?uri dbo:manufacturer ?x . } 
+        UNION 
+        { ?uri dbp:manufacturer ?x . } 
+        { ?x dbo:locationCountry res:Germany . } 
+        UNION 
+        { ?x dbo:location res:Germany . } 
+      } 
+} 
+
+
+
+
+What were the main discoveries of the Mars rover Curiosity?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD were)
+      (NP
+        (NP (DT the) (JJ main) (NNS discoveries))
+        (PP (IN of)
+          (NP (DT the) (NNP Mars) (NN rover) (NNP Curiosity)))))
+    (. ?)))
+Ans: syntacticParser.Node@68aeae76
+"syntacticParser.Node@68aeae76"	"the main discoveries "	"the Mars rover Curiosity [6,9]"
+http://dbpedia.org/resource/Curiosity_(rover)[7,9]
+
+OUT OF SCOPE
+
+
+Give me all people that were born in Vienna and died in Berlin.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS people))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP
+              (VP (VBD were)
+                (VP (VBN born)
+                  (PP (IN in)
+                    (NP (NNP Vienna)))))
+              (CC and)
+              (VP (VBN died)
+                (PP (IN in)
+                  (NP (NNP Berlin)))))))))
+    (. .)))
+Ans: syntacticParser.Node@313ca8c1
+"syntacticParser.Node@313ca8c1"	"born in"	"Vienna [8,8]"
+"syntacticParser.Node@313ca8c1"	"died in"	"Berlin [12,12]"
+http://dbpedia.org/resource/Vienna[8,8]
+http://dbpedia.org/resource/Berlin[12,12]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri dbo:birthPlace res:Vienna . 
+        ?uri dbo:deathPlace res:Berlin . 
+} 
+
+
+
+
+Is proinsulin a protein?
+(ROOT
+  (SQ (VBZ Is)
+    (NP (NNP proinsulin))
+    (NP (DT a) (NN protein))
+    (. ?)))
+Ans: syntacticParser.Node@441355a3
+http://dbpedia.org/resource/Proinsulin[1,1]
+http://dbpedia.org/resource/Protein[3,3]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+ASK 
+WHERE { 
+        res:Proinsulin rdf:type dbo:Protein . 
+} 
+
+
+
+
+How tall is Michael Jordan?
+(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ tall))
+    (SQ (VBZ is)
+      (NP (NNP Michael) (NNP Jordan)))
+    (. ?)))
+Ans: syntacticParser.Node@167c5d58
+http://dbpedia.org/resource/Michael_Jordan[3,4]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?num 
+WHERE { 
+        res:Michael_Jordan dbo:height ?num . 
+} 
+
+
+
+
+What is the capital of Canada?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN capital))
+        (PP (IN of)
+          (NP (NNP Canada)))))
+    (. ?)))
+Ans: syntacticParser.Node@1ec5a7b4
+"syntacticParser.Node@1ec5a7b4"	"the capital "	"Canada [5,5]"
+http://dbpedia.org/resource/Canada[5,5]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Canada dbo:capital ?uri . 
+} 
+
+
+
+
+Who is the governor of Wyoming?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN governor))
+        (PP (IN of)
+          (NP (NNP Wyoming)))))
+    (. ?)))
+Ans: syntacticParser.Node@64c2a0e7
+"syntacticParser.Node@64c2a0e7"	"the governor "	"Wyoming [5,5]"
+http://dbpedia.org/resource/Wyoming[5,5]
+
+ 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Wyoming dbp:governor ?uri . 
+} 
+
+
+
+
+Do Prince Harry and Prince William have the same parents?
+(ROOT
+  (SQ (MD Do)
+    (NP
+      (NP (NNP Prince) (NNP Harry))
+      (CC and)
+      (NP (NNP Prince) (NNP William)))
+    (VP (VB have)
+      (NP (DT the) (JJ same) (NNS parents)))
+    (. ?)))
+Ans: syntacticParser.Node@6b1dfe8e
+"syntacticParser.Node@6b1dfe8e"	"have"	"the same parents [7,9]"
+http://dbpedia.org/resource/Prince_Harry_of_Wales[1,2]
+http://dbpedia.org/resource/Prince_William,_Duke_of_Cambridge[4,5]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+ASK
+WHERE { 
+        <http://dbpedia.org/resource/Prince_William,_Duke_of_Cambridge> dbo:parent ?x . 
+        <http://dbpedia.org/resource/Prince_Harry> dbo:parent ?x .
+} 
+
+
+
+
+Who was the father of Queen Elizabeth II?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NN father))
+        (PP (IN of)
+          (NP (NNP Queen) (NNP Elizabeth) (NNP II)))))
+    (. ?)))
+Ans: syntacticParser.Node@581d8df5
+"syntacticParser.Node@581d8df5"	"the father "	"Queen Elizabeth II [5,7]"
+http://dbpedia.org/resource/Elizabeth_II[5,7]
+
+ 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Elizabeth_II dbp:father ?uri . 
+} 
+
+
+
+
+Which U.S. state has been admitted latest?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNP U.S.) (NN state))
+    (SQ
+      (VP (VBZ has)
+        (VP (VBN been)
+          (VP (VBN admitted)
+            (NP (JJS latest))))))
+    (. ?)))
+Ans: syntacticParser.Node@3242577b
+"syntacticParser.Node@3242577b"	"admitted"	"latest [6,6]"
+
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type yago:StatesOfTheUnitedStates . 
+        ?uri dbp:admittancedate ?x . 
+} ORDER BY DESC(?x) 
+OFFSET 0 LIMIT 1 
+
+
+
+
+How many languages are spoken in Turkmenistan?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS languages))
+    (SQ (VBP are)
+      (VP (VBN spoken)
+        (PP (IN in)
+          (NP (NNP Turkmenistan)))))
+    (. ?)))
+Ans: syntacticParser.Node@2ea5c2be
+"syntacticParser.Node@2ea5c2be"	"spoken in"	"Turkmenistan [6,6]"
+http://dbpedia.org/resource/Turkmenistan[6,6]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT COUNT(DISTINCT ?x) 
+WHERE { 
+        res:Turkmenistan dbo:language ?x . 
+} 
+
+
+
+
+Sean Parnell is the governor of which U.S. state?
+(ROOT
+  (S
+    (NP (NNP Sean) (NNP Parnell))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN governor))
+        (WHPP (IN of)
+          (WHNP (WDT which) (NNP U.S.) (NN state)))))
+    (. ?)))
+Ans: syntacticParser.Node@64bd8282
+"syntacticParser.Node@64bd8282"	"is"	"the governor of which U.S. state [3,8]"
+http://dbpedia.org/resource/U.S._state[7,8]
+
+ 
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type yago:StatesOfTheUnitedStates . 
+        ?uri dbp:governor res:Sean_Parnell . 
+} 
+
+
+
+
+Give me all movies directed by Francis Ford Coppola.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS movies))
+        (VP (VBN directed)
+          (PP (IN by)
+            (NP (NNP Francis) (NNP Ford) (NNP Coppola))))))
+    (. .)))
+Ans: syntacticParser.Node@399e3791
+"syntacticParser.Node@399e3791"	"directed by"	"Francis Ford Coppola [6,8]"
+http://dbpedia.org/resource/Francis_Ford_Coppola[6,8]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type dbo:Film . 
+        ?uri dbo:director res:Francis_Ford_Coppola . 
+} 
+
+
+
+
+Give me all actors starring in movies directed by William Shatner.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS actors))
+        (VP (VBG starring)
+          (PP (IN in)
+            (NP
+              (NP (NNS movies))
+              (VP (VBN directed)
+                (PP (IN by)
+                  (NP (NNP William) (NNP Shatner)))))))))
+    (. .)))
+Ans: syntacticParser.Node@19ea4faa
+"syntacticParser.Node@15fc3f5a"	"directed by"	"William Shatner [9,10]"
+"syntacticParser.Node@19ea4faa"	"starring in"	"syntacticParser.Node@15fc3f5a"
+http://dbpedia.org/resource/William_Shatner[9,10]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?x dbo:director res:William_Shatner . 
+        ?x dbo:starring ?uri . 
+} 
+
+
+
+
+Are tree frogs a type of amphibian?
+(ROOT
+  (SQ (VBP Are)
+    (NP (NN tree) (NNS frogs))
+    (PP
+      (NP (DT a) (NN type))
+      (IN of)
+      (NP (NN amphibian)))
+    (. ?)))
+Ans: syntacticParser.Node@33711575
+http://dbpedia.org/resource/Tree_frog[1,2]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+ASK 
+WHERE { 
+        res:Hylidae dbo:class res:Amphibian . 
+} 
+
+
+
+
+What is the birth name of Angela Merkel?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN birth) (NN name))
+        (PP (IN of)
+          (NP (NNP Angela) (NNP Merkel)))))
+    (. ?)))
+Ans: syntacticParser.Node@72c1f3b6
+"syntacticParser.Node@72c1f3b6"	"the birth name "	"Angela Merkel [6,7]"
+http://dbpedia.org/resource/Angela_Merkel[6,7]
+
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?string 
+WHERE { 
+        res:Angela_Merkel dbp:birthName ?string . 
+} 
+
+
+
+
+Give me all Methodist politicians.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Methodist) (NNS politicians)))
+    (. .)))
+Ans: syntacticParser.Node@27533e44
+http://dbpedia.org/resource/Methodism[3,3]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type dbo:Politician . 
+        ?uri dbo:religion res:Methodism . 
+} 
+
+
+
+
+How often did Jane Fonda marry?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How) (RB often))
+    (SQ (VBD did)
+      (NP (NNP Jane) (NNS Fonda))
+      (VP (VB marry)))
+    (. ?)))
+Ans: syntacticParser.Node@3775625c
+"Jane Fonda [3,4]"	"marry "	"syntacticParser.Node@3775625c"
+http://dbpedia.org/resource/Jane_Fonda[3,4]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT COUNT(DISTINCT ?uri) 
+WHERE { 
+        res:Jane_Fonda dbo:spouse ?uri . 
+} 
+
+
+
+
+Give me all Australian nonprofit organizations.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Australian) (JJ nonprofit) (NNS organizations)))
+    (. .)))
+Ans: syntacticParser.Node@8c9f4cf
+http://dbpedia.org/resource/Australia[3,3]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri dbo:type res:Nonprofit_organization . 
+      { ?uri dbo:locationCountry res:Australia . } 
+      UNION 
+      { ?uri dbo:location ?x . 
+        ?x dbo:country res:Australia . } 
+} 
+
+
+
+
+In which military conflicts did Lawrence of Arabia participate?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which)
+        (NP (JJ military) (NNS conflicts))))
+    (SQ (VBD did)
+      (NP
+        (NP (NN Lawrence))
+        (PP (IN of)
+          (NP (NNP Arabia))))
+      (VP (VB participate)))
+    (. ?)))
+Ans: syntacticParser.Node@59ba7b1a
+"Lawrence of Arabia [5,7]"	"participate "	"syntacticParser.Node@59ba7b1a"
+http://dbpedia.org/resource/T._E._Lawrence[5,7]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:T._E._Lawrence dbo:battle ?uri . 
+} 
+
+
+
+
+Who developed Minecraft?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD developed)
+        (NP (NNP Minecraft))))
+    (. ?)))
+Ans: syntacticParser.Node@2b8daae0
+"syntacticParser.Node@2b8daae0"	"developed"	"Minecraft [2,2]"
+http://dbpedia.org/resource/Minecraft[2,2]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Minecraft dbo:developer ?uri . 
+} 
+
+
+
+
+What is the melting point of copper?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJS melting) (NN point))
+        (PP (IN of)
+          (NP (NN copper)))))
+    (. ?)))
+Ans: syntacticParser.Node@5b15933e
+"syntacticParser.Node@5b15933e"	"the melting point "	"copper [6,6]"
+http://dbpedia.org/resource/Melting_point[3,4]
+http://dbpedia.org/resource/Copper[6,6]
+
+OUT OF SCOPE
+
+
+Give me all sister cities of Brno.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (JJ sister) (NNS cities))
+        (PP (IN of)
+          (NP (NNP Brno)))))
+    (. .)))
+Ans: syntacticParser.Node@56132499
+"syntacticParser.Node@56132499"	"all sister cities "	"Brno [6,6]"
+http://dbpedia.org/resource/Twin_towns_and_sister_cities[3,4]
+http://dbpedia.org/resource/Brno[6,6]
+
+OUT OF SCOPE
+
+
+How many inhabitants does Maribor have?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS inhabitants))
+    (SQ (VBZ does)
+      (NP (NNP Maribor))
+      (VP (VB have)))
+    (. ?)))
+Ans: syntacticParser.Node@9da9833
+"Maribor [4,4]"	"have "	"syntacticParser.Node@9da9833"
+http://dbpedia.org/resource/Maribor[4,4]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?num 
+WHERE { 
+        res:Maribor dbo:populationTotal ?num . 
+} 
+
+
+
+
+Give me all companies in Munich.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NNS companies))
+      (PP (IN in)
+        (NP (NNP Munich))))
+    (. .)))
+Ans: syntacticParser.Node@294de4bd
+http://dbpedia.org/resource/Munich[5,5]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type dbo:Company . 
+      { ?uri dbo:location res:Munich . } 
+      UNION 
+      { ?uri dbo:headquarter res:Munich . } 
+      UNION 
+      { ?uri dbo:locationCity res:Munich . } 
+} 
+
+
+
+
+How tall is Claudia Schiffer?
+(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ tall))
+    (SQ (VBZ is)
+      (NP (NNP Claudia) (NNP Schiffer)))
+    (. ?)))
+Ans: syntacticParser.Node@3cf6b00d
+http://dbpedia.org/resource/Claudia_Schiffer[3,4]
+
+ 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT DISTINCT ?height 
+WHERE { 
+        res:Claudia_Schiffer dbo:height ?height . 
+} 
+
+
+
+
+List all games by GMT.
+(ROOT
+  (S
+    (VP (VB List)
+      (NP (DT all) (NNS games))
+      (PP (IN by)
+        (NP (NNS GMT))))
+    (. .)))
+Ans: syntacticParser.Node@305d1af8
+http://dbpedia.org/resource/GMT_Games[4,4]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri dbo:publisher res:GMT_Games . 
+} 
+
+
+
+
+Who founded Intel?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD founded)
+        (NP (NNP Intel))))
+    (. ?)))
+Ans: syntacticParser.Node@261027eb
+"syntacticParser.Node@261027eb"	"founded"	"Intel [2,2]"
+http://dbpedia.org/resource/Intel[2,2]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Intel dbo:foundedBy ?uri . 
+} 
+
+
+
+
+Who is the husband of Amanda Palmer?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN husband))
+        (PP (IN of)
+          (NP (NNP Amanda) (NNP Palmer)))))
+    (. ?)))
+Ans: syntacticParser.Node@3479fe66
+"syntacticParser.Node@3479fe66"	"the husband "	"Amanda Palmer [5,6]"
+http://dbpedia.org/resource/Amanda_Palmer[5,6]
+
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Amanda_Palmer dbp:spouse ?uri . 
+} 
+
+
+
+
+Give me all breeds of the German Shepherd dog.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NN breeds))
+        (PP (IN of)
+          (NP (DT the) (JJ German) (NNP Shepherd) (NN dog)))))
+    (. .)))
+Ans: syntacticParser.Node@c9ab14c
+"syntacticParser.Node@c9ab14c"	"all breeds "	"the German Shepherd dog [5,8]"
+http://dbpedia.org/resource/German_Shepherd[6,8]
+
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri dbp:breed res:German_Shepherd . 
+} 
+
+
+
+
+Which cities does the Weser flow through?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS cities))
+    (SQ (VBZ does)
+      (NP (DT the) (NNP Weser))
+      (VP (VB flow)
+        (PP (IN through))))
+    (. ?)))
+Ans: syntacticParser.Node@2a384f65
+"the Weser [3,4]"	"flow through "	"syntacticParser.Node@2a384f65"
+http://dbpedia.org/resource/Weser[4,4]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Weser dbo:city ?uri . 
+} 
+
+
+
+
+Which countries are connected by the Rhine?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS countries))
+    (SQ (VBP are)
+      (VP (VBN connected)
+        (PP (IN by)
+          (NP (DT the) (NN Rhine)))))
+    (. ?)))
+Ans: syntacticParser.Node@3c73639e
+"syntacticParser.Node@3c73639e"	"connected by"	"the Rhine [5,6]"
+http://dbpedia.org/resource/Rhine[6,6]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Rhine dbp:country ?string .  
+        ?uri rdf:type dbo:Country .  
+        ?uri rdfs:label ?string . 
+} 
+
+
+
+
+Which professional surfers were born in Australia?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN professional) (NNS surfers))
+    (SQ (VBD were)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Australia)))))
+    (. ?)))
+Ans: syntacticParser.Node@3eaba70d
+"syntacticParser.Node@3eaba70d"	"born in"	"Australia [6,6]"
+http://dbpedia.org/resource/Surfing[2,2]
+http://dbpedia.org/resource/Australia[6,6]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri dbo:occupation res:Surfing .  
+       { ?uri dbo:birthPlace res:Australia . }
+       UNION 
+       { ?uri dbo:birthPlace ?x . 
+         ?x dbo:country res:Australia . }
+} 
+
+
+
+
+What is the average temperature on Hawaii?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ average) (NN temperature))
+        (PP (IN on)
+          (NP (NNP Hawaii)))))
+    (. ?)))
+Ans: syntacticParser.Node@57603672
+"syntacticParser.Node@57603672"	"the average temperature "	"Hawaii [6,6]"
+http://dbpedia.org/resource/Temperature[4,4]
+http://dbpedia.org/resource/Hawaii[6,6]
+
+OUT OF SCOPE
+
+
+In which UK city are the headquarters of the MI6?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN UK) (NN city)))
+    (SQ (VBP are)
+      (NP
+        (NP (DT the) (NN headquarters))
+        (PP (IN of)
+          (NP (DT the) (NNP MI6)))))
+    (. ?)))
+Ans: syntacticParser.Node@2c780cec
+"syntacticParser.Node@2c780cec"	"the headquarters "	"the MI6 [8,9]"
+http://dbpedia.org/resource/United_Kingdom[2,2]
+http://dbpedia.org/resource/Headquarters[6,6]
+http://dbpedia.org/resource/Secret_Intelligence_Service[9,9]
+
+ 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Secret_Intelligence_Service dbo:headquarter ?uri . 
+        ?uri dbo:country res:United_Kingdom . 
+}  
+
+
+
+
+Which other weapons did the designer of the Uzi develop?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (JJ other) (NNS weapons))
+    (SQ (VBD did)
+      (NP
+        (NP (DT the) (NN designer))
+        (PP (IN of)
+          (NP (DT the) (NN Uzi))))
+      (VP (VB develop)))
+    (. ?)))
+Ans: syntacticParser.Node@47c69152
+"syntacticParser.Node@5ad76a50"	"the designer "	"the Uzi [7,8]"
+"syntacticParser.Node@5ad76a50"	"develop "	"syntacticParser.Node@47c69152"
+http://dbpedia.org/resource/Uzi[8,8]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type dbo:Weapon .  
+        ?uri dbp:designer ?x . 
+        res:Uzi dbp:designer ?x . 
+        FILTER (?uri != res:Uzi) 
+} 
+
+
+
+
+Who created Goofy?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD created)
+        (NP (NNP Goofy))))
+    (. ?)))
+Ans: syntacticParser.Node@64e9b5ca
+"syntacticParser.Node@64e9b5ca"	"created"	"Goofy [2,2]"
+http://dbpedia.org/resource/Goofy[2,2]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Goofy dbo:creator ?uri . 
+} 
+
+
+
+
+Was the Cuban Missile Crisis earlier than the Bay of Pigs Invasion?
+(ROOT
+  (SQ (VBD Was)
+    (NP (DT the) (JJ Cuban) (NNP Missile) (NNP Crisis))
+    (ADJP (JJR earlier)
+      (PP (IN than)
+        (NP
+          (NP (DT the) (NNP Bay))
+          (PP (IN of)
+            (NP (NNP Pigs) (NNP Invasion))))))
+    (. ?)))
+Ans: syntacticParser.Node@1216652a
+http://dbpedia.org/resource/Cuban_Missile_Crisis[2,4]
+http://dbpedia.org/resource/Bay_of_Pigs_Invasion[8,11]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+ASK 
+WHERE { 
+        res:Cuban_missile_crisis dbo:date ?x . 
+        res:Bay_of_Pigs_Invasion dbo:date ?y . 
+        FILTER (?x < ?y) 
+} 
+
+
+
+
+Give me all islands that belong to Japan.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS islands))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP belong)
+              (PP (TO to)
+                (NP (NNP Japan))))))))
+    (. .)))
+Ans: syntacticParser.Node@8b7da00
+"syntacticParser.Node@8b7da00"	"belong to"	"Japan [7,7]"
+http://dbpedia.org/resource/Japan[7,7]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type dbo:Island .  
+        ?uri dbo:country res:Japan . 
+} 
+
+
+
+
+Who invented the zipper?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD invented)
+        (NP (DT the) (NN zipper))))
+    (. ?)))
+Ans: syntacticParser.Node@3c1c17aa
+"syntacticParser.Node@3c1c17aa"	"invented"	"the zipper [2,3]"
+http://dbpedia.org/resource/Zipper[3,3]
+
+OUT OF SCOPE
+
+
+What is the ruling party in Lisbon?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ ruling) (NN party))
+        (PP (IN in)
+          (NP (NNP Lisbon)))))
+    (. ?)))
+Ans: syntacticParser.Node@4180c04b
+"syntacticParser.Node@4180c04b"	"the ruling party "	"Lisbon [6,6]"
+http://dbpedia.org/resource/Lisbon[6,6]
+
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Lisbon dbp:leaderParty ?uri . 
+} 
+
+
+
+
+What are the nicknames of San Francisco?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP are)
+      (NP
+        (NP (DT the) (NN nicknames))
+        (PP (IN of)
+          (NP (NNP San) (NNP Francisco)))))
+    (. ?)))
+Ans: syntacticParser.Node@117c2204
+"syntacticParser.Node@117c2204"	"the nicknames "	"San Francisco [5,6]"
+http://dbpedia.org/resource/Nickname[3,3]
+http://dbpedia.org/resource/San_Francisco[5,6]
+
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?string 
+WHERE { 
+        res:San_Francisco dbp:nickname ?string . 
+} 
+
+
+
+
+Which Greek goddesses dwelt on Mount Olympus?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which)
+      (NP (JJ Greek) (NNS goddesses)))
+    (SQ
+      (VP (VBZ dwelt)
+        (PP (IN on)
+          (NP (NNP Mount) (NNP Olympus)))))
+    (. ?)))
+Ans: syntacticParser.Node@7ba9a2cf
+"syntacticParser.Node@7ba9a2cf"	"dwelt on"	"Mount Olympus [5,6]"
+http://dbpedia.org/resource/Mount_Olympus[5,6]
+
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type yago:GreekGoddesses .  
+        ?uri dbp:abode res:Mount_Olympus . 
+} 
+
+
+
+
+When were the Hells Angels founded?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD were)
+      (NP (DT the) (NN Hells) (NN Angels))
+      (VP (VBN founded)))
+    (. ?)))
+Ans: syntacticParser.Node@647d3edf
+"the Hells Angels [2,4]"	"founded "	"syntacticParser.Node@647d3edf"
+http://dbpedia.org/resource/Hells_Angels[3,4]
+
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?date 
+WHERE { 
+        res:Hells_Angels dbp:founded ?date . 
+} 
+
+
+
+
+Give me all Apollo 14 astronauts.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NN Apollo) (CD 14) (NNS astronauts)))
+    (. .)))
+Ans: syntacticParser.Node@4c78f8db
+http://dbpedia.org/resource/Apollo_14[3,4]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri dbo:mission res:Apollo_14 . 
+} 
+
+
+
+
+What is the time zone of Salt Lake City?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the)
+          (ADVP (NN time))
+          (NN zone))
+        (PP (IN of)
+          (NP (NNP Salt) (NNP Lake) (NNP City)))))
+    (. ?)))
+Ans: syntacticParser.Node@5f8ab841
+"syntacticParser.Node@5f8ab841"	"the time zone "	"Salt Lake City [6,8]"
+http://dbpedia.org/resource/Time_zone[3,4]
+http://dbpedia.org/resource/Salt_Lake_City[6,8]
+
+ 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Salt_Lake_City dbp:timezone ?uri . 
+} 
+
+
+
+
+Which U.S. states are in the same time zone as Utah?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNP U.S.) (NNS states))
+    (SQ (VBP are)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (JJ same) (NN time))
+          (ADVP (RB zone)
+            (PP (IN as)
+              (NP (NNP Utah)))))))
+    (. ?)))
+Ans: syntacticParser.Node@1e93d42b
+http://dbpedia.org/resource/Time_zone[7,8]
+http://dbpedia.org/resource/Utah[10,10]
+
+ 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Utah dbp:timezone ?x .  
+        ?uri rdf:type yago:StatesOfTheUnitedStates .  
+        ?uri dbp:timezone ?x . 
+        FILTER (?uri != res:Utah) 
+} 
+
+
+
+
+Give me the capitals of all countries in Africa.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NNS capitals))
+        (PP (IN of)
+          (NP
+            (NP (DT all) (NNS countries))
+            (PP (IN in)
+              (NP (NNP Africa)))))))
+    (. .)))
+Ans: syntacticParser.Node@69825491
+"syntacticParser.Node@168d1c43"	"all countries "	"Africa [8,8]"
+"syntacticParser.Node@69825491"	"the capitals "	"syntacticParser.Node@168d1c43"
+http://dbpedia.org/resource/Africa[8,8]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?states rdf:type yago:AfricanCountries . 
+        ?states dbo:capital ?uri . 
+} 
+
+
+
+
+Give me a list of all lakes in Denmark.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT a) (NN list))
+        (PP (IN of)
+          (NP
+            (NP (DT all) (NN lakes))
+            (PP (IN in)
+              (NP (NNP Denmark)))))))
+    (. .)))
+Ans: syntacticParser.Node@3b40c647
+"syntacticParser.Node@3b40c647"	"all lakes "	"Denmark [8,8]"
+http://dbpedia.org/resource/Denmark[8,8]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        { ?uri rdf:type dbo:Lake .  
+          ?uri dbo:country res:Denmark . } 
+        UNION 
+        { ?uri rdf:type yago:LakesOfDenmark . } 
+} 
+
+
+
+
+How many missions does the Soyuz programme have?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS missions))
+    (SQ (VBZ does)
+      (NP (DT the) (NN Soyuz) (NN programme))
+      (VP (VB have)))
+    (. ?)))
+Ans: syntacticParser.Node@5d78859d
+"the Soyuz programme [4,6]"	"have "	"syntacticParser.Node@5d78859d"
+http://dbpedia.org/resource/Soyuz_programme[5,6]
+
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT COUNT(DISTINCT ?uri)
+WHERE { 
+        ?uri dbp:programme res:Soyuz_programme . 
+}  
+
+
+
+
+Did Socrates influence Aristotle?
+(ROOT
+  (SQ (VBD Did)
+    (NP (NNS Socrates))
+    (VP (VB influence)
+      (NP (NNP Aristotle)))
+    (. ?)))
+Ans: syntacticParser.Node@77a73f9
+"syntacticParser.Node@77a73f9"	"influence"	"Aristotle [3,3]"
+http://dbpedia.org/resource/Socrates[1,1]
+http://dbpedia.org/resource/Aristotle[3,3]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+ASK 
+WHERE { 
+        res:Socrates dbo:influenced res:Aristotle . 
+} 
+
+
+
+
+Give me all Danish movies.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (PDT all) (PRP$ Danish) (NNS movies)))
+    (. .)))
+Ans: syntacticParser.Node@cac8ca0
+http://dbpedia.org/resource/Denmark[3,3]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type dbo:Film .  
+        ?uri dbo:country res:Denmark . 
+} 
+
+
+
+
+Give me all launch pads operated by NASA.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (JJ launch) (NNS pads))
+        (VP (VBN operated)
+          (PP (IN by)
+            (NP (NNP NASA))))))
+    (. .)))
+Ans: syntacticParser.Node@32b8800
+"syntacticParser.Node@32b8800"	"operated by"	"NASA [7,7]"
+http://dbpedia.org/resource/Launch_pad[3,4]
+http://dbpedia.org/resource/NASA[7,7]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type dbo:LaunchPad .  
+        ?uri dbo:operator res:NASA . 
+} 
+
+
+
+
+Which instruments does Cat Stevens play?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS instruments))
+    (SQ (VBZ does)
+      (NP (NNP Cat) (NNP Stevens))
+      (VP (VB play)))
+    (. ?)))
+Ans: syntacticParser.Node@d09250e
+"Cat Stevens [3,4]"	"play "	"syntacticParser.Node@d09250e"
+http://dbpedia.org/resource/Cat_Stevens[3,4]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Cat_Stevens dbo:instrument ?uri . 
+} 
+
+
+
+
+Which ships were called after Benjamin Franklin?
+(ROOT
+  (S
+    (NP (JJ Which) (NNS ships))
+    (VP (VBD were)
+      (VP (VBN called)
+        (PP (IN after)
+          (NP (NNP Benjamin) (NNP Franklin)))))
+    (. ?)))
+Ans: syntacticParser.Node@5d2facf2
+"syntacticParser.Node@5d2facf2"	"called after"	"Benjamin Franklin [5,6]"
+http://dbpedia.org/resource/Benjamin_Franklin[5,6]
+
+ 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri dbp:shipNamesake res:Benjamin_Franklin . 
+} 
+
+
+
+
+Who are the parents of the wife of Juan Carlos I?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBP are)
+      (NP
+        (NP (DT the) (NNS parents))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN wife))
+            (PP (IN of)
+              (NP (NNP Juan) (NNP Carlos) (NNP I)))))))
+    (. ?)))
+Ans: syntacticParser.Node@a6da66e
+"syntacticParser.Node@392049a9"	"the wife "	"Juan Carlos I [8,10]"
+"syntacticParser.Node@a6da66e"	"the parents "	"syntacticParser.Node@392049a9"
+http://dbpedia.org/resource/Juan_Carlos_I_of_Spain[8,10]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Juan_Carlos_I_of_Spain dbo:spouse ?x . 
+        ?x dbo:parent ?uri . 
+} 
+
+
+
+
+How many employees does Google have?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS employees))
+    (SQ (VBZ does)
+      (NP (NNP Google))
+      (VP (VB have)))
+    (. ?)))
+Ans: syntacticParser.Node@5ce5a7fb
+"Google [4,4]"	"have "	"syntacticParser.Node@5ce5a7fb"
+http://dbpedia.org/resource/Google[4,4]
+
+ 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT DISTINCT ?num 
+WHERE { 
+        res:Google dbo:numberOfEmployees ?num . 
+} 
+
+
+
+
+Did Tesla win a nobel prize in physics?
+(ROOT
+  (SQ (VBD Did)
+    (NP (NNS Tesla))
+    (VP (VB win)
+      (NP
+        (NP (DT a) (JJ nobel) (NN prize))
+        (PP (IN in)
+          (NP (NN physics)))))
+    (. ?)))
+Ans: syntacticParser.Node@227b6277
+"syntacticParser.Node@49909ff7"	"a nobel prize "	"physics [7,7]"
+"syntacticParser.Node@227b6277"	"win"	"syntacticParser.Node@49909ff7"
+http://dbpedia.org/resource/Nikola_Tesla[1,1]
+http://dbpedia.org/resource/Nobel_Prize[4,5]
+http://dbpedia.org/resource/Physics[7,7]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+ASK 
+WHERE { 
+        res:Nikola_Tesla dbo:award res:Nobel_Prize_in_Physics . 
+} 
+
+
+
+
+Give me all cities in New Jersey with more than 100000 inhabitants.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS cities))
+        (PP (IN in)
+          (NP (NNP New) (NNP Jersey))))
+      (PP (IN with)
+        (NP
+          (QP (JJR more) (IN than) (CD 100000))
+          (NNS inhabitants))))
+    (. .)))
+Ans: syntacticParser.Node@1be430cd
+"syntacticParser.Node@1be430cd"	"all cities "	"New Jersey [5,6]"
+http://dbpedia.org/resource/New_Jersey[5,6]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type dbo:City .  
+        ?uri dbo:isPartOf res:New_Jersey .  
+        ?uri dbo:populationTotal ?inhabitants . 
+        FILTER (?inhabitants > 100000) . 
+} 
+
+
+
+
+Is Rita Wilson the wife of Tom Hanks?
+(ROOT
+  (SQ (VBZ Is)
+    (NP (NNP Rita) (NNP Wilson))
+    (NP
+      (NP (DT the) (NN wife))
+      (PP (IN of)
+        (NP (NNP Tom) (NNP Hanks))))
+    (. ?)))
+Ans: syntacticParser.Node@3bc06bf4
+"syntacticParser.Node@3bc06bf4"	"the wife "	"Tom Hanks [6,7]"
+http://dbpedia.org/resource/Rita_Wilson[1,2]
+http://dbpedia.org/resource/Tom_Hanks[6,7]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+ASK 
+WHERE { 
+        res:Tom_Hanks dbo:spouse res:Rita_Wilson . 
+} 
+
+
+
+
+When was the Statue of Liberty built?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NNP Statue))
+        (PP (IN of)
+          (NP (NNP Liberty))))
+      (VP (VBN built)))
+    (. ?)))
+Ans: syntacticParser.Node@3e0fa9f9
+"the Statue of Liberty [2,5]"	"built "	"syntacticParser.Node@3e0fa9f9"
+http://dbpedia.org/resource/Statue_of_Liberty[3,5]
+
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?date 
+WHERE { 
+        res:Statue_of_Liberty dbp:beginningDate ?date . 
+} 
+
+
+
+
+In which U.S. state is Fort Knox located?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NNP U.S.) (NN state)))
+    (SQ (VBZ is)
+      (NP (NNP Fort) (NNP Knox))
+      (VP (VBN located)))
+    (. ?)))
+Ans: syntacticParser.Node@23c85495
+"Fort Knox [5,6]"	"located "	"syntacticParser.Node@23c85495"
+http://dbpedia.org/resource/Fort_Knox[5,6]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Fort_Knox dbp:location ?uri .  
+        ?uri dbo:country res:United_States . 
+} 
+
+
+
+
+How many children did Benjamin Franklin have?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS children))
+    (SQ (VBD did)
+      (NP (NNP Benjamin) (NNP Franklin))
+      (VP (VB have)))
+    (. ?)))
+Ans: syntacticParser.Node@61918248
+"Benjamin Franklin [4,5]"	"have "	"syntacticParser.Node@61918248"
+http://dbpedia.org/resource/Benjamin_Franklin[4,5]
+
+ 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT COUNT(DISTINCT ?uri) 
+WHERE { 
+        res:Benjamin_Franklin dbo:child ?uri . 
+} 
+
+
+
+
+When did Michael Jackson die?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD did)
+      (NP (NNP Michael) (NNP Jackson))
+      (VP (VB die)))
+    (. ?)))
+Ans: syntacticParser.Node@661f9028
+"Michael Jackson [2,3]"	"die "	"syntacticParser.Node@661f9028"
+http://dbpedia.org/resource/Michael_Jackson[2,3]
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?date 
+WHERE { 
+        res:Michael_Jackson dbo:deathDate ?date . 
+} 
+
+
+
+
+Which Chess players died in the same place they were born in?
+(ROOT
+  (FRAG
+    (SBAR
+      (WHNP (WDT Which))
+      (S
+        (NP (NNP Chess) (NNS players))
+        (VP (VBD died)
+          (PP (IN in)
+            (NP
+              (NP (DT the) (JJ same) (NN place))
+              (SBAR
+                (S
+                  (NP (PRP they))
+                  (VP (VBD were)
+                    (VP (VBN born)
+                      (PP (IN in)))))))))))
+    (. ?)))
+Ans: syntacticParser.Node@4266a43d
+"syntacticParser.Node@4266a43d"	"died in"	"the same place they were born in [5,11]"
+
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type dbo:ChessPlayer .  
+        ?uri dbo:birthPlace ?x .  
+        ?uri dbo:deathPlace ?y . 
+        FILTER (?x = ?y) . 
+} 
+
+
+
+
+List the children of Margaret Thatcher.
+(ROOT
+  (S
+    (VP (VB List)
+      (NP
+        (NP (DT the) (NN children))
+        (PP (IN of)
+          (NP (NNP Margaret) (NNP Thatcher)))))
+    (. .)))
+Ans: syntacticParser.Node@1816f44e
+"syntacticParser.Node@1816f44e"	"the children "	"Margaret Thatcher [4,5]"
+http://dbpedia.org/resource/Margaret_Thatcher[4,5]
+
+ 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Margaret_Thatcher dbo:child ?uri . 
+} 
+
+
+
+
+Who was called Frank The Tank?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (VP (VBN called)
+        (NP (NNP Frank) (DT The) (NN Tank))))
+    (. ?)))
+Ans: syntacticParser.Node@30f06861
+"syntacticParser.Node@30f06861"	"called"	"Frank The Tank [3,5]"
+
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri dbp:nickname 'Frank The Tank'@en . 
+}
+
+
+
+
+Was Margaret Thatcher a chemist?
+(ROOT
+  (SQ (VBD Was)
+    (NP (NNP Margaret) (NNP Thatcher))
+    (NP (DT a) (NN chemist))
+    (. ?)))
+Ans: syntacticParser.Node@600951e6
+http://dbpedia.org/resource/Margaret_Thatcher[1,2]
+
+ 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+ASK 
+WHERE { 
+        res:Margaret_Thatcher dbo:profession res:Chemist . 
+} 
+
+
+
+
+Was Marc Chagall a jew?
+(ROOT
+  (SQ (VBD Was)
+    (NP (NNP Marc) (NNP Chagall))
+    (NP (DT a) (NNS jew))
+    (. ?)))
+Ans: syntacticParser.Node@4b542205
+http://dbpedia.org/resource/Marc_Chagall[1,2]
+
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+ASK 
+WHERE {
+       res:Marc_Chagall dbp:ethnicity 'Jewish'@en .
+}
+
+
+
+Which museum exhibits The Scream by Munch?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN museum))
+    (SQ
+      (VP (VBZ exhibits)
+        (NP (DT The) (NN Scream))
+        (PP (IN by)
+          (NP (NNP Munch)))))
+    (. ?)))
+Ans: syntacticParser.Node@30f81a10
+http://dbpedia.org/resource/The_Scream[3,4]
+http://dbpedia.org/resource/Edvard_Munch[6,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {
+       res:The_Scream dbo:museum ?uri .
+}
+
+
+
+Give me all books by William Goldman with more than 300 pages.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS books))
+        (PP (IN by)
+          (NP (NNP William) (NNP Goldman))))
+      (PP (IN with)
+        (NP
+          (QP (JJR more) (IN than) (CD 300))
+          (NNS pages))))
+    (. .)))
+Ans: syntacticParser.Node@514f5617
+"syntacticParser.Node@514f5617"	"all books "	"William Goldman [5,6]"
+http://dbpedia.org/resource/William_Goldman[5,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:Book .
+        ?uri dbo:author res:William_Goldman .
+        ?uri dbo:numberOfPages ?x .
+        FILTER (?x > 300)
+}
+
+
+
+Which books by Kerouac were published by Viking Press?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which)
+      (NP
+        (NP (NNS books))
+        (PP (IN by)
+          (NP (NNP Kerouac)))))
+    (SQ (VBD were)
+      (VP (VBN published)
+        (PP (IN by)
+          (NP (NNP Viking) (NNP Press)))))
+    (. ?)))
+Ans: syntacticParser.Node@20d39425
+"syntacticParser.Node@20d39425"	"books "	"Kerouac [3,3]"
+"syntacticParser.Node@20d39425"	"published by"	"Viking Press [7,8]"
+http://dbpedia.org/resource/Jack_Kerouac[3,3]
+http://dbpedia.org/resource/Viking_Press[7,8]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:Book .
+        ?uri dbo:publisher res:Viking_Press .
+        ?uri dbo:author res:Jack_Kerouac .
+}
+
+
+
+Give me a list of all American inventions.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT a) (NN list))
+        (PP (IN of)
+          (NP (DT all) (JJ American) (NNS inventions)))))
+    (. .)))
+Ans: syntacticParser.Node@40e3a43f
+
+
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type yago:AmericanInventions .
+}
+
+
+
+How high is the Mount Everest?
+(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ high))
+    (SQ (VBZ is)
+      (NP (DT the) (NNP Mount) (NNP Everest)))
+    (. ?)))
+Ans: syntacticParser.Node@93c2b54
+http://dbpedia.org/resource/Mount_Everest[4,5]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?num 
+WHERE {
+        res:Mount_Everest dbo:elevation ?num.
+}
+
+
+
+Who created the comic Captain America?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD created)
+        (NP (DT the) (JJ comic) (NNP Captain) (NNP America))))
+    (. ?)))
+Ans: syntacticParser.Node@214fd5eb
+"syntacticParser.Node@214fd5eb"	"created"	"the comic Captain America [2,5]"
+http://dbpedia.org/resource/Captain_America[4,5]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Captain_America dbo:creator ?uri .
+}
+
+
+
+How many people live in the capital of Australia?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS people))
+    (SQ
+      (VP (VBP live)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN capital))
+            (PP (IN of)
+              (NP (NNP Australia)))))))
+    (. ?)))
+Ans: syntacticParser.Node@57d45661
+"syntacticParser.Node@6c6bbb60"	"the capital "	"Australia [8,8]"
+"syntacticParser.Node@57d45661"	"live in"	"syntacticParser.Node@6c6bbb60"
+http://dbpedia.org/resource/Australia[8,8]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?num 
+WHERE {
+        res:Australia dbo:capital ?x .
+        ?x dbo:populationTotal ?num .
+}
+
+
+
+What is the largest city in Australia?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJS largest) (NN city))
+        (PP (IN in)
+          (NP (NNP Australia)))))
+    (. ?)))
+Ans: syntacticParser.Node@1a37c3d5
+"syntacticParser.Node@1a37c3d5"	"the largest city "	"Australia [6,6]"
+http://dbpedia.org/resource/Australia[6,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+       res:Australia dbo:largestCity ?uri .
+}
+
+
+
+Who composed the music for Harold and Maude?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD composed)
+        (NP
+          (NP (DT the) (NN music))
+          (PP (IN for)
+            (NP (NNP Harold)
+              (CC and)
+              (NNP Maude))))))
+    (. ?)))
+Ans: syntacticParser.Node@3b7ac889
+"syntacticParser.Node@2431531b"	"the music "	"Harold and Maude [5,7]"
+"syntacticParser.Node@3b7ac889"	"composed"	"syntacticParser.Node@2431531b"
+http://dbpedia.org/resource/Harold_and_Maude[5,7]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?uri 
+WHERE {
+       res:Harold_and_Maude dbo:musicComposer ?uri .
+}
+
+
+
+Which films starring Clint Eastwood did he direct himself?
+(ROOT
+  (SBARQ
+    (WHNP
+      (NP (WDT Which) (NNS films))
+      (PP (VBG starring)
+        (NP (NNP Clint) (NNP Eastwood))))
+    (SQ (VBD did)
+      (NP (PRP he))
+      (VP (VB direct)
+        (NP (PRP himself))))
+    (. ?)))
+Ans: syntacticParser.Node@10018a1f
+"he [6,6]"	"direct himself "	"syntacticParser.Node@10018a1f"
+http://dbpedia.org/resource/Clint_Eastwood[3,4]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri dbo:director res:Clint_Eastwood .
+        ?uri dbo:starring res:Clint_Eastwood .
+}
+
+
+
+In which city was the former Dutch queen Juliana buried?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN city)))
+    (SQ (VBD was)
+      (NP (DT the) (JJ former) (JJ Dutch) (NN queen) (NNP Juliana))
+      (VP (VBN buried)))
+    (. ?)))
+Ans: syntacticParser.Node@1de0bdf2
+"the former Dutch queen Juliana [4,8]"	"buried "	"syntacticParser.Node@1de0bdf2"
+http://dbpedia.org/resource/Juliana_of_the_Netherlands[6,8]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Juliana_of_the_Netherlands dbo:restingPlace ?uri.
+        ?uri rdf:type dbo:Settlement .
+}
+
+
+
+Is Egypts largest city also its capital?
+(ROOT
+  (SQ (VBZ Is)
+    (NP (NNP Egypts))
+    (NP
+      (NP (JJS largest) (NN city))
+      (PP (RB also)
+        (NP (PRP$ its) (NN capital))))
+    (. ?)))
+Ans: syntacticParser.Node@1deae78a
+"syntacticParser.Node@1deae78a"	"largest city "	"its capital [5,6]"
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+ASK 
+WHERE {
+        res:Egypt dbo:largestCity ?large .
+        res:Egypt dbo:capital ?capital .
+        FILTER (?large = ?capital)
+}
+
+
+
+Where is the residence of the prime minister of Spain?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN residence))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (JJ prime) (NN minister))
+            (PP (IN of)
+              (NP (NNP Spain)))))))
+    (. ?)))
+Ans: syntacticParser.Node@7ebd5808
+"syntacticParser.Node@7ebd5808"	"the residence "	"the prime minister of Spain [5,9]"
+http://dbpedia.org/resource/Prime_Minister_of_Spain[6,9]
+
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Prime_Minister_of_Spain dbp:residence ?uri .
+}
+
+
+
+Which U.S. state has the abbreviation MN?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNP U.S.) (NN state))
+    (SQ
+      (VP (VBZ has)
+        (NP (DT the) (NN abbreviation) (NNP MN))))
+    (. ?)))
+Ans: syntacticParser.Node@660bec0e
+"syntacticParser.Node@660bec0e"	"has"	"the abbreviation MN [4,6]"
+
+
+PREFIX dbp:  <http://dbpedia.org/property/>
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type yago:StatesOfTheUnitedStates .
+        ?uri dbp:postalabbreviation 'MN'@en .
+}
+
+
+
+Show me all songs from Bruce Springsteen released between 1980 and 1990.
+(ROOT
+  (S
+    (VP (VB Show)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS songs))
+        (PP (IN from)
+          (NP
+            (NP (NNP Bruce) (NNP Springsteen))
+            (VP (VBN released)
+              (PP (IN between)
+                (NP (CD 1980)
+                  (CC and)
+                  (CD 1990))))))))
+    (. .)))
+Ans: syntacticParser.Node@566b873e
+"syntacticParser.Node@40f226b3"	"released between"	"1980 and 1990 [9,11]"
+"syntacticParser.Node@566b873e"	"all songs "	"syntacticParser.Node@40f226b3"
+http://dbpedia.org/resource/Bruce_Springsteen[5,6]
+
+
+PREFIX dbo:  <http://dbpedia.org/ontology/>
+PREFIX res:  <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:Song .
+        ?uri dbo:artist res:Bruce_Springsteen .
+        ?uri dbo:releaseDate ?date . 
+        FILTER (?date >= '1980-01-01'^^xsd:date && ?date <= '1990-12-31'^^xsd:date)
+}
+
+
+
+Which movies did Kurosawa direct?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN movies))
+    (SQ (VBD did)
+      (NP (NNP Kurosawa))
+      (VP (NN direct)))
+    (. ?)))
+Ans: syntacticParser.Node@45f671aa
+"Kurosawa [3,3]"	"direct "	"syntacticParser.Node@45f671aa"
+http://dbpedia.org/resource/Akira_Kurosawa[3,3]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri rdf:type dbo:Film .
+        ?uri dbo:director res:Akira_Kurosawa .
+}
+
+
+
+What is the founding year of the brewery that produces Pilsner Urquell?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ founding) (NN year))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN brewery))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBZ produces)
+                  (NP (JJ Pilsner) (NN Urquell)))))))))
+    (. ?)))
+Ans: syntacticParser.Node@2aa92fc8
+"syntacticParser.Node@15a3ff21"	"produces"	"Pilsner Urquell [10,11]"
+"syntacticParser.Node@2aa92fc8"	"the founding year "	"syntacticParser.Node@15a3ff21"
+http://dbpedia.org/resource/Brewery[7,7]
+http://dbpedia.org/resource/Pilsner_Urquell[10,11]
+
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?num 
+WHERE {
+        res:Pilsner_Urquell dbp:brewery ?uri .
+        ?uri dbp:foundation ?num .
+}
+
+
+
+Who wrote the lyrics for the Polish national anthem?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD wrote)
+        (NP
+          (NP (DT the) (NNS lyrics))
+          (PP (IN for)
+            (NP (DT the) (JJ Polish) (JJ national) (NN anthem))))))
+    (. ?)))
+Ans: syntacticParser.Node@3ab19e61
+"syntacticParser.Node@238aa446"	"the lyrics "	"the Polish national anthem [5,8]"
+"syntacticParser.Node@3ab19e61"	"wrote"	"syntacticParser.Node@238aa446"
+http://dbpedia.org/resource/Lyrics[3,3]
+http://dbpedia.org/resource/Poland_Is_Not_Yet_Lost[6,8]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Poland dbo:anthem ?x .
+        ?x dbp:author ?uri .
+}
+
+
+
+Give me all B-sides of the Ramones.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS B-sides))
+        (PP (IN of)
+          (NP (DT the) (NNP Ramones)))))
+    (. .)))
+Ans: syntacticParser.Node@7f178f2b
+"syntacticParser.Node@7f178f2b"	"all B-sides "	"the Ramones [5,6]"
+http://dbpedia.org/resource/Ramones[5,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?string 
+WHERE {
+        ?x dbo:musicalArtist res:Ramones .
+        ?x dbo:bSide ?string . 
+}
+
+
+
+Who painted The Storm on the Sea of Galilee?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD painted)
+        (NP (DT The) (NNS Storm))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN Sea))
+            (PP (IN of)
+              (NP (NNP Galilee)))))))
+    (. ?)))
+Ans: syntacticParser.Node@25e157a
+"syntacticParser.Node@25e157a"	"the Sea "	"Galilee [8,8]"
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:The_Storm_on_the_Sea_of_Galilee dbo:author ?uri .
+}
+
+
+
+Which country does the creator of Miffy come from?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN country))
+    (SQ (VBZ does)
+      (NP
+        (NP (DT the) (NN creator))
+        (PP (IN of)
+          (NP (NNP Miffy))))
+      (VP (VBN come)
+        (PP (IN from))))
+    (. ?)))
+Ans: syntacticParser.Node@b38ecab
+"syntacticParser.Node@71ebbbb"	"the creator "	"Miffy [6,6]"
+"syntacticParser.Node@71ebbbb"	"come from "	"syntacticParser.Node@b38ecab"
+http://dbpedia.org/resource/Miffy[6,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Miffy dbo:creator ?x .
+        ?x dbo:nationality ?uri .
+}
+
+
+
+For which label did Elvis record his first album?
+(ROOT
+  (SBARQ
+    (WHPP (IN For)
+      (WHNP (WDT which) (NN label)))
+    (SQ (VBD did)
+      (NP (NN Elvis))
+      (VP (VB record)
+        (NP (PRP$ his) (JJ first) (NN album))))
+    (. ?)))
+Ans: syntacticParser.Node@7a27eb42
+"Elvis [4,4]"	"record his first album "	"syntacticParser.Node@7a27eb42"
+http://dbpedia.org/resource/Elvis_Presley[4,4]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?x rdf:type dbo:Album .
+        ?x dbo:artist res:Elvis_Presley .
+        ?x dbo:releaseDate ?y .
+        ?x dbo:recordLabel ?uri .
+}
+ORDER BY ASC(?y) 
+OFFSET 0 LIMIT 1
+
+
+
+Give me the birthdays of all actors of the television show Charmed.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NN birthdays))
+        (PP (IN of)
+          (NP
+            (NP (DT all) (NNS actors))
+            (PP (IN of)
+              (NP (DT the) (NN television) (NN show) (NNP Charmed)))))))
+    (. .)))
+Ans: syntacticParser.Node@2a8df8de
+"syntacticParser.Node@479861cb"	"all actors "	"the television show Charmed [8,11]"
+"syntacticParser.Node@2a8df8de"	"the birthdays "	"syntacticParser.Node@479861cb"
+http://dbpedia.org/resource/Television_program[9,10]
+http://dbpedia.org/resource/Charmed[11,11]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?date 
+WHERE { 
+        res:Charmed dbo:starring ?actor .
+        ?actor dbo:birthDate ?date .
+}
+
+
+
+How many employees does IBM have?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS employees))
+    (SQ (VBZ does)
+      (NP (NNP IBM))
+      (VP (VB have)))
+    (. ?)))
+Ans: syntacticParser.Node@528d1e4c
+"IBM [4,4]"	"have "	"syntacticParser.Node@528d1e4c"
+http://dbpedia.org/resource/IBM[4,4]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?number 
+WHERE {
+        res:IBM dbo:numberOfEmployees ?number .
+}
+
+
+
+Which states border Illinois?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which))
+    (SQ
+      (VP (VBZ states)
+        (NP (NN border) (NNP Illinois))))
+    (. ?)))
+Ans: syntacticParser.Node@610eb56f
+"syntacticParser.Node@610eb56f"	"states"	"border Illinois [2,3]"
+http://dbpedia.org/resource/Illinois[3,3]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbp: <http://dbpedia.org/property/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Illinois dbp:borderingstates ?uri .
+}
+
+
+
+In which country is the Limerick Lake?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN country)))
+    (SQ (VBZ is)
+      (NP (DT the) (NN Limerick) (NNP Lake)))
+    (. ?)))
+Ans: syntacticParser.Node@276eeb44
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Limerick_Lake dbo:country ?uri .
+}
+
+
+
+Which television shows were created by John Cleese?
+(ROOT
+  (S
+    (NP (JJ Which) (NN television) (NNS shows))
+    (VP (VBD were)
+      (VP (VBN created)
+        (PP (IN by)
+          (NP (NNP John) (NNP Cleese)))))
+    (. ?)))
+Ans: syntacticParser.Node@15485c9d
+"syntacticParser.Node@15485c9d"	"created by"	"John Cleese [6,7]"
+http://dbpedia.org/resource/John_Cleese[6,7]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri rdf:type dbo:TelevisionShow .
+        ?uri dbo:creator res:John_Cleese .
+}
+
+
+
+Which mountain is the highest after the Annapurna?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN mountain))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJS highest))
+        (PP (IN after)
+          (NP (DT the) (NN Annapurna)))))
+    (. ?)))
+Ans: syntacticParser.Node@64a3a5bf
+"syntacticParser.Node@64a3a5bf"	"the highest "	"the Annapurna [6,7]"
+http://dbpedia.org/resource/Annapurna[7,7]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {       
+        res:Annapurna dbo:elevation ?elevation .
+        ?uri rdf:type dbo:Mountain . 
+        ?uri dbo:elevation ?otherelevation .
+        FILTER (?otherelevation < ?elevation) .
+} 
+ORDER BY DESC(?otherelevation) 
+OFFSET 0 LIMIT 1
+
+
+
+In which films directed by Garry Marshall was Julia Roberts starring?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which)
+        (S
+          (NP (NNS films))
+          (VP (VBD directed)
+            (PP (IN by)
+              (NP (NNP Garry) (NNP Marshall)))))))
+    (SQ (VBD was)
+      (NP (NNP Julia) (NNP Roberts))
+      (VP (VBN starring)))
+    (. ?)))
+Ans: syntacticParser.Node@2d2ebabc
+"syntacticParser.Node@2d2ebabc"	"directed by"	"Garry Marshall [5,6]"
+"Julia Roberts [8,9]"	"starring "	"syntacticParser.Node@2d2ebabc"
+http://dbpedia.org/resource/Garry_Marshall[5,6]
+http://dbpedia.org/resource/Julia_Roberts[8,9]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri rdf:type dbo:Film .
+        ?uri dbo:starring res:Julia_Roberts .
+        ?uri dbo:director res:Garry_Marshall .
+}
+
+
+
+Which bridges are of the same type as the Manhattan Bridge?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN bridges))
+    (SQ (VBP are)
+      (PP (IN of)
+        (NP
+          (NP (DT the) (JJ same) (NN type))
+          (PP (IN as)
+            (NP (DT the) (NNP Manhattan) (NNP Bridge))))))
+    (. ?)))
+Ans: syntacticParser.Node@44700724
+"syntacticParser.Node@44700724"	"the same type "	"the Manhattan Bridge [8,10]"
+http://dbpedia.org/resource/Manhattan_Bridge[9,10]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {       
+        ?uri rdf:type dbo:Bridge .
+        ?uri dbp:design ?design .
+        res:Manhattan_Bridge dbp:design ?mdesign . 
+        FILTER (?design = ?mdesign && ?uri != res:Manhattan_Bridge) . 
+}
+
+
+
+Was U.S. president Jackson involved in a war?
+(ROOT
+  (SQ (VBD Was)
+    (NP (NNP U.S.) (NNP president) (NNP Jackson))
+    (VP (VBN involved)
+      (PP (IN in)
+        (NP (DT a) (NN war))))
+    (. ?)))
+Ans: syntacticParser.Node@5e3ef521
+"syntacticParser.Node@5e3ef521"	"involved in"	"a war [6,7]"
+http://dbpedia.org/resource/President_of_the_United_States[1,2]
+http://dbpedia.org/resource/Andrew_Jackson[3,3]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+ASK 
+WHERE {
+        res:Andrew_Jackson dbo:battle ?battle .    
+}
+
+
+
+Give me all communist countries.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ communist) (NNS countries)))
+    (. .)))
+Ans: syntacticParser.Node@4bf6034b
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri rdf:type dbo:Country .
+      { ?uri dbo:governmentType res:Communism . }
+        UNION
+      { ?uri dbo:governmentType res:Communist_state . }
+}
+
+
+
+Which awards did Douglas Hofstadter win?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN awards))
+    (SQ (VBD did)
+      (NP (NNP Douglas) (NNP Hofstadter))
+      (VP (VB win)))
+    (. ?)))
+Ans: syntacticParser.Node@18292e02
+"Douglas Hofstadter [3,4]"	"win "	"syntacticParser.Node@18292e02"
+http://dbpedia.org/resource/Douglas_Hofstadter[3,4]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?uri
+WHERE {
+        res:Douglas_Hofstadter dbo:award ?uri .
+}
+
+
+
+Who is the daughter of Robert Kennedy married to?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP
+          (NP (DT the) (NN daughter))
+          (PP (IN of)
+            (NP (NNP Robert) (NNP Kennedy))))
+        (VP (VBN married)
+          (PP (TO to)))))
+    (. ?)))
+Ans: syntacticParser.Node@7e7a5a8f
+"syntacticParser.Node@7e7a5a8f"	"the daughter "	"Robert Kennedy [5,6]"
+http://dbpedia.org/resource/Robert_F._Kennedy[5,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Robert_F._Kennedy dbo:child ?child .
+        ?child dbo:spouse ?uri .
+}
+
+
+
+Which U.S. state has the highest population density?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNP U.S.) (NN state))
+    (SQ
+      (VP (VBZ has)
+        (NP (DT the) (JJS highest) (NN population) (NN density))))
+    (. ?)))
+Ans: syntacticParser.Node@36bc1a1e
+"syntacticParser.Node@36bc1a1e"	"has"	"the highest population density [4,7]"
+http://dbpedia.org/resource/Population_density[6,7]
+
+
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type yago:StatesOfTheUnitedStates .
+        ?uri dbp:densityrank ?rank .
+} 
+ORDER BY ASC(?rank) 
+OFFSET 0 LIMIT 1
+
+
+
+What is the currency of the Czech Republic?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN currency))
+        (PP (IN of)
+          (NP (DT the) (JJ Czech) (NN Republic)))))
+    (. ?)))
+Ans: syntacticParser.Node@13233dcd
+"syntacticParser.Node@13233dcd"	"the currency "	"the Czech Republic [5,7]"
+http://dbpedia.org/resource/Currency[3,3]
+http://dbpedia.org/resource/Czech_Republic[6,7]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {
+       res:Czech_Republic dbo:currency ?uri .
+}
+
+
+
+Which countries adopted the Euro?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS countries))
+    (SQ
+      (VP (VBD adopted)
+        (NP (DT the) (NN Euro))))
+    (. ?)))
+Ans: syntacticParser.Node@1df334bf
+"syntacticParser.Node@1df334bf"	"adopted"	"the Euro [3,4]"
+http://dbpedia.org/resource/Euro[4,4]
+
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+          ?uri rdf:type dbo:Country .
+        { ?uri dbo:currency res:Euro . } 
+        UNION 
+        { ?uri dbp:currencyCode 'EUR'@en . }
+}
+
+
+
+What is the area code of Berlin?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN area) (NN code))
+        (PP (IN of)
+          (NP (NNP Berlin)))))
+    (. ?)))
+Ans: syntacticParser.Node@e1c66e1
+"syntacticParser.Node@e1c66e1"	"the area code "	"Berlin [6,6]"
+http://dbpedia.org/resource/Area_code[3,4]
+http://dbpedia.org/resource/Berlin[6,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?string 
+WHERE {
+        res:Berlin dbo:areaCode ?string .
+}
+
+
+
+Which countries have more than two official languages?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS countries))
+    (SQ
+      (VP (VBP have)
+        (NP
+          (QP (JJR more) (IN than) (CD two))
+          (JJ official) (NNS languages))))
+    (. ?)))
+Ans: syntacticParser.Node@6e7ec3e6
+"syntacticParser.Node@6e7ec3e6"	"have"	"more than two official languages [3,7]"
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type dbo:Country  .
+        ?uri dbo:officialLanguage ?language .
+} 
+GROUP BY ?uri
+HAVING (COUNT(?language) > 2)
+
+
+
+Who is the owner of Rolls-Royce?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN owner))
+        (PP (IN of)
+          (NP (NNP Rolls-Royce)))))
+    (. ?)))
+Ans: syntacticParser.Node@6203099b
+"syntacticParser.Node@6203099b"	"the owner "	"Rolls-Royce [5,5]"
+http://dbpedia.org/resource/Rolls-Royce_Motors[5,5]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {
+        res:Rolls-Royce_Motors dbo:owner ?uri .
+}
+
+
+
+Through which countries does the Yenisei river flow?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Through)
+      (NP (WDT which) (NNS countries)))
+    (SQ (VBZ does)
+      (NP (DT the) (NNP Yenisei) (NN river))
+      (VP (VB flow)))
+    (. ?)))
+Ans: syntacticParser.Node@9bbce5c
+"the Yenisei river [4,6]"	"flow "	"syntacticParser.Node@9bbce5c"
+http://dbpedia.org/resource/Yenisei_River[5,6]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Yenisei dbo:country ?uri .
+}
+
+
+
+When did Latvia join the EU?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD did)
+      (NP (NNP Latvia))
+      (VP (VB join)
+        (NP (DT the) (NNP EU))))
+    (. ?)))
+Ans: syntacticParser.Node@792849fe
+"Latvia [2,2]"	"join the EU "	"syntacticParser.Node@792849fe"
+http://dbpedia.org/resource/Latvia[2,2]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbp: <http://dbpedia.org/property/>
+SELECT DISTINCT ?date 
+WHERE {       
+        res:Latvia dbp:accessioneudate ?date .      
+}
+
+
+
+Which monarchs were married to a German?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN monarchs))
+    (SQ (VBD were)
+      (VP (VBN married)
+        (PP (TO to)
+          (NP (DT a) (NNP German)))))
+    (. ?)))
+Ans: syntacticParser.Node@2a90c1de
+"syntacticParser.Node@2a90c1de"	"married to"	"a German [5,6]"
+http://dbpedia.org/resource/Germany[6,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:Monarch . 
+        ?uri dbo:spouse ?spouse .
+      { ?spouse dbo:birthPlace res:Germany. }
+      UNION 
+      { ?spouse dbo:birthPlace ?p . 
+        ?p dbo:country res:Germany. }
+}
+
+
+
+When was the Battle of Gettysburg?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NN Battle))
+        (PP (IN of)
+          (NP (NNP Gettysburg)))))
+    (. ?)))
+Ans: syntacticParser.Node@278ab941
+http://dbpedia.org/resource/Battle_of_Gettysburg[3,5]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?date 
+WHERE { 
+        res:Battle_of_Gettysburg dbo:date ?date .
+}
+
+
+
+Which river does the Brooklyn Bridge cross?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN river))
+    (SQ (VBZ does)
+      (NP (DT the) (NNP Brooklyn) (NNP Bridge))
+      (VP (VB cross)))
+    (. ?)))
+Ans: syntacticParser.Node@72588b1a
+"the Brooklyn Bridge [3,5]"	"cross "	"syntacticParser.Node@72588b1a"
+http://dbpedia.org/resource/Brooklyn_Bridge[4,5]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {       
+        res:Brooklyn_Bridge dbo:crosses ?uri . 
+}
+
+
+
+What is the highest mountain in Australia?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJS highest) (NN mountain))
+        (PP (IN in)
+          (NP (NNP Australia)))))
+    (. ?)))
+Ans: syntacticParser.Node@391f8db6
+"syntacticParser.Node@391f8db6"	"the highest mountain "	"Australia [6,6]"
+http://dbpedia.org/resource/Australia[6,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:Mountain .
+        ?uri dbo:locatedInArea res:Australia .
+        ?uri dbo:elevation ?elevation .
+} 
+ORDER BY DESC(?elevation) 
+OFFSET 0 LIMIT 1
+
+
+
+Give me all soccer clubs in Spain.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NN soccer) (NNS clubs))
+      (PP (IN in)
+        (NP (NNP Spain))))
+    (. .)))
+Ans: syntacticParser.Node@10ce7658
+http://dbpedia.org/resource/Spain[6,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+          ?uri rdf:type dbo:SoccerClub .
+        { ?uri dbo:ground res:Spain . }
+        UNION 
+        { ?uri dbp:ground ?ground . 
+          FILTER (regex(?ground,'Spain')) }
+}
+
+
+
+What is the official language of Suriname?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ official) (NN language))
+        (PP (IN of)
+          (NP (NNP Suriname)))))
+    (. ?)))
+Ans: syntacticParser.Node@3d9bfd0b
+"syntacticParser.Node@3d9bfd0b"	"the official language "	"Suriname [6,6]"
+http://dbpedia.org/resource/Suriname[6,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE { 
+        res:Suriname dbo:officialLanguage ?uri .
+}
+
+
+
+Who is the mayor of Tel Aviv?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN mayor))
+        (PP (IN of)
+          (NP (NNP Tel) (NNP Aviv)))))
+    (. ?)))
+Ans: syntacticParser.Node@569124ab
+"syntacticParser.Node@569124ab"	"the mayor "	"Tel Aviv [5,6]"
+http://dbpedia.org/resource/Tel_Aviv[5,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE { 
+        res:Tel_Aviv dbo:leaderName ?uri .
+}
+
+
+
+Who designed the Brooklyn Bridge?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD designed)
+        (NP (DT the) (NNP Brooklyn) (NNP Bridge))))
+    (. ?)))
+Ans: syntacticParser.Node@5b3d594f
+"syntacticParser.Node@5b3d594f"	"designed"	"the Brooklyn Bridge [2,4]"
+http://dbpedia.org/resource/Brooklyn_Bridge[3,4]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Brooklyn_Bridge dbo:architect ?uri .
+}
+
+
+
+Which telecommunications organizations are located in Belgium?
+(ROOT
+  (S
+    (NP (JJ Which) (NNS telecommunications) (NNS organizations))
+    (VP (VBP are)
+      (VP (VBN located)
+        (PP (IN in)
+          (NP (NNP Belgium)))))
+    (. ?)))
+Ans: syntacticParser.Node@36271a9a
+"syntacticParser.Node@36271a9a"	"located in"	"Belgium [6,6]"
+http://dbpedia.org/resource/Telecommunication[1,1]
+http://dbpedia.org/resource/Belgium[6,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?uri)
+WHERE { 	
+        ?uri  rdf:type dbo:Organisation  .
+      { ?uri dbo:industry res:Telecommunication . } 
+      UNION 
+      { ?uri dbp:industry ?industry . 
+        FILTER (regex(?industry,'Telecommunications')) . }
+      { ?uri dbo:location res:Belgium. } 
+      UNION 
+      { ?uri dbp:locationCountry 'Belgium'@en . }
+}
+
+
+
+Is Frank Herbert still alive?
+(ROOT
+  (SQ (VBZ Is)
+    (NP (NNP Frank) (NNP Herbert))
+    (ADJP
+      (ADVP (RB still))
+      (JJ alive))
+    (. ?)))
+Ans: syntacticParser.Node@2ef1ba6d
+http://dbpedia.org/resource/Frank_Herbert[1,2]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+ASK 
+WHERE {
+        OPTIONAL { res:Frank_Herbert dbo:deathDate ?date . }
+        FILTER (!BOUND(?date))
+}
+
+
+
+What is the highest place of the Urals?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJS highest) (NN place))
+        (PP (IN of)
+          (NP (DT the) (NNS Urals)))))
+    (. ?)))
+Ans: syntacticParser.Node@59f6e628
+"syntacticParser.Node@59f6e628"	"the highest place "	"the Urals [6,7]"
+http://dbpedia.org/resource/Ural_Mountains[7,7]
+
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {       
+        res:Ural_Mountains dbp:highest ?uri .  
+}
+
+
+
+Who is the editor of Forbes?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN editor))
+        (PP (IN of)
+          (NP (NNP Forbes)))))
+    (. ?)))
+Ans: syntacticParser.Node@36a44500
+"syntacticParser.Node@36a44500"	"the editor "	"Forbes [5,5]"
+http://dbpedia.org/resource/Forbes[5,5]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Forbes dbo:editor ?uri .
+}
+
+
+
+Give me all companies in the advertising industry.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NNS companies))
+      (PP (IN in)
+        (NP (DT the) (NN advertising) (NN industry))))
+    (. .)))
+Ans: syntacticParser.Node@17e066e2
+http://dbpedia.org/resource/Advertising[6,6]
+
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?uri)
+WHERE { 
+        ?uri rdf:type dbo:Company  .
+      { ?uri dbo:industry res:Advertising } 
+      UNION 
+      { ?uri dbo:industry ?industry . 
+        FILTER regex(?industry,'advertising','i') . }
+}
+
+
+
+How many countries are there in Europe?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS countries))
+    (SQ (VBP are)
+      (NP (EX there))
+      (PP (IN in)
+        (NP (NNP Europe))))
+    (. ?)))
+Ans: syntacticParser.Node@64d40a47
+http://dbpedia.org/resource/Europe[6,6]
+
+
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?uri) 
+WHERE {
+        ?uri rdf:type yago:EuropeanCountries .
+}
+
+
+
+What did Bruce Carver die from?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Bruce) (NNP Carver))
+      (VP (VB die)
+        (PP (IN from))))
+    (. ?)))
+Ans: syntacticParser.Node@243b56c5
+"Bruce Carver [2,3]"	"die from "	"syntacticParser.Node@243b56c5"
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?uri
+WHERE {
+        res:Bruce_Carver dbo:deathCause ?uri .     
+}
+
+
+
+Give me all libraries established earlier than 1400.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS libraries))
+        (VP (VBN established)
+          (ADVP (RB earlier)
+            (PP (IN than)
+              (NP (CD 1400)))))))
+    (. .)))
+Ans: syntacticParser.Node@344d8945
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri rdf:type dbo:Library .
+        ?uri dbp:established ?year . 
+        FILTER (?year < 1400)
+}
+
+
+
+Which presidents were born in 1945?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS presidents))
+    (SQ (VBD were)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (CD 1945)))))
+    (. ?)))
+Ans: syntacticParser.Node@106d197e
+"syntacticParser.Node@106d197e"	"born in"	"1945 [5,5]"
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:President . 
+        ?uri dbo:birthDate ?date .
+        FILTER regex(?date, '^1945') .
+}
+
+
+
+Give me all federal chancellors of Germany.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (JJ federal) (NN chancellors))
+        (PP (IN of)
+          (NP (NNP Germany)))))
+    (. .)))
+Ans: syntacticParser.Node@43d3377e
+"syntacticParser.Node@43d3377e"	"all federal chancellors "	"Germany [6,6]"
+
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+          ?uri rdf:type dbo:Person .
+        { ?uri dbo:office 'Chancellor of Germany' . }
+        UNION
+        { ?uri dbp:office res:Chancellor_of_Germany . }
+}
+
+
+
+Who was the wife of U.S. president Lincoln?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NN wife))
+        (PP (IN of)
+          (NP (NNP U.S.) (NNP president) (NNP Lincoln)))))
+    (. ?)))
+Ans: syntacticParser.Node@5da24e78
+"syntacticParser.Node@5da24e78"	"the wife "	"U.S. president Lincoln [5,7]"
+http://dbpedia.org/resource/Abraham_Lincoln[6,7]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Abraham_Lincoln dbo:spouse ?uri.
+}
+
+
+
+Who developed the video game World of Warcraft?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD developed)
+        (NP
+          (NP (DT the) (NN video) (NN game) (NNP World))
+          (PP (IN of)
+            (NP (NNP Warcraft))))))
+    (. ?)))
+Ans: syntacticParser.Node@2500f95
+"syntacticParser.Node@2500f95"	"developed"	"the video game World of Warcraft [2,7]"
+http://dbpedia.org/resource/World_of_Warcraft[5,7]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:World_of_Warcraft dbo:developer ?uri . 
+}
+
+
+
+What is the official website of Tom Cruise?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ official) (NN website))
+        (PP (IN of)
+          (NP (NNP Tom) (NNP Cruise)))))
+    (. ?)))
+Ans: syntacticParser.Node@5bc7e166
+"syntacticParser.Node@5bc7e166"	"the official website "	"Tom Cruise [6,7]"
+http://dbpedia.org/resource/Tom_Cruise[6,7]
+
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?string 
+WHERE { 
+        res:Tom_Cruise dbp:website ?string .
+}
+
+
+
+List all episodes of the first season of the HBO television series The Sopranos.
+(ROOT
+  (S
+    (VP (VB List)
+      (NP
+        (NP (DT all) (NNS episodes))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (JJ first) (NN season))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNP HBO) (NN television) (NN series))
+                (NP (DT The) (NN Sopranos))))))))
+    (. .)))
+Ans: syntacticParser.Node@4dfd74d1
+"syntacticParser.Node@4317bea0"	"the first season "	"the HBO television series The Sopranos [8,13]"
+"syntacticParser.Node@4dfd74d1"	"all episodes "	"syntacticParser.Node@4317bea0"
+http://dbpedia.org/resource/HBO[9,9]
+http://dbpedia.org/resource/The_Sopranos[12,13]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri dbo:series res:The_Sopranos  .
+        ?uri dbo:seasonNumber 1 .
+}
+
+
+
+Who produced the most films?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD produced)
+        (NP (DT the) (JJS most) (NNS films))))
+    (. ?)))
+Ans: syntacticParser.Node@40c31d73
+"syntacticParser.Node@40c31d73"	"produced"	"the most films [2,4]"
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?film rdf:type dbo:Film .
+        ?film dbo:producer ?uri .
+} 
+ORDER BY DESC(COUNT(?film)) 
+OFFSET 0 LIMIT 1
+
+
+
+Give me all people with first name Jimmy.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NNS people))
+      (PP (IN with)
+        (NP (JJ first) (NN name) (NNP Jimmy))))
+    (. .)))
+Ans: syntacticParser.Node@4fcecd64
+
+
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type foaf:Person .  
+        ?uri foaf:givenName 'Jimmy'@en .
+}
+
+
+
+In which city did John F. Kennedy die?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN city)))
+    (SQ (VBD did)
+      (NP (NNP John) (NNP F.) (NNP Kennedy))
+      (VP (VB die)))
+    (. ?)))
+Ans: syntacticParser.Node@588a7253
+"John F. Kennedy [4,6]"	"die "	"syntacticParser.Node@588a7253"
+http://dbpedia.org/resource/John_F._Kennedy[4,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE { 
+        res:John_F._Kennedy dbo:deathPlace ?uri .
+        ?uri rdf:type dbo:City .
+}
+
+
+
+Is there a video game called Battle Chess?
+(ROOT
+  (SQ (VBZ Is)
+    (NP (EX there))
+    (NP
+      (NP (DT a) (NN video) (NN game))
+      (VP (VBN called)
+        (S
+          (NP (NN Battle) (NNS Chess)))))
+    (. ?)))
+Ans: syntacticParser.Node@22b78ea0
+http://dbpedia.org/resource/Battle_Chess[6,7]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+ASK 
+WHERE {
+        ?uri rdf:type dbo:VideoGame .
+        ?uri rdfs:label 'Battle Chess'@en .
+}
+
+
+
+Which mountains are higher than the Nanga Parbat?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS mountains))
+    (SQ (VBP are)
+      (ADJP
+        (ADJP (JJR higher))
+        (PP (IN than)
+          (NP (DT the) (NNP Nanga) (NNP Parbat)))))
+    (. ?)))
+Ans: syntacticParser.Node@224c550
+http://dbpedia.org/resource/Nanga_Parbat[6,7]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+        res:Nanga_Parbat dbo:elevation ?elevation .
+        ?uri rdf:type dbo:Mountain .
+      { ?uri dbo:elevation ?otherelevation . }
+      UNION
+      { ?uri dbp:elevationM ?otherelevation . } 
+        FILTER (?otherelevation > ?elevation) .
+}
+
+
+
+Who created Wikipedia?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD created)
+        (NP (NNP Wikipedia))))
+    (. ?)))
+Ans: syntacticParser.Node@a220e53
+"syntacticParser.Node@a220e53"	"created"	"Wikipedia [2,2]"
+http://dbpedia.org/resource/Wikipedia[2,2]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {
+        res:Wikipedia dbo:author ?uri .
+}
+
+
+
+Give me all actors starring in Last Action Hero.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS actors))
+        (VP (VBG starring)
+          (PP (IN in)
+            (NP (JJ Last) (NN Action) (NNP Hero))))))
+    (. .)))
+Ans: syntacticParser.Node@6ec40b31
+"syntacticParser.Node@6ec40b31"	"starring in"	"Last Action Hero [6,8]"
+http://dbpedia.org/resource/Last_Action_Hero[6,8]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {
+        res:Last_Action_Hero dbo:starring ?uri . 
+}
+
+
+
+Which software has been developed by organizations founded in California?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN software))
+    (SQ
+      (VP (VBZ has)
+        (VP (VBN been)
+          (VP (VBN developed)
+            (PP (IN by)
+              (NP
+                (NP (NNS organizations))
+                (VP (VBN founded)
+                  (PP (IN in)
+                    (NP (NNP California))))))))))
+    (. ?)))
+Ans: syntacticParser.Node@4aca7848
+"syntacticParser.Node@27dfa570"	"founded in"	"California [9,9]"
+"syntacticParser.Node@4aca7848"	"developed by"	"syntacticParser.Node@27dfa570"
+http://dbpedia.org/resource/California[9,9]
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {         
+        ?uri rdf:type dbo:Software .
+        ?company rdf:type dbo:Company .
+        ?uri dbo:developer ?company . 
+        ?company dbo:foundationPlace res:California .
+   
+}
+
+
+
+Which companies work in the aerospace industry as well as in medicine?
+(ROOT
+  (SQ (MD Which)
+    (NP (NNS companies))
+    (VP (VB work)
+      (PP
+        (PP (IN in)
+          (NP (DT the) (NN aerospace) (NN industry)))
+        (CONJP (RB as) (RB well) (IN as))
+        (PP (IN in)
+          (NP (NN medicine)))))
+    (. ?)))
+Ans: syntacticParser.Node@557643b9
+http://dbpedia.org/resource/Aerospace[5,5]
+http://dbpedia.org/resource/Medicine[11,11]
+
+
+PREFIX dbo:  <http://dbpedia.org/ontology/>
+PREFIX res:  <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type dbo:Company  .
+        ?uri dbo:industry res:Aerospace . 
+        ?uri dbo:industry res:Medicine .
+}
+
+
+
+Is Christian Bale starring in Velvet Goldmine?
+(ROOT
+  (SQ (VBZ Is)
+    (NP (JJ Christian) (NNP Bale))
+    (VP (VBG starring)
+      (PP (IN in)
+        (NP (JJ Velvet) (NNP Goldmine))))
+    (. ?)))
+Ans: syntacticParser.Node@2138b26
+"syntacticParser.Node@2138b26"	"starring in"	"Velvet Goldmine [5,6]"
+http://dbpedia.org/resource/Christian_Bale[1,2]
+http://dbpedia.org/resource/Velvet_Goldmine[5,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+ASK
+WHERE {
+        res:Velvet_Goldmine dbo:starring res:Christian_Bale .
+}
+
+
+
+Give me the websites of companies with more than 500000 employees.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NNS websites))
+        (PP (IN of)
+          (NP (NNS companies))))
+      (PP (IN with)
+        (NP
+          (QP (JJR more) (IN than) (CD 500000))
+          (NNS employees))))
+    (. .)))
+Ans: syntacticParser.Node@2b2433db
+"syntacticParser.Node@2b2433db"	"the websites "	"companies [5,5]"
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT DISTINCT ?string
+WHERE {
+         ?c rdf:type dbo:Company .
+       { ?c dbo:numberOfEmployees ?employees . }
+       UNION
+       { ?c dbp:numEmployees ?employees . }
+         FILTER( xsd:integer(?employees) > 500000 ) .
+         ?c dbp:homepage ?string .
+}
+
+
+
+Which actors were born in Germany?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS actors))
+    (SQ (VBD were)
+      (VP (VBN born)
+        (PP (IN in)
+          (NP (NNP Germany)))))
+    (. ?)))
+Ans: syntacticParser.Node@14ecb2be
+"syntacticParser.Node@14ecb2be"	"born in"	"Germany [5,5]"
+http://dbpedia.org/resource/Germany[5,5]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res:  <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri rdf:type dbo:Actor .
+      { ?uri dbo:birthPlace res:Germany . }
+      UNION 
+      { ?uri dbo:birthPlace ?place .
+        ?place dbo:country res:Germany . }
+}
+
+
+
+Which caves have more than 3 entrances?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN caves))
+    (SQ
+      (VP (VBP have)
+        (NP
+          (QP (JJR more) (IN than) (CD 3))
+          (NNS entrances))))
+    (. ?)))
+Ans: syntacticParser.Node@435ba79b
+"syntacticParser.Node@435ba79b"	"have"	"more than 3 entrances [3,6]"
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res:  <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type dbo:Cave .
+        ?uri dbp:entranceCount ?entrance .
+        FILTER (?entrance > 3) .
+}
+
+
+
+Was the wife of president Lincoln called Mary?
+(ROOT
+  (SQ (VBD Was)
+    (NP
+      (NP (DT the) (NN wife))
+      (PP (IN of)
+        (NP (NNP president) (NNP Lincoln))))
+    (VP (VBN called)
+      (S
+        (NP (NNP Mary))))
+    (. ?)))
+Ans: syntacticParser.Node@77e7945f
+"syntacticParser.Node@77e7945f"	"the wife "	"president Lincoln [4,5]"
+http://dbpedia.org/resource/Abraham_Lincoln[4,5]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+ASK 
+WHERE {
+        res:Abraham_Lincoln dbo:spouse ?spouse .
+        ?spouse rdfs:label ?name .
+        FILTER(regex(?name,'Mary')) 
+}
+
+
+
+Give me all films produced by Hal Roach.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS films))
+        (VP (VBN produced)
+          (PP (IN by)
+            (NP (NNP Hal) (NNP Roach))))))
+    (. .)))
+Ans: syntacticParser.Node@2da61efd
+"syntacticParser.Node@2da61efd"	"produced by"	"Hal Roach [6,7]"
+http://dbpedia.org/resource/Hal_Roach[6,7]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:Film .
+        ?uri dbo:producer res:Hal_Roach .
+}
+
+
+
+Give me all video games published by Mean Hamster Software.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NN video) (NNS games))
+        (VP (VBN published)
+          (PP (IN by)
+            (NP (NN Mean) (NNP Hamster) (NNP Software))))))
+    (. .)))
+Ans: syntacticParser.Node@39a4fde5
+"syntacticParser.Node@39a4fde5"	"published by"	"Mean Hamster Software [7,9]"
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+      ?uri rdf:type dbo:VideoGame .
+      ?uri dbo:publisher res:Mean_Hamster_Software . 
+}
+
+
+
+Which languages are spoken in Estonia?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS languages))
+    (SQ (VBP are)
+      (VP (VBN spoken)
+        (PP (IN in)
+          (NP (NNP Estonia)))))
+    (. ?)))
+Ans: syntacticParser.Node@b54a7b6
+"syntacticParser.Node@b54a7b6"	"spoken in"	"Estonia [5,5]"
+http://dbpedia.org/resource/Estonia[5,5]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri dbo:spokenIn res:Estonia . 
+}
+
+
+
+How many Aldi stores are there?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (ADJP (JJ Aldi))
+      (NNS stores))
+    (SQ (VBP are)
+      (NP (EX there)))
+    (. ?)))
+Ans: syntacticParser.Node@7e2991b1
+http://dbpedia.org/resource/Aldi[2,2]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?number
+WHERE {
+        res:Aldi dbo:numberOfLocations ?number .
+}
+
+
+
+Which capitals in Europe were host cities of the summer olympic games?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHNP (WDT Which) (NNS capitals))
+      (PP (IN in)
+        (NP (NNP Europe))))
+    (SQ (VBD were)
+      (NP
+        (NP (JJ host) (NNS cities))
+        (PP (IN of)
+          (NP (DT the) (NN summer) (NN olympic) (NNS games)))))
+    (. ?)))
+Ans: syntacticParser.Node@732ad9b0
+"syntacticParser.Node@732ad9b0"	"host cities "	"the summer olympic games [8,11]"
+http://dbpedia.org/resource/Europe[3,3]
+http://dbpedia.org/resource/Summer_Olympic_Games[9,11]
+
+
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type yago:CapitalsInEurope .
+        ?uri rdf:type yago:HostCitiesOfTheSummerOlympicGames .
+}
+
+
+
+Who was the 16th president of the United States?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (JJ 16th) (NN president))
+        (PP (IN of)
+          (NP (DT the) (NNP United) (NNPS States)))))
+    (. ?)))
+Ans: syntacticParser.Node@5af83d24
+http://dbpedia.org/resource/Abraham_Lincoln[3,8]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+         ?uri dbo:office 'President of the United States' .
+         ?uri dbo:orderInOffice '16th' .
+}
+
+
+
+How many films did Hal Roach produce?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS films))
+    (SQ (VBD did)
+      (NP (NNP Hal) (NNP Roach))
+      (VP (VB produce)))
+    (. ?)))
+Ans: syntacticParser.Node@7036d70
+"Hal Roach [4,5]"	"produce "	"syntacticParser.Node@7036d70"
+http://dbpedia.org/resource/Hal_Roach[4,5]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res:  <http://dbpedia.org/resource/>
+SELECT COUNT(DISTINCT ?uri) 
+WHERE {
+        ?uri dbo:producer res:Hal_Roach .
+}
+
+
+
+Which music albums contain the song Last Christmas?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN music) (NNS albums))
+    (SQ
+      (VP (VBP contain)
+        (NP
+          (NP (DT the) (NN song))
+          (NP (JJ Last) (NNP Christmas)))))
+    (. ?)))
+Ans: syntacticParser.Node@490098c6
+"syntacticParser.Node@490098c6"	"contain"	"the song Last Christmas [4,7]"
+http://dbpedia.org/resource/Last_Christmas[6,7]
+
+
+PREFIX dbo:  <http://dbpedia.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?single dbo:album ?uri .
+        ?single rdfs:label 'Last Christmas'@en .
+}
+
+
+
+Give me all books written by Danielle Steel.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS books))
+        (VP (VBN written)
+          (PP (IN by)
+            (NP (NNP Danielle) (NNP Steel))))))
+    (. .)))
+Ans: syntacticParser.Node@767ac112
+"syntacticParser.Node@767ac112"	"written by"	"Danielle Steel [6,7]"
+http://dbpedia.org/resource/Danielle_Steel[6,7]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:Book .
+        ?uri dbo:author res:Danielle_Steel .
+}
+
+
+
+Which airports are located in California, USA?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS airports))
+    (SQ (VBP are)
+      (VP (VBN located)
+        (PP (IN in)
+          (NP
+            (NP (NNP California))
+            (, ,)
+            (NP (NNP USA))))))
+    (. ?)))
+Ans: syntacticParser.Node@57eac6ff
+"syntacticParser.Node@57eac6ff"	"located in"	"California , USA [5,7]"
+http://dbpedia.org/resource/California[5,5]
+http://dbpedia.org/resource/United_States[7,7]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE { 
+        ?uri rdf:type dbo:Airport .
+      { ?uri dbo:location res:California . }
+      UNION
+      { ?uri dbo:city res:California . } 
+      UNION 
+      { ?uri dbo:city ?city .
+        ?city dbo:isPartOf res:California . }
+      UNION
+      { ?uri dbo:operator res:California . } 
+}
+
+
+
+Which states of Germany are governed by the Social Democratic Party?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHNP (WDT Which) (NNS states))
+      (PP (IN of)
+        (NP (NNP Germany))))
+    (SQ (VBP are)
+      (VP (VBN governed)
+        (PP (IN by)
+          (NP (DT the) (JJ Social) (JJ Democratic) (NNP Party)))))
+    (. ?)))
+Ans: syntacticParser.Node@741dd316
+"syntacticParser.Node@741dd316"	"governed by"	"the Social Democratic Party [7,10]"
+http://dbpedia.org/resource/Social_Democratic_Party_of_Germany[8,10]
+
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+          ?uri rdf:type yago:StatesOfGermany .
+        { ?uri dbo:leaderParty res:Social_Democratic_Party_of_Germany . }
+        UNION
+        { ?uri dbp:rulingParty 'SPD'@en . } 
+}
+
+
+
+Give me all Canadian Grunge record labels.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Canadian) (NNP Grunge) (NN record) (NNS labels)))
+    (. .)))
+Ans: syntacticParser.Node@5dfb332d
+http://dbpedia.org/resource/Canada[3,3]
+http://dbpedia.org/resource/Grunge[4,4]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:RecordLabel .
+        ?uri dbo:genre res:Grunge .
+        ?uri dbo:country res:Canada .
+}
+
+
+
+Which country has the most official languages?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN country))
+    (SQ
+      (VP (VBZ has)
+        (NP (DT the) (JJS most) (JJ official) (NNS languages))))
+    (. ?)))
+Ans: syntacticParser.Node@2c964cb9
+"syntacticParser.Node@2c964cb9"	"has"	"the most official languages [3,6]"
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE { 
+        ?uri rdf:type dbo:Country  .
+        ?uri dbp:officialLanguages ?language .
+} 
+ORDER BY DESC(COUNT(?language)) 
+OFFSET 0 LIMIT 1
+
+
+
+In which programming language is GIMP written?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN programming) (NN language)))
+    (SQ (VBZ is)
+      (NP (NNP GIMP))
+      (VP (VBN written)))
+    (. ?)))
+Ans: syntacticParser.Node@40bc9de8
+"GIMP [5,5]"	"written "	"syntacticParser.Node@40bc9de8"
+http://dbpedia.org/resource/GIMP[5,5]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:GIMP dbo:programmingLanguage ?uri .
+}
+
+
+
+Who produced films starring Natalie Portman?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD produced)
+        (NP
+          (NP (NNS films))
+          (VP (VBG starring)
+            (NP (NNP Natalie) (NNP Portman))))))
+    (. ?)))
+Ans: syntacticParser.Node@5fb2e172
+"syntacticParser.Node@133e0bf0"	"starring"	"Natalie Portman [4,5]"
+"syntacticParser.Node@5fb2e172"	"produced"	"syntacticParser.Node@133e0bf0"
+http://dbpedia.org/resource/Natalie_Portman[4,5]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?film rdf:type dbo:Film .
+        ?film dbo:starring res:Natalie_Portman .
+        ?film dbo:producer ?uri .
+}
+
+
+
+Give me all movies with Tom Cruise.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NNS movies))
+      (PP (IN with)
+        (NP (NNP Tom) (NNP Cruise))))
+    (. .)))
+Ans: syntacticParser.Node@16da3f9
+http://dbpedia.org/resource/Tom_Cruise[5,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri rdf:type dbo:Film.
+        ?uri dbo:starring res:Tom_Cruise .
+}
+
+
+
+In which films did Julia Roberts as well as Richard Gere play?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NNS films)))
+    (SQ (VBD did)
+      (NP (NNP Julia) (NNP Roberts))
+      (VP
+        (ADVP (RB as) (RB well))
+        (PP (IN as)
+          (NP (NNP Richard) (NNP Gere) (NN play)))))
+    (. ?)))
+Ans: syntacticParser.Node@2bef01c6
+"Julia Roberts [4,5]"	"as well as Richard Gere play "	"syntacticParser.Node@2bef01c6"
+http://dbpedia.org/resource/Julia_Roberts[4,5]
+http://dbpedia.org/resource/Richard_Gere[9,10]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:Film .
+        ?uri dbo:starring res:Julia_Roberts .
+        ?uri dbo:starring res:Richard_Gere.
+}
+
+
+
+Give me all female given names.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NN female))
+      (PP (VBN given)
+        (NP (NNS names))))
+    (. .)))
+Ans: syntacticParser.Node@60f236a3
+http://dbpedia.org/resource/Female[3,3]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:GivenName .
+        ?uri dbo:gender res:Female .
+}
+
+
+
+Who wrote the book The Pillars of the Earth?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD wrote)
+        (NP
+          (NP (DT the) (NN book))
+          (NP
+            (NP (DT The) (NNPS Pillars))
+            (PP (IN of)
+              (NP (DT the) (NNP Earth)))))))
+    (. ?)))
+Ans: syntacticParser.Node@7c6bdff3
+"syntacticParser.Node@7c6bdff3"	"wrote"	"the book The Pillars of the Earth [2,8]"
+http://dbpedia.org/resource/The_Pillars_of_the_Earth[4,8]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:The_Pillars_of_the_Earth dbo:author ?uri .
+}
+
+
+
+How many films did Leonardo DiCaprio star in?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS films))
+    (SQ (VBD did)
+      (NP (NNP Leonardo) (NNP DiCaprio))
+      (VP (VB star)
+        (PP (IN in))))
+    (. ?)))
+Ans: syntacticParser.Node@39a7caba
+"Leonardo DiCaprio [4,5]"	"star in "	"syntacticParser.Node@39a7caba"
+http://dbpedia.org/resource/Leonardo_DiCaprio[4,5]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?uri) 
+WHERE {
+        ?uri rdf:type dbo:Film .
+        ?uri dbo:starring res:Leonardo_DiCaprio . 
+}
+
+
+
+Give me all soccer clubs in the Premier League.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NN soccer) (NNS clubs))
+      (PP (IN in)
+        (NP (DT the) (NN Premier) (NN League))))
+    (. .)))
+Ans: syntacticParser.Node@5c958a9b
+http://dbpedia.org/resource/Premier_League[7,8]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri
+WHERE { 
+        ?uri rdf:type dbo:SoccerClub .
+        ?uri dbo:league res:Premier_League . 
+}
+
+
+
+In which U.S. state is Mount McKinley located?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NNP U.S.) (NN state)))
+    (SQ (VBZ is)
+      (NP (NNP Mount) (NNP McKinley))
+      (VP (VBN located)))
+    (. ?)))
+Ans: syntacticParser.Node@37d9fa5a
+"Mount McKinley [5,6]"	"located "	"syntacticParser.Node@37d9fa5a"
+http://dbpedia.org/resource/Mount_McKinley[5,6]
+
+
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX dbo:  <http://dbpedia.org/ontology/>
+PREFIX res:  <http://dbpedia.org/resource/>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri rdf:type yago:StatesOfTheUnitedStates .
+        res:Mount_McKinley dbo:locatedInArea ?uri . 
+}
+
+
+
+When was Capcom founded?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD was)
+      (NP (NNP Capcom))
+      (VP (VBN founded)))
+    (. ?)))
+Ans: syntacticParser.Node@2c6ce3cb
+"Capcom [2,2]"	"founded "	"syntacticParser.Node@2c6ce3cb"
+http://dbpedia.org/resource/Capcom[2,2]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?date 
+WHERE {
+        res:Capcom dbo:foundingDate ?date .
+}
+
+
+
+Which organizations were founded in 1930?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS organizations))
+    (SQ (VBD were)
+      (VP (VBN founded)
+        (PP (IN in)
+          (NP (CD 1930)))))
+    (. ?)))
+Ans: syntacticParser.Node@38d2534f
+"syntacticParser.Node@38d2534f"	"founded in"	"1930 [5,5]"
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:Organisation .
+      { ?uri dbo:formationYear ?date . }
+      UNION 
+      { ?uri dbo:foundingYear ?date. }
+      FILTER regex(?date,'^1930') . 
+}
+
+
+
+What is the highest mountain?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP (DT the) (JJS highest) (NN mountain)))
+    (. ?)))
+Ans: syntacticParser.Node@4ffbb6d4
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type dbo:Mountain  .
+        ?uri dbo:elevation ?elevation .
+} 
+ORDER BY DESC(?elevation) 
+OFFSET 0 LIMIT 1
+
+
+
+Was Natalie Portman born in the United States?
+(ROOT
+  (SQ (VBD Was)
+    (NP (NNP Natalie) (NNP Portman))
+    (VP (VBN born)
+      (PP (IN in)
+        (NP (DT the) (NNP United) (NNPS States))))
+    (. ?)))
+Ans: syntacticParser.Node@4de76e43
+"syntacticParser.Node@4de76e43"	"born in"	"the United States [5,7]"
+http://dbpedia.org/resource/Natalie_Portman[1,2]
+http://dbpedia.org/resource/United_States[6,7]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+ASK 
+WHERE { 
+        { res:Natalie_Portman dbo:birthPlace res:United_States . }
+        UNION
+        { res:Natalie_Portman dbo:birthPlace ?city .
+          ?city dbo:country res:United_States . }
+}
+
+
+
+Which budget did the first movie of Zdenek Sverak have?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which)
+      (NP (NN budget)))
+    (SQ (VBD did)
+      (NP
+        (NP (DT the) (JJ first) (NN movie))
+        (PP (IN of)
+          (NP (NNP Zdenek) (NNP Sverak))))
+      (VP (VB have)))
+    (. ?)))
+Ans: syntacticParser.Node@4e41e511
+"syntacticParser.Node@491d09be"	"the first movie "	"Zdenek Sverak [7,8]"
+"syntacticParser.Node@491d09be"	"have "	"syntacticParser.Node@4e41e511"
+http://dbpedia.org/resource/Budget[1,1]
+
+OUT OF SCOPE
+
+
+How many big fires struck Paris during the Middle Ages?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (JJ big) (NNS fires))
+    (SQ
+      (VP (VBD struck)
+        (NP (NNP Paris))
+        (PP (IN during)
+          (NP (DT the) (NNP Middle) (NNP Ages)))))
+    (. ?)))
+Ans: syntacticParser.Node@1d67082b
+http://dbpedia.org/resource/Paris[5,5]
+http://dbpedia.org/resource/Middle_Ages[8,9]
+
+OUT OF SCOPE
+
+
+Is Pamela Anderson a vegan?
+(ROOT
+  (SQ (VBZ Is)
+    (NP (NNP Pamela) (NNP Anderson))
+    (NP (DT a) (NN vegan))
+    (. ?)))
+Ans: syntacticParser.Node@7125669e
+http://dbpedia.org/resource/Pamela_Anderson[1,2]
+
+OUT OF SCOPE
+
+
+How often was Michael Jordan divorced?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How) (RB often))
+    (SQ (VBD was)
+      (NP (NNP Michael) (NNP Jordan))
+      (VP (VBN divorced)))
+    (. ?)))
+Ans: syntacticParser.Node@13096dde
+"Michael Jordan [3,4]"	"divorced "	"syntacticParser.Node@13096dde"
+http://dbpedia.org/resource/Michael_Jordan[3,4]
+
+OUT OF SCOPE
+
+
+What is the most beautiful painting?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP (DT the)
+        (ADJP (RBS most) (JJ beautiful))
+        (NN painting)))
+    (. ?)))
+Ans: syntacticParser.Node@79bd478d
+
+OUT OF SCOPE
+
+
+Give me all animal species that live in the Amazon rainforest.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NN animal) (NN species))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP live)
+              (PP (IN in)
+                (NP (DT the) (NN Amazon) (NN rainforest))))))))
+    (. .)))
+Ans: syntacticParser.Node@efd75c4
+"syntacticParser.Node@efd75c4"	"live in"	"the Amazon rainforest [8,10]"
+http://dbpedia.org/resource/Amazon_rainforest[9,10]
+
+OUT OF SCOPE
+
+
+How many inhabitants does the largest city in Canada have?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS inhabitants))
+    (SQ (VBZ does)
+      (NP
+        (NP (DT the) (JJS largest) (NN city))
+        (PP (IN in)
+          (NP (NNP Canada))))
+      (VP (VB have)))
+    (. ?)))
+Ans: syntacticParser.Node@14832eda
+"syntacticParser.Node@3b301d07"	"the largest city "	"Canada [8,8]"
+"syntacticParser.Node@3b301d07"	"have "	"syntacticParser.Node@14832eda"
+http://dbpedia.org/resource/Canada[8,8]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?num
+WHERE {
+        res:Canada dbo:largestCity ?city . 
+        ?city dbo:populationTotal ?num .
+}
+
+
+
+In which studio did the Beatles record their first album?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN studio)))
+    (SQ (VBD did)
+      (NP (DT the) (NN Beatles))
+      (VP (VB record)
+        (NP (PRP$ their) (JJ first) (NN album))))
+    (. ?)))
+Ans: syntacticParser.Node@58b0b82b
+"the Beatles [4,5]"	"record their first album "	"syntacticParser.Node@58b0b82b"
+
+OUT OF SCOPE
+
+
+Who was the first to climb Mount Everest?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (JJ first))
+        (SBAR
+          (S
+            (VP (TO to)
+              (VP (VB climb)
+                (NP (NNP Mount) (NNP Everest))))))))
+    (. ?)))
+Ans: syntacticParser.Node@4f704d5b
+"syntacticParser.Node@4f704d5b"	"climb"	"Mount Everest [6,7]"
+http://dbpedia.org/resource/Mount_Everest[6,7]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?uri
+WHERE {
+          res:Mount_Everest dbo:firstAscentPerson ?uri . 
+}
+
+
+
+How many programming languages are there?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NN programming) (NNS languages))
+    (SQ (VBP are)
+      (NP (EX there)))
+    (. ?)))
+Ans: syntacticParser.Node@248f29f
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT COUNT(DISTINCT ?uri)
+WHERE {
+        ?uri rdf:type dbo:ProgrammingLanguage .
+}
+
+
+
+What is the official color of the University of Oxford?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ official) (NN color))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP University))
+            (PP (IN of)
+              (NP (NNP Oxford)))))))
+    (. ?)))
+Ans: syntacticParser.Node@6a920a2f
+"syntacticParser.Node@6a920a2f"	"the official color "	"the University of Oxford [6,9]"
+http://dbpedia.org/resource/University_of_Oxford[7,9]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?string
+WHERE {
+        res:University_of_Oxford dbo:officialSchoolColour ?string . 
+}
+
+
+
+How many gold medals did Michael Phelps win at the 2008 Olympics?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NP (JJ gold) (NNS medals)))
+    (SQ (VBD did)
+      (NP (NNP Michael) (NNP Phelps))
+      (VP (VB win)
+        (PP (IN at)
+          (NP (DT the) (CD 2008) (NN Olympics)))))
+    (. ?)))
+Ans: syntacticParser.Node@6b02c83d
+"Michael Phelps [5,6]"	"win at the 2008 Olympics "	"syntacticParser.Node@6b02c83d"
+http://dbpedia.org/resource/Olympic_medal[2,3]
+http://dbpedia.org/resource/Michael_Phelps[5,6]
+http://dbpedia.org/resource/2008_Summer_Olympics[10,11]
+
+OUT OF SCOPE
+
+
+To which artistic movement did the painter of The Three Dancers belong?
+(ROOT
+  (SBARQ
+    (WHPP (TO To)
+      (WHNP (WDT which)
+        (NP (JJ artistic) (NN movement))))
+    (SQ (VBD did)
+      (NP
+        (NP (DT the) (NN painter))
+        (PP (IN of)
+          (NP (DT The) (JJ Three) (NN Dancers))))
+      (VP (VB belong)))
+    (. ?)))
+Ans: syntacticParser.Node@3c7b46ef
+"syntacticParser.Node@3ccd3aff"	"the painter "	"The Three Dancers [8,10]"
+"syntacticParser.Node@3ccd3aff"	"belong "	"syntacticParser.Node@3c7b46ef"
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?uri
+WHERE {
+         res:The_Three_Dancers dbo:author ?person .
+         ?person dbo:movement ?uri .
+}
+
+
+
+Give me all animals that are extinct.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS animals))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP are)
+              (ADJP (JJ extinct)))))))
+    (. .)))
+Ans: syntacticParser.Node@7dca0e80
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri rdf:type dbo:Animal .
+        ?uri dbo:conservationStatus 'EX' .
+}
+
+
+
+Does Abraham Lincoln's death place have a website?
+(ROOT
+  (SQ (VBZ Does)
+    (NP
+      (NP (NNP Abraham) (NNP Lincoln) (POS 's))
+      (NN death) (NN place))
+    (VP (VB have)
+      (NP (DT a) (NN website)))
+    (. ?)))
+Ans: syntacticParser.Node@647fa415
+"syntacticParser.Node@647fa415"	"have"	"a website [7,8]"
+http://dbpedia.org/resource/Abraham_Lincoln[1,2]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/>
+ASK
+WHERE {
+        res:Abraham_Lincoln dbo:deathPlace ?p .
+        ?p dbp:website ?w .
+        
+}
+
+
+
+How deep is Lake Placid?
+(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ deep))
+    (SQ (VBZ is)
+      (NP (NNP Lake) (NNP Placid)))
+    (. ?)))
+Ans: syntacticParser.Node@65dd699a
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?n
+WHERE {
+        <http://dbpedia.org/resource/Lake_Placid_(Texas)> dbo:depth ?n . 
+}
+
+
+
+Give me the grandchildren of Bruce Lee.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NN grandchildren))
+        (PP (IN of)
+          (NP (NNP Bruce) (NNP Lee)))))
+    (. .)))
+Ans: syntacticParser.Node@627a850a
+"syntacticParser.Node@627a850a"	"the grandchildren "	"Bruce Lee [5,6]"
+http://dbpedia.org/resource/Bruce_Lee[5,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {
+        res:Bruce_Lee dbo:child ?child . 
+        ?child dbo:child ?uri .
+}
+
+
+
+Who is the youngest Darts player?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP (DT the) (JJS youngest) (NNP Darts) (NN player)))
+    (. ?)))
+Ans: syntacticParser.Node@7c64e947
+http://dbpedia.org/resource/Darts[4,4]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri rdf:type dbo:DartsPlayer .
+        ?uri dbo:birthDate ?date .
+}
+ORDER BY DESC(?date)
+OFFSET 0 LIMIT 1
+
+
+
+Where was Bach born?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP (NNP Bach))
+      (VP (VBN born)))
+    (. ?)))
+Ans: syntacticParser.Node@443aa0e4
+"Bach [2,2]"	"born "	"syntacticParser.Node@443aa0e4"
+http://dbpedia.org/resource/Johann_Sebastian_Bach[2,2]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Johann_Sebastian_Bach dbo:birthPlace ?uri .
+}
+
+
+
+In which countries can you pay using the West African CFA franc?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NNS countries)))
+    (SQ (MD can)
+      (NP (PRP you))
+      (VP (VB pay)
+        (S
+          (VP (VBG using)
+            (NP (DT the)
+              (ADJP (JJ West) (JJ African))
+              (NN CFA) (NN franc))))))
+    (. ?)))
+Ans: syntacticParser.Node@54438055
+"syntacticParser.Node@54438055"	"using"	"the West African CFA franc [7,11]"
+http://dbpedia.org/resource/West_African_CFA_franc[8,11]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {
+         ?uri dbo:currency res:West_African_CFA_franc . 
+}
+
+
+
+What are the top-10 action role-playing video games according to IGN?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP are)
+      (NP
+        (NP (DT the) (JJ top-10) (NN action) (NN role-playing) (NN video) (NNS games))
+        (PP (VBG according)
+          (PP (TO to)
+            (NP (NNP IGN))))))
+    (. ?)))
+Ans: syntacticParser.Node@11d64dd9
+http://dbpedia.org/resource/IGN[10,10]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Action_role-playing_video_games> .
+        ?uri dbp:ign ?score .
+} 
+ORDER BY DESC(?score) 
+LIMIT 10
+
+
+
+What is the most frequent cause of death?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the)
+          (ADJP (RBS most) (JJ frequent))
+          (NN cause))
+        (PP (IN of)
+          (NP (NN death)))))
+    (. ?)))
+Ans: syntacticParser.Node@64d755bb
+"syntacticParser.Node@64d755bb"	"the most frequent cause "	"death [7,7]"
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?x
+WHERE {
+        ?uri dbo:deathCause ?x . 
+}
+ORDER BY DESC(COUNT(DISTINCT ?uri)) 
+OFFSET 0 LIMIT 1
+
+
+
+Does the Isar flow into a lake?
+(ROOT
+  (SQ (VBZ Does)
+    (NP (DT the) (NNP Isar))
+    (VP (VB flow)
+      (PP (IN into)
+        (NP (DT a) (NN lake))))
+    (. ?)))
+Ans: syntacticParser.Node@181c1ab
+"syntacticParser.Node@181c1ab"	"flow into"	"a lake [5,6]"
+http://dbpedia.org/resource/Isar[2,2]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ASK
+WHERE {
+        ?x dbo:inflow res:Isar .
+        ?x rdf:type dbo:Lake . 
+}
+
+
+
+Give me all films produced by Steven Spielberg with a budget of at least $80 million.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS films))
+        (VP (VBN produced)
+          (PP (IN by)
+            (NP (NNP Steven) (NNP Spielberg)))
+          (PP (IN with)
+            (NP
+              (NP (DT a) (NN budget))
+              (PP (IN of)
+                (NP
+                  (QP (IN at) (JJS least) ($ $) (CD 80) (CD million)))))))))
+    (. .)))
+Ans: syntacticParser.Node@73bc3313
+"syntacticParser.Node@73bc3313"	"a budget "	"at least $ 80 million [12,16]"
+http://dbpedia.org/resource/Steven_Spielberg[6,7]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:Film .
+        ?uri dbo:director res:Steven_Spielberg .
+        ?uri dbo:budget ?b .
+        FILTER( xsd:double(?b) >= 8.0E7 )
+}
+
+
+
+Give me all writers that won the Nobel Prize in literature.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS writers))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD won)
+              (NP (DT the) (NNP Nobel) (NNP Prize))
+              (PP (IN in)
+                (NP (NNS literature))))))))
+    (. .)))
+Ans: syntacticParser.Node@1477a4bf
+http://dbpedia.org/resource/Nobel_Prize_in_Literature[7,10]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri rdf:type dbo:Writer .
+        ?uri dbo:award res:Nobel_Prize_in_Literature . 
+}
+
+
+
+Give me all taikonauts.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (NN taikonauts)))
+    (. .)))
+Ans: syntacticParser.Node@1aa965b5
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri rdf:type dbo:Astronaut .
+        ?uri dbo:nationality res:China .
+}
+
+
+
+How many pages does War and Peace have?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS pages))
+    (SQ (VBZ does)
+      (NP (NN War)
+        (CC and)
+        (NN Peace))
+      (VP (VB have)))
+    (. ?)))
+Ans: syntacticParser.Node@30ffe750
+"War and Peace [4,6]"	"have "	"syntacticParser.Node@30ffe750"
+http://dbpedia.org/resource/War_and_Peace[4,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?n
+WHERE {
+        res:War_and_Peace dbo:numberOfPages ?n .
+}
+
+
+
+What is the bridge with the longest span?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN bridge))
+        (PP (IN with)
+          (NP (DT the) (JJS longest) (NN span)))))
+    (. ?)))
+Ans: syntacticParser.Node@51f08baf
+"syntacticParser.Node@51f08baf"	"the bridge "	"the longest span [5,7]"
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:Bridge .
+        ?uri dbo:mainspan ?s . 
+} 
+ORDER BY DESC(?s) 
+OFFSET 0 LIMIT 1
+
+
+
+Give me all actors called Baldwin.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS actors))
+        (VP (VBN called)
+          (S
+            (NP (NNP Baldwin))))))
+    (. .)))
+Ans: syntacticParser.Node@20e872e3
+
+
+PREFIX dbo:  <http://dbpedia.org/ontology/>
+PREFIX res:  <http://dbpedia.org/resource/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri foaf:surname 'Baldwin'@en . 
+      { ?uri dbo:occupation res:Actor . } 
+      UNION 
+      { ?uri rdf:type dbo:Actor . }
+}
+
+
+
+Who is the tallest player of the Atlanta Falcons?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJS tallest) (NN player))
+        (PP (IN of)
+          (NP (DT the) (NNP Atlanta) (NNP Falcons)))))
+    (. ?)))
+Ans: syntacticParser.Node@17a5f645
+"syntacticParser.Node@17a5f645"	"the tallest player "	"the Atlanta Falcons [6,8]"
+http://dbpedia.org/resource/Atlanta_Falcons[7,8]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri dbo:team res:Atlanta_Falcons . 
+        ?uri dbo:height ?h .
+} 
+ORDER BY DESC(?h) 
+OFFSET 0 LIMIT 1
+
+
+
+Which rivers flow into a German lake?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS rivers))
+    (SQ
+      (VP (VBP flow)
+        (PP (IN into)
+          (NP (DT a) (JJ German) (NN lake)))))
+    (. ?)))
+Ans: syntacticParser.Node@30f4421a
+"syntacticParser.Node@30f4421a"	"flow into"	"a German lake [4,6]"
+http://dbpedia.org/resource/Germany[5,5]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri rdf:type dbo:River .
+        ?x dbo:inflow ?uri .
+        ?x rdf:type dbo:Lake . 
+        ?x dbo:country res:Germany .
+}
+
+
+
+How many James Bond movies are there?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNP James) (NNP Bond) (NNS movies))
+    (SQ (VBP are)
+      (NP (EX there)))
+    (. ?)))
+Ans: syntacticParser.Node@45cc13c7
+http://dbpedia.org/resource/James_Bond[2,3]
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+SELECT COUNT(DISTINCT ?uri) 
+WHERE {
+        ?uri rdf:type yago:JamesBondFilms . 
+}
+
+
+
+Which rockets were launched from Baikonur?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS rockets))
+    (SQ (VBD were)
+      (VP (VBN launched)
+        (PP (IN from)
+          (NP (NNP Baikonur)))))
+    (. ?)))
+Ans: syntacticParser.Node@2de18d0d
+"syntacticParser.Node@2de18d0d"	"launched from"	"Baikonur [5,5]"
+http://dbpedia.org/resource/Baikonur_Cosmodrome[5,5]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri rdf:type dbo:Rocket .
+        ?uri dbo:launchSite res:Baikonur_Cosmodrome .
+}
+
+
+
+Which pope succeeded John Paul II?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN pope))
+    (SQ
+      (VP (VBD succeeded)
+        (NP (NNP John) (NNP Paul) (NNP II))))
+    (. ?)))
+Ans: syntacticParser.Node@7a31328a
+"syntacticParser.Node@7a31328a"	"succeeded"	"John Paul II [3,5]"
+http://dbpedia.org/resource/Pope_John_Paul_II[3,5]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbp: <http://dbpedia.org/property/>
+SELECT DISTINCT ?uri
+WHERE {
+        res:Pope_John_Paul_II dbp:successor ?uri .
+}
+
+
+
+Give me all Dutch parties.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Dutch) (NNS parties)))
+    (. .)))
+Ans: syntacticParser.Node@3c5606e7
+http://dbpedia.org/resource/Netherlands[3,3]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri rdf:type dbo:PoliticalParty .
+        ?uri dbo:country res:Netherlands .
+}
+
+
+
+When is Halloween?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBZ is)
+      (NP (NNP Halloween)))
+    (. ?)))
+Ans: syntacticParser.Node@633d3462
+http://dbpedia.org/resource/Halloween[2,2]
+
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?date
+WHERE {
+        res:Halloween dbp:date ?date . 
+}
+
+
+
+Give me all Swedish oceanographers.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (PDT all) (JJ Swedish) (NNP oceanographers)))
+    (. .)))
+Ans: syntacticParser.Node@612d620b
+http://dbpedia.org/resource/Sweden[3,3]
+http://dbpedia.org/resource/Oceanography[4,4]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri dbo:field res:Oceanography . 
+        ?uri dbo:birthPlace res:Sweden .        
+}
+
+
+
+Give me all actors who were born in Berlin.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS actors))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD were)
+              (VP (VBN born)
+                (PP (IN in)
+                  (NP (NNP Berlin)))))))))
+    (. .)))
+Ans: syntacticParser.Node@74326f03
+"syntacticParser.Node@74326f03"	"born in"	"Berlin [8,8]"
+http://dbpedia.org/resource/Berlin[8,8]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:Actor .
+        ?uri dbo:birthPlace res:Berlin .
+}
+
+
+
+What was the last movie with Alec Guinness?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (JJ last) (NN movie))
+        (PP (IN with)
+          (S
+            (VP (VBG Alec)
+              (NP (NNP Guinness)))))))
+    (. ?)))
+Ans: syntacticParser.Node@2e8da909
+"syntacticParser.Node@2e8da909"	"Alec"	"Guinness [7,7]"
+http://dbpedia.org/resource/Alec_Guinness[6,7]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri rdf:type dbo:Film . 
+        ?uri dbo:starring res:Alec_Guinness .
+        ?uri dbo:releaseDate ?date . 
+} 
+ORDER BY DESC(?date) 
+LIMIT 1
+
+
+
+Which poet wrote the most books?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN poet))
+    (SQ
+      (VP (VBD wrote)
+        (NP (DT the) (JJS most) (NNS books))))
+    (. ?)))
+Ans: syntacticParser.Node@bf90914
+"syntacticParser.Node@bf90914"	"wrote"	"the most books [3,5]"
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri dbo:occupation res:Poet .
+        ?x dbo:author ?uri .
+        ?x rdf:type dbo:Book .
+}
+ORDER BY DESC(COUNT(?x))
+OFFSET 0 LIMIT 1
+
+
+
+How many languages are spoken in Colombia?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS languages))
+    (SQ (VBP are)
+      (VP (VBN spoken)
+        (PP (IN in)
+          (NP (NNP Colombia)))))
+    (. ?)))
+Ans: syntacticParser.Node@2fe549bf
+"syntacticParser.Node@2fe549bf"	"spoken in"	"Colombia [6,6]"
+http://dbpedia.org/resource/Colombia[6,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT COUNT(DISTINCT ?uri) 
+WHERE {
+        ?uri rdf:type dbo:Language . 
+        res:Colombia dbo:language ?uri .
+}
+
+
+
+What does IYCM stand for?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ does)
+      (NP (NNP IYCM))
+      (VP (VB stand)
+        (PP (IN for))))
+    (. ?)))
+Ans: syntacticParser.Node@8562ade
+"IYCM [2,2]"	"stand for "	"syntacticParser.Node@8562ade"
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri dbo:abbreviation 'IYCM' .
+}
+
+
+
+What was Brazil's lowest rank in the FIFA World Ranking?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD was)
+      (NP
+        (NP
+          (NP (NNP Brazil) (POS 's))
+          (JJS lowest) (NN rank))
+        (PP (IN in)
+          (NP (DT the) (NNP FIFA) (NNP World) (NNS Ranking)))))
+    (. ?)))
+Ans: syntacticParser.Node@1799dddc
+"syntacticParser.Node@1799dddc"	"Brazil 's lowest rank "	"the FIFA World Ranking [7,10]"
+http://dbpedia.org/resource/Brazil_national_football_team[2,2]
+http://dbpedia.org/resource/FIFA_World_Rankings[8,10]
+
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?n
+WHERE {
+        res:Brazil_national_football_team dbp:fifaMin ?n .
+}
+
+
+
+Give me the capitals of all countries that the Himalayas run through.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NNS capitals))
+        (PP (IN of)
+          (NP (DT all) (NNS countries)))
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (NNPS Himalayas))
+            (VP (VBP run)
+              (ADVP (RB through)))))))
+    (. .)))
+Ans: syntacticParser.Node@58c5db69
+http://dbpedia.org/resource/Himalayas[9,9]
+
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {
+         res:Himalayas dbp:country ?country . 
+         ?country dbo:capital ?uri .
+}
+
+
+
+Which actor played Chewbacca?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN actor))
+    (SQ
+      (VP (VBD played)
+        (NP (NNP Chewbacca))))
+    (. ?)))
+Ans: syntacticParser.Node@1793e079
+"syntacticParser.Node@1793e079"	"played"	"Chewbacca [3,3]"
+http://dbpedia.org/resource/Chewbacca[3,3]
+
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {
+        res:Chewbacca dbp:portrayer ?uri . 
+}
+
+
+
+Which ingredients do I need for carrot cake?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS ingredients))
+    (SQ (VBP do)
+      (NP (PRP I))
+      (VP (VB need)
+        (PP (IN for)
+          (NP (NN carrot) (NN cake)))))
+    (. ?)))
+Ans: syntacticParser.Node@6685e798
+"I [3,3]"	"need for carrot cake "	"syntacticParser.Node@6685e798"
+http://dbpedia.org/resource/Carrot_cake[6,7]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {
+        res:Carrot_cake dbo:ingredient ?uri .
+}
+
+
+
+Is Cola a beverage?
+(ROOT
+  (SQ (VBZ Is)
+    (NP (NNS Cola))
+    (NP (DT a) (NN beverage))
+    (. ?)))
+Ans: syntacticParser.Node@723105be
+http://dbpedia.org/resource/Cola[1,1]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ASK 
+WHERE {
+        res:Cola rdf:type dbo:Beverage .
+}
+
+
+
+Who has Tom Cruise been married to?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBZ has)
+        (NP (NNP Tom) (NNP Cruise))
+        (VP (VBN been)
+          (VP (VBN married)
+            (PP (TO to))))))
+    (. ?)))
+Ans: syntacticParser.Node@55707754
+http://dbpedia.org/resource/Tom_Cruise[2,3]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri dbo:spouse res:Tom_Cruise.
+}
+
+
+
+Which of Tim Burton's films had the highest budget?
+(ROOT
+  (S
+    (NP
+      (NP (NN Which))
+      (PP (IN of)
+        (NP
+          (NP (NNP Tim) (NNP Burton) (POS 's))
+          (NNS films))))
+    (VP (VBD had)
+      (NP (DT the) (JJS highest) (NN budget)))
+    (. ?)))
+Ans: syntacticParser.Node@5b254cb9
+"syntacticParser.Node@5b254cb9"	"Which "	"Tim Burton 's films [2,5]"
+"syntacticParser.Node@5b254cb9"	"had"	"the highest budget [7,9]"
+http://dbpedia.org/resource/Tim_Burton[2,3]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri dbo:director res:Tim_Burton .
+        ?uri dbo:budget ?b .
+}
+ORDER BY ?b
+OFFSET 0 LIMIT 1
+
+
+
+How heavy is Jupiter's lightest moon?
+(ROOT
+  (SBARQ
+    (WHADJP (WRB How)
+      (ADJP (JJ heavy)))
+    (SQ (VBZ is)
+      (NP
+        (NP (NNP Jupiter) (POS 's))
+        (JJ lightest) (NN moon)))
+    (. ?)))
+Ans: syntacticParser.Node@5f1dee86
+http://dbpedia.org/resource/Jupiter[3,3]
+http://dbpedia.org/resource/Natural_satellite[6,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?n
+WHERE {
+        ?uri dbp:satelliteOf res:Jupiter .
+        ?uri dbo:mass ?n .
+}
+ORDER BY ASC(?n)
+OFFSET 0 LIMIT 1
+
+
+
+Which actor was casted in the most movies?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN actor))
+    (SQ (VBD was)
+      (NP (NN casted))
+      (PP (IN in)
+        (NP (DT the) (JJS most) (NNS movies))))
+    (. ?)))
+Ans: syntacticParser.Node@5c1c07af
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:Actor .
+        ?f rdf:type dbo:Film .
+        ?f dbo:starring ?uri .
+} 
+ORDER BY DESC(COUNT(DISTINCT(?f))) 
+OFFSET 0 LIMIT 1
+
+
+
+Is James Bond married?
+(ROOT
+  (SQ (VBZ Is)
+    (NP (NNP James) (NNP Bond))
+    (VP (VBN married))
+    (. ?)))
+Ans: syntacticParser.Node@18fee560
+http://dbpedia.org/resource/James_Bond[1,2]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+ASK 
+WHERE {
+        res:James_Bond dbo:spouse ?uri . 
+}
+
+
+
+Give me all Australian metalcore bands.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (JJ Australian) (NNP metalcore) (NNS bands)))
+    (. .)))
+Ans: syntacticParser.Node@47cd3c0e
+http://dbpedia.org/resource/Australia[3,3]
+http://dbpedia.org/resource/Metalcore[4,4]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri rdf:type dbo:Band .
+        ?uri dbo:genre res:Metalcore .
+      { ?uri dbo:hometown res:Australia . }
+      UNION 
+      { ?uri dbo:hometown ?h .
+        ?h dbo:country res:Australia . }
+}
+
+
+
+Give me all actors who were born in Paris after 1950.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS actors))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD were)
+              (VP (VBN born)
+                (PP (IN in)
+                  (NP (NNP Paris)))
+                (PP (IN after)
+                  (NP (CD 1950)))))))))
+    (. .)))
+Ans: syntacticParser.Node@66eaf512
+http://dbpedia.org/resource/Paris[8,8]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:Actor .
+        ?uri dbo:birthPlace res:Paris .
+        ?uri dbo:birthDate ?date .
+        FILTER ( ?date >= xsd:dateTime('1950-12-31T00:00:00Z')) 
+}
+
+
+
+When was Carlo Giuliani shot?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD was)
+      (NP (NNP Carlo) (NNP Giuliani))
+      (VP (VBN shot)))
+    (. ?)))
+Ans: syntacticParser.Node@241eb5f1
+"Carlo Giuliani [2,3]"	"shot "	"syntacticParser.Node@241eb5f1"
+http://dbpedia.org/resource/Death_of_Carlo_Giuliani[2,3]
+
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?date
+WHERE {
+        res:Death_of_Carlo_Giuliani dbp:dateOfDeath ?date .
+}
+
+
+
+Who are the four youngest MVP basketball players?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBP are)
+      (NP (DT the) (CD four) (JJ youngest)
+        (NP (NN MVP) (NN basketball) (NNS players))))
+    (. ?)))
+Ans: syntacticParser.Node@269881ce
+http://dbpedia.org/resource/Most_Valuable_Player[5,5]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:BasketballPlayer .
+        ?uri dbo:birthDate ?date.
+        ?uri dbp:highlights ?h .
+        FILTER regex(?h,'MVP')
+} 
+ORDER BY DESC(?date) 
+OFFSET 0 LIMIT 4
+
+
+
+Which companies have more than 1 million employees?
+(ROOT
+  (S
+    (NP (VBN Which) (NNS companies))
+    (VP (VBP have)
+      (NP
+        (QP (JJR more) (IN than) (CD 1) (CD million))
+        (NNS employees)))
+    (. ?)))
+Ans: syntacticParser.Node@29203f1e
+"syntacticParser.Node@29203f1e"	"have"	"more than 1 million employees [3,7]"
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+         ?uri rdf:type dbo:Company .
+       { ?uri dbo:numberOfEmployees ?n . }
+       UNION
+       { ?uri dbp:numEmployees ?n . }
+       FILTER ( ?n > 1000000 ) } 
+
+
+
+Give all swimmers that were born in Moscow.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP
+        (NP (DT all) (NNS swimmers))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD were)
+              (VP (VBN born)
+                (PP (IN in)
+                  (NP (NNP Moscow)))))))))
+    (. .)))
+Ans: syntacticParser.Node@4d69ca49
+"syntacticParser.Node@4d69ca49"	"born in"	"Moscow [7,7]"
+http://dbpedia.org/resource/Moscow[7,7]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+         ?uri rdf:type dbo:Swimmer .
+         ?uri dbo:birthPlace res:Moscow .
+}
+
+
+
+Who was called Rodzilla?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (VP (VBN called)
+        (NP (NNP Rodzilla))))
+    (. ?)))
+Ans: syntacticParser.Node@6380df52
+"syntacticParser.Node@6380df52"	"called"	"Rodzilla [3,3]"
+
+
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+         ?uri dbp:nickname "Rodzilla"@en .
+}
+
+
+
+Show me the book that Muhammad Ali wrote.
+(ROOT
+  (S
+    (VP (VB Show)
+      (NP (PRP me))
+      (NP
+        (NP (DT the) (NN book))
+        (SBAR
+          (WHNP (IN that))
+          (S
+            (NP (NNP Muhammad) (NNP Ali))
+            (VP (VBD wrote))))))
+    (. .)))
+Ans: syntacticParser.Node@38447098
+http://dbpedia.org/resource/Muhammad_Ali[5,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+         ?uri rdf:type dbo:Book . 
+         ?uri dbo:author res:Muhammad_Ali . 
+}
+
+
+
+Which museums does Paris have?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN museums))
+    (SQ (VBZ does)
+      (NP (NNP Paris))
+      (VP (VB have)))
+    (. ?)))
+Ans: syntacticParser.Node@2d1236b3
+"Paris [3,3]"	"have "	"syntacticParser.Node@2d1236b3"
+http://dbpedia.org/resource/Paris[3,3]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri
+WHERE { 
+         ?uri rdf:type dbo:Museum . 
+         ?uri dbo:location res:Paris . 
+}
+
+
+
+Which city has the most inhabitants?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN city))
+    (SQ
+      (VP (VBZ has)
+        (NP (DT the) (JJS most) (NNS inhabitants))))
+    (. ?)))
+Ans: syntacticParser.Node@7355b4dd
+"syntacticParser.Node@7355b4dd"	"has"	"the most inhabitants [3,5]"
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri
+WHERE { 
+         ?uri rdf:type dbo:City . 
+         ?uri dbo:populationTotal ?pop . 
+}
+ORDER BY DESC(?pop)
+OFFSET 0 LIMIT 1
+
+
+
+Which city has the least inhabitants?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN city))
+    (SQ
+      (VP (VBZ has)
+        (NP (DT the) (JJS least) (NNS inhabitants))))
+    (. ?)))
+Ans: syntacticParser.Node@66168ed6
+"syntacticParser.Node@66168ed6"	"has"	"the least inhabitants [3,5]"
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri
+WHERE { 
+         ?uri rdf:type dbo:City . 
+         ?uri dbo:populationTotal ?pop . 
+}
+ORDER BY ASC(?pop)
+OFFSET 0 LIMIT 1
+
+
+
+Give me all the TV shows with Neil Patrick Harris.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP (DT all) (DT the) (NN TV) (NNS shows))
+      (PP (IN with)
+        (NP (NNP Neil) (NNP Patrick) (NNP Harris))))
+    (. .)))
+Ans: syntacticParser.Node@2131eca3
+http://dbpedia.org/resource/Neil_Patrick_Harris[7,9]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri
+WHERE { 
+         ?uri rdf:type dbo:TelevisionShow . 
+         ?uri dbo:starring res:Neil_Patrick_Harris . 
+}
+
+
+
+Who wrote The Hunger Games?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD wrote)
+        (NP (DT The) (NN Hunger) (NN Games))))
+    (. ?)))
+Ans: syntacticParser.Node@5622549f
+"syntacticParser.Node@5622549f"	"wrote"	"The Hunger Games [2,4]"
+http://dbpedia.org/resource/The_Hunger_Games[2,4]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri
+WHERE { 
+        res:The_Hunger_Games dbo:author ?uri . 
+}
+
+
+
+Show a list of soccer clubs that play in the Bundesliga.
+(ROOT
+  (S
+    (VP (VB Show)
+      (NP
+        (NP (DT a) (NN list))
+        (PP (IN of)
+          (NP
+            (NP (NN soccer) (NNS clubs))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP play)
+                  (PP (IN in)
+                    (NP (DT the) (NNP Bundesliga))))))))))
+    (. .)))
+Ans: syntacticParser.Node@1075b7f4
+"syntacticParser.Node@1075b7f4"	"play in"	"the Bundesliga [9,10]"
+http://dbpedia.org/resource/Bundesliga[10,10]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri
+WHERE { 
+        ?uri rdf:type dbo:SoccerClub .
+        ?uri dbo:league res:Bundesliga . 
+}
+
+
+
+What country is Mount Everest in?
+(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN country))
+    (SQ (VBZ is)
+      (NP (NNP Mount) (NNP Everest))
+      (PP (IN in)))
+    (. ?)))
+Ans: syntacticParser.Node@2b1da0b2
+http://dbpedia.org/resource/Mount_Everest[3,4]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri
+WHERE { 
+        res:Mount_Everest dbo:locatedInArea ?uri . 
+        ?uri rdf:type dbo:Country .
+}
+
+
+
+Who is the founder of Penguin Books?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN founder))
+        (PP (IN of)
+          (NP (NNP Penguin) (NNP Books)))))
+    (. ?)))
+Ans: syntacticParser.Node@3cfcef1c
+"syntacticParser.Node@3cfcef1c"	"the founder "	"Penguin Books [5,6]"
+http://dbpedia.org/resource/Penguin_Books[5,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri
+WHERE { 
+        res:Penguin_Books dbo:founder ?uri .
+}
+
+
+
+Which programming languages influenced Javascript?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN programming) (NNS languages))
+    (SQ
+      (VP (VBD influenced)
+        (NP (NNP Javascript))))
+    (. ?)))
+Ans: syntacticParser.Node@17ec0765
+"syntacticParser.Node@17ec0765"	"influenced"	"Javascript [4,4]"
+http://dbpedia.org/resource/JavaScript[4,4]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri
+WHERE { 
+        ?uri rdf:type dbo:ProgrammingLanguage .
+        ?uri dbo:influenced res:JavaScript . 
+}
+
+
+
+Did Che Guevara have children?
+(ROOT
+  (SQ (VBD Did)
+    (NP (NNP Che) (NNP Guevara))
+    (VP (VB have)
+      (NP (NNS children)))
+    (. ?)))
+Ans: syntacticParser.Node@349a7c0a
+"syntacticParser.Node@349a7c0a"	"have"	"children [4,4]"
+http://dbpedia.org/resource/Che_Guevara[1,2]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+ASK
+WHERE { 
+        res:Che_Guevara dbo:child ?uri . 
+}
+
+
+
+List all the musicals with music by Elton John.
+(ROOT
+  (S
+    (VP (VB List)
+      (NP (DT all) (DT the) (NNS musicals))
+      (PP (IN with)
+        (NP
+          (NP (NN music))
+          (PP (IN by)
+            (NP (NNP Elton) (NNP John))))))
+    (. .)))
+Ans: syntacticParser.Node@7a12b81f
+"syntacticParser.Node@7a12b81f"	"music "	"Elton John [7,8]"
+http://dbpedia.org/resource/Elton_John[7,8]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri
+WHERE { 
+        ?uri rdf:type dbo:Musical .
+        ?uri dbo:musicBy res:Elton_John .
+}
+
+
+
+Show me all the breweries in Australia.
+(ROOT
+  (S
+    (VP (VB Show)
+      (NP (PRP me))
+      (NP (PDT all) (DT the) (NNS breweries))
+      (PP (IN in)
+        (NP (NNP Australia))))
+    (. .)))
+Ans: syntacticParser.Node@aaa96ed
+http://dbpedia.org/resource/Australia[6,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri ?x
+WHERE { 
+        ?uri rdf:type dbo:Brewery .
+      { ?uri dbo:location res:Australia . }
+      UNION
+      { ?uri dbo:location ?x . 
+        ?x dbo:country res:Australia . } 
+}
+
+
+
+When was the Titanic completed?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD was)
+      (NP (DT the) (NNP Titanic))
+      (VP (VBN completed)))
+    (. ?)))
+Ans: syntacticParser.Node@7559f773
+"the Titanic [2,3]"	"completed "	"syntacticParser.Node@7559f773"
+http://dbpedia.org/resource/RMS_Titanic[3,3]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?date
+WHERE { 
+        res:RMS_Titanic dbo:completionDate ?date . 
+}
+
+
+
+How much did Pulp Fiction cost?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How) (RB much))
+    (SQ (VBD did)
+      (NP (NN Pulp) (NN Fiction))
+      (VP (VB cost)))
+    (. ?)))
+Ans: syntacticParser.Node@45456721
+"Pulp Fiction [3,4]"	"cost "	"syntacticParser.Node@45456721"
+http://dbpedia.org/resource/Pulp_Fiction[3,4]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?n
+WHERE { 
+        res:Pulp_Fiction dbo:budget ?n . 
+}
+
+
+
+How many airlines are there?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS airlines))
+    (SQ (VBP are)
+      (NP (EX there)))
+    (. ?)))
+Ans: syntacticParser.Node@33f2822a
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT COUNT(DISTINCT ?uri)
+WHERE { 
+        ?uri rdf:type dbo:Airline . 
+}
+
+
+
+Who played Agent Smith in Matrix?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD played)
+        (NP (NNP Agent) (NNP Smith))
+        (PP (IN in)
+          (NP (NNP Matrix)))))
+    (. ?)))
+Ans: syntacticParser.Node@2f8de2cc
+http://dbpedia.org/resource/Agent_Smith[2,3]
+
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE { 
+        res:Agent_Smith dbp:portrayer ?uri . 
+}
+
+
+
+How much carbs does peanut butter have?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ much))
+      (NP (NN carbs)))
+    (SQ (VBZ does)
+      (NP (NN peanut) (NN butter))
+      (VP (VB have)))
+    (. ?)))
+Ans: syntacticParser.Node@12efcd94
+"peanut butter [4,5]"	"have "	"syntacticParser.Node@12efcd94"
+http://dbpedia.org/resource/Peanut_butter[4,5]
+
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?carbs
+WHERE { 
+        res:Peanut_butter dbp:carbs ?carbs .
+}
+
+
+
+Which book has the most pages?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN book))
+    (SQ
+      (VP (VBZ has)
+        (NP (DT the) (JJS most) (NNS pages))))
+    (. ?)))
+Ans: syntacticParser.Node@c87ac26
+"syntacticParser.Node@c87ac26"	"has"	"the most pages [3,5]"
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri
+WHERE { 
+        ?uri rdf:type dbo:Book . 
+        ?uri dbo:numberOfPages ?n .
+}
+ORDER BY DESC(?n)
+OFFSET 0 LIMIT 1
+
+
+
+Which bridges cross the Seine?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN bridges))
+    (SQ
+      (VP (VBP cross)
+        (NP (DT the) (NN Seine))))
+    (. ?)))
+Ans: syntacticParser.Node@2f6091ba
+"syntacticParser.Node@2f6091ba"	"cross"	"the Seine [3,4]"
+http://dbpedia.org/resource/Seine[4,4]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri
+WHERE { 
+        ?uri rdf:type dbo:Bridge .
+        ?uri dbo:crosses res:Seine .
+}
+
+
+
+Who is the mayor of the capital of French Polynesia?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN mayor))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN capital))
+            (PP (IN of)
+              (NP (JJ French) (NNS Polynesia)))))))
+    (. ?)))
+Ans: syntacticParser.Node@4df538f0
+"syntacticParser.Node@79a8c49c"	"the capital "	"French Polynesia [8,9]"
+"syntacticParser.Node@4df538f0"	"the mayor "	"syntacticParser.Node@79a8c49c"
+http://dbpedia.org/resource/French_Polynesia[8,9]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:French_Polynesia dbo:capital ?x .
+        ?x dbo:mayor ?uri .
+}
+
+
+
+When did Dracula's creator die?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD did)
+      (NP
+        (NP (NNP Dracula) (POS 's))
+        (NN creator))
+      (VP (VB die)))
+    (. ?)))
+Ans: syntacticParser.Node@7c842d5a
+"Dracula 's creator [2,4]"	"die "	"syntacticParser.Node@7c842d5a"
+http://dbpedia.org/resource/Count_Dracula[2,2]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?date
+WHERE { 
+        res:Count_Dracula dbo:creator ?x . 
+        ?x dbo:deathDate ?date .
+}
+
+
+
+What is the location of the Houses of Parliament?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN location))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNPS Houses))
+            (PP (IN of)
+              (NP (NNP Parliament)))))))
+    (. ?)))
+Ans: syntacticParser.Node@202073b2
+"syntacticParser.Node@202073b2"	"the location "	"the Houses of Parliament [5,8]"
+http://dbpedia.org/resource/Palace_of_Westminster[6,8]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT ?uri 
+WHERE { 
+         res:Palace_of_Westminster dbo:location ?uri .
+}
+
+
+
+Show me all English Gothic buildings in Kent.
+(ROOT
+  (S
+    (VP (VB Show)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNP English) (JJ Gothic) (NNS buildings))
+        (PP (IN in)
+          (NP (NNP Kent)))))
+    (. .)))
+Ans: syntacticParser.Node@4a3dfcb
+"syntacticParser.Node@4a3dfcb"	"all English Gothic buildings "	"Kent [7,7]"
+http://dbpedia.org/resource/English_Gothic_architecture[3,4]
+http://dbpedia.org/resource/Kent[7,7]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT ?uri 
+WHERE { 
+         ?uri rdf:type dbo:Building . 
+         ?uri dbo:architecturalStyle res:English_Gothic_architecture .
+         ?uri dbo:location res:Kent .
+}
+
+
+
+Who was the pope that founded the Vatican Television?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (DT the) (NN pope))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD founded)
+              (NP (DT the) (NNP Vatican) (NNP Television)))))))
+    (. ?)))
+Ans: syntacticParser.Node@1651b1c9
+"syntacticParser.Node@1651b1c9"	"founded"	"the Vatican Television [6,8]"
+http://dbpedia.org/resource/Vatican_Television_Center[7,8]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT ?uri 
+WHERE { 
+         ?uri rdf:type dbo:Pope . 
+         res:Vatican_Television_Center dbo:foundedBy ?uri .
+}
+
+
+
+What airlines are part of the SkyTeam alliance?
+(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NNS airlines))
+    (SQ (VBP are)
+      (NP
+        (NP (NN part))
+        (PP (IN of)
+          (NP (DT the) (NNP SkyTeam) (NN alliance)))))
+    (. ?)))
+Ans: syntacticParser.Node@4c31467e
+"syntacticParser.Node@4c31467e"	"part "	"the SkyTeam alliance [5,7]"
+http://dbpedia.org/resource/SkyTeam[6,6]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+          ?uri rdf:type dbo:Airline .
+        { ?uri dbp:alliance res:SkyTeam . }
+        UNION
+        { ?uri dbo:Alliance res:SkyTeam . }
+}
+
+
+
+What is the total population of Melbourne, Florida?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJ total) (NN population))
+        (PP (IN of)
+          (NP (NNP Melbourne) (, ,)
+            (NP (NNP Florida))))))
+    (. ?)))
+Ans: syntacticParser.Node@557fa0c6
+"syntacticParser.Node@557fa0c6"	"the total population "	"Melbourne , Florida [6,8]"
+http://dbpedia.org/resource/Melbourne,_Florida[6,8]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT ?uri 
+WHERE { 
+        <http://dbpedia.org/resource/Melbourne,_Florida> dbo:populationTotal ?uri .
+}
+
+
+
+Which airports does Air China serve?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NNS airports))
+    (SQ (VBZ does)
+      (NP (NN Air) (NNP China))
+      (VP (VB serve)))
+    (. ?)))
+Ans: syntacticParser.Node@5caafe61
+"Air China [3,4]"	"serve "	"syntacticParser.Node@5caafe61"
+http://dbpedia.org/resource/Air_China[3,4]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Air_China dbo:targetAirport ?uri .
+}
+
+
+
+In which year was Rachel Stevens born?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN year)))
+    (SQ (VBD was)
+      (NP (NNP Rachel) (NNP Stevens))
+      (VP (VBN born)))
+    (. ?)))
+Ans: syntacticParser.Node@4128ef60
+"Rachel Stevens [4,5]"	"born "	"syntacticParser.Node@4128ef60"
+http://dbpedia.org/resource/Rachel_Stevens[4,5]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Rachel_Stevens dbo:birthYear ?uri .
+}
+
+
+
+Where was JFK assassinated?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD was)
+      (NP (NNP JFK))
+      (VP (VBN assassinated)))
+    (. ?)))
+Ans: syntacticParser.Node@6e866966
+"JFK [2,2]"	"assassinated "	"syntacticParser.Node@6e866966"
+http://dbpedia.org/resource/John_F._Kennedy[2,2]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT DISTINCT ?uri 
+WHERE {
+        res:John_F._Kennedy dbo:deathPlace ?uri .
+}
+
+
+
+How many politicians graduated from Columbia University?
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS politicians))
+    (SQ
+      (VP (VBD graduated)
+        (PP (IN from)
+          (NP (NNP Columbia) (NNP University)))))
+    (. ?)))
+Ans: syntacticParser.Node@75ba3269
+"syntacticParser.Node@75ba3269"	"graduated from"	"Columbia University [5,6]"
+http://dbpedia.org/resource/Columbia_University[5,6]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT DISTINCT COUNT(?uri) 
+WHERE {
+        ?uri dbo:profession res:Politician .
+        ?uri dbo:almaMater res:Columbia_University .
+}
+
+
+
+Which scientist is known for the Manhattan Project and the Nobel Peace Prize?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN scientist))
+    (SQ (VBZ is)
+      (VP (VBN known)
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NNP Manhattan) (NNP Project))
+            (CC and)
+            (NP (DT the) (NNP Nobel) (NNP Peace) (NNP Prize))))))
+    (. ?)))
+Ans: syntacticParser.Node@33a7fcfc
+"syntacticParser.Node@33a7fcfc"	"known for"	"the Manhattan Project and the Nobel Peace Prize [5,12]"
+http://dbpedia.org/resource/Manhattan_Project[6,7]
+http://dbpedia.org/resource/Nobel_Peace_Prize[10,12]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri dbo:knownFor res:Manhattan_Project .
+        ?uri rdf:type dbo:Scientist .
+        ?uri dbo:knownFor res:Nobel_Peace_Prize .
+}
+
+
+
+What is the highest volcano in Africa?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJS highest) (NN volcano))
+        (PP (IN in)
+          (NP (NNP Africa)))))
+    (. ?)))
+Ans: syntacticParser.Node@483b5a57
+"syntacticParser.Node@483b5a57"	"the highest volcano "	"Africa [6,6]"
+http://dbpedia.org/resource/Africa[6,6]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:Volcano .
+        ?uri dbo:locatedInArea ?area .        
+        ?area rdf:type yago:AfricanCountries . 
+        ?uri dbo:elevation ?elevation .
+}
+ORDER BY DESC(?elevation) 
+OFFSET 0 LIMIT 1
+
+
+
+Which beer originated in Ireland?
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN beer))
+    (SQ
+      (VP (VBZ originated)
+        (PP (IN in)
+          (NP (NNP Ireland)))))
+    (. ?)))
+Ans: syntacticParser.Node@4e81d984
+"syntacticParser.Node@4e81d984"	"originated in"	"Ireland [4,4]"
+http://dbpedia.org/resource/Ireland[4,4]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri dbp:type res:Beer .
+        ?uri dbp:origin "Ireland"@en .
+}
+
+
+
+What are the specialities of the UNC Health Care?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP are)
+      (NP
+        (NP (DT the) (NNS specialities))
+        (PP (IN of)
+          (NP (DT the) (NNP UNC) (NNP Health) (NNP Care)))))
+    (. ?)))
+Ans: syntacticParser.Node@50cb76f0
+"syntacticParser.Node@50cb76f0"	"the specialities "	"the UNC Health Care [5,8]"
+http://dbpedia.org/resource/UNC_Health_Care[6,8]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+        res:UNC_Health_Care dbp:speciality ?uri .
+}
+
+
+
+Who is the owner of Facebook?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN owner))
+        (PP (IN of)
+          (NP (NNP Facebook)))))
+    (. ?)))
+Ans: syntacticParser.Node@61c84c05
+"syntacticParser.Node@61c84c05"	"the owner "	"Facebook [5,5]"
+http://dbpedia.org/resource/Facebook[5,5]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {
+        res:Facebook dbo:foundedBy ?uri .
+}
+
+
+
+From which region is the Melon de Bourgogne?
+(ROOT
+  (SBARQ (RB From)
+    (WHNP (WDT which) (NN region))
+    (SQ (VBZ is)
+      (NP (DT the) (JJ Melon) (JJ de) (NNP Bourgogne)))
+    (. ?)))
+Ans: syntacticParser.Node@3b5ef58a
+http://dbpedia.org/resource/Melon_de_Bourgogne[5,7]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT DISTINCT ?uri
+WHERE {
+        res:Melon_de_Bourgogne dbo:wineRegion ?uri .
+}
+
+
+
+Who was influenced by Socrates?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (VP (VBN influenced)
+        (PP (IN by)
+          (NP (NNS Socrates)))))
+    (. ?)))
+Ans: syntacticParser.Node@505ad062
+"syntacticParser.Node@505ad062"	"influenced by"	"Socrates [4,4]"
+http://dbpedia.org/resource/Socrates[4,4]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri dbo:influencedBy res:Socrates .
+}
+
+
+
+Who was president of Pakistan in 1978?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (NP
+        (NP (NN president))
+        (PP (IN of)
+          (NP (NNP Pakistan))))
+      (PP (IN in)
+        (NP (CD 1978))))
+    (. ?)))
+Ans: syntacticParser.Node@5c6076d6
+"syntacticParser.Node@5c6076d6"	"president "	"Pakistan [4,4]"
+http://dbpedia.org/resource/Pakistan[4,4]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri dbp:title res:President_of_Pakistan .
+        ?uri dbp:years 1978 .
+}
+
+
+
+Give me English actors starring in Lovesick.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (CD English) (NNS actors))
+        (VP (VBG starring)
+          (PP (IN in)
+            (NP (NNP Lovesick))))))
+    (. .)))
+Ans: syntacticParser.Node@232c5538
+"syntacticParser.Node@232c5538"	"starring in"	"Lovesick [6,6]"
+http://dbpedia.org/resource/England[2,2]
+http://dbpedia.org/resource/Lovesick[6,6]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+SELECT DISTINCT ?uri
+WHERE {
+          res:Lovesick dbo:starring ?uri .
+        { ?uri dbo:birthPlace res:England . }
+        UNION
+        { ?uri rdf:type yago:EnglishFilmActors . }
+}
+
+
+
+Give me all types of eating disorders.
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP me))
+      (NP
+        (NP (DT all) (NNS types))
+        (PP (IN of)
+          (S
+            (VP (VBG eating)
+              (NP (NNS disorders)))))))
+    (. .)))
+Ans: syntacticParser.Node@2bd4b2c
+"syntacticParser.Node@2bd4b2c"	"eating"	"disorders [6,6]"
+
+
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE { 
+         ?uri rdf:type yago:EatingDisorders .
+}
+
+
+
+Who was married to president Chirac?
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBD was)
+      (VP (VBN married)
+        (PP (TO to)
+          (NP (NNP president) (NNP Chirac)))))
+    (. ?)))
+Ans: syntacticParser.Node@36862d10
+"syntacticParser.Node@36862d10"	"married to"	"president Chirac [4,5]"
+http://dbpedia.org/resource/Jacques_Chirac[5,5]
+
+
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri
+WHERE { 
+         res:Jacques_Chirac dbo:spouse ?uri .
+}
+
+
+
+What is the largest metropolitan area in Washington state?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (JJS largest) (NN metropolitan) (NN area))
+        (PP (IN in)
+          (NP (NNP Washington) (NN state)))))
+    (. ?)))
+Ans: syntacticParser.Node@125643e0
+"syntacticParser.Node@125643e0"	"the largest metropolitan area "	"Washington state [7,8]"
+http://dbpedia.org/resource/Washington_State[7,8]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?uri
+WHERE {
+        <http://dbpedia.org/resource/Washington_(state)> dbp:largestmetro ?uri .
+}
+
+
+
+Where in France is sparkling wine produced?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where)
+      (PP (IN in)
+        (NP (NNP France))))
+    (SQ (VBZ is)
+      (NP (JJ sparkling) (NN wine))
+      (VP (VBN produced)))
+    (. ?)))
+Ans: syntacticParser.Node@4bd39453
+"sparkling wine [4,5]"	"produced "	"syntacticParser.Node@4bd39453"
+http://dbpedia.org/resource/France[2,2]
+http://dbpedia.org/resource/Sparkling_wine[4,5]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri dbo:wineProduced res:Sparkling_wine .
+        ?uri dbo:location res:France .
+}
+
+
+
+Where did Hillel Slovak die?
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (NNP Hillel) (NNP Slovak))
+      (VP (VB die)))
+    (. ?)))
+Ans: syntacticParser.Node@fac3b4c
+"Hillel Slovak [2,3]"	"die "	"syntacticParser.Node@fac3b4c"
+http://dbpedia.org/resource/Hillel_Slovak[2,3]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT DISTINCT ?uri
+WHERE {
+        res:Hillel_Slovak dbo:deathPlace ?uri .
+}
+
+
+
+What is the timezone in San Pedro de Atacama?
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN timezone))
+        (PP (IN in)
+          (NP (NNP San) (NNP Pedro) (NNP de) (NNP Atacama)))))
+    (. ?)))
+Ans: syntacticParser.Node@18244b92
+"syntacticParser.Node@18244b92"	"the timezone "	"San Pedro de Atacama [5,8]"
+http://dbpedia.org/resource/San_Pedro_de_Atacama[5,8]
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/timezone/> 
+SELECT DISTINCT ?uri
+WHERE {
+        res:San_Pedro_de_Atacama dbo:timezone ?uri .
+}
+
+
+
+In which city does the Chile Route 68 end?
+(ROOT
+  (SBARQ
+    (WHPP (IN In)
+      (WHNP (WDT which) (NN city)))
+    (SQ (VBZ does)
+      (NP (DT the) (NNP Chile) (NNP Route))
+      (VP
+        (ADVP (RB 68))
+        (VB end)))
+    (. ?)))
+Ans: syntacticParser.Node@3c042331
+"the Chile Route [4,6]"	"68 end "	"syntacticParser.Node@3c042331"
+
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT DISTINCT ?uri
+WHERE {
+        res:Chile_Route_68 dbo:routeEnd ?uri .
+}
+
+
+
