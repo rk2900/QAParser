@@ -1,0 +1,56 @@
+[ID: 	107
+Content: 	When was Alberta admitted as province?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	156
+Content: 	When were the Hells Angels founded?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	171
+Content: 	When was the Statue of Liberty built?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	174
+Content: 	When did Michael Jackson die?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	37
+Content: 	When did Latvia join the EU?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	39
+Content: 	When was the Battle of Gettysburg?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	90
+Content: 	When was Capcom founded?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	230
+Content: 	When is Halloween?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	206
+Content: 	When was Carlo Giuliani shot?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	267
+Content: 	When was the Titanic completed?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	275
+Content: 	When did Dracula's creator die?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+]

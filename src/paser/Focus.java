@@ -3,6 +3,7 @@ package paser;
 import java.util.LinkedList;
 
 import baseline.Entity;
+import basic.format.Pair;
 
 public class Focus {
 	public int leftIndex;
@@ -47,6 +48,33 @@ public class Focus {
 			}
 		}
 		return existFlag;
+	}
+	
+	public Entity getEntityPosition(LinkedList<Entity> entities) {
+		for (Entity entity : entities) {
+			if(this.leftIndex <= entity.getStart() && this.rightIndex >= entity.getEnd()) {
+				return entity;
+			}
+		}
+		return null;
+	}
+	
+	/**
+	 * To get the word positions of non-entity
+	 * @param entities
+	 * @return
+	 */
+	public LinkedList<Integer> getNonEntityPosition(LinkedList<Entity> entities) {
+		Entity e = this.getEntityPosition(entities);
+		LinkedList<Integer> nonEntityPosition = new LinkedList<>();
+		if(e != null) {
+			for(int i=this.leftIndex; i<=this.rightIndex; i++) {
+				if(i<e.getStart() || i>e.getEnd()) {
+					nonEntityPosition.add(i);
+				}
+			}
+		}
+		return nonEntityPosition;
 	}
 	
 	public String getFocusContent(LinkedList<String> wordList) {

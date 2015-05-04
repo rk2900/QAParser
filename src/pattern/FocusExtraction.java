@@ -3,11 +3,7 @@ package pattern;
 import java.util.LinkedList;
 
 import paser.Focus;
-import paser.Question;
 import paser.QuestionFrame;
-import paser.QuestionSingle;
-import pattern.QuestionClassifier.Category;
-import finder.Pipeline;
 
 public class FocusExtraction extends TypeExtraction {
 

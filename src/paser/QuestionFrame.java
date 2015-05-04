@@ -127,6 +127,18 @@ public class QuestionFrame extends Question {
 		System.out.println("-------------------------");
 	}
 	
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("ID: "+"\t"+id+"\n");
+		sb.append("Content: "+"\t"+question+"\n");
+		sb.append("Focus Content: "+"\t"+this.focus.getFocusContent(wordList)+"\n");
+		sb.append("Entity List: "+"\t"+this.entityList.size()+"\n");
+		sb.append("------------------------------\n");
+		
+		return sb.toString();
+	}
+	
 	public void printFocus() {
 		if(!this.focus.isEmpty()) {
 			System.out.println(this.focus.getFocusContent(wordList));

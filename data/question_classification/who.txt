@@ -1,0 +1,196 @@
+[ID: 	102
+Content: 	Who was John F. Kennedy's vice president?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	103
+Content: 	Who is the mayor of Berlin?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	200
+Content: 	Who produces Orangina?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	122
+Content: 	Who is the governor of Wyoming?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	124
+Content: 	Who was the father of Queen Elizabeth II?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	135
+Content: 	Who developed Minecraft?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	141
+Content: 	Who founded Intel?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	142
+Content: 	Who is the husband of Amanda Palmer?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	15
+Content: 	Who created Goofy?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	152
+Content: 	Who invented the zipper?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	167
+Content: 	Who are the parents of the wife of Juan Carlos I?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	177
+Content: 	Who was called Frank The Tank?
+Focus Content: 	
+Entity List: 	0
+------------------------------
+, ID: 	184
+Content: 	Who created the comic Captain America?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	187
+Content: 	Who composed the music for Harold and Maude?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	195
+Content: 	Who wrote the lyrics for the Polish national anthem?
+Focus Content: 	
+Entity List: 	2
+------------------------------
+, ID: 	197
+Content: 	Who painted The Storm on the Sea of Galilee?
+Focus Content: 	
+Entity List: 	0
+------------------------------
+, ID: 	3
+Content: 	Who is the daughter of Robert Kennedy married to?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	35
+Content: 	Who is the owner of Rolls-Royce?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	43
+Content: 	Who is the mayor of Tel Aviv?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	44
+Content: 	Who designed the Brooklyn Bridge?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	48
+Content: 	Who is the editor of Forbes?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	54
+Content: 	Who was the wife of U.S. president Lincoln?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	55
+Content: 	Who developed the video game World of Warcraft?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	62
+Content: 	Who created Wikipedia?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	75
+Content: 	Who was the 16th president of the United States?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	83
+Content: 	Who produced films starring Natalie Portman?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	87
+Content: 	Who wrote the book The Pillars of the Earth?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	234
+Content: 	Who was the first to climb Mount Everest?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	215
+Content: 	Who has Tom Cruise been married to?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	253
+Content: 	Who was called Rodzilla?
+Focus Content: 	
+Entity List: 	0
+------------------------------
+, ID: 	259
+Content: 	Who wrote The Hunger Games?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	262
+Content: 	Who is the founder of Penguin Books?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	270
+Content: 	Who played Agent Smith in Matrix?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	274
+Content: 	Who is the mayor of the capital of French Polynesia?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	278
+Content: 	Who was the pope that founded the Vatican Television?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	289
+Content: 	Who is the owner of Facebook?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	291
+Content: 	Who was influenced by Socrates?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	292
+Content: 	Who was president of Pakistan in 1978?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	295
+Content: 	Who was married to president Chirac?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+]

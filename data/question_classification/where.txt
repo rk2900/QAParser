@@ -1,0 +1,26 @@
+[ID: 	190
+Content: 	Where is the residence of the prime minister of Spain?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	221
+Content: 	Where was Bach born?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	283
+Content: 	Where was JFK assassinated?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	297
+Content: 	Where in France is sparkling wine produced?
+Focus Content: 	
+Entity List: 	2
+------------------------------
+, ID: 	298
+Content: 	Where did Hillel Slovak die?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+]

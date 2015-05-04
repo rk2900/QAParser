@@ -1,0 +1,226 @@
+[ID: 	100
+Content: 	When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?
+Focus Content: 	
+Entity List: 	2
+------------------------------
+, ID: 	101
+Content: 	Which German cities have more than 250000 inhabitants?
+Focus Content: 	German cities
+Entity List: 	1
+------------------------------
+, ID: 	105
+Content: 	What is the second highest mountain on Earth?
+Focus Content: 	second highest mountain
+Entity List: 	0
+------------------------------
+, ID: 	11
+Content: 	Which countries have more than ten caves?
+Focus Content: 	countries
+Entity List: 	0
+------------------------------
+, ID: 	111
+Content: 	Who is the Formula 1 race driver with the most races?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	113
+Content: 	Who is the youngest player in the Premier League?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	115
+Content: 	What is the longest river?
+Focus Content: 	longest river
+Entity List: 	0
+------------------------------
+, ID: 	116
+Content: 	Does Breaking Bad have more episodes than Game of Thrones?
+Focus Content: 	
+Entity List: 	2
+------------------------------
+, ID: 	125
+Content: 	Which U.S. state has been admitted latest?
+Focus Content: 	U.S. state
+Entity List: 	0
+------------------------------
+, ID: 	150
+Content: 	Was the Cuban Missile Crisis earlier than the Bay of Pigs Invasion?
+Focus Content: 	
+Entity List: 	2
+------------------------------
+, ID: 	17
+Content: 	Give me all cities in New Jersey with more than 100000 inhabitants.
+Focus Content: 	cities
+Entity List: 	1
+------------------------------
+, ID: 	180
+Content: 	Give me all books by William Goldman with more than 300 pages.
+Focus Content: 	books
+Entity List: 	1
+------------------------------
+, ID: 	186
+Content: 	What is the largest city in Australia?
+Focus Content: 	largest city
+Entity List: 	1
+------------------------------
+, ID: 	19
+Content: 	Is Egypts largest city also its capital?
+Focus Content: 	
+Entity List: 	0
+------------------------------
+, ID: 	24
+Content: 	Which mountain is the highest after the Annapurna?
+Focus Content: 	mountain
+Entity List: 	1
+------------------------------
+, ID: 	30
+Content: 	Which U.S. state has the highest population density?
+Focus Content: 	U.S. state
+Entity List: 	1
+------------------------------
+, ID: 	34
+Content: 	Which countries have more than two official languages?
+Focus Content: 	countries
+Entity List: 	0
+------------------------------
+, ID: 	40
+Content: 	What is the highest mountain in Australia?
+Focus Content: 	highest mountain
+Entity List: 	1
+------------------------------
+, ID: 	47
+Content: 	What is the highest place of the Urals?
+Focus Content: 	highest place
+Entity List: 	1
+------------------------------
+, ID: 	51
+Content: 	Give me all libraries established earlier than 1400.
+Focus Content: 	libraries
+Entity List: 	0
+------------------------------
+, ID: 	58
+Content: 	Who produced the most films?
+Focus Content: 	
+Entity List: 	0
+------------------------------
+, ID: 	61
+Content: 	Which mountains are higher than the Nanga Parbat?
+Focus Content: 	mountains
+Entity List: 	1
+------------------------------
+, ID: 	67
+Content: 	Give me the websites of companies with more than 500000 employees.
+Focus Content: 	websites
+Entity List: 	0
+------------------------------
+, ID: 	69
+Content: 	Which caves have more than 3 entrances?
+Focus Content: 	caves
+Entity List: 	0
+------------------------------
+, ID: 	81
+Content: 	Which country has the most official languages?
+Focus Content: 	country
+Entity List: 	0
+------------------------------
+, ID: 	92
+Content: 	What is the highest mountain?
+Focus Content: 	highest mountain
+Entity List: 	0
+------------------------------
+, ID: 	98
+Content: 	What is the most beautiful painting?
+Focus Content: 	most beautiful painting
+Entity List: 	0
+------------------------------
+, ID: 	231
+Content: 	How many inhabitants does the largest city in Canada have?
+Focus Content: 	inhabitants
+Entity List: 	1
+------------------------------
+, ID: 	210
+Content: 	Who is the youngest Darts player?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	214
+Content: 	What is the most frequent cause of death?
+Focus Content: 	most frequent cause
+Entity List: 	0
+------------------------------
+, ID: 	218
+Content: 	Give me all films produced by Steven Spielberg with a budget of at least $80 million.
+Focus Content: 	films
+Entity List: 	1
+------------------------------
+, ID: 	217
+Content: 	What is the bridge with the longest span?
+Focus Content: 	bridge
+Entity List: 	0
+------------------------------
+, ID: 	216
+Content: 	Who is the tallest player of the Atlanta Falcons?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	203
+Content: 	Which poet wrote the most books?
+Focus Content: 	poet
+Entity List: 	0
+------------------------------
+, ID: 	228
+Content: 	What was Brazil's lowest rank in the FIFA World Ranking?
+Focus Content: 	Brazil
+Entity List: 	2
+------------------------------
+, ID: 	222
+Content: 	Which of Tim Burton's films had the highest budget?
+Focus Content: 	Tim Burton
+Entity List: 	1
+------------------------------
+, ID: 	209
+Content: 	How heavy is Jupiter's lightest moon?
+Focus Content: 	
+Entity List: 	2
+------------------------------
+, ID: 	220
+Content: 	Which actor was casted in the most movies?
+Focus Content: 	actor
+Entity List: 	0
+------------------------------
+, ID: 	224
+Content: 	Who are the four youngest MVP basketball players?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	251
+Content: 	Which companies have more than 1 million employees?
+Focus Content: 	companies
+Entity List: 	0
+------------------------------
+, ID: 	256
+Content: 	Which city has the most inhabitants?
+Focus Content: 	city
+Entity List: 	0
+------------------------------
+, ID: 	257
+Content: 	Which city has the least inhabitants?
+Focus Content: 	city
+Entity List: 	0
+------------------------------
+, ID: 	272
+Content: 	Which book has the most pages?
+Focus Content: 	book
+Entity List: 	0
+------------------------------
+, ID: 	286
+Content: 	What is the highest volcano in Africa?
+Focus Content: 	highest volcano
+Entity List: 	1
+------------------------------
+, ID: 	296
+Content: 	What is the largest metropolitan area in Washington state?
+Focus Content: 	largest metropolitan area
+Entity List: 	1
+------------------------------
+]

@@ -1,14 +1,17 @@
 package type;
 
+import java.util.HashMap;
 import java.util.LinkedList;
 
-import baseline.Entity;
+import knowledgebase.ClientManagement;
+
+import com.hp.hpl.jena.rdf.model.RDFNode;
+
+import baseline.Answer;
 import baseline.Main;
-import paser.Focus;
+import baseline.Predicate;
 import paser.QuestionFrame;
-import pattern.QuestionClassifier;
-import pattern.QuestionClassifier.Category;
-import pattern.QuestionClassifier.Label;
+import tool.OutputRedirector;
 import finder.Pipeline;
 
 public class TypeConstraint {
@@ -21,27 +24,30 @@ public class TypeConstraint {
 	}
 	
 	public static void main(String[] args) {
-		for(int id=1; id<=300; id++) {
-			System.out.print(id+"\t");
-			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithId(id);
-			QuestionClassifier qc = qf.questionClassifier;
-			System.out.print(qc.category+"\t");
-			System.out.println(qc.label);
-			if(qc.category == Category.RESOURCE && !qc.label.get(Label.COMPARISON)) {
-				LinkedList<Entity> entities = qf.getEntityList();
-				Focus focus = qf.focus;
-				System.out.println(focus.getFocusContent(qf.wordList));
-				System.out.println(entities);
-				for (Entity entity : entities) {
-					if(focus.getLeftIndex() <= entity.getStart() && focus.getRightIndex() >= entity.getEnd()) {
-						// entity in focus
-						System.out.println(id);
-					}
-				}
+		OutputRedirector.openFileOutput("./data/temp.txt");
+		System.out.println("===================================================");
+		for(int id=1; id<=20; id++) {
+			Answer stepAnswer = Main.getAnswer(pipeline, id);
+			QuestionFrame qf = stepAnswer.qf;
+			
+			if(stepAnswer.isException()) {
+				System.out.println(qf.id+"\t"+qf.question);
+				System.out.println(stepAnswer.exceptionString);
+				continue;
 			}
-			System.out.println("-------------------------------------");
+			
+//			//rank resources in answer structure
+//			HashMap<Predicate, LinkedList<RDFNode>> answerMap = new HashMap<>();
+//			for (Predicate predicate : stepAnswer.predictList) {
+//				System.out.println("\t"+predicate.getUri());
+//				LinkedList<RDFNode> nodes = ClientManagement.getNode(stepAnswer.entityUri, predicate.getUri());
+//				for (RDFNode rdfNode : nodes) {
+//					System.out.println("\t\t"+rdfNode.toString());
+//				}
+//				answerMap.put(predicate, nodes);
+//			}
 		}
-		
+		OutputRedirector.closeFileOutput();
 	}
 
 }

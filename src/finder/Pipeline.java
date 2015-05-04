@@ -21,7 +21,8 @@ import paser.Question;
 import paser.QuestionFrame;
 import paser.QuestionSingle;
 import paser.XMLParser;
-import tool.OutputRedirector;
+import pattern.QuestionClassifier.Category;
+import pattern.QuestionClassifier.Label;
 import knowledgebase.ClientManagement;
 
 public class Pipeline {
@@ -245,13 +246,42 @@ public class Pipeline {
 	public static void main(String[] args) {
 		Pipeline pipeline = new Pipeline();
 		Main.setEntity(pipeline);
-//		OutputRedirector.openFileOutput("./data/problem_detail.txt");
+		
+		LinkedList<QuestionFrame> resource = new LinkedList<>();
+		LinkedList<QuestionFrame> who = new LinkedList<>();
+		LinkedList<QuestionFrame> where = new LinkedList<>();
+		
+		LinkedList<QuestionFrame> number = new LinkedList<>();
+		
+		LinkedList<QuestionFrame> date = new LinkedList<>();
+		
+		LinkedList<QuestionFrame> bool = new LinkedList<>();
+		
+		LinkedList<QuestionFrame> comparison = new LinkedList<>();
+		
 		for(int i=1; i<=300; i++) {
 			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
-			System.out.print(qf.id+"\t");
-			System.out.println(qf.getFocusStringForPredicate());
+			
+			if(qf.questionClassifier.label.get(Label.COMPARISON)) {
+				comparison.add(qf); // comparison question
+			} else if(qf.questionClassifier.category == Category.RESOURCE) {
+				if( qf.questionClassifier.label.get(Label.WHO) ) {
+					who.add(qf); // who
+				} else if(qf.questionClassifier.label.get(Label.WHERE)) {
+					where.add(qf); // where
+				} else {
+					resource.add(qf); // resource but not who/where
+				} 
+			} else if(qf.questionClassifier.category == Category.NUMBER) {
+				number.add(qf);
+			} else if(qf.questionClassifier.category == Category.DATE) {
+				date.add(qf);
+			} else if(qf.questionClassifier.category == Category.BOOLEAN) {
+				bool.add(qf);
+			}
 		}
-//		OutputRedirector.closeFileOutput();
+		
+		System.out.println(comparison);
 	}
 
 }

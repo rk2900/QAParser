@@ -1,0 +1,121 @@
+[ID: 	104
+Content: 	How many students does the Free University in Amsterdam have?
+Focus Content: 	students
+Entity List: 	2
+------------------------------
+, ID: 	126
+Content: 	How many languages are spoken in Turkmenistan?
+Focus Content: 	languages
+Entity List: 	1
+------------------------------
+, ID: 	132
+Content: 	How often did Jane Fonda marry?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	138
+Content: 	How many inhabitants does Maribor have?
+Focus Content: 	inhabitants
+Entity List: 	1
+------------------------------
+, ID: 	161
+Content: 	How many missions does the Soyuz programme have?
+Focus Content: 	missions
+Entity List: 	1
+------------------------------
+, ID: 	168
+Content: 	How many employees does Google have?
+Focus Content: 	employees
+Entity List: 	1
+------------------------------
+, ID: 	173
+Content: 	How many children did Benjamin Franklin have?
+Focus Content: 	children
+Entity List: 	1
+------------------------------
+, ID: 	185
+Content: 	How many people live in the capital of Australia?
+Focus Content: 	people
+Entity List: 	1
+------------------------------
+, ID: 	20
+Content: 	How many employees does IBM have?
+Focus Content: 	employees
+Entity List: 	1
+------------------------------
+, ID: 	5
+Content: 	How many countries are there in Europe?
+Focus Content: 	countries
+Entity List: 	1
+------------------------------
+, ID: 	73
+Content: 	How many Aldi stores are there?
+Focus Content: 	Aldi stores
+Entity List: 	1
+------------------------------
+, ID: 	76
+Content: 	How many films did Hal Roach produce?
+Focus Content: 	films
+Entity List: 	1
+------------------------------
+, ID: 	88
+Content: 	How many films did Leonardo DiCaprio star in?
+Focus Content: 	films
+Entity List: 	1
+------------------------------
+, ID: 	95
+Content: 	How many big fires struck Paris during the Middle Ages?
+Focus Content: 	big fires
+Entity List: 	2
+------------------------------
+, ID: 	97
+Content: 	How often was Michael Jordan divorced?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	204
+Content: 	How many programming languages are there?
+Focus Content: 	programming languages
+Entity List: 	0
+------------------------------
+, ID: 	250
+Content: 	How many gold medals did Michael Phelps win at the 2008 Olympics?
+Focus Content: 	gold medals
+Entity List: 	3
+------------------------------
+, ID: 	212
+Content: 	How many pages does War and Peace have?
+Focus Content: 	pages
+Entity List: 	1
+------------------------------
+, ID: 	238
+Content: 	How many James Bond movies are there?
+Focus Content: 	James Bond movies
+Entity List: 	1
+------------------------------
+, ID: 	202
+Content: 	How many languages are spoken in Colombia?
+Focus Content: 	languages
+Entity List: 	1
+------------------------------
+, ID: 	268
+Content: 	How much did Pulp Fiction cost?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	269
+Content: 	How many airlines are there?
+Focus Content: 	airlines
+Entity List: 	0
+------------------------------
+, ID: 	271
+Content: 	How much carbs does peanut butter have?
+Focus Content: 	
+Entity List: 	1
+------------------------------
+, ID: 	284
+Content: 	How many politicians graduated from Columbia University?
+Focus Content: 	politicians
+Entity List: 	1
+------------------------------
+]
