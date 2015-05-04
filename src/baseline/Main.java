@@ -17,6 +17,7 @@ import paser.QuestionFrame;
 import syntacticParser.Constraint;
 import syntacticParser.ConstraintSet;
 import syntacticParser.Node;
+import tool.OutputRedirector;
 import finder.Pipeline;
 import basic.FileOps;
 
@@ -336,96 +337,97 @@ public class Main {
 		
 		if(entityList.size() > 0 && constraintList.size() > 0){
 			if(constraintList.size() == 1){
-//				Constraint constraint = constraintList.get(0);
-//				Entity e;
-//				Node left = constraint.left;
-//				Node right = constraint.right;
-//				int location;
-//				
-//				if(!left.isx && !right.isx){
-//					exceptionString += "Both nodes in Constraint are Strings.\n";
-//				}
-//				
-//				if(!left.isx){
-//					e = getEntity(entityList, left);
-//					location = 0;
-//				}else{
-//					e = getEntity(entityList, right);
-//					location = 1;
-//				}
-//				if(e == null){
-//					exceptionString += "No matched entity in the Node.\n";
-//				}else{
-//					MatchDetail onestep = new MatchDetail(e, constraint, location,focusString);
-//					stepAnswer(onestep, answer);
-//				}
+				Constraint constraint = constraintList.get(0);
+				Entity e;
+				Node left = constraint.left;
+				Node right = constraint.right;
+				int location;
+				
+				if(!left.isx && !right.isx){
+					exceptionString += "Both nodes in Constraint are Strings.\n";
+				}
+				
+				if(!left.isx){
+					e = getEntity(entityList, left);
+					location = 0;
+				}else{
+					e = getEntity(entityList, right);
+					location = 1;
+				}
+				if(e == null){
+					exceptionString += "No matched entity in the Node.\n";
+				}else{
+					MatchDetail onestep = new MatchDetail(e, constraint, location,focusString);
+					stepAnswer(onestep, answer);
+				}
 			}
 			
 			if(constraintList.size() == 2){
-				int eCount = 0;
-				int cs1Location = -1;
-				int cs2Location = -1;
-				
-				Constraint cs1 = constraintList.get(0);
-				Constraint cs2 = constraintList.get(1);
-				
-				if(!cs1.left.isx){
-					cs1Location = 0;
-					++eCount;
-				}
-				if(!cs1.right.isx){
-					cs1Location = 1;
-					++eCount;
-				}
-				if(!cs2.left.isx){
-					cs2Location = 0;
-					++eCount;
-				}
-				if(!cs2.right.isx){
-					cs2Location = 1;
-					++eCount;
-				}
-				
-				if(eCount == 1){
-					Entity e;
-					MatchDetail pipe1;
-					if(cs1Location >= 0){
-						if(cs1Location == 0){
-							e = getEntity(entityList, cs1.left);
-						}else{
-							e = getEntity(entityList, cs1.right);
-						}
-						pipe1 = new MatchDetail(e, cs1, cs1Location,focusString);
-//						pipe(pipe1, cs2, answer);
-					}else{
-						if(cs2Location == 0){
-							e = getEntity(entityList, cs2.left);
-						}else{
-							e = getEntity(entityList, cs2.right);
-						}
-						pipe1 = new MatchDetail(e, cs2, cs2Location,focusString);
-						pipe(pipe1, cs1, answer);
-					}
-				}
-				
-				if(eCount == 2){
-					MatchDetail step1,step2;
-					Entity e;
-					if(cs1Location == 0){
-						e = getEntity(entityList, cs1.left);
-					}else{
-						e = getEntity(entityList, cs1.right);
-					}
-					step1 = new MatchDetail(e, cs1, cs1Location,focusString);
-					
-					if(cs2Location == 0){
-						e = getEntity(entityList, cs2.left);
-					}else{
-						e = getEntity(entityList, cs2.right);
-					}
-					step2 = new MatchDetail(e, cs2, cs2Location,focusString);
-					map(step1, step2);
-				}
+				exceptionString += "constraintList size equals 2\n";
+//				int eCount = 0;
+//				int cs1Location = -1;
+//				int cs2Location = -1;
+//				
+//				Constraint cs1 = constraintList.get(0);
+//				Constraint cs2 = constraintList.get(1);
+//				
+//				if(!cs1.left.isx){
+//					cs1Location = 0;
+//					++eCount;
+//				}
+//				if(!cs1.right.isx){
+//					cs1Location = 1;
+//					++eCount;
+//				}
+//				if(!cs2.left.isx){
+//					cs2Location = 0;
+//					++eCount;
+//				}
+//				if(!cs2.right.isx){
+//					cs2Location = 1;
+//					++eCount;
+//				}
+//				
+//				if(eCount == 1){
+//					Entity e;
+//					MatchDetail pipe1;
+//					if(cs1Location >= 0){
+//						if(cs1Location == 0){
+//							e = getEntity(entityList, cs1.left);
+//						}else{
+//							e = getEntity(entityList, cs1.right);
+//						}
+//						pipe1 = new MatchDetail(e, cs1, cs1Location,focusString);
+////						pipe(pipe1, cs2, answer);
+//					}else{
+//						if(cs2Location == 0){
+//							e = getEntity(entityList, cs2.left);
+//						}else{
+//							e = getEntity(entityList, cs2.right);
+//						}
+//						pipe1 = new MatchDetail(e, cs2, cs2Location,focusString);
+//						pipe(pipe1, cs1, answer);
+//					}
+//				}
+//				
+//				if(eCount == 2){
+//					MatchDetail step1,step2;
+//					Entity e;
+//					if(cs1Location == 0){
+//						e = getEntity(entityList, cs1.left);
+//					}else{
+//						e = getEntity(entityList, cs1.right);
+//					}
+//					step1 = new MatchDetail(e, cs1, cs1Location,focusString);
+//					
+//					if(cs2Location == 0){
+//						e = getEntity(entityList, cs2.left);
+//					}else{
+//						e = getEntity(entityList, cs2.right);
+//					}
+//					step2 = new MatchDetail(e, cs2, cs2Location,focusString);
+//					map(step1, step2);
+//				}
 			}
 			
 			if(constraintList.size() > 2){
@@ -447,6 +449,8 @@ public class Main {
 			e1.printStackTrace();
 		}
 		
+		OutputRedirector.openFileOutput("./data/zch_classfication/When.txt");
+		
 //		OutputRedirector.openFileOutput("./data/zch/oneStepResult.txt");
 //		StringBuilder sb = new StringBuilder();
 //		for(int id=1; id<=300; ++id){
@@ -456,146 +460,132 @@ public class Main {
 //		}
 //		FileOps.SaveFile("./data/zch/oneStepResult.txt", sb.toString());
 //		OutputRedirector.closeFileOutput();
+//		============================================================================
 		
-		LinkedList<String> nullConstrainListQuestion = new LinkedList<String>();
-		LinkedList<String> nullEntityQuestion = new LinkedList<String>();
-		
-		int count = 0;
-//		OutputRedirector.openFileOutput("./data/zch/oneStepResult.txt");
-		for(int id=1; id<=300; ++id){
-			
-			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(id);
-			LinkedList<Entity> entityList = qf.getEntityList();
-			
-			ConstraintSet constraintSet=ConstraintSet.getConstraintSet(qf.question, qf);
-			Node answer = constraintSet.ans;
-			List<Constraint> constraintList = constraintSet.list;
-			
-			if(constraintList.size() == 0){
-				nullConstrainListQuestion.add(qf.question);
-			}
-			
-			if(entityList.size() == 0){
-				nullEntityQuestion.add(qf.question);
-			}
-			
-			if(entityList.size() > 0 && constraintList.size() > 0){
-				if(constraintList.size() == 1){
-					
-//					Constraint constraint = constraintList.get(0);
-//					Entity e;
-//					Node left = constraint.left;
-//					Node right = constraint.right;
-//					int location;
+//		LinkedList<String> nullConstrainListQuestion = new LinkedList<String>();
+//		LinkedList<String> nullEntityQuestion = new LinkedList<String>();
+//		
+//		int count = 0;
+////		OutputRedirector.openFileOutput("./data/zch/oneStepResult.txt");
+//		for(int id=1; id<=300; ++id){
+//			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(id);
+//			LinkedList<Entity> entityList = qf.getEntityList();
+//			
+//			ConstraintSet constraintSet=ConstraintSet.getConstraintSet(qf.question, qf);
+//			Node answer = constraintSet.ans;
+//			List<Constraint> constraintList = constraintSet.list;
+//			String focusString = qf.getFocusStringForPredicate();
+//			
+//			if(constraintList.size() == 0){
+//				nullConstrainListQuestion.add(qf.question);
+//			}
+//			if(entityList.size() == 0){
+//				nullEntityQuestion.add(qf.question);
+//			}
+//			if(entityList.size() > 0 && constraintList.size() > 0){
+//				if(constraintList.size() == 1){
 //					
-//					if(!left.isx && !right.isx){
-//						System.err.println(id + ": Both nodes in Constraint are Strings");
-//						continue;
+//				}
+//				if(constraintList.size() == 2){
+//					int eCount = 0;
+//					int cs1Location = -1;
+//					int cs2Location = -1;
+//					
+//					Constraint cs1 = constraintList.get(0);
+//					Constraint cs2 = constraintList.get(1);
+//					
+//					if(!cs1.left.isx){
+//						cs1Location = 0;
+//						++eCount;
+//					}
+//					if(!cs1.right.isx){
+//						cs1Location = 1;
+//						++eCount;
+//					}
+//					if(!cs2.left.isx){
+//						cs2Location = 0;
+//						++eCount;
+//					}
+//					if(!cs2.right.isx){
+//						cs2Location = 1;
+//						++eCount;
 //					}
 //					
-//					if(!left.isx){
-//						e = getEntity(entityList, left);
-//						location = 0;
-//					}else{
-//						e = getEntity(entityList, right);
-//						location = 1;
-//					}
-//					if(e == null){
-//						System.err.println(id + ": No matched entity in the Node");
-//						System.err.println(constraint.getString());
-//						continue;
-//					}
-//					System.out.println( qf.id+"\t"+qf.question);
-//					MatchDetail onestep = new MatchDetail(e, constraint, location);
-//					step(onestep);
-//					onestep.print();
-				}
-				
-				if(constraintList.size() == 2){
-					int eCount = 0;
-					int cs1Location = -1;
-					int cs2Location = -1;
-					
-					Constraint cs1 = constraintList.get(0);
-					Constraint cs2 = constraintList.get(1);
-					
-					if(!cs1.left.isx){
-						cs1Location = 0;
-						++eCount;
-					}
-					if(!cs1.right.isx){
-						cs1Location = 1;
-						++eCount;
-					}
-					if(!cs2.left.isx){
-						cs2Location = 0;
-						++eCount;
-					}
-					if(!cs2.right.isx){
-						cs2Location = 1;
-						++eCount;
-					}
-					
-					if(eCount == 1){
-						Entity e;
-						MatchDetail pipe1;
-						if(cs1Location >= 0){
-							if(cs1Location == 0){
-								e = getEntity(entityList, cs1.left);
-							}else{
-								e = getEntity(entityList, cs1.right);
-							}
-//							pipe1 = new MatchDetail(e, cs1, cs1Location);
-//							pipe(pipe1,cs2);
-						}else{
-							if(cs2Location == 0){
-								e = getEntity(entityList, cs2.left);
-							}else{
-								e = getEntity(entityList, cs2.right);
-							}
-//							pipe1 = new MatchDetail(e, cs2, cs2Location);
-//							pipe(pipe1, cs1);
-						}
-						System.out.println(qf.id +" " + qf.question);
-						System.out.println(cs1.getString());
-						System.out.println(cs2.getString());
-						System.out.println(qf.query);
-						
-						System.out.println();
-						++count;
-					}
-					
-					if(eCount == 2){
-//						MatchDetail step1,step2;
+//					if(eCount == 1){
 //						Entity e;
-//						if(cs1Location == 0){
-//							e = getEntity(entityList, cs1.left);
+//						MatchDetail pipe1;
+//						if(cs1Location >= 0){
+//							if(cs1Location == 0){
+//								e = getEntity(entityList, cs1.left);
+//							}else{
+//								e = getEntity(entityList, cs1.right);
+//							}
+//							
+////							pipe1 = new MatchDetail(e, cs1, cs1Location);
+////							pipe(pipe1,cs2);
 //						}else{
-//							e = getEntity(entityList, cs1.right);
+//							if(cs2Location == 0){
+//								e = getEntity(entityList, cs2.left);
+//							}else{
+//								e = getEntity(entityList, cs2.right);
+//							}
+//							if(e == null){
+//								System.out.println(qf.id);
+//								++count;
+//							}
+////							pipe1 = new MatchDetail(e, cs2, cs2Location);
+////							pipe(pipe1, cs1);
 //						}
-//						step1 = new MatchDetail(e, cs1, cs1Location);
+//						if(e == null){
+//							System.out.println(id + "\t"+ qf.id);
+//							++count;
+//						}else{
+//							if(cs1Location >= 0){
+//								pipe1 = new MatchDetail(e, cs1, cs1Location,focusString);
+//							}else{
+//								pipe1 = new MatchDetail(e, cs2, cs2Location, focusString);
+//							}
+//						}
+////						System.out.println(qf.id +" " + qf.question);
+////						System.out.println(cs1.getString());
+////						System.out.println(cs2.getString());
+////						System.out.println(qf.query);
+////						
+////						System.out.println();
 //						
-//						if(cs2Location == 0){
-//							e = getEntity(entityList, cs2.left);
-//						}else{
-//							e = getEntity(entityList, cs2.right);
-//						}
-//						step2 = new MatchDetail(e, cs2, cs2Location);
-//						map(step1, step2);
-					}
-					
-					if(eCount > 2){
-						System.err.println(id + ": eCount > 2");
-						continue;
-					}
-				}
-				
-				if(constraintList.size() > 2){
-					System.err.println("constraintList size > 2");
-				}
-			}
-		}
-		System.out.println(count);
-//		OutputRedirector.closeFileOutput();
+//					}
+//					
+//					if(eCount == 2){
+////						MatchDetail step1,step2;
+////						Entity e;
+////						if(cs1Location == 0){
+////							e = getEntity(entityList, cs1.left);
+////						}else{
+////							e = getEntity(entityList, cs1.right);
+////						}
+////						step1 = new MatchDetail(e, cs1, cs1Location);
+////						
+////						if(cs2Location == 0){
+////							e = getEntity(entityList, cs2.left);
+////						}else{
+////							e = getEntity(entityList, cs2.right);
+////						}
+////						step2 = new MatchDetail(e, cs2, cs2Location);
+////						map(step1, step2);
+//					}
+//					
+//					if(eCount > 2){
+//						System.err.println(id + ": eCount > 2");
+//						continue;
+//					}
+//				}
+//				
+//				if(constraintList.size() > 2){
+//					System.err.println("constraintList size > 2");
+//				}
+//			}
+//		}
+//		System.out.println(count);
+////		OutputRedirector.closeFileOutput();
 	}
 }

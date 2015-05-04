@@ -39,6 +39,9 @@ public class Answer {
 				}
 				sb.append("\n");
 			}
+		}else{
+			sb.append(exceptionString);
+			sb.append("\n");
 		}
 		sb.append("\n");
 		return sb;
