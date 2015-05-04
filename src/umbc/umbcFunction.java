@@ -55,6 +55,7 @@ public class umbcFunction {
 	}
 
 	public static void updateScores(){
+		int count = 0;
 		ResultSet r = db.getAllPairs();
 		try {
 			while(r.next()){
@@ -64,13 +65,16 @@ public class umbcFunction {
 				if(value > -1){
 					continue;
 				}
-				
+				++count;
 				word1 = URLDecoder.decode(word1);
 				word2 = URLDecoder.decode(word2);
 //				System.out.println(word1+"\t"+word2+"\t"+value);
 				
 				double score = UMBC.getSimilarity(word1, word2);
 				db.updateValue(word1, word2, score);
+				if(count%100 == 0){
+					System.err.println(count);
+				}
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -79,7 +83,6 @@ public class umbcFunction {
 	}
 	
 	public static void main(String [] args){
-//		insertAllPairs();
 		updateScores();
 	}
 }

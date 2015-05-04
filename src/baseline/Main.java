@@ -283,8 +283,6 @@ public class Main {
 	public static void step(MatchDetail step){
 		String entityUri = step.entity.uri;
 		ArrayList<Predict> predictList = SimilarityFunction.getTopNPredicts(step);
-//		System.out.println(predictList.size());
-//		System.out.println();
 		System.out.println(entityUri);
 		for (Predict predict : predictList) {
 			System.out.print(predict.maxScore + "\t"+ predict.matchedLabel +"\t" + predict.uri);
@@ -297,6 +295,12 @@ public class Main {
 		System.out.println();
 	}
 	
+	public static Answer stepAnswer(MatchDetail step, Answer answer){
+		answer.entityUri = step.entity.uri;
+		answer.predictList = SimilarityFunction.getTopNPredicts(step);
+		return answer;
+	}
+	
 	//链式问题
 	public static void pipe(MatchDetail pipe1, Constraint cs){
 //		ArrayList<Predict> predictList = SimilarityFunction.getTopNPredicts(pipe1);
@@ -305,6 +309,63 @@ public class Main {
 	//2对1的映射问题
 	public static void map(MatchDetail step1, MatchDetail step2){
 		
+	}
+	
+	//在此之间你应该已经 set entityList
+	public static Answer getAnswer(Pipeline pipeline,int id){
+		Answer answer = new Answer();
+		QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(id);
+		LinkedList<Entity> entityList = qf.getEntityList();
+		ConstraintSet constraintSet=ConstraintSet.getConstraintSet(qf.question, qf);
+		List<Constraint> constraintList = constraintSet.list;
+		
+		String exceptionString="";
+		if(constraintList.size() == 0){
+			exceptionString += "ConstraintList size equals 0.\n";
+		}
+		
+		if(entityList.size() == 0){
+			exceptionString += "entityList size equals 0.\n";
+		}
+		
+		if(entityList.size() > 0 && constraintList.size() > 0){
+			if(constraintList.size() == 1){
+				Constraint constraint = constraintList.get(0);
+				Entity e;
+				Node left = constraint.left;
+				Node right = constraint.right;
+				int location;
+				
+				if(!left.isx && !right.isx){
+					exceptionString += "Both nodes in Constraint are Strings.\n";
+				}
+				
+				if(!left.isx){
+					e = getEntity(entityList, left);
+					location = 0;
+				}else{
+					e = getEntity(entityList, right);
+					location = 1;
+				}
+				if(e == null){
+					exceptionString += "No matched entity in the Node.\n";
+				}
+				System.out.println( qf.id+"\t"+qf.question);
+				MatchDetail onestep = new MatchDetail(e, constraint, location);
+				answer = stepAnswer(onestep, answer);
+			}
+			
+			if(constraintList.size() == 2){
+				exceptionString += "constraintList size equals 2\n";
+			}
+			
+			if(constraintList.size() > 2){
+				exceptionString += "constraintList size > 2\n";
+			}
+		}
+		answer.exceptionString = exceptionString;
+		answer.qf = qf;
+		return answer;
 	}
 	
 	public static void main(String[] args) {
@@ -326,7 +387,7 @@ public class Main {
 			LinkedList<Entity> entityList = qf.getEntityList();
 			
 			ConstraintSet constraintSet=ConstraintSet.getConstraintSet(qf.question, qf);
-			Node answer = constraintSet.ans;
+//			Node answer = constraintSet.ans;
 			List<Constraint> constraintList = constraintSet.list;
 			
 			if(constraintList.size() == 0){
@@ -339,7 +400,7 @@ public class Main {
 			
 			if(entityList.size() > 0 && constraintList.size() > 0){
 				if(constraintList.size() == 1){
-					System.out.print(id+"\t");
+					
 					Constraint constraint = constraintList.get(0);
 					Entity e;
 					Node left = constraint.left;
@@ -363,7 +424,7 @@ public class Main {
 						System.err.println(constraint.getString());
 						continue;
 					}
-					
+					System.out.println( qf.id+"\t"+qf.question);
 					MatchDetail onestep = new MatchDetail(e, constraint, location);
 					step(onestep);
 //					onestep.print();

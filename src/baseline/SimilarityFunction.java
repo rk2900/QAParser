@@ -30,6 +30,9 @@ public class SimilarityFunction {
 		LinkedList<String> labelWords = getLabelWords(predictLabel);
 		
 		for (String labelWord : labelWords) {
+			if(labelWord.length() == 0){
+				continue;
+			}
 			double maxScore = 0;
 			double score;
 			for (String wordNL : wordsNL) {
@@ -38,7 +41,8 @@ public class SimilarityFunction {
 				}
 				score = db.getScore(labelWord, wordNL);
 				if(score == -1){
-//					System.err.println("DB Not included: "+labelWord+" "+wordNL);
+					System.err.println("DB Not included: "+labelWord+" "+wordNL);
+					db.insertWords(labelWord, wordNL);
 				}
 				if(maxScore < score){
 					maxScore = score;
