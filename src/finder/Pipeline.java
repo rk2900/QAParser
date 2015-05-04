@@ -15,6 +15,7 @@ import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
+import baseline.Main;
 import basic.FileOps;
 import paser.Question;
 import paser.QuestionFrame;
@@ -243,12 +244,12 @@ public class Pipeline {
 	
 	public static void main(String[] args) {
 		Pipeline pipeline = new Pipeline();
-		
+		Main.setEntity(pipeline);
 //		OutputRedirector.openFileOutput("./data/problem_detail.txt");
 		for(int i=1; i<=300; i++) {
 			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
 			System.out.print(qf.id+"\t");
-			qf.printFocus();
+			System.out.println(qf.getFocusStringForPredicate());
 		}
 //		OutputRedirector.closeFileOutput();
 	}

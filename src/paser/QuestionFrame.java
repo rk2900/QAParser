@@ -100,7 +100,19 @@ public class QuestionFrame extends Question {
 	public LinkedList<Entity> getEntityList() {
 		return entityList;
 	}
-
+	
+	/**
+	 * To get focus string for which/give_me_all/what excluding entity inside
+	 * @return empty string or long focus string
+	 */
+	public String getFocusStringForPredicate() {
+		if(focus.isEmpty() || focus.hasEntity(entityList)) {
+			return "";
+		} else {
+			return focus.getFocusContent(wordList);
+		}
+	}
+	
 	@Override
 	public void print() {
 		System.out.println("-------------------------");
