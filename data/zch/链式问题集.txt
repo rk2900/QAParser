@@ -1,0 +1,285 @@
+104 How many students does the Free University in Amsterdam have?
+"syntacticParser.Node@6c6919ff"	"the Free University "	"Amsterdam [8,8]"
+"syntacticParser.Node@6c6919ff"	"have "	"syntacticParser.Node@5de335cf"
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?num 
+WHERE { 
+        res:VU_University_Amsterdam dbo:numberOfStudents ?num . 
+} 
+
+
+
+110 What is the total amount of men and women serving in the FDNY?
+"syntacticParser.Node@3d8c499a"	"serving in"	"the FDNY [11,12]"
+"syntacticParser.Node@2b7e739"	"the total amount "	"syntacticParser.Node@3d8c499a"
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?num 
+WHERE { 
+        res:New_York_City_Fire_Department dbp:employees ?num . 
+} 
+
+
+
+116 Does Breaking Bad have more episodes than Game of Thrones?
+"syntacticParser.Node@1b5b656b"	"more episodes "	"Game of Thrones [7,9]"
+"syntacticParser.Node@785e65cd"	"have"	"syntacticParser.Node@1b5b656b"
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+ASK 
+WHERE { 
+        res:Breaking_Bad dbo:numberOfEpisodes ?x . 
+        res:Game_of_Thrones dbo:numberOfEpisodes ?y . 
+        FILTER (?x > ?y) 
+} 
+
+
+
+129 Give me all actors starring in movies directed by William Shatner.
+"syntacticParser.Node@43bec114"	"directed by"	"William Shatner [9,10]"
+"syntacticParser.Node@27c4b7f4"	"starring in"	"syntacticParser.Node@43bec114"
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?x dbo:director res:William_Shatner . 
+        ?x dbo:starring ?uri . 
+} 
+
+
+
+149 Which other weapons did the designer of the Uzi develop?
+"syntacticParser.Node@4c5becb3"	"the designer "	"the Uzi [7,8]"
+"syntacticParser.Node@4c5becb3"	"develop "	"syntacticParser.Node@4e995772"
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri rdf:type dbo:Weapon .  
+        ?uri dbp:designer ?x . 
+        res:Uzi dbp:designer ?x . 
+        FILTER (?uri != res:Uzi) 
+} 
+
+
+
+16 Give me the capitals of all countries in Africa.
+"syntacticParser.Node@7a59f6c7"	"all countries "	"Africa [8,8]"
+"syntacticParser.Node@1717071e"	"the capitals "	"syntacticParser.Node@7a59f6c7"
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?states rdf:type yago:AfricanCountries . 
+        ?states dbo:capital ?uri . 
+} 
+
+
+
+167 Who are the parents of the wife of Juan Carlos I?
+"syntacticParser.Node@3f9a0423"	"the wife "	"Juan Carlos I [8,10]"
+"syntacticParser.Node@6a18c344"	"the parents "	"syntacticParser.Node@3f9a0423"
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Juan_Carlos_I_of_Spain dbo:spouse ?x . 
+        ?x dbo:parent ?uri . 
+} 
+
+
+
+169 Did Tesla win a nobel prize in physics?
+"syntacticParser.Node@405dca1b"	"a nobel prize "	"physics [7,7]"
+"syntacticParser.Node@4c3b6491"	"win"	"syntacticParser.Node@405dca1b"
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+ASK 
+WHERE { 
+        res:Nikola_Tesla dbo:award res:Nobel_Prize_in_Physics . 
+} 
+
+
+
+185 How many people live in the capital of Australia?
+"syntacticParser.Node@41300f12"	"the capital "	"Australia [8,8]"
+"syntacticParser.Node@6e2f3bd4"	"live in"	"syntacticParser.Node@41300f12"
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?num 
+WHERE {
+        res:Australia dbo:capital ?x .
+        ?x dbo:populationTotal ?num .
+}
+
+
+187 Who composed the music for Harold and Maude?
+"syntacticParser.Node@31fbd328"	"the music "	"Harold and Maude [5,7]"
+"syntacticParser.Node@572287cf"	"composed"	"syntacticParser.Node@31fbd328"
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?uri 
+WHERE {
+       res:Harold_and_Maude dbo:musicComposer ?uri .
+}
+
+
+192 Show me all songs from Bruce Springsteen released between 1980 and 1990.
+"syntacticParser.Node@5e14fc4"	"released between"	"1980 and 1990 [9,11]"
+"syntacticParser.Node@5f169430"	"all songs "	"syntacticParser.Node@5e14fc4"
+
+PREFIX dbo:  <http://dbpedia.org/ontology/>
+PREFIX res:  <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri rdf:type dbo:Song .
+        ?uri dbo:artist res:Bruce_Springsteen .
+        ?uri dbo:releaseDate ?date . 
+        FILTER (?date >= '1980-01-01'^^xsd:date && ?date <= '1990-12-31'^^xsd:date)
+}
+
+
+194 What is the founding year of the brewery that produces Pilsner Urquell?
+"syntacticParser.Node@65f534e8"	"produces"	"Pilsner Urquell [10,11]"
+"syntacticParser.Node@7264430f"	"the founding year "	"syntacticParser.Node@65f534e8"
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?num 
+WHERE {
+        res:Pilsner_Urquell dbp:brewery ?uri .
+        ?uri dbp:foundation ?num .
+}
+
+
+195 Who wrote the lyrics for the Polish national anthem?
+"syntacticParser.Node@3901ab93"	"the lyrics "	"the Polish national anthem [5,8]"
+"syntacticParser.Node@1c95bb55"	"wrote"	"syntacticParser.Node@3901ab93"
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Poland dbo:anthem ?x .
+        ?x dbp:author ?uri .
+}
+
+
+198 Which country does the creator of Miffy come from?
+"syntacticParser.Node@5d2c3775"	"the creator "	"Miffy [6,6]"
+"syntacticParser.Node@5d2c3775"	"come from "	"syntacticParser.Node@39340eaf"
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Miffy dbo:creator ?x .
+        ?x dbo:nationality ?uri .
+}
+
+
+2 Give me the birthdays of all actors of the television show Charmed.
+"syntacticParser.Node@1ca86d48"	"all actors "	"the television show Charmed [8,11]"
+"syntacticParser.Node@ef5edd3"	"the birthdays "	"syntacticParser.Node@1ca86d48"
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?date 
+WHERE { 
+        res:Charmed dbo:starring ?actor .
+        ?actor dbo:birthDate ?date .
+}
+
+
+57 List all episodes of the first season of the HBO television series The Sopranos.
+"syntacticParser.Node@4273bda9"	"the first season "	"the HBO television series The Sopranos [8,13]"
+"syntacticParser.Node@1eb0232a"	"all episodes "	"syntacticParser.Node@4273bda9"
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri dbo:series res:The_Sopranos  .
+        ?uri dbo:seasonNumber 1 .
+}
+
+
+64 Which software has been developed by organizations founded in California?
+"syntacticParser.Node@7ca995d1"	"founded in"	"California [9,9]"
+"syntacticParser.Node@5f262e19"	"developed by"	"syntacticParser.Node@7ca995d1"
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {         
+        ?uri rdf:type dbo:Software .
+        ?company rdf:type dbo:Company .
+        ?uri dbo:developer ?company . 
+        ?company dbo:foundationPlace res:California .
+   
+}
+
+
+83 Who produced films starring Natalie Portman?
+"syntacticParser.Node@64375b49"	"starring"	"Natalie Portman [4,5]"
+"syntacticParser.Node@5b11a99f"	"produced"	"syntacticParser.Node@64375b49"
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?film rdf:type dbo:Film .
+        ?film dbo:starring res:Natalie_Portman .
+        ?film dbo:producer ?uri .
+}
+
+
+94 Which budget did the first movie of Zdenek Sverak have?
+"syntacticParser.Node@14a5e4d1"	"the first movie "	"Zdenek Sverak [7,8]"
+"syntacticParser.Node@14a5e4d1"	"have "	"syntacticParser.Node@5c5155d9"
+OUT OF SCOPE
+
+231 How many inhabitants does the largest city in Canada have?
+"syntacticParser.Node@1f263108"	"the largest city "	"Canada [8,8]"
+"syntacticParser.Node@1f263108"	"have "	"syntacticParser.Node@7faa1b5c"
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?num
+WHERE {
+        res:Canada dbo:largestCity ?city . 
+        ?city dbo:populationTotal ?num .
+}
+
+
+274 Who is the mayor of the capital of French Polynesia?
+"syntacticParser.Node@3bd72b4d"	"the capital "	"French Polynesia [8,9]"
+"syntacticParser.Node@39fa5a0f"	"the mayor "	"syntacticParser.Node@3bd72b4d"
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:French_Polynesia dbo:capital ?x .
+        ?x dbo:mayor ?uri .
+}

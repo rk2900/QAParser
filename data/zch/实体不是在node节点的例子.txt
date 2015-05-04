@@ -1,0 +1,24 @@
+4: No matched entity in the Node
+"syntacticParser.Node@45545e7a"	"have"	"more than 250000 inhabitants [4,7]"
+16: No matched entity in the Node
+"syntacticParser.Node@510579b9"	"the Formula 1 race driver "	"the most races [8,10]"
+17: No matched entity in the Node
+"syntacticParser.Node@3caf87e6"	"designated within"	"the past two years [8,11]"
+29: No matched entity in the Node
+"syntacticParser.Node@29058723"	"have"	"the same parents [7,9]"
+100: No matched entity in the Node
+"he [6,6]"	"direct himself "	"syntacticParser.Node@4778d758"
+121: No matched entity in the Node
+"syntacticParser.Node@1c0a81e7"	"involved in"	"a war [6,7]"
+209: No matched entity in the Node
+"syntacticParser.Node@1980145b"	"have"	"a website [7,8]"
+217: No matched entity in the Node
+"syntacticParser.Node@2a067a22"	"flow into"	"a lake [5,6]"
+218: No matched entity in the Node
+"syntacticParser.Node@3899e2a1"	"a budget "	"at least $ 80 million [12,16]"
+233: No matched entity in the Node
+"syntacticParser.Node@423280bc"	"Alec"	"Guinness [7,7]"
+240: No matched entity in the Node
+"I [3,3]"	"need for carrot cake "	"syntacticParser.Node@7eaba226"
+264: No matched entity in the Node
+"syntacticParser.Node@5635bd3d"	"have"	"children [4,4]"

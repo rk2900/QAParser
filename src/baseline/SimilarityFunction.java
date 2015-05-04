@@ -15,6 +15,11 @@ public class SimilarityFunction {
 	private static int predictNum = 5;
 	private static double minSimilarityScore = 0.1;
 	
+	/**
+	 * 直接对空格切分
+	 * @param predictLabel
+	 * @return
+	 */
 	private static LinkedList<String> getLabelWords(String predictLabel){
 		LinkedList<String> wordList = new LinkedList<String>();
 		String [] words = predictLabel.split(" ");
@@ -24,7 +29,17 @@ public class SimilarityFunction {
 		return wordList;
 	}
 	
-	public static double umbcWordRanking(String predictLabel, String NL, String focusString){
+	/**
+	 * 空格切分后转化大小写
+	 * @param predictLabel
+	 * @return
+	 */
+//	private static LinkedList<String> getLabelWords(String predictLabel){
+//		LinkedList<String> wordList = new LinkedList<String>();
+//		return wordList;
+//	}
+	
+	private static double umbcWordRanking(String predictLabel, String NL, String focusString){
 		double avgScore = 0;
 		
 		LinkedList<String> labelWords = getLabelWords(predictLabel);
