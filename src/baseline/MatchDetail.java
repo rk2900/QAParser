@@ -48,5 +48,6 @@ public class MatchDetail {
 		sb.append(constraint.edge);
 		sb.append(" ");
 		sb.append("X\n");
+		System.out.println(sb.toString());
 	}
 }

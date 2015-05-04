@@ -38,7 +38,7 @@ public class SimilarityFunction {
 				}
 				score = db.getScore(labelWord, wordNL);
 				if(score == -1){
-					System.err.println("DB Not included: "+labelWord+" "+wordNL);
+//					System.err.println("DB Not included: "+labelWord+" "+wordNL);
 				}
 				if(maxScore < score){
 					maxScore = score;
@@ -51,7 +51,7 @@ public class SimilarityFunction {
 		return avgScore;
 	}
 	
-	private static ArrayList<Predict> getSortedPredicts(MatchDetail detail){
+	public static ArrayList<Predict> getSortedPredicts(MatchDetail detail){
 		String entityUri = detail.entity.uri;
 		String NL = detail.constraint.edge;
 		
@@ -59,21 +59,30 @@ public class SimilarityFunction {
 		LinkedList<RDFNode> predictUriList = ClientManagement.getSurroundingPred(entityUri);
 		
 		for (RDFNode predictUri : predictUriList) {
-			Predict predict = new Predict();
-			predict.setUri(predict.toString());
+			
 			LinkedList<String> predictlabels = ClientManagement.getLabel(predictUri.toString());
 			
 			double maxScore = 0;
 			String matchedLabel = null;
 			for (String predictlabel : predictlabels) {
+				if (predictlabel.length() == 0) {
+					continue;
+				}
 				double score = SimilarityFunction.umbcWordRanking(predictlabel, NL);
 				if(score > maxScore){
 					maxScore = score;
 					matchedLabel = predictlabel;
 				}
 			}
-			predict.setMaxScore(maxScore);
-			predict.setMatchedLabel(matchedLabel);
+			
+			if(maxScore > 0){
+				Predict predict = new Predict();
+				predict.setUri(predictUri.toString());
+				predict.setMaxScore(maxScore);
+				predict.setMatchedLabel(matchedLabel);
+				predictList.add(predict);
+			}
+			
 		}
 		Collections.sort(predictList,Collections.reverseOrder());
 		return predictList;

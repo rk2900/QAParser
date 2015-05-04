@@ -9,10 +9,15 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
+import knowledgebase.ClientManagement;
+
+import com.hp.hpl.jena.rdf.model.RDFNode;
+
 import paser.QuestionFrame;
 import syntacticParser.Constraint;
 import syntacticParser.ConstraintSet;
 import syntacticParser.Node;
+import tool.OutputRedirector;
 import finder.Pipeline;
 import basic.FileOps;
 
@@ -278,11 +283,23 @@ public class Main {
 	public static void step(MatchDetail step){
 		String entityUri = step.entity.uri;
 		ArrayList<Predict> predictList = SimilarityFunction.getTopNPredicts(step);
+//		System.out.println(predictList.size());
+//		System.out.println();
+		System.out.println(entityUri);
+		for (Predict predict : predictList) {
+			System.out.print(predict.maxScore + "\t"+ predict.matchedLabel +"\t" + predict.uri);
+			LinkedList<RDFNode> resources = ClientManagement.getNode(entityUri, predict.uri);
+			for (RDFNode rdfNode : resources) {
+				System.out.print("\t" + rdfNode.toString());
+			}
+			System.out.println();
+		}
+		System.out.println();
 	}
 	
 	//链式问题
 	public static void pipe(MatchDetail pipe1, Constraint cs){
-		ArrayList<Predict> predictList = SimilarityFunction.getTopNPredicts(pipe1);
+//		ArrayList<Predict> predictList = SimilarityFunction.getTopNPredicts(pipe1);
 	}
 	
 	//2对1的映射问题
@@ -294,11 +311,17 @@ public class Main {
 		// TODO Auto-generated method stub
 		Pipeline pipeline = new Pipeline();
 		setEntity(pipeline);
-		
+		try {
+			ClientManagement.getAgModel();
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
 		LinkedList<String> nullConstrainListQuestion = new LinkedList<String>();
 		LinkedList<String> nullEntityQuestion = new LinkedList<String>();
 		
+		OutputRedirector.openFileOutput("./data/zch/oneStepResult.txt");
 		for(int id=1; id<=300; ++id){
+			
 			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(id);
 			LinkedList<Entity> entityList = qf.getEntityList();
 			
@@ -308,16 +331,15 @@ public class Main {
 			
 			if(constraintList.size() == 0){
 				nullConstrainListQuestion.add(qf.question);
-//				continue;
 			}
 			
 			if(entityList.size() == 0){
 				nullEntityQuestion.add(qf.question);
-//				continue;
 			}
 			
 			if(entityList.size() > 0 && constraintList.size() > 0){
 				if(constraintList.size() == 1){
+					System.out.print(id+"\t");
 					Constraint constraint = constraintList.get(0);
 					Entity e;
 					Node left = constraint.left;
@@ -338,13 +360,13 @@ public class Main {
 					}
 					if(e == null){
 						System.err.println(id + ": No matched entity in the Node");
-						System.out.println(constraint.getString());
+						System.err.println(constraint.getString());
 						continue;
 					}
 					
 					MatchDetail onestep = new MatchDetail(e, constraint, location);
 					step(onestep);
-					onestep.print();
+//					onestep.print();
 				}
 				
 				if(constraintList.size() == 2){
@@ -424,5 +446,6 @@ public class Main {
 				}
 			}
 		}
+		OutputRedirector.closeFileOutput();
 	}
 }
