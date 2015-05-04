@@ -379,15 +379,15 @@ public class Main {
 			e1.printStackTrace();
 		}
 		
+//		OutputRedirector.openFileOutput("./data/zch/oneStepResult.txt");
+		StringBuilder sb = new StringBuilder();
 		for(int id=1; id<=300; ++id){
 			Answer answer = getAnswer(pipeline, id);
-			if(answer.isException()){
-				System.out.println(id+" "+answer.exceptionString);
-			}else{
-				System.out.println(id+" true");
-			}
-			
+			sb.append(answer.print());
+			System.out.println(id + " Finished");
 		}
+		FileOps.SaveFile("./data/zch/oneStepResult.txt", sb.toString());
+//		OutputRedirector.closeFileOutput();
 		
 //		LinkedList<String> nullConstrainListQuestion = new LinkedList<String>();
 //		LinkedList<String> nullEntityQuestion = new LinkedList<String>();
