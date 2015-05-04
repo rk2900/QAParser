@@ -32,6 +32,13 @@ public class Pipeline {
 	public static final int edThreshold = 2;
 	
 	public XMLParser xmlParser;
+	public LinkedList<QuestionFrame> resource = new LinkedList<>();
+	public LinkedList<QuestionFrame> who = new LinkedList<>();
+	public LinkedList<QuestionFrame> where = new LinkedList<>();
+	public LinkedList<QuestionFrame> number = new LinkedList<>();
+	public LinkedList<QuestionFrame> date = new LinkedList<>();
+	public LinkedList<QuestionFrame> bool = new LinkedList<>();
+	public LinkedList<QuestionFrame> comparison = new LinkedList<>();
 	
 	public static StanfordCoreNLP pipeline;
 	
@@ -49,6 +56,27 @@ public class Pipeline {
 		xmlParser.setFilePath(questionFile);
 		xmlParser.load();
 		xmlParser.parse();
+		for(int i=1; i<=300; i++) {
+			QuestionFrame qf = xmlParser.getQuestionFrameWithPseudoId(i);
+			
+			if(qf.questionClassifier.label.get(Label.COMPARISON)) {
+				comparison.add(qf); // comparison question
+			} else if(qf.questionClassifier.category == Category.RESOURCE) {
+				if( qf.questionClassifier.label.get(Label.WHO) ) {
+					who.add(qf); // who
+				} else if(qf.questionClassifier.label.get(Label.WHERE)) {
+					where.add(qf); // where
+				} else {
+					resource.add(qf); // resource but not who/where
+				} 
+			} else if(qf.questionClassifier.category == Category.NUMBER) {
+				number.add(qf);
+			} else if(qf.questionClassifier.category == Category.DATE) {
+				date.add(qf);
+			} else if(qf.questionClassifier.category == Category.BOOLEAN) {
+				bool.add(qf);
+			}
+		}
 	}
 	
 	public String splitSentence(String sentence, int begin, int end) {
