@@ -28,6 +28,8 @@ public class Answer {
 		
 		sb.append(qf.id+" "+qf.question);
 		sb.append("\n");
+		sb.append(qf.query);
+		sb.append("\n");
 		if(!isException()){
 			sb.append(entityUri);
 			sb.append("\n");

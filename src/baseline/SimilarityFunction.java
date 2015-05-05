@@ -20,24 +20,36 @@ public class SimilarityFunction {
 	 * @param predictLabel
 	 * @return
 	 */
-	private static LinkedList<String> getLabelWords(String predictLabel){
-		LinkedList<String> wordList = new LinkedList<String>();
-		String [] words = predictLabel.split(" ");
-		for (String word : words) {
-			wordList.add(word);
-		}
-		return wordList;
-	}
+//	private static LinkedList<String> getLabelWords(String predictLabel){
+//		LinkedList<String> wordList = new LinkedList<String>();
+//		String [] words = predictLabel.split(" ");
+//		for (String word : words) {
+//			wordList.add(word);
+//		}
+//		return wordList;
+//	}
 	
 	/**
 	 * 空格切分后转化大小写
 	 * @param predictLabel
 	 * @return
 	 */
-//	private static LinkedList<String> getLabelWords(String predictLabel){
-//		LinkedList<String> wordList = new LinkedList<String>();
-//		return wordList;
-//	}
+	private static LinkedList<String> getLabelWords(String predictLabel){
+		LinkedList<String> wordList = new LinkedList<String>();
+		if(predictLabel.contains(" ")){
+			String [] words = predictLabel.split(" ");
+			for (String word : words) {
+				wordList.add(word);
+			}
+		}else{
+			for(int i=1; i<predictLabel.length(); ++i){
+				if(Character.isUpperCase(predictLabel.charAt(i))){
+					
+				}
+			}
+		}
+		return wordList;
+	}
 	
 	private static double umbcWordRanking(String predictLabel, String NL, String focusString){
 		double avgScore = 0;

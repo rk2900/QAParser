@@ -80,14 +80,12 @@ public class Classification {
 			e1.printStackTrace();
 		}
 		
-		OutputRedirector.openFileOutput("./data/zch_classification/date.txt");
+		OutputRedirector.openFileOutput("./data/zch_classification/date-addFocus.txt");
 		LinkedList<QuestionFrame> whenQF = pipeline.date;
 		System.err.println(whenQF.size());
 		for (QuestionFrame qf : whenQF) {
 			Answer answer = getAnswer(qf);
 			System.out.println(answer.print().toString());
-			System.out.println(qf.query);
-			System.out.println("\n");
 		}
 		
 		OutputRedirector.closeFileOutput();
