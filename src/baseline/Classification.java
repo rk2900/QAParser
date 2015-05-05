@@ -44,9 +44,9 @@ public class Classification {
 			
 		}
 		if(type == 4){
-			if(focusString.length() > 0){
-				focusString += " number total";
-			}
+//			if(focusString.length() > 0){
+//				focusString += " number total";
+//			}
 		}
 		
 		String exceptionString="";
@@ -135,24 +135,25 @@ public class Classification {
 //		}
 //		OutputRedirector.closeFileOutput();
 		
-		OutputRedirector.openFileOutput("./data/zch_classification/resource/resource-basic.txt");
-		LinkedList<QuestionFrame> resourceQF = pipeline.resource;
-		System.err.println(resourceQF.size());
-		for (QuestionFrame qf : resourceQF) {
-			Answer answer = getAnswer(qf,map.get("resource"));
-			System.out.println(answer.print().toString());
-		}
-		OutputRedirector.closeFileOutput();
+//		OutputRedirector.openFileOutput("./data/zch_classification/resource/resource-basic.txt");
+//		LinkedList<QuestionFrame> resourceQF = pipeline.resource;
+//		System.err.println(resourceQF.size());
+//		for (QuestionFrame qf : resourceQF) {
+//			Answer answer = getAnswer(qf,map.get("resource"));
+//			System.out.println(answer.print().toString());
+//		}
+//		OutputRedirector.closeFileOutput();
 		
 //		OutputRedirector.openFileOutput("./data/zch_classification/number/number-addFocus-number-total.txt");
-//		LinkedList<QuestionFrame> numberQF = pipeline.number;
-//		System.err.println(numberQF.size());
-//		for (QuestionFrame qf : numberQF) {
-//			Answer answer = getAnswer(qf,map.get("number"));
-////			System.out.println("Original focus: "+qf.focus.getFocusContent(qf.wordList));
+		LinkedList<QuestionFrame> numberQF = pipeline.number;
+		System.err.println(numberQF.size());
+		for (QuestionFrame qf : numberQF) {
+			Answer answer = getAnswer(qf,map.get("number"));
+//			System.out.println("Original focus: "+qf.focus.getFocusContent(qf.wordList));
 //			System.out.println(answer.print().toString());
-//			
-//		}
+			System.out.println(answer.numberPrint().toString());
+			
+		}
 //		OutputRedirector.closeFileOutput();
 	}
 	
