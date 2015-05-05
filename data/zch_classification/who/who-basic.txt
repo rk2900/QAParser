@@ -1,0 +1,617 @@
+102 Who was John F. Kennedy's vice president?
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { res:John_F._Kennedy dbo:vicePresident ?uri . 
+} 
+
+
+ConstraintList size equals 0.
+
+
+
+103 Who is the mayor of Berlin?
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Berlin dbo:leader ?uri . 
+} 
+
+
+http://dbpedia.org/resource/Berlin
+0.46235546	leader	http://dbpedia.org/ontology/leader http://dbpedia.org/resource/Klaus_Wowereit
+0.26237383999999997	leader name	http://dbpedia.org/property/leaderName http://dbpedia.org/resource/Chaos_Computer_Club
+0.23858388	city	http://dbpedia.org/property/city http://dbpedia.org/resource/1949_in_fine_arts_of_the_Soviet_Union http://dbpedia.org/resource/1927_German_football_championship http://dbpedia.org/resource/Peru_4%E2%80%932_Austria_(1936_Summer_Olympics_association_football) http://dbpedia.org/resource/Monforte_Altarpiece http://dbpedia.org/resource/2013_DFB-Pokal_Final http://dbpedia.org/resource/European_School_of_Management_and_Technology http://dbpedia.org/resource/1934_German_football_championship http://dbpedia.org/resource/Berlin_Graduate_School_for_Transnational_Studies http://dbpedia.org/resource/2011_DFB-Pokal_Final http://dbpedia.org/resource/Charit%C3%A9 http://dbpedia.org/resource/Malle_Babbe http://dbpedia.org/resource/Amor_Vincit_Omnia_(Caravaggio) http://dbpedia.org/resource/Eisb%C3%A4ren_Berlin http://dbpedia.org/resource/Berlin_Adler http://dbpedia.org/resource/Berlin_(sculpture) http://dbpedia.org/resource/1997_Women's_Hockey_Champions_Trophy http://dbpedia.org/resource/1923_German_football_championship http://dbpedia.org/resource/1943_German_football_championship http://dbpedia.org/resource/Internationale_Gartenausstellung_2017 http://dbpedia.org/resource/Berlin_School_of_Library_and_Information_Science http://dbpedia.org/resource/2010_DFB-Pokal_Final http://dbpedia.org/resource/1950_German_football_championship http://dbpedia.org/resource/Ibero-American_Institute http://dbpedia.org/resource/1953_German_football_championship http://dbpedia.org/resource/Perseus_Freeing_Andromeda_(Rubens) http://dbpedia.org/resource/1944_German_football_championship http://dbpedia.org/resource/1924_German_football_championship http://dbpedia.org/resource/Berlin_Rebels http://dbpedia.org/resource/2001_Speedway_Grand_Prix_of_Germany http://dbpedia.org/resource/Portrait_of_Ugolino_Martelli http://dbpedia.org/resource/Technical_University_of_Berlin http://dbpedia.org/resource/1942_German_football_championship http://dbpedia.org/resource/2009_DFB-Pokal_Final http://dbpedia.org/resource/2007_DFB-Pokal_Final http://dbpedia.org/resource/Netherlandish_Proverbs http://dbpedia.org/resource/Bard_College_Berlin http://dbpedia.org/resource/Woman_with_a_Pearl_Necklace http://dbpedia.org/resource/Hochschule_f%C3%BCr_Musik_%22Hanns_Eisler%22 http://dbpedia.org/resource/Self-Portrait_(Titian,_Berlin) http://dbpedia.org/resource/1951_German_football_championship http://dbpedia.org/resource/Berlin_Thunder http://dbpedia.org/resource/Terranuova_Madonna http://dbpedia.org/resource/2012_DFB-Pokal_Final http://dbpedia.org/resource/Evangelisches_Gymnasium_zum_Grauen_Kloster http://dbpedia.org/resource/Berliner_Schlittschuhclub http://dbpedia.org/resource/Moses_Breaking_the_Tables_of_the_Law http://dbpedia.org/resource/Graft_architects http://dbpedia.org/resource/Friedrichstadt-Palast http://dbpedia.org/resource/2015_UEFA_Champions_League_Final http://dbpedia.org/resource/Canisius-Kolleg_Berlin http://dbpedia.org/resource/In_the_Conservatory http://dbpedia.org/resource/BSC_Preussen http://dbpedia.org/resource/1908_German_football_championship http://dbpedia.org/resource/Berlin_University_of_the_Arts http://dbpedia.org/resource/1992_DFB-Pokal_Final http://dbpedia.org/resource/1956_German_football_championship http://dbpedia.org/resource/Archenhold_School http://dbpedia.org/resource/UFC_Fight_Night:_Munoz_vs._Mousasi http://dbpedia.org/resource/Interbau http://dbpedia.org/resource/Berlin_School_of_Economics_and_Law http://dbpedia.org/resource/Christ_Giving_the_Keys_to_St._Peter_(Rubens) http://dbpedia.org/resource/Berlin_Mathematical_School http://dbpedia.org/resource/Steinbeis-Hochschule_Berlin http://dbpedia.org/resource/1962_German_football_championship http://dbpedia.org/resource/Assumption_of_the_Virgin_(Andrea_del_Castagno) http://dbpedia.org/resource/Berlin_British_School http://dbpedia.org/resource/Susanna_and_the_Elders_(Rembrandt) http://dbpedia.org/resource/Portrait_of_Frederick_III_of_Saxony http://dbpedia.org/resource/2014_DFB-Pokal_Final http://dbpedia.org/resource/1959_German_football_championship http://dbpedia.org/resource/Beuth_University_of_Applied_Sciences_Berlin http://dbpedia.org/resource/The_Abbey_in_the_Oakwood http://dbpedia.org/resource/ESCP_Europe http://dbpedia.org/resource/Colonna_Madonna http://dbpedia.org/resource/SRH_Hochschule_Berlin http://dbpedia.org/resource/Wasserfreunde_Spandau_04 http://dbpedia.org/resource/Solly_Madonna http://dbpedia.org/resource/Caspar_David_Friedrich_in_his_Studio http://dbpedia.org/resource/2008_DFB-Pokal_Final http://dbpedia.org/resource/Portrait_of_a_Man_(Signorelli)
+0.23858388	city	http://dbpedia.org/ontology/city http://dbpedia.org/resource/Borsigwalde http://dbpedia.org/resource/Alt-Hohensch%C3%B6nhausen http://dbpedia.org/resource/1927_German_football_championship http://dbpedia.org/resource/Neuk%C3%B6lln_(locality) http://dbpedia.org/resource/Falkenhagener_Feld http://dbpedia.org/resource/2013_DFB-Pokal_Final http://dbpedia.org/resource/Lichtenberg_(locality) http://dbpedia.org/resource/1934_German_football_championship http://dbpedia.org/resource/2011_DFB-Pokal_Final http://dbpedia.org/resource/Mahlsdorf http://dbpedia.org/resource/Pankow_(locality) http://dbpedia.org/resource/DU&ICH http://dbpedia.org/resource/1923_German_football_championship http://dbpedia.org/resource/Obersch%C3%B6neweide http://dbpedia.org/resource/Eulenspiegel_(magazine) http://dbpedia.org/resource/1943_German_football_championship http://dbpedia.org/resource/Berliner_Illustrirte_Zeitung http://dbpedia.org/resource/Reimann_School http://dbpedia.org/resource/2010_DFB-Pokal_Final http://dbpedia.org/resource/1950_German_football_championship http://dbpedia.org/resource/Konradsh%C3%B6he http://dbpedia.org/resource/1953_German_football_championship http://dbpedia.org/resource/1944_German_football_championship http://dbpedia.org/resource/1924_German_football_championship http://dbpedia.org/resource/Berlin_Rebels http://dbpedia.org/resource/Siemensstadt http://dbpedia.org/resource/1942_German_football_championship http://dbpedia.org/resource/2009_DFB-Pokal_Final http://dbpedia.org/resource/2007_DFB-Pokal_Final http://dbpedia.org/resource/1951_German_football_championship http://dbpedia.org/resource/Fennpfuhl http://dbpedia.org/resource/Texte_zur_Kunst http://dbpedia.org/resource/2012_DFB-Pokal_Final http://dbpedia.org/resource/Kaulsdorf_(Berlin) http://dbpedia.org/resource/2009_World_Championships_in_Athletics http://dbpedia.org/resource/Lodown_magazine http://dbpedia.org/resource/Kladow http://dbpedia.org/resource/Evangelisches_Gymnasium_zum_Grauen_Kloster http://dbpedia.org/resource/Zenith_Magazine http://dbpedia.org/resource/Friedrichshagen http://dbpedia.org/resource/2015_UEFA_Champions_League_Final http://dbpedia.org/resource/104.6_RTL http://dbpedia.org/resource/Mitte_(locality) http://dbpedia.org/resource/L%C3%BCbars http://dbpedia.org/resource/1908_German_football_championship http://dbpedia.org/resource/Alt-Treptow http://dbpedia.org/resource/1992_DFB-Pokal_Final http://dbpedia.org/resource/Wilhelmstadt http://dbpedia.org/resource/Bohnsdorf http://dbpedia.org/resource/1956_German_football_championship http://dbpedia.org/resource/Archenhold_School http://dbpedia.org/resource/Lichterfelde_(Berlin) http://dbpedia.org/resource/KUNST_Magazin http://dbpedia.org/resource/Schmargendorf http://dbpedia.org/resource/Berlin_School_of_Economics_and_Law http://dbpedia.org/resource/Games_Academy http://dbpedia.org/resource/1962_German_football_championship http://dbpedia.org/resource/Berlin_British_School http://dbpedia.org/resource/Adlershof http://dbpedia.org/resource/2014_DFB-Pokal_Final http://dbpedia.org/resource/1959_German_football_championship http://dbpedia.org/resource/Charlottenburg-Nord http://dbpedia.org/resource/Beuth_University_of_Applied_Sciences_Berlin http://dbpedia.org/resource/Spandau_(locality) http://dbpedia.org/resource/Reinickendorf_(locality) http://dbpedia.org/resource/2008_DFB-Pokal_Final http://dbpedia.org/resource/Staaken http://dbpedia.org/resource/Waidmannslust http://dbpedia.org/resource/Wannsee http://dbpedia.org/resource/Peru_4%E2%80%932_Austria_(1936_Summer_Olympics_association_football) http://dbpedia.org/resource/Heinersdorf http://dbpedia.org/resource/M%C3%A4rkisches_Viertel http://dbpedia.org/resource/European_School_of_Management_and_Technology http://dbpedia.org/resource/Malchow_(Berlin) http://dbpedia.org/resource/Berlin_Tegel_Airport http://dbpedia.org/resource/Berlin_Graduate_School_for_Transnational_Studies http://dbpedia.org/resource/Lichtenberg http://dbpedia.org/resource/M%C3%BCggelheim http://dbpedia.org/resource/Charit%C3%A9 http://dbpedia.org/resource/Hellersdorf http://dbpedia.org/resource/Blankenfelde http://dbpedia.org/resource/Westend_(Berlin) http://dbpedia.org/resource/Berlin_Adler http://dbpedia.org/resource/Wittenau http://dbpedia.org/resource/Mariendorf http://dbpedia.org/resource/Treptow-K%C3%B6penick http://dbpedia.org/resource/Tempelhof http://dbpedia.org/resource/Marienfelde http://dbpedia.org/resource/Berlin_School_of_Library_and_Information_Science http://dbpedia.org/resource/Siegess%C3%A4ule_(magazine) http://dbpedia.org/resource/Halensee http://dbpedia.org/resource/D%C3%A4meritzsee http://dbpedia.org/resource/Moabit http://dbpedia.org/resource/Charlottenburg http://dbpedia.org/resource/Ulenspiegel http://dbpedia.org/resource/Technical_University_of_Berlin http://dbpedia.org/resource/Wedding_(Berlin) http://dbpedia.org/resource/Bard_College_Berlin http://dbpedia.org/resource/Gropiusstadt http://dbpedia.org/resource/Griebnitzsee http://dbpedia.org/resource/Hochschule_f%C3%BCr_Musik_%22Hanns_Eisler%22 http://dbpedia.org/resource/Altglienicke http://dbpedia.org/resource/Neu-Hohensch%C3%B6nhausen http://dbpedia.org/resource/Hansaviertel http://dbpedia.org/resource/Neuk%C3%B6lln http://dbpedia.org/resource/Tegel http://dbpedia.org/resource/Spandau http://dbpedia.org/resource/Die_Gartenlaube http://dbpedia.org/resource/Berliner_Schlittschuhclub http://dbpedia.org/resource/Charlottenburg-Wilmersdorf http://dbpedia.org/resource/Steglitz http://dbpedia.org/resource/Haselhorst http://dbpedia.org/resource/Marzahn-Hellersdorf http://dbpedia.org/resource/Sch%C3%B6neberg http://dbpedia.org/resource/Lord_Ashcroft_International_Business_School http://dbpedia.org/resource/Canisius-Kolleg_Berlin http://dbpedia.org/resource/BSC_Preussen http://dbpedia.org/resource/Berlin_Tempelhof_Airport http://dbpedia.org/resource/Zehlendorf_(Berlin) http://dbpedia.org/resource/Die_Freundin http://dbpedia.org/resource/Berlin_University_of_the_Arts http://dbpedia.org/resource/Wilmersdorf http://dbpedia.org/resource/Tiergarten http://dbpedia.org/resource/Friedrichshain-Kreuzberg http://dbpedia.org/resource/Heiligensee http://dbpedia.org/resource/Marzahn http://dbpedia.org/resource/Berlin_Mathematical_School http://dbpedia.org/resource/Tempelhof-Sch%C3%B6neberg http://dbpedia.org/resource/Britz http://dbpedia.org/resource/Steinbeis-Hochschule_Berlin http://dbpedia.org/resource/Gro%C3%9F_Glienicker_See http://dbpedia.org/resource/Steglitz-Zehlendorf http://dbpedia.org/resource/Dahlem_(Berlin) http://dbpedia.org/resource/Berlin_Brandenburg_Airport http://dbpedia.org/resource/K%C3%B6penick http://dbpedia.org/resource/Hertie_School_of_Governance http://dbpedia.org/resource/Berlin_Sch%C3%B6nefeld_Airport http://dbpedia.org/resource/Weissensee_(Berlin) http://dbpedia.org/resource/Mitte http://dbpedia.org/resource/Grunewald http://dbpedia.org/resource/ESCP_Europe http://dbpedia.org/resource/Gatow http://dbpedia.org/resource/SRH_Hochschule_Berlin http://dbpedia.org/resource/Hermsdorf_(Berlin) http://dbpedia.org/resource/Olimpijka http://dbpedia.org/resource/Karlshorst http://dbpedia.org/resource/Rosenthal_(Berlin) http://dbpedia.org/resource/Pankow http://dbpedia.org/resource/Gesundbrunnen_(Berlin)
+0.231304313805	leader party	http://dbpedia.org/ontology/leaderParty http://dbpedia.org/resource/Social_Democratic_Party_of_Germany http://dbpedia.org/resource/Christian_Democratic_Union_(Germany)
+
+
+200 Who produces Orangina?
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri dbo:product res:Orangina . 
+}
+
+
+http://dbpedia.org/resource/Orangina
+0.6877408	products	http://dbpedia.org/property/products http://dbpedia.org/resource/A.G._Barr
+0.6877408	product	http://dbpedia.org/ontology/product http://dbpedia.org/resource/A.G._Barr
+0.020051597	founder	http://dbpedia.org/property/founder http://dbpedia.org/resource/Jean-Claude_Beton
+
+
+122 Who is the governor of Wyoming?
+ 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Wyoming dbp:governor ?uri . 
+} 
+
+
+http://dbpedia.org/resource/Wyoming
+1.0	Governor	http://dbpedia.org/property/governor http://dbpedia.org/resource/Matt_Mead
+0.6518837	Lieutenant Governor	http://dbpedia.org/property/lieutenantGovernor http://dbpedia.org/resource/Max_Maxfield
+0.57773167	Legislature	http://dbpedia.org/property/legislature http://dbpedia.org/resource/Wyoming_Legislature
+0.5767761	Senators	http://dbpedia.org/property/senators http://dbpedia.org/resource/Mike_Enzi John Barrasso@en
+0.20680709	states	http://dbpedia.org/property/states http://dbpedia.org/resource/Charles_Starkweather http://dbpedia.org/resource/CanAm_Highway http://dbpedia.org/resource/Keith_Hunter_Jesperson
+
+
+124 Who was the father of Queen Elizabeth II?
+ 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Elizabeth_II dbp:father ?uri . 
+} 
+
+
+http://dbpedia.org/resource/Elizabeth_II
+1.0	father	http://dbpedia.org/property/father http://dbpedia.org/resource/George_VI
+0.8712777	parent	http://dbpedia.org/ontology/parent http://dbpedia.org/resource/Queen_Elizabeth_The_Queen_Mother http://dbpedia.org/resource/George_VI http://dbpedia.org/resource/Prince_Edward,_Earl_of_Wessex http://dbpedia.org/resource/Charles,_Prince_of_Wales http://dbpedia.org/resource/Prince_Andrew,_Duke_of_York http://dbpedia.org/resource/Anne,_Princess_Royal
+0.7052168	mother	http://dbpedia.org/property/mother http://dbpedia.org/resource/Queen_Elizabeth_The_Queen_Mother http://dbpedia.org/resource/Prince_Edward,_Earl_of_Wessex http://dbpedia.org/resource/Charles,_Prince_of_Wales http://dbpedia.org/resource/Prince_Andrew,_Duke_of_York http://dbpedia.org/resource/Anne,_Princess_Royal
+0.55115354	leader	http://dbpedia.org/ontology/leader http://dbpedia.org/resource/Parliament_of_the_United_Kingdom http://dbpedia.org/resource/Herm http://dbpedia.org/resource/Isle_of_Man http://dbpedia.org/resource/British_Indian_Ocean_Territory http://dbpedia.org/resource/House_of_Assembly_of_Bermuda http://dbpedia.org/resource/Pitcairn_Islands http://dbpedia.org/resource/Torres_Strait_Regional_Authority http://dbpedia.org/resource/Gibraltar http://dbpedia.org/resource/Australia http://dbpedia.org/resource/Solomon_Islands http://dbpedia.org/resource/Torres_Strait_Islands http://dbpedia.org/resource/Guernsey http://dbpedia.org/resource/Parliament_of_the_Bahamas http://dbpedia.org/resource/Jersey http://dbpedia.org/resource/Tokelau http://dbpedia.org/resource/Tuvalu http://dbpedia.org/resource/Cayman_Islands http://dbpedia.org/resource/Turks_and_Caicos_Islands http://dbpedia.org/resource/Falkland_Islands http://dbpedia.org/resource/Pledge_of_Loyalty_Act_2006 http://dbpedia.org/resource/South_Georgia_and_the_South_Sandwich_Islands http://dbpedia.org/resource/Parliament_of_Canada http://dbpedia.org/resource/Niue http://dbpedia.org/resource/Parliament_of_Tasmania http://dbpedia.org/resource/Akrotiri_and_Dhekelia http://dbpedia.org/resource/Parliament_of_New_South_Wales http://dbpedia.org/resource/The_Bahamas http://dbpedia.org/resource/House_of_Assembly_of_Saint_Vincent_and_the_Grenadines http://dbpedia.org/resource/Commonwealth_of_Nations http://dbpedia.org/resource/Montserrat http://dbpedia.org/resource/British_Antarctic_Territory http://dbpedia.org/resource/Scotland http://dbpedia.org/resource/Barbados http://dbpedia.org/resource/Parliament_of_Queensland http://dbpedia.org/resource/Saint_Vincent_and_the_Grenadines http://dbpedia.org/resource/House_of_Assembly_of_Saint_Lucia http://dbpedia.org/resource/Antigua_and_Barbuda http://dbpedia.org/resource/Saint_Helena http://dbpedia.org/resource/Parliament_of_South_Australia http://dbpedia.org/resource/Cook_Islands http://dbpedia.org/resource/Alderney http://dbpedia.org/resource/British_Virgin_Islands http://dbpedia.org/resource/Nevis http://dbpedia.org/resource/Jamaica http://dbpedia.org/resource/Parliament_of_Western_Australia http://dbpedia.org/resource/Ascension_Island http://dbpedia.org/resource/Papua_New_Guinea http://dbpedia.org/resource/Canada http://dbpedia.org/resource/National_Assembly_(Saint_Kitts_and_Nevis) http://dbpedia.org/resource/Southern_Rhodesian_Legislative_Assembly http://dbpedia.org/resource/Crown_dependencies http://dbpedia.org/resource/Tristan_da_Cunha http://dbpedia.org/resource/Parliament_of_Victoria http://dbpedia.org/resource/Parliament_of_Australia http://dbpedia.org/resource/Parliament_of_Barbados http://dbpedia.org/resource/Saint_Kitts_and_Nevis http://dbpedia.org/resource/Christmas_Island http://dbpedia.org/resource/Cocos_(Keeling)_Islands http://dbpedia.org/resource/Belize http://dbpedia.org/resource/Anguilla http://dbpedia.org/resource/Grenada http://dbpedia.org/resource/Saint_Helena,_Ascension_and_Tristan_da_Cunha http://dbpedia.org/resource/Bermuda http://dbpedia.org/resource/New_Zealand http://dbpedia.org/resource/Legislative_Assembly_of_the_Cayman_Islands http://dbpedia.org/resource/Saint_Lucia http://dbpedia.org/resource/Norfolk_Island
+0.55115354	leader	http://dbpedia.org/property/leader http://dbpedia.org/resource/Colony_of_Jamaica http://dbpedia.org/resource/Parliament_of_the_United_Kingdom http://dbpedia.org/resource/House_of_Assembly_of_Bermuda http://dbpedia.org/resource/Nyasaland http://dbpedia.org/resource/British_Solomon_Islands http://dbpedia.org/resource/Dominion_of_Fiji http://dbpedia.org/resource/Parliament_of_the_Bahamas http://dbpedia.org/resource/British_Windward_Islands http://dbpedia.org/resource/Pledge_of_Loyalty_Act_2006 http://dbpedia.org/resource/British_Kenya http://dbpedia.org/resource/Saint_Christopher-Nevis-Anguilla http://dbpedia.org/resource/British_Hong_Kong http://dbpedia.org/resource/Parliament_of_Canada http://dbpedia.org/resource/Post-war_Singapore http://dbpedia.org/resource/Parliament_of_Tasmania http://dbpedia.org/resource/Parliament_of_New_South_Wales http://dbpedia.org/resource/House_of_Assembly_of_Saint_Vincent_and_the_Grenadines http://dbpedia.org/resource/Malacca_(British_Crown_colony) http://dbpedia.org/resource/Parliament_of_Queensland http://dbpedia.org/resource/House_of_Assembly_of_Saint_Lucia http://dbpedia.org/resource/Tanganyika_Territory http://dbpedia.org/resource/Parliament_of_South_Australia http://dbpedia.org/resource/Dominion_of_Pakistan http://dbpedia.org/resource/Parliament_of_Western_Australia http://dbpedia.org/resource/Gilbert_and_Ellice_Islands http://dbpedia.org/resource/National_Assembly_(Saint_Kitts_and_Nevis) http://dbpedia.org/resource/Dominion_of_Newfoundland http://dbpedia.org/resource/Colonial_Fiji http://dbpedia.org/resource/Parliament_of_Victoria http://dbpedia.org/resource/Parliament_of_Australia http://dbpedia.org/resource/Parliament_of_Barbados http://dbpedia.org/resource/Union_of_South_Africa http://dbpedia.org/resource/Legislative_Assembly_of_the_Cayman_Islands http://dbpedia.org/resource/Dominion_of_Ceylon http://dbpedia.org/resource/British_Leeward_Islands
+
+
+135 Who developed Minecraft?
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Minecraft dbo:developer ?uri . 
+} 
+
+
+http://dbpedia.org/resource/Minecraft
+0.5167513	developer	http://dbpedia.org/ontology/developer http://dbpedia.org/resource/Mojang http://dbpedia.org/resource/4J_Studios
+0.5167513	developer	http://dbpedia.org/property/developer http://dbpedia.org/resource/Mojang 4^^http://www.w3.org/2001/XMLSchema#integer
+0.502757	product	http://dbpedia.org/ontology/product http://dbpedia.org/resource/Mojang
+0.14006178	designer	http://dbpedia.org/ontology/designer http://dbpedia.org/resource/Markus_Persson http://dbpedia.org/resource/Jens_Bergensten
+0.14006178	designer	http://dbpedia.org/property/designer http://dbpedia.org/resource/Markus_Persson http://dbpedia.org/resource/Jens_Bergensten
+
+
+141 Who founded Intel?
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Intel dbo:foundedBy ?uri . 
+} 
+
+
+http://dbpedia.org/resource/Intel
+0.97232264	founder	http://dbpedia.org/property/founder http://dbpedia.org/resource/Gordon_Moore http://dbpedia.org/resource/Robert_Noyce http://dbpedia.org/resource/Trusted_Computing_Group
+0.5	founded by	http://dbpedia.org/ontology/foundedBy http://dbpedia.org/resource/Gordon_Moore http://dbpedia.org/resource/Robert_Noyce http://dbpedia.org/resource/Trusted_Computing_Group http://dbpedia.org/resource/Dossia
+0.2202772	Sponsors	http://dbpedia.org/property/sponsors http://dbpedia.org/resource/SK_Gaming http://dbpedia.org/resource/ASCI_Red http://dbpedia.org/resource/Team_Dignitas http://dbpedia.org/resource/Mousesports
+0.19717490999999998	work institution	http://dbpedia.org/property/workInstitution http://dbpedia.org/resource/Radia_Perlman
+0.08820823900000001	key person	http://dbpedia.org/ontology/keyPerson http://dbpedia.org/resource/Brian_Krzanich http://dbpedia.org/resource/Andy_Bryant
+
+
+142 Who is the husband of Amanda Palmer?
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Amanda_Palmer dbp:spouse ?uri . 
+} 
+
+
+http://dbpedia.org/resource/Amanda_Palmer
+0.9129618	spouse	http://dbpedia.org/ontology/spouse http://dbpedia.org/resource/Neil_Gaiman
+0.9129618	spouse	http://dbpedia.org/property/spouse http://dbpedia.org/resource/Neil_Gaiman
+0.047937952	current members	http://dbpedia.org/property/currentMembers http://dbpedia.org/resource/Evelyn_Evelyn http://dbpedia.org/resource/The_Dresden_Dolls
+0.047937952	band member	http://dbpedia.org/ontology/bandMember http://dbpedia.org/resource/Evelyn_Evelyn http://dbpedia.org/resource/The_Dresden_Dolls
+0.009091754666666667	associated musical artist	http://dbpedia.org/ontology/associatedMusicalArtist http://dbpedia.org/resource/Evelyn_Evelyn http://dbpedia.org/resource/The_Dresden_Dolls http://dbpedia.org/resource/8in8 http://dbpedia.org/resource/Theatre_Is_Evil http://dbpedia.org/resource/Vermillion_Lies http://dbpedia.org/resource/Ben_Folds http://dbpedia.org/resource/East_Bay_Ray http://dbpedia.org/resource/Zo%C3%AB_Keating http://dbpedia.org/resource/Kim_Boekbinder http://dbpedia.org/resource/Voltaire_(musician) http://dbpedia.org/resource/Olga_Nunes
+
+
+15 Who created Goofy?
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Goofy dbo:creator ?uri . 
+} 
+
+
+http://dbpedia.org/resource/Goofy
+0.53708327	creators	http://dbpedia.org/property/creators http://dbpedia.org/resource/Paul_Murry http://dbpedia.org/resource/Del_Connell
+0.53708327	creator	http://dbpedia.org/ontology/creator http://dbpedia.org/resource/Paul_Murry http://dbpedia.org/resource/Walt_Disney http://dbpedia.org/resource/Del_Connell
+0.53708327	creator	http://dbpedia.org/property/creator http://dbpedia.org/resource/Walt_Disney
+0.11557377	publisher	http://dbpedia.org/property/publisher http://dbpedia.org/resource/The_Walt_Disney_Company http://dbpedia.org/resource/Western_Publishing
+0.02634705	voice	http://dbpedia.org/property/voice http://dbpedia.org/resource/Pinto_Colvig http://dbpedia.org/resource/Goofy http://dbpedia.org/resource/Bill_Farmer
+
+
+152 Who invented the zipper?
+OUT OF SCOPE
+http://dbpedia.org/resource/Zipper
+
+
+167 Who are the parents of the wife of Juan Carlos I?
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:Juan_Carlos_I_of_Spain dbo:spouse ?x . 
+        ?x dbo:parent ?uri . 
+} 
+
+
+constraintList size equals 2
+
+
+
+177 Who was called Frank The Tank?
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+        ?uri dbp:nickname 'Frank The Tank'@en . 
+}
+
+
+entityList size equals 0.
+
+
+
+184 Who created the comic Captain America?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Captain_America dbo:creator ?uri .
+}
+
+http://dbpedia.org/resource/Captain_America
+0.53708327	creators	http://dbpedia.org/property/creators http://dbpedia.org/resource/Joe_Simon http://dbpedia.org/resource/Jack_Kirby
+0.53708327	creator	http://dbpedia.org/ontology/creator http://dbpedia.org/resource/Joe_Simon http://dbpedia.org/resource/Jack_Kirby http://dbpedia.org/resource/Isaiah_Bradley
+0.11557377	publisher	http://dbpedia.org/property/publisher http://dbpedia.org/resource/Marvel_Comics
+0.09047998375	notable works	http://dbpedia.org/property/notableWorks http://dbpedia.org/resource/Joe_Simon http://dbpedia.org/resource/Syd_Shores
+0.05732557	supports	http://dbpedia.org/property/supports http://dbpedia.org/resource/Rick_Jones_(comics) http://dbpedia.org/resource/John_Jameson_(comics) http://dbpedia.org/resource/Peggy_Carter http://dbpedia.org/resource/Myron_MacLain
+
+
+187 Who composed the music for Harold and Maude?
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?uri 
+WHERE {
+       res:Harold_and_Maude dbo:musicComposer ?uri .
+}
+
+constraintList size equals 2
+
+
+
+195 Who wrote the lyrics for the Polish national anthem?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Poland dbo:anthem ?x .
+        ?x dbp:author ?uri .
+}
+
+constraintList size equals 2
+
+
+
+197 Who painted The Storm on the Sea of Galilee?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:The_Storm_on_the_Sea_of_Galilee dbo:author ?uri .
+}
+
+ConstraintList size equals 0.
+
+
+
+3 Who is the daughter of Robert Kennedy married to?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Robert_F._Kennedy dbo:child ?child .
+        ?child dbo:spouse ?uri .
+}
+
+http://dbpedia.org/resource/Robert_F._Kennedy
+0.77513444	child	http://dbpedia.org/ontology/child http://dbpedia.org/resource/Joseph_P._Kennedy_II http://dbpedia.org/resource/Max_Kennedy http://dbpedia.org/resource/Robert_F._Kennedy,_Jr. http://dbpedia.org/resource/Kathleen_Kennedy_Townsend http://dbpedia.org/resource/David_Kennedy http://dbpedia.org/resource/Courtney_Kennedy_Hill http://dbpedia.org/resource/Christopher_G._Kennedy http://dbpedia.org/resource/Douglas_Harriman_Kennedy http://dbpedia.org/resource/Rory_Kennedy http://dbpedia.org/resource/Kerry_Kennedy http://dbpedia.org/resource/Michael_LeMoyne_Kennedy
+0.5032247	parents	http://dbpedia.org/property/parents http://dbpedia.org/resource/Rose_Kennedy http://dbpedia.org/resource/Joseph_P._Kennedy,_Sr. http://dbpedia.org/resource/Joseph_P._Kennedy_II http://dbpedia.org/resource/Robert_F._Kennedy,_Jr. http://dbpedia.org/resource/Rory_Kennedy http://dbpedia.org/resource/Michael_LeMoyne_Kennedy
+0.5032247	parent	http://dbpedia.org/ontology/parent http://dbpedia.org/resource/Max_Kennedy http://dbpedia.org/resource/Robert_F._Kennedy,_Jr. http://dbpedia.org/resource/David_Kennedy http://dbpedia.org/resource/Courtney_Kennedy_Hill http://dbpedia.org/resource/Christopher_G._Kennedy http://dbpedia.org/resource/Douglas_Harriman_Kennedy http://dbpedia.org/resource/Rory_Kennedy http://dbpedia.org/resource/Kerry_Kennedy http://dbpedia.org/resource/Michael_LeMoyne_Kennedy
+0.26942363	relative	http://dbpedia.org/ontology/relative http://dbpedia.org/resource/Kathleen_Cavendish,_Marchioness_of_Hartington http://dbpedia.org/resource/Eunice_Kennedy_Shriver
+0.2652437	spouse	http://dbpedia.org/ontology/spouse http://dbpedia.org/resource/Ethel_Kennedy
+
+
+35 Who is the owner of Rolls-Royce?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {
+        res:Rolls-Royce_Motors dbo:owner ?uri .
+}
+
+http://dbpedia.org/resource/Rolls-Royce_Motors
+1.0	owner	http://dbpedia.org/ontology/owner http://dbpedia.org/resource/Vickers_plc http://dbpedia.org/resource/BMW http://dbpedia.org/resource/Volkswagen_Group
+0.14118959	owning company	http://dbpedia.org/ontology/owningCompany http://dbpedia.org/resource/Vickers_plc http://dbpedia.org/resource/BMW http://dbpedia.org/resource/Volkswagen_Group
+0.095551886	successor	http://dbpedia.org/ontology/successor http://dbpedia.org/resource/Rolls-Royce_Motor_Cars
+0.095551886	successor	http://dbpedia.org/property/successor http://dbpedia.org/resource/Rolls-Royce_Motor_Cars
+
+
+43 Who is the mayor of Tel Aviv?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE { 
+        res:Tel_Aviv dbo:leaderName ?uri .
+}
+
+http://dbpedia.org/resource/Tel_Aviv
+0.26237383999999997	leader name	http://dbpedia.org/ontology/leaderName http://dbpedia.org/resource/Ron_Huldai
+0.26237383999999997	leader name	http://dbpedia.org/property/leaderName http://dbpedia.org/resource/Ron_Huldai
+0.23858388	city	http://dbpedia.org/ontology/city http://dbpedia.org/resource/1935_Maccabiah_Games http://dbpedia.org/resource/2009_Maccabiah_Games http://dbpedia.org/resource/1968_Summer_Paralympics http://dbpedia.org/resource/Afeka_College_of_Engineering http://dbpedia.org/resource/Tel_Aviv_University http://dbpedia.org/resource/Highway_44_(Israel) http://dbpedia.org/resource/Ayalon_River http://dbpedia.org/resource/Highway_20_(Israel) http://dbpedia.org/resource/Yarkon_River http://dbpedia.org/resource/Highway_4_(Israel) http://dbpedia.org/resource/Maayan http://dbpedia.org/resource/Highway_2_(Israel)
+0.23858388	city	http://dbpedia.org/property/city http://dbpedia.org/resource/Tel_Aviv_University http://dbpedia.org/resource/Ayalon_River http://dbpedia.org/resource/Tel_Aviv_Open http://dbpedia.org/resource/Yarkon_River http://dbpedia.org/resource/Afeka_College_of_Engineering http://dbpedia.org/resource/Jews_Praying_in_the_Synagogue_on_Yom_Kippur
+0.16060814	stadium	http://dbpedia.org/property/stadium http://dbpedia.org/resource/1993%E2%80%9394_Liga_Artzit http://dbpedia.org/resource/2004%E2%80%9305_UEFA_Cup_first_round http://dbpedia.org/resource/1985_in_Swedish_football http://dbpedia.org/resource/UEFA_Euro_2000_qualifying_play-offs http://dbpedia.org/resource/2007%E2%80%9308_UEFA_Cup_qualifying_rounds http://dbpedia.org/resource/2004%E2%80%9305_UEFA_Champions_League_qualifying_rounds http://dbpedia.org/resource/2005%E2%80%9306_UEFA_Cup_qualifying_rounds http://dbpedia.org/resource/2013%E2%80%9314_UEFA_Europa_League_knockout_phase http://dbpedia.org/resource/2012_European_Baseball_Championship_%E2%80%93_Qualification http://dbpedia.org/resource/1995%E2%80%9396_UEFA_Cup http://dbpedia.org/resource/2011%E2%80%9312_UEFA_Europa_League_third_qualifying_round http://dbpedia.org/resource/Estonia_national_football_team_2007 http://dbpedia.org/resource/2006_Channel_One_Cup_(football) http://dbpedia.org/resource/2010_League_of_Ireland http://dbpedia.org/resource/2010%E2%80%9311_UEFA_Europa_League_qualifying_phase_and_play-off_round http://dbpedia.org/resource/UEFA_Euro_2000_qualifying_Group_6 http://dbpedia.org/resource/1996%E2%80%9397_UEFA_Cup http://dbpedia.org/resource/2006%E2%80%9307_UEFA_Cup_group_stage http://dbpedia.org/resource/2010%E2%80%9311_Women's_EHF_Cup_Winners'_Cup http://dbpedia.org/resource/2009_UEFA_European_Under-21_Championship_qualification_play-offs http://dbpedia.org/resource/UEFA_Euro_2012_qualifying_Group_F http://dbpedia.org/resource/Greece_national_football_team_results http://dbpedia.org/resource/2000%E2%80%9301_SK_Sturm_Graz_season http://dbpedia.org/resource/2000%E2%80%9301_UEFA_Champions_League_qualifying_rounds http://dbpedia.org/resource/2013%E2%80%9314_APOEL_F.C._season http://dbpedia.org/resource/2010_Shamrock_Rovers_F.C._season http://dbpedia.org/resource/2006%E2%80%9307_UEFA_Cup_knockout_stage http://dbpedia.org/resource/2013%E2%80%9314_Israel_State_Cup http://dbpedia.org/resource/1980_in_Swedish_football http://dbpedia.org/resource/2013%E2%80%9314_UEFA_Europa_League_group_stage http://dbpedia.org/resource/2011%E2%80%9312_UEFA_Europa_League_group_stage http://dbpedia.org/resource/2013_UEFA_European_Under-21_Championship http://dbpedia.org/resource/1997%E2%80%9398_UEFA_Cup http://dbpedia.org/resource/2001%E2%80%9302_Chelsea_F.C._season http://dbpedia.org/resource/2009%E2%80%9310_Toto_Cup_Leumit http://dbpedia.org/resource/Republic_of_Ireland_national_football_team_1980s_results http://dbpedia.org/resource/2012%E2%80%9313_in_Italian_football http://dbpedia.org/resource/2009%E2%80%9310_UEFA_Europa_League_qualifying_phase_and_play-off_round http://dbpedia.org/resource/2010%E2%80%9311_UEFA_Champions_League_group_stage http://dbpedia.org/resource/Israel_national_under-21_football_team http://dbpedia.org/resource/2013%E2%80%9314_CS_Pandurii_T%C3%A2rgu_Jiu_season http://dbpedia.org/resource/2006%E2%80%9307_UEFA_Cup_first_round http://dbpedia.org/resource/Sweden_national_football_team_1992 http://dbpedia.org/resource/Sweden_national_football_team_1997 http://dbpedia.org/resource/2012%E2%80%9313_UEFA_Europa_League_group_stage http://dbpedia.org/resource/2013%E2%80%9314_FC_Basel_season http://dbpedia.org/resource/1998%E2%80%9399_UEFA_Cup http://dbpedia.org/resource/1962%E2%80%9363_in_Turkish_football http://dbpedia.org/resource/List_of_first_association_football_internationals_per_country:_1940%E2%80%931962 http://dbpedia.org/resource/2005%E2%80%9306_UEFA_Cup_first_round http://dbpedia.org/resource/2009%E2%80%9310_Galatasaray_S.K._season http://dbpedia.org/resource/UEFA_Euro_1996_qualifying_Group_1 http://dbpedia.org/resource/2009%E2%80%9310_UEFA_Europa_League_knockout_phase http://dbpedia.org/resource/1995%E2%80%9397_FIRA_Trophy http://dbpedia.org/resource/2007%E2%80%9308_UEFA_Cup_first_round http://dbpedia.org/resource/Bosnia_and_Herzegovina_national_football_team_results http://dbpedia.org/resource/2009%E2%80%9310_UEFA_Europa_League_group_stage http://dbpedia.org/resource/2001%E2%80%9302_UEFA_Cup http://dbpedia.org/resource/2011%E2%80%9312_PSV_Eindhoven_season http://dbpedia.org/resource/2013%E2%80%9314_UEFA_Europa_League_qualifying_phase_and_play-off_round http://dbpedia.org/resource/2011%E2%80%9312_UEFA_Europa_League_play-off_round http://dbpedia.org/resource/1994%E2%80%9395_UEFA_Cup_Winners'_Cup http://dbpedia.org/resource/Estonia_national_football_team_1999 http://dbpedia.org/resource/2010%E2%80%9311_UEFA_Champions_League_qualifying_phase_and_play-off_round http://dbpedia.org/resource/1999_Rugby_World_Cup_%E2%80%93_European_qualification http://dbpedia.org/resource/2009%E2%80%9310_Toto_Cup_Al http://dbpedia.org/resource/2007_Channel_One_Cup_(football) http://dbpedia.org/resource/2012%E2%80%9313_UEFA_Europa_League_qualifying_phase_and_play-off_round http://dbpedia.org/resource/2011%E2%80%9312_UEFA_Europa_League_second_qualifying_round http://dbpedia.org/resource/2013%E2%80%9314_UEFA_Champions_League_qualifying_phase_and_play-off_round
+
+
+44 Who designed the Brooklyn Bridge?
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Brooklyn_Bridge dbo:architect ?uri .
+}
+
+http://dbpedia.org/resource/Brooklyn_Bridge
+0.6420208	designer	http://dbpedia.org/property/designer http://dbpedia.org/resource/John_A._Roebling
+0.4914469	architect	http://dbpedia.org/ontology/architect http://dbpedia.org/resource/John_A._Roebling
+0.1048170022	significant building	http://dbpedia.org/ontology/significantBuilding http://dbpedia.org/resource/Washington_Roebling
+0.048715175	maintained by	http://dbpedia.org/ontology/maintainedBy http://dbpedia.org/resource/New_York_City_Department_of_Transportation
+0.0014616194	known for	http://dbpedia.org/property/knownFor http://dbpedia.org/resource/John_A._Roebling
+
+
+48 Who is the editor of Forbes?
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Forbes dbo:editor ?uri .
+}
+
+http://dbpedia.org/resource/Forbes
+1.0	editor	http://dbpedia.org/ontology/editor http://dbpedia.org/resource/Steve_Forbes
+1.0	editor	http://dbpedia.org/property/editor http://dbpedia.org/resource/Steve_Forbes Randall Lane@en
+0.34802678	journal	http://dbpedia.org/property/journal http://dbpedia.org/resource/Elvis_Presley
+0.069880396	employer	http://dbpedia.org/ontology/employer http://dbpedia.org/resource/Juliette_Rossant http://dbpedia.org/resource/William_Baldwin_(journalist) http://dbpedia.org/resource/Peter_Brimelow
+0.069880396	employer	http://dbpedia.org/property/employer http://dbpedia.org/resource/William_Baldwin_(journalist)
+
+
+54 Who was the wife of U.S. president Lincoln?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Abraham_Lincoln dbo:spouse ?uri.
+}
+
+http://dbpedia.org/resource/Abraham_Lincoln
+0.8091827	spouse	http://dbpedia.org/ontology/spouse http://dbpedia.org/resource/Mary_Todd_Lincoln
+0.8091827	spouse	http://dbpedia.org/property/spouse http://dbpedia.org/resource/Mary_Todd_Lincoln
+0.5474278	relative	http://dbpedia.org/ontology/relative http://dbpedia.org/resource/Sarah_Lincoln_Grigsby
+0.37441257	parents	http://dbpedia.org/property/parents http://dbpedia.org/resource/Tad_Lincoln
+0.37441257	parent	http://dbpedia.org/ontology/parent http://dbpedia.org/resource/Tad_Lincoln http://dbpedia.org/resource/William_Wallace_Lincoln
+
+
+55 Who developed the video game World of Warcraft?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:World_of_Warcraft dbo:developer ?uri . 
+}
+
+http://dbpedia.org/resource/World_of_Warcraft
+0.5167513	developer	http://dbpedia.org/property/developer http://dbpedia.org/resource/Blizzard_Entertainment
+0.5167513	developer	http://dbpedia.org/ontology/developer http://dbpedia.org/resource/Blizzard_Entertainment
+0.14006178	designer	http://dbpedia.org/property/designer http://dbpedia.org/resource/Rob_Pardo http://dbpedia.org/resource/Jeffrey_Kaplan_(game_designer) http://dbpedia.org/resource/Tom_Chilton_(game_developer)
+0.14006178	designer	http://dbpedia.org/ontology/designer http://dbpedia.org/resource/Rob_Pardo http://dbpedia.org/resource/Jeffrey_Kaplan_(game_designer) http://dbpedia.org/resource/Tom_Chilton_(game_developer)
+0.11118685	Composer	http://dbpedia.org/property/composer http://dbpedia.org/resource/Tracy_W._Bush Derek Duke@en Glenn Stafford@en Jason Hayes@en
+
+
+62 Who created Wikipedia?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {
+        res:Wikipedia dbo:author ?uri .
+}
+
+http://dbpedia.org/resource/Wikipedia
+0.176179	author	http://dbpedia.org/ontology/author http://dbpedia.org/resource/Larry_Sanger http://dbpedia.org/resource/Jimmy_Wales
+0.176179	author	http://dbpedia.org/property/author http://dbpedia.org/resource/Larry_Sanger http://dbpedia.org/resource/Jimmy_Wales
+0.07778896	award	http://dbpedia.org/ontology/award http://dbpedia.org/resource/R%C3%A9mi_Mathis
+0.07630778	owner	http://dbpedia.org/property/owner http://dbpedia.org/resource/Wikimedia_Foundation
+0.07630778	owner	http://dbpedia.org/ontology/owner http://dbpedia.org/resource/Wikimedia_Foundation
+
+
+75 Who was the 16th president of the United States?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri
+WHERE {
+         ?uri dbo:office 'President of the United States' .
+         ?uri dbo:orderInOffice '16th' .
+}
+
+ConstraintList size equals 0.
+
+
+
+83 Who produced films starring Natalie Portman?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?film rdf:type dbo:Film .
+        ?film dbo:starring res:Natalie_Portman .
+        ?film dbo:producer ?uri .
+}
+
+constraintList size equals 2
+
+
+
+87 Who wrote the book The Pillars of the Earth?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:The_Pillars_of_the_Earth dbo:author ?uri .
+}
+
+http://dbpedia.org/resource/The_Pillars_of_the_Earth
+0.75292426	author	http://dbpedia.org/ontology/author http://dbpedia.org/resource/Ken_Follett
+0.75292426	author	http://dbpedia.org/property/author http://dbpedia.org/resource/Ken_Follett
+0.60382736	publisher	http://dbpedia.org/property/publisher http://dbpedia.org/resource/Macmillan_Publishers
+0.60382736	publisher	http://dbpedia.org/ontology/publisher http://dbpedia.org/resource/Macmillan_Publishers
+
+
+234 Who was the first to climb Mount Everest?
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?uri
+WHERE {
+          res:Mount_Everest dbo:firstAscentPerson ?uri . 
+}
+
+http://dbpedia.org/resource/Mount_Everest
+0.3984655	notable ascents	http://dbpedia.org/property/notableAscents http://dbpedia.org/resource/Nasuh_Mahruki
+0.07516507233333335	person that first ascented a mountain	http://dbpedia.org/ontology/firstAscentPerson http://dbpedia.org/resource/Edmund_Hillary http://dbpedia.org/resource/Leszek_Cichy http://dbpedia.org/resource/Krzysztof_Wielicki http://dbpedia.org/resource/Tenzing_Norgay
+0.04942656765	death place	http://dbpedia.org/ontology/deathPlace http://dbpedia.org/resource/Andrew_Irvine_(mountaineer) http://dbpedia.org/resource/Scott_Fischer http://dbpedia.org/resource/George_Mallory http://dbpedia.org/resource/Francys_Arsentiev http://dbpedia.org/resource/Marko_Lihteneker http://dbpedia.org/resource/Shailendra_Kumar_Upadhyaya http://dbpedia.org/resource/Joe_Tasker http://dbpedia.org/resource/David_Sharp_(mountaineer) http://dbpedia.org/resource/John_Delaney_(businessman) http://dbpedia.org/resource/Lobsang_Tshering http://dbpedia.org/resource/Tomas_Olsson http://dbpedia.org/resource/Karl_Gordon_Henize http://dbpedia.org/resource/Peter_Boardman http://dbpedia.org/resource/Babu_Chiri_Sherpa http://dbpedia.org/resource/Green_Boots http://dbpedia.org/resource/Zygmunt_Andrzej_Heinrich http://dbpedia.org/resource/Rob_Hall
+0.04942656765	death place	http://dbpedia.org/property/deathPlace http://dbpedia.org/resource/Francys_Arsentiev http://dbpedia.org/resource/Marko_Lihteneker http://dbpedia.org/resource/David_Sharp_(mountaineer) http://dbpedia.org/resource/John_Delaney_(businessman) http://dbpedia.org/resource/Tomas_Olsson http://dbpedia.org/resource/Karl_Gordon_Henize http://dbpedia.org/resource/Babu_Chiri_Sherpa http://dbpedia.org/resource/Rob_Hall
+0.0329510451	PLACE OF DEATH	http://dbpedia.org/property/placeOfDeath http://dbpedia.org/resource/David_Sharp_(mountaineer) http://dbpedia.org/resource/Tomas_Olsson http://dbpedia.org/resource/Karl_Gordon_Henize http://dbpedia.org/resource/Babu_Chiri_Sherpa http://dbpedia.org/resource/Rob_Hall
+
+
+215 Who has Tom Cruise been married to?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri dbo:spouse res:Tom_Cruise.
+}
+
+ConstraintList size equals 0.
+
+
+
+253 Who was called Rodzilla?
+
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE { 
+         ?uri dbp:nickname "Rodzilla"@en .
+}
+
+entityList size equals 0.
+
+
+
+259 Who wrote The Hunger Games?
+
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri
+WHERE { 
+        res:The_Hunger_Games dbo:author ?uri . 
+}
+
+http://dbpedia.org/resource/The_Hunger_Games
+0.75292426	author	http://dbpedia.org/ontology/author http://dbpedia.org/resource/Suzanne_Collins
+0.75292426	author	http://dbpedia.org/property/author http://dbpedia.org/resource/Suzanne_Collins
+0.111102948	cover artist	http://dbpedia.org/ontology/coverArtist http://dbpedia.org/resource/Tim_O'Brien_(illustrator)
+0.111102948	cover artist	http://dbpedia.org/property/coverArtist http://dbpedia.org/resource/Tim_O'Brien_(illustrator)
+
+
+262 Who is the founder of Penguin Books?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT DISTINCT ?uri
+WHERE { 
+        res:Penguin_Books dbo:founder ?uri .
+}
+
+http://dbpedia.org/resource/Penguin_Books
+1.0	founder	http://dbpedia.org/property/founder http://dbpedia.org/resource/Allen_Lane
+1.0	Founder	http://dbpedia.org/ontology/founder http://dbpedia.org/resource/Allen_Lane
+0.13673596	publisher	http://dbpedia.org/property/publisher http://dbpedia.org/resource/Mao's_Last_Dancer_(book) http://dbpedia.org/resource/The_Islamist http://dbpedia.org/resource/The_Penguin_Guide_to_Jazz http://dbpedia.org/resource/Spud_(novel) http://dbpedia.org/resource/I'm_Feeling_Lucky_(book) http://dbpedia.org/resource/The_Oh_My_God_Delusion http://dbpedia.org/resource/Narcopolis http://dbpedia.org/resource/Downturn_Abbey http://dbpedia.org/resource/Tetrarch_(novel) http://dbpedia.org/resource/The_Rise_of_Nine http://dbpedia.org/resource/The_Kingkiller_Chronicle http://dbpedia.org/resource/Berserker_(Saberhagen) http://dbpedia.org/resource/Dark_is_the_Moon http://dbpedia.org/resource/Decline_of_the_English_Murder http://dbpedia.org/resource/Jeremy_Clarkson's_Motorworld http://dbpedia.org/resource/The_Penguin_History_of_the_United_States_of_America http://dbpedia.org/resource/The_Curse_on_the_Chosen http://dbpedia.org/resource/Legend_(Lu_novel) http://dbpedia.org/resource/We_Need_To_Talk_About_Ross http://dbpedia.org/resource/The_Fry_Chronicles http://dbpedia.org/resource/Outposts:_Journeys_to_the_Surviving_Relics_of_the_British_Empire http://dbpedia.org/resource/The_Left_Hand_of_God_(novel) http://dbpedia.org/resource/The_Go-Giver http://dbpedia.org/resource/The_Medium_Is_the_Massage http://dbpedia.org/resource/The_Last_Sontaran http://dbpedia.org/resource/Caverns_(novel) http://dbpedia.org/resource/The_Shadow_of_the_Wind http://dbpedia.org/resource/The_Pursuit_of_Glory http://dbpedia.org/resource/In_the_Miso_Soup http://dbpedia.org/resource/Socialite_Evenings http://dbpedia.org/resource/Colleges_That_Change_Lives http://dbpedia.org/resource/Gladiator:_Fight_for_Freedom http://dbpedia.org/resource/Learning_How_to_Learn http://dbpedia.org/resource/The_Time_Wreccas http://dbpedia.org/resource/Status_Anxiety http://dbpedia.org/resource/The_Gift_(Croggon_novel) http://dbpedia.org/resource/Conspiracy_Encyclopedia http://dbpedia.org/resource/The_Making_of_a_Teacher http://dbpedia.org/resource/One_of_Our_Thursdays_Is_Missing http://dbpedia.org/resource/The_Mirror_of_Merlin http://dbpedia.org/resource/The_Shelbourne_Ultimatum http://dbpedia.org/resource/Thursday's_Child_(Sonya_Hartnett_novel) http://dbpedia.org/resource/The_Room_on_the_Roof http://dbpedia.org/resource/The_Call_of_Cthulhu_and_Other_Weird_Stories http://dbpedia.org/resource/Just_Call_Me_Stupid http://dbpedia.org/resource/Occupy_(book) http://dbpedia.org/resource/A_Writer's_Nightmare http://dbpedia.org/resource/Mortal_Danger http://dbpedia.org/resource/The_Australian_Ugliness http://dbpedia.org/resource/Akata_Witch http://dbpedia.org/resource/Eternity_in_Death http://dbpedia.org/resource/The_Penguin_Atlas_of_World_History http://dbpedia.org/resource/How_I_Live_Now http://dbpedia.org/resource/The_Haunting_of_Hill_House http://dbpedia.org/resource/Escape_from_Davao http://dbpedia.org/resource/A_Tranquil_Star http://dbpedia.org/resource/Torments_of_the_Traitor http://dbpedia.org/resource/Eat,_Pray,_Love http://dbpedia.org/resource/Purity_in_Death http://dbpedia.org/resource/The_Crow_(novel) http://dbpedia.org/resource/The_Road_to_Memphis_(novel) http://dbpedia.org/resource/The_Glass_Books_of_the_Dream_Eaters http://dbpedia.org/resource/Attack_of_the_Mutant_Underwear http://dbpedia.org/resource/Promises_in_Death http://dbpedia.org/resource/NAMA_Mia! http://dbpedia.org/resource/Warriors_of_Kudlak http://dbpedia.org/resource/The_Dreams_in_the_Witch_House_and_Other_Weird_Stories http://dbpedia.org/resource/Mr_S_and_the_Secrets_of_Andorra's_Box http://dbpedia.org/resource/Heroes_in_the_Wind http://dbpedia.org/resource/The_Prophecy_(novel) http://dbpedia.org/resource/Sorcery! http://dbpedia.org/resource/Rally_Cry http://dbpedia.org/resource/Congo_Journey http://dbpedia.org/resource/An_Octopus_Followed_Me_Home http://dbpedia.org/resource/Dream_Story http://dbpedia.org/resource/The_Girls'_Guide_to_Hunting_and_Fishing http://dbpedia.org/resource/Incarceron http://dbpedia.org/resource/Rolling_Home:_A_Cross_Canada_Railroad_Memoir http://dbpedia.org/resource/Shanghai_Surprise http://dbpedia.org/resource/Cat_Sense_(book) http://dbpedia.org/resource/The_Tower_on_the_Rift http://dbpedia.org/resource/Two_Women_(novel) http://dbpedia.org/resource/A_Dream_of_Eagles http://dbpedia.org/resource/Babylon_by_Bus_(book) http://dbpedia.org/resource/Empress_of_the_World http://dbpedia.org/resource/Assassin's_Creed_(book_series) http://dbpedia.org/resource/Origin_in_Death http://dbpedia.org/resource/Monkeewrench http://dbpedia.org/resource/This_Champagne_Mojito_Is_the_Last_Thing_I_Own http://dbpedia.org/resource/Blue_Heaven_(novel) http://dbpedia.org/resource/The_Singing_Sword http://dbpedia.org/resource/Guitar_Zero http://dbpedia.org/resource/Mussolini:_His_Part_in_My_Downfall http://dbpedia.org/resource/Monster:_The_Autobiography_of_an_L.A._Gang_Member http://dbpedia.org/resource/Should_Have_Got_Off_at_Sydney_Parade http://dbpedia.org/resource/Stalingrad_(book) http://dbpedia.org/resource/The_Unnamed http://dbpedia.org/resource/Killing_Aurora http://dbpedia.org/resource/Animalia_(book) http://dbpedia.org/resource/Thirteen_Reasons_Why http://dbpedia.org/resource/Target_3_Billion http://dbpedia.org/resource/Happy_City http://dbpedia.org/resource/Icy_Sparks http://dbpedia.org/resource/The_Riddle_(novel) http://dbpedia.org/resource/The_Slab_Boys_Trilogy http://dbpedia.org/resource/Obernewtyn_(novel) http://dbpedia.org/resource/Devil_May_Care_(novel) http://dbpedia.org/resource/Just_in_Case http://dbpedia.org/resource/Loyalty_in_Death http://dbpedia.org/resource/In_the_Lake_of_the_Woods http://dbpedia.org/resource/Heat_(Lupica_novel) http://dbpedia.org/resource/Ceremony_(Silko_novel) http://dbpedia.org/resource/The_Moved_and_the_Shaken http://dbpedia.org/resource/Ah,_But_Your_Land_Is_Beautiful http://dbpedia.org/resource/For_Lust_of_Knowing http://dbpedia.org/resource/Rhino_What_You_Did_Last_Summer http://dbpedia.org/resource/Driven_to_Distraction_(2009) http://dbpedia.org/resource/Blood_Lines_(Wilks_novel) http://dbpedia.org/resource/The_Age_of_Doubt http://dbpedia.org/resource/The_Wedding_of_Sarah_Jane_Smith http://dbpedia.org/resource/Annie_Dunne http://dbpedia.org/resource/The_Office_of_Mercy http://dbpedia.org/resource/Eye_of_the_Gorgon http://dbpedia.org/resource/The_Way_Between_the_Worlds http://dbpedia.org/resource/Buddy_(novel) http://dbpedia.org/resource/Rules_and_Meanings http://dbpedia.org/resource/The_Albatross http://dbpedia.org/resource/Only_Human_(short_story) http://dbpedia.org/resource/Sign_of_the_Cross_(novel) http://dbpedia.org/resource/Alex_Rider http://dbpedia.org/resource/The_English_Assassin_(Daniel_Silva_novel) http://dbpedia.org/resource/Fantastic_Mr_Fox http://dbpedia.org/resource/The_Magicians_(Grossman_novel) http://dbpedia.org/resource/The_Richest_Man_in_Babylon_(book) http://dbpedia.org/resource/Dead_Run http://dbpedia.org/resource/Edenborn http://dbpedia.org/resource/The_Help http://dbpedia.org/resource/Upworldly_Mobile http://dbpedia.org/resource/The_Future_of_Us http://dbpedia.org/resource/Tim_and_Pete http://dbpedia.org/resource/Lon_Po_Po http://dbpedia.org/resource/Ancestors_of_Avalon http://dbpedia.org/resource/Living_with_Crazy_Buttocks http://dbpedia.org/resource/Audition_(novel) http://dbpedia.org/resource/The_Sky_Is_Falling_(Pearson_novel) http://dbpedia.org/resource/Girls_of_Riyadh http://dbpedia.org/resource/What_Is_History%3F http://dbpedia.org/resource/Two_Caravans http://dbpedia.org/resource/The_Rough_Guide_to_True_Crime http://dbpedia.org/resource/The_Big_Rich http://dbpedia.org/resource/Those_Days_(novel) http://dbpedia.org/resource/The_Opposite_House http://dbpedia.org/resource/Second_Thoughts_(Shobhaa_De_novel) http://dbpedia.org/resource/Students_Across_the_Seven_Seas http://dbpedia.org/resource/The_Lost_Throne http://dbpedia.org/resource/The_Last_Castaways http://dbpedia.org/resource/Extraordinary_Canadians:_Marshall_McLuhan http://dbpedia.org/resource/Becoming_Julia http://dbpedia.org/resource/Idlewild_(novel) http://dbpedia.org/resource/The_Curious_Incident_of_the_Dog_in_the_Nightdress http://dbpedia.org/resource/Conspiracy_in_Death http://dbpedia.org/resource/Journey_into_Space_(book) http://dbpedia.org/resource/The_Penguin_Dictionary_of_Curious_and_Interesting_Numbers http://dbpedia.org/resource/The_Beginning_of_Infinity http://dbpedia.org/resource/Monty:_His_Part_in_My_Victory http://dbpedia.org/resource/Ashling http://dbpedia.org/resource/The_Sending http://dbpedia.org/resource/A_Light_in_the_Black http://dbpedia.org/resource/Gladiator:_Street_Fighter http://dbpedia.org/resource/The_Complete_Cosmicomics http://dbpedia.org/resource/Four_Fish http://dbpedia.org/resource/Red_Dwarf:_Infinity_Welcomes_Careful_Drivers http://dbpedia.org/resource/A_Woman_in_Amber http://dbpedia.org/resource/On_Directing_Film http://dbpedia.org/resource/Weight_Loss_(novel) http://dbpedia.org/resource/Geomancer_(Well_of_Echoes) http://dbpedia.org/resource/Mrs._King http://dbpedia.org/resource/And_the_Hippos_Were_Boiled_in_Their_Tanks http://dbpedia.org/resource/The_Lost_Boy_(The_Sarah_Jane_Adventures) http://dbpedia.org/resource/Chimaera_(Well_of_Echoes) http://dbpedia.org/resource/The_Alphabet_of_Manliness http://dbpedia.org/resource/A_Spy_in_the_House_of_Love http://dbpedia.org/resource/Scrutator http://dbpedia.org/resource/The_Incredulity_of_Father_Brown http://dbpedia.org/resource/Uno's_Garden http://dbpedia.org/resource/Thorn_Ogres_of_Hagwood http://dbpedia.org/resource/The_Sea_is_My_Brother http://dbpedia.org/resource/Portrait_in_Death http://dbpedia.org/resource/The_World_According_to_Clarkson http://dbpedia.org/resource/The_Ambidextrous_Universe http://dbpedia.org/resource/Self-portrait_in_a_Convex_Mirror_(book) http://dbpedia.org/resource/Life_and_Death_in_Shanghai http://dbpedia.org/resource/Ross_O'Carroll-Kelly's_Guide_to_(South)_Dublin http://dbpedia.org/resource/The_Wings_of_the_Sphinx http://dbpedia.org/resource/Charlie_and_the_Chocolate_Factory http://dbpedia.org/resource/Shadow_of_Night http://dbpedia.org/resource/The_Mammaries_of_the_Welfare_State http://dbpedia.org/resource/Midnight_in_Death http://dbpedia.org/resource/The_Confession_of_Sultana_Daku http://dbpedia.org/resource/God's_Mischief http://dbpedia.org/resource/Glimpses_of_World_History http://dbpedia.org/resource/Common_Wealth:_Economics_for_a_Crowded_Planet http://dbpedia.org/resource/Dream_Weavers_(anthology) http://dbpedia.org/resource/The_Concubine's_Children http://dbpedia.org/resource/Ghalib_Danger http://dbpedia.org/resource/Number_Ten_(novel) http://dbpedia.org/resource/The_Greeks http://dbpedia.org/resource/The_Terrible_Privacy_of_Maxwell_Sim http://dbpedia.org/resource/The_Collapse_of_Chaos http://dbpedia.org/resource/The_Theory_of_Evolution http://dbpedia.org/resource/English,_August http://dbpedia.org/resource/What_to_Do_When_Someone_Dies http://dbpedia.org/resource/The_Penguin_Guide_to_Blues_Recordings http://dbpedia.org/resource/First_Light_(Sunil_Ganguly) http://dbpedia.org/resource/Multitude:_War_and_Democracy_in_the_Age_of_Empire http://dbpedia.org/resource/The_End:_Hitler's_Germany_1944%E2%80%9345 http://dbpedia.org/resource/The_Birds_(story) http://dbpedia.org/resource/The_Sword_of_God_(novelette) http://dbpedia.org/resource/Tempting_Danger http://dbpedia.org/resource/Leslie_Marmon_Silko http://dbpedia.org/resource/Memory_in_Death http://dbpedia.org/resource/Golf_in_the_Kingdom http://dbpedia.org/resource/The_Day_of_the_Clown http://dbpedia.org/resource/Starry_Nights http://dbpedia.org/resource/India_Unbound http://dbpedia.org/resource/Strange_Son http://dbpedia.org/resource/The_Barn_Owl's_Wondrous_Capers http://dbpedia.org/resource/Laburnum_For_My_Head http://dbpedia.org/resource/The_Thing_on_the_Doorstep_and_Other_Weird_Stories http://dbpedia.org/resource/Alyzon_Whitestarr http://dbpedia.org/resource/The_Boy_who_Talked_to_Trees_(book) http://dbpedia.org/resource/The_Ruins_of_Gorlan http://dbpedia.org/resource/The_Fall_of_Five http://dbpedia.org/resource/The_Last_Burden http://dbpedia.org/resource/Rat_Girl http://dbpedia.org/resource/Sword_of_God_(novel) http://dbpedia.org/resource/The_Potter's_Field_(Camilleri_novel) http://dbpedia.org/resource/Remember_When_(novel) http://dbpedia.org/resource/The_Destiny_of_the_Dead http://dbpedia.org/resource/Moonwalking_with_Einstein http://dbpedia.org/resource/The_Bellarosa_Connection http://dbpedia.org/resource/Across_the_Nightingale_Floor http://dbpedia.org/resource/A_Shadow_on_the_Glass http://dbpedia.org/resource/The_BFG http://dbpedia.org/resource/The_Magician_King http://dbpedia.org/resource/The_Eagles'_Brood http://dbpedia.org/resource/A_Delicate_Truth http://dbpedia.org/resource/Japanese_Society_(1970_book) http://dbpedia.org/resource/Sea_Swept http://dbpedia.org/resource/And_Another_Thing..._(novel) http://dbpedia.org/resource/The_Track_of_Sand http://dbpedia.org/resource/The_Manticore's_Secret http://dbpedia.org/resource/Go_Kiss_the_World:_Life_Lessons_for_the_Young_Professional http://dbpedia.org/resource/Gladiator:_Son_of_Spartacus http://dbpedia.org/resource/Came_Back_to_Show_You_I_Could_Fly http://dbpedia.org/resource/Doing_It http://dbpedia.org/resource/Live_Bait_(novel) http://dbpedia.org/resource/Born_to_be_Riled http://dbpedia.org/resource/The_Whispering_Road
+0.051561262499999996	parent company	http://dbpedia.org/ontology/parentCompany http://dbpedia.org/resource/Penguin_Random_House
+0.041681852	parent	http://dbpedia.org/property/parent http://dbpedia.org/resource/Penguin_Random_House
+
+
+270 Who played Agent Smith in Matrix?
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE { 
+        res:Agent_Smith dbp:portrayer ?uri . 
+}
+
+ConstraintList size equals 0.
+
+
+
+274 Who is the mayor of the capital of French Polynesia?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE { 
+        res:French_Polynesia dbo:capital ?x .
+        ?x dbo:mayor ?uri .
+}
+
+constraintList size equals 2
+
+
+
+278 Who was the pope that founded the Vatican Television?
+
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+SELECT ?uri 
+WHERE { 
+         ?uri rdf:type dbo:Pope . 
+         res:Vatican_Television_Center dbo:foundedBy ?uri .
+}
+
+http://dbpedia.org/resource/Vatican_Television_Center
+0.97232264	founder	http://dbpedia.org/property/founder http://dbpedia.org/resource/Pope_John_Paul_II
+0.5	founded by	http://dbpedia.org/ontology/foundedBy http://dbpedia.org/resource/Pope_John_Paul_II
+0.08820823900000001	key person	http://dbpedia.org/ontology/keyPerson http://dbpedia.org/resource/Dario_Edoardo_Vigan%C3%B2
+
+
+289 Who is the owner of Facebook?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri
+WHERE {
+        res:Facebook dbo:foundedBy ?uri .
+}
+
+http://dbpedia.org/resource/Facebook
+0.33525667000000003	key person	http://dbpedia.org/ontology/keyPerson http://dbpedia.org/resource/Chief_operating_officer http://dbpedia.org/resource/Sheryl_Sandberg http://dbpedia.org/resource/Chief_executive_officer http://dbpedia.org/resource/Chairman http://dbpedia.org/resource/Mark_Zuckerberg
+0.22756463500000002	parent company	http://dbpedia.org/ontology/parentCompany http://dbpedia.org/resource/WhatsApp__Inc.__1
+0.19041747	employer	http://dbpedia.org/property/employer http://dbpedia.org/resource/Jordan_Banks http://dbpedia.org/resource/Veronica_Dillon http://dbpedia.org/resource/Joe_Lockhart http://dbpedia.org/resource/Donald_E._Graham http://dbpedia.org/resource/Elliot_Schrage
+0.19041747	employer	http://dbpedia.org/ontology/employer http://dbpedia.org/resource/Jordan_Banks http://dbpedia.org/resource/Veronica_Dillon http://dbpedia.org/resource/Donald_E._Graham http://dbpedia.org/resource/Elliot_Schrage
+0.09836897	key people	http://dbpedia.org/property/keyPeople http://dbpedia.org/resource/Sheryl_Sandberg Mark Zuckerberg@en
+
+
+291 Who was influenced by Socrates?
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri dbo:influencedBy res:Socrates .
+}
+
+http://dbpedia.org/resource/Socrates
+1.0	influenced	http://dbpedia.org/property/influenced Most subsequent Western philosophy; more specifically, Plato, Aristotle, Aristippus, Antisthenes@en http://dbpedia.org/resource/Aesop http://dbpedia.org/resource/Parmenides
+1.0	influenced	http://dbpedia.org/ontology/influenced http://dbpedia.org/resource/Aristippus http://dbpedia.org/resource/Plato http://dbpedia.org/resource/Antisthenes http://dbpedia.org/resource/Western_philosophy http://dbpedia.org/resource/Aristotle http://dbpedia.org/resource/Aesop http://dbpedia.org/resource/Parmenides
+1.0	influences	http://dbpedia.org/property/influences http://dbpedia.org/resource/Gilbert_Ling http://dbpedia.org/resource/Stefan_Molyneux http://dbpedia.org/resource/Lucian http://dbpedia.org/resource/Hannah_Arendt http://dbpedia.org/resource/Aristippus http://dbpedia.org/resource/Plato http://dbpedia.org/resource/Antisthenes http://dbpedia.org/resource/Aristotle http://dbpedia.org/resource/Seyhan_Kurt http://dbpedia.org/resource/Leo_Strauss http://dbpedia.org/resource/Euclid_of_Megara http://dbpedia.org/resource/Allan_Bloom http://dbpedia.org/resource/Epictetus http://dbpedia.org/resource/Peter_Kreeft
+0.5	influenced by	http://dbpedia.org/property/influencedBy http://dbpedia.org/resource/Parmenides
+0.5	influenced by	http://dbpedia.org/ontology/influencedBy http://dbpedia.org/resource/Stefan_Molyneux http://dbpedia.org/resource/Lucian http://dbpedia.org/resource/Hannah_Arendt http://dbpedia.org/resource/Diogenes_of_Sinope http://dbpedia.org/resource/Aristippus http://dbpedia.org/resource/Plato http://dbpedia.org/resource/Antisthenes http://dbpedia.org/resource/Seyhan_Kurt http://dbpedia.org/resource/Leo_Strauss http://dbpedia.org/resource/Euclid_of_Megara http://dbpedia.org/resource/Allan_Bloom http://dbpedia.org/resource/Epictetus http://dbpedia.org/resource/Peter_Kreeft
+
+
+292 Who was president of Pakistan in 1978?
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?uri 
+WHERE {
+        ?uri dbp:title res:President_of_Pakistan .
+        ?uri dbp:years 1978 .
+}
+
+http://dbpedia.org/resource/Pakistan
+0.8784588	leader	http://dbpedia.org/ontology/leader http://dbpedia.org/resource/Nawaz_Sharif http://dbpedia.org/resource/Tassaduq_Hussain_Jillani
+0.530849315	leader name	http://dbpedia.org/property/leaderName http://dbpedia.org/resource/Tassaduq_Hussain_Jillani Mian Nawaz Sharif@en
+0.47653455	leader title	http://dbpedia.org/property/leaderTitle http://dbpedia.org/resource/President_of_Pakistan http://dbpedia.org/resource/Prime_Minister_of_Pakistan http://dbpedia.org/resource/Speaker_of_the_National_Assembly_of_Pakistan http://dbpedia.org/resource/Chairman_of_the_Senate_of_Pakistan http://dbpedia.org/resource/Chief_Justice_of_Pakistan
+0.429878565	Head Office	http://dbpedia.org/property/headOffice http://dbpedia.org/resource/Tehreek_Dawat-e-Faqr
+0.18198377	office	http://dbpedia.org/property/office http://dbpedia.org/resource/Anjuman_Talaba-e-Islam http://dbpedia.org/resource/Anwar_Ali_Cheema http://dbpedia.org/resource/Zulfiqar_Ali_Bhatti http://dbpedia.org/resource/Ghias_Mela
+
+
+295 Who was married to president Chirac?
+
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?uri
+WHERE { 
+         res:Jacques_Chirac dbo:spouse ?uri .
+}
+
+http://dbpedia.org/resource/Jacques_Chirac
+0.74589705	spouse	http://dbpedia.org/ontology/spouse http://dbpedia.org/resource/Bernadette_Chirac
+0.74589705	spouse	http://dbpedia.org/property/spouse http://dbpedia.org/resource/Bernadette_Chirac
+0.130195375	prime minister	http://dbpedia.org/ontology/primeMinister http://dbpedia.org/resource/Marc_Forn%C3%A9_Moln%C3%A9 http://dbpedia.org/resource/Alain_Jupp%C3%A9 http://dbpedia.org/resource/Jean-Pierre_Raffarin http://dbpedia.org/resource/Jacques_Chaban-Delmas http://dbpedia.org/resource/Albert_Pintat http://dbpedia.org/resource/Dominique_de_Villepin http://dbpedia.org/resource/Lionel_Jospin http://dbpedia.org/resource/Pierre_Messmer http://dbpedia.org/resource/Jean-Bernard_Raimond http://dbpedia.org/resource/Simone_Veil http://dbpedia.org/resource/Robert_Galley http://dbpedia.org/resource/Ren%C3%A9_Monory http://dbpedia.org/resource/Fran%C3%A7ois_Mitterrand http://dbpedia.org/resource/Val%C3%A9ry_Giscard_d'Estaing http://dbpedia.org/resource/%C3%89douard_Balladur http://dbpedia.org/resource/Jean_Lecanuet
+0.1268078	relation	http://dbpedia.org/ontology/relation http://dbpedia.org/resource/Claude_Chirac
+0.060797207	founder	http://dbpedia.org/property/founder http://dbpedia.org/resource/Rally_for_the_Republic
+
+

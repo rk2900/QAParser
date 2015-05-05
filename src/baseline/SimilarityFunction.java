@@ -1,5 +1,7 @@
 package baseline;
 
+import type.Type;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
@@ -13,7 +15,7 @@ import umbc.umbcDB;
 public class SimilarityFunction {
 	private static umbcDB db = new umbcDB();
 	private static int predictNum = 5;
-	private static double minSimilarityScore = 0.1;
+	private static double minSimilarityScore = 0.0;
 	
 	/**
 	 * 直接对空格切分
@@ -42,27 +44,87 @@ public class SimilarityFunction {
 				wordList.add(word);
 			}
 		}else{
-			if(Character.isUpperCase(predictLabel.charAt(0))){
-				int start = 0;
-				for(int i=1; i<predictLabel.length(); ++i){
-					if(Character.isUpperCase(predictLabel.charAt(i))){
-						wordList.add(predictLabel.substring(start, i));
-						start = i;
-					}
-
-					if(i == predictLabel.length()-1){
-						wordList.add(predictLabel.substring(start, i+1));
-					}
+			boolean isLetter = true;
+			for(int i=0; i<predictLabel.length(); ++i){
+				if(!Character.isLetter(predictLabel.charAt(i))){
+					isLetter = false;
+					break;
 				}
 			}
+			if(isLetter){
+				if(predictLabel.length()>1 && Character.isUpperCase(predictLabel.charAt(0)) && Character.isLowerCase(predictLabel.charAt(1))){
+					int start = 0;
+					for(int i=1; i<predictLabel.length(); ++i){
+						if(Character.isUpperCase(predictLabel.charAt(i))){
+							wordList.add(predictLabel.substring(start, i));
+							start = i;
+						}
+
+						if(i == predictLabel.length()-1){
+							wordList.add(predictLabel.substring(start, i+1));
+						}
+					}
+				}else{
+					wordList.add(predictLabel);
+				}
+			}else{
+				wordList.add(predictLabel);
+			}
+			
 		}
 		return wordList;
 	}
 	
 	public static void main(String [] args){
-		System.out.println(getLabelWords("AdmittanceDate"));
+//		System.out.println(getLabelWords("AdmittanceDate"));
+		System.out.println(umbcWordRanking( "person that first ascented a mountain", "climb", ""));
 	}
 	
+//	private static double umbcWordRanking(String predictLabel, String NL, String focusString){
+//		double avgScore = 0;
+//		
+//		LinkedList<String> labelWords = getLabelWords(predictLabel);
+////		System.out.println(labelWords);
+//		LinkedList<String> resWords = new LinkedList<String>();
+//		
+//		String [] wordsNL = NL.split(" ");
+//		for (String word : wordsNL) {
+//			if(word.length() > 0){
+//				resWords.add(word);
+//			}
+//		}
+//		
+//		if(focusString.length() > 0){
+//			String [] focStrings = focusString.split(" ");
+//			for (String word : focStrings) {
+//				if(word.length() > 0){
+//					resWords.add(word);
+//				}
+//			}
+//		}
+//		
+//		for (String labelWord : resWords) {
+//			if(labelWord.length() == 0){
+//				continue;
+//			}
+//			double maxScore = 0;
+//			double score;
+//			for (String res : labelWords) {
+//				score = db.getScore(labelWord, res);
+//				if(score == -1){
+//					System.err.println("DB Not included: "+labelWord+" "+res);
+//					db.insertWords(labelWord, res);
+//				}
+//				if(maxScore < score){
+//					maxScore = score;
+//				}
+//			}
+//			avgScore += maxScore;
+//		}
+//		
+//		avgScore /= (resWords.size()+1);
+//		return avgScore;
+//	}
 	private static double umbcWordRanking(String predictLabel, String NL, String focusString){
 		double avgScore = 0;
 		
@@ -94,6 +156,7 @@ public class SimilarityFunction {
 			for (String res : resWords) {
 				score = db.getScore(labelWord, res);
 				if(score == -1){
+					System.err.println(predictLabel+"\t"+NL+"\t"+focusString);
 					System.err.println("DB Not included: "+labelWord+" "+res);
 					db.insertWords(labelWord, res);
 				}
@@ -108,13 +171,36 @@ public class SimilarityFunction {
 		return avgScore;
 	}
 	
-	private static ArrayList<Predicate> getSortedPredicts(MatchDetail detail){
+	private static ArrayList<Predicate> getSortedPredicts(MatchDetail detail,int type){
 		String entityUri = detail.entity.uri;
 		String NL = detail.constraint.edge;
 		String focusString = detail.focusString;
 		
 		ArrayList<Predicate> predictList = new ArrayList<Predicate>();
-		LinkedList<RDFNode> predictUriList = ClientManagement.getSurroundingPred(entityUri);
+		LinkedList<RDFNode> predictUriList;
+		
+		switch (type) {
+		case 1:
+			predictUriList = ClientManagement.getPredicateDate(entityUri);
+			break;
+		case 2:
+			predictUriList = ClientManagement.getPredicateWhere(entityUri);
+			break;
+		case 3:
+			predictUriList = ClientManagement.getPredicateWho(entityUri);
+			break;
+		case 5:
+			if(focusString.length() > 0) {
+				String typeUri = Type.getType(focusString);
+				predictUriList = ClientManagement.getPredicateType(entityUri, typeUri);
+			}else{
+				predictUriList = ClientManagement.getSurroundingPred(entityUri);
+			}
+			break;
+		default:
+			predictUriList = ClientManagement.getSurroundingPred(entityUri);
+			break;
+		}
 		
 		for (RDFNode predictUri : predictUriList) {
 			
@@ -147,7 +233,11 @@ public class SimilarityFunction {
 	}
 	
 	public static ArrayList<Predicate> getTopNPredicts(MatchDetail detail){
-		ArrayList<Predicate> predicts = getSortedPredicts(detail);
+		return getTopNPredicts(detail, 0);
+	}
+	
+	public static ArrayList<Predicate> getTopNPredicts(MatchDetail detail, int type){
+		ArrayList<Predicate> predicts = getSortedPredicts(detail,type);
 		ArrayList<Predicate> result = new ArrayList<Predicate>();
 		for(int i=0; i<predictNum && i<predicts.size(); ++i){
 			if(predicts.get(i).maxScore > minSimilarityScore){

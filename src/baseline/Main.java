@@ -296,8 +296,12 @@ public class Main {
 	}
 	
 	public static void stepAnswer(MatchDetail step, Answer answer){
+		stepAnswer(step, answer,0);
+	}
+	
+	public static void stepAnswer(MatchDetail step, Answer answer, int type){
 		answer.entityUri = step.entity.uri;
-		answer.predictList = SimilarityFunction.getTopNPredicts(step);
+		answer.predictList = SimilarityFunction.getTopNPredicts(step,type);
 	}
 	
 	//链式问题

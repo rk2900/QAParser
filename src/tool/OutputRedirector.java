@@ -13,7 +13,7 @@ public class OutputRedirector {
 	public static void openFileOutput(String filePath) {
 		BufferedOutputStream bw = null;
 		try {
-			bw = new BufferedOutputStream(new FileOutputStream(filePath, true));
+			bw = new BufferedOutputStream(new FileOutputStream(filePath, false));
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}

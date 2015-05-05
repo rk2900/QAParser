@@ -1,0 +1,78 @@
+190 Where is the residence of the prime minister of Spain?
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Prime_Minister_of_Spain dbp:residence ?uri .
+}
+
+http://dbpedia.org/resource/Prime_Minister_of_Spain
+1.0	residence	http://dbpedia.org/property/residence http://dbpedia.org/resource/Palace_of_Moncloa
+0.3414929	tenant	http://dbpedia.org/ontology/tenant http://dbpedia.org/resource/Palace_of_Moncloa
+0.209702965	current tenants	http://dbpedia.org/property/currentTenants http://dbpedia.org/resource/Palace_of_Moncloa
+0.0273161816	leader title	http://dbpedia.org/property/leaderTitle http://dbpedia.org/resource/Spain
+0.017501725	seat	http://dbpedia.org/property/seat http://dbpedia.org/resource/Spain http://dbpedia.org/resource/Madrid
+
+
+221 Where was Bach born?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?uri 
+WHERE {
+        res:Johann_Sebastian_Bach dbo:birthPlace ?uri .
+}
+
+http://dbpedia.org/resource/Johann_Sebastian_Bach
+0.42009575	birth place	http://dbpedia.org/ontology/birthPlace http://dbpedia.org/resource/Eisenach
+0.28006383333333335	PLACE OF BIRTH	http://dbpedia.org/property/placeOfBirth http://dbpedia.org/resource/Eisenach
+
+
+283 Where was JFK assassinated?
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT DISTINCT ?uri 
+WHERE {
+        res:John_F._Kennedy dbo:deathPlace ?uri .
+}
+
+http://dbpedia.org/resource/John_F._Kennedy
+0.0864269115	death place	http://dbpedia.org/ontology/deathPlace http://dbpedia.org/resource/Dallas http://dbpedia.org/resource/Texas
+0.042994782	region	http://dbpedia.org/ontology/region http://dbpedia.org/resource/Massachusetts's_11th_congressional_district http://dbpedia.org/resource/Massachusetts
+0.033568956999999996	resting place	http://dbpedia.org/property/restingPlace http://dbpedia.org/resource/Arlington_National_Cemetery
+0.029696657	birth place	http://dbpedia.org/ontology/birthPlace http://dbpedia.org/resource/Massachusetts http://dbpedia.org/resource/Brookline,_Massachusetts
+0.014511908	state	http://dbpedia.org/property/state http://dbpedia.org/resource/Massachusetts http://dbpedia.org/resource/Dean_Rusk
+
+
+297 Where in France is sparkling wine produced?
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT DISTINCT ?uri
+WHERE {
+        ?uri dbo:wineProduced res:Sparkling_wine .
+        ?uri dbo:location res:France .
+}
+
+http://dbpedia.org/resource/Sparkling_wine
+0.52513093	wine produced	http://dbpedia.org/ontology/wineProduced http://dbpedia.org/resource/Tasmanian_wine http://dbpedia.org/resource/Yakima_Valley_AVA http://dbpedia.org/resource/Columbia_Valley_AVA http://dbpedia.org/resource/Horse_Heaven_Hills_AVA http://dbpedia.org/resource/Wahluke_Slope_AVA http://dbpedia.org/resource/Puget_Sound_AVA http://dbpedia.org/resource/Walla_Walla_Valley_AVA http://dbpedia.org/resource/Loire_Valley_(wine)
+0.52513093	wine produced	http://dbpedia.org/property/wineProduced http://dbpedia.org/resource/Yakima_Valley_AVA http://dbpedia.org/resource/Horse_Heaven_Hills_AVA http://dbpedia.org/resource/Wahluke_Slope_AVA http://dbpedia.org/resource/Puget_Sound_AVA http://dbpedia.org/resource/Walla_Walla_Valley_AVA
+
+
+298 Where did Hillel Slovak die?
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+SELECT DISTINCT ?uri
+WHERE {
+        res:Hillel_Slovak dbo:deathPlace ?uri .
+}
+
+http://dbpedia.org/resource/Hillel_Slovak
+0.517526336	death place	http://dbpedia.org/ontology/deathPlace http://dbpedia.org/resource/Hollywood http://dbpedia.org/resource/Los_Angeles http://dbpedia.org/resource/California
+0.112240566	birth place	http://dbpedia.org/ontology/birthPlace http://dbpedia.org/resource/Israel http://dbpedia.org/resource/Haifa
+0.112240566	birth place	http://dbpedia.org/property/birthPlace http://dbpedia.org/resource/Israel http://dbpedia.org/resource/Haifa
+
+

@@ -1,0 +1,178 @@
+107 When was Alberta admitted as province?
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?date 
+WHERE { 
+        res:Alberta dbp:admittancedate ?date . 
+} 
+
+
+http://dbpedia.org/resource/Alberta
+0.33788448200000004	AdmittanceDate	http://dbpedia.org/property/admittancedate 1905-09-01^^http://www.w3.org/2001/XMLSchema#date
+0.178633899	AdmittanceOrder	http://dbpedia.org/property/admittanceorder 11^^http://www.w3.org/2001/XMLSchema#integer
+0.1601273646	TimeZone	http://dbpedia.org/property/timezone Mountain: UTC-7@en
+0.149925492	PopulationYear	http://dbpedia.org/property/populationyear 2011^^http://www.w3.org/2001/XMLSchema#integer
+0.143039982	AreaRank	http://dbpedia.org/property/arearank 6^^http://www.w3.org/2001/XMLSchema#integer
+
+
+156 When were the Hells Angels founded?
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?date 
+WHERE { 
+        res:Hells_Angels dbp:founded ?date . 
+} 
+
+
+http://dbpedia.org/resource/Hells_Angels
+0.3921905333333333	founded by	http://dbpedia.org/property/foundedBy Otto Friedli@en
+0.3921905333333333	founded	http://dbpedia.org/property/founded 1948-03-17^^http://www.w3.org/2001/XMLSchema#date
+0.15525711	name	http://dbpedia.org/property/name Hells Angels MC@en
+0.10992035666666666	founding location	http://dbpedia.org/property/foundingLocation http://dbpedia.org/resource/Fontana,_California United States@en
+
+
+171 When was the Statue of Liberty built?
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?date 
+WHERE { 
+        res:Statue_of_Liberty dbp:beginningDate ?date . 
+} 
+
+
+http://dbpedia.org/resource/Statue_of_Liberty
+0.346155985	designation1 date	http://dbpedia.org/property/designation1Date 1984^^http://www.w3.org/2001/XMLSchema#integer
+0.346155985	designation3 date	http://dbpedia.org/property/designation3Date 1924-10-15^^http://www.w3.org/2001/XMLSchema#date
+0.346155985	designation4 date	http://dbpedia.org/property/designation4Date 1976-09-14^^http://www.w3.org/2001/XMLSchema#date
+0.346155985	designation2 date	http://dbpedia.org/property/designation2Date 1966-10-15^^http://www.w3.org/2001/XMLSchema#date
+0.346155985	beginning date	http://dbpedia.org/property/beginningDate 1886-10-28^^http://www.w3.org/2001/XMLSchema#date
+
+
+174 When did Michael Jackson die?
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?date 
+WHERE { 
+        res:Michael_Jackson dbo:deathDate ?date . 
+} 
+
+
+http://dbpedia.org/resource/Michael_Jackson
+0.6666666666666666	DATE OF DEATH	http://dbpedia.org/property/dateOfDeath 2009-06-25^^http://www.w3.org/2001/XMLSchema#date
+0.6666666666666666	death date	http://dbpedia.org/ontology/deathDate 2009-06-25^^http://www.w3.org/2001/XMLSchema#date
+0.6666666666666666	death date	http://dbpedia.org/property/deathDate 2009-06-25^^http://www.w3.org/2001/XMLSchema#date
+0.52857548	death year	http://dbpedia.org/ontology/deathYear 2009^^http://www.w3.org/2001/XMLSchema#gYear
+0.39647615333333336	DATE OF BIRTH	http://dbpedia.org/property/dateOfBirth 1958-08-29^^http://www.w3.org/2001/XMLSchema#date
+
+
+37 When did Latvia join the EU?
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbp: <http://dbpedia.org/property/>
+SELECT DISTINCT ?date 
+WHERE {       
+        res:Latvia dbp:accessioneudate ?date .      
+}
+
+http://dbpedia.org/resource/Latvia
+0.22200294199999998	established date	http://dbpedia.org/property/establishedDate 1944^^http://www.w3.org/2001/XMLSchema#integer 1918-11-18^^http://www.w3.org/2001/XMLSchema#date 1921-01-26^^http://www.w3.org/2001/XMLSchema#date 1940-08-05^^http://www.w3.org/2001/XMLSchema#date 1941-07-10^^http://www.w3.org/2001/XMLSchema#date 1990-05-04^^http://www.w3.org/2001/XMLSchema#date 1991-08-21^^http://www.w3.org/2001/XMLSchema#date 2004-05-01^^http://www.w3.org/2001/XMLSchema#date
+0.2	founding date	http://dbpedia.org/ontology/foundingDate 1918-11-18^^http://www.w3.org/2001/XMLSchema#date 1921-01-26^^http://www.w3.org/2001/XMLSchema#date
+0.2	date	http://dbpedia.org/property/date November 2013@en
+0.190778202	ethnic groups in year	http://dbpedia.org/ontology/ethnicGroupsInYear 2011^^http://www.w3.org/2001/XMLSchema#gYear
+0.190778202	ethnic groups year	http://dbpedia.org/property/ethnicGroupsYear 2011^^http://www.w3.org/2001/XMLSchema#integer
+
+
+39 When was the Battle of Gettysburg?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?date 
+WHERE { 
+        res:Battle_of_Gettysburg dbo:date ?date .
+}
+
+ConstraintList size equals 0.
+
+
+
+90 When was Capcom founded?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?date 
+WHERE {
+        res:Capcom dbo:foundingDate ?date .
+}
+
+http://dbpedia.org/resource/Capcom
+0.3921905333333333	founding date	http://dbpedia.org/ontology/foundingDate 1983-06-11^^http://www.w3.org/2001/XMLSchema#date
+0.28829939666666665	foundation	http://dbpedia.org/property/foundation 1983-06-11^^http://www.w3.org/2001/XMLSchema#date
+0.21781307466666666	founding year	http://dbpedia.org/ontology/foundingYear 1983^^http://www.w3.org/2001/XMLSchema#gYear
+0.15525711	name	http://dbpedia.org/property/name 株式会社カプコン@en Capcom Co., Ltd.@en
+
+
+230 When is Halloween?
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?date
+WHERE {
+        res:Halloween dbp:date ?date . 
+}
+
+ConstraintList size equals 0.
+
+
+
+206 When was Carlo Giuliani shot?
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?date
+WHERE {
+        res:Death_of_Carlo_Giuliani dbp:dateOfDeath ?date .
+}
+
+http://dbpedia.org/resource/Death_of_Carlo_Giuliani
+0.3863386166666667	DATE OF DEATH	http://dbpedia.org/property/dateOfDeath 2001-07-20^^http://www.w3.org/2001/XMLSchema#date
+0.3863386166666667	death date	http://dbpedia.org/ontology/deathDate 2001-07-20^^http://www.w3.org/2001/XMLSchema#date
+0.3503207913333333	DATE OF BIRTH	http://dbpedia.org/property/dateOfBirth 1978-03-14^^http://www.w3.org/2001/XMLSchema#date
+0.3503207913333333	birth date	http://dbpedia.org/ontology/birthDate 1978-03-14^^http://www.w3.org/2001/XMLSchema#date
+0.24824742999999996	death year	http://dbpedia.org/ontology/deathYear 2001^^http://www.w3.org/2001/XMLSchema#gYear
+
+
+267 When was the Titanic completed?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?date
+WHERE { 
+        res:RMS_Titanic dbo:completionDate ?date . 
+}
+
+http://dbpedia.org/resource/RMS_Titanic
+0.6666666666666666	completion date	http://dbpedia.org/ontology/completionDate 1912-04-02^^http://www.w3.org/2001/XMLSchema#date
+0.4304932066666667	active years start date	http://dbpedia.org/ontology/activeYearsStartDate 1912-04-15^^http://www.w3.org/2001/XMLSchema#date
+0.40508212666666665	Ship completed	http://dbpedia.org/property/shipCompleted 1912-04-02^^http://www.w3.org/2001/XMLSchema#date
+0.40508212666666665	order date	http://dbpedia.org/ontology/orderDate 1908-09-17^^http://www.w3.org/2001/XMLSchema#date
+0.11828078266666668	Ship name	http://dbpedia.org/property/shipName RMS Titanic@en
+
+
+275 When did Dracula's creator die?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?date
+WHERE { 
+        res:Count_Dracula dbo:creator ?x . 
+        ?x dbo:deathDate ?date .
+}
+
+http://dbpedia.org/resource/Count_Dracula
+0.15947060666666668	name	http://dbpedia.org/property/name Count Dracula@en
+
+

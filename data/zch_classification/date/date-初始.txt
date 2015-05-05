@@ -1,0 +1,177 @@
+107 When was Alberta admitted as province?
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?date 
+WHERE { 
+        res:Alberta dbp:admittancedate ?date . 
+} 
+
+
+http://dbpedia.org/resource/Alberta
+1.0	province	http://dbpedia.org/property/province http://dbpedia.org/resource/Jasper_House http://dbpedia.org/resource/National_Sport_School_(Canada) http://dbpedia.org/resource/Bishop_McNally_High_School http://dbpedia.org/resource/Brooks_Aqueduct http://dbpedia.org/resource/John_Maland_High_School http://dbpedia.org/resource/Cochrane_High_School_(Cochrane,_Alberta) http://dbpedia.org/resource/Portage_College http://dbpedia.org/resource/Morinville_Community_High_School http://dbpedia.org/resource/Lester_B._Pearson_High_School_(Calgary) http://dbpedia.org/resource/Grande_Cache_Community_High_School http://dbpedia.org/resource/Springbank_Community_High_School http://dbpedia.org/resource/Austin_O'Brien_Catholic_High_School http://dbpedia.org/resource/Lougheed_House http://dbpedia.org/resource/Prince_of_Wales_Hotel http://dbpedia.org/resource/University_of_Alberta_Faculty_of_Pharmacy_and_Pharmaceutical_Sciences http://dbpedia.org/resource/Queen_Elizabeth_High_School_(Calgary) http://dbpedia.org/resource/University_of_Alberta_Faculty_of_Medicine_and_Dentistry http://dbpedia.org/resource/Beaumont_Composite_High_School http://dbpedia.org/resource/Jasper_Place_High_School http://dbpedia.org/resource/University_of_Alberta_Faculty_of_Arts http://dbpedia.org/resource/Strathcona-Tweedsmuir_School http://dbpedia.org/resource/Jasper_Junior_Senior_High_School http://dbpedia.org/resource/Archbishop_O'Leary_Catholic_High_School http://dbpedia.org/resource/Lord_Beaverbrook_High_School http://dbpedia.org/resource/Light_of_Christ_Catholic_Elementary_and_Junior_High_School http://dbpedia.org/resource/Banff_Centre http://dbpedia.org/resource/Fort_Calgary http://dbpedia.org/resource/University_of_Alberta_Faculty_of_Extension http://dbpedia.org/resource/Centennial_High_School_(Calgary) http://dbpedia.org/resource/Old_Scona_Academic_High_School http://dbpedia.org/resource/St._Francis_Xavier_High_School_(Edmonton) http://dbpedia.org/resource/NorQuest_College http://dbpedia.org/resource/McNally_High_School http://dbpedia.org/resource/Taylor_College_and_Seminary http://dbpedia.org/resource/Calgary_Islamic_School http://dbpedia.org/resource/Mewata_Armouries http://dbpedia.org/resource/Kearl_Oil_Sands_Project http://dbpedia.org/resource/Ross_Sheppard_High_School http://dbpedia.org/resource/John_G._Diefenbaker_High_School http://dbpedia.org/resource/Roman_Catholic_Diocese_of_Calgary http://dbpedia.org/resource/King's_University_College_(Edmonton) http://dbpedia.org/resource/Bowness_High_School http://dbpedia.org/resource/MacEwan_University http://dbpedia.org/resource/Old_Sun_Community_College http://dbpedia.org/resource/Father_Lacombe_High_School http://dbpedia.org/resource/Paul_Kane_High_School http://dbpedia.org/resource/Elmer_S_Gish_School http://dbpedia.org/resource/Bishop_Carroll_High_School_(Calgary,_Alberta) http://dbpedia.org/resource/Athabasca_University http://dbpedia.org/resource/%C3%89cole_publique_Gabrielle-Roy http://dbpedia.org/resource/Canadian_University_College http://dbpedia.org/resource/Northern_Lakes_College http://dbpedia.org/resource/Lakeland_Christian_Academy_(Cold_Lake,_Alberta) http://dbpedia.org/resource/Bishop_Pinkham_Junior_High_School http://dbpedia.org/resource/Teepee_Creek_School http://dbpedia.org/resource/Holy_Trinity_Academy_(Drayton_Valley) http://dbpedia.org/resource/Yellowhead_Pass http://dbpedia.org/resource/Fort_Normandeau http://dbpedia.org/resource/Dr._E.P._Scarlett_High_School http://dbpedia.org/resource/Banff_Park_Museum http://dbpedia.org/resource/Crescent_Heights_High_School_(Medicine_Hat) http://dbpedia.org/resource/Cave_and_Basin_National_Historic_Site http://dbpedia.org/resource/%C3%89cole_McTavish_Junior_High_Public_School http://dbpedia.org/resource/MidSun_Junior_High_School http://dbpedia.org/resource/W._P._Wagner_High_School http://dbpedia.org/resource/Faculty_of_Medicine_of_the_University_of_Calgary http://dbpedia.org/resource/Fort_Fork http://dbpedia.org/resource/St._Joseph_High_School_and_Ascension_Collegiate http://dbpedia.org/resource/Sir_John_A_Macdonald_Junior_High_School http://dbpedia.org/resource/Saint_Francis_High_School_(Calgary) http://dbpedia.org/resource/Alberta_Golden_Bears http://dbpedia.org/resource/Banff_Springs_Hotel http://dbpedia.org/resource/Maskwachees_Cultural_College http://dbpedia.org/resource/F._E._Osborne_Junior_High_School http://dbpedia.org/resource/University_of_Calgary_Faculty_of_Veterinary_Medicine http://dbpedia.org/resource/Calgary_Girls'_School http://dbpedia.org/resource/Center_West_Campus http://dbpedia.org/resource/Frank_Maddock_High_School http://dbpedia.org/resource/Winston_Churchill_High_School_(Lethbridge) http://dbpedia.org/resource/Lethbridge_Pronghorns http://dbpedia.org/resource/Bev_Facey_Community_High_School http://dbpedia.org/resource/Juno_Beach_Academy_of_Canadian_Studies http://dbpedia.org/resource/Chestermere_High_School http://dbpedia.org/resource/Atlas_Coal_Mine http://dbpedia.org/resource/Keyano_College http://dbpedia.org/resource/Theresetta_Catholic_School http://dbpedia.org/resource/Harry_Collinge_High_School http://dbpedia.org/resource/Roman_Catholic_Archdiocese_of_Edmonton http://dbpedia.org/resource/Victoria_School_of_Performing_and_Visual_Arts http://dbpedia.org/resource/Holy_Trinity_Catholic_High_School_(Fort_McMurray) http://dbpedia.org/resource/Edmonton_Normal_School http://dbpedia.org/resource/University_of_Alberta_Facult%C3%A9_Saint-Jean http://dbpedia.org/resource/Crescent_Heights_High_School_(Calgary,_Alberta) http://dbpedia.org/resource/Bow_Valley_High_School http://dbpedia.org/resource/University_of_Alberta http://dbpedia.org/resource/British_Block_Cairn http://dbpedia.org/resource/Hilltop_High_School_(Whitecourt) http://dbpedia.org/resource/EE_Oliver_School http://dbpedia.org/resource/Parkdale_School http://dbpedia.org/resource/Blackfoot_Crossing http://dbpedia.org/resource/Cathedral_Church_of_the_Redeemer http://dbpedia.org/resource/Salisbury_Composite_High_School http://dbpedia.org/resource/Henry_Wise_Wood_Senior_High_School http://dbpedia.org/resource/Rundle_College_Jr/Sr_High_School http://dbpedia.org/resource/Eagle_Butte_High_School http://dbpedia.org/resource/J._Percy_Page_High_School http://dbpedia.org/resource/Bert_Church_High_School http://dbpedia.org/resource/Strathcona_Composite_High_School http://dbpedia.org/resource/Banff_International_Research_Station http://dbpedia.org/resource/Western_Canada_High_School http://dbpedia.org/resource/Robert_Thirsk_High_School http://dbpedia.org/resource/Lord_Shaughnessy_High_School http://dbpedia.org/resource/Bearspaw_Christian_School http://dbpedia.org/resource/Population_Research_Laboratory http://dbpedia.org/resource/University_of_Alberta_Faculty_of_Engineering http://dbpedia.org/resource/Sulphur_Mountain_Cosmic_Ray_Station http://dbpedia.org/resource/Holy_Redeemer_Junior_Senior_Catholic_High_School http://dbpedia.org/resource/Fort_Assiniboine,_Alberta http://dbpedia.org/resource/Newman_Theological_College http://dbpedia.org/resource/Branton_Bilingual_Junior_High_School http://dbpedia.org/resource/Rundle_College_Society http://dbpedia.org/resource/Louis_St._Laurent_School http://dbpedia.org/resource/Griffiths-Scott_Middle_School http://dbpedia.org/resource/Alberta_School_for_the_Deaf http://dbpedia.org/resource/Louise_Dean_Centre http://dbpedia.org/resource/Medicine_Hat_High_School http://dbpedia.org/resource/University_of_Calgary_Faculty_of_Law http://dbpedia.org/resource/Father_Michael_Troy_Catholic_Junior_High_School http://dbpedia.org/resource/Strathcona_Refinery_(Imperial_Oil) http://dbpedia.org/resource/Fort_Whoop-Up http://dbpedia.org/resource/Alberta_Pandas http://dbpedia.org/resource/Red_Crow_Community_College http://dbpedia.org/resource/Leduc_No._1 http://dbpedia.org/resource/Stirling_School http://dbpedia.org/resource/Augustana_University_College http://dbpedia.org/resource/Woodman_Junior_High_School http://dbpedia.org/resource/Parkland_Composite_High_School http://dbpedia.org/resource/Chinook_High_School_(Alberta) http://dbpedia.org/resource/Central_Memorial_High_School http://dbpedia.org/resource/Lacombe_Composite_High_School http://dbpedia.org/resource/Millwoods_Christian_School http://dbpedia.org/resource/Rundle's_Mission http://dbpedia.org/resource/St._Clement_Elementary/Junior_High_School http://dbpedia.org/resource/%C3%89cole_J._H._Picard_School http://dbpedia.org/resource/%C3%89cole_%C3%80_la_D%C3%A9couverte http://dbpedia.org/resource/Archbishop_Oscar_Romero_High_School http://dbpedia.org/resource/Lillian_Osborne_High_School http://dbpedia.org/resource/Jasper_Park_Information_Centre http://dbpedia.org/resource/Calgary_Science_School http://dbpedia.org/resource/St._Timothy_High_School_(Cochrane) http://dbpedia.org/resource/Blue_Quills_First_Nations_College http://dbpedia.org/resource/Queen_Elizabeth_High_School_(Edmonton) http://dbpedia.org/resource/Career_and_Technology_Centre http://dbpedia.org/resource/%C3%89cole_Maurice-Lavall%C3%A9e http://dbpedia.org/resource/Olds_College http://dbpedia.org/resource/University_of_Alberta_Augustana_Faculty http://dbpedia.org/resource/St._Mary's_High_School_(Calgary) http://dbpedia.org/resource/Mount_Royal_University http://dbpedia.org/resource/Hunting_Hills_High_School http://dbpedia.org/resource/Alternative_High_School_(Calgary) http://dbpedia.org/resource/Stirling_Agricultural_Village http://dbpedia.org/resource/Webber_Academy http://dbpedia.org/resource/Bar_U_Ranch http://dbpedia.org/resource/Ernest_Manning_High_School http://dbpedia.org/resource/Lethbridge_Collegiate_Institute http://dbpedia.org/resource/St._Albert_Catholic_High_School http://dbpedia.org/resource/Bellerose_Composite_High_School http://dbpedia.org/resource/Holy_Trinity_Catholic_High_School_(Edmonton) http://dbpedia.org/resource/Calgary_French_and_International_School http://dbpedia.org/resource/Lyc%C3%A9e_Louis_Pasteur http://dbpedia.org/resource/W._R._Myers_High_School http://dbpedia.org/resource/Schulich_School_of_Engineering http://dbpedia.org/resource/Notre_Dame_High_School_(Calgary) http://dbpedia.org/resource/King_George_School_(Calgary,_Alberta) http://dbpedia.org/resource/Olds_College_Broncos http://dbpedia.org/resource/St._Joseph_Seminary_(Edmonton) http://dbpedia.org/resource/Forest_Lawn_High_School http://dbpedia.org/resource/First_Oil_Well_in_Western_Canada http://dbpedia.org/resource/Cardston_Alberta_Temple http://dbpedia.org/resource/Lakeland_College_(Alberta) http://dbpedia.org/resource/Bow_City_impact_crater http://dbpedia.org/resource/St._Vincent_de_Paul_Elementary_&_Junior_High http://dbpedia.org/resource/Sir_Winston_Churchill_High_School http://dbpedia.org/resource/Gerard_Redmond_Community_Catholic_School http://dbpedia.org/resource/William_Aberhart_High_School http://dbpedia.org/resource/Concordia_Lutheran_Seminary http://dbpedia.org/resource/University_of_Alberta_School_of_Business http://dbpedia.org/resource/Stephen_Avenue http://dbpedia.org/resource/CBe-learn http://dbpedia.org/resource/Fort_Saskatchewan_Senior_High_School http://dbpedia.org/resource/Skoki_Ski_Lodge http://dbpedia.org/resource/Calgary_Dinos
+1.0	province	http://dbpedia.org/ontology/province http://dbpedia.org/resource/National_Sport_School_(Canada) http://dbpedia.org/resource/Bishop_McNally_High_School http://dbpedia.org/resource/John_Maland_High_School http://dbpedia.org/resource/Cochrane_High_School_(Cochrane,_Alberta) http://dbpedia.org/resource/Portage_College http://dbpedia.org/resource/Morinville_Community_High_School http://dbpedia.org/resource/Lester_B._Pearson_High_School_(Calgary) http://dbpedia.org/resource/Grande_Cache_Community_High_School http://dbpedia.org/resource/Springbank_Community_High_School http://dbpedia.org/resource/Austin_O'Brien_Catholic_High_School http://dbpedia.org/resource/Queen_Elizabeth_High_School_(Calgary) http://dbpedia.org/resource/Beaumont_Composite_High_School http://dbpedia.org/resource/Jasper_Place_High_School http://dbpedia.org/resource/Strathcona-Tweedsmuir_School http://dbpedia.org/resource/Jasper_Junior_Senior_High_School http://dbpedia.org/resource/Archbishop_O'Leary_Catholic_High_School http://dbpedia.org/resource/Lord_Beaverbrook_High_School http://dbpedia.org/resource/Light_of_Christ_Catholic_Elementary_and_Junior_High_School http://dbpedia.org/resource/Banff_Centre http://dbpedia.org/resource/Centennial_High_School_(Calgary) http://dbpedia.org/resource/Old_Scona_Academic_High_School http://dbpedia.org/resource/St._Francis_Xavier_High_School_(Edmonton) http://dbpedia.org/resource/NorQuest_College http://dbpedia.org/resource/McNally_High_School http://dbpedia.org/resource/Taylor_College_and_Seminary http://dbpedia.org/resource/Calgary_Islamic_School http://dbpedia.org/resource/Ross_Sheppard_High_School http://dbpedia.org/resource/John_G._Diefenbaker_High_School http://dbpedia.org/resource/Roman_Catholic_Diocese_of_Calgary http://dbpedia.org/resource/Bowness_High_School http://dbpedia.org/resource/MacEwan_University http://dbpedia.org/resource/Old_Sun_Community_College http://dbpedia.org/resource/Father_Lacombe_High_School http://dbpedia.org/resource/Paul_Kane_High_School http://dbpedia.org/resource/Elmer_S_Gish_School http://dbpedia.org/resource/Bishop_Carroll_High_School_(Calgary,_Alberta) http://dbpedia.org/resource/Athabasca_University http://dbpedia.org/resource/%C3%89cole_publique_Gabrielle-Roy http://dbpedia.org/resource/Canadian_University_College http://dbpedia.org/resource/Ambrose_University_College http://dbpedia.org/resource/Northern_Lakes_College http://dbpedia.org/resource/Bishop_Grandin_High_School http://dbpedia.org/resource/Lakeland_Christian_Academy_(Cold_Lake,_Alberta) http://dbpedia.org/resource/Bishop_Pinkham_Junior_High_School http://dbpedia.org/resource/Teepee_Creek_School http://dbpedia.org/resource/Holy_Trinity_Academy_(Drayton_Valley) http://dbpedia.org/resource/Dr._E.P._Scarlett_High_School http://dbpedia.org/resource/Crescent_Heights_High_School_(Medicine_Hat) http://dbpedia.org/resource/%C3%89cole_McTavish_Junior_High_Public_School http://dbpedia.org/resource/MidSun_Junior_High_School http://dbpedia.org/resource/W._P._Wagner_High_School http://dbpedia.org/resource/St._Joseph_High_School_and_Ascension_Collegiate http://dbpedia.org/resource/Sir_John_A_Macdonald_Junior_High_School http://dbpedia.org/resource/Saint_Francis_High_School_(Calgary) http://dbpedia.org/resource/Maskwachees_Cultural_College http://dbpedia.org/resource/F._E._Osborne_Junior_High_School http://dbpedia.org/resource/Calgary_Girls'_School http://dbpedia.org/resource/Center_West_Campus http://dbpedia.org/resource/Frank_Maddock_High_School http://dbpedia.org/resource/Winston_Churchill_High_School_(Lethbridge) http://dbpedia.org/resource/Bev_Facey_Community_High_School http://dbpedia.org/resource/Juno_Beach_Academy_of_Canadian_Studies http://dbpedia.org/resource/Chestermere_High_School http://dbpedia.org/resource/Keyano_College http://dbpedia.org/resource/Theresetta_Catholic_School http://dbpedia.org/resource/Harry_Collinge_High_School http://dbpedia.org/resource/Roman_Catholic_Archdiocese_of_Edmonton http://dbpedia.org/resource/Victoria_School_of_Performing_and_Visual_Arts http://dbpedia.org/resource/Holy_Trinity_Catholic_High_School_(Fort_McMurray) http://dbpedia.org/resource/Edmonton_Normal_School http://dbpedia.org/resource/Crescent_Heights_High_School_(Calgary,_Alberta) http://dbpedia.org/resource/Bow_Valley_High_School http://dbpedia.org/resource/University_of_Alberta http://dbpedia.org/resource/Hilltop_High_School_(Whitecourt) http://dbpedia.org/resource/EE_Oliver_School http://dbpedia.org/resource/Parkdale_School http://dbpedia.org/resource/Salisbury_Composite_High_School http://dbpedia.org/resource/Henry_Wise_Wood_Senior_High_School http://dbpedia.org/resource/Rundle_College_Jr/Sr_High_School http://dbpedia.org/resource/Eagle_Butte_High_School http://dbpedia.org/resource/J._Percy_Page_High_School http://dbpedia.org/resource/Westmount_Charter_School http://dbpedia.org/resource/Bert_Church_High_School http://dbpedia.org/resource/Strathcona_Composite_High_School http://dbpedia.org/resource/Banff_International_Research_Station http://dbpedia.org/resource/Western_Canada_High_School http://dbpedia.org/resource/Robert_Thirsk_High_School http://dbpedia.org/resource/Lord_Shaughnessy_High_School http://dbpedia.org/resource/Bearspaw_Christian_School http://dbpedia.org/resource/Population_Research_Laboratory http://dbpedia.org/resource/Holy_Redeemer_Junior_Senior_Catholic_High_School http://dbpedia.org/resource/Newman_Theological_College http://dbpedia.org/resource/Branton_Bilingual_Junior_High_School http://dbpedia.org/resource/Rundle_College_Society http://dbpedia.org/resource/Louis_St._Laurent_School http://dbpedia.org/resource/Griffiths-Scott_Middle_School http://dbpedia.org/resource/Alberta_School_for_the_Deaf http://dbpedia.org/resource/Louise_Dean_Centre http://dbpedia.org/resource/Medicine_Hat_High_School http://dbpedia.org/resource/Father_Michael_Troy_Catholic_Junior_High_School http://dbpedia.org/resource/Red_Crow_Community_College http://dbpedia.org/resource/Stirling_School http://dbpedia.org/resource/Augustana_University_College http://dbpedia.org/resource/Woodman_Junior_High_School http://dbpedia.org/resource/Parkland_Composite_High_School http://dbpedia.org/resource/Roman_Catholic_Archdiocese_of_Keewatin%E2%80%93Le_Pas http://dbpedia.org/resource/Chinook_High_School_(Alberta) http://dbpedia.org/resource/Central_Memorial_High_School http://dbpedia.org/resource/Lacombe_Composite_High_School http://dbpedia.org/resource/Millwoods_Christian_School http://dbpedia.org/resource/St._Clement_Elementary/Junior_High_School http://dbpedia.org/resource/%C3%89cole_J._H._Picard_School http://dbpedia.org/resource/%C3%89cole_%C3%80_la_D%C3%A9couverte http://dbpedia.org/resource/Archbishop_Oscar_Romero_High_School http://dbpedia.org/resource/Rocky_Mountain_College,_Calgary http://dbpedia.org/resource/Lillian_Osborne_High_School http://dbpedia.org/resource/Calgary_Science_School http://dbpedia.org/resource/St._Timothy_High_School_(Cochrane) http://dbpedia.org/resource/Blue_Quills_First_Nations_College http://dbpedia.org/resource/Queen_Elizabeth_High_School_(Edmonton) http://dbpedia.org/resource/Career_and_Technology_Centre http://dbpedia.org/resource/%C3%89cole_Maurice-Lavall%C3%A9e http://dbpedia.org/resource/Olds_College http://dbpedia.org/resource/St._Mary's_High_School_(Calgary) http://dbpedia.org/resource/Mount_Royal_University http://dbpedia.org/resource/Hunting_Hills_High_School http://dbpedia.org/resource/Alternative_High_School_(Calgary) http://dbpedia.org/resource/Webber_Academy http://dbpedia.org/resource/Ernest_Manning_High_School http://dbpedia.org/resource/Lethbridge_Collegiate_Institute http://dbpedia.org/resource/St._Albert_Catholic_High_School http://dbpedia.org/resource/Bellerose_Composite_High_School http://dbpedia.org/resource/Holy_Trinity_Catholic_High_School_(Edmonton) http://dbpedia.org/resource/Calgary_French_and_International_School http://dbpedia.org/resource/Lyc%C3%A9e_Louis_Pasteur http://dbpedia.org/resource/W._R._Myers_High_School http://dbpedia.org/resource/Notre_Dame_High_School_(Calgary) http://dbpedia.org/resource/King_George_School_(Calgary,_Alberta) http://dbpedia.org/resource/St._Joseph_Seminary_(Edmonton) http://dbpedia.org/resource/Forest_Lawn_High_School http://dbpedia.org/resource/Lakeland_College_(Alberta) http://dbpedia.org/resource/St._Vincent_de_Paul_Elementary_&_Junior_High http://dbpedia.org/resource/Sir_Winston_Churchill_High_School http://dbpedia.org/resource/Gerard_Redmond_Community_Catholic_School http://dbpedia.org/resource/William_Aberhart_High_School http://dbpedia.org/resource/Concordia_Lutheran_Seminary http://dbpedia.org/resource/CBe-learn http://dbpedia.org/resource/Fort_Saskatchewan_Senior_High_School
+0.95445323	state/province	http://dbpedia.org/property/state/province http://dbpedia.org/resource/Taber_coalfield http://dbpedia.org/resource/MacKay_coalfield http://dbpedia.org/resource/Drumheller_coalfield http://dbpedia.org/resource/Gething_coalfield http://dbpedia.org/resource/Mannville_coalfield http://dbpedia.org/resource/Lethbridge_coalfield http://dbpedia.org/resource/Daly-Weaver_coalfield http://dbpedia.org/resource/Carbon-Thompson_coalfield http://dbpedia.org/resource/Ardley_coalfield
+0.81781304	state	http://dbpedia.org/property/state http://dbpedia.org/resource/Red_Deer_Regional_Hospital http://dbpedia.org/resource/SAIT_Polytechnic http://dbpedia.org/resource/Concordia_University_College_of_Alberta http://dbpedia.org/resource/Winston_Churchill_Range http://dbpedia.org/resource/Medicine_Hat_Regional_Hospital http://dbpedia.org/resource/Brooks_Health_Centre http://dbpedia.org/resource/University_of_Lethbridge http://dbpedia.org/resource/University_of_Alberta_Faculty_of_Law http://dbpedia.org/resource/Northern_short_grasslands http://dbpedia.org/resource/Lethbridge_College http://dbpedia.org/resource/McNeill_HVDC_Back-to-back_station http://dbpedia.org/resource/Red_Deer_College http://dbpedia.org/resource/Haskayne_School_of_Business http://dbpedia.org/resource/Peace_River_Bible_Institute http://dbpedia.org/resource/ABM_College_of_Health_and_Technology http://dbpedia.org/resource/Canmore_General_Hospital http://dbpedia.org/resource/Bassano_Health_Centre http://dbpedia.org/resource/Alberta_College_of_Art_and_Design http://dbpedia.org/resource/Vanguard_College http://dbpedia.org/resource/Prairie_Bible_Institute http://dbpedia.org/resource/Grande_Prairie_Regional_College http://dbpedia.org/resource/St._Joseph's_College,_Edmonton http://dbpedia.org/resource/Whitecourt_Healthcare_Centre http://dbpedia.org/resource/St._Mary's_University_College,_Calgary http://dbpedia.org/resource/Canadian_Prairies http://dbpedia.org/resource/Northern_Alberta_Institute_of_Technology http://dbpedia.org/resource/Medicine_Hat_College http://dbpedia.org/resource/Bow_Valley_College http://dbpedia.org/resource/Montana_Valley_and_Foothill_grasslands http://dbpedia.org/resource/Hinton_Healthcare_Centre http://dbpedia.org/resource/University_of_Calgary http://dbpedia.org/resource/Banff_%E2%80%93_Mineral_Springs_Hospital http://dbpedia.org/resource/Athabasca_Healthcare_Centre
+0.81781304	state	http://dbpedia.org/ontology/state http://dbpedia.org/resource/Red_Deer_Regional_Hospital http://dbpedia.org/resource/SAIT_Polytechnic http://dbpedia.org/resource/Tom_Baker_Cancer_Centre http://dbpedia.org/resource/Churchill_River_(Hudson_Bay) http://dbpedia.org/resource/Concordia_University_College_of_Alberta http://dbpedia.org/resource/Fort_Saskatchewan_Community_Hospital http://dbpedia.org/resource/Alberta_Children's_Hospital http://dbpedia.org/resource/St._Mary_River_(Alberta%E2%80%93Montana) http://dbpedia.org/resource/Medicine_Hat_Regional_Hospital http://dbpedia.org/resource/Brooks_Health_Centre http://dbpedia.org/resource/University_of_Lethbridge http://dbpedia.org/resource/University_of_Alberta_Hospital http://dbpedia.org/resource/Cross_Cancer_Institute http://dbpedia.org/resource/Peter_Lougheed_Centre http://dbpedia.org/resource/University_of_Alberta_Faculty_of_Law http://dbpedia.org/resource/Lethbridge_College http://dbpedia.org/resource/Red_Deer_College http://dbpedia.org/resource/Haskayne_School_of_Business http://dbpedia.org/resource/Glenrose_Rehabilitation_Hospital http://dbpedia.org/resource/Peace_River_Bible_Institute http://dbpedia.org/resource/ABM_College_of_Health_and_Technology http://dbpedia.org/resource/Christina_River_(Alberta) http://dbpedia.org/resource/Canmore_General_Hospital http://dbpedia.org/resource/Bassano_Health_Centre http://dbpedia.org/resource/Misericordia_Community_Hospital http://dbpedia.org/resource/Alberta_College_of_Art_and_Design http://dbpedia.org/resource/Clearwater_River_(Saskatchewan) http://dbpedia.org/resource/Wolf_River_(Alberta) http://dbpedia.org/resource/Bow_River http://dbpedia.org/resource/Vanguard_College http://dbpedia.org/resource/Prairie_Bible_Institute http://dbpedia.org/resource/Grande_Prairie_Regional_College http://dbpedia.org/resource/St._Joseph's_College,_Edmonton http://dbpedia.org/resource/Foothills_Medical_Centre http://dbpedia.org/resource/Whitecourt_Healthcare_Centre http://dbpedia.org/resource/St._Mary's_University_College,_Calgary http://dbpedia.org/resource/South_Saskatchewan_River http://dbpedia.org/resource/Sheldon_M._Chumir_Centre http://dbpedia.org/resource/Canadian_Prairies http://dbpedia.org/resource/Northern_Alberta_Institute_of_Technology http://dbpedia.org/resource/Rockyview_General_Hospital http://dbpedia.org/resource/Medicine_Hat_College http://dbpedia.org/resource/Royal_Alexandra_Hospital,_Edmonton http://dbpedia.org/resource/Alberta_Hospital_Edmonton http://dbpedia.org/resource/South_Health_Campus http://dbpedia.org/resource/Bow_Valley_College http://dbpedia.org/resource/Hinton_Healthcare_Centre http://dbpedia.org/resource/University_of_Calgary http://dbpedia.org/resource/Banff_%E2%80%93_Mineral_Springs_Hospital http://dbpedia.org/resource/Grey_Nuns_Community_Hospital http://dbpedia.org/resource/Athabasca_River http://dbpedia.org/resource/Athabasca_Healthcare_Centre
+
+
+156 When were the Hells Angels founded?
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?date 
+WHERE { 
+        res:Hells_Angels dbp:founded ?date . 
+} 
+
+
+http://dbpedia.org/resource/Hells_Angels
+1.0	founded	http://dbpedia.org/property/founded 1948-03-17^^http://www.w3.org/2001/XMLSchema#date
+0.97232264	Founders	http://dbpedia.org/property/founders http://dbpedia.org/resource/Bulldog_Bash
+0.5	founded by	http://dbpedia.org/property/foundedBy Otto Friedli@en
+0.17185913	name	http://dbpedia.org/property/name Hells Angels MC@en
+0.10725543	Motto	http://dbpedia.org/property/motto "When we do right, nobody remembers. When we do wrong, nobody forgets"@en
+
+
+171 When was the Statue of Liberty built?
+ 
+PREFIX dbp: <http://dbpedia.org/property/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?date 
+WHERE { 
+        res:Statue_of_Liberty dbp:beginningDate ?date . 
+} 
+
+
+http://dbpedia.org/resource/Statue_of_Liberty
+0.20009948	location	http://dbpedia.org/property/location http://dbpedia.org/resource/Liberty_Island Manhattan, New York, U.S.@en
+0.20009948	location	http://dbpedia.org/ontology/location http://dbpedia.org/resource/Manhattan http://dbpedia.org/resource/New_York http://dbpedia.org/resource/Liberty_Island http://dbpedia.org/resource/Manhattan http://dbpedia.org/resource/New_York http://dbpedia.org/resource/Liberty_Island
+0.17486367	restored	http://dbpedia.org/property/restored 19381984^^http://www.w3.org/2001/XMLSchema#integer
+0.1683966535	Reverse Design	http://dbpedia.org/property/reverseDesign http://dbpedia.org/resource/Presidential_$1_Coin_Program
+0.13919608	space	http://dbpedia.org/property/space http://dbpedia.org/resource/List_of_licensed_and_localized_editions_of_Monopoly:_USA
+
+
+174 When did Michael Jackson die?
+ 
+PREFIX dbo: <http://dbpedia.org/ontology/> 
+PREFIX res: <http://dbpedia.org/resource/> 
+SELECT DISTINCT ?date 
+WHERE { 
+        res:Michael_Jackson dbo:deathDate ?date . 
+} 
+
+
+http://dbpedia.org/resource/Michael_Jackson
+1.0	deaths	http://dbpedia.org/property/deaths http://dbpedia.org/resource/Death_of_Michael_Jackson
+0.58291869	death cause	http://dbpedia.org/ontology/deathCause http://dbpedia.org/resource/Cardiac_arrest
+0.58291869	death cause	http://dbpedia.org/property/deathCause http://dbpedia.org/resource/Cardiac_arrest
+0.56451557	death year	http://dbpedia.org/ontology/deathYear 2009^^http://www.w3.org/2001/XMLSchema#gYear
+0.549215693	death date	http://dbpedia.org/ontology/deathDate 2009-06-25^^http://www.w3.org/2001/XMLSchema#date
+
+
+37 When did Latvia join the EU?
+
+PREFIX res: <http://dbpedia.org/resource/>
+PREFIX dbp: <http://dbpedia.org/property/>
+SELECT DISTINCT ?date 
+WHERE {       
+        res:Latvia dbp:accessioneudate ?date .      
+}
+
+http://dbpedia.org/resource/Latvia
+0.43971384	Affiliation	http://dbpedia.org/property/affiliation http://dbpedia.org/resource/International_Union_of_Anarchists
+0.43971384	affiliation	http://dbpedia.org/ontology/affiliation http://dbpedia.org/resource/International_Union_of_Anarchists
+0.25099832	returns	http://dbpedia.org/property/returns http://dbpedia.org/resource/Mister_World_2003 http://dbpedia.org/resource/Top_Model_of_the_World_2011 http://dbpedia.org/resource/Manhunt_International_2010 http://dbpedia.org/resource/Miss_Earth_2007 http://dbpedia.org/resource/Miss_World_2001 http://dbpedia.org/resource/Miss_Supranational_2013 http://dbpedia.org/resource/Mister_International_2011 http://dbpedia.org/resource/Miss_World_1999
+0.22864929	membership	http://dbpedia.org/property/membership http://dbpedia.org/resource/European_Go_Federation http://dbpedia.org/resource/Northern_Dimension_Partnership_in_Public_Health_and_Social_Well-being
+0.21984684	leader	http://dbpedia.org/ontology/leader http://dbpedia.org/resource/Laimdota_Straujuma http://dbpedia.org/resource/Solvita_%C4%80bolti%C5%86a http://dbpedia.org/resource/Andris_B%C4%93rzi%C5%86%C5%A1_(Latvian_President)
+
+
+39 When was the Battle of Gettysburg?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?date 
+WHERE { 
+        res:Battle_of_Gettysburg dbo:date ?date .
+}
+
+ConstraintList size equals 0.
+
+
+
+90 When was Capcom founded?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?date 
+WHERE {
+        res:Capcom dbo:foundingDate ?date .
+}
+
+http://dbpedia.org/resource/Capcom
+0.74511755	foundation	http://dbpedia.org/property/foundation 1983-06-11^^http://www.w3.org/2001/XMLSchema#date
+0.2962215	creator	http://dbpedia.org/ontology/creator http://dbpedia.org/resource/Street_Fighter_(TV_series)
+0.2962215	creator	http://dbpedia.org/property/creator http://dbpedia.org/resource/Street_Fighter_(TV_series)
+0.17185913	name	http://dbpedia.org/property/name ÖêÊ½»áÉç¥«¥×¥³¥ó@en Capcom Co., Ltd.@en
+0.12774116	revenue	http://dbpedia.org/property/revenue /@en
+
+
+230 When is Halloween?
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?date
+WHERE {
+        res:Halloween dbp:date ?date . 
+}
+
+ConstraintList size equals 0.
+
+
+
+206 When was Carlo Giuliani shot?
+
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?date
+WHERE {
+        res:Death_of_Carlo_Giuliani dbp:dateOfDeath ?date .
+}
+
+http://dbpedia.org/resource/Death_of_Carlo_Giuliani
+0.104989112	death date	http://dbpedia.org/ontology/deathDate 2001-07-20^^http://www.w3.org/2001/XMLSchema#date
+
+
+267 When was the Titanic completed?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?date
+WHERE { 
+        res:RMS_Titanic dbo:completionDate ?date . 
+}
+
+http://dbpedia.org/resource/RMS_Titanic
+0.60762319	completion date	http://dbpedia.org/ontology/completionDate 1912-04-02^^http://www.w3.org/2001/XMLSchema#date
+0.530465074	Ship completed	http://dbpedia.org/property/shipCompleted 1912-04-02^^http://www.w3.org/2001/XMLSchema#date
+0.1690828275	active years start date	http://dbpedia.org/ontology/activeYearsStartDate 1912-04-15^^http://www.w3.org/2001/XMLSchema#date
+0.1175329175	order date	http://dbpedia.org/ontology/orderDate 1908-09-17^^http://www.w3.org/2001/XMLSchema#date
+0.11218102399999999	ship launched	http://dbpedia.org/ontology/shipLaunch 1911-05-31^^http://www.w3.org/2001/XMLSchema#date
+
+
+275 When did Dracula's creator die?
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX res: <http://dbpedia.org/resource/>
+SELECT DISTINCT ?date
+WHERE { 
+        res:Count_Dracula dbo:creator ?x . 
+        ?x dbo:deathDate ?date .
+}
+
+http://dbpedia.org/resource/Count_Dracula
+0.18449962	name	http://dbpedia.org/property/name Count Dracula@en
+0.14876513	relative	http://dbpedia.org/ontology/relative http://dbpedia.org/resource/Count_Alucard_(character)
+
+
