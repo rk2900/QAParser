@@ -35,4 +35,16 @@ public class Node {
 		}
 		transformed=true;
 	}
+	public void POS(ConstraintSet cs) {
+		if(isx) return;
+		else if(str.contains("'s")) {
+			int tmp=str.indexOf("'s");
+			String str1=str.substring(0, tmp-1);
+			String str2=str.substring(tmp+3);
+			int k=0;
+			for (int i=0;i<str1.length();i++) if(str1.charAt(i)!=' ') ++k;
+			isx=true;
+			cs.add(new Constraint(this,str2,new Node(str1,left,left+k-1)));
+		}
+	}
 }

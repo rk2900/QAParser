@@ -41,4 +41,7 @@ public class WordNet {
 		}
 		return false;
 	}
+	public static void main(String[] args) {
+		System.out.println(isSynset("program","mission"));
+	}
 }
