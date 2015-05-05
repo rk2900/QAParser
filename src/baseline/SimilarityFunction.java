@@ -42,13 +42,25 @@ public class SimilarityFunction {
 				wordList.add(word);
 			}
 		}else{
-			for(int i=1; i<predictLabel.length(); ++i){
-				if(Character.isUpperCase(predictLabel.charAt(i))){
-					
+			if(Character.isUpperCase(predictLabel.charAt(0))){
+				int start = 0;
+				for(int i=1; i<predictLabel.length(); ++i){
+					if(Character.isUpperCase(predictLabel.charAt(i))){
+						wordList.add(predictLabel.substring(start, i));
+						start = i;
+					}
+
+					if(i == predictLabel.length()-1){
+						wordList.add(predictLabel.substring(start, i+1));
+					}
 				}
 			}
 		}
 		return wordList;
+	}
+	
+	public static void main(String [] args){
+		System.out.println(getLabelWords("AdmittanceDate"));
 	}
 	
 	private static double umbcWordRanking(String predictLabel, String NL, String focusString){

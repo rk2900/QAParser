@@ -19,7 +19,7 @@ public class Classification {
 		ConstraintSet constraintSet=ConstraintSet.getConstraintSet(qf.question, qf);
 		List<Constraint> constraintList = constraintSet.list;
 		String focusString = qf.getFocusStringForPredicate();
-//		focusString = "date";
+		focusString = "date";
 		
 		String exceptionString="";
 		if(constraintList.size() == 0){
@@ -80,7 +80,7 @@ public class Classification {
 			e1.printStackTrace();
 		}
 		
-		OutputRedirector.openFileOutput("./data/zch_classification/date-addFocus.txt");
+		OutputRedirector.openFileOutput("./data/zch_classification/date-addFocus-newDivision.txt");
 		LinkedList<QuestionFrame> whenQF = pipeline.date;
 		System.err.println(whenQF.size());
 		for (QuestionFrame qf : whenQF) {
@@ -90,5 +90,5 @@ public class Classification {
 		
 		OutputRedirector.closeFileOutput();
 	}
-
+	
 }
