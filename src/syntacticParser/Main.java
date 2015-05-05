@@ -16,7 +16,7 @@ import finder.Pipeline;
 public class Main {
 	public static void main(String[] args) throws IOException {
 		
-		BufferedWriter bw=new BufferedWriter(new FileWriter("./data/lx/showsss.txt"));
+		BufferedWriter bw=new BufferedWriter(new FileWriter("./data/lx/showsssss.txt"));
 		Pipeline pipeline=new Pipeline();
 		baseline.Main.setEntity(pipeline);
 		for (int i=1;i<=300;i++) {

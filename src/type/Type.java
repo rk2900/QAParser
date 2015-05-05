@@ -68,6 +68,6 @@ public class Type {
 		return null;
 	}
 	public static void main(String[] args) {
-		System.out.println(getTypeFromFocus("movies"));
+		System.out.println(getTypeFromFocus("Chinese country"));
 	}
 }
