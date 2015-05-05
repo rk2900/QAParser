@@ -21,9 +21,22 @@ public class FocusConstraint {
 		return flag;
 	}
 	
+	public boolean judgeTypeConstraint(RDFNode resource, QuestionFrame qf) {
+		return false;
+	}
+	
+	public static LinkedList<RDFNode> getPredicateType(String focus) {
+		LinkedList<RDFNode> predList = new LinkedList<>();
+		String typeUri = Type.getType(focus);
+		
+		
+		return predList;
+	}
+
+	
+	//TODO 
 	public LinkedList<String> getSurroundingLabels(RDFNode resource) {
 		LinkedList<String> labels = new LinkedList<>();
-		//TODO
 		return null;
 	}
 	
@@ -33,19 +46,21 @@ public class FocusConstraint {
 		Answer answer = Main.getAnswer(pipeline, 2);
 		ArrayList<Predicate> predicates = answer.predictList;
 		
-		QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(2);
+		QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithId(271);
 		
 		FocusConstraint constraint = new FocusConstraint();
 		
-		String focus = qf.focus.getFocusContent(qf.wordList);
-		String type = Type.getTypeFromFocus(focus);
+//		String focus = qf.focus.getFocusContent(qf.wordList);
+//		String typeUri = Type.getTypeFromFocus(focus);
+//		
+//		System.out.print(focus);
+//		System.out.println(typeUri);
+//		
+//		String entityUri = "http://dbpedia.org/resource/China";
+//		System.out.println(constraint.ifTypeMatched(entityUri, typeUri));
 		
-		System.out.print(focus);
-//		System.out.println(type);
-		
-		String entityUri = "http://dbpedia.org/resource/Beijing";
-		String typeUri = "http://dbpedia.org/ontology/Place";
-		System.out.println(constraint.ifTypeMatched(entityUri, typeUri));
+		System.out.println(qf.question);
+		System.out.println(qf.posList);
 		
 	}
 

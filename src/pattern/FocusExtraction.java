@@ -50,6 +50,8 @@ public class FocusExtraction extends TypeExtraction {
 			focus.setFocus(getFocusPhrase("what", wordList, posList));
 		} else if(sentence.contains("how many")) {
 			focus.setFocus(getFocusPhrase("many", wordList, posList));
+		} else if(sentence.contains("how much")) {
+			focus.setFocus(getFocusPhrase("much", wordList, posList));
 		} else if(sentence.contains("amount of")) {
 			focus.setFocus(getFocusPhrase("of", wordList, posList));
 		}
