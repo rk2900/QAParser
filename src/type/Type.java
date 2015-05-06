@@ -59,14 +59,15 @@ public class Type {
 		return ret;
 	}
 	public static List<String> getTypeFromFocus(String str) {
+		List<String> ret=new ArrayList<String>();
 		while(true) {
 			List<String> tmp=getType(str);
-			if(tmp.size()!=0) return tmp;
+			ret.addAll(tmp);
 			int index=str.indexOf(' ');
 			if(index==-1) break;
 			str=str.substring(index+1,str.length());
 		}
-		return null;
+		return ret;
 	}
 	public static void main(String[] args) {
 		System.out.println(getTypeFromFocus("sister cities"));
