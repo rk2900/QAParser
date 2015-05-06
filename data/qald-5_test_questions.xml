@@ -834,44 +834,4 @@
 <keywords lang="ro"><![CDATA[cel mai înalt, jucător de basket]]></keywords>
 </question>
 
-<question answertype="resource" id="51" aggregation="false" hybrid="true" onlydbo="true">
-<string lang="en"><![CDATA[Where was the "Father of Singapore" born?]]></string>
-</question>
-
-<question answertype="resource" id="52" aggregation="false" hybrid="true" onlydbo="true">
-<string lang="en"><![CDATA[Which Secretary of State was significantly involved in the United States' dominance of the Caribbean?]]></string>
-</question>
-
-<question answertype="resource" id="53" aggregation="false" hybrid="true" onlydbo="true">
-<string lang="en"><![CDATA[Who is the architect of the tallest building in Japan?]]></string>
-</question>
-
-<question answertype="string" id="54" aggregation="false" hybrid="true" onlydbo="true">
-<string lang="en"><![CDATA[What is the name of the Viennese newspaper founded by the creator of the croissant?]]></string>
-</question>
-
-<question answertype="resource" id="55" aggregation="false" hybrid="true" onlydbo="true">
-<string lang="en"><![CDATA[In which city where Charlie Chaplin's half brothers born?]]></string>
-</question>
-
-<question answertype="resource" id="56" aggregation="false" hybrid="true" onlydbo="true">
-<string lang="en"><![CDATA[Which German mathematicians were members of the von Braun rocket group?]]></string>
-</question>
-
-<question answertype="resource" id="57" aggregation="false" hybrid="true" onlydbo="true">
-<string lang="en"><![CDATA[Which writers converted to Islam?]]></string>
-</question>
-
-<question answertype="boolean" id="58" aggregation="true" hybrid="true" onlydbo="true">
-<string lang="en"><![CDATA[Are there man-made lakes in Australia that are deeper than 100 meters?]]></string>
-</question>
-
-<question answertype="resource" id="59" aggregation="false" hybrid="true" onlydbo="true">
-<string lang="en"><![CDATA[Which movie by the Coen brothers stars John Turturro in the role of a New York City playwright?]]></string>
-</question>
-
-<question answertype="resource" id="60" aggregation="false" hybrid="true" onlydbo="true">
-<string lang="en"><![CDATA[Which of the volcanoes that erupted in 1550 is still active?]]></string>
-</question>
-
 </dataset>
