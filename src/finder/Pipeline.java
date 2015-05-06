@@ -95,7 +95,7 @@ public class Pipeline {
 		if(s == DataSource.TEST) {
 			source = DataSource.TEST;
 			questionFile = testQuestionFile;
-			totalNumber = 50;
+			totalNumber = 49;
 			initialize();
 		}
 	}
