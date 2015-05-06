@@ -1,6 +1,5 @@
 package paser;
 
-import java.awt.List;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -15,7 +14,6 @@ import com.hp.hpl.jena.rdf.model.RDFNode;
 import baseline.Answer;
 import baseline.Main;
 import baseline.Predicate;
-import edu.stanford.nlp.stats.PrecisionRecallStats;
 import finder.Pipeline;
 
 public class FocusConstraint {
@@ -26,22 +24,16 @@ public class FocusConstraint {
 		return flag;
 	}
 	
-	public boolean judgeTypeConstraint(RDFNode resource, QuestionFrame qf) {
-		return false;
-	}
-	
-	//TODO 
-	public LinkedList<String> getSurroundingLabels(RDFNode resource) {
-		LinkedList<String> labels = new LinkedList<>();
-		return null;
-	}
-	
-	public static HashMap<Predicate, Double> getPredicateTypeConstrainScore(Answer answer) {
+	/**
+	 * To get the score of each predicate with type information in focus
+	 * @param answer each score of specified predicate has been stored in HashMap<Predicate, Double>
+	 * @return
+	 */
+	public static HashMap<Predicate, Double> getPredicateTypeConstraintScore(Answer answer) {
 		HashMap<Predicate, Double> predTypeScores = new HashMap<>();
 		QuestionFrame qf = answer.qf;
 		Focus focus = qf.focus;
 		if(!focus.isEmpty()) { // 有focus结果
-			
 			ArrayList<String> extractedTypeList = (ArrayList<String>) Type.getTypeFromFocus(focus.getFocusContent(qf.wordList));
 			if(extractedTypeList.isEmpty()) { // 如果focus中 type抽取结果为空， 则所有predicate类型限制评估分数均为0.0
 				predTypeScores = setPredicateScoreZero(answer.predictList, predTypeScores);
@@ -78,6 +70,12 @@ public class FocusConstraint {
 		return predTypeScores;
 	}
 	
+	/**
+	 * To set type ranking score of each predicate as zero (0.0) 
+	 * @param predicates
+	 * @param predTypeScores
+	 * @return
+	 */
 	public static HashMap<Predicate, Double> setPredicateScoreZero(ArrayList<Predicate> predicates, HashMap<Predicate, Double> predTypeScores) {
 		for (Predicate predicate : predicates) {
 			predTypeScores.put(predicate, 0.0);

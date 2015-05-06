@@ -16,6 +16,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import finder.Pipeline.DataSource;
 import basic.FileOps;
 
 /**
@@ -89,7 +90,7 @@ public class XMLParser {
 		}
 	}
 	
-	public void parse() {
+	public void parse(DataSource source) {
 		if(doc == null) {
 			System.out.println("Document not loaded.");
 			return;
@@ -141,16 +142,19 @@ public class XMLParser {
 					}
 				}
 				
-				Node queryNode = element.getElementsByTagName("query").item(0);
-				if(queryNode != null) {
-					query = new String(queryNode.getTextContent());
-				}
-				
-				Element answersElement = (Element)element.getElementsByTagName("answers").item(0);
-				NodeList answerList = answersElement.getElementsByTagName("answer");
-				for(int i=0; i<answerList.getLength(); i++) {
-					Node answer = answerList.item(i);
-					answers.add(new String(answer.getTextContent()));
+				if(source == DataSource.TRAIN) { 
+					Node queryNode = element.getElementsByTagName("query").item(0);
+					if(queryNode != null) {
+						query = new String(queryNode.getTextContent());
+					}
+					
+					Element answersElement = (Element)element.getElementsByTagName("answers").item(0);
+					NodeList answerList = answersElement.getElementsByTagName("answer");
+					for(int i=0; i<answerList.getLength(); i++) {
+						Node answer = answerList.item(i);
+						answers.add(new String(answer.getTextContent()));
+					}
+				} else if(source == DataSource.TEST) {
 				}
 			}
 			Question q = new Question(id, onlydbo, aggregation, hybrid, 
@@ -226,7 +230,7 @@ public class XMLParser {
 		XMLParser parser  = new XMLParser();
 		parser.setFilePath(filePath);
 		parser.load();
-		parser.parse();
+		parser.parse(DataSource.TRAIN);
 		
 		Question q = parser.getQuestionWithPseudoId(176);
 		q.print();

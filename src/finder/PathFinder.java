@@ -14,6 +14,7 @@ import com.hp.hpl.jena.query.QuerySolution;
 import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.rdf.model.RDFNode;
 
+import finder.Pipeline.DataSource;
 import paser.Path;
 import paser.Question;
 import paser.XMLParser;
@@ -99,7 +100,7 @@ public class PathFinder {
 	public static void main(String[] args) {
 		XMLParser xmlParser = new XMLParser("./data/qald-5_train.xml");
 		xmlParser.load();
-		xmlParser.parse();
+		xmlParser.parse(DataSource.TRAIN);
 		
 //		ArrayList<Question> qList = parser.getQuestionsPart(0, 301, "resource");
 //		Question q = qList.get(0);

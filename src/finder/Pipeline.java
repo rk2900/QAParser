@@ -26,10 +26,18 @@ import pattern.QuestionClassifier.Label;
 import knowledgebase.ClientManagement;
 
 public class Pipeline {
-	public static final String questionFile = "./data/qald-5_train.xml";
-	public static final String wikiEntityFilePath = "./data/q-e/all-mark-wiki-entity.txt";
-	public static final double matchThreshold = 0.5;
-	public static final int edThreshold = 2;
+	public enum DataSource {
+		TRAIN, TEST
+	}
+	
+	public static DataSource source = DataSource.TRAIN;
+	public static String questionFile = "./data/qald-5_train.xml";
+	public static String testQuestionFile = "./data/qald-5_test_questions.xml";
+	public static int totalNumber = 300;
+	
+	public static String wikiEntityFilePath = "./data/q-e/all-mark-wiki-entity.txt";
+	public static double matchThreshold = 0.5;
+	public static int edThreshold = 2;
 	
 	public XMLParser xmlParser;
 	public LinkedList<QuestionFrame> resource = new LinkedList<>();
@@ -52,11 +60,15 @@ public class Pipeline {
 	 * To initialize AGraph model and XML parser.
 	 */
 	public Pipeline() {
+		initialize();
+	}
+	
+	public void initialize() {
 		xmlParser = new XMLParser();
 		xmlParser.setFilePath(questionFile);
 		xmlParser.load();
-		xmlParser.parse();
-		for(int i=1; i<=300; i++) {
+		xmlParser.parse(source);
+		for(int i=1; i<=totalNumber; i++) {
 			QuestionFrame qf = xmlParser.getQuestionFrameWithPseudoId(i);
 			
 			if(qf.questionClassifier.label.get(Label.COMPARISON)) {
@@ -76,6 +88,15 @@ public class Pipeline {
 			} else if(qf.questionClassifier.category == Category.BOOLEAN) {
 				bool.add(qf);
 			}
+		}
+	}
+	
+	public Pipeline(DataSource s) {
+		if(s == DataSource.TEST) {
+			source = DataSource.TEST;
+			questionFile = testQuestionFile;
+			totalNumber = 50;
+			initialize();
 		}
 	}
 	
@@ -272,7 +293,7 @@ public class Pipeline {
 	}
 	
 	public static void main(String[] args) {
-		Pipeline pipeline = new Pipeline();
+		Pipeline pipeline = new Pipeline(DataSource.TEST);
 		Main.setEntity(pipeline);
 		
 		LinkedList<QuestionFrame> resource = new LinkedList<>();
@@ -287,7 +308,7 @@ public class Pipeline {
 		
 		LinkedList<QuestionFrame> comparison = new LinkedList<>();
 		
-		for(int i=1; i<=300; i++) {
+		for(int i=1; i<=pipeline.totalNumber; i++) {
 			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
 			
 			if(qf.questionClassifier.label.get(Label.COMPARISON)) {

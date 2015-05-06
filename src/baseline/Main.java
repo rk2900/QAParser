@@ -155,7 +155,7 @@ public class Main {
 			}
 		}
 		
-		for(int i=1; i<=300; ++i){
+		for(int i=1; i<=pipeline.totalNumber; ++i){
 			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
 			if(map.containsKey(i)){
 				qf.setEntityList(map.get(i));
