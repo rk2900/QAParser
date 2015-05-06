@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
-import paser.FocusConstraint;
 import paser.QuestionFrame;
 import syntacticParser.Constraint;
 import syntacticParser.ConstraintSet;
@@ -15,6 +14,7 @@ import finder.Pipeline;
 
 public class Classification {
 	public static HashMap<String, Integer> map;
+//	public static enum classfication {normal, date, where, who, number, resource};
 	static{
 		map = new HashMap<String, Integer>();
 		map.put("normal", 0);
@@ -30,6 +30,7 @@ public class Classification {
 	}
 	public static Answer getAnswer(QuestionFrame qf,int type){
 		Answer answer = new Answer();
+		answer.qf = qf;
 		LinkedList<Entity> entityList = qf.getEntityList();
 		ConstraintSet constraintSet=ConstraintSet.getConstraintSet(qf.question, qf);
 		List<Constraint> constraintList = constraintSet.list;
@@ -94,7 +95,6 @@ public class Classification {
 			}
 		}
 		answer.exceptionString = exceptionString;
-		answer.qf = qf;
 		return answer;
 	}
 	
@@ -136,7 +136,7 @@ public class Classification {
 //		}
 //		OutputRedirector.closeFileOutput();
 		
-		OutputRedirector.openFileOutput("./data/zch_classification/resource/resource-basic-new.txt");
+		OutputRedirector.openFileOutput("./data/zch_classification/resource/resource-basic-addTypeScore.txt");
 		LinkedList<QuestionFrame> resourceQF = pipeline.resource;
 		System.err.println(resourceQF.size());
 		int originalNum = SimilarityFunction.predictNum;
@@ -146,10 +146,8 @@ public class Classification {
 			++count;
 			Answer answer = getAnswer(qf,map.get("resource"));
 			if(!answer.isException()){
-				answer.predictList = FocusConstraint.getTypeConstraintPredicates(answer);
-				System.err.println(answer.predictList.size());
+				System.out.println(answer.print().toString());
 			}
-			System.out.println(answer.print().toString());
 			System.err.println(count + " finished.*****");
 		}
 		SimilarityFunction.predictNum = originalNum;

@@ -13,6 +13,7 @@ import knowledgebase.ClientManagement;
 
 import com.hp.hpl.jena.rdf.model.RDFNode;
 
+import paser.FocusConstraint;
 import paser.QuestionFrame;
 import syntacticParser.Constraint;
 import syntacticParser.ConstraintSet;
@@ -302,6 +303,22 @@ public class Main {
 	public static void stepAnswer(MatchDetail step, Answer answer, int type){
 		answer.entityUri = step.entity.uri;
 		answer.predictList = SimilarityFunction.getTopNPredicts(step,type);
+		for (Predicate predicate : answer.predictList) {
+			LinkedList<RDFNode> resources = ClientManagement.getNode(answer.entityUri, predicate.uri);
+			answer.resources.put(predicate,resources);
+		}
+		if(type == 5){
+			answer.typeConstrainScore = FocusConstraint.getPredicateTypeConstraintScore(answer);
+			ArrayList<Predicate> newPredicates = new ArrayList<Predicate>();
+			for (Predicate predicate : answer.predictList) {
+				double typeScore = answer.typeConstrainScore.get(predicate);
+				if(typeScore > 0){
+					predicate.maxScore += typeScore;
+					newPredicates.add(predicate);
+				}
+			}
+			answer.predictList = newPredicates;
+		}
 	}
 	
 	//链式问题

@@ -3,9 +3,6 @@ package baseline;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
-
-import knowledgebase.ClientManagement;
-
 import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.RDFNode;
 
@@ -16,8 +13,14 @@ public class Answer {
 	public String entityUri;
 	public QuestionFrame qf;
 	public String exceptionString;
-	public HashMap<Predicate, Double> typeConstrainScore = new HashMap<>();
-	public HashMap<Predicate, ArrayList<String>> resources = new HashMap<Predicate, ArrayList<String>>(); 
+	public HashMap<Predicate, Double> typeConstrainScore;
+	public HashMap<Predicate, LinkedList<RDFNode>> resources; 
+	
+	public Answer(){
+		predictList = new ArrayList<Predicate>();
+		typeConstrainScore = new HashMap<>();
+		resources = new HashMap<Predicate, LinkedList<RDFNode>>(); 
+	}
 	
 	public boolean isException(){
 		if(exceptionString.length() > 0 ){
@@ -29,7 +32,6 @@ public class Answer {
 	
 	public StringBuilder print(){
 		StringBuilder sb = new StringBuilder();
-		
 		sb.append(qf.id+" "+qf.question);
 		sb.append("\n");
 		sb.append(qf.query);
@@ -39,8 +41,8 @@ public class Answer {
 			sb.append("\n");
 			for (Predicate predict : predictList) {
 				sb.append(predict.maxScore + "\t"+ predict.matchedLabel +"\t" + predict.uri);
-				LinkedList<RDFNode> resources = ClientManagement.getNode(entityUri, predict.uri);
-				for (RDFNode rdfNode : resources) {
+				LinkedList<RDFNode> res = resources.get(predict);
+				for (RDFNode rdfNode : res) {
 					sb.append(" " + rdfNode.toString());
 				}
 				sb.append("\n");
@@ -70,14 +72,14 @@ public class Answer {
 			RDFNode oneStep = null;
 			for (Predicate predict : predictList) {
 				sb.append(predict.maxScore + "\t"+ predict.matchedLabel +"\t" + predict.uri);
-				LinkedList<RDFNode> resources = ClientManagement.getNode(entityUri, predict.uri);
-				for (RDFNode rdfNode : resources) {
+				LinkedList<RDFNode> res = resources.get(predict);
+				for (RDFNode rdfNode : res) {
 					sb.append(" " + rdfNode.toString());
 				}
 				sb.append("\n");
 				
-				if(!isOneStep && resources.size() == 1){
-					RDFNode resource = resources.get(0);
+				if(!isOneStep && res.size() == 1){
+					RDFNode resource = res.get(0);
 					if(resource.isLiteral()) {
 						Literal literal = resource.asLiteral();
 						String resourceString = literal.getLexicalForm();
@@ -118,8 +120,8 @@ public class Answer {
 					sb.append("\nCount Result: ");
 					sb.append(predicate.uri);
 					sb.append(" ");
-					LinkedList<RDFNode> resources = ClientManagement.getNode(entityUri, predicate.uri);
-					sb.append(resources.size());
+					LinkedList<RDFNode> res = resources.get(predicate);
+					sb.append(res.size());
 					sb.append("\n");
 					sb.append("Standard Result: ");
 					sb.append(qf.answers);
