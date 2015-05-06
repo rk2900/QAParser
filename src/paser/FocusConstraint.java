@@ -19,7 +19,7 @@ import finder.Pipeline;
 public class FocusConstraint {
 
 	public static final double literalScore = 0.8;
-	public static final double lowScore = 0.3;
+	public static final double lowScore = 0.0;
 	
 	public boolean ifTypeMatched(String entityUri, String typeUri) {
 		String askQuery = "ASK WHERE { <"+entityUri+"> rdf:type <"+typeUri+"> }";
