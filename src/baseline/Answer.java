@@ -1,6 +1,7 @@
 package baseline;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedList;
 
 import org.openrdf.query.algebra.Datatype;
@@ -19,6 +20,7 @@ public class Answer {
 	public String entityUri;
 	public QuestionFrame qf;
 	public String exceptionString;
+	public HashMap<Predicate, Double> typeConstrainScore = new HashMap<>();
 	
 	public boolean isException(){
 		if(exceptionString.length() > 0 ){
