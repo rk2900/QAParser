@@ -3,8 +3,12 @@ package baseline;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
+import org.openrdf.query.algebra.Datatype;
+
 import knowledgebase.ClientManagement;
 
+import com.hp.hpl.jena.datatypes.RDFDatatype;
+import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.RDFNode;
 import com.hp.hpl.jena.rdf.model.Resource;
 
@@ -51,7 +55,7 @@ public class Answer {
 	}
 	
 	/**
-	 * 针对number类型的问题的处理结果
+	 * 
 	 */
 	public StringBuilder numberPrint(){
 		StringBuilder sb = new StringBuilder();
@@ -75,23 +79,29 @@ public class Answer {
 				
 				if(!isOneStep && resources.size() == 1){
 					RDFNode resource = resources.get(0);
-					String resourceString = resource.toString();
-					int i;
-					for(i=0; i<resourceString.length(); ++i){
-						if(!Character.isDigit(resourceString.charAt(i)) && resourceString.charAt(i) != '.'){
-							break;
+					if(resource.isLiteral()) {
+						Literal literal = resource.asLiteral();
+						String resourceString = literal.getLexicalForm();
+						int i;
+						for(i=0; i<resourceString.length(); ++i){
+							if(!Character.isDigit(resourceString.charAt(i)) && resourceString.charAt(i) != '.'){
+								break;
+							}
+						}
+						if(i == resourceString.length()){
+							isOneStep = true;
+							oneStep = resource;
 						}
 					}
-					if(i == resourceString.length()){
-						isOneStep = true;
-						oneStep = resource;
-						break;
-					}
+					
 				}
 			}
 			if(isOneStep){
-				sb.append("Result: ");
+				sb.append("\nResult: ");
 				sb.append(oneStep.toString());
+				sb.append("\n");
+				sb.append("Standard Result: ");
+				sb.append(qf.answers);
 				sb.append("\n");
 			}else{
 				if(predictList.size() > 0){
@@ -100,17 +110,20 @@ public class Answer {
 						if(predictList.get(i).maxScore < predicate.maxScore){
 							break;
 						}else{
-							if(predictList.get(i).toString().startsWith("http://dbpedia.org/ontology/")){
+							if(predictList.get(i).uri.toString().startsWith("http://dbpedia.org/ontology/")){
 								predicate = predictList.get(i);
 								break;
 							}
 						}
 					}
-					sb.append("Result: ");
-					sb.append(predicate.toString());
-					sb.append("\n");
+					sb.append("\nCount Result: ");
+					sb.append(predicate.uri);
+					sb.append(" ");
 					LinkedList<RDFNode> resources = ClientManagement.getNode(entityUri, predicate.uri);
 					sb.append(resources.size());
+					sb.append("\n");
+					sb.append("Standard Result: ");
+					sb.append(qf.answers);
 					sb.append("\n");
 				}
 			}

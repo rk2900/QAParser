@@ -144,17 +144,15 @@ public class Classification {
 //		}
 //		OutputRedirector.closeFileOutput();
 		
-//		OutputRedirector.openFileOutput("./data/zch_classification/number/number-addFocus-number-total.txt");
+		OutputRedirector.openFileOutput("./data/zch_classification/number/number-basic-result.txt");
 		LinkedList<QuestionFrame> numberQF = pipeline.number;
 		System.err.println(numberQF.size());
 		for (QuestionFrame qf : numberQF) {
 			Answer answer = getAnswer(qf,map.get("number"));
-//			System.out.println("Original focus: "+qf.focus.getFocusContent(qf.wordList));
-//			System.out.println(answer.print().toString());
+			System.out.println("Original focus: "+qf.focus.getFocusContent(qf.wordList));
 			System.out.println(answer.numberPrint().toString());
-			
 		}
-//		OutputRedirector.closeFileOutput();
+		OutputRedirector.closeFileOutput();
 	}
 	
 }
