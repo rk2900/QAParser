@@ -1,8 +1,8 @@
 package entityLinking.parse;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.Iterator;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -10,7 +10,6 @@ import org.json.JSONObject;
 import entityLinking.client.entityClient;
 import entityLinking.client.entityClientConst;
 import entityLinking.db.entityDB;
-import basic.FileOps;
 
 public class responseParser {
 	
@@ -39,7 +38,7 @@ public class responseParser {
 			for (int j = 0; j < spots.length(); ++j) {
 				JSONObject spot = spots.getJSONObject(j);
 				candID = spot.getInt("id");
-				candTitle = spot.getString("title");
+				candTitle = URLEncoder.encode(spot.getString("title"),"UTF-8");
 				weight = spot.getDouble("weight");
 
 				JSONArray referArray = spot.getJSONArray("references");
@@ -48,158 +47,141 @@ public class responseParser {
 					startIndex = refer.getInt("start");
 					endIndex = refer.getInt("end");
 
-//					db.insertMiner(questionID, startIndex, endIndex,
-//							candID, candTitle, weight);
-					System.err.println(questionID+" "+startIndex+" "+endIndex+" "+candID+" "+candTitle+" "+weight);
+					db.insertMiner(questionID, startIndex, endIndex,
+							candID, candTitle, weight);
+//					System.err.println(questionID+" "+startIndex+" "+endIndex+" "+candID+" "+candTitle+" "+weight);
 				}
 			}
-		} catch (JSONException e) {
+		} catch (JSONException | UnsupportedEncodingException e) {
 			e.printStackTrace();
 		}
 	}
 
-//	public void loadSpotlight() {
+	public void loadSpotlight1(int id, String response) {
+		int questionID = id;
+		int startIndex;
+		int endIndex;
+		String candTitle;
+		String candUri;
+		int support;
+		double finalScore;
+		double priorScore;
+		double contextualScore;
+		double percentageOfSecondRank;
+		String types;
+
+		JSONObject responseJson = null;
+		JSONArray spots = null;
+		try {
+			responseJson = new JSONObject(response).getJSONObject("annotation");
+			if (!responseJson.has("surfaceForm")) {
+				System.err.println(id + ": no detectedTopics");
+				return;
+			}
+			JSONObject spotsObject = responseJson.optJSONObject("surfaceForm");
+			if(spotsObject != null){
+				spots = new JSONArray();
+				spots.put(spotsObject);
+			}else{
+				spots = responseJson.getJSONArray("surfaceForm");
+			}
+			
+			for (int j = 0; j < spots.length(); ++j) {
+				JSONObject spot = spots.getJSONObject(j);
+				startIndex = Integer.parseInt(spot.getString("@offset"));
+				String name = spot.getString("@name");
+				endIndex = startIndex + name.length();
+				
+				if(!spot.has("resource")){
+					continue;
+				}
+				
+				JSONArray resources = null;
+				JSONObject resourceObject = spot.optJSONObject("resource");
+				if(resourceObject != null){
+					resources = new JSONArray();
+					resources.put(resourceObject);
+				}else{
+					resources = spot.getJSONArray("resource");
+					for (int c = 0; c < resources.length(); ++c) {
+						JSONObject resource = resources.getJSONObject(c);
+						candTitle = resource.getString("@label");
+						candUri = resource.getString("@uri");
+						contextualScore = resource.getDouble("@contextualScore");
+						support = resource.getInt("@support");
+						finalScore = resource.getDouble("@finalScore");
+						priorScore = resource.getDouble("@priorScore");
+						percentageOfSecondRank = resource.getDouble("@percentageOfSecondRank");
+						types = resource.getString("@types");
+						db.insertSpotlight1(questionID, startIndex, endIndex, candTitle, candUri, support, finalScore, priorScore, contextualScore, percentageOfSecondRank, types);
+					}
+				}
+			}
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+	}
 //
-//		for (int i = 1; i <= 300; ++i) {
-//			System.out.println(i + " start loading...");
-//			String filename = path + i + ".txt";
-//			String response = FileOps.LoadFile(filename);
-//
-//			int questionID = i;
-//			int startIndex;
-//			int endIndex;
-//			String candTitle;
-//			String candUri;
-//			int support;
-//			double finalScore;
-//			double priorScore;
-//			double contextualScore;
-//			double percentageOfSecondRank;
-//			String types;
-//
-//			JSONObject responseJson = null;
-//			JSONArray spots = null;
-//			try {
-//				responseJson = new JSONObject(response).getJSONObject("annotation");
-//				if (!responseJson.has("surfaceForm")) {
-//					continue;
-//				}
-//				JSONObject spotsObject = responseJson.optJSONObject("surfaceForm");
-//				if(spotsObject != null){
-//					spots = new JSONArray();
-//					spots.put(spotsObject);
-//				}else{
-//					spots = responseJson.getJSONArray("surfaceForm");
-//				}
-//				
-//				for (int j = 0; j < spots.length(); ++j) {
-//					JSONObject spot = spots.getJSONObject(j);
-//					startIndex = Integer.parseInt(spot.getString("@offset"));
-//					String name = spot.getString("@name");
-//					endIndex = startIndex + name.length();
-//					
-//					if(!spot.has("resource")){
-//						continue;
-//					}
-//					
-//					JSONArray resources = null;
-//					JSONObject resourceObject = spot.optJSONObject("resource");
-//					if(resourceObject != null){
-//						resources = new JSONArray();
-//						resources.put(resourceObject);
-//					}else{
-//						resources = spot.getJSONArray("resource");
-//						for (int c = 0; c < resources.length(); ++c) {
-//							JSONObject resource = resources.getJSONObject(c);
-//							candTitle = resource.getString("@label");
-//							candUri = resource.getString("@uri");
-//							contextualScore = resource.getDouble("@contextualScore");
-//							support = resource.getInt("@support");
-//							finalScore = resource.getDouble("@finalScore");
-//							priorScore = resource.getDouble("@priorScore");
-//							percentageOfSecondRank = resource.getDouble("@percentageOfSecondRank");
-//							types = resource.getString("@types");
-//							db.insertSpotlight(questionID, startIndex, endIndex, candTitle, candUri, support, finalScore, priorScore, contextualScore, percentageOfSecondRank, types);
-//						}
-//					}
-//				}
-//			} catch (JSONException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
-//
-//		}
-//		System.out.println("finished");
-//	}
-//
-//	/**
-//	 * 
-//	 */
-//	public void loadDexter() {
-//		System.out.println("dexter result loading...");
-//		String path = "./entity/dexter2/";
-//		
-//		Annotation annotation = new Annotation();
-//
-//		for (int i = 1; i <= 300; ++i) {
-//			System.out.println(i + " start loading...");
-//			String filename = path + i + ".txt";
-//			String response = FileOps.LoadFile(filename);
-//
-//			int questionID = i;
-//			int startIndex;
-//			int endIndex;
-//			int candID;
-//			String candTitle;
-//			String candUri;
-//			String candDescription;
-//			double linkProbability;
-//			double commonness;
-//			int linkFrequency;
-//			int documentFrequency;
-//			int entityFrequency;
-//
-//			JSONObject responseJson = null;
-//			JSONObject spots = null;
-//			try {
-//				responseJson = new JSONObject(response);
-//				if (!responseJson.has("entities")) {
-//					continue;
-//				}
-//				spots = responseJson.getJSONObject("entities");
-//				Iterator<String> keys = spots.keys(); 
-//				
-//				while(keys.hasNext()){
-//					String key = keys.next();
-//					candID = Integer.parseInt(key);
-//					String idResponse = annotation.queryResult(AnnotationConst.dexterURI2ID + candID);
-//					JSONObject idRes = new JSONObject(idResponse);
-//					candDescription = idRes.getString("description");
-//					candUri = idRes.getString("url").substring(28);
-//					candTitle = idRes.getString("title");
-//					
-//					
-//					JSONArray spot = spots.getJSONArray(key);
-//					for(int c=0; c<spot.length(); ++c){
-//						JSONObject current = spot.getJSONObject(c);
-//						linkProbability = current.getDouble("linkProbability");
-//						startIndex = current.getInt("start");
-//						endIndex = current.getInt("end");
-//						linkFrequency = current.getInt("linkFrequency");
-//						documentFrequency = current.getInt("documentFrequency");
-//						entityFrequency = current.getInt("entityFrequency");
-//						commonness = current.getDouble("commonness");
-//						
-//						db.insertDexter(questionID, startIndex, endIndex, linkProbability, linkFrequency, documentFrequency, entityFrequency, commonness, candID, candTitle, candUri, candDescription);
-//					}
-//					
-//				}
-//			} catch (JSONException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
-//
-//		}
-//	}
+	/**
+	 * 
+	 */
+	public void loadDexter(int id, String response) {
+		int questionID = id;
+		int startIndex;
+		int endIndex;
+		int candID;
+		String candTitle;
+		String candUri;
+		String candDescription;
+		double linkProbability;
+		double commonness;
+		int linkFrequency;
+		int documentFrequency;
+		int entityFrequency;
+
+		JSONObject responseJson = null;
+		JSONObject spots = null;
+		try {
+			responseJson = new JSONObject(response);
+			if (!responseJson.has("entities")) {
+				System.err.println(id + ": no detectedTopics");
+				return;
+			}
+			spots = responseJson.getJSONObject("entities");
+			Iterator<String> keys = spots.keys(); 
+			
+			while(keys.hasNext()){
+				String key = keys.next();
+				candID = Integer.parseInt(key);
+				System.err.println(candID);
+				String idResponse = entityClient.queryResult(entityClientConst.dexterURI2ID + candID);
+				System.err.println(idResponse);
+				JSONObject idRes = new JSONObject(idResponse);
+				candDescription = URLEncoder.encode(idRes.getString("description"),"UTF-8");
+				candUri = URLEncoder.encode(idRes.getString("url"),"UTF-8");
+				candTitle = URLEncoder.encode(idRes.getString("title"),"UTF-8");
+				
+				
+				JSONArray spot = spots.getJSONArray(key);
+				for(int c=0; c<spot.length(); ++c){
+					JSONObject current = spot.getJSONObject(c);
+					linkProbability = current.getDouble("linkProbability");
+					startIndex = current.getInt("start");
+					endIndex = current.getInt("end");
+					linkFrequency = current.getInt("linkFrequency");
+					documentFrequency = current.getInt("documentFrequency");
+					entityFrequency = current.getInt("entityFrequency");
+					commonness = current.getDouble("commonness");
+					System.err.println(current.toString());
+					db.insertDexter(questionID, startIndex, endIndex, linkProbability, linkFrequency, documentFrequency, entityFrequency, commonness, candID, candTitle, candUri, candDescription);
+				}
+				
+			}
+		} catch (JSONException | UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 }

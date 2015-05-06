@@ -11,23 +11,58 @@ public class insertMain {
 	public final static String trainDBName = "entity";
 	public final static String testDBName = "entity_test";
 	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Pipeline pipeline = new Pipeline(DataSource.TEST);
-		responseParser parser = new responseParser("entity_test");
-		for (int i=1; i<pipeline.totalNumber; ++i) {
+	public static void insertMinerToDB(Pipeline pipeline,responseParser parser){
+		for (int i=1; i<=pipeline.totalNumber; ++i) {
 			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
 			int id = qf.id;
 			String content = qf.question;
 			String response = entityClient.queryAPI(content, entityClientConst.TOOLKIT.MINER);
-			parser.loadMiner(id, response);
-			
-//			System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.MINER));
-//			System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.DEXTER));
-//			System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.SPOTLIGHT1));
-//			System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.SPOTLIGHT2));
-			break;
+			if(response != null){
+				parser.loadMiner(id, response);
+				System.err.println(i + " " + id + " finished");
+			}else{
+				System.err.println(i + " " + id + " null response");
+			}
 		}
+	}
+	
+	public static void insertDexterToDB(Pipeline pipeline,responseParser parser){
+		for (int i=1; i<=3; ++i) {
+			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
+			int id = qf.id;
+			String content = qf.question;
+			String response = entityClient.queryAPI(content, entityClientConst.TOOLKIT.DEXTER);
+//			System.out.println(response);
+			if(response != null){
+				parser.loadDexter(id, response);
+				System.err.println(i + " " + id + " finished");
+			}else{
+				System.err.println(i + " " + id + " null response");
+			}
+		}
+	}
+	
+	public static void insertSpotlight1ToDB(Pipeline pipeline,responseParser parser){
+		for (int i=1; i<=pipeline.totalNumber; ++i) {
+			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
+			int id = qf.id;
+			String content = qf.question;
+			String response = entityClient.queryAPI(content, entityClientConst.TOOLKIT.SPOTLIGHT1);
+//			System.out.println(response);
+			if(response != null){
+				parser.loadSpotlight1(id, response);
+				System.err.println(i + " " + id + " finished");
+			}else{
+				System.err.println(i + " " + id + " null response");
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Pipeline pipeline = new Pipeline(DataSource.TEST);
+		responseParser parser = new responseParser(testDBName);
+		insertDexterToDB(pipeline, parser);
 	}
 
 }
