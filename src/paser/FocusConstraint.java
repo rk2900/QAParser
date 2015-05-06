@@ -49,7 +49,7 @@ public class FocusConstraint {
 				for (String string : answers) {
 					typeSet.addAll(ClientManagement.getResourceType(string));
 				}
-				
+				System.out.println("Contains? "+"\t"+typeSet.contains(typeUri));
 				System.out.println(typeSet);
 			}
 			System.out.println();

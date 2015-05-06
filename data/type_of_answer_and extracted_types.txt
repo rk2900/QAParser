@@ -1,21 +1,25 @@
 10	In which country does the Ganges start?
 Focus: 	country
 Type: 	http://dbpedia.org/ontology/Country
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/Place, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/Country, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/Country]
 
 106	Give me all professional skateboarders from Sweden.
 Focus: 	professional skateboarders
 Type: 	null
+Contains? 	false
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://www.w3.org/2002/07/owl#Thing, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson, http://xmlns.com/foaf/0.1/Person]
 
 108	To which countries does the Himalayan mountain system extend?
 Focus: 	countries
 Type: 	http://dbpedia.org/ontology/Country
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/Wikidata:Q532, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://schema.org/Place, http://dbpedia.org/ontology/Country, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/Country]
 
 109	Give me a list of all bandleaders that play trumpet.
 Focus: 	bandleaders
 Type: 	null
+Contains? 	false
 [http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://dbpedia.org/ontology/Artist, http://www.w3.org/2002/07/owl#Thing, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/MusicalArtist, http://schema.org/MusicGroup, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://xmlns.com/foaf/0.1/Person, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson]
 
 110	What is the total amount of men and women serving in the FDNY?
@@ -23,26 +27,31 @@ Type: 	null
 112	Give me all world heritage sites designated within the past two years.
 Focus: 	world heritage sites
 Type: 	http://dbpedia.org/ontology/WorldHeritageSite
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/WorldHeritageSite, http://www.opengis.net/gml/_Feature]
 
 114	Give me all members of Prodigy.
 Focus: 	members
 Type: 	null
+Contains? 	false
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://schema.org/Person, http://dbpedia.org/ontology/MusicalArtist, http://wikidata.dbpedia.org/resource/Q5, http://schema.org/MusicGroup, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://dbpedia.org/ontology/Artist, http://www.w3.org/2002/07/owl#Thing, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson, http://xmlns.com/foaf/0.1/Person]
 
 117	Give me all cars that are produced in Germany.
 Focus: 	cars
 Type: 	http://dbpedia.org/ontology/Automobile
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact, http://dbpedia.org/ontology/MeanOfTransportation, http://dbpedia.org/ontology/Automobile, http://schema.org/Product]
 
 118	What were the main discoveries of the Mars rover Curiosity?
 Focus: 	main discoveries
 Type: 	null
+Contains? 	false
 []
 
 119	Give me all people that were born in Vienna and died in Berlin.
 Focus: 	people
 Type: 	null
+Contains? 	false
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Scientist, http://dbpedia.org/ontology/Person, http://www.w3.org/2002/07/owl#Thing, http://xmlns.com/foaf/0.1/Person, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson]
 
 120	How tall is Michael Jordan?
@@ -50,21 +59,25 @@ Type: 	null
 121	What is the capital of Canada?
 Focus: 	capital
 Type: 	null
+Contains? 	false
 [http://schema.org/City, http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/City, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/Wikidata:Q532, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://schema.org/Place, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/Settlement, http://dbpedia.org/ontology/PopulatedPlace]
 
 127	Sean Parnell is the governor of which U.S. state?
 Focus: 	U.S. state
 Type: 	http://dbpedia.org/ontology/Country
+Contains? 	false
 [http://dbpedia.org/ontology/AdministrativeRegion, http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/Place, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/Region, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/AdministrativeArea]
 
 128	Give me all movies directed by Francis Ford Coppola.
 Focus: 	movies
 Type: 	http://dbpedia.org/ontology/Film
+Contains? 	true
 [http://www.w3.org/2004/02/skos/core#Concept, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://schema.org/Movie, http://dbpedia.org/ontology/Film, http://schema.org/CreativeWork, http://dbpedia.org/ontology/Wikidata:Q11424]
 
 129	Give me all actors starring in movies directed by William Shatner.
 Focus: 	actors
 Type: 	http://dbpedia.org/ontology/Actor
+Contains? 	false
 [http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://dbpedia.org/ontology/Artist, http://www.w3.org/2002/07/owl#Thing, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/MusicalArtist, http://wikidata.dbpedia.org/resource/Q215627, http://schema.org/MusicGroup, http://dbpedia.org/ontology/Person, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson, http://xmlns.com/foaf/0.1/Person]
 
 130	What is the birth name of Angela Merkel?
@@ -72,16 +85,19 @@ Type: 	http://dbpedia.org/ontology/Actor
 131	Give me all Methodist politicians.
 Focus: 	Methodist politicians
 Type: 	http://dbpedia.org/ontology/Politician
+Contains? 	true
 [http://dbpedia.org/ontology/Governor, http://schema.org/Person, http://dbpedia.org/ontology/Politician, http://wikidata.dbpedia.org/resource/Q5, http://dbpedia.org/ontology/Congressman, http://dbpedia.org/ontology/PrimeMinister, http://dbpedia.org/ontology/President, http://www.w3.org/2002/07/owl#Thing, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/Mayor, http://wikidata.dbpedia.org/resource/Q215627, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/Person, http://dbpedia.org/ontology/Senator, http://dbpedia.org/ontology/Chancellor, http://dbpedia.org/ontology/MemberOfParliament, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson, http://xmlns.com/foaf/0.1/Person]
 
 133	Give me all Australian nonprofit organizations.
 Focus: 	Australian nonprofit organizations
 Type: 	http://dbpedia.org/ontology/Organisation
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/Organisation, http://schema.org/Organization, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson, http://dbpedia.org/ontology/Company, http://www.w3.org/2002/07/owl#Thing]
 
 134	In which military conflicts did Lawrence of Arabia participate?
 Focus: 	military conflicts
 Type: 	http://dbpedia.org/ontology/MilitaryConflict
+Contains? 	true
 [http://www.w3.org/2004/02/skos/core#Concept, http://schema.org/Event, http://dbpedia.org/ontology/MilitaryConflict, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/Event, http://dbpedia.org/ontology/SocietalEvent, http://www.w3.org/2002/07/owl#Thing, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event]
 
 136	What is the melting point of copper?
@@ -89,11 +105,13 @@ Type: 	http://dbpedia.org/ontology/MilitaryConflict
 137	Give me all sister cities of Brno.
 Focus: 	sister cities
 Type: 	http://dbpedia.org/ontology/City
+Contains? 	false
 []
 
 139	Give me all companies in Munich.
 Focus: 	companies
 Type: 	http://dbpedia.org/ontology/Company
+Contains? 	true
 [http://dbpedia.org/ontology/LawFirm, http://dbpedia.org/ontology/Organisation, http://dbpedia.org/ontology/RecordLabel, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson, http://dbpedia.org/ontology/Company, http://www.w3.org/2002/07/owl#Thing, http://dbpedia.org/ontology/Airline, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/Brewery, http://www.w3.org/2004/02/skos/core#Concept, http://schema.org/Organization, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing]
 
 14	How tall is Claudia Schiffer?
@@ -101,26 +119,31 @@ Type: 	http://dbpedia.org/ontology/Company
 140	List all games by GMT.
 Focus: 	games
 Type: 	http://dbpedia.org/ontology/Game
+Contains? 	true
 [http://dbpedia.org/ontology/Game, http://www.ontologydesignpatterns.org/ont/d0.owl#Activity, http://www.w3.org/2002/07/owl#Thing, http://dbpedia.org/ontology/Activity]
 
 143	Give me all breeds of the German Shepherd dog.
 Focus: 	breeds
 Type: 	null
+Contains? 	false
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://wikidata.dbpedia.org/resource/Q215627, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/Person, http://www.w3.org/2002/07/owl#Thing, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson, http://xmlns.com/foaf/0.1/Person]
 
 144	Which cities does the Weser flow through?
 Focus: 	cities
 Type: 	http://dbpedia.org/ontology/City
+Contains? 	true
 [http://schema.org/City, http://schema.org/BodyOfWater, http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/City, http://dbpedia.org/ontology/Town, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/Stream, http://dbpedia.org/ontology/River, http://dbpedia.org/ontology/NaturalPlace, http://dbpedia.org/ontology/Settlement, http://dbpedia.org/ontology/BodyOfWater, http://schema.org/RiverBodyOfWater, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/PopulatedPlace]
 
 145	Which countries are connected by the Rhine?
 Focus: 	countries
 Type: 	http://dbpedia.org/ontology/Country
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/Country, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/Country]
 
 146	Which professional surfers were born in Australia?
 Focus: 	professional surfers
 Type: 	null
+Contains? 	false
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://www.w3.org/2002/07/owl#Thing, http://dbpedia.org/ontology/Criminal, http://xmlns.com/foaf/0.1/Person, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson]
 
 147	What is the average temperature on Hawaii?
@@ -128,21 +151,25 @@ Type: 	null
 148	In which UK city are the headquarters of the MI6?
 Focus: 	UK city
 Type: 	http://dbpedia.org/ontology/City
+Contains? 	false
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/Wikidata:Q532, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://schema.org/Place, http://dbpedia.org/ontology/Settlement, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/PopulatedPlace]
 
 149	Which other weapons did the designer of the Uzi develop?
 Focus: 	other weapons
 Type: 	http://dbpedia.org/ontology/Weapon
+Contains? 	true
 [http://dbpedia.org/ontology/Device, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact, http://schema.org/Product, http://dbpedia.org/ontology/Weapon]
 
 151	Give me all islands that belong to Japan.
 Focus: 	islands
 Type: 	http://dbpedia.org/ontology/Island
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/Wikidata:Q532, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://schema.org/Place, http://dbpedia.org/ontology/Island, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/PopulatedPlace]
 
 153	What is the ruling party in Lisbon?
 Focus: 	party
 Type: 	http://dbpedia.org/ontology/PoliticalParty
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/Organisation, http://www.w3.org/2004/02/skos/core#Concept, http://schema.org/Organization, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson, http://dbpedia.org/ontology/PoliticalParty, http://www.w3.org/2002/07/owl#Thing]
 
 154	What are the nicknames of San Francisco?
@@ -150,36 +177,43 @@ Type: 	http://dbpedia.org/ontology/PoliticalParty
 155	Which Greek goddesses dwelt on Mount Olympus?
 Focus: 	Greek goddesses
 Type: 	null
+Contains? 	false
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/Organisation, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/RecordLabel, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson, http://dbpedia.org/ontology/Company, http://www.w3.org/2002/07/owl#Thing, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://www.w3.org/2004/02/skos/core#Concept, http://schema.org/Organization, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://dbpedia.org/ontology/PopulatedPlace]
 
 157	Give me all Apollo 14 astronauts.
 Focus: 	Apollo 14 astronauts
 Type: 	http://dbpedia.org/ontology/Astronaut
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://dbpedia.org/ontology/Astronaut, http://www.w3.org/2002/07/owl#Thing, http://xmlns.com/foaf/0.1/Person, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson]
 
 158	What is the time zone of Salt Lake City?
 Focus: 	time zone
 Type: 	null
+Contains? 	false
 []
 
 159	Which U.S. states are in the same time zone as Utah?
 Focus: 	U.S. states
 Type: 	http://dbpedia.org/ontology/Country
+Contains? 	false
 [http://dbpedia.org/ontology/AdministrativeRegion, http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/Wikidata:Q532, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://schema.org/Place, http://dbpedia.org/ontology/Region, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/AdministrativeArea]
 
 16	Give me the capitals of all countries in Africa.
 Focus: 	capitals
 Type: 	null
+Contains? 	false
 [http://schema.org/City, http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/City, http://dbpedia.org/ontology/Place, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/Settlement, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/PopulatedPlace]
 
 160	Give me a list of all lakes in Denmark.
 Focus: 	lakes
 Type: 	http://dbpedia.org/ontology/Lake
+Contains? 	true
 [http://schema.org/BodyOfWater, http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/Lake, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/NaturalPlace, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://www.opengis.net/gml/_Feature, http://schema.org/LakeBodyOfWater, http://dbpedia.org/ontology/BodyOfWater]
 
 163	Give me all Danish movies.
 Focus: 	Danish movies
 Type: 	http://dbpedia.org/ontology/Film
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://schema.org/Movie, http://dbpedia.org/ontology/Film, http://schema.org/CreativeWork, http://dbpedia.org/ontology/Wikidata:Q11424]
 
 164	Give me all launch pads operated by NASA.
@@ -187,41 +221,49 @@ Type: 	http://dbpedia.org/ontology/Film
 165	Which instruments does Cat Stevens play?
 Focus: 	instruments
 Type: 	null
+Contains? 	false
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/Organisation, http://www.w3.org/2004/02/skos/core#Concept, http://schema.org/Organization, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson, http://dbpedia.org/ontology/Company, http://www.w3.org/2002/07/owl#Thing]
 
 166	Which ships were called after Benjamin Franklin?
 Focus: 	ships
 Type: 	http://dbpedia.org/ontology/Ship
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact, http://dbpedia.org/ontology/MeanOfTransportation, http://dbpedia.org/ontology/Ship, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://schema.org/Product]
 
 172	In which U.S. state is Fort Knox located?
 Focus: 	U.S. state
 Type: 	http://dbpedia.org/ontology/Country
+Contains? 	false
 [http://dbpedia.org/ontology/AdministrativeRegion, http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/Place, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/Region, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/AdministrativeArea]
 
 175	Which Chess players died in the same place they were born in?
 Focus: 	Chess players
 Type: 	http://dbpedia.org/ontology/ChessPlayer
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://dbpedia.org/ontology/Athlete, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://www.w3.org/2002/07/owl#Thing, http://xmlns.com/foaf/0.1/Person, http://dbpedia.org/ontology/ChessPlayer, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson]
 
 176	List the children of Margaret Thatcher.
 Focus: 	children
 Type: 	null
+Contains? 	false
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://www.w3.org/2002/07/owl#Thing, http://xmlns.com/foaf/0.1/Person, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson]
 
 18	Which museum exhibits The Scream by Munch?
 Focus: 	museum
 Type: 	http://dbpedia.org/ontology/Museum
+Contains? 	false
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://www.w3.org/2002/07/owl#Thing]
 
 181	Which books by Kerouac were published by Viking Press?
 Focus: 	books
 Type: 	http://dbpedia.org/ontology/Book
+Contains? 	true
 [http://purl.org/ontology/bibo/Book, http://dbpedia.org/ontology/WrittenWork, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://dbpedia.org/ontology/Book, http://schema.org/CreativeWork, http://schema.org/Book]
 
 182	Give me a list of all American inventions.
 Focus: 	American inventions
 Type: 	null
+Contains? 	false
 [http://dbpedia.org/ontology/Organisation, http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson, http://dbpedia.org/ontology/Company, http://www.w3.org/2002/07/owl#Thing, http://dbpedia.org/ontology/Software, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/Beverage, http://www.w3.org/2004/02/skos/core#Concept, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Game, http://dbpedia.org/ontology/Activity, http://dbpedia.org/ontology/ProgrammingLanguage, http://dbpedia.org/ontology/RecordLabel, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FunctionalSubstance, http://www.ontologydesignpatterns.org/ont/d0.owl#Activity, http://schema.org/CreativeWork, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Food, http://schema.org/Organization, http://schema.org/MusicGroup, http://dbpedia.org/ontology/Person, http://dbpedia.org/ontology/TelevisionShow, http://dbpedia.org/ontology/Work, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson, http://xmlns.com/foaf/0.1/Person]
 
 183	How high is the Mount Everest?
@@ -229,26 +271,31 @@ Type: 	null
 188	Which films starring Clint Eastwood did he direct himself?
 Focus: 	films
 Type: 	http://dbpedia.org/ontology/Film
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://schema.org/Movie, http://dbpedia.org/ontology/Film, http://schema.org/CreativeWork, http://dbpedia.org/ontology/Wikidata:Q11424]
 
 189	In which city was the former Dutch queen Juliana buried?
 Focus: 	city
 Type: 	http://dbpedia.org/ontology/City
+Contains? 	true
 [http://schema.org/City, http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/City, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/Settlement, http://dbpedia.org/ontology/PopulatedPlace]
 
 191	Which U.S. state has the abbreviation MN?
 Focus: 	U.S. state
 Type: 	http://dbpedia.org/ontology/Country
+Contains? 	false
 [http://dbpedia.org/ontology/AdministrativeRegion, http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/Place, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://dbpedia.org/ontology/Region, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/AdministrativeArea]
 
 192	Show me all songs from Bruce Springsteen released between 1980 and 1990.
 Focus: 	songs
 Type: 	http://dbpedia.org/ontology/Song
+Contains? 	true
 [http://schema.org/MusicRecording, http://dbpedia.org/ontology/Song, http://dbpedia.org/ontology/MusicalWork, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://schema.org/CreativeWork]
 
 193	Which movies did Kurosawa direct?
 Focus: 	movies
 Type: 	http://dbpedia.org/ontology/Film
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://schema.org/Movie, http://dbpedia.org/ontology/Film, http://schema.org/CreativeWork, http://dbpedia.org/ontology/Wikidata:Q11424]
 
 194	What is the founding year of the brewery that produces Pilsner Urquell?
@@ -258,11 +305,13 @@ Type: 	http://dbpedia.org/ontology/Film
 198	Which country does the creator of Miffy come from?
 Focus: 	country
 Type: 	http://dbpedia.org/ontology/Country
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/Place, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Wikidata:Q532, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://schema.org/Place, http://dbpedia.org/ontology/Country, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/Country]
 
 199	For which label did Elvis record his first album?
 Focus: 	label
 Type: 	null
+Contains? 	false
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/Organisation, http://dbpedia.org/ontology/RecordLabel, http://schema.org/Organization, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson, http://dbpedia.org/ontology/Company, http://www.w3.org/2002/07/owl#Thing]
 
 2	Give me the birthdays of all actors of the television show Charmed.
@@ -270,46 +319,55 @@ Type: 	null
 21	Which states border Illinois?
 Focus: 	states
 Type: 	http://dbpedia.org/ontology/Country
+Contains? 	false
 [http://dbpedia.org/ontology/AdministrativeRegion, http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://dbpedia.org/ontology/Region, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/AdministrativeArea]
 
 22	In which country is the Limerick Lake?
 Focus: 	country
 Type: 	http://dbpedia.org/ontology/Country
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/Place, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://dbpedia.org/ontology/Country, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/Country]
 
 23	Which television shows were created by John Cleese?
 Focus: 	television shows
 Type: 	http://dbpedia.org/ontology/TelevisionShow
+Contains? 	true
 [http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/TelevisionShow, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://schema.org/CreativeWork]
 
 25	In which films directed by Garry Marshall was Julia Roberts starring?
 Focus: 	films
 Type: 	http://dbpedia.org/ontology/Film
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://schema.org/Movie, http://dbpedia.org/ontology/Film, http://schema.org/CreativeWork, http://dbpedia.org/ontology/Wikidata:Q11424]
 
 26	Which bridges are of the same type as the Manhattan Bridge?
 Focus: 	bridges
 Type: 	http://dbpedia.org/ontology/Bridge
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/RouteOfTransportation, http://dbpedia.org/ontology/ArchitecturalStructure, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/Bridge, http://dbpedia.org/ontology/Infrastructure]
 
 28	Give me all communist countries.
 Focus: 	communist countries
 Type: 	http://dbpedia.org/ontology/Country
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://dbpedia.org/ontology/Country, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/Country]
 
 29	Which awards did Douglas Hofstadter win?
 Focus: 	awards
 Type: 	http://dbpedia.org/ontology/Award
+Contains? 	true
 [http://dbpedia.org/ontology/Award, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/Organisation, http://www.w3.org/2004/02/skos/core#Concept, http://schema.org/Organization, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson, http://www.w3.org/2002/07/owl#Thing]
 
 31	What is the currency of the Czech Republic?
 Focus: 	currency
 Type: 	http://dbpedia.org/ontology/Currency
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#UnitOfMeasure, http://dbpedia.org/ontology/Currency]
 
 32	Which countries adopted the Euro?
 Focus: 	countries
 Type: 	http://dbpedia.org/ontology/Country
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/Place, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/Country, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/Country]
 
 33	What is the area code of Berlin?
@@ -317,51 +375,61 @@ Type: 	http://dbpedia.org/ontology/Country
 36	Through which countries does the Yenisei river flow?
 Focus: 	countries
 Type: 	http://dbpedia.org/ontology/Country
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/Place, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Wikidata:Q532, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://schema.org/Place, http://dbpedia.org/ontology/Country, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/Country]
 
 38	Which monarchs were married to a German?
 Focus: 	monarchs
 Type: 	http://dbpedia.org/ontology/Monarch
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://dbpedia.org/ontology/Monarch, http://www.w3.org/2002/07/owl#Thing, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson, http://xmlns.com/foaf/0.1/Person]
 
 4	Which river does the Brooklyn Bridge cross?
 Focus: 	river
 Type: 	http://dbpedia.org/ontology/River
+Contains? 	true
 [http://schema.org/BodyOfWater, http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/Place, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Stream, http://dbpedia.org/ontology/River, http://dbpedia.org/ontology/NaturalPlace, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://dbpedia.org/ontology/BodyOfWater, http://schema.org/RiverBodyOfWater]
 
 41	Give me all soccer clubs in Spain.
 Focus: 	soccer clubs
 Type: 	http://dbpedia.org/ontology/SoccerClub
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/SportsTeam, http://dbpedia.org/ontology/Organisation, http://www.w3.org/2004/02/skos/core#Concept, http://schema.org/Organization, http://dbpedia.org/ontology/SoccerClub, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson, http://www.w3.org/2002/07/owl#Thing, http://schema.org/SportsTeam]
 
 42	What is the official language of Suriname?
 Focus: 	official language
 Type: 	http://dbpedia.org/ontology/Language
+Contains? 	true
 [http://www.w3.org/2004/02/skos/core#Concept, http://schema.org/Language, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Language]
 
 45	Which telecommunications organizations are located in Belgium?
 Focus: 	telecommunications organizations
 Type: 	http://dbpedia.org/ontology/Organisation
+Contains? 	false
 []
 
 49	Give me all companies in the advertising industry.
 Focus: 	companies
 Type: 	http://dbpedia.org/ontology/Company
+Contains? 	false
 []
 
 50	What did Bruce Carver die from?
 Focus: 	Bruce Carver
 Type: 	null
+Contains? 	false
 [http://dbpedia.org/ontology/Disease, http://www.w3.org/2004/02/skos/core#Concept, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation]
 
 52	Which presidents were born in 1945?
 Focus: 	presidents
 Type: 	http://dbpedia.org/ontology/President
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://schema.org/Person, http://dbpedia.org/ontology/Politician, http://wikidata.dbpedia.org/resource/Q5, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://dbpedia.org/ontology/President, http://www.w3.org/2002/07/owl#Thing, http://xmlns.com/foaf/0.1/Person, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson]
 
 53	Give me all federal chancellors of Germany.
 Focus: 	federal chancellors
 Type: 	http://dbpedia.org/ontology/Chancellor
+Contains? 	false
 [http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://dbpedia.org/ontology/Politician, http://dbpedia.org/ontology/President, http://www.w3.org/2002/07/owl#Thing, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://www.w3.org/2004/02/skos/core#Concept, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://dbpedia.org/ontology/OfficeHolder, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson, http://xmlns.com/foaf/0.1/Person]
 
 56	What is the official website of Tom Cruise?
@@ -369,116 +437,139 @@ Type: 	http://dbpedia.org/ontology/Chancellor
 57	List all episodes of the first season of the HBO television series The Sopranos.
 Focus: 	episodes
 Type: 	null
+Contains? 	false
 [http://schema.org/TVEpisode, http://dbpedia.org/ontology/TelevisionEpisode, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://schema.org/CreativeWork]
 
 59	Give me all people with first name Jimmy.
 Focus: 	people
 Type: 	null
+Contains? 	false
 [http://dbpedia.org/ontology/GridironFootballPlayer, http://www.w3.org/2002/07/owl#Thing, http://dbpedia.org/ontology/ComicsCreator, http://dbpedia.org/ontology/MotorsportRacer, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/MusicalArtist, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Comedian, http://dbpedia.org/ontology/Cricketer, http://dbpedia.org/ontology/DartsPlayer, http://dbpedia.org/ontology/OfficeHolder, http://dbpedia.org/ontology/BasketballPlayer, http://dbpedia.org/ontology/AmericanFootballPlayer, http://dbpedia.org/ontology/FormulaOneRacer, http://dbpedia.org/ontology/Athlete, http://dbpedia.org/ontology/Coach, http://dbpedia.org/ontology/AustralianRulesFootballPlayer, http://dbpedia.org/ontology/Presenter, http://dbpedia.org/ontology/Mayor, http://dbpedia.org/ontology/SpeedwayRider, http://dbpedia.org/ontology/SoccerPlayer, http://dbpedia.org/ontology/Cyclist, http://dbpedia.org/ontology/Journalist, http://dbpedia.org/ontology/Writer, http://xmlns.com/foaf/0.1/Person, http://dbpedia.org/ontology/SoccerManager, http://schema.org/Person, http://dbpedia.org/ontology/Judge, http://wikidata.dbpedia.org/resource/Q5, http://dbpedia.org/ontology/GaelicGamesPlayer, http://dbpedia.org/ontology/LacrossePlayer, http://dbpedia.org/ontology/Curler, http://dbpedia.org/ontology/Artist, http://dbpedia.org/ontology/Gymnast, http://dbpedia.org/ontology/MartialArtist, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/Swimmer, http://dbpedia.org/ontology/ScreenWriter, http://dbpedia.org/ontology/SportsManager, http://dbpedia.org/ontology/SnookerPlayer, http://dbpedia.org/ontology/Boxer, http://dbpedia.org/ontology/IceHockeyPlayer, http://dbpedia.org/ontology/MilitaryPerson, http://dbpedia.org/ontology/MemberOfParliament, http://dbpedia.org/ontology/VolleyballPlayer, http://dbpedia.org/ontology/Criminal, http://dbpedia.org/ontology/Actor, http://dbpedia.org/ontology/AmericanFootballCoach, http://dbpedia.org/ontology/Politician, http://dbpedia.org/ontology/Congressman, http://dbpedia.org/ontology/NascarDriver, http://dbpedia.org/ontology/MotorcycleRider, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Wrestler, http://dbpedia.org/ontology/RadioHost, http://dbpedia.org/ontology/BaseballPlayer, http://dbpedia.org/ontology/PokerPlayer, http://dbpedia.org/ontology/CollegeCoach, http://dbpedia.org/ontology/RugbyPlayer, http://schema.org/MusicGroup, http://dbpedia.org/ontology/Scientist, http://dbpedia.org/ontology/Person, http://dbpedia.org/ontology/TennisPlayer, http://dbpedia.org/ontology/GolfPlayer, http://dbpedia.org/ontology/RacingDriver, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson]
 
 6	In which city did John F. Kennedy die?
 Focus: 	city
 Type: 	http://dbpedia.org/ontology/City
+Contains? 	true
 [http://schema.org/City, http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/City, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://dbpedia.org/ontology/Settlement, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/PopulatedPlace]
 
 63	Give me all actors starring in Last Action Hero.
 Focus: 	actors
 Type: 	http://dbpedia.org/ontology/Actor
+Contains? 	false
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://schema.org/Person, http://www.w3.org/2004/02/skos/core#Concept, http://wikidata.dbpedia.org/resource/Q5, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://www.w3.org/2002/07/owl#Thing, http://dbpedia.org/ontology/OfficeHolder, http://xmlns.com/foaf/0.1/Person, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson]
 
 64	Which software has been developed by organizations founded in California?
 Focus: 	software
 Type: 	http://dbpedia.org/ontology/Software
+Contains? 	true
 [http://dbpedia.org/ontology/ProgrammingLanguage, http://dbpedia.org/ontology/VideoGame, http://www.w3.org/2004/02/skos/core#Concept, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://schema.org/CreativeWork, http://dbpedia.org/ontology/Software]
 
 65	Which companies work in the aerospace industry as well as in medicine?
 Focus: 	companies
 Type: 	http://dbpedia.org/ontology/Company
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/Organisation, http://schema.org/Organization, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson, http://dbpedia.org/ontology/Company, http://www.w3.org/2002/07/owl#Thing]
 
 68	Which actors were born in Germany?
 Focus: 	actors
 Type: 	http://dbpedia.org/ontology/Actor
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/Actor, http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://dbpedia.org/ontology/AdultActor, http://dbpedia.org/ontology/Artist, http://www.w3.org/2002/07/owl#Thing, http://xmlns.com/foaf/0.1/Person, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson]
 
 70	Give me all films produced by Hal Roach.
 Focus: 	films
 Type: 	http://dbpedia.org/ontology/Film
+Contains? 	true
 [http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://schema.org/Movie, http://dbpedia.org/ontology/Film, http://schema.org/CreativeWork, http://dbpedia.org/ontology/Wikidata:Q11424]
 
 71	Give me all video games published by Mean Hamster Software.
 Focus: 	video games
 Type: 	http://dbpedia.org/ontology/VideoGame
+Contains? 	true
 [http://dbpedia.org/ontology/VideoGame, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://schema.org/CreativeWork, http://dbpedia.org/ontology/Software]
 
 72	Which languages are spoken in Estonia?
 Focus: 	languages
 Type: 	http://dbpedia.org/ontology/Language
+Contains? 	true
 [http://www.w3.org/2004/02/skos/core#Concept, http://schema.org/Language, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Language]
 
 74	Which capitals in Europe were host cities of the summer olympic games?
 Focus: 	capitals
 Type: 	null
+Contains? 	false
 [http://schema.org/City, http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/City, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/Settlement, http://dbpedia.org/ontology/AdministrativeRegion, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/Region, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/AdministrativeArea]
 
 77	Which music albums contain the song Last Christmas?
 Focus: 	music albums
 Type: 	http://dbpedia.org/ontology/Album
+Contains? 	true
 [http://dbpedia.org/ontology/MusicalWork, http://wikidata.dbpedia.org/resource/Q482994, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://dbpedia.org/ontology/Album, http://schema.org/CreativeWork, http://schema.org/MusicAlbum]
 
 78	Give me all books written by Danielle Steel.
 Focus: 	books
 Type: 	http://dbpedia.org/ontology/Book
+Contains? 	true
 [http://purl.org/ontology/bibo/Book, http://dbpedia.org/ontology/WrittenWork, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://dbpedia.org/ontology/Book, http://dbpedia.org/ontology/Novel, http://schema.org/CreativeWork, http://schema.org/Book]
 
 79	Which airports are located in California, USA?
 Focus: 	airports
 Type: 	http://dbpedia.org/ontology/Airport
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/ArchitecturalStructure, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://schema.org/Airport, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/Airport, http://dbpedia.org/ontology/Infrastructure]
 
 8	Which states of Germany are governed by the Social Democratic Party?
 Focus: 	states
 Type: 	http://dbpedia.org/ontology/Country
+Contains? 	false
 [http://schema.org/City, http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/City, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/Settlement, http://dbpedia.org/ontology/AdministrativeRegion, http://www.w3.org/2004/02/skos/core#Concept, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/Region, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/AdministrativeArea]
 
 80	Give me all Canadian Grunge record labels.
 Focus: 	Canadian Grunge record labels
 Type: 	http://dbpedia.org/ontology/RecordLabel
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/Organisation, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/RecordLabel, http://schema.org/Organization, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson, http://dbpedia.org/ontology/Company, http://www.w3.org/2002/07/owl#Thing]
 
 82	In which programming language is GIMP written?
 Focus: 	programming language
 Type: 	http://dbpedia.org/ontology/ProgrammingLanguage
+Contains? 	true
 [http://dbpedia.org/ontology/ProgrammingLanguage, http://www.w3.org/2004/02/skos/core#Concept, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://schema.org/CreativeWork, http://dbpedia.org/ontology/Software]
 
 84	Give me all movies with Tom Cruise.
 Focus: 	movies
 Type: 	http://dbpedia.org/ontology/Film
+Contains? 	true
 [http://www.w3.org/2004/02/skos/core#Concept, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://schema.org/Movie, http://dbpedia.org/ontology/Film, http://schema.org/CreativeWork, http://dbpedia.org/ontology/Wikidata:Q11424]
 
 85	In which films did Julia Roberts as well as Richard Gere play?
 Focus: 	films
 Type: 	http://dbpedia.org/ontology/Film
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://schema.org/Movie, http://dbpedia.org/ontology/Film, http://schema.org/CreativeWork, http://dbpedia.org/ontology/Wikidata:Q11424]
 
 86	Give me all female given names.
 Focus: 	female given names
 Type: 	http://dbpedia.org/ontology/GivenName
+Contains? 	true
 [http://dbpedia.org/ontology/GivenName, http://dbpedia.org/ontology/Name, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity]
 
 89	Give me all soccer clubs in the Premier League.
 Focus: 	soccer clubs
 Type: 	http://dbpedia.org/ontology/SoccerClub
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/SportsTeam, http://dbpedia.org/ontology/Organisation, http://www.w3.org/2004/02/skos/core#Concept, http://schema.org/Organization, http://dbpedia.org/ontology/SoccerClub, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson, http://www.w3.org/2002/07/owl#Thing, http://schema.org/SportsTeam]
 
 9	In which U.S. state is Mount McKinley located?
 Focus: 	U.S. state
 Type: 	http://dbpedia.org/ontology/Country
+Contains? 	false
 [http://dbpedia.org/ontology/AdministrativeRegion, http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/Place, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/Region, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/AdministrativeArea]
 
 91	Which organizations were founded in 1930?
 Focus: 	organizations
 Type: 	http://dbpedia.org/ontology/Organisation
+Contains? 	true
 [http://dbpedia.org/ontology/Organisation, http://dbpedia.org/ontology/IceHockeyLeague, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson, http://dbpedia.org/ontology/Company, http://www.w3.org/2002/07/owl#Thing, http://schema.org/GovernmentOrganization, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/SoccerLeague, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/GovernmentAgency, http://dbpedia.org/ontology/School, http://dbpedia.org/ontology/CanadianFootballTeam, http://dbpedia.org/ontology/SportsLeague, http://dbpedia.org/ontology/BasketballTeam, http://dbpedia.org/ontology/PoliticalParty, http://dbpedia.org/ontology/HockeyTeam, http://dbpedia.org/ontology/LawFirm, http://dbpedia.org/ontology/BasketballLeague, http://dbpedia.org/ontology/RugbyClub, http://schema.org/School, http://dbpedia.org/ontology/Publisher, http://schema.org/SportsTeam, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/SportsTeam, http://dbpedia.org/ontology/Non-ProfitOrganisation, http://dbpedia.org/ontology/EducationalInstitution, http://schema.org/Organization, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://www.opengis.net/gml/_Feature, http://schema.org/EducationalOrganization]
 
 94	Which budget did the first movie of Zdenek Sverak have?
@@ -486,11 +577,13 @@ Type: 	http://dbpedia.org/ontology/Organisation
 99	Give me all animal species that live in the Amazon rainforest.
 Focus: 	animal species
 Type: 	http://dbpedia.org/ontology/Species
+Contains? 	false
 []
 
 249	In which studio did the Beatles record their first album?
 Focus: 	studio
 Type: 	null
+Contains? 	false
 []
 
 242	What is the official color of the University of Oxford?
@@ -498,11 +591,13 @@ Type: 	null
 235	To which artistic movement did the painter of The Three Dancers belong?
 Focus: 	artistic movement
 Type: 	null
+Contains? 	false
 [http://www.w3.org/2004/02/skos/core#Concept]
 
 211	Give me all animals that are extinct.
 Focus: 	animals
 Type: 	http://dbpedia.org/ontology/Animal
+Contains? 	true
 [http://dbpedia.org/ontology/Reptile, http://dbpedia.org/ontology/Eukaryote, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organism, http://dbpedia.org/ontology/Species, http://dbpedia.org/ontology/Mammal, http://dbpedia.org/ontology/Insect, http://dbpedia.org/ontology/Mollusca, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Crustacean, http://dbpedia.org/ontology/Animal, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/Fish, http://dbpedia.org/ontology/Bird, http://dbpedia.org/ontology/Amphibian]
 
 244	How deep is Lake Placid?
@@ -510,161 +605,193 @@ Type: 	http://dbpedia.org/ontology/Animal
 240	Give me the grandchildren of Bruce Lee.
 Focus: 	grandchildren
 Type: 	null
+Contains? 	false
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/Actor, http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://dbpedia.org/ontology/Artist, http://www.w3.org/2002/07/owl#Thing, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson, http://xmlns.com/foaf/0.1/Person]
 
 232	In which countries can you pay using the West African CFA franc?
 Focus: 	countries
 Type: 	http://dbpedia.org/ontology/Country
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/AdministrativeRegion, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/Country, http://dbpedia.org/ontology/Region, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/AdministrativeArea, http://schema.org/Country]
 
 225	What are the top-10 action role-playing video games according to IGN?
 Focus: 	top-10 action
 Type: 	http://dbpedia.org/ontology/Activity
+Contains? 	false
 [http://dbpedia.org/ontology/VideoGame, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://schema.org/CreativeWork, http://dbpedia.org/ontology/Software]
 
 241	Give me all writers that won the Nobel Prize in literature.
 Focus: 	writers
 Type: 	http://dbpedia.org/ontology/Writer
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://schema.org/Person, http://www.w3.org/2004/02/skos/core#Concept, http://wikidata.dbpedia.org/resource/Q5, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://dbpedia.org/ontology/Artist, http://www.w3.org/2002/07/owl#Thing, http://dbpedia.org/ontology/Writer, http://xmlns.com/foaf/0.1/Person, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson]
 
 201	Give me all taikonauts.
 Focus: 	taikonauts
 Type: 	null
+Contains? 	false
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://dbpedia.org/ontology/Astronaut, http://www.w3.org/2002/07/owl#Thing, http://xmlns.com/foaf/0.1/Person, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson]
 
 247	Give me all actors called Baldwin.
 Focus: 	actors
 Type: 	http://dbpedia.org/ontology/Actor
+Contains? 	true
 [http://dbpedia.org/ontology/Actor, http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://dbpedia.org/ontology/AdultActor, http://dbpedia.org/ontology/Artist, http://www.w3.org/2002/07/owl#Thing, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://www.w3.org/2004/02/skos/core#Concept, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://xmlns.com/foaf/0.1/Person, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson]
 
 208	Which rivers flow into a German lake?
 Focus: 	rivers
 Type: 	http://dbpedia.org/ontology/River
+Contains? 	true
 [http://schema.org/BodyOfWater, http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/Place, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Stream, http://dbpedia.org/ontology/River, http://dbpedia.org/ontology/NaturalPlace, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/BodyOfWater, http://schema.org/RiverBodyOfWater]
 
 246	Which rockets were launched from Baikonur?
 Focus: 	rockets
 Type: 	http://dbpedia.org/ontology/Rocket
+Contains? 	true
 [http://www.w3.org/2004/02/skos/core#Concept, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#DesignedArtifact, http://dbpedia.org/ontology/MeanOfTransportation, http://dbpedia.org/ontology/Rocket]
 
 236	Which pope succeeded John Paul II?
 Focus: 	pope
 Type: 	http://dbpedia.org/ontology/Pope
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/Pope, http://schema.org/Person, http://www.w3.org/2004/02/skos/core#Concept, http://wikidata.dbpedia.org/resource/Q5, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Cleric, http://dbpedia.org/ontology/Person, http://www.w3.org/2002/07/owl#Thing, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson, http://xmlns.com/foaf/0.1/Person]
 
 205	Give me all Dutch parties.
 Focus: 	Dutch parties
 Type: 	http://dbpedia.org/ontology/PoliticalParty
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/Organisation, http://schema.org/Organization, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson, http://dbpedia.org/ontology/PoliticalParty, http://www.w3.org/2002/07/owl#Thing]
 
 243	Give me all Swedish oceanographers.
 Focus: 	Swedish oceanographers
 Type: 	null
+Contains? 	false
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://dbpedia.org/ontology/Scientist, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://www.w3.org/2002/07/owl#Thing, http://xmlns.com/foaf/0.1/Person, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson]
 
 226	Give me all actors who were born in Berlin.
 Focus: 	actors
 Type: 	http://dbpedia.org/ontology/Actor
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/Actor, http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://dbpedia.org/ontology/AdultActor, http://dbpedia.org/ontology/Artist, http://www.w3.org/2002/07/owl#Thing, http://xmlns.com/foaf/0.1/Person, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson]
 
 237	What was the last movie with Alec Guinness?
 Focus: 	last movie
 Type: 	http://dbpedia.org/ontology/Film
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://schema.org/Movie, http://dbpedia.org/ontology/Film, http://schema.org/CreativeWork, http://dbpedia.org/ontology/Wikidata:Q11424]
 
 248	What does IYCM stand for?
 Focus: 	IYCM
 Type: 	null
+Contains? 	false
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/Organisation, http://schema.org/Organization, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson, http://www.w3.org/2002/07/owl#Thing]
 
 233	Give me the capitals of all countries that the Himalayas run through.
 Focus: 	capitals
 Type: 	null
+Contains? 	false
 [http://schema.org/City, http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/City, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/Settlement, http://dbpedia.org/ontology/PopulatedPlace]
 
 239	Which actor played Chewbacca?
 Focus: 	actor
 Type: 	http://dbpedia.org/ontology/Actor
+Contains? 	false
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://www.w3.org/2002/07/owl#Thing, http://xmlns.com/foaf/0.1/Person, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson]
 
 213	Which ingredients do I need for carrot cake?
 Focus: 	ingredients
 Type: 	null
+Contains? 	false
 [http://dbpedia.org/ontology/Plant, http://dbpedia.org/ontology/Food, http://dbpedia.org/ontology/Eukaryote, http://www.w3.org/2004/02/skos/core#Concept, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organism, http://dbpedia.org/ontology/Species, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FunctionalSubstance]
 
 229	Give me all Australian metalcore bands.
 Focus: 	Australian metalcore bands
 Type: 	http://dbpedia.org/ontology/Band
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/Organisation, http://schema.org/Organization, http://schema.org/MusicGroup, http://dbpedia.org/ontology/Band, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson, http://www.w3.org/2002/07/owl#Thing]
 
 227	Give me all actors who were born in Paris after 1950.
 Focus: 	actors
 Type: 	http://dbpedia.org/ontology/Actor
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/Actor, http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://dbpedia.org/ontology/AdultActor, http://dbpedia.org/ontology/Artist, http://www.w3.org/2002/07/owl#Thing, http://xmlns.com/foaf/0.1/Person, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson]
 
 252	Give all swimmers that were born in Moscow.
 Focus: 	swimmers
 Type: 	http://dbpedia.org/ontology/Swimmer
+Contains? 	true
 [http://dbpedia.org/ontology/Swimmer, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://dbpedia.org/ontology/Athlete, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://www.w3.org/2002/07/owl#Thing, http://xmlns.com/foaf/0.1/Person, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson]
 
 254	Show me the book that Muhammad Ali wrote.
 Focus: 	book
 Type: 	http://dbpedia.org/ontology/Book
+Contains? 	true
 [http://purl.org/ontology/bibo/Book, http://dbpedia.org/ontology/WrittenWork, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://dbpedia.org/ontology/Book, http://schema.org/CreativeWork, http://schema.org/Book]
 
 255	Which museums does Paris have?
 Focus: 	museums
 Type: 	http://dbpedia.org/ontology/Museum
+Contains? 	true
 [http://dbpedia.org/ontology/Building, http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/ArchitecturalStructure, http://dbpedia.org/ontology/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://schema.org/Museum, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/Museum]
 
 258	Give me all the TV shows with Neil Patrick Harris.
 Focus: 	TV
 Type: 	null
+Contains? 	false
 [http://dbpedia.org/ontology/TelevisionShow, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://schema.org/CreativeWork]
 
 260	Show a list of soccer clubs that play in the Bundesliga.
 Focus: 	soccer clubs
 Type: 	http://dbpedia.org/ontology/SoccerClub
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/SportsTeam, http://dbpedia.org/ontology/Organisation, http://www.w3.org/2004/02/skos/core#Concept, http://schema.org/Organization, http://dbpedia.org/ontology/SoccerClub, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson, http://www.w3.org/2002/07/owl#Thing, http://schema.org/SportsTeam]
 
 261	What country is Mount Everest in?
 Focus: 	country
 Type: 	http://dbpedia.org/ontology/Country
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/Wikidata:Q532, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://schema.org/Place, http://dbpedia.org/ontology/Country, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/Country]
 
 263	Which programming languages influenced Javascript?
 Focus: 	programming languages
 Type: 	http://dbpedia.org/ontology/ProgrammingLanguage
+Contains? 	true
 [http://dbpedia.org/ontology/ProgrammingLanguage, http://www.w3.org/2004/02/skos/core#Concept, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://schema.org/CreativeWork, http://dbpedia.org/ontology/Software]
 
 265	List all the musicals with music by Elton John.
 Focus: 	musicals
 Type: 	http://dbpedia.org/ontology/Musical
+Contains? 	true
 [http://dbpedia.org/ontology/Musical, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://schema.org/CreativeWork]
 
 266	Show me all the breweries in Australia.
 Focus: 	breweries
 Type: 	http://dbpedia.org/ontology/Brewery
+Contains? 	true
 [http://schema.org/City, http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/City, http://dbpedia.org/ontology/Organisation, http://dbpedia.org/ontology/Place, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson, http://dbpedia.org/ontology/Company, http://dbpedia.org/ontology/Settlement, http://www.w3.org/2002/07/owl#Thing, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/AdministrativeRegion, http://dbpedia.org/ontology/Brewery, http://www.w3.org/2004/02/skos/core#Concept, http://schema.org/Organization, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/Region, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/AdministrativeArea]
 
 273	Which bridges cross the Seine?
 Focus: 	bridges
 Type: 	http://dbpedia.org/ontology/Bridge
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/RouteOfTransportation, http://dbpedia.org/ontology/ArchitecturalStructure, http://dbpedia.org/ontology/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/Bridge, http://dbpedia.org/ontology/Infrastructure]
 
 276	What is the location of the Houses of Parliament?
 Focus: 	location
 Type: 	null
+Contains? 	false
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://dbpedia.org/ontology/Country, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/Country]
 
 277	Show me all English Gothic buildings in Kent.
 Focus: 	English Gothic buildings
 Type: 	http://dbpedia.org/ontology/Building
+Contains? 	true
 [http://dbpedia.org/ontology/Building, http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/ArchitecturalStructure, http://schema.org/LandmarksOrHistoricalBuildings, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/HistoricBuilding]
 
 279	What airlines are part of the SkyTeam alliance?
 Focus: 	airlines
 Type: 	http://dbpedia.org/ontology/Airline
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://dbpedia.org/ontology/Organisation, http://www.w3.org/2004/02/skos/core#Concept, http://schema.org/Organization, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson, http://dbpedia.org/ontology/Company, http://www.w3.org/2002/07/owl#Thing, http://dbpedia.org/ontology/Airline]
 
 280	What is the total population of Melbourne, Florida?
@@ -672,6 +799,7 @@ Type: 	http://dbpedia.org/ontology/Airline
 281	Which airports does Air China serve?
 Focus: 	airports
 Type: 	http://dbpedia.org/ontology/Airport
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/ArchitecturalStructure, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://schema.org/Airport, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/Airport, http://dbpedia.org/ontology/Infrastructure]
 
 282	In which year was Rachel Stevens born?
@@ -679,40 +807,48 @@ Type: 	http://dbpedia.org/ontology/Airport
 285	Which scientist is known for the Manhattan Project and the Nobel Peace Prize?
 Focus: 	scientist
 Type: 	http://dbpedia.org/ontology/Scientist
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://dbpedia.org/ontology/Scientist, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://www.w3.org/2002/07/owl#Thing, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson, http://xmlns.com/foaf/0.1/Person]
 
 287	Which beer originated in Ireland?
 Focus: 	beer
 Type: 	null
+Contains? 	false
 [http://dbpedia.org/ontology/Food, http://dbpedia.org/ontology/Beverage, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FunctionalSubstance]
 
 288	What are the specialities of the UNC Health Care?
 Focus: 	specialities
 Type: 	null
+Contains? 	false
 [http://dbpedia.org/ontology/Disease, http://www.w3.org/2004/02/skos/core#Concept, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation]
 
 290	From which region is the Melon de Bourgogne?
 Focus: 	region
 Type: 	http://dbpedia.org/ontology/Region
+Contains? 	true
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/WineRegion, http://dbpedia.org/ontology/Settlement, http://dbpedia.org/ontology/AdministrativeRegion, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing, http://dbpedia.org/ontology/Region, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/PopulatedPlace, http://schema.org/AdministrativeArea]
 
 293	Give me English actors starring in Lovesick.
 Focus: 	English actors
 Type: 	http://dbpedia.org/ontology/Actor
+Contains? 	false
 [http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent, http://dbpedia.org/ontology/Agent, http://schema.org/Person, http://wikidata.dbpedia.org/resource/Q5, http://wikidata.dbpedia.org/resource/Q215627, http://dbpedia.org/ontology/Person, http://www.w3.org/2002/07/owl#Thing, http://xmlns.com/foaf/0.1/Person, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson]
 
 294	Give me all types of eating disorders.
 Focus: 	types
 Type: 	http://dbpedia.org/ontology/Case
+Contains? 	false
 [http://dbpedia.org/ontology/Food, http://purl.org/ontology/bibo/Book, http://dbpedia.org/ontology/Disease, http://dbpedia.org/ontology/WrittenWork, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity, http://dbpedia.org/ontology/Work, http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#FunctionalSubstance, http://dbpedia.org/ontology/Book, http://schema.org/CreativeWork, http://schema.org/Book]
 
 299	What is the timezone in San Pedro de Atacama?
 Focus: 	timezone
 Type: 	null
+Contains? 	false
 []
 
 300	In which city does the Chile Route 68 end?
 Focus: 	city
 Type: 	http://dbpedia.org/ontology/City
+Contains? 	false
 [http://www.ontologydesignpatterns.org/ont/d0.owl#Location, http://www.w3.org/2004/02/skos/core#Concept, http://dbpedia.org/ontology/Place, http://dbpedia.org/ontology/Wikidata:Q532, http://schema.org/Place, http://dbpedia.org/ontology/Settlement, http://www.opengis.net/gml/_Feature, http://dbpedia.org/ontology/PopulatedPlace]
 
