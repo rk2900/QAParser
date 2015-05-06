@@ -1,6 +1,7 @@
 package paser;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.LinkedList;
 
 import type.Type;
@@ -34,15 +35,25 @@ public class FocusConstraint {
 	public static void main(String[] args) {
 		Pipeline pipeline = new Pipeline();
 		Main.setEntity(pipeline);
-		Answer answer = Main.getAnswer(pipeline, 2);
-		ArrayList<Predicate> predicates = answer.predictList;
-		
-		QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithId(271);
-		
-		String s = "http://dbpedia.org/resource/Beijing";
-		String typeUri = Type.getType("country");
-		if(typeUri != null) {
-			System.out.println(ClientManagement.getPredicateType(s, typeUri));
+		LinkedList<QuestionFrame> resourceQuestions = pipeline.resource;
+		for (QuestionFrame questionFrame : resourceQuestions) {
+			System.out.println(questionFrame.id+"\t"+questionFrame.question);
+			Focus focus = questionFrame.focus;
+			if(!focus.isEmpty()) {
+				String focusString = focus.getFocusContent(questionFrame.wordList);
+				System.out.println("Focus: "+"\t"+focusString);
+				String typeUri = Type.getTypeFromFocus(focusString);
+				System.out.println("Type: "+"\t"+typeUri);
+				ArrayList<String> answers = questionFrame.answers;
+				HashSet<String> typeSet = new HashSet<>();
+				for (String answer : answers) {
+					System.err.println(answer);
+					if(!typeSet.addAll(ClientManagement.getResourceType(answer)))
+						System.err.println("ADD ERROR");
+				}
+				System.out.println(typeSet);
+			}
+			System.out.println();
 		}
 		
 	}
