@@ -1,0 +1,37 @@
+共24题
+其中 正确的有10题
+直接拿到整型结果正确 8题
+count结果正确 1题
+out of scope题我们没有拿到限制 1题
+
+统计
+直接拿到结果的题
+12题
+正确 8题
+错误 1题
+其它原因 尚未处理 3题
+
+count的题
+11题
+正确 1题
+错误 6题
+其它原因 尚未处理 4题
+
+具体分析
+直接能拿到整型的结果中
+97题out of scope， 我们得到一个不正确的integer
+104 应该1条限制 我们2条限制 是由于两个实体错误（不需要count的题）
+185 应该2条限制 我们2条限制 暂未处理（不需要count）
+73 How many Aldi stores are there？ 我们没有抽出限制（不需要count）
+
+count题中
+88,202 需要加类型限制，不加的话会出错
+173 需要主语谓语宾语的顺序确定 否则会多出来数目
+76,284 需要count的谓语没有排在第一位，同时284限制条件缺少（应该是多对1）
+250 out of scope 我们返回了一个count结果
+
+5（需要count），238 （需要count）应该1条限制 我们0条限制 涉及到yago type
+204（需要count），269（需要count） 实体size 限制size 均为0 How many programming languages are there？ How many arilines are there？
+
+
+
