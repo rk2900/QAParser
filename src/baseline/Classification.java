@@ -136,7 +136,7 @@ public class Classification {
 //		}
 //		OutputRedirector.closeFileOutput();
 		
-		OutputRedirector.openFileOutput("./data/zch_classification/resource/resource-basic-addTypeScore.txt");
+		OutputRedirector.openFileOutput("./data/zch_classification/resource/resource-basic-addTypeScore-1-0-5.txt");
 		LinkedList<QuestionFrame> resourceQF = pipeline.resource;
 		System.err.println(resourceQF.size());
 		int originalNum = SimilarityFunction.predictNum;
@@ -148,7 +148,10 @@ public class Classification {
 			if(!answer.isException()){
 				System.out.println(answer.print().toString());
 			}
-			System.err.println(count + " finished.*****");
+			System.err.println(count + " finished.*****" + qf.id);
+//			if(count == 5){
+//				break;
+//			}
 		}
 		SimilarityFunction.predictNum = originalNum;
 		OutputRedirector.closeFileOutput();
