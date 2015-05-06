@@ -189,14 +189,14 @@ public class SimilarityFunction {
 		case 3:
 			predictUriList = ClientManagement.getPredicateWho(entityUri);
 			break;
-		case 5:
-			if(focusString.length() > 0) {
-				String typeUri = Type.getType(focusString);
-				predictUriList = ClientManagement.getPredicateType(entityUri, typeUri);
-			}else{
-				predictUriList = ClientManagement.getSurroundingPred(entityUri);
-			}
-			break;
+//		case 5:
+//			if(focusString.length() > 0) {
+//				String typeUri = Type.getType(focusString);
+//				predictUriList = ClientManagement.getPredicateType(entityUri, typeUri);
+//			}else{
+//				predictUriList = ClientManagement.getSurroundingPred(entityUri);
+//			}
+//			break;
 		default:
 			predictUriList = ClientManagement.getSurroundingPred(entityUri);
 			break;
