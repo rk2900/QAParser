@@ -1,6 +1,5 @@
 package entityLinking.db;
 
-import java.net.URLEncoder;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -42,7 +41,31 @@ public class entityDB {
 		}
 	}
 	
-	public void insertSpotlight(
+	public void insertSpotlight1(
+			int questionID, int startIndex, int endIndex, 
+			String candTitle, String candUri, int support,
+			double finalScore, double priorScore, double contextualScore,
+			double percentageOfSecondRank, String types){
+		try {
+			PreparedStatement stat = conn.prepareStatement(
+					"INSERT INTO `spotlight1`(`questionID`, `startIndex`,`endIndex`,`candTitle`,`candUri`,`support`,`finalScore`,`priorScore`,`contextualScore`,`percentageOfSecondRank`,`types`) VALUES (?,?,?,?,?,?,?,?,?,?,?)");
+			stat.setInt(1, questionID);
+			stat.setInt(2, startIndex);
+			stat.setInt(3, endIndex);
+			stat.setString(4, candTitle);
+			stat.setString(5, candUri);
+			stat.setInt(6, support);
+			stat.setDouble(7, finalScore);
+			stat.setDouble(8, priorScore);
+			stat.setDouble(9, contextualScore);
+			stat.setDouble(10, percentageOfSecondRank);
+			stat.setString(11, types);
+			stat.executeUpdate();
+		} catch (Exception ex) {
+		}
+	}
+	
+	public void insertSpotlight2(
 			int questionID, int startIndex, int endIndex, 
 			String candTitle, String candUri, int support,
 			double finalScore, double priorScore, double contextualScore,
@@ -161,7 +184,6 @@ public class entityDB {
 		} catch (Exception e) {}
 		return res;
 	}
-	
 	
 	public static void main(String[] args) {
 

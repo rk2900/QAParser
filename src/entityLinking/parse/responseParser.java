@@ -9,195 +9,197 @@ import org.json.JSONObject;
 
 import entityLinking.client.entityClient;
 import entityLinking.client.entityClientConst;
+import entityLinking.db.entityDB;
 import basic.FileOps;
 
 public class responseParser {
+	
+	private entityDB db;
+	public responseParser(String dbName){
+		db = new entityDB(dbName);
+	}
+	
+	public void loadMiner(int id,String response) {
+		int questionID = id;
+		int startIndex;
+		int endIndex;
+		int candID;
+		String candTitle;
+		double weight;
 
-	public static ArrayList<entity> spotlight(String response) throws JSONException{
-		ArrayList<entity> list = new ArrayList<entity>();
 		JSONObject responseJson = null;
 		JSONArray spots = null;
-		responseJson = new JSONObject(response);
-		
-		if(!responseJson.has("Resources")){
-			return list;
-		}
-		
-		spots = responseJson.getJSONArray("Resources");
-		
-		for(int i=0; i<spots.length(); ++i){
-			JSONObject spot = spots.getJSONObject(i);
-			String name = spot.getString("@URI").substring(28);
-			int start = Integer.parseInt(spot.getString("@offset"));
-			String mention = spot.getString("@surfaceForm");
-			int end = start + mention.length();
-			list.add(new entity(name, start, end, mention));
-//			System.out.println(name+"\t"+start+"\t"+end+"\t"+mention);
-		}
-		return list;
-	}
-	
-	public static ArrayList<entity> miner(String response) throws JSONException{
-		ArrayList<entity> list = new ArrayList<entity>();
-		JSONObject responseJson = null;
-		JSONArray spots = null;
-		responseJson = new JSONObject(response);
-		
-		if(!responseJson.has("detectedTopics")){
-			return list;
-		}
-		spots = responseJson.getJSONArray("detectedTopics");
-		String question = responseJson.getJSONObject("request").getString("source");
-		for(int i=0; i<spots.length(); ++i){
-			JSONObject spot = spots.getJSONObject(i);
-			String name = spot.getString("title");
-			int start = spot.getJSONArray("references").getJSONObject(0).getInt("start");
-			int end = spot.getJSONArray("references").getJSONObject(0).getInt("end");
-			String mention = question.substring(start, end);
-			list.add(new entity(name, start, end, mention));
-//			System.out.println(name+"\t"+start+"\t"+end+"\t"+mention);
-		}
-		return list;
-	}
-	
-	public static ArrayList<entity> tagme(String response) throws JSONException{
-		ArrayList<entity> list = new ArrayList<entity>();
-		JSONObject responseJson = null;
-		JSONArray spots = null;
-		responseJson = new JSONObject(response);
-		
-		if(!responseJson.has("annotations")){
-			return list;
-		}
-		spots = responseJson.getJSONArray("annotations");
-		for(int i=0; i<spots.length(); ++i){
-			JSONObject spot = spots.getJSONObject(i);
-			String name = spot.getString("title");
-			int start = spot.getInt("start");
-			int end = spot.getInt("end");
-			String mention = spot.getString("spot");
-			list.add(new entity(name, start, end, mention));
-//			System.out.println(name+"\t"+start+"\t"+end+"\t"+mention);
-		}
-		return list;
-	}
-	
-	public static ArrayList<entity> dexter(String response) throws JSONException{
-		ArrayList<entity> list = new ArrayList<entity>();
-		JSONObject responseJson = null;
-		JSONArray spots = null;
-		responseJson = new JSONObject(response);
-		
-		if(!responseJson.has("spots")){
-			return list;
-		}
-		spots = responseJson.getJSONArray("spots");
-		entityClient dexAnnotation = new entityClient();
-		for(int i=0; i<spots.length(); ++i){
-			JSONObject spot = spots.getJSONObject(i);
-			int id = spot.getInt("entity");
-			int start = spot.getInt("start");
-			int end = spot.getInt("end");
-			String mention = spot.getString("mention");
-			
-			String idResponse = dexAnnotation.queryResult(entityClientConst.dexterURI2ID + id);
-			JSONObject idJson = new JSONObject(idResponse);
-			String name = idJson.getString("title");
-			list.add(new entity(name, start, end, mention));
-//			System.out.println(name+"\t"+start+"\t"+end+"\t"+mention);
-		}
-		return list;
-	}
-	
-	public static void main(String[] args) throws JSONException {
-		// TODO Auto-generated method stub
+		try {
+			responseJson = new JSONObject(response);
+			if (!responseJson.has("detectedTopics")) {
+				System.err.println(id + ": no detectedTopics");
+				return;
+			}
+			spots = responseJson.getJSONArray("detectedTopics");
+			for (int j = 0; j < spots.length(); ++j) {
+				JSONObject spot = spots.getJSONObject(j);
+				candID = spot.getInt("id");
+				candTitle = spot.getString("title");
+				weight = spot.getDouble("weight");
 
-		String path = "./entity/";
-		String spotlight = path + "spotlight/";
-		String miner = path + "minerLinking/";
-		String tagme = path + "tagmeLinking/";
-		String dexter = path + "dexter2/";
-		
-		String result = path + "LinkingResult/";
-		
-		LinkedList<String> texts = FileOps.LoadFilebyLine("./train/questions");
-		for(int i=1; i<=300; ++i){
-			String filename = spotlight + i +".txt";
-			String response = FileOps.LoadFile(filename);
-			ArrayList<entity> Dbpedia = spotlight(response);
-			
-			filename = miner + i +".txt";
-			response = FileOps.LoadFile(filename);
-			ArrayList<entity> Wikipediaminer = miner(response);
-			
-			filename = tagme + i +".txt";
-			response = FileOps.LoadFile(filename);
-			ArrayList<entity> Tagme = tagme(response);
-			
-			filename = dexter + i +".txt";
-			response = FileOps.LoadFile(filename);
-			ArrayList<entity> Dexter = dexter(response);
-			
-			StringBuilder sb = new StringBuilder();
-			sb.append(texts.get(i-1));
-			sb.append("\n\n");
-			
-			sb.append("DBpedia Spotlight:\n");
-			for (entity e : Dbpedia) {
-				sb.append(e.getMention());
-				sb.append("\t");
-				sb.append(e.getStart());
-				sb.append("\t");
-				sb.append(e.getEnd());
-				sb.append("\t");
-				sb.append(e.getName());
-				sb.append("\n");
-			}	
-			sb.append("\n");
-			sb.append("Wikipedia Miner:\n");
-			for (entity e : Wikipediaminer) {
-				sb.append(e.getMention());
-				sb.append("\t");
-				sb.append(e.getStart());
-				sb.append("\t");
-				sb.append(e.getEnd());
-				sb.append("\t");
-				sb.append(e.getName());
-				sb.append("\n");
+				JSONArray referArray = spot.getJSONArray("references");
+				for (int c = 0; c < referArray.length(); ++c) {
+					JSONObject refer = referArray.getJSONObject(c);
+					startIndex = refer.getInt("start");
+					endIndex = refer.getInt("end");
+
+//					db.insertMiner(questionID, startIndex, endIndex,
+//							candID, candTitle, weight);
+					System.err.println(questionID+" "+startIndex+" "+endIndex+" "+candID+" "+candTitle+" "+weight);
+				}
 			}
-			sb.append("\n");
-			sb.append("Dexter2:\n");
-			for (entity e : Dexter) {
-				sb.append(e.getMention());
-				sb.append("\t");
-				sb.append(e.getStart());
-				sb.append("\t");
-				sb.append(e.getEnd());
-				sb.append("\t");
-				sb.append(e.getName());
-				sb.append("\n");
-			}
-			sb.append("\n");
-			sb.append("TagMe:\n");
-			for (entity e : Tagme) {
-				sb.append(e.getMention());
-				sb.append("\t");
-				sb.append(e.getStart());
-				sb.append("\t");
-				sb.append(e.getEnd());
-				sb.append("\t");
-				sb.append(e.getName());
-				sb.append("\n");
-			}
-			sb.append("\n");
-			
-			FileOps.SaveFile(result+i+".txt", sb.toString());
-//			if(i==2){
-//				break;
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+	}
+
+//	public void loadSpotlight() {
+//
+//		for (int i = 1; i <= 300; ++i) {
+//			System.out.println(i + " start loading...");
+//			String filename = path + i + ".txt";
+//			String response = FileOps.LoadFile(filename);
+//
+//			int questionID = i;
+//			int startIndex;
+//			int endIndex;
+//			String candTitle;
+//			String candUri;
+//			int support;
+//			double finalScore;
+//			double priorScore;
+//			double contextualScore;
+//			double percentageOfSecondRank;
+//			String types;
+//
+//			JSONObject responseJson = null;
+//			JSONArray spots = null;
+//			try {
+//				responseJson = new JSONObject(response).getJSONObject("annotation");
+//				if (!responseJson.has("surfaceForm")) {
+//					continue;
+//				}
+//				JSONObject spotsObject = responseJson.optJSONObject("surfaceForm");
+//				if(spotsObject != null){
+//					spots = new JSONArray();
+//					spots.put(spotsObject);
+//				}else{
+//					spots = responseJson.getJSONArray("surfaceForm");
+//				}
+//				
+//				for (int j = 0; j < spots.length(); ++j) {
+//					JSONObject spot = spots.getJSONObject(j);
+//					startIndex = Integer.parseInt(spot.getString("@offset"));
+//					String name = spot.getString("@name");
+//					endIndex = startIndex + name.length();
+//					
+//					if(!spot.has("resource")){
+//						continue;
+//					}
+//					
+//					JSONArray resources = null;
+//					JSONObject resourceObject = spot.optJSONObject("resource");
+//					if(resourceObject != null){
+//						resources = new JSONArray();
+//						resources.put(resourceObject);
+//					}else{
+//						resources = spot.getJSONArray("resource");
+//						for (int c = 0; c < resources.length(); ++c) {
+//							JSONObject resource = resources.getJSONObject(c);
+//							candTitle = resource.getString("@label");
+//							candUri = resource.getString("@uri");
+//							contextualScore = resource.getDouble("@contextualScore");
+//							support = resource.getInt("@support");
+//							finalScore = resource.getDouble("@finalScore");
+//							priorScore = resource.getDouble("@priorScore");
+//							percentageOfSecondRank = resource.getDouble("@percentageOfSecondRank");
+//							types = resource.getString("@types");
+//							db.insertSpotlight(questionID, startIndex, endIndex, candTitle, candUri, support, finalScore, priorScore, contextualScore, percentageOfSecondRank, types);
+//						}
+//					}
+//				}
+//			} catch (JSONException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
 //			}
-			
-			
-		}
-	}
+//
+//		}
+//		System.out.println("finished");
+//	}
+//
+//	/**
+//	 * 
+//	 */
+//	public void loadDexter() {
+//		System.out.println("dexter result loading...");
+//		String path = "./entity/dexter2/";
+//		
+//		Annotation annotation = new Annotation();
+//
+//		for (int i = 1; i <= 300; ++i) {
+//			System.out.println(i + " start loading...");
+//			String filename = path + i + ".txt";
+//			String response = FileOps.LoadFile(filename);
+//
+//			int questionID = i;
+//			int startIndex;
+//			int endIndex;
+//			int candID;
+//			String candTitle;
+//			String candUri;
+//			String candDescription;
+//			double linkProbability;
+//			double commonness;
+//			int linkFrequency;
+//			int documentFrequency;
+//			int entityFrequency;
+//
+//			JSONObject responseJson = null;
+//			JSONObject spots = null;
+//			try {
+//				responseJson = new JSONObject(response);
+//				if (!responseJson.has("entities")) {
+//					continue;
+//				}
+//				spots = responseJson.getJSONObject("entities");
+//				Iterator<String> keys = spots.keys(); 
+//				
+//				while(keys.hasNext()){
+//					String key = keys.next();
+//					candID = Integer.parseInt(key);
+//					String idResponse = annotation.queryResult(AnnotationConst.dexterURI2ID + candID);
+//					JSONObject idRes = new JSONObject(idResponse);
+//					candDescription = idRes.getString("description");
+//					candUri = idRes.getString("url").substring(28);
+//					candTitle = idRes.getString("title");
+//					
+//					
+//					JSONArray spot = spots.getJSONArray(key);
+//					for(int c=0; c<spot.length(); ++c){
+//						JSONObject current = spot.getJSONObject(c);
+//						linkProbability = current.getDouble("linkProbability");
+//						startIndex = current.getInt("start");
+//						endIndex = current.getInt("end");
+//						linkFrequency = current.getInt("linkFrequency");
+//						documentFrequency = current.getInt("documentFrequency");
+//						entityFrequency = current.getInt("entityFrequency");
+//						commonness = current.getDouble("commonness");
+//						
+//						db.insertDexter(questionID, startIndex, endIndex, linkProbability, linkFrequency, documentFrequency, entityFrequency, commonness, candID, candTitle, candUri, candDescription);
+//					}
+//					
+//				}
+//			} catch (JSONException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//
+//		}
+//	}
 
 }
