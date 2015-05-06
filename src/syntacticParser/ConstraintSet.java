@@ -36,9 +36,9 @@ public class ConstraintSet {
 		ConstraintSet cs=new ConstraintSet();
 		Tree tree=stringParser.parse(question);
 		constraintExtractor.extract(qf,tree,tree,cs.ans,cs);
-		for (Constraint l:cs.list) {
-			l.left.POS(cs);
-			l.right.POS(cs);
+		for (int i=0;i<cs.list.size();i++) {
+			cs.list.get(i).left.POS(cs);
+			cs.list.get(i).right.POS(cs);
 		}
 		cs.transform(qf.wordList);
 		return cs;

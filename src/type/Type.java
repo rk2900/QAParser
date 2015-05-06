@@ -48,19 +48,20 @@ public class Type {
 		}
 		return ans;
 	}
-	public static String getType(String str) {
+	public static List<String> getType(String str) {
 		String tmp=lemma(str);
+		List<String> ret=new ArrayList<String>();
 		for (int i=0;i<type.labellist.size();i++) {
 			if(tmp.toLowerCase().replace(" ", "").equals(lemma(type.labellist.get(i)).toLowerCase().replace(" ", ""))||WordNet.isSynset(tmp, type.labellist.get(i))) {
-				return type.ontolist.get(i);
+				ret.add(type.ontolist.get(i));
 			}
 		}
-		return null;
+		return ret;
 	}
-	public static String getTypeFromFocus(String str) {
+	public static List<String> getTypeFromFocus(String str) {
 		while(true) {
-			String tmp=getType(str);
-			if(tmp!=null) return tmp;
+			List<String> tmp=getType(str);
+			if(tmp.size()!=0) return tmp;
 			int index=str.indexOf(' ');
 			if(index==-1) break;
 			str=str.substring(index+1,str.length());
