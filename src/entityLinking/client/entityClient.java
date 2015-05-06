@@ -46,7 +46,7 @@ public class entityClient {
 		return responseBody;
 	}
 	
-	private static String queryBuilder(String content, TOOLKIT toolkit){
+	public static String queryAPI(String content, TOOLKIT toolkit){
 		StringBuilder query = new StringBuilder();
 		try {
 			switch (toolkit) {
@@ -55,26 +55,40 @@ public class entityClient {
 				query.append(URLEncoder.encode(content,"UTF-8"));
 				query.append(entityClientConst.minerParas);
 				break;
+			case DEXTER:
+				query.append(entityClientConst.dexter);
+				query.append(URLEncoder.encode(content,"UTF-8"));
+				query.append(entityClientConst.dexterParas);
+				break;
+			case SPOTLIGHT1:
+				query.append(entityClientConst.spotlight1);
+				query.append(URLEncoder.encode(content,"UTF-8"));
+				query.append(entityClientConst.spotlightParas);
+				break;
+			case SPOTLIGHT2:
+				query.append(entityClientConst.spotlight2);
+				query.append(URLEncoder.encode(content,"UTF-8"));
+				query.append(entityClientConst.spotlightParas);
+				break;
 			default:
 				break;
 			}
-			
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-//		try {
-//			query.append(URLEncoder.encode(phrase1,"UTF-8"));
-//			query.append("&phrase2=");
-//			query.append(URLEncoder.encode(phrase2,"UTF-8"));
-//		} catch (UnsupportedEncodingException e) {
-//			e.printStackTrace();
-//		}
-		return query.toString();
+		if(query.length() > 0){
+			return queryResult(query.toString());
+		}else{
+			return null;
+		}
 	}
 	
 	public static void main(String [] args){
-		
+		String test = "How many children does Eddie Murphy have?";
+		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.MINER));
+		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.DEXTER));
+		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.SPOTLIGHT1));
+		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.SPOTLIGHT2));
 	}
 }
