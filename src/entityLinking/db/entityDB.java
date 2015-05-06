@@ -7,6 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 public class entityDB {
 
@@ -24,106 +25,145 @@ public class entityDB {
 		}
 	}
 	
-	private void insert(String word1, String word2, double umbc){
-		word1 = URLEncoder.encode(word1);
-		word2 = URLEncoder.encode(word2);
-		PreparedStatement stat;
+	public void insertMiner(
+			int questionID, int startIndex, int endIndex, 
+			int candID, String candTitle, double weight){
 		try {
-			stat = conn.prepareStatement(
-					"INSERT INTO `umbc`(`word1`,`word2`,`umbc`) VALUES (?,?,?)");
-			stat.setString(1, word1);
-			stat.setString(2, word2);
-			stat.setDouble(3, umbc);
+			PreparedStatement stat = conn.prepareStatement(
+					"INSERT INTO `miner`(`questionID`, `startIndex`,`endIndex`,`candID`,`candTitle`,`weight`) VALUES (?,?,?,?,?,?)");
+			stat.setInt(1, questionID);
+			stat.setInt(2, startIndex);
+			stat.setInt(3, endIndex);
+			stat.setInt(4, candID);
+			stat.setString(5, candTitle);
+			stat.setDouble(6, weight);
 			stat.executeUpdate();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		} catch (Exception ex) {
 		}
 	}
 	
-	private void update(String word1, String word2, double umbc){
-		word1 = URLEncoder.encode(word1);
-		word2 = URLEncoder.encode(word2);
-		
-		Statement stat;
-		StringBuilder query = new StringBuilder();
-		query.append("update umbc set umbc = ");
-		query.append(umbc);
-		query.append(" where word1 = \"");
-		query.append(word1);
-		query.append("\" and word2 = \"");
-		query.append(word2);
-		query.append("\"");
-//		System.out.println(query.toString());
+	public void insertSpotlight(
+			int questionID, int startIndex, int endIndex, 
+			String candTitle, String candUri, int support,
+			double finalScore, double priorScore, double contextualScore,
+			double percentageOfSecondRank, String types){
 		try {
-			stat = conn.createStatement();
-			int r=stat.executeUpdate(query.toString());
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			PreparedStatement stat = conn.prepareStatement(
+					"INSERT INTO `spotlight2`(`questionID`, `startIndex`,`endIndex`,`candTitle`,`candUri`,`support`,`finalScore`,`priorScore`,`contextualScore`,`percentageOfSecondRank`,`types`) VALUES (?,?,?,?,?,?,?,?,?,?,?)");
+			stat.setInt(1, questionID);
+			stat.setInt(2, startIndex);
+			stat.setInt(3, endIndex);
+			stat.setString(4, candTitle);
+			stat.setString(5, candUri);
+			stat.setInt(6, support);
+			stat.setDouble(7, finalScore);
+			stat.setDouble(8, priorScore);
+			stat.setDouble(9, contextualScore);
+			stat.setDouble(10, percentageOfSecondRank);
+			stat.setString(11, types);
+			stat.executeUpdate();
+		} catch (Exception ex) {
 		}
 	}
 	
-	private boolean isContain(String word1, String word2){
-		word1 = URLEncoder.encode(word1);
-		word2 = URLEncoder.encode(word2);
-		
-		boolean mark = false;
+	public void insertDexter(
+			int questionID, int startIndex, int endIndex,
+			double linkProbability, int linkFrequency,
+			int documentFrequency, int entityFrequency,
+			double commonness, int candID, String candTitle,
+			String candUri, String candDescription ){
+		try {
+			PreparedStatement stat = conn.prepareStatement(
+					"INSERT INTO `dexter`(`questionID`, `startIndex`,`endIndex`,`linkProbability`, `linkFrequency`, `documentFrequency`,`entityFrequency`,`commonness`,`candID`,`candTitle`,`candUri`,`candDescription`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
+			stat.setInt(1, questionID);
+			stat.setInt(2, startIndex);
+			stat.setInt(3, endIndex);
+			stat.setDouble(4, linkProbability);
+			stat.setInt(5, linkFrequency);
+			stat.setInt(6, documentFrequency);
+			stat.setInt(7, entityFrequency);
+			stat.setDouble(8, commonness);
+			stat.setInt(9, candID);
+			stat.setString(10, candTitle);
+			stat.setString(11, candUri);
+			stat.setString(12, candDescription);
+			stat.executeUpdate();
+		} catch (Exception ex) {
+		}
+	}
+
+	public void insertTrain(
+			int question,int start,int end, String title,
+			double weight, double linkprobability, double commonness,
+			int linkfrequency, int documentfrequency, int entityfrequency,
+			double finalscore, int support, double priorscore, double contextscore,
+			double percentage, double finalscore2, int support2, double priorscore2,
+			double contextscore2, double percentage2,int label
+			){
+		try {
+			PreparedStatement stat = conn.prepareStatement(
+					"INSERT INTO `train`(`question`, `start`,`end`,`title`,`weight`,`linkprobability`, `commonness`,`linkfrequency`, `documentfrequency`,`entityfrequency`,`finalscore`,`support`,`priorscore`,`contextscore`,`percentage`,`finalscore2`,`support2`,`priorscore2`,`contextscore2`,`percentage2`,`label`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+			stat.setInt(1, question);
+			stat.setInt(2, start);
+			stat.setInt(3, end);
+			stat.setString(4, title);
+			stat.setDouble(5, weight);
+			stat.setDouble(6, linkprobability);
+			stat.setDouble(7, commonness);
+			stat.setInt(8, linkfrequency);
+			stat.setInt(9, documentfrequency);
+			stat.setInt(10, entityfrequency);
+			stat.setDouble(11, finalscore);
+			stat.setInt(12, support);
+			stat.setDouble(13, priorscore);
+			stat.setDouble(14, contextscore);
+			stat.setDouble(15, percentage);
+			stat.setDouble(16, finalscore2);
+			stat.setInt(17, support2);
+			stat.setDouble(18, priorscore2);
+			stat.setDouble(19, contextscore2);
+			stat.setDouble(20, percentage2);
+			stat.setInt(21, label);
+			
+			stat.executeUpdate();
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+	}
+	
+	public ResultSet select(String query){
 		Statement stat;
-		StringBuilder query = new StringBuilder();
-		query.append("select * from umbc where word1 = \"");
-		query.append(word1);
-		query.append("\" and word2 = \"");
-		query.append(word2);
-		query.append("\"");
-//		System.out.println(query.toString());
 		try {
 			stat = conn.createStatement();
-			ResultSet r=stat.executeQuery(query.toString());
-			if(r.next()){
-				mark = true;
-			}else{
-				mark = false;
+			ResultSet r=stat.executeQuery(query);
+			return r;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	public ArrayList<String[]> selectMark(){
+		ArrayList<String[]> res=new ArrayList<String[]>();
+		try {
+			String cmd="SELECT * FROM mark WHERE pattern = 1";
+			Statement stat=conn.createStatement();
+			ResultSet r=stat.executeQuery(cmd);
+			
+			for (;r.next();){
+				String entity = r.getString(5);
+				if(entity.length() != 0){
+					entity = entity.replace(" ", "_");
+					String wiki = "http://en.wikipedia.org/wiki/"+entity;
+					res.add(new String[]{r.getString(2),r.getString(3),r.getString(4),wiki});
+				}
 			}
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return mark;
-	}
-	
-	public void insertWords(String word1, String word2){
-		if(!isContain(word1, word2) && !isContain(word2, word1)){
-			insert(word1, word2, -1);
-		}
-	}
-	
-	public void updateValue(String word1, String word2, double value){
-		if(isContain(word1, word2)){
-			update(word1, word2, value);
-		}else{
-			update(word2, word1, value);
-		}
-	}
-	
-	public ResultSet getAllPairs(){
-		Statement stat;
-		ResultSet r = null;
-		StringBuilder query = new StringBuilder();
-		query.append("select * from umbc");
-		try {
-			stat = conn.createStatement();
-			r=stat.executeQuery(query.toString());
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return r;
+		} catch (Exception e) {}
+		return res;
 	}
 	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 	}
 

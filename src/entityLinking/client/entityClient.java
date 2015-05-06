@@ -21,7 +21,7 @@ public class entityClient {
 		client = new HttpClient();
 	}
 	
-	private static String queryResult(String query) {
+	public static String queryResult(String query) {
 		String responseBody = null;
 		GetMethod getMethod = new GetMethod(query);
 		getMethod.getParams().setParameter(HttpMethodParams.RETRY_HANDLER,
@@ -46,17 +46,31 @@ public class entityClient {
 		return responseBody;
 	}
 	
-	private static String queryBuilder(String question, TOOLKIT toolkit){
+	private static String queryBuilder(String content, TOOLKIT toolkit){
 		StringBuilder query = new StringBuilder();
-		String base_uri = "http://swoogle.umbc.edu/SimService/GetSimilarity?operation=api&phrase1=";
-		query.append(base_uri);
 		try {
-			query.append(URLEncoder.encode(phrase1,"UTF-8"));
-			query.append("&phrase2=");
-			query.append(URLEncoder.encode(phrase2,"UTF-8"));
+			switch (toolkit) {
+			case MINER:
+				query.append(entityClientConst.miner);
+				query.append(URLEncoder.encode(content,"UTF-8"));
+				query.append(entityClientConst.minerParas);
+				break;
+			default:
+				break;
+			}
+			
 		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+//		try {
+//			query.append(URLEncoder.encode(phrase1,"UTF-8"));
+//			query.append("&phrase2=");
+//			query.append(URLEncoder.encode(phrase2,"UTF-8"));
+//		} catch (UnsupportedEncodingException e) {
+//			e.printStackTrace();
+//		}
 		return query.toString();
 	}
 	
