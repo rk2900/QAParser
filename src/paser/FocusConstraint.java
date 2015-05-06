@@ -18,8 +18,8 @@ import finder.Pipeline;
 
 public class FocusConstraint {
 
-	public static final double literalScore = 0.8;
-	public static final double lowScore = 0.0;
+	public static final double literalScore = 0.0;
+	public static final double lowScore = 0.5;
 	
 	public boolean ifTypeMatched(String entityUri, String typeUri) {
 		String askQuery = "ASK WHERE { <"+entityUri+"> rdf:type <"+typeUri+"> }";
@@ -38,7 +38,7 @@ public class FocusConstraint {
 		Focus focus = qf.focus;
 		if(!focus.isEmpty()) { // 有focus结果
 			ArrayList<String> extractedTypeList = (ArrayList<String>) Type.getTypeFromFocus(focus.getFocusContent(qf.wordList));
-			if(extractedTypeList.isEmpty()) { // 如果focus中 type抽取结果为空， 则所有predicate类型限制评估分数均为0.0
+			if(extractedTypeList.isEmpty()) { // 如果focus中 type抽取结果为空， 则所有predicate类型限制评估分数均为 lowScore
 				predTypeScores = setPredicateLowScore(answer.predictList, predTypeScores);
 			} else { // 如果focus中 type抽取结果 不为空，则针对每个predicate进行评分
 				ArrayList<Predicate> predictList = answer.predictList;
@@ -89,36 +89,10 @@ public class FocusConstraint {
 	public static void main(String[] args) {
 		Pipeline pipeline = new Pipeline();
 		Main.setEntity(pipeline);
-		LinkedList<QuestionFrame> resourceQuestions = pipeline.resource;
-		OutputRedirector.openFileOutput("./data/type_of_answer_and extracted_types.txt");
-		for (QuestionFrame questionFrame : resourceQuestions) {
-			System.out.println(questionFrame.id+"\t"+questionFrame.question);
-			Focus focus = questionFrame.focus;
-			if(!focus.isEmpty() && questionFrame.answerType.equalsIgnoreCase("resource")) {
-				String focusString = focus.getFocusContent(questionFrame.wordList);
-				System.out.println("Focus: "+"\t"+focusString);
-				ArrayList<String> typeUriList = (ArrayList<String>)Type.getTypeFromFocus(focusString);
-				System.out.println("Type: "+"\t"+typeUriList);
-				ArrayList<String> answers = questionFrame.answers;
-				HashSet<String> typeSet = new HashSet<>();
-				for (String string : answers) {
-					typeSet.addAll(ClientManagement.getResourceType(string));
-				}
-				Boolean containsFlag = false;
-				for (String string : typeUriList) {
-					if(typeSet.contains(string)) {
-						containsFlag = true;
-						break;
-					}
-				}
-				System.out.println("Contains? "+"\t"+containsFlag);
-				System.out.println(typeSet);
-			} else {
-				System.out.println("Answer type is not a resource.");
-			}
-			System.out.println();
-		}
-		OutputRedirector.closeFileOutput();
+		QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithId(121);
+		String focusString = qf.focus.getFocusContent(qf.wordList);
+		System.out.println(focusString);
+		System.out.println(Type.getTypeFromFocus(focusString));
 	}
 
 }
