@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Properties;
 
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+import finder.Pipeline.DataSource;
 import paser.Question;
 import paser.XMLParser;
 
@@ -22,7 +23,7 @@ public class TypeExtraction {
 		xmlParser = new XMLParser();
 		xmlParser.setFilePath(trainFile);
 		xmlParser.load();
-		xmlParser.parse();
+		xmlParser.parse(DataSource.TRAIN);
 	}
 	
 	public HashSet<String> typeExtractor(String text, boolean visible){
