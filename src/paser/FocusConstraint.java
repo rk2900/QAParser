@@ -18,6 +18,9 @@ import finder.Pipeline;
 
 public class FocusConstraint {
 
+	public static final double literalScore = 0.8;
+	public static final double lowScore = 0.3;
+	
 	public boolean ifTypeMatched(String entityUri, String typeUri) {
 		String askQuery = "ASK WHERE { <"+entityUri+"> rdf:type <"+typeUri+"> }";
 		boolean flag = ClientManagement.ask(askQuery, true);
@@ -36,16 +39,16 @@ public class FocusConstraint {
 		if(!focus.isEmpty()) { // 有focus结果
 			ArrayList<String> extractedTypeList = (ArrayList<String>) Type.getTypeFromFocus(focus.getFocusContent(qf.wordList));
 			if(extractedTypeList.isEmpty()) { // 如果focus中 type抽取结果为空， 则所有predicate类型限制评估分数均为0.0
-				predTypeScores = setPredicateScoreZero(answer.predictList, predTypeScores);
+				predTypeScores = setPredicateLowScore(answer.predictList, predTypeScores);
 			} else { // 如果focus中 type抽取结果 不为空，则针对每个predicate进行评分
 				ArrayList<Predicate> predictList = answer.predictList;
 				for (Predicate predicate : predictList) {
 					double score = 0.0;
-					LinkedList<RDFNode> nodeList = ClientManagement.getNode(answer.entityUri, predicate.getUri());
+					LinkedList<RDFNode> nodeList = answer.resources.get(predicate);//ClientManagement.getNode(answer.entityUri, predicate.getUri());
 					HashSet<String> predAnswerTypeSet = new HashSet<>();
 					for (RDFNode rdfNode : nodeList) {
 						if(rdfNode.isLiteral()) { // 宾语类型为 Literal的谓语predicate，predicate类型限制评估分数均为0.0
-							score = 0.0; 
+							score = literalScore; 
 							break;
 						} else {
 							predAnswerTypeSet.addAll(ClientManagement.getResourceType(rdfNode.toString()));
@@ -64,21 +67,21 @@ public class FocusConstraint {
 			}
 		} else { // 没有focus抽取结果的，predicate类型限制评分均为0.0
 			System.err.println("Focus is empty");
-			predTypeScores = setPredicateScoreZero(answer.predictList, predTypeScores);
+			predTypeScores = setPredicateLowScore(answer.predictList, predTypeScores);
 		}
 		answer.typeConstrainScore = predTypeScores;
 		return predTypeScores;
 	}
 	
 	/**
-	 * To set type ranking score of each predicate as zero (0.0) 
+	 * To set type ranking score of each predicate as lowScore (0.0) 
 	 * @param predicates
 	 * @param predTypeScores
 	 * @return
 	 */
-	public static HashMap<Predicate, Double> setPredicateScoreZero(ArrayList<Predicate> predicates, HashMap<Predicate, Double> predTypeScores) {
+	public static HashMap<Predicate, Double> setPredicateLowScore(ArrayList<Predicate> predicates, HashMap<Predicate, Double> predTypeScores) {
 		for (Predicate predicate : predicates) {
-			predTypeScores.put(predicate, 0.0);
+			predTypeScores.put(predicate, lowScore);
 		}
 		return predTypeScores;
 	}
