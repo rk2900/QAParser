@@ -5,11 +5,18 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 
+import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -17,6 +24,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import finder.Pipeline.DataSource;
+import baseline.Answer;
 import basic.FileOps;
 
 /**
@@ -168,6 +176,12 @@ public class XMLParser {
 		System.out.println("Parsing finished.");
 	}
 	
+	//TODO
+	public void outputQuestionAnswer(int id, Answer answer) {
+		QuestionFrame qf = this.getQuestionFrameWithId(id);
+		
+	}
+	
 	public ArrayList<Question> getQuestions() {
 		return questions;
 	}
@@ -221,22 +235,68 @@ public class XMLParser {
 	public QuestionFrame getQuestionFrameWithPseudoId(int id) {
 		return mappedQuestionFrames.get(getQuestionWithPseudoId(id));
 	}
+	
+	public Element getQuestionElement(Document doc, Integer id, LinkedList<String> answerList) {
+//		try {
+			// question element
+			Element question = doc.createElement("question");
+			// set question attribute
+			question.setAttribute("id", id.toString());
+			
+			// answers element
+			Element answers = doc.createElement("answers");
+			question.appendChild(answers);
+
+			// answer element
+			for (String string : answerList) {
+				Element answer = doc.createElement("answer");
+				answer.appendChild(doc.createTextNode(string));
+				answers.appendChild(answer);
+			}
+			
+			return question;
+			
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//		return null;
+	}
 
 	public static void main(String[] args) {
-		String filePath = "./data/qald-5_train.xml";
-		if(args.length > 1 && args[1].length() > 0) {
-			filePath = args[1];
+		XMLParser xmlParser = new XMLParser();
+		try {
+			DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
+			
+			Document doc = docBuilder.newDocument();
+			// root element
+			Element dataset = doc.createElement("dataset");
+			dataset.setAttribute("id", "qald-5_test");
+			doc.appendChild(dataset);
+			
+			LinkedList<String> answerList = new LinkedList<String>();
+			answerList.add("http://dbpedia.org/resource/Beijing");
+			Element element = xmlParser.getQuestionElement(doc, 10, answerList);
+			if(element != null) {
+				dataset.appendChild(element);
+			}
+			
+			// write the content into XML file
+			TransformerFactory transformerFactory = TransformerFactory.newInstance();
+			Transformer transformer = transformerFactory.newTransformer();
+			// new line
+			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+			DOMSource source = new DOMSource(doc);
+			/**/
+			StreamResult result = new StreamResult(new File("./data/output/a.xml"));
+			/**
+			StreamResult result = new StreamResult(System.out);
+			/**/
+			
+			transformer.transform(source, result);
+			 
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-		XMLParser parser  = new XMLParser();
-		parser.setFilePath(filePath);
-		parser.load();
-		parser.parse(DataSource.TRAIN);
-		
-		Question q = parser.getQuestionWithPseudoId(176);
-		q.print();
-		
-		StringBuilder a = new StringBuilder("123456789AAAAA321654987");
-		int index = a.indexOf("AAAA");
-		System.out.println(a.replace(index, index+4, "bbbb"));
 	}
 }
