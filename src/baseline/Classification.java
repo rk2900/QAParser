@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
+import paser.FocusConstraint;
 import paser.QuestionFrame;
 import syntacticParser.Constraint;
 import syntacticParser.ConstraintSet;
@@ -135,24 +136,34 @@ public class Classification {
 //		}
 //		OutputRedirector.closeFileOutput();
 		
-//		OutputRedirector.openFileOutput("./data/zch_classification/resource/resource-basic.txt");
-//		LinkedList<QuestionFrame> resourceQF = pipeline.resource;
-//		System.err.println(resourceQF.size());
-//		for (QuestionFrame qf : resourceQF) {
-//			Answer answer = getAnswer(qf,map.get("resource"));
-//			System.out.println(answer.print().toString());
+		OutputRedirector.openFileOutput("./data/zch_classification/resource/resource-basic-new.txt");
+		LinkedList<QuestionFrame> resourceQF = pipeline.resource;
+		System.err.println(resourceQF.size());
+		int originalNum = SimilarityFunction.predictNum;
+		int count = 0;
+		SimilarityFunction.predictNum = 10;
+		for (QuestionFrame qf : resourceQF) {
+			++count;
+			Answer answer = getAnswer(qf,map.get("resource"));
+			if(!answer.isException()){
+				answer.predictList = FocusConstraint.getTypeConstraintPredicates(answer);
+				System.err.println(answer.predictList.size());
+			}
+			System.out.println(answer.print().toString());
+			System.err.println(count + " finished.*****");
+		}
+		SimilarityFunction.predictNum = originalNum;
+		OutputRedirector.closeFileOutput();
+		
+//		OutputRedirector.openFileOutput("./data/zch_classification/number/number-basic-result.txt");
+//		LinkedList<QuestionFrame> numberQF = pipeline.number;
+//		System.err.println(numberQF.size());
+//		for (QuestionFrame qf : numberQF) {
+//			Answer answer = getAnswer(qf,map.get("number"));
+//			System.out.println("Original focus: "+qf.focus.getFocusContent(qf.wordList));
+//			System.out.println(answer.numberPrint().toString());
 //		}
 //		OutputRedirector.closeFileOutput();
-		
-		OutputRedirector.openFileOutput("./data/zch_classification/number/number-basic-result.txt");
-		LinkedList<QuestionFrame> numberQF = pipeline.number;
-		System.err.println(numberQF.size());
-		for (QuestionFrame qf : numberQF) {
-			Answer answer = getAnswer(qf,map.get("number"));
-			System.out.println("Original focus: "+qf.focus.getFocusContent(qf.wordList));
-			System.out.println(answer.numberPrint().toString());
-		}
-		OutputRedirector.closeFileOutput();
 	}
 	
 }

@@ -4,14 +4,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 
-import org.openrdf.query.algebra.Datatype;
-
 import knowledgebase.ClientManagement;
 
-import com.hp.hpl.jena.datatypes.RDFDatatype;
 import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.RDFNode;
-import com.hp.hpl.jena.rdf.model.Resource;
 
 import paser.QuestionFrame;
 
@@ -21,6 +17,7 @@ public class Answer {
 	public QuestionFrame qf;
 	public String exceptionString;
 	public HashMap<Predicate, Double> typeConstrainScore = new HashMap<>();
+	public HashMap<Predicate, ArrayList<String>> resources = new HashMap<Predicate, ArrayList<String>>(); 
 	
 	public boolean isException(){
 		if(exceptionString.length() > 0 ){
@@ -136,4 +133,5 @@ public class Answer {
 		sb.append("\n");
 		return sb;
 	}
+	
 }

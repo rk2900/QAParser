@@ -1,7 +1,5 @@
 package baseline;
 
-import type.Type;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
@@ -14,7 +12,7 @@ import umbc.umbcDB;
 
 public class SimilarityFunction {
 	private static umbcDB db = new umbcDB();
-	private static int predictNum = 5;
+	public static int predictNum = 5;
 	private static double minSimilarityScore = 0.0;
 	
 	/**
