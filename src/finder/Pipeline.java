@@ -294,43 +294,10 @@ public class Pipeline {
 	
 	public static void main(String[] args) {
 		Pipeline pipeline = new Pipeline(DataSource.TEST);
-		Main.setEntity(pipeline);
-		
-		LinkedList<QuestionFrame> resource = new LinkedList<>();
-		LinkedList<QuestionFrame> who = new LinkedList<>();
-		LinkedList<QuestionFrame> where = new LinkedList<>();
-		
-		LinkedList<QuestionFrame> number = new LinkedList<>();
-		
-		LinkedList<QuestionFrame> date = new LinkedList<>();
-		
-		LinkedList<QuestionFrame> bool = new LinkedList<>();
-		
-		LinkedList<QuestionFrame> comparison = new LinkedList<>();
-		
-		for(int i=1; i<=pipeline.totalNumber; i++) {
+		for(int i=1; i<=totalNumber; i++) {
 			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
-			
-			if(qf.questionClassifier.label.get(Label.COMPARISON)) {
-				comparison.add(qf); // comparison question
-			} else if(qf.questionClassifier.category == Category.RESOURCE) {
-				if( qf.questionClassifier.label.get(Label.WHO) ) {
-					who.add(qf); // who
-				} else if(qf.questionClassifier.label.get(Label.WHERE)) {
-					where.add(qf); // where
-				} else {
-					resource.add(qf); // resource but not who/where
-				} 
-			} else if(qf.questionClassifier.category == Category.NUMBER) {
-				number.add(qf);
-			} else if(qf.questionClassifier.category == Category.DATE) {
-				date.add(qf);
-			} else if(qf.questionClassifier.category == Category.BOOLEAN) {
-				bool.add(qf);
-			}
+			qf.print();
 		}
-		
-		System.out.println(comparison);
 	}
 
 }

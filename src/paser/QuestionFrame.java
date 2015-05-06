@@ -117,6 +117,7 @@ public class QuestionFrame extends Question {
 	public void print() {
 		System.out.println("-------------------------");
 		System.out.println("ID: "+"\t"+id);
+		System.out.println("OnlyDBO: "+onlydbo+"\tAggregation: "+aggregation);
 		System.out.println("Category: "+"\t"+this.questionClassifier.category);
 		System.out.println("Rule Judgement:"+"\t"+this.questionClassifier.label);
 		System.out.println("Content: "+"\t"+this.question);
