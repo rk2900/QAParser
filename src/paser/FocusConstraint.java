@@ -39,18 +39,17 @@ public class FocusConstraint {
 		for (QuestionFrame questionFrame : resourceQuestions) {
 			System.out.println(questionFrame.id+"\t"+questionFrame.question);
 			Focus focus = questionFrame.focus;
-			if(!focus.isEmpty()) {
+			if(!focus.isEmpty() && questionFrame.answerType.equalsIgnoreCase("resource")) {
 				String focusString = focus.getFocusContent(questionFrame.wordList);
 				System.out.println("Focus: "+"\t"+focusString);
 				String typeUri = Type.getTypeFromFocus(focusString);
 				System.out.println("Type: "+"\t"+typeUri);
 				ArrayList<String> answers = questionFrame.answers;
 				HashSet<String> typeSet = new HashSet<>();
-				for (String answer : answers) {
-					System.err.println(answer);
-					if(!typeSet.addAll(ClientManagement.getResourceType(answer)))
-						System.err.println("ADD ERROR");
+				for (String string : answers) {
+					typeSet.addAll(ClientManagement.getResourceType(string));
 				}
+				
 				System.out.println(typeSet);
 			}
 			System.out.println();
