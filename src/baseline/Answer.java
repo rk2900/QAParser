@@ -93,6 +93,7 @@ public class Answer {
 						sb.append(" " + rdfNode.toString());
 					}
 					sb.append("\n");
+					break;
 				}
 			}
 			

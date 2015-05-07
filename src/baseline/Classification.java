@@ -198,25 +198,25 @@ public class Classification {
 //		}
 //		OutputRedirector.closeFileOutput();
 		
-		OutputRedirector.openFileOutput("./data/zch_classification/resource/resource-basic-addTypeScore-1-0-5.txt");
-		LinkedList<QuestionFrame> resourceQF = pipeline.resource;
-		System.err.println(resourceQF.size());
-		int originalNum = SimilarityFunction.predictNum;
-		int count = 0;
-		SimilarityFunction.predictNum = 10;
-		for (QuestionFrame qf : resourceQF) {
-			++count;
-			Answer answer = getAnswer(qf,CLASSIFICATION.RESOURCE);
-			if(!answer.isException()){
-				System.out.println(answer.print().toString());
-			}
-			System.err.println(count + " finished.*****" + qf.id);
-//			if(count == 5){
-//				break;
+//		OutputRedirector.openFileOutput("./data/zch_classification/resource/resource-basic-addTypeScore-1-0-5.txt");
+//		LinkedList<QuestionFrame> resourceQF = pipeline.resource;
+//		System.err.println(resourceQF.size());
+//		int originalNum = SimilarityFunction.predictNum;
+//		int count = 0;
+//		SimilarityFunction.predictNum = 10;
+//		for (QuestionFrame qf : resourceQF) {
+//			++count;
+//			Answer answer = getAnswer(qf,CLASSIFICATION.RESOURCE);
+//			if(!answer.isException()){
+//				System.out.println(answer.print().toString());
 //			}
-		}
-		SimilarityFunction.predictNum = originalNum;
-		OutputRedirector.closeFileOutput();
+//			System.err.println(count + " finished.*****" + qf.id);
+////			if(count == 5){
+////				break;
+////			}
+//		}
+//		SimilarityFunction.predictNum = originalNum;
+//		OutputRedirector.closeFileOutput();
 		
 //		OutputRedirector.openFileOutput("./data/zch_classification/number/number-basic-result.txt");
 //		LinkedList<QuestionFrame> numberQF = pipeline.number;

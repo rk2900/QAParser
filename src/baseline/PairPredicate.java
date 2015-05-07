@@ -12,17 +12,9 @@ public class PairPredicate implements Comparable<PairPredicate> {
 	public PairPredicate(Predicate p1, Predicate p2){
 		Predicate1 = p1;
 		Predicate2 = p2;
-		score = initialScore();
+		score = 0;
 	}
 	
-	private double initialScore(){
-		return Predicate1.maxScore * Predicate2.maxScore;
-	}
-	
-	public void unpdateScore(){
-		score = Predicate1.maxScore * Predicate2.maxScore;
-	}
-
 	@Override
 	public int compareTo(PairPredicate o) {
 		// TODO Auto-generated method stub
