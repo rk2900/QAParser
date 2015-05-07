@@ -83,7 +83,7 @@ public class Answer {
 					sb.append("\n");
 				}
 			}
-			if(answerType == 1){
+			if(answerType != 0){
 				sb.append(entityUri);
 				sb.append("\n");
 				for (PairPredicate pair : pairPredicates) {
@@ -95,7 +95,7 @@ public class Answer {
 						sb.append(" " + rdfNode.toString());
 					}
 					sb.append("\n");
-					break;
+//					break;
 				}
 			}
 			
