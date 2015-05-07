@@ -1,0 +1,121 @@
+12	Is proinsulin a protein?
+
+Available catalogs: [/, chainyi, dbpedia2014, system, zhishime]
+
+Got a graph maker for the connection.
+1	1	http://dbpedia.org/resource/Proinsulin
+3	3	http://dbpedia.org/resource/Protein
+
+
+123	Do Prince Harry and Prince William have the same parents?
+
+1	2	http://dbpedia.org/resource/Prince_Harry
+4	5	http://dbpedia.org/resource/Prince_William,_Duke_of_Cambridge
+
+
+13	Are tree frogs a type of amphibian?
+
+6	6	http://dbpedia.org/resource/Amphibian
+1	1	http://dbpedia.org/resource/Tree
+2	2	http://dbpedia.org/resource/Frog
+
+
+162	Did Socrates influence Aristotle?
+
+1	1	http://dbpedia.org/resource/Socrates
+3	3	http://dbpedia.org/resource/Aristotle
+
+
+169	Did Tesla win a nobel prize in physics?
+
+4	5	http://dbpedia.org/resource/Nobel_Prize
+1	1	http://dbpedia.org/resource/Tesla_(band)
+7	7	http://dbpedia.org/resource/Physics
+
+
+170	Is Rita Wilson the wife of Tom Hanks?
+
+1	2	http://dbpedia.org/resource/Rita_Wilson
+
+
+178	Was Margaret Thatcher a chemist?
+
+1	2	http://dbpedia.org/resource/Margaret_Thatcher
+4	4	http://dbpedia.org/resource/Chemist
+
+
+179	Was Marc Chagall a jew?
+
+1	2	http://dbpedia.org/resource/Marc_Chagall
+4	4	http://dbpedia.org/resource/Jews
+
+
+27	Was U.S. president Jackson involved in a war?
+
+
+
+46	Is Frank Herbert still alive?
+
+1	2	http://dbpedia.org/resource/Frank_Herbert
+
+
+60	Is there a video game called Battle Chess?
+
+3	4	http://dbpedia.org/resource/Video_game
+6	7	http://dbpedia.org/resource/Battle_Chess
+
+
+66	Is Christian Bale starring in Velvet Goldmine?
+
+1	2	http://dbpedia.org/resource/Christian_Bale
+5	6	http://dbpedia.org/resource/Velvet_Goldmine
+1	1	http://dbpedia.org/resource/Christian
+
+
+7	Was the wife of president Lincoln called Mary?
+
+4	5	http://dbpedia.org/resource/Abraham_Lincoln
+
+
+93	Was Natalie Portman born in the United States?
+
+1	2	http://dbpedia.org/resource/Natalie_Portman
+1	1	http://dbpedia.org/resource/Natalie
+6	7	http://dbpedia.org/resource/United_States
+
+
+96	Is Pamela Anderson a vegan?
+
+1	2	http://dbpedia.org/resource/Pamela_Anderson
+4	4	http://dbpedia.org/resource/Veganism
+
+
+223	Does Abraham Lincoln's death place have a website?
+
+1	3	http://dbpedia.org/resource/Abraham_Lincoln
+2	2	http://dbpedia.org/resource/Lincoln,_England
+
+
+207	Does the Isar flow into a lake?
+
+2	2	http://dbpedia.org/resource/Isar
+6	6	http://dbpedia.org/resource/Lake
+
+
+219	Is Cola a beverage?
+
+3	3	http://dbpedia.org/resource/Drink
+
+
+245	Is James Bond married?
+
+1	2	http://dbpedia.org/resource/James_Bond
+2	2	http://dbpedia.org/resource/Bond_(band)
+
+
+264	Did Che Guevara have children?
+
+1	2	http://dbpedia.org/resource/Che_Guevara
+1	1	http://dbpedia.org/resource/Che_(2008_film)
+
+

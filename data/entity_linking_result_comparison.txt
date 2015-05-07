@@ -1,0 +1,238 @@
+100	When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?
+
+Available catalogs: [/, chainyi, dbpedia2014, system, zhishime]
+
+Got a graph maker for the connection.
+13	14	http://dbpedia.org/resource/Netherlands
+11	11	http://dbpedia.org/resource/Movie_theater
+
+
+101	Which German cities have more than 250000 inhabitants?
+German cities
+1	1	http://dbpedia.org/resource/German_language
+
+
+105	What is the second highest mountain on Earth?
+second highest mountain
+5	5	http://dbpedia.org/resource/Mountain
+7	7	http://dbpedia.org/resource/Earth
+
+
+11	Which countries have more than ten caves?
+countries
+6	6	http://dbpedia.org/resource/Cave
+
+
+111	Who is the Formula 1 race driver with the most races?
+
+5	6	http://dbpedia.org/resource/Auto_racing
+3	4	http://dbpedia.org/resource/Formula_One
+
+
+113	Who is the youngest player in the Premier League?
+
+7	7	http://dbpedia.org/resource/Premier
+
+
+115	What is the longest river?
+longest river
+4	4	http://dbpedia.org/resource/River
+
+
+116	Does Breaking Bad have more episodes than Game of Thrones?
+
+1	2	http://dbpedia.org/resource/Breaking_Bad
+7	9	http://dbpedia.org/resource/Game_of_Thrones
+
+
+125	Which U.S. state has been admitted latest?
+U.S. state
+1	2	http://dbpedia.org/resource/U.S._state
+
+
+150	Was the Cuban Missile Crisis earlier than the Bay of Pigs Invasion?
+
+8	11	http://dbpedia.org/resource/Bay_of_Pigs_Invasion
+2	4	http://dbpedia.org/resource/Cuban_missile_crisis
+8	10	http://dbpedia.org/resource/Bay_of_Pigs
+
+
+17	Give me all cities in New Jersey with more than 100000 inhabitants.
+cities
+5	6	http://dbpedia.org/resource/New_Jersey
+
+
+180	Give me all books by William Goldman with more than 300 pages.
+books
+5	6	http://dbpedia.org/resource/William_Goldman
+
+
+186	What is the largest city in Australia?
+largest city
+6	6	http://dbpedia.org/resource/Australia
+
+
+19	Is Egypts largest city also its capital?
+
+
+
+24	Which mountain is the highest after the Annapurna?
+mountain
+7	7	http://dbpedia.org/resource/Annapurna
+1	1	http://dbpedia.org/resource/Mountain
+
+
+30	Which U.S. state has the highest population density?
+U.S. state
+6	7	http://dbpedia.org/resource/Population_density
+1	2	http://dbpedia.org/resource/U.S._state
+6	6	http://dbpedia.org/resource/Population
+
+
+34	Which countries have more than two official languages?
+countries
+6	7	http://dbpedia.org/resource/Official_language
+
+
+40	What is the highest mountain in Australia?
+highest mountain
+4	4	http://dbpedia.org/resource/Mountain
+6	6	http://dbpedia.org/resource/Australia
+
+
+47	What is the highest place of the Urals?
+highest place
+7	7	http://dbpedia.org/resource/Ural_Mountains
+
+
+51	Give me all libraries established earlier than 1400.
+libraries
+3	3	http://dbpedia.org/resource/Library
+
+
+58	Who produced the most films?
+
+
+
+61	Which mountains are higher than the Nanga Parbat?
+mountains
+6	7	http://dbpedia.org/resource/Nanga_Parbat
+
+
+67	Give me the websites of companies with more than 500000 employees.
+websites
+
+
+69	Which caves have more than 3 entrances?
+caves
+1	1	http://dbpedia.org/resource/Cave
+
+
+81	Which country has the most official languages?
+country
+5	6	http://dbpedia.org/resource/Official_language
+
+
+92	What is the highest mountain?
+highest mountain
+4	4	http://dbpedia.org/resource/Mountain
+
+
+98	What is the most beautiful painting?
+most beautiful painting
+
+
+231	How many inhabitants does the largest city in Canada have?
+inhabitants
+6	6	http://dbpedia.org/resource/City
+8	8	http://dbpedia.org/resource/Canada
+
+
+210	Who is the youngest Darts player?
+
+4	4	http://dbpedia.org/resource/Darts
+
+
+214	What is the most frequent cause of death?
+most frequent cause
+
+
+218	Give me all films produced by Steven Spielberg with a budget of at least $80 million.
+films
+10	10	http://dbpedia.org/resource/Budget
+6	7	http://dbpedia.org/resource/Steven_Spielberg
+
+
+217	What is the bridge with the longest span?
+bridge
+
+
+216	Who is the tallest player of the Atlanta Falcons?
+
+7	8	http://dbpedia.org/resource/Atlanta_Falcons
+7	7	http://dbpedia.org/resource/Atlanta
+
+
+203	Which poet wrote the most books?
+poet
+1	1	http://dbpedia.org/resource/Poet
+
+
+228	What was Brazil's lowest rank in the FIFA World Ranking?
+Brazil
+2	3	http://dbpedia.org/resource/Brazil
+8	8	http://dbpedia.org/resource/FIFA
+8	10	http://dbpedia.org/resource/FIFA_World_Rankings
+
+
+222	Which of Tim Burton's films had the highest budget?
+Tim Burton
+2	4	http://dbpedia.org/resource/Tim_Burton
+
+
+209	How heavy is Jupiter's lightest moon?
+
+3	4	http://dbpedia.org/resource/Jupiter
+
+
+220	Which actor was casted in the most movies?
+actor
+1	1	http://dbpedia.org/resource/Actor
+7	7	http://dbpedia.org/resource/Film
+
+
+224	Who are the four youngest MVP basketball players?
+
+5	5	http://dbpedia.org/resource/Most_Valuable_Player
+6	7	http://dbpedia.org/resource/Basketball
+
+
+251	Which companies have more than 1 million employees?
+companies
+
+
+256	Which city has the most inhabitants?
+city
+1	1	http://dbpedia.org/resource/City
+
+
+257	Which city has the least inhabitants?
+city
+1	1	http://dbpedia.org/resource/City
+
+
+272	Which book has the most pages?
+book
+
+
+286	What is the highest volcano in Africa?
+highest volcano
+6	6	http://dbpedia.org/resource/Africa
+4	4	http://dbpedia.org/resource/Volcano
+
+
+296	What is the largest metropolitan area in Washington state?
+largest metropolitan area
+4	5	http://dbpedia.org/resource/Metropolitan_area
+
+

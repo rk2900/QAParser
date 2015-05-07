@@ -15,6 +15,9 @@ import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
+import entityLinking.client.entityClientConst.TOOLKIT;
+import entityLinking.parse.responseParser;
+import baseline.Entity;
 import baseline.Main;
 import basic.FileOps;
 import paser.Question;
@@ -23,6 +26,7 @@ import paser.QuestionSingle;
 import paser.XMLParser;
 import pattern.QuestionClassifier.Category;
 import pattern.QuestionClassifier.Label;
+import tool.OutputRedirector;
 import knowledgebase.ClientManagement;
 
 public class Pipeline {
@@ -295,11 +299,23 @@ public class Pipeline {
 	}
 	
 	public static void main(String[] args) {
-		Pipeline pipeline = new Pipeline(DataSource.TEST);
-		for(int i=1; i<=totalNumber; i++) {
-			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
-			qf.print();
+		Pipeline pipeline = new Pipeline(DataSource.TRAIN);
+		LinkedList<QuestionFrame> qfList = pipeline.bool;
+		responseParser rParser = new responseParser();
+		
+		OutputRedirector.openFileOutput("./data/entity_linking_result_bool.txt");
+		
+		for (QuestionFrame qf : qfList) {
+			System.out.println(qf.id+"\t"+qf.question);
+			System.out.println(qf.focus.getFocusContent(qf.wordList));
+			rParser.setEntityList(qf, TOOLKIT.MINERDIS);
+			for (Entity entity : qf.entityList) {
+				System.out.println(entity.getStart()+"\t"+entity.getEnd()+"\t"+entity.getUri());
+			}
+			System.out.println("\n");
 		}
+		
+		OutputRedirector.closeFileOutput();
 	}
 
 }
