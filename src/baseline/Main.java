@@ -19,7 +19,6 @@ import paser.QuestionFrame;
 import syntacticParser.Constraint;
 import syntacticParser.ConstraintSet;
 import syntacticParser.Node;
-import tool.OutputRedirector;
 import finder.Pipeline;
 import baseline.Classification.CLASSIFICATION;
 import basic.FileOps;
@@ -239,7 +238,19 @@ public class Main {
 				Collections.sort(pairPredicates,Collections.reverseOrder());
 				answer.pairPredicates = pairPredicates;
 				break;
-
+			case 2:
+				answer.pairTypeConstraintScore = FocusConstraint.getPairPredicateTypeConstraintScore(answer);
+				LinkedList<PairPredicate> pairP = new LinkedList<PairPredicate>();
+				for (PairPredicate pair : answer.pairPredicates) {
+					double typeScore = answer.pairTypeConstraintScore.get(pair);
+					if(typeScore > 0 || (pair.Predicate1.maxScore + pair.Predicate2.maxScore)/2 > SimilarityFunction.threshold){
+						pair.score = (pair.Predicate1.maxScore+pair.Predicate2.maxScore) / 2 + typeScore;
+						pairP.add(pair);
+					}
+				}
+				Collections.sort(pairP, new PairPredicate());
+				answer.pairPredicates = pairP;
+				break;
 			default:
 				break;
 			}
@@ -289,60 +300,37 @@ public class Main {
 						LinkedList<RDFNode> res = ClientManagement.getPipeNode(answer.entityUri, pairP.Predicate1.uri, pairP.Predicate2.uri);
 						answer.pairResources.put(pairP, res);
 					}
-					
 					addTypeConstraint(answer, type);
-//					LinkedList<Answer> answers = new LinkedList<Answer>();
-//					for (RDFNode node : step1Result) {
-//						Answer ans = new Answer();
-//						ans.qf = answer.qf;
-//						secondMD.entity = new Entity(node.toString());
-//						stepAnswer(secondMD, ans, type);
-//						answers.add(ans);
-//					}
-//					
-//					if(answers.size() == 1){
-//						answer = answers.get(0);
-//					}else{
-//						HashSet<String> finalPredicts = new HashSet<String>();
-//						HashMap<String, Predicate> finalPredictsMap = new HashMap<String, Predicate>();
-//						for (Predicate p : answers.get(0).predictList) {
-//							finalPredicts.add(p.uri);
-//							finalPredictsMap.put(p.uri, p);
-//						}
-//						
-//						for(int i=1; i<answers.size(); ++i){
-//							HashSet<String> curPredicates = new HashSet<String>();
-//							for (Predicate predicate : answers.get(i).predictList) {
-//								if(finalPredicts.contains(predicate.uri)){
-//									curPredicates.add(predicate.uri);
-//								}
-//							}
-//							finalPredicts = curPredicates;
-//							if(finalPredicts.size() == 0){
-//								answer.exceptionString = "pipe style, step 2 error, no common predicates in top 5";
-//								break;
-//							}
-//						}
-//						
-//						if(finalPredicts.size() > 0){
-//							answer.predictList = new ArrayList<Predicate>();
-//							answer.predictList.addAll(finalPredictsMap.values());
-//							Collections.sort(answer.predictList,Collections.reverseOrder());
-//							
-//							LinkedList<RDFNode> rdfNodes;
-//							answer.resources = new HashMap<Predicate, LinkedList<RDFNode>>();
-//							
-////							rdfNodes = fisrtAnswer.entityUri,fisrtAnswer.predictList.get(0).uri,answer.predictList.get(0).uri;
-////							answer.resources.put(answer.predictList.get(0), rdfNodes);
-//						}
-//					}
 				}
 			}
 		}
 	}
 	
 	//2对1的映射问题
-	public static void map(MatchDetail step1, MatchDetail step2){
+	public static void map(Answer answer, MatchDetail step1, MatchDetail step2, CLASSIFICATION type){
+		String eUri1 = step1.entity.uri;
+		String eUri2 = step2.entity.uri;
+		
+		answer.entityUri = eUri1 + "\t" + eUri2;
+		
+		HashMap<String, HashSet<String>> pairStringMap = ClientManagement.getPredicateCross(eUri1, eUri2);
+		HashMap<String, Predicate> p2Map = new HashMap<String, Predicate>();
+		
+		for (String s1 : pairStringMap.keySet()) {
+			Predicate p1 = SimilarityFunction.getPredicate(s1, step1.constraint.edge, step1.focusString);
+			for (String s2 : pairStringMap.get(s1)) {
+				if(!p2Map.containsKey(s2)){
+					Predicate p2 = SimilarityFunction.getPredicate(s2, step2.constraint.edge, step2.focusString);
+					p2Map.put(s2, p2);
+				}
+				answer.pairPredicates.add(new PairPredicate(p1,p2Map.get(s2)));
+			}
+		}
+		for (PairPredicate pairP : answer.pairPredicates) {
+			LinkedList<RDFNode> res = ClientManagement.getCrossNode(eUri1, pairP.Predicate1.uri, eUri2, pairP.Predicate2.uri);
+			answer.pairResources.put(pairP, res);
+		}
+		addTypeConstraint(answer, type);
 		
 	}
 	
@@ -413,7 +401,5 @@ public class Main {
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}
-		
-		OutputRedirector.openFileOutput("./data/zch_classfication/When.txt");
 	}
 }

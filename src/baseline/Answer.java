@@ -22,6 +22,7 @@ public class Answer {
 	/**
 	 * 0 -> one step style
 	 * 1 -> pipe style
+	 * 2 -> map style
 	 */
 	public int answerType;
 	public LinkedList<PairPredicate> pairPredicates;
@@ -44,6 +45,7 @@ public class Answer {
 			resources = new HashMap<Predicate, LinkedList<RDFNode>>(); 
 			break;
 		case 1:
+		case 2:
 			pairPredicates = new LinkedList<PairPredicate>();
 			pairResources = new HashMap<PairPredicate, LinkedList<RDFNode>>();
 			pairTypeConstraintScore = new HashMap<PairPredicate, Double>();

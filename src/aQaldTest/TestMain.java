@@ -17,6 +17,7 @@ public class TestMain {
 	public static void showSingleQF(Pipeline pipeline, responseParser parser, int qid){
 		QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithId(qid);
 		parser.setEntityList(qf, TOOLKIT.MINERDIS);
+		
 		Answer answer = Classification.getAnswer(qf,CLASSIFICATION.RESOURCE);
 		System.out.println(answer.print());
 		System.err.println("******************************************");
@@ -30,7 +31,7 @@ public class TestMain {
 		Pipeline pipeline = new Pipeline(DataSource.TRAIN);
 		responseParser parser = new responseParser();
 		
-		showSingleQF(pipeline, parser, 129);
+		showSingleQF(pipeline, parser, 119);
 //		OutputRedirector.openFileOutput("./data/api_classification/normal-type-pipe.txt");
 //		for(int i=1; i<=pipeline.totalNumber; i++) {
 //			
