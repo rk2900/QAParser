@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 
+import tool.OutputRedirector;
 import baseline.Predicate;
 
 import com.franz.agraph.jena.AGGraph;
@@ -111,7 +112,6 @@ public class ClientManagement {
 	 */
 	public static ResultSet query(String sparql, boolean visible) {
 		ResultSet rs = null;
-		System.err.println("SERVER SOURCE: "+serverType);
 		if(serverType == Server.LOCAL) {
 			try {
 				getAgModel();
@@ -328,6 +328,22 @@ public class ClientManagement {
 		return nodeList;
 	}
 	
+	public static LinkedList<RDFNode> getPipeNode(String entity, String firstPred, String secondPred) {
+		LinkedList<RDFNode> nodeList = new LinkedList<>();
+		String sparql = "SELECT DISTINCT ?o1 WHERE {"
+				+ "{<"+entity+"> <"+firstPred+"> ?o. ?o <"+secondPred+"> ?o1.} " //out - out
+				+ "UNION {<"+entity+"> <"+firstPred+"> ?o. ?o1 <"+secondPred+"> ?o.} " // out - in
+				+ "UNION {?o <"+firstPred+"> <"+entity+">. ?o <"+secondPred+"> ?o1.} " // in - out
+				+ "UNION {?o <"+firstPred+"> <"+entity+">. ?o1 <"+secondPred+"> ?o.} " // in - in
+				+ "}";
+		ResultSet rs = ClientManagement.query(sparql, false);
+		while (rs.hasNext()) {
+			RDFNode node = rs.next().get("o1");
+			nodeList.add(node);
+		}
+		return nodeList;
+	}
+	
 	public static HashMap<Predicate, HashSet<String>> getPredicatePipe(String entity, ArrayList<Predicate> predList) {
 		HashMap<Predicate, HashSet<String>> predMap = new HashMap<>();
 		for (Predicate predicate : predList) {
@@ -335,7 +351,7 @@ public class ClientManagement {
 			HashSet<String> predSet = new HashSet<>();
 			boolean literalFlag = false; // judge if this predicate 
 			
-			String firstQuery = "SELECT ?o WHERE {<"+entity+"> <"+predUri+"> ?o}";
+			String firstQuery = "SELECT DISTINCT ?o WHERE { {<"+entity+"> <"+predUri+"> ?o} UNION {?o <"+predUri+"> <"+entity+">}}";
 			ResultSet rs = ClientManagement.query(firstQuery, true);
 			while (rs.hasNext()) {
 				RDFNode node = rs.next().get("o");
@@ -353,7 +369,7 @@ public class ClientManagement {
 			if(literalFlag) {
 				continue;
 			}
-			
+			predMap.put(predicate, predSet);
 		}
 		return predMap;
 	}
@@ -434,7 +450,7 @@ public class ClientManagement {
 				+"{" +fSPO+ "} UNION {" +bSPO+ "}"
 						+ "?o rdf:type <"+typeUri+">."
 						+ "}";
-		ResultSet rs = ClientManagement.query(sparql, true);
+		ResultSet rs = ClientManagement.query(sparql, false);
 		while(rs.hasNext()) {
 			RDFNode p = rs.next().get("p");
 			if(!BlackList.predicateSet.contains(p.toString()))
@@ -459,10 +475,10 @@ public class ClientManagement {
 	}
 	
 	public static void main(String[] args) throws Exception {
-//		ClientManagement.setServerType(Server.ONLINE);
 		/**/
+		OutputRedirector.openFileOutput("./data/rk/pipe_test.txt");
 		String entity = "http://dbpedia.org/resource/Beijing";
-		Predicate p1 = new Predicate("http://dbpedia.org/property/areaCode", 0, "");
+		Predicate p1 = new Predicate("http://dbpedia.org/ontology/country", 0, "");
 		ArrayList<Predicate> predList = new ArrayList<>();
 		predList.add(p1);
 		HashMap<Predicate, HashSet<String>> predMap = ClientManagement.getPredicatePipe(entity, predList);
@@ -470,20 +486,26 @@ public class ClientManagement {
 		for (Predicate predicate : predMap.keySet()) {
 			HashSet<String> predSet = predMap.get(predicate);
 			System.out.println(predicate.getUri());
-			for (String string : predSet) {
-				System.out.println("\t"+string);
+			for (String pred : predSet) {
+				System.out.println("\t"+pred);
+				LinkedList<RDFNode> nodeList = ClientManagement.getPipeNode(entity, predicate.getUri(), pred);
+				for (RDFNode rdfNode : nodeList) {
+					System.out.println("\t\t"+rdfNode.toString());
+				}
 			}
 			System.out.println();
 		}
-		/**/
-//		String query = "select distinct ?s where {?s ?p ?o} limit 50";
-//		String query = "SELECT DISTINCT ?o1 WHERE {<http://dbpedia.org/resource/Beijing> <http://dbpedia.org/ontology/country> ?o. ?o1 ?p ?o}";
-//		String query = "SELECT (COUNT(DISTINCT ?p) AS ?count) WHERE {{<http://dbpedia.org/resource/Beijing> <http://dbpedia.org/property/areaCode> ?o. ?o ?p ?o1.} UNION {<http://dbpedia.org/resource/Beijing> <http://dbpedia.org/property/areaCode> ?o. ?o1 ?p ?o.} UNION {?o <http://dbpedia.org/property/areaCode> <http://dbpedia.org/resource/Beijing>. ?o ?p ?o2.} UNION {?o <http://dbpedia.org/property/areaCode> <http://dbpedia.org/resource/Beijing>. ?o2 ?p ?o.} }";//"SELECT DISTINCT ?s WHERE { ?s ?p ?o } LIMIT 5";
-//		ResultSet rs = ClientManagement.query(query, true);
-//		System.out.println("OVER");
-//		while(rs.hasNext()) {
-//			System.out.println(rs.next().get("o1"));
-//		}
-		/**/
+		OutputRedirector.closeFileOutput();
 	}
+	
+	/**
+//	String query = "select distinct ?s where {?s ?p ?o} limit 50";
+	String query = "SELECT DISTINCT ?o1 WHERE {<http://dbpedia.org/resource/Beijing> <http://dbpedia.org/ontology/country> ?o. ?o1 <http://dbpedia.org/ontology/stateOfOrigin> ?o}";
+//	String query = "SELECT (COUNT(DISTINCT ?p) AS ?count) WHERE {{<http://dbpedia.org/resource/Beijing> <http://dbpedia.org/property/areaCode> ?o. ?o ?p ?o1.} UNION {<http://dbpedia.org/resource/Beijing> <http://dbpedia.org/property/areaCode> ?o. ?o1 ?p ?o.} UNION {?o <http://dbpedia.org/property/areaCode> <http://dbpedia.org/resource/Beijing>. ?o ?p ?o2.} UNION {?o <http://dbpedia.org/property/areaCode> <http://dbpedia.org/resource/Beijing>. ?o2 ?p ?o.} }";//"SELECT DISTINCT ?s WHERE { ?s ?p ?o } LIMIT 5";
+	ResultSet rs = ClientManagement.query(query, true);
+	System.out.println("OVER");
+	while(rs.hasNext()) {
+		System.out.println(rs.next().get("o1"));
+	}
+	/**/
 }
