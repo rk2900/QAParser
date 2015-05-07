@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 
+import org.apache.commons.io.output.ThresholdingOutputStream;
+
+import baseline.Classification.CLASSIFICATION;
 import baseline.Predicate;
 
 import com.franz.agraph.jena.AGGraph;
@@ -192,12 +195,36 @@ public class ClientManagement {
 		
 		// Forward & Backward
 		String fSPO = "<"+entityUri+">" + " ?p ?o.";
-		String bSPO = "?s ?p " + "<"+entityUri+">";
+		String bSPO = "?o ?p " + "<"+entityUri+">";
 		
 		String sparql = "SELECT DISTINCT ?p WHERE { "
 				+"{" +fSPO+ "} UNION {" +bSPO+ "}"
 						+ "}";
 		ResultSet rs = ClientManagement.query(sparql, false);
+		while(rs.hasNext()) {
+			RDFNode p = rs.next().get("p");
+			if(!BlackList.predicateSet.contains(p.toString()))
+				predList.add(p);
+		}
+		
+		return predList;
+	}
+	
+	public static LinkedList<RDFNode> getSurroundingPred(String entityUri, CLASSIFICATION c) {
+		
+		String cons = getConstraint(c);
+		
+		LinkedList<RDFNode> predList = new LinkedList<>();
+		
+		// Forward & Backward
+		String fSPO = "<"+entityUri+">" + " ?p ?o.";
+		String bSPO = "?o ?p " + "<"+entityUri+">";
+		
+		String sparql = "SELECT DISTINCT ?p WHERE { "
+				+"{" +fSPO+ "} UNION {" +bSPO+ "}"
+						+ cons
+						+ "}";
+		ResultSet rs = ClientManagement.query(sparql, true);
 		while(rs.hasNext()) {
 			RDFNode p = rs.next().get("p");
 			if(!BlackList.predicateSet.contains(p.toString()))
@@ -373,6 +400,55 @@ public class ClientManagement {
 		return predMap;
 	}
 	
+	public static HashMap<Predicate, HashSet<String>> getPredicatePipe(String entity, ArrayList<Predicate> predList, CLASSIFICATION c) {
+		HashMap<Predicate, HashSet<String>> predMap = new HashMap<>();
+		for (Predicate predicate : predList) {
+			String predUri = predicate.getUri();
+			HashSet<String> predSet = new HashSet<>();
+			boolean literalFlag = false; // judge if this predicate 
+			
+			String firstQuery = "SELECT DISTINCT ?o WHERE { {<"+entity+"> <"+predUri+"> ?o} UNION {?o <"+predUri+"> <"+entity+">}}";
+			ResultSet rs = ClientManagement.query(firstQuery, true);
+			while (rs.hasNext()) {
+				RDFNode node = rs.next().get("o");
+				if(node.isLiteral()) { // literal case
+					literalFlag = true;
+					break;
+				} else { // resource case
+					LinkedList<RDFNode> secondPredList = getSurroundingPred(node.toString(), c);
+					for (RDFNode secondPredicate : secondPredList) {
+						if(!secondPredicate.equals(predicate))
+							predSet.add(secondPredicate.toString());
+					}
+				}
+			}
+			if(literalFlag) {
+				continue;
+			}
+			predMap.put(predicate, predSet);
+		}
+		return predMap;
+	}
+	
+	private static String getConstraint(CLASSIFICATION c) {
+		StringBuilder sb = new StringBuilder();
+		switch (c) {
+		case WHO:
+			sb.append("{?o rdf:type dbo:Person} UNION {?o rdf:type dbo:Organisation}");
+			break;
+		case WHERE:
+			sb.append("?o rdf:type dbo:Place");
+			break;
+		case DATE:
+			sb.append("FILTER(isLiteral(?o))");
+			break;
+		default:
+			break;
+		}
+		
+		return sb.toString();
+	}
+
 	public static HashMap<String, HashSet<String>> getPredicateCross(String e1, String e2) {
 		HashMap<String, HashSet<String>> predMap = new HashMap<>();
 		String sparql = "SELECT DISTINCT ?p1 ?p2 WHERE {"
@@ -381,6 +457,33 @@ public class ClientManagement {
 				+ "}";
 		
 		ResultSet rs = ClientManagement.query(sparql, false);
+		while (rs.hasNext()) {
+			QuerySolution qs = rs.next();
+			RDFNode p1 = qs.get("p1");
+			RDFNode p2 = qs.get("p2");
+			if(predMap.containsKey(p1.toString())) {
+				predMap.get(p1.toString()).add(p2.toString());
+			} else {
+				HashSet<String> predSet = new HashSet<>();
+				predSet.add(p2.toString());
+				predMap.put(p1.toString(), predSet);
+			}
+		}
+		
+		return predMap;
+	}
+	
+	
+	public static HashMap<String, HashSet<String>> getPredicateCross(String e1, String e2, CLASSIFICATION c) {
+		String cons = getConstraint(c);
+		HashMap<String, HashSet<String>> predMap = new HashMap<>();
+		String sparql = "SELECT DISTINCT ?p1 ?p2 WHERE {"
+				+ "{{<"+e1+"> ?p1 ?o} UNION {?o ?p1 <"+e1+">}} "
+				+ "{{<"+e2+"> ?p2 ?o} UNION {?o ?p2 <"+e2+">}}"
+				+ cons
+				+ "}";
+		
+		ResultSet rs = ClientManagement.query(sparql, true);
 		while (rs.hasNext()) {
 			QuerySolution qs = rs.next();
 			RDFNode p1 = qs.get("p1");

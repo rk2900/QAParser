@@ -98,6 +98,7 @@ public class Pipeline {
 				bool.add(qf);
 			}
 		}
+		
 	}
 	
 	public Pipeline(DataSource s) {
@@ -314,71 +315,78 @@ public class Pipeline {
 			if(answer.isException()) {
 				break;
 			} else {
-				if(answer.answerType == 1)
+				if(answer.answerType == 0) {
 					if(answer.predictList.size() > 0) {
 						LinkedList<RDFNode> nodeList = answer.resources.get(answer.predictList.get(0));
 						qaMap.put(qf, nodeList);
 					}
-			}
-		}
-		
-		for(QuestionFrame qf: pipeline.number) {
-			parser.setEntityList(qf, TOOLKIT.MINERDIS);
-			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.NUMBER);
-			if(answer.isException()) {
-				break;
-			} else {
-				if(answer.answerType == 1)
-					if(answer.predictList.size() > 0) {
-						LinkedList<RDFNode> nodeList = answer.resources.get(answer.predictList.get(0));
+				} else {
+					if(answer.pairPredicates.size() > 0) {
+						LinkedList<RDFNode> nodeList = answer.pairResources.get(answer.pairPredicates.get(0));
 						qaMap.put(qf, nodeList);
 					}
+				}
+					
 			}
 		}
 		
-		for(QuestionFrame qf: pipeline.who) {
-			parser.setEntityList(qf, TOOLKIT.MINERDIS);
-			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.WHO);
-			if(answer.isException()) {
-				break;
-			} else {
-				if(answer.answerType == 1)
-					if(answer.predictList.size() > 0) {
-						LinkedList<RDFNode> nodeList = answer.resources.get(answer.predictList.get(0));
-						qaMap.put(qf, nodeList);
-					}
-			}
-		}
+//		for(QuestionFrame qf: pipeline.number) {
+//			parser.setEntityList(qf, TOOLKIT.MINERDIS);
+//			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.NUMBER);
+//			if(answer.isException()) {
+//				break;
+//			} else {
+//				if(answer.answerType == 1)
+//					if(answer.predictList.size() > 0) {
+//						LinkedList<RDFNode> nodeList = answer.resources.get(answer.predictList.get(0));
+//						qaMap.put(qf, nodeList);
+//					}
+//			}
+//		}
+//		
+//		for(QuestionFrame qf: pipeline.who) {
+//			parser.setEntityList(qf, TOOLKIT.MINERDIS);
+//			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.WHO);
+//			if(answer.isException()) {
+//				break;
+//			} else {
+//				if(answer.answerType == 1)
+//					if(answer.predictList.size() > 0) {
+//						LinkedList<RDFNode> nodeList = answer.resources.get(answer.predictList.get(0));
+//						qaMap.put(qf, nodeList);
+//					}
+//			}
+//		}
+//		
+//		for(QuestionFrame qf: pipeline.where) {
+//			parser.setEntityList(qf, TOOLKIT.MINERDIS);
+//			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.WHERE);
+//			if(answer.isException()) {
+//				break;
+//			} else {
+//				if(answer.answerType == 1)
+//					if(answer.predictList.size() > 0) {
+//						LinkedList<RDFNode> nodeList = answer.resources.get(answer.predictList.get(0));
+//						qaMap.put(qf, nodeList);
+//					}
+//			}
+//		}
+//		
+//		for(QuestionFrame qf: pipeline.resource) {
+//			parser.setEntityList(qf, TOOLKIT.MINERDIS);
+//			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.RESOURCE);
+//			if(answer.isException()) {
+//				break;
+//			} else {
+//				if(answer.answerType == 1)
+//					if(answer.predictList.size() > 0) {
+//						LinkedList<RDFNode> nodeList = answer.resources.get(answer.predictList.get(0));
+//						qaMap.put(qf, nodeList);
+//					}
+//			}
+//		}
 		
-		for(QuestionFrame qf: pipeline.where) {
-			parser.setEntityList(qf, TOOLKIT.MINERDIS);
-			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.WHERE);
-			if(answer.isException()) {
-				break;
-			} else {
-				if(answer.answerType == 1)
-					if(answer.predictList.size() > 0) {
-						LinkedList<RDFNode> nodeList = answer.resources.get(answer.predictList.get(0));
-						qaMap.put(qf, nodeList);
-					}
-			}
-		}
-		
-		for(QuestionFrame qf: pipeline.resource) {
-			parser.setEntityList(qf, TOOLKIT.MINERDIS);
-			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.RESOURCE);
-			if(answer.isException()) {
-				break;
-			} else {
-				if(answer.answerType == 1)
-					if(answer.predictList.size() > 0) {
-						LinkedList<RDFNode> nodeList = answer.resources.get(answer.predictList.get(0));
-						qaMap.put(qf, nodeList);
-					}
-			}
-		}
-		
-		pipeline.xmlParser.outputAnswer("./output/test.xml", qaMap);
+		pipeline.xmlParser.outputAnswer("./data/output/test.xml", qaMap);
 
 	}
 

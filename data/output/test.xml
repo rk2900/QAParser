@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset id="qald-5_test">
+<question id="107">
+<string lang="en"/>
+<answers>
+<answer>1905-09-01</answer>
+</answers>
+</question>
+<question id="156">
+<string lang="en"/>
+<answers>
+<answer>1997-12-01</answer>
+<answer>2004-06-06</answer>
+<answer>2006-12-18</answer>
+<answer>2008-10-27</answer>
+</answers>
+</question>
+<question id="174">
+<string lang="en"/>
+<answers>
+<answer>2009-06-25</answer>
+</answers>
+</question>
+<question id="37">
+<string lang="en"/>
+<answers>
+<answer>November 2013</answer>
+</answers>
+</question>
+<question id="171">
+<string lang="en"/>
+<answers>
+<answer>1886-10-28</answer>
+</answers>
+</question>
+</dataset>
