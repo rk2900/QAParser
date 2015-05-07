@@ -18,11 +18,8 @@ public class TestMain {
 		QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithId(qid);
 		parser.setEntityList(qf, TOOLKIT.MINERDIS);
 		Answer answer = Classification.getAnswer(qf,CLASSIFICATION.RESOURCE);
-		System.err.println(answer.typeConstrainScore);
-		System.err.println(qf.focus.getFocusContent(qf.wordList));
 		System.out.println(answer.print());
-//		System.err.println(answer.exceptionString);
-		System.err.println("*********");
+		System.err.println("******************************************");
 		for (Entity entity : qf.entityList) {
 			entity.print();
 		}

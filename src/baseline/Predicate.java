@@ -42,20 +42,33 @@ public class Predicate implements Comparable<Predicate>{
 	@Override
 	/**
 	 * 首先按照score排名，
+	 * 然后按照ontology的优先
 	 * 对于score相同的，取label较长的
 	 */
 	public int compareTo(Predicate o) {
 		// TODO Auto-generated method stub
 		if(maxScore > o.maxScore){
 			return 1;
-		}else{
-			if(maxScore < o.maxScore){
-				return -1;
-			}else{
-				return matchedLabel.length()-o.matchedLabel.length();
-			}
 		}
+		if(maxScore < o.maxScore){
+			return -1;
+		}
+		if(uri.startsWith("http://dbpedia.org/ontology/") && !o.uri.startsWith("http://dbpedia.org/ontology")){
+			return 1;
+		}
+		if(!uri.startsWith("http://dbpedia.org/ontology/") && o.uri.startsWith("http://dbpedia.org/ontology")){
+			return -1;
+		}
+		return matchedLabel.length()-o.matchedLabel.length();
 	}
 	
+	public boolean equals(Object o){ 
+		if(!(o instanceof Predicate)) {
+			return false;
+		}
+		Predicate p = (Predicate)o;
+		return p.uri.equals(uri);
+	} 
+
 	
 }

@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -206,18 +207,16 @@ public class Main {
 			answer.resources.put(predicate,resources);
 		}
 		if(type == CLASSIFICATION.RESOURCE){
-			System.err.println("***********************************************************"+answer.predictList.size());
-			System.err.println("********************************"+answer.resources.keySet().size());
 			answer.typeConstrainScore = FocusConstraint.getPredicateTypeConstraintScore(answer);
-//			System.err.println(answer.typeConstrainScore);
 			ArrayList<Predicate> newPredicates = new ArrayList<Predicate>();
 			for (Predicate predicate : answer.predictList) {
 				double typeScore = answer.typeConstrainScore.get(predicate);
-				if(typeScore > 0){
+				if(typeScore > 0 || predicate.maxScore > SimilarityFunction.threshold){
 					predicate.maxScore += typeScore;
 					newPredicates.add(predicate);
 				}
 			}
+			Collections.sort(newPredicates,Collections.reverseOrder());
 			answer.predictList = newPredicates;
 		}
 	}
@@ -257,13 +256,58 @@ public class Main {
 				if(step1Result.size() == 0){
 					answer.exceptionString = "pipe style, step 1 error, resources size equals: 0";
 				}else{
-					secondMD.entity = new Entity(step1Result.get(0).toString());
-					stepAnswer(secondMD, answer, type);
+					LinkedList<Answer> answers = new LinkedList<Answer>();
+					int originalNum = SimilarityFunction.predictNum;
+					SimilarityFunction.predictNum = 5;
+					for (RDFNode node : step1Result) {
+						Answer ans = new Answer();
+						ans.qf = answer.qf;
+						secondMD.entity = new Entity(node.toString());
+						stepAnswer(secondMD, ans, type);
+						answers.add(ans);
+					}
+					
+					if(answers.size() == 1){
+						answer = answers.get(0);
+					}else{
+						HashSet<String> finalPredicts = new HashSet<String>();
+						HashMap<String, Predicate> finalPredictsMap = new HashMap<String, Predicate>();
+						for (Predicate p : answers.get(0).predictList) {
+							finalPredicts.add(p.uri);
+							finalPredictsMap.put(p.uri, p);
+						}
+						
+						for(int i=1; i<answers.size(); ++i){
+							HashSet<String> curPredicates = new HashSet<String>();
+							for (Predicate predicate : answers.get(i).predictList) {
+								if(finalPredicts.contains(predicate.uri)){
+									curPredicates.add(predicate.uri);
+								}
+							}
+							finalPredicts = curPredicates;
+							if(finalPredicts.size() == 0){
+								answer.exceptionString = "pipe style, step 2 error, no common predicates in top 5";
+								break;
+							}
+						}
+						
+						if(finalPredicts.size() > 0){
+							answer.predictList = new ArrayList<Predicate>();
+							answer.predictList.addAll(finalPredictsMap.values());
+							Collections.sort(answer.predictList,Collections.reverseOrder());
+							
+							LinkedList<RDFNode> rdfNodes;
+							answer.resources = new HashMap<Predicate, LinkedList<RDFNode>>();
+							
+//							rdfNodes = fisrtAnswer.entityUri,fisrtAnswer.predictList.get(0).uri,answer.predictList.get(0).uri;
+//							answer.resources.put(answer.predictList.get(0), rdfNodes);
+						}
+					}
+					SimilarityFunction.predictNum = originalNum;
 				}
 			}
 		}
 	}
-	
 	
 	//2对1的映射问题
 	public static void map(MatchDetail step1, MatchDetail step2){
@@ -317,70 +361,6 @@ public class Main {
 			
 			if(constraintList.size() == 2){
 				exceptionString += "constraintList size equals 2\n";
-//				int eCount = 0;
-//				int cs1Location = -1;
-//				int cs2Location = -1;
-//				
-//				Constraint cs1 = constraintList.get(0);
-//				Constraint cs2 = constraintList.get(1);
-//				
-//				if(!cs1.left.isx){
-//					cs1Location = 0;
-//					++eCount;
-//				}
-//				if(!cs1.right.isx){
-//					cs1Location = 1;
-//					++eCount;
-//				}
-//				if(!cs2.left.isx){
-//					cs2Location = 0;
-//					++eCount;
-//				}
-//				if(!cs2.right.isx){
-//					cs2Location = 1;
-//					++eCount;
-//				}
-//				
-//				if(eCount == 1){
-//					Entity e;
-//					MatchDetail pipe1;
-//					if(cs1Location >= 0){
-//						if(cs1Location == 0){
-//							e = getEntity(entityList, cs1.left);
-//						}else{
-//							e = getEntity(entityList, cs1.right);
-//						}
-//						pipe1 = new MatchDetail(e, cs1, cs1Location,focusString);
-////						pipe(pipe1, cs2, answer);
-//					}else{
-//						if(cs2Location == 0){
-//							e = getEntity(entityList, cs2.left);
-//						}else{
-//							e = getEntity(entityList, cs2.right);
-//						}
-//						pipe1 = new MatchDetail(e, cs2, cs2Location,focusString);
-//						pipe(pipe1, cs1, answer);
-//					}
-//				}
-//				
-//				if(eCount == 2){
-//					MatchDetail step1,step2;
-//					Entity e;
-//					if(cs1Location == 0){
-//						e = getEntity(entityList, cs1.left);
-//					}else{
-//						e = getEntity(entityList, cs1.right);
-//					}
-//					step1 = new MatchDetail(e, cs1, cs1Location,focusString);
-//					
-//					if(cs2Location == 0){
-//						e = getEntity(entityList, cs2.left);
-//					}else{
-//						e = getEntity(entityList, cs2.right);
-//					}
-//					step2 = new MatchDetail(e, cs2, cs2Location,focusString);
-//					map(step1, step2);
-//				}
 			}
 			
 			if(constraintList.size() > 2){
