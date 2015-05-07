@@ -33,17 +33,18 @@ public class Classification {
 			break;
 		}
 		
-		String exceptionString="";
 		if(constraintList.size() == 0){
-			exceptionString += "ConstraintList size equals 0.\n";
+			answer.exceptionString = "ConstraintList size equals 0.\n";
 		}
 		
 		if(entityList.size() == 0){
-			exceptionString += "entityList size equals 0.\n";
+			answer.exceptionString += "entityList size equals 0.\n";
+			return answer;
 		}
 		
 		if(entityList.size() > 0 && constraintList.size() > 0){
 			if(constraintList.size() == 1){
+				answer.initial(0);
 				Constraint constraint = constraintList.get(0);
 				Entity e;
 				Node left = constraint.left;
@@ -51,7 +52,8 @@ public class Classification {
 				int location;
 				
 				if(!left.isx && !right.isx){
-					exceptionString += "Both nodes in Constraint are Strings.\n";
+					answer.exceptionString = "Both nodes in Constraint are Strings.\n";
+					return answer;
 				}
 				
 				if(!left.isx){
@@ -62,7 +64,8 @@ public class Classification {
 					location = 1;
 				}
 				if(e == null){
-					exceptionString += "No matched entity in the Node.\n";
+					answer.exceptionString = "No matched entity in the Node.\n";
+					return answer;
 				}else{
 					MatchDetail onestep = new MatchDetail(e, constraint, location,focusString);
 					Main.stepAnswer(onestep, answer,type);
@@ -71,6 +74,7 @@ public class Classification {
 			
 			if(constraintList.size() == 2){
 //				exceptionString += "constraintList size equals 2\n";
+				answer.initial(1);
 				int eCount = 0;
 				int cs1Location = -1;
 				int cs2Location = -1;
@@ -112,7 +116,8 @@ public class Classification {
 						}
 					}
 					if(e == null){
-						exceptionString = qf.id + " constraintList size equals 2 && pipeline style &&No matched entity";
+						answer.exceptionString = qf.id + " constraintList size equals 2 && pipeline style &&No matched entity";
+						return answer;
 					}else{
 						if(cs1Location >= 0){
 							pipe = new MatchDetail(e, cs1, cs1Location,focusString);
@@ -121,12 +126,11 @@ public class Classification {
 							pipe = new MatchDetail(e, cs2, cs2Location, focusString);
 							Main.pipe(pipe, cs1, answer, type);
 						}
-						exceptionString += answer.exceptionString;
 					}
 				}
 				
 				if(eCount == 2){
-					exceptionString = qf.id + " constraintList size equals 2 && map style && No matched entity";
+					answer.exceptionString = qf.id + " constraintList size equals 2 && map style && No matched entity";
 //					MatchDetail step1,step2;
 //					Entity e;
 //					if(cs1Location == 0){
@@ -146,14 +150,13 @@ public class Classification {
 				}
 				
 				if(eCount > 2){
-					exceptionString = qf.id + " constraintList size equals 2 && entity Num > 2 && No matched entity";
+					answer.exceptionString = qf.id + " constraintList size equals 2 && entity Num > 2 && No matched entity";
 				}
 			}
 			if(constraintList.size() > 2){
-				exceptionString += "constraintList size > 2\n";
+				answer.exceptionString += "constraintList size > 2\n";
 			}
 		}
-		answer.exceptionString = exceptionString;
 		return answer;
 	}
 	

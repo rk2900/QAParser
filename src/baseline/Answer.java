@@ -9,19 +9,44 @@ import com.hp.hpl.jena.rdf.model.RDFNode;
 import paser.QuestionFrame;
 
 public class Answer {
-	public ArrayList<Predicate> predictList;
+	
 	public String entityUri;
 	public QuestionFrame qf;
 	public String exceptionString;
+	
+	public ArrayList<Predicate> predictList;
 	public HashMap<Predicate, Double> typeConstrainScore;
 	public HashMap<Predicate, Double> entityConstrainScore;
 	public HashMap<Predicate, LinkedList<RDFNode>> resources; 
 	
+	/**
+	 * 0 -> one step style
+	 * 1 -> pipe style
+	 */
+	public int answerType;
+	public LinkedList<PairPredicate> pairPredicates;
+	public HashMap<PairPredicate, LinkedList<RDFNode>> pairResources;
+	
 	public Answer(){
-		predictList = new ArrayList<Predicate>();
-		typeConstrainScore = new HashMap<>();
-		resources = new HashMap<Predicate, LinkedList<RDFNode>>(); 
+		answerType = 0;
 		exceptionString = "";
+	}
+	
+	public void initial(int type){
+		answerType = type;
+		switch (type) {
+		case 0:
+			predictList = new ArrayList<Predicate>();
+			typeConstrainScore = new HashMap<>();
+			resources = new HashMap<Predicate, LinkedList<RDFNode>>(); 
+			break;
+		case 1:
+			pairPredicates = new LinkedList<PairPredicate>();
+			pairResources = new HashMap<PairPredicate, LinkedList<RDFNode>>();
+			break;
+		default:
+			break;
+		}
 	}
 	
 	public boolean isException(){

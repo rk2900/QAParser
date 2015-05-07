@@ -223,6 +223,7 @@ public class Main {
 	
 	//链式问题
 	public static void pipe(MatchDetail pipe, Constraint cs, Answer answer, CLASSIFICATION type){
+		answer.entityUri = pipe.entity.uri;
 		MatchDetail secondMD = new MatchDetail();
 		secondMD.constraint = cs;
 		secondMD.focusString = pipe.focusString;
@@ -240,70 +241,69 @@ public class Main {
 			}
 		}
 		
-		Answer fisrtAnswer = new Answer();
-		fisrtAnswer.qf = answer.qf;
 		pipe.focusString = "";
-		stepAnswer(pipe, fisrtAnswer, CLASSIFICATION.NORMAL);
+		Answer firstAnswer = new Answer();
+		firstAnswer.initial(0);
+		firstAnswer.entityUri = answer.entityUri;
+		firstAnswer.qf = answer.qf;
+		stepAnswer(pipe, firstAnswer, CLASSIFICATION.NORMAL);
 		
-		if(fisrtAnswer.isException()){
-			answer.exceptionString = "pipe style, step 1 error, " + fisrtAnswer.exceptionString;
+		if(firstAnswer.isException()){
+			answer.exceptionString = "pipe style, step 1 error, " + firstAnswer.exceptionString;
 		}else{
-			System.out.println(fisrtAnswer.print());
-			if(fisrtAnswer.predictList.size() == 0){
+			System.out.println(firstAnswer.print());
+			if(firstAnswer.predictList.size() == 0){
 				answer.exceptionString = "pipe style, step 1 error, predicateList size equals: 0";
 			}else{
-				LinkedList<RDFNode> step1Result = fisrtAnswer.resources.get(fisrtAnswer.predictList.get(0));
+				LinkedList<RDFNode> step1Result = firstAnswer.resources.get(firstAnswer.predictList.get(0));
 				if(step1Result.size() == 0){
 					answer.exceptionString = "pipe style, step 1 error, resources size equals: 0";
 				}else{
-					LinkedList<Answer> answers = new LinkedList<Answer>();
-					int originalNum = SimilarityFunction.predictNum;
-					SimilarityFunction.predictNum = 5;
-					for (RDFNode node : step1Result) {
-						Answer ans = new Answer();
-						ans.qf = answer.qf;
-						secondMD.entity = new Entity(node.toString());
-						stepAnswer(secondMD, ans, type);
-						answers.add(ans);
-					}
-					
-					if(answers.size() == 1){
-						answer = answers.get(0);
-					}else{
-						HashSet<String> finalPredicts = new HashSet<String>();
-						HashMap<String, Predicate> finalPredictsMap = new HashMap<String, Predicate>();
-						for (Predicate p : answers.get(0).predictList) {
-							finalPredicts.add(p.uri);
-							finalPredictsMap.put(p.uri, p);
-						}
-						
-						for(int i=1; i<answers.size(); ++i){
-							HashSet<String> curPredicates = new HashSet<String>();
-							for (Predicate predicate : answers.get(i).predictList) {
-								if(finalPredicts.contains(predicate.uri)){
-									curPredicates.add(predicate.uri);
-								}
-							}
-							finalPredicts = curPredicates;
-							if(finalPredicts.size() == 0){
-								answer.exceptionString = "pipe style, step 2 error, no common predicates in top 5";
-								break;
-							}
-						}
-						
-						if(finalPredicts.size() > 0){
-							answer.predictList = new ArrayList<Predicate>();
-							answer.predictList.addAll(finalPredictsMap.values());
-							Collections.sort(answer.predictList,Collections.reverseOrder());
-							
-							LinkedList<RDFNode> rdfNodes;
-							answer.resources = new HashMap<Predicate, LinkedList<RDFNode>>();
-							
-//							rdfNodes = fisrtAnswer.entityUri,fisrtAnswer.predictList.get(0).uri,answer.predictList.get(0).uri;
-//							answer.resources.put(answer.predictList.get(0), rdfNodes);
-						}
-					}
-					SimilarityFunction.predictNum = originalNum;
+//					LinkedList<Answer> answers = new LinkedList<Answer>();
+//					for (RDFNode node : step1Result) {
+//						Answer ans = new Answer();
+//						ans.qf = answer.qf;
+//						secondMD.entity = new Entity(node.toString());
+//						stepAnswer(secondMD, ans, type);
+//						answers.add(ans);
+//					}
+//					
+//					if(answers.size() == 1){
+//						answer = answers.get(0);
+//					}else{
+//						HashSet<String> finalPredicts = new HashSet<String>();
+//						HashMap<String, Predicate> finalPredictsMap = new HashMap<String, Predicate>();
+//						for (Predicate p : answers.get(0).predictList) {
+//							finalPredicts.add(p.uri);
+//							finalPredictsMap.put(p.uri, p);
+//						}
+//						
+//						for(int i=1; i<answers.size(); ++i){
+//							HashSet<String> curPredicates = new HashSet<String>();
+//							for (Predicate predicate : answers.get(i).predictList) {
+//								if(finalPredicts.contains(predicate.uri)){
+//									curPredicates.add(predicate.uri);
+//								}
+//							}
+//							finalPredicts = curPredicates;
+//							if(finalPredicts.size() == 0){
+//								answer.exceptionString = "pipe style, step 2 error, no common predicates in top 5";
+//								break;
+//							}
+//						}
+//						
+//						if(finalPredicts.size() > 0){
+//							answer.predictList = new ArrayList<Predicate>();
+//							answer.predictList.addAll(finalPredictsMap.values());
+//							Collections.sort(answer.predictList,Collections.reverseOrder());
+//							
+//							LinkedList<RDFNode> rdfNodes;
+//							answer.resources = new HashMap<Predicate, LinkedList<RDFNode>>();
+//							
+////							rdfNodes = fisrtAnswer.entityUri,fisrtAnswer.predictList.get(0).uri,answer.predictList.get(0).uri;
+////							answer.resources.put(answer.predictList.get(0), rdfNodes);
+//						}
+//					}
 				}
 			}
 		}
