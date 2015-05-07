@@ -29,7 +29,7 @@ public class ClientManagement {
 	}
 	public static Server serverType = Server.LOCAL; //0: locale 1: online
 	
-	public static final String SERVER_URL = "http://agraph.apexlab.org";
+	public static final String SERVER_URL = "http://172.16.2.21:10035";//"http://agraph.apexlab.org";
 	public static final String CATALOG_ID = "dbpedia2014";
 	public static final String REPOSITORY_ID = "dbpedia_full";
 	public static final String USERNAME = "dbpedia";
@@ -110,7 +110,7 @@ public class ClientManagement {
 	 */
 	public static ResultSet query(String sparql, boolean visible) {
 		ResultSet rs = null;
-		
+		System.err.println("SERVER SOURCE: "+serverType);
 		if(serverType == Server.LOCAL) {
 			try {
 				getAgModel();
@@ -328,7 +328,41 @@ public class ClientManagement {
 	}
 	
 	public static HashMap<Predicate, HashSet<String>> getPredicatePipe(String entity, LinkedList<Predicate> predList) {
-		return null;
+		HashMap<Predicate, HashSet<String>> predMap = new HashMap<>();
+		for (Predicate predicate : predList) {
+			String predUri = predicate.getUri();
+			HashSet<String> predSet = new HashSet<>();
+			boolean literalFlag = false; // judge if this predicate 
+			
+			String firstQuery = "SELECT ?o WHERE {<"+entity+"> <"+predUri+"> ?o}";
+			ResultSet rs = ClientManagement.query(firstQuery, true);
+			while (rs.hasNext()) {
+				RDFNode node = rs.next().get("o");
+				
+			}
+			
+			
+			
+			
+			
+//			String sparql = "SELECT DISTINCT ?p WHERE {"
+//					+ "{<"+entity+"> <"+predUri+"> ?o. ?o ?p ?o1.} " //out - out
+//					+ "UNION {<"+entity+"> <"+predUri+"> ?o. ?o1 ?p ?o.} " // out - in
+//					+ "UNION {?o <"+predUri+"> <"+entity+">. ?o ?p ?o2.} " // in - out
+//					+ "UNION {?o <"+predUri+"> <"+entity+">. ?o2 ?p ?o.} " // in - in
+//					+ "}";
+//			ResultSet rs = ClientManagement.query(sparql, true);
+//			while(rs.hasNext()) {
+//				RDFNode node = rs.next().get("p");
+//				System.err.println(node.toString());
+//				predSet.add(node.toString());
+//			}
+//			if(predSet.size() > 0) {
+//				predMap.put(predicate, predSet);
+//			}
+		}
+		
+		return predMap;
 	}
 	
 	public static LinkedList<RDFNode> getPredicateWho(String entityUri) {
@@ -432,12 +466,31 @@ public class ClientManagement {
 	}
 	
 	public static void main(String[] args) throws Exception {
-		String query = "SELECT ?s WHERE {?s ?p ?o.} LIMIT 5";
-		ClientManagement.setServerType(Server.ONLINE);
-        ResultSet rs = ClientManagement.query(query, true);
-        while(rs.hasNext()) {
-         	RDFNode s = rs.next().get("s");
-           	System.out.println(s);
-        }
+//		ClientManagement.setServerType(Server.ONLINE);
+		/**
+		String entity = "http://dbpedia.org/resource/Beijing";
+		Predicate p1 = new Predicate("http://dbpedia.org/property/areaCode", 0, "");
+		LinkedList<Predicate> predList = new LinkedList<>();
+		predList.add(p1);
+		HashMap<Predicate, HashSet<String>> predMap = ClientManagement.getPredicatePipe(entity, predList);
+		
+		for (Predicate predicate : predMap.keySet()) {
+			HashSet<String> predSet = predMap.get(predicate);
+			System.out.println(predicate.getUri());
+			for (String string : predSet) {
+				System.out.println("\t"+string);
+			}
+			System.out.println();
+		}
+		/**/
+//		String query = "select distinct ?s where {?s ?p ?o} limit 50";
+		String query = "SELECT DISTINCT ?o1 WHERE {<http://dbpedia.org/resource/Beijing> <http://dbpedia.org/property/areaCode> ?o. ?o1 ?p ?o}";
+//		String query = "SELECT (COUNT(DISTINCT ?p) AS ?count) WHERE {{<http://dbpedia.org/resource/Beijing> <http://dbpedia.org/property/areaCode> ?o. ?o ?p ?o1.} UNION {<http://dbpedia.org/resource/Beijing> <http://dbpedia.org/property/areaCode> ?o. ?o1 ?p ?o.} UNION {?o <http://dbpedia.org/property/areaCode> <http://dbpedia.org/resource/Beijing>. ?o ?p ?o2.} UNION {?o <http://dbpedia.org/property/areaCode> <http://dbpedia.org/resource/Beijing>. ?o2 ?p ?o.} }";//"SELECT DISTINCT ?s WHERE { ?s ?p ?o } LIMIT 5";
+		ResultSet rs = ClientManagement.query(query, true);
+		System.out.println("OVER");
+		while(rs.hasNext()) {
+			System.out.println(rs.next().get("o1"));
+		}
+		/**/
 	}
 }
