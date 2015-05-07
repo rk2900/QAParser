@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 
-import tool.OutputRedirector;
 import baseline.Predicate;
 
 import com.franz.agraph.jena.AGGraph;
@@ -314,12 +313,12 @@ public class ClientManagement {
 	 * @param rightNode
 	 * @return node list
 	 */
-	public static LinkedList<RDFNode> getCrossNode(String leftNode, String rightNode) {
+	public static LinkedList<RDFNode> getCrossNode(String e1, String p1, String e2, String p2) {
 		LinkedList<RDFNode> nodeList = new LinkedList<>();
-		String query = "SELECT ?node WHERE { "
-				+ "<"+leftNode+"> ?p1 ?node. "
-				+ "<"+rightNode+"> ?p2 ?node. "
-						+ "}";
+		String query = "SELECT DISTINCT ?node WHERE {"
+				+ "{<"+e1+"> <"+p1+"> ?node} UNION {?node <"+p1+"> <"+e1+">} "
+				+ "{<"+e2+"> <"+p2+"> ?node} UNION {?node <"+p2+"> <"+e2+">}"
+				+ "}";
 		ResultSet rs = ClientManagement.query(query, false);
 		while(rs.hasNext()) {
 			RDFNode node = rs.next().get("node");
@@ -376,20 +375,23 @@ public class ClientManagement {
 	
 	public static HashMap<String, HashSet<String>> getPredicateCross(String e1, String e2) {
 		HashMap<String, HashSet<String>> predMap = new HashMap<>();
-		
-		
-		
 		String sparql = "SELECT DISTINCT ?p1 ?p2 WHERE {"
 				+ "{{<"+e1+"> ?p1 ?o} UNION {?o ?p1 <"+e1+">}} "
 				+ "{{<"+e2+"> ?p2 ?o} UNION {?o ?p2 <"+e2+">}}"
 				+ "}";
 		
-		ResultSet rs = ClientManagement.query(sparql, true);
+		ResultSet rs = ClientManagement.query(sparql, false);
 		while (rs.hasNext()) {
 			QuerySolution qs = rs.next();
 			RDFNode p1 = qs.get("p1");
 			RDFNode p2 = qs.get("p2");
-			System.out.println(p1.toString() + "\t" + p2.toString());
+			if(predMap.containsKey(p1.toString())) {
+				predMap.get(p1.toString()).add(p2.toString());
+			} else {
+				HashSet<String> predSet = new HashSet<>();
+				predSet.add(p2.toString());
+				predMap.put(p1.toString(), predSet);
+			}
 		}
 		
 		return predMap;
@@ -497,8 +499,6 @@ public class ClientManagement {
 	
 	public static void main(String[] args) throws Exception {
 		/**/
-		String e1 = "http://dbpedia.org/resource/Beijing";
-		String e2 = "http://dbpedia.org/resource/Xi_Jinping";
 		
 		
 	}
