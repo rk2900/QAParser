@@ -14,6 +14,7 @@ public class Answer {
 	public QuestionFrame qf;
 	public String exceptionString;
 	public HashMap<Predicate, Double> typeConstrainScore;
+	public HashMap<Predicate, Double> entityConstrainScore;
 	public HashMap<Predicate, LinkedList<RDFNode>> resources; 
 	
 	public Answer(){

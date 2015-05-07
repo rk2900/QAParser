@@ -12,6 +12,7 @@ import knowledgebase.ClientManagement;
 import com.hp.hpl.jena.rdf.model.RDFNode;
 
 import baseline.Answer;
+import baseline.Entity;
 import baseline.Main;
 import baseline.Predicate;
 import finder.Pipeline;
@@ -21,9 +22,17 @@ public class FocusConstraint {
 	public static final double literalScore = 0.0;
 	public static final double lowScore = 0.5;
 	
-	public boolean ifTypeMatched(String entityUri, String typeUri) {
-		String askQuery = "ASK WHERE { <"+entityUri+"> rdf:type <"+typeUri+"> }";
-		boolean flag = ClientManagement.ask(askQuery, true);
+//	public boolean ifTypeMatched(String entityUri, String typeUri) {
+//		String askQuery = "ASK WHERE { <"+entityUri+"> rdf:type <"+typeUri+"> }";
+//		boolean flag = ClientManagement.ask(askQuery, false);
+//		return flag;
+//	}
+	
+	public static boolean ifEntityLinked(String leftNodeUri, String rightNodeUri) {
+		String askQuery = "ASK WHERE {"
+				+ "{<"+leftNodeUri+"> ?p <"+rightNodeUri+">} UNION { <"+rightNodeUri+"> ?p <"+leftNodeUri+"> }"
+				+ "}";
+		boolean flag = ClientManagement.ask(askQuery, false);
 		return flag;
 	}
 	
@@ -39,7 +48,7 @@ public class FocusConstraint {
 		if(!focus.isEmpty()) { // 有focus结果
 			ArrayList<String> extractedTypeList = (ArrayList<String>) Type.getTypeFromFocus(focus.getFocusContent(qf.wordList));
 			if(extractedTypeList.isEmpty()) { // 如果focus中 type抽取结果为空， 则所有predicate类型限制评估分数均为 lowScore
-				predTypeScores = setPredicateLowScore(answer.predictList, predTypeScores);
+				predTypeScores = setPredicateConsScore(answer.predictList, predTypeScores, lowScore);
 			} else { // 如果focus中 type抽取结果 不为空，则针对每个predicate进行评分
 				ArrayList<Predicate> predictList = answer.predictList;
 				for (Predicate predicate : predictList) {
@@ -65,12 +74,47 @@ public class FocusConstraint {
 					predTypeScores.put(predicate, score);
 				}
 			}
-		} else { // 没有focus抽取结果的，predicate类型限制评分均为0.0
+		} else { // 没有focus抽取结果的，predicate类型限制评分均为lowScore
 			System.err.println("Focus is empty");
-			predTypeScores = setPredicateLowScore(answer.predictList, predTypeScores);
+			predTypeScores = setPredicateConsScore(answer.predictList, predTypeScores, lowScore);
 		}
 		answer.typeConstrainScore = predTypeScores;
 		return predTypeScores;
+	}
+	
+	public static HashMap<Predicate, Double> getPredicateEntityConstraintScore(Answer answer) {
+		HashMap<Predicate, Double> predEntityScores = new HashMap<>();
+		QuestionFrame qf = answer.qf;
+		Focus focus = qf.focus;
+		
+		if(!focus.hasEntity(qf.entityList)) { // focus中没有entity，直接返回lowScore
+			predEntityScores = setPredicateConsScore(answer.predictList, predEntityScores, lowScore);
+		} else { // focus中有entity
+			Entity entity = focus.getEntityPosition(qf.entityList);
+			String entityUri = entity.getUri();
+			for (Predicate predicate : answer.predictList) {
+				LinkedList<RDFNode> nodeList = answer.resources.get(predicate);
+				if(nodeList.size() == 0) { // 该条predicate没有找到宾语
+					predEntityScores.put(predicate, 0.0);
+					break;
+				}
+				
+				if(nodeList.get(0).isLiteral()) { // predicate连接的是Literal类型
+					predEntityScores.put(predicate, literalScore);
+					break;
+				}
+				int linkedCount = 0;
+				for (RDFNode rdfNode : nodeList) {
+					if(ifEntityLinked(rdfNode.toString(), entityUri)) {
+						linkedCount++;
+					}
+				}
+				predEntityScores.put(predicate, (double)linkedCount/nodeList.size()); // predicate真实分数为连接到resources中和focus中entity有关系的比例值
+			}
+		}
+		
+		answer.entityConstrainScore = predEntityScores;
+		return null;
 	}
 	
 	/**
@@ -79,11 +123,11 @@ public class FocusConstraint {
 	 * @param predTypeScores
 	 * @return
 	 */
-	public static HashMap<Predicate, Double> setPredicateLowScore(ArrayList<Predicate> predicates, HashMap<Predicate, Double> predTypeScores) {
+	public static HashMap<Predicate, Double> setPredicateConsScore(ArrayList<Predicate> predicates, HashMap<Predicate, Double> predScores, double score) {
 		for (Predicate predicate : predicates) {
-			predTypeScores.put(predicate, lowScore);
+			predScores.put(predicate, score);
 		}
-		return predTypeScores;
+		return predScores;
 	}
 	
 	public static void main(String[] args) {
