@@ -13,6 +13,7 @@ import java.util.List;
 import knowledgebase.ClientManagement;
 
 import com.hp.hpl.jena.rdf.model.RDFNode;
+import com.hp.hpl.jena.sparql.function.library.max;
 
 import paser.FocusConstraint;
 import paser.QuestionFrame;
@@ -229,8 +230,16 @@ public class Main {
 				answer.pairTypeConstraintScore = FocusConstraint.getPairPredicateTypeConstraintScore(answer);
 				LinkedList<PairPredicate> pairPredicates = new LinkedList<PairPredicate>();
 				for (PairPredicate pair : answer.pairPredicates) {
+//					if(!(pair.Predicate1.maxScore > SimilarityFunction.minSimilarityScore && pair.Predicate2.maxScore > SimilarityFunction.minSimilarityScore)){
+//						continue;
+//					}
 					double typeScore = answer.pairTypeConstraintScore.get(pair);
 					if(typeScore > 0 || pair.Predicate2.maxScore > SimilarityFunction.threshold){
+//						System.err.println("************************");
+//						System.err.println(pair.Predicate1.maxScore);
+//						System.err.println(pair.Predicate2.maxScore);
+//						System.err.println(typeScore);
+//						System.err.println("*****************");
 						pair.score = (pair.Predicate1.maxScore+pair.Predicate2.maxScore) / 2 + typeScore;
 						pairPredicates.add(pair);
 					}
@@ -242,6 +251,9 @@ public class Main {
 				answer.pairTypeConstraintScore = FocusConstraint.getPairPredicateTypeConstraintScore(answer);
 				LinkedList<PairPredicate> pairP = new LinkedList<PairPredicate>();
 				for (PairPredicate pair : answer.pairPredicates) {
+//					if(!(pair.Predicate1.maxScore > SimilarityFunction.minSimilarityScore && pair.Predicate2.maxScore > SimilarityFunction.minSimilarityScore)){
+//						continue;
+//					}
 					double typeScore = answer.pairTypeConstraintScore.get(pair);
 					if(typeScore > 0 || (pair.Predicate1.maxScore + pair.Predicate2.maxScore)/2 > SimilarityFunction.threshold){
 						pair.score = (pair.Predicate1.maxScore+pair.Predicate2.maxScore) / 2 + typeScore;
@@ -276,7 +288,7 @@ public class Main {
 		if(firstAnswer.isException()){
 			answer.exceptionString = "pipe style, step 1 error, " + firstAnswer.exceptionString;
 		}else{
-			System.out.println(firstAnswer.print());
+//			System.out.println(firstAnswer.print());
 			if(firstAnswer.predictList.size() == 0){
 				answer.exceptionString = "pipe style, step 1 error, predicateList size equals: 0";
 			}else{
@@ -292,10 +304,13 @@ public class Main {
 								Predicate p2 = SimilarityFunction.getPredicate(p2String, NL, focusString);
 								p2Map.put(p2String, p2);
 							}
-							PairPredicate pairP = new PairPredicate(p1,p2Map.get(p2String));
-							answer.pairPredicates.add(pairP);
+							if(p2Map.get(p2String).maxScore > SimilarityFunction.minSimilarityScore){
+								PairPredicate pairP = new PairPredicate(p1,p2Map.get(p2String));
+								answer.pairPredicates.add(pairP);
+							}
 						}
 					}
+					Collections.sort(answer.pairPredicates, Collections.reverseOrder());
 					for (PairPredicate pairP : answer.pairPredicates) {
 						LinkedList<RDFNode> res = ClientManagement.getPipeNode(answer.entityUri, pairP.Predicate1.uri, pairP.Predicate2.uri);
 						answer.pairResources.put(pairP, res);
@@ -323,9 +338,12 @@ public class Main {
 					Predicate p2 = SimilarityFunction.getPredicate(s2, step2.constraint.edge, step2.focusString);
 					p2Map.put(s2, p2);
 				}
-				answer.pairPredicates.add(new PairPredicate(p1,p2Map.get(s2)));
+				if(p1.maxScore > SimilarityFunction.minSimilarityScore && p2Map.get(s2).maxScore > SimilarityFunction.minSimilarityScore){
+					answer.pairPredicates.add(new PairPredicate(p1,p2Map.get(s2)));
+				}
 			}
 		}
+		Collections.sort(answer.pairPredicates, new PairPredicate());
 		for (PairPredicate pairP : answer.pairPredicates) {
 			LinkedList<RDFNode> res = ClientManagement.getCrossNode(eUri1, pairP.Predicate1.uri, eUri2, pairP.Predicate2.uri);
 			answer.pairResources.put(pairP, res);

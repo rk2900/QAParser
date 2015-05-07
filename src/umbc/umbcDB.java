@@ -159,7 +159,8 @@ public class umbcDB {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		umbcDB db = new umbcDB();
-		System.out.println(db.getScore("Link","In"));
+		System.out.println(db.getScore("death","died"));
+//		db.updateValue("died", "death", 1.0);
 	}
 
 }

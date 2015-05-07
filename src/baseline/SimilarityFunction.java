@@ -14,7 +14,7 @@ import umbc.umbcDB;
 public class SimilarityFunction {
 	private static umbcDB db = new umbcDB();
 	public static int predictNum = 5;
-	private static double minSimilarityScore = 0.0;
+	public static double minSimilarityScore = 0.1;
 	/**
 	 * threshold 表示 当谓语的结果即使不满足type类型的，也要删除
 	 */

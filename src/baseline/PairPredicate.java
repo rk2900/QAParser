@@ -14,7 +14,7 @@ public class PairPredicate implements Comparable<PairPredicate>,Comparator<PairP
 	public PairPredicate(Predicate p1, Predicate p2){
 		Predicate1 = p1;
 		Predicate2 = p2;
-		score = 0;
+		score = (p1.maxScore+p2.maxScore)/2;
 	}
 	
 	/**
