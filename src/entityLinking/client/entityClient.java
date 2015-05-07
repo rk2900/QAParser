@@ -70,6 +70,10 @@ public class entityClient {
 				query.append(URLEncoder.encode(content,"UTF-8"));
 				query.append(entityClientConst.spotlightParas);
 				break;
+			case MINERDIS:
+				query.append(entityClientConst.miner);
+				query.append(URLEncoder.encode(content,"UTF-8"));
+				query.append(entityClientConst.minerDisParas);
 			default:
 				break;
 			}
@@ -85,10 +89,12 @@ public class entityClient {
 	}
 	
 	public static void main(String [] args){
-		String test = "How many children does Eddie Murphy have?";
-		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.MINER));
-		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.DEXTER));
-		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.SPOTLIGHT1));
-		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.SPOTLIGHT2));
+		String test = "Which soccer players were born on Malta?";
+		test = "Who is the youngest Pulitzer Prize winner?";
+//		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.MINER));
+		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.MINERDIS));
+//		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.DEXTER));
+//		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.SPOTLIGHT1));
+//		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.SPOTLIGHT2));
 	}
 }

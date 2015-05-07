@@ -3,10 +3,14 @@ package entityLinking.parse;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.Iterator;
+import java.util.LinkedList;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import paser.QuestionFrame;
+import baseline.Entity;
 import entityLinking.client.entityClient;
 import entityLinking.client.entityClientConst;
 import entityLinking.db.entityDB;
@@ -16,6 +20,70 @@ public class responseParser {
 	private entityDB db;
 	public responseParser(String dbName){
 		db = new entityDB(dbName);
+	}
+	
+	public responseParser(){
+		
+	}
+	
+	public LinkedList<Entity> setEntityList(QuestionFrame qf,entityClientConst.TOOLKIT toolkit){
+		LinkedList<Entity> entities = qf.entityList;
+		String content = qf.question;
+		String response = entityClient.queryAPI(content, toolkit);
+		if(response == null){
+			System.err.println(qf.id + ": request failed.");
+			return entities;
+		}
+		switch (toolkit) {
+		case MINERDIS:
+			JSONObject responseJson = null;
+			JSONArray spots = null;
+			try {
+				responseJson = new JSONObject(response);
+				if (!responseJson.has("detectedTopics")) {
+					System.err.println(qf.id + ": no detectedTopics");
+					return entities;
+				}
+				spots = responseJson.getJSONArray("detectedTopics");
+				System.err.println(response);
+				for (int j = 0; j < spots.length(); ++j) {
+					JSONObject spot = spots.getJSONObject(j);
+					String candTitle = spot.getString("title");
+					double weight = spot.getDouble("weight");
+
+					int startIndex=0, endIndex=0;
+					JSONArray referArray = spot.getJSONArray("references");
+					for (int c = 0; c < referArray.length(); ++c) {
+						JSONObject refer = referArray.getJSONObject(c);
+						if(c == 0){
+							startIndex = refer.getInt("start");
+							endIndex = refer.getInt("end");
+						}else{
+							if(startIndex > refer.getInt("start")){
+								startIndex = refer.getInt("start");
+							}
+							if(endIndex < refer.getInt("end")){
+								endIndex = refer.getInt("end");
+							}
+						}
+					}
+					IndexTransform transform = new IndexTransform(startIndex, endIndex, qf);
+					if(transform.isMatched){
+						entities.add(new Entity(candTitle, transform.start, transform.end));
+					}else{
+						System.err.println(qf.id + ": Entity not matched.");
+					}
+					
+				}
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+			break;
+		default:
+			System.err.println("null toolkit");
+			break;
+		}
+		return entities;
 	}
 	
 	public void loadMiner(int id,String response) {
@@ -122,10 +190,7 @@ public class responseParser {
 			e.printStackTrace();
 		}	
 	}
-//
-	/**
-	 * 
-	 */
+
 	public void loadDexter(int id, String response) {
 		int questionID = id;
 		int startIndex;

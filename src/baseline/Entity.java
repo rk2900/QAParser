@@ -2,11 +2,21 @@ package baseline;
 
 import java.util.Comparator;
 
+import knowledgebase.ClientManagement;
+
 public class Entity implements Comparator<Entity>, Comparable<Entity> {
 	String uri;
 	String wiki;
 	int start;
 	int end;
+	
+	public Entity(String title, int start, int end){
+		this.start = start;
+		this.end = end;
+		this.wiki = "http://en.wikipedia.org/wiki/"+title.replace(" ", "_");
+//		this.uri = "http://dbpedia.org/resource/"+title.replace(" ", "_");
+		this.uri = ClientManagement.getEntityOfWiki(wiki).toString();
+	}
 	
 	public Entity(String uri, String wiki, int start, int end) {
 		super();
@@ -39,6 +49,10 @@ public class Entity implements Comparator<Entity>, Comparable<Entity> {
 	}
 	public void setEnd(int end) {
 		this.end = end;
+	}
+	
+	public void print(){
+		System.out.println("URI: "+uri+" Start: "+start+" End: "+end);
 	}
 
 	@Override

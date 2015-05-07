@@ -1,28 +1,28 @@
 package aQaldTest;
 
+import baseline.Entity;
 import paser.QuestionFrame;
 import knowledgebase.ClientManagement;
+import entityLinking.client.entityClientConst.TOOLKIT;
+import entityLinking.parse.responseParser;
 import finder.Pipeline;
 import finder.Pipeline.DataSource;
 
 public class TestMain {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Pipeline pipeline = new Pipeline(DataSource.TEST);
-		System.out.println(pipeline.totalNumber);
+		responseParser parser = new responseParser();
+		
 		for(int i=1; i<=pipeline.totalNumber; i++) {
 			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
-//			qf.print();
+			System.out.println(qf.wordList);
 			System.out.println(qf.question);
+			parser.setEntityList(qf, TOOLKIT.MINERDIS);
+			for (Entity e : qf.entityList) {
+				e.print();
+			}
+			break;
 		}
-//		baseline.Main.setEntity(pipeline);
-//		try {
-//			ClientManagement.getAgModel();
-//		} catch (Exception e1) {
-//			e1.printStackTrace();
-//		}
-		
-		
 	}
 }
