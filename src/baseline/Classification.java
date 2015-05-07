@@ -1,6 +1,5 @@
 package baseline;
 
-import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -13,42 +12,25 @@ import knowledgebase.ClientManagement;
 import finder.Pipeline;
 
 public class Classification {
-	public static HashMap<String, Integer> map;
-//	public static enum CLASSIFICATION {NORMAL, DATE, WHERE, WHO, NUMBER, RESOURCE};
-	static{
-		map = new HashMap<String, Integer>();
-		map.put("normal", 0);
-		map.put("date", 1);
-		map.put("where", 2);
-		map.put("who", 3);
-		map.put("number", 4);
-		map.put("resource", 5);
-	}
+	public static enum CLASSIFICATION {NORMAL, DATE, WHERE, WHO, NUMBER, RESOURCE};
 	
 	public static Answer getAnswer(QuestionFrame qf){
-		return getAnswer(qf,0);
+		return getAnswer(qf,CLASSIFICATION.NORMAL);
 	}
 	
-	public static Answer getAnswer(QuestionFrame qf,int type){
+	public static Answer getAnswer(QuestionFrame qf, CLASSIFICATION type){
 		Answer answer = new Answer();
 		answer.qf = qf;
 		LinkedList<Entity> entityList = qf.getEntityList();
 		ConstraintSet constraintSet=ConstraintSet.getConstraintSet(qf.question, qf);
 		List<Constraint> constraintList = constraintSet.list;
 		String focusString = qf.getFocusStringForPredicate();
-		if(type == 1){
+		switch (type) {
+		case DATE:
 			focusString = "date";
-		}
-		if(type == 2){
-//			focusString = "place";
-		}
-		if(type == 3){
-			
-		}
-		if(type == 4){
-//			if(focusString.length() > 0){
-//				focusString += " number total";
-//			}
+			break;
+		default:
+			break;
 		}
 		
 		String exceptionString="";
@@ -221,7 +203,7 @@ public class Classification {
 		SimilarityFunction.predictNum = 10;
 		for (QuestionFrame qf : resourceQF) {
 			++count;
-			Answer answer = getAnswer(qf,map.get("resource"));
+			Answer answer = getAnswer(qf,CLASSIFICATION.RESOURCE);
 			if(!answer.isException()){
 				System.out.println(answer.print().toString());
 			}

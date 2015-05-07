@@ -3,6 +3,7 @@ package aQaldTest;
 import baseline.Answer;
 import baseline.Classification;
 import baseline.Entity;
+import baseline.Classification.CLASSIFICATION;
 import paser.QuestionFrame;
 import tool.OutputRedirector;
 import knowledgebase.ClientManagement;
@@ -16,7 +17,7 @@ public class TestMain {
 	public static void showSingleQF(Pipeline pipeline, responseParser parser, int qid){
 		QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithId(qid);
 		parser.setEntityList(qf, TOOLKIT.MINERDIS);
-		Answer answer = Classification.getAnswer(qf,5);
+		Answer answer = Classification.getAnswer(qf,CLASSIFICATION.RESOURCE);
 		System.err.println(answer.typeConstrainScore);
 		System.err.println(qf.focus.getFocusContent(qf.wordList));
 		System.out.println(answer.print());

@@ -1,6 +1,12 @@
 package baseline;
 
+import com.hp.hpl.jena.rdf.model.RDFNode;
+
+import basic.format.Pair;
+
 public class Predicate implements Comparable<Predicate>{
+//	Pair<RDFNode, RDFNode> predPair;
+//	Pair
 	String uri;
 	double maxScore;
 	String matchedLabel;

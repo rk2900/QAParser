@@ -20,6 +20,7 @@ import syntacticParser.ConstraintSet;
 import syntacticParser.Node;
 import tool.OutputRedirector;
 import finder.Pipeline;
+import baseline.Classification.CLASSIFICATION;
 import basic.FileOps;
 
 public class Main {
@@ -194,17 +195,17 @@ public class Main {
 	}
 	
 	public static void stepAnswer(MatchDetail step, Answer answer){
-		stepAnswer(step, answer,0);
+		stepAnswer(step, answer,CLASSIFICATION.NORMAL);
 	}
 	
-	public static void stepAnswer(MatchDetail step, Answer answer, int type){
+	public static void stepAnswer(MatchDetail step, Answer answer, CLASSIFICATION type){
 		answer.entityUri = step.entity.uri;
 		answer.predictList = SimilarityFunction.getTopNPredicts(step,type);
 		for (Predicate predicate : answer.predictList) {
 			LinkedList<RDFNode> resources = ClientManagement.getNode(answer.entityUri, predicate.uri);
 			answer.resources.put(predicate,resources);
 		}
-		if(type == 5){
+		if(type == CLASSIFICATION.RESOURCE){
 			System.err.println("***********************************************************"+answer.predictList.size());
 			System.err.println("********************************"+answer.resources.keySet().size());
 			answer.typeConstrainScore = FocusConstraint.getPredicateTypeConstraintScore(answer);
@@ -222,7 +223,7 @@ public class Main {
 	}
 	
 	//链式问题
-	public static void pipe(MatchDetail pipe, Constraint cs, Answer answer, int type){
+	public static void pipe(MatchDetail pipe, Constraint cs, Answer answer, CLASSIFICATION type){
 		MatchDetail secondMD = new MatchDetail();
 		secondMD.constraint = cs;
 		secondMD.focusString = pipe.focusString;
@@ -243,7 +244,7 @@ public class Main {
 		Answer fisrtAnswer = new Answer();
 		fisrtAnswer.qf = answer.qf;
 		pipe.focusString = "";
-		stepAnswer(pipe, fisrtAnswer, 0);
+		stepAnswer(pipe, fisrtAnswer, CLASSIFICATION.NORMAL);
 		
 		if(fisrtAnswer.isException()){
 			answer.exceptionString = "pipe style, step 1 error, " + fisrtAnswer.exceptionString;
