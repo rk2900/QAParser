@@ -22,6 +22,8 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import com.hp.hpl.jena.rdf.model.RDFNode;
+
 import finder.Pipeline.DataSource;
 import baseline.Answer;
 import basic.FileOps;
@@ -235,7 +237,7 @@ public class XMLParser {
 		return mappedQuestionFrames.get(getQuestionWithPseudoId(id));
 	}
 	
-	public Element getQuestionElement(Document doc, Integer id, LinkedList<String> answerList) {
+	public Element getQuestionElement(Document doc, Integer id, LinkedList<RDFNode> answerList) {
 //		try {
 			// question element
 			Element question = doc.createElement("question");
@@ -252,21 +254,24 @@ public class XMLParser {
 			question.appendChild(answers);
 
 			// answer element
-			for (String string : answerList) {
-				Element answer = doc.createElement("answer");
-				answer.appendChild(doc.createTextNode(string));
-				answers.appendChild(answer);
+			for (RDFNode node : answerList) {
+				String ans;
+				if(node.isLiteral()) {
+					ans = node.asLiteral().getValue().toString();
+				} else {
+					ans = node.toString();
+				}
+				if(ans != null) {
+					Element answer = doc.createElement("answer");// Literal/Resource
+					answer.appendChild(doc.createTextNode(ans));
+					answers.appendChild(answer);
+				}
 			}
 			
 			return question;
-			
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//		return null;
 	}
 	
-	public void outputAnswer(String filePath) {
+	public void outputAnswer(String filePath, HashMap<QuestionFrame, LinkedList<RDFNode>> qaMap) {
 		try {
 			DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
@@ -277,12 +282,14 @@ public class XMLParser {
 			dataset.setAttribute("id", "qald-5_test");
 			doc.appendChild(dataset);
 			
-			// generate answer list of string
-			LinkedList<String> answerList = new LinkedList<>();
-			//TODO
-			Element element = getQuestionElement(doc, 10, answerList);
-			if(element != null) {
-				dataset.appendChild(element);
+			for (QuestionFrame qf : qaMap.keySet()) {
+				LinkedList<RDFNode> ansList = qaMap.get(qf);
+				if(ansList.isEmpty())
+					continue;
+				Element element = getQuestionElement(doc, Integer.valueOf(qf.id), ansList);
+				if(element != null) {
+					dataset.appendChild(element);
+				}
 			}
 			
 			// write the content into XML file

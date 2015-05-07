@@ -1,5 +1,6 @@
 package finder;
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Properties;
@@ -17,8 +18,12 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
 import entityLinking.client.entityClientConst.TOOLKIT;
 import entityLinking.parse.responseParser;
+import baseline.Answer;
+import baseline.Classification;
 import baseline.Entity;
 import baseline.Main;
+import baseline.Classification.CLASSIFICATION;
+import baseline.Predicate;
 import basic.FileOps;
 import paser.Question;
 import paser.QuestionFrame;
@@ -300,22 +305,81 @@ public class Pipeline {
 	
 	public static void main(String[] args) {
 		Pipeline pipeline = new Pipeline(DataSource.TRAIN);
-		LinkedList<QuestionFrame> qfList = pipeline.bool;
-		responseParser rParser = new responseParser();
+		responseParser parser = new responseParser();
+		HashMap<QuestionFrame, LinkedList<RDFNode>> qaMap = new HashMap<QuestionFrame, LinkedList<RDFNode>>();
 		
-		OutputRedirector.openFileOutput("./data/entity_linking_result_bool.txt");
-		
-		for (QuestionFrame qf : qfList) {
-			System.out.println(qf.id+"\t"+qf.question);
-			System.out.println(qf.focus.getFocusContent(qf.wordList));
-			rParser.setEntityList(qf, TOOLKIT.MINERDIS);
-			for (Entity entity : qf.entityList) {
-				System.out.println(entity.getStart()+"\t"+entity.getEnd()+"\t"+entity.getUri());
+		for(QuestionFrame qf: pipeline.date) {
+			parser.setEntityList(qf, TOOLKIT.MINERDIS);
+			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.DATE);
+			if(answer.isException()) {
+				break;
+			} else {
+				if(answer.answerType == 1)
+					if(answer.predictList.size() > 0) {
+						LinkedList<RDFNode> nodeList = answer.resources.get(answer.predictList.get(0));
+						qaMap.put(qf, nodeList);
+					}
 			}
-			System.out.println("\n");
 		}
 		
-		OutputRedirector.closeFileOutput();
+		for(QuestionFrame qf: pipeline.number) {
+			parser.setEntityList(qf, TOOLKIT.MINERDIS);
+			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.NUMBER);
+			if(answer.isException()) {
+				break;
+			} else {
+				if(answer.answerType == 1)
+					if(answer.predictList.size() > 0) {
+						LinkedList<RDFNode> nodeList = answer.resources.get(answer.predictList.get(0));
+						qaMap.put(qf, nodeList);
+					}
+			}
+		}
+		
+		for(QuestionFrame qf: pipeline.who) {
+			parser.setEntityList(qf, TOOLKIT.MINERDIS);
+			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.WHO);
+			if(answer.isException()) {
+				break;
+			} else {
+				if(answer.answerType == 1)
+					if(answer.predictList.size() > 0) {
+						LinkedList<RDFNode> nodeList = answer.resources.get(answer.predictList.get(0));
+						qaMap.put(qf, nodeList);
+					}
+			}
+		}
+		
+		for(QuestionFrame qf: pipeline.where) {
+			parser.setEntityList(qf, TOOLKIT.MINERDIS);
+			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.WHERE);
+			if(answer.isException()) {
+				break;
+			} else {
+				if(answer.answerType == 1)
+					if(answer.predictList.size() > 0) {
+						LinkedList<RDFNode> nodeList = answer.resources.get(answer.predictList.get(0));
+						qaMap.put(qf, nodeList);
+					}
+			}
+		}
+		
+		for(QuestionFrame qf: pipeline.resource) {
+			parser.setEntityList(qf, TOOLKIT.MINERDIS);
+			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.RESOURCE);
+			if(answer.isException()) {
+				break;
+			} else {
+				if(answer.answerType == 1)
+					if(answer.predictList.size() > 0) {
+						LinkedList<RDFNode> nodeList = answer.resources.get(answer.predictList.get(0));
+						qaMap.put(qf, nodeList);
+					}
+			}
+		}
+		
+		pipeline.xmlParser.outputAnswer("./output/test.xml", qaMap);
+
 	}
 
 }

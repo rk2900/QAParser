@@ -499,6 +499,8 @@ public class ClientManagement {
 	
 	public static void main(String[] args) throws Exception {
 		/**/
+		String e1 = "http://dbpedia.org/resource/Beijing";
+		String e2 = "http://dbpedia.org/resource/Xi_Jinping";
 		
 		
 	}
