@@ -434,13 +434,13 @@ public class ClientManagement {
 		StringBuilder sb = new StringBuilder();
 		switch (c) {
 		case WHO:
-			sb.append("{?o rdf:type dbo:Person} UNION {?o rdf:type dbo:Organisation}");
+			sb.append(" {?o rdf:type dbo:Person} UNION {?o rdf:type dbo:Organisation} ");
 			break;
 		case WHERE:
-			sb.append("?o rdf:type dbo:Place");
+			sb.append(" ?o rdf:type dbo:Place ");
 			break;
 		case DATE:
-			sb.append("FILTER(isLiteral(?o))");
+			sb.append(" FILTER(isLiteral(?o)) ");
 			break;
 		default:
 			break;
@@ -604,7 +604,16 @@ public class ClientManagement {
 		/**/
 		String e1 = "http://dbpedia.org/resource/Beijing";
 		String e2 = "http://dbpedia.org/resource/Xi_Jinping";
+		CLASSIFICATION c = CLASSIFICATION.DATE;
 		
+		HashMap<String, HashSet<String>> map = ClientManagement.getPredicateCross(e1, e2, c);
+		for (String key : map.keySet()) {
+			System.out.println(key);
+			HashSet<String> set = map.get(key);
+			for (String string : set) {
+				System.out.println("\t"+string);
+			}
+		}
 		
 	}
 	
