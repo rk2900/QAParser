@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.LinkedList;
 
 import knowledgebase.ClientManagement;
+import baseline.Classification.CLASSIFICATION;
 
 import com.hp.hpl.jena.rdf.model.RDFNode;
 
@@ -14,6 +15,10 @@ public class SimilarityFunction {
 	private static umbcDB db = new umbcDB();
 	public static int predictNum = 5;
 	private static double minSimilarityScore = 0.0;
+	/**
+	 * threshold 表示 当谓语的结果即使不满足type类型的，也要删除
+	 */
+	public static double threshold = 0.9;
 	
 	/**
 	 * 直接对空格切分
@@ -169,7 +174,7 @@ public class SimilarityFunction {
 		return avgScore;
 	}
 	
-	private static ArrayList<Predicate> getSortedPredicts(MatchDetail detail,int type){
+	private static ArrayList<Predicate> getSortedPredicts(MatchDetail detail,CLASSIFICATION type){
 		String entityUri = detail.entity.uri;
 		String NL = detail.constraint.edge;
 		String focusString = detail.focusString;
@@ -178,13 +183,13 @@ public class SimilarityFunction {
 		LinkedList<RDFNode> predictUriList;
 		
 		switch (type) {
-		case 1:
+		case DATE:
 			predictUriList = ClientManagement.getPredicateDate(entityUri);
 			break;
-		case 2:
+		case WHERE:
 			predictUriList = ClientManagement.getPredicateWhere(entityUri);
 			break;
-		case 3:
+		case WHO:
 			predictUriList = ClientManagement.getPredicateWho(entityUri);
 			break;
 //		case 5:
@@ -231,10 +236,10 @@ public class SimilarityFunction {
 	}
 	
 	public static ArrayList<Predicate> getTopNPredicts(MatchDetail detail){
-		return getTopNPredicts(detail, 0);
+		return getTopNPredicts(detail, CLASSIFICATION.NORMAL);
 	}
 	
-	public static ArrayList<Predicate> getTopNPredicts(MatchDetail detail, int type){
+	public static ArrayList<Predicate> getTopNPredicts(MatchDetail detail, CLASSIFICATION type){
 		ArrayList<Predicate> predicts = getSortedPredicts(detail,type);
 		ArrayList<Predicate> result = new ArrayList<Predicate>();
 		for(int i=0; i<predictNum && i<predicts.size(); ++i){
