@@ -232,8 +232,7 @@ public class Main {
 				for (PairPredicate pair : answer.pairPredicates) {
 					double typeScore = answer.pairTypeConstraintScore.get(pair);
 					if(typeScore > 0 || pair.Predicate2.maxScore > SimilarityFunction.threshold){
-						pair.Predicate2.maxScore += typeScore;
-						pair.unpdateScore();
+						pair.score = (pair.Predicate1.maxScore+pair.Predicate2.maxScore) / 2 + typeScore;
 						pairPredicates.add(pair);
 					}
 				}
@@ -274,7 +273,7 @@ public class Main {
 				if(step1Result.size() == 0){
 					answer.exceptionString = "pipe style, step 1 error, resources size equals: 0";
 				}else{
-					HashMap<Predicate, HashSet<String>> pipePredicates = ClientManagement.getPredicatePipe(answer.entityUri, answer.predictList);
+					HashMap<Predicate, HashSet<String>> pipePredicates = ClientManagement.getPredicatePipe(answer.entityUri, firstAnswer.predictList);
 					HashMap<String, Predicate> p2Map = new HashMap<String, Predicate>();
 					for (Predicate p1 : pipePredicates.keySet()) {
 						for (String p2String : pipePredicates.get(p1)) {
@@ -290,6 +289,7 @@ public class Main {
 						LinkedList<RDFNode> res = ClientManagement.getPipeNode(answer.entityUri, pairP.Predicate1.uri, pairP.Predicate2.uri);
 						answer.pairResources.put(pairP, res);
 					}
+					
 					addTypeConstraint(answer, type);
 //					LinkedList<Answer> answers = new LinkedList<Answer>();
 //					for (RDFNode node : step1Result) {
