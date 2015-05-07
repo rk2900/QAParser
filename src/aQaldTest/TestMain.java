@@ -18,7 +18,7 @@ public class TestMain {
 		QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithId(qid);
 		parser.setEntityList(qf, TOOLKIT.MINERDIS);
 		
-		Answer answer = Classification.getAnswer(qf,CLASSIFICATION.NORMAL);
+		Answer answer = Classification.getAnswer(qf,CLASSIFICATION.RESOURCE);
 		System.out.println(answer.print());
 		System.err.println("******************************************");
 		for (Entity entity : qf.entityList) {
@@ -31,7 +31,7 @@ public class TestMain {
 		Pipeline pipeline = new Pipeline(DataSource.TRAIN);
 		responseParser parser = new responseParser();
 		
-		showSingleQF(pipeline, parser, 110);
+		showSingleQF(pipeline, parser, 129);
 //		OutputRedirector.openFileOutput("./data/api_classification/normal-type-pipe.txt");
 //		for(int i=1; i<=pipeline.totalNumber; i++) {
 //			
