@@ -11,7 +11,7 @@ public class entityClientConst {
 	
 	public final static String spotlightParas = "&confidence=0&support=0";
 	public final static String minerParas = "&responseFormat=JSON&sourceMode=HTML&references=true&minProbability=0&disambiguationPolicy=loose";
-	public final static String minerDisParas = "&responseFormat=JSON&references=true";
+	public final static String minerDisParas = "&responseFormat=JSON&references=true&minProbability=0.35";
 	public final static String dexterParas = "&wn=false&debug=false&format=text";
 //	public final static String tagmeParas = "&key=abAnBGgAqA2015";
 

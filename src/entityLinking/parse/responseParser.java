@@ -2,6 +2,7 @@ package entityLinking.parse;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 
@@ -16,7 +17,11 @@ import entityLinking.client.entityClientConst;
 import entityLinking.db.entityDB;
 
 public class responseParser {
-	
+	public static HashSet<String> blackEntityPrefixSet;
+	static{
+		blackEntityPrefixSet = new HashSet<String>();
+		blackEntityPrefixSet.add("List of");
+	}
 	private entityDB db;
 	public responseParser(String dbName){
 		db = new entityDB(dbName);
@@ -49,6 +54,11 @@ public class responseParser {
 				for (int j = 0; j < spots.length(); ++j) {
 					JSONObject spot = spots.getJSONObject(j);
 					String candTitle = spot.getString("title");
+					
+					if(blackEntityPrefixSet.contains(candTitle)){
+						continue;
+					}
+					
 					double weight = spot.getDouble("weight");
 
 					int startIndex=0, endIndex=0;

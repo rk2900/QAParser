@@ -11,6 +11,7 @@ import org.apache.commons.httpclient.HttpStatus;
 import org.apache.commons.httpclient.methods.GetMethod;
 import org.apache.commons.httpclient.params.HttpMethodParams;
 
+import baseline.Entity;
 import entityLinking.client.entityClientConst.TOOLKIT;
 
 
@@ -90,9 +91,14 @@ public class entityClient {
 	
 	public static void main(String [] args){
 		String test = "Which soccer players were born on Malta?";
-		test = "Who is the youngest Pulitzer Prize winner?";
-//		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.MINER));
-		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.MINERDIS));
+		test = "Who invented the zipper?";
+		
+//		String result = entityClient.queryAPI(test, entityClientConst.TOOLKIT.MINERDIS);
+//		String title = "Vrije Universiteit";
+//		Entity entity = new Entity(title, 0, 0);
+//		System.out.println(entity.getUri());
+		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.MINER));
+//		System.out.println(result);
 //		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.DEXTER));
 //		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.SPOTLIGHT1));
 //		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.SPOTLIGHT2));

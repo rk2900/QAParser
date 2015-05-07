@@ -11,17 +11,22 @@ import java.util.ArrayList;
 import baseline.Entity;
 import paser.QuestionFrame;
 import edu.stanford.nlp.trees.Tree;
+import entityLinking.client.entityClientConst;
+import entityLinking.client.entityClientConst.TOOLKIT;
+import entityLinking.parse.responseParser;
 import finder.Pipeline;
 
 public class Main {
 	public static void main(String[] args) throws IOException {
 		
 		BufferedWriter bw=new BufferedWriter(new FileWriter("./data/lx/showsssss.txt"));
+		responseParser parser = new responseParser();
 		Pipeline pipeline=new Pipeline();
-		baseline.Main.setEntity(pipeline);
+//		baseline.Main.setEntity(pipeline);
 		for (int i=1;i<=300;i++) {
 			System.out.println(i);
 			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);
+			parser.setEntityList(qf, TOOLKIT.MINERDIS);
 			bw.write(get(qf,qf.question));
 			for (Entity e:qf.getEntityList()) {
 				bw.write(e.getUri()+"["+e.getStart()+","+e.getEnd()+"]\r\n");
