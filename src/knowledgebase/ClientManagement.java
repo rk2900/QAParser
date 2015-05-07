@@ -374,6 +374,27 @@ public class ClientManagement {
 		return predMap;
 	}
 	
+	public static HashMap<String, HashSet<String>> getPredicateCross(String e1, String e2) {
+		HashMap<String, HashSet<String>> predMap = new HashMap<>();
+		
+		
+		
+		String sparql = "SELECT DISTINCT ?p1 ?p2 WHERE {"
+				+ "{{<"+e1+"> ?p1 ?o} UNION {?o ?p1 <"+e1+">}} "
+				+ "{{<"+e2+"> ?p2 ?o} UNION {?o ?p2 <"+e2+">}}"
+				+ "}";
+		
+		ResultSet rs = ClientManagement.query(sparql, true);
+		while (rs.hasNext()) {
+			QuerySolution qs = rs.next();
+			RDFNode p1 = qs.get("p1");
+			RDFNode p2 = qs.get("p2");
+			System.out.println(p1.toString() + "\t" + p2.toString());
+		}
+		
+		return predMap;
+	}
+	
 	public static LinkedList<RDFNode> getPredicateWho(String entityUri) {
 		LinkedList<RDFNode> predList = new LinkedList<>();
 		
@@ -476,26 +497,10 @@ public class ClientManagement {
 	
 	public static void main(String[] args) throws Exception {
 		/**/
-		OutputRedirector.openFileOutput("./data/rk/pipe_test.txt");
-		String entity = "http://dbpedia.org/resource/Beijing";
-		Predicate p1 = new Predicate("http://dbpedia.org/ontology/country", 0, "");
-		ArrayList<Predicate> predList = new ArrayList<>();
-		predList.add(p1);
-		HashMap<Predicate, HashSet<String>> predMap = ClientManagement.getPredicatePipe(entity, predList);
+		String e1 = "http://dbpedia.org/resource/Beijing";
+		String e2 = "http://dbpedia.org/resource/Xi_Jinping";
 		
-		for (Predicate predicate : predMap.keySet()) {
-			HashSet<String> predSet = predMap.get(predicate);
-			System.out.println(predicate.getUri());
-			for (String pred : predSet) {
-				System.out.println("\t"+pred);
-				LinkedList<RDFNode> nodeList = ClientManagement.getPipeNode(entity, predicate.getUri(), pred);
-				for (RDFNode rdfNode : nodeList) {
-					System.out.println("\t\t"+rdfNode.toString());
-				}
-			}
-			System.out.println();
-		}
-		OutputRedirector.closeFileOutput();
+		
 	}
 	
 	/**

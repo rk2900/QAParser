@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 
-import tool.OutputRedirector;
 import type.Type;
 import knowledgebase.ClientManagement;
 

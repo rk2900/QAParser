@@ -16,7 +16,6 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
-import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -266,9 +265,8 @@ public class XMLParser {
 //		}
 //		return null;
 	}
-
-	public static void main(String[] args) {
-		XMLParser xmlParser = new XMLParser();
+	
+	public void outputAnswer(String filePath) {
 		try {
 			DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
@@ -279,9 +277,10 @@ public class XMLParser {
 			dataset.setAttribute("id", "qald-5_test");
 			doc.appendChild(dataset);
 			
-			LinkedList<String> answerList = new LinkedList<String>();
-			answerList.add("http://dbpedia.org/resource/India");
-			Element element = xmlParser.getQuestionElement(doc, 10, answerList);
+			// generate answer list of string
+			LinkedList<String> answerList = new LinkedList<>();
+			//TODO
+			Element element = getQuestionElement(doc, 10, answerList);
 			if(element != null) {
 				dataset.appendChild(element);
 			}
@@ -293,7 +292,7 @@ public class XMLParser {
 			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			DOMSource source = new DOMSource(doc);
 			/**/
-			StreamResult result = new StreamResult(new File("./data/output/a.xml"));
+			StreamResult result = new StreamResult(new File(filePath));
 			/**
 			StreamResult result = new StreamResult(System.out);
 			/**/
@@ -303,5 +302,9 @@ public class XMLParser {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	public static void main(String[] args) {
+		
 	}
 }
