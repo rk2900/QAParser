@@ -29,7 +29,7 @@ public class FocusConstraint {
 //		return flag;
 //	}
 	
-	public static boolean ifEntityLinked(String leftNodeUri, String rightNodeUri) {
+	public static boolean isEntityLinked(String leftNodeUri, String rightNodeUri) {
 		String askQuery = "ASK WHERE {"
 				+ "{<"+leftNodeUri+"> ?p <"+rightNodeUri+">} UNION { <"+rightNodeUri+"> ?p <"+leftNodeUri+"> }"
 				+ "}";
@@ -85,8 +85,47 @@ public class FocusConstraint {
 	
 	public static HashMap<PairPredicate, Double> getPairPredicateTypeConstraintScore(Answer answer) {
 		HashMap<PairPredicate, Double> pairPredicateTypeConstraintScore = new HashMap<>();
+		QuestionFrame qf = answer.qf;
+		Focus focus = qf.focus;
+		if(!focus.isEmpty()) {
+			ArrayList<String> extractedTypeList = (ArrayList<String>) Type.getTypeFromFocus(focus.getFocusContent(qf.wordList));
+			if(extractedTypeList.isEmpty()) { // 如果focus中 type抽取结果为空， 则所有predicate类型限制评估分数均为 lowScore
+				for (PairPredicate pairPredicate : answer.pairPredicates) {
+					pairPredicateTypeConstraintScore.put(pairPredicate, lowScore);
+				}
+			} else { // 如果focus中 type抽取结果 不为空，则针对每个predicate进行评分
+				LinkedList<PairPredicate> pairPredicates = answer.pairPredicates;
+				for(PairPredicate pairPredicate: pairPredicates) {
+					double score = 0.0;
+					LinkedList<RDFNode> nodeList = answer.pairResources.get(pairPredicate);
+					HashSet<String> pairPredAnswerTypeSet = new HashSet<>();
+					for(RDFNode rdfNode: nodeList) {
+						if (rdfNode.isLiteral()) {
+							score = literalScore;
+							break;
+						} else {
+							pairPredAnswerTypeSet.addAll(ClientManagement.getResourceType(rdfNode.toString()));
+						}
+					}
+					if(pairPredAnswerTypeSet.size() > 0) {
+						for(String extracedType: extractedTypeList) {
+							if(pairPredAnswerTypeSet.contains(extracedType)) {
+								score = 1.0;
+								break;
+							}
+						}
+					}
+					pairPredicateTypeConstraintScore.put(pairPredicate, score);
+				}
+			}
+		} else { // 没有focus抽取结果的，predicate类型限制评分均为lowScore
+			System.err.println("Focus is empty");
+			for (PairPredicate pairPredicate : answer.pairPredicates) {
+				pairPredicateTypeConstraintScore.put(pairPredicate, lowScore);
+			}
+		}
 		
-		
+		answer.pairTypeConstraintScore = pairPredicateTypeConstraintScore;
 		return pairPredicateTypeConstraintScore;
 	}
 	
@@ -118,7 +157,7 @@ public class FocusConstraint {
 				}
 				int linkedCount = 0;
 				for (RDFNode rdfNode : nodeList) {
-					if(ifEntityLinked(rdfNode.toString(), entityUri)) {
+					if(isEntityLinked(rdfNode.toString(), entityUri)) {
 						linkedCount++;
 					}
 				}
