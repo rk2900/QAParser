@@ -14,6 +14,7 @@ import com.hp.hpl.jena.rdf.model.RDFNode;
 import baseline.Answer;
 import baseline.Entity;
 import baseline.Main;
+import baseline.PairPredicate;
 import baseline.Predicate;
 import finder.Pipeline;
 
@@ -80,6 +81,13 @@ public class FocusConstraint {
 		}
 		answer.typeConstrainScore = predTypeScores;
 		return predTypeScores;
+	}
+	
+	public static HashMap<PairPredicate, Double> getPairPredicateTypeConstraintScore(Answer answer) {
+		HashMap<PairPredicate, Double> pairPredicateTypeConstraintScore = new HashMap<>();
+		
+		
+		return pairPredicateTypeConstraintScore;
 	}
 	
 	/**
