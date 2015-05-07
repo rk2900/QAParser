@@ -28,6 +28,7 @@ public class Classification {
 	public static Answer getAnswer(QuestionFrame qf){
 		return getAnswer(qf,0);
 	}
+	
 	public static Answer getAnswer(QuestionFrame qf,int type){
 		Answer answer = new Answer();
 		answer.qf = qf;
@@ -35,7 +36,6 @@ public class Classification {
 		ConstraintSet constraintSet=ConstraintSet.getConstraintSet(qf.question, qf);
 		List<Constraint> constraintList = constraintSet.list;
 		String focusString = qf.getFocusStringForPredicate();
-//		focusString = "date";
 		if(type == 1){
 			focusString = "date";
 		}
@@ -88,7 +88,83 @@ public class Classification {
 			}
 			
 			if(constraintList.size() == 2){
-				exceptionString += "constraintList size equals 2\n";
+//				exceptionString += "constraintList size equals 2\n";
+				int eCount = 0;
+				int cs1Location = -1;
+				int cs2Location = -1;
+				
+				Constraint cs1 = constraintList.get(0);
+				Constraint cs2 = constraintList.get(1);
+				
+				if(!cs1.left.isx){
+					cs1Location = 0;
+					++eCount;
+				}
+				if(!cs1.right.isx){
+					cs1Location = 1;
+					++eCount;
+				}
+				if(!cs2.left.isx){
+					cs2Location = 0;
+					++eCount;
+				}
+				if(!cs2.right.isx){
+					cs2Location = 1;
+					++eCount;
+				}
+				
+				if(eCount == 1){
+					Entity e;
+					MatchDetail pipe;
+					if(cs1Location >= 0){//cs1存在已知情况
+						if(cs1Location == 0){
+							e = Main.getEntity(entityList, cs1.left);
+						}else{
+							e = Main.getEntity(entityList, cs1.right);
+						}
+					}else{
+						if(cs2Location == 0){
+							e = Main.getEntity(entityList, cs2.left);
+						}else{
+							e = Main.getEntity(entityList, cs2.right);
+						}
+					}
+					if(e == null){
+						exceptionString = qf.id + " constraintList size equals 2 && pipeline style &&No matched entity";
+					}else{
+						if(cs1Location >= 0){
+							pipe = new MatchDetail(e, cs1, cs1Location,focusString);
+							Main.pipe(pipe, cs2, answer, type);
+						}else{
+							pipe = new MatchDetail(e, cs2, cs2Location, focusString);
+							Main.pipe(pipe, cs1, answer, type);
+						}
+					}
+				}
+				
+				if(eCount == 2){
+					exceptionString = qf.id + " constraintList size equals 2 && map style && No matched entity";
+//					MatchDetail step1,step2;
+//					Entity e;
+//					if(cs1Location == 0){
+//						e = getEntity(entityList, cs1.left);
+//					}else{
+//						e = getEntity(entityList, cs1.right);
+//					}
+//					step1 = new MatchDetail(e, cs1, cs1Location);
+//					
+//					if(cs2Location == 0){
+//						e = getEntity(entityList, cs2.left);
+//					}else{
+//						e = getEntity(entityList, cs2.right);
+//					}
+//					step2 = new MatchDetail(e, cs2, cs2Location);
+//					map(step1, step2);
+				}
+				
+				if(eCount > 2){
+					exceptionString = qf.id + " constraintList size equals 2 && entity Num > 2 && No matched entity";
+				}
 			}
 			if(constraintList.size() > 2){
 				exceptionString += "constraintList size > 2\n";

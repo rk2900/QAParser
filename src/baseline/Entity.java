@@ -10,6 +10,10 @@ public class Entity implements Comparator<Entity>, Comparable<Entity> {
 	int start;
 	int end;
 	
+	public Entity(String uri){
+		this.uri = uri;
+	}
+	
 	public Entity(String title, int start, int end){
 		this.start = start;
 		this.end = end;

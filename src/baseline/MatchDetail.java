@@ -20,6 +20,9 @@ public class MatchDetail {
 		this.focusString = focusString;
 	}
 
+	public MatchDetail(){
+		
+	}
 	public MatchDetail(Entity e,  Constraint c, int l, String f){
 		entity = e;
 		constraint = c;
