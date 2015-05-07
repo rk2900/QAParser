@@ -97,6 +97,8 @@ public class Pipeline {
 			questionFile = testQuestionFile;
 			totalNumber = 49;
 			initialize();
+		} else {
+			initialize();
 		}
 	}
 	

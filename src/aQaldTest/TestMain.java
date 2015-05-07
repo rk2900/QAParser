@@ -11,7 +11,7 @@ import finder.Pipeline.DataSource;
 public class TestMain {
 
 	public static void main(String[] args) {
-		Pipeline pipeline = new Pipeline(DataSource.TEST);
+		Pipeline pipeline = new Pipeline(DataSource.TRAIN);
 		responseParser parser = new responseParser();
 		
 		for(int i=1; i<=pipeline.totalNumber; i++) {
@@ -19,10 +19,9 @@ public class TestMain {
 			System.out.println(qf.wordList);
 			System.out.println(qf.question);
 			parser.setEntityList(qf, TOOLKIT.MINERDIS);
-			for (Entity e : qf.entityList) {
-				e.print();
-			}
-			break;
+			
+			
+//			break;
 		}
 	}
 }
