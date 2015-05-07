@@ -21,6 +21,7 @@ public class Answer {
 		predictList = new ArrayList<Predicate>();
 		typeConstrainScore = new HashMap<>();
 		resources = new HashMap<Predicate, LinkedList<RDFNode>>(); 
+		exceptionString = "";
 	}
 	
 	public boolean isException(){

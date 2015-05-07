@@ -16,20 +16,24 @@ public class TestMain {
 	public static void showSingleQF(Pipeline pipeline, responseParser parser, int qid){
 		QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithId(qid);
 		parser.setEntityList(qf, TOOLKIT.MINERDIS);
-		Answer answer = Classification.getAnswer(qf,0);
+		Answer answer = Classification.getAnswer(qf,5);
+		System.err.println(answer.typeConstrainScore);
+		System.err.println(qf.focus.getFocusContent(qf.wordList));
 		System.out.println(answer.print());
-		
+//		System.err.println(answer.exceptionString);
+		System.err.println("*********");
 		for (Entity entity : qf.entityList) {
 			entity.print();
 		}
 		System.out.println(syntacticParser.Main.get(qf,qf.question));
+		System.out.println(qf.answers);
 	}
 	public static void main(String[] args) {
 		Pipeline pipeline = new Pipeline(DataSource.TRAIN);
 		responseParser parser = new responseParser();
 		
-		showSingleQF(pipeline, parser, 122);
-//		OutputRedirector.openFileOutput("./data/api_classification/normal-type-0-35-.txt");
+		showSingleQF(pipeline, parser, 129);
+//		OutputRedirector.openFileOutput("./data/api_classification/normal-type-pipe.txt");
 //		for(int i=1; i<=pipeline.totalNumber; i++) {
 //			
 //			QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithPseudoId(i);

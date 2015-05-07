@@ -139,6 +139,7 @@ public class Classification {
 							pipe = new MatchDetail(e, cs2, cs2Location, focusString);
 							Main.pipe(pipe, cs1, answer, type);
 						}
+						exceptionString += answer.exceptionString;
 					}
 				}
 				

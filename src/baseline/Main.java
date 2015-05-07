@@ -205,7 +205,10 @@ public class Main {
 			answer.resources.put(predicate,resources);
 		}
 		if(type == 5){
+			System.err.println("***********************************************************"+answer.predictList.size());
+			System.err.println("********************************"+answer.resources.keySet().size());
 			answer.typeConstrainScore = FocusConstraint.getPredicateTypeConstraintScore(answer);
+//			System.err.println(answer.typeConstrainScore);
 			ArrayList<Predicate> newPredicates = new ArrayList<Predicate>();
 			for (Predicate predicate : answer.predictList) {
 				double typeScore = answer.typeConstrainScore.get(predicate);
@@ -245,12 +248,17 @@ public class Main {
 		if(fisrtAnswer.isException()){
 			answer.exceptionString = "pipe style, step 1 error, " + fisrtAnswer.exceptionString;
 		}else{
-			LinkedList<RDFNode> step1Result = fisrtAnswer.resources.get(fisrtAnswer.predictList.get(0));
-			if(step1Result.size() != 1){
-				answer.exceptionString = "pipe style, step 1 error, resources size equals: " + step1Result.size();
+			System.out.println(fisrtAnswer.print());
+			if(fisrtAnswer.predictList.size() == 0){
+				answer.exceptionString = "pipe style, step 1 error, predicateList size equals: 0";
 			}else{
-				secondMD.entity = new Entity(step1Result.get(0).toString());
-				stepAnswer(secondMD, answer, type);
+				LinkedList<RDFNode> step1Result = fisrtAnswer.resources.get(fisrtAnswer.predictList.get(0));
+				if(step1Result.size() == 0){
+					answer.exceptionString = "pipe style, step 1 error, resources size equals: 0";
+				}else{
+					secondMD.entity = new Entity(step1Result.get(0).toString());
+					stepAnswer(secondMD, answer, type);
+				}
 			}
 		}
 	}
