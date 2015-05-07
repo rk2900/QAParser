@@ -224,22 +224,9 @@ public class Main {
 	//链式问题
 	public static void pipe(MatchDetail pipe, Constraint cs, Answer answer, CLASSIFICATION type){
 		answer.entityUri = pipe.entity.uri;
-		MatchDetail secondMD = new MatchDetail();
-		secondMD.constraint = cs;
-		secondMD.focusString = pipe.focusString;
-		if(pipe.location == 1){
-			if(pipe.constraint.left.equals(cs.left)){
-				secondMD.location = 0;
-			}else{
-				secondMD.location = 1;
-			}
-		}else{
-			if(pipe.constraint.right.equals(cs.left)){
-				secondMD.location = 0;
-			}else{
-				secondMD.location = 1;
-			}
-		}
+		
+		String focusString = pipe.focusString;
+		String NL = cs.edge;
 		
 		pipe.focusString = "";
 		Answer firstAnswer = new Answer();
@@ -259,6 +246,20 @@ public class Main {
 				if(step1Result.size() == 0){
 					answer.exceptionString = "pipe style, step 1 error, resources size equals: 0";
 				}else{
+					HashMap<Predicate, HashSet<String>> pipePredicates = ClientManagement.getPredicatePipe(answer.entityUri, answer.predictList);
+					HashMap<String, Predicate> p2Map = new HashMap<String, Predicate>();
+					for (Predicate p1 : pipePredicates.keySet()) {
+						PairPredicate pair = new PairPredicate();
+						for (String p2String : pipePredicates.get(p1)) {
+							if(!p2Map.containsKey(p2String)){
+								Predicate p2 = SimilarityFunction.getPredicate(p2String, NL, focusString);
+								p2Map.put(p2String, p2);
+							}
+							PairPredicate pairP = new PairPredicate(p1,p2Map.get(p2String));
+							answer.pairPredicates.add(pairP);
+						}
+					}
+					Collections.sort(answer.pairPredicates, Collections.reverseOrder());
 //					LinkedList<Answer> answers = new LinkedList<Answer>();
 //					for (RDFNode node : step1Result) {
 //						Answer ans = new Answer();

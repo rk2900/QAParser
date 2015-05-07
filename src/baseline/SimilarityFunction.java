@@ -174,6 +174,32 @@ public class SimilarityFunction {
 		return avgScore;
 	}
 	
+	public static Predicate getPredicate(String predict,String NL, String focusString){
+		LinkedList<String> predictlabels = ClientManagement.getLabel(predict);
+		double maxScore = 0;
+		Predicate p = new Predicate();
+		p.setMaxScore(0);
+		p.setUri(predict);
+		p.setMatchedLabel("");
+		String matchedLabel = null;
+		for (String predictlabel : predictlabels) {
+			if (predictlabel.length() == 0) {
+				continue;
+			}
+			double score = SimilarityFunction.umbcWordRanking(predictlabel, NL, focusString);
+			if(score > maxScore){
+				maxScore = score;
+				matchedLabel = predictlabel;
+			}
+		}
+		
+		if(maxScore > 0){
+			p.setMaxScore(maxScore);
+			p.setMatchedLabel(matchedLabel);
+		}
+		return p;
+	}
+	
 	private static ArrayList<Predicate> getSortedPredicts(MatchDetail detail,CLASSIFICATION type){
 		String entityUri = detail.entity.uri;
 		String NL = detail.constraint.edge;

@@ -1,12 +1,6 @@
 package baseline;
 
-import com.hp.hpl.jena.rdf.model.RDFNode;
-
-import basic.format.Pair;
-
 public class Predicate implements Comparable<Predicate>{
-//	Pair<RDFNode, RDFNode> predPair;
-//	Pair
 	String uri;
 	double maxScore;
 	String matchedLabel;
@@ -62,13 +56,13 @@ public class Predicate implements Comparable<Predicate>{
 		return matchedLabel.length()-o.matchedLabel.length();
 	}
 	
-	public boolean equals(Object o){ 
-		if(!(o instanceof Predicate)) {
-			return false;
-		}
-		Predicate p = (Predicate)o;
-		return p.uri.equals(uri);
-	} 
+//	public boolean equals(Object o){ 
+//		if(!(o instanceof Predicate)) {
+//			return false;
+//		}
+//		Predicate p = (Predicate)o;
+//		return p.uri.equals(uri);
+//	} 
 
 	
 }
