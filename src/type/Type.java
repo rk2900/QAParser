@@ -70,6 +70,6 @@ public class Type {
 		return ret;
 	}
 	public static void main(String[] args) {
-		System.out.println(getTypeFromFocus("capital"));
+		System.out.println(getTypeFromFocus("spacecrafts"));
 	}
 }
