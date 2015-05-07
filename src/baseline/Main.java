@@ -206,21 +206,49 @@ public class Main {
 			LinkedList<RDFNode> resources = ClientManagement.getNode(answer.entityUri, predicate.uri);
 			answer.resources.put(predicate,resources);
 		}
-		if(type == CLASSIFICATION.RESOURCE){
-			answer.typeConstrainScore = FocusConstraint.getPredicateTypeConstraintScore(answer);
-			ArrayList<Predicate> newPredicates = new ArrayList<Predicate>();
-			for (Predicate predicate : answer.predictList) {
-				double typeScore = answer.typeConstrainScore.get(predicate);
-				if(typeScore > 0 || predicate.maxScore > SimilarityFunction.threshold){
-					predicate.maxScore += typeScore;
-					newPredicates.add(predicate);
-				}
-			}
-			Collections.sort(newPredicates,Collections.reverseOrder());
-			answer.predictList = newPredicates;
-		}
+		addTypeConstraint(answer, type);
 	}
 	
+	public static void addTypeConstraint(Answer answer, CLASSIFICATION type){
+		switch (type) {
+		case RESOURCE:
+			switch (answer.answerType) {
+			case 0:
+				answer.typeConstrainScore = FocusConstraint.getPredicateTypeConstraintScore(answer);
+				ArrayList<Predicate> newPredicates = new ArrayList<Predicate>();
+				for (Predicate predicate : answer.predictList) {
+					double typeScore = answer.typeConstrainScore.get(predicate);
+					if(typeScore > 0 || predicate.maxScore > SimilarityFunction.threshold){
+						predicate.maxScore += typeScore;
+						newPredicates.add(predicate);
+					}
+				}
+				Collections.sort(newPredicates,Collections.reverseOrder());
+				answer.predictList = newPredicates;
+				break;
+			case 1:
+				answer.pairTypeConstraintScore = FocusConstraint.getPairPredicateTypeConstraintScore(answer);
+				LinkedList<PairPredicate> pairPredicates = new LinkedList<PairPredicate>();
+				for (PairPredicate pair : answer.pairPredicates) {
+					double typeScore = answer.pairTypeConstraintScore.get(pair);
+					if(typeScore > 0 || pair.Predicate2.maxScore > SimilarityFunction.threshold){
+						pair.Predicate2.maxScore += typeScore;
+						pair.unpdateScore();
+						pairPredicates.add(pair);
+					}
+				}
+				Collections.sort(pairPredicates,Collections.reverseOrder());
+				answer.pairPredicates = pairPredicates;
+				break;
+
+			default:
+				break;
+			}
+			break;
+		default:
+			break;
+		}
+	}
 	//链式问题
 	public static void pipe(MatchDetail pipe, Constraint cs, Answer answer, CLASSIFICATION type){
 		answer.entityUri = pipe.entity.uri;
@@ -249,7 +277,6 @@ public class Main {
 					HashMap<Predicate, HashSet<String>> pipePredicates = ClientManagement.getPredicatePipe(answer.entityUri, answer.predictList);
 					HashMap<String, Predicate> p2Map = new HashMap<String, Predicate>();
 					for (Predicate p1 : pipePredicates.keySet()) {
-						PairPredicate pair = new PairPredicate();
 						for (String p2String : pipePredicates.get(p1)) {
 							if(!p2Map.containsKey(p2String)){
 								Predicate p2 = SimilarityFunction.getPredicate(p2String, NL, focusString);
@@ -259,7 +286,11 @@ public class Main {
 							answer.pairPredicates.add(pairP);
 						}
 					}
-					Collections.sort(answer.pairPredicates, Collections.reverseOrder());
+					for (PairPredicate pairP : answer.pairPredicates) {
+						LinkedList<RDFNode> res = ClientManagement.getPipeNode(answer.entityUri, pairP.Predicate1.uri, pairP.Predicate2.uri);
+						answer.pairResources.put(pairP, res);
+					}
+					addTypeConstraint(answer, type);
 //					LinkedList<Answer> answers = new LinkedList<Answer>();
 //					for (RDFNode node : step1Result) {
 //						Answer ans = new Answer();

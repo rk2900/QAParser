@@ -69,16 +69,33 @@ public class Answer {
 		sb.append(qf.query);
 		sb.append("\n");
 		if(!isException()){
-			sb.append(entityUri);
-			sb.append("\n");
-			for (Predicate predict : predictList) {
-				sb.append(predict.maxScore + "\t"+ predict.matchedLabel +"\t" + predict.uri);
-				LinkedList<RDFNode> res = resources.get(predict);
-				for (RDFNode rdfNode : res) {
-					sb.append(" " + rdfNode.toString());
-				}
+			if(answerType == 0){
+				sb.append(entityUri);
 				sb.append("\n");
+				for (Predicate predict : predictList) {
+					sb.append(predict.maxScore + "\t"+ predict.matchedLabel +"\t" + predict.uri);
+					LinkedList<RDFNode> res = resources.get(predict);
+					for (RDFNode rdfNode : res) {
+						sb.append(" " + rdfNode.toString());
+					}
+					sb.append("\n");
+				}
 			}
+			if(answerType == 1){
+				sb.append(entityUri);
+				sb.append("\n");
+				for (PairPredicate pair : pairPredicates) {
+					sb.append(pair.score+"\n");
+					sb.append(pair.Predicate1.maxScore + "\t"+ pair.Predicate1.matchedLabel +"\t" + pair.Predicate1.uri + "\n");
+					sb.append(pair.Predicate2.maxScore + "\t"+ pair.Predicate2.matchedLabel +"\t" + pair.Predicate2.uri + "\n");
+					LinkedList<RDFNode> res = pairResources.get(pair);
+					for (RDFNode rdfNode : res) {
+						sb.append(" " + rdfNode.toString());
+					}
+					sb.append("\n");
+				}
+			}
+			
 		}else{
 			sb.append(exceptionString);
 			sb.append("\n");
