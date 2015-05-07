@@ -5,8 +5,6 @@ import baseline.Classification;
 import baseline.Entity;
 import baseline.Classification.CLASSIFICATION;
 import paser.QuestionFrame;
-import tool.OutputRedirector;
-import knowledgebase.ClientManagement;
 import entityLinking.client.entityClientConst.TOOLKIT;
 import entityLinking.parse.responseParser;
 import finder.Pipeline;

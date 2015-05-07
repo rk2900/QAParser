@@ -13,8 +13,6 @@ import java.util.List;
 import knowledgebase.ClientManagement;
 
 import com.hp.hpl.jena.rdf.model.RDFNode;
-import com.hp.hpl.jena.sparql.function.library.max;
-
 import paser.FocusConstraint;
 import paser.QuestionFrame;
 import syntacticParser.Constraint;
@@ -296,7 +294,7 @@ public class Main {
 				if(step1Result.size() == 0){
 					answer.exceptionString = "pipe style, step 1 error, resources size equals: 0";
 				}else{
-					HashMap<Predicate, HashSet<String>> pipePredicates = ClientManagement.getPredicatePipe(answer.entityUri, firstAnswer.predictList);
+					HashMap<Predicate, HashSet<String>> pipePredicates = ClientManagement.getPredicatePipe(answer.entityUri, firstAnswer.predictList, type);
 					HashMap<String, Predicate> p2Map = new HashMap<String, Predicate>();
 					for (Predicate p1 : pipePredicates.keySet()) {
 						for (String p2String : pipePredicates.get(p1)) {
@@ -328,7 +326,7 @@ public class Main {
 		
 		answer.entityUri = eUri1 + "\t" + eUri2;
 		
-		HashMap<String, HashSet<String>> pairStringMap = ClientManagement.getPredicateCross(eUri1, eUri2);
+		HashMap<String, HashSet<String>> pairStringMap = ClientManagement.getPredicateCross(eUri1, eUri2, type);
 		HashMap<String, Predicate> p2Map = new HashMap<String, Predicate>();
 		
 		for (String s1 : pairStringMap.keySet()) {
