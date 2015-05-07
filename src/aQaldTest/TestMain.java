@@ -18,6 +18,11 @@ public class TestMain {
 		parser.setEntityList(qf, TOOLKIT.MINERDIS);
 		Answer answer = Classification.getAnswer(qf,0);
 		System.out.println(answer.print());
+		
+		for (Entity entity : qf.entityList) {
+			entity.print();
+		}
+		System.out.println(syntacticParser.Main.get(qf,qf.question));
 	}
 	public static void main(String[] args) {
 		Pipeline pipeline = new Pipeline(DataSource.TRAIN);

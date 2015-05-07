@@ -22,6 +22,7 @@ public class responseParser {
 		blackEntityPrefixSet = new HashSet<String>();
 		blackEntityPrefixSet.add("List of");
 	}
+	
 	private entityDB db;
 	public responseParser(String dbName){
 		db = new entityDB(dbName);
@@ -55,7 +56,15 @@ public class responseParser {
 					JSONObject spot = spots.getJSONObject(j);
 					String candTitle = spot.getString("title");
 					
-					if(blackEntityPrefixSet.contains(candTitle)){
+					boolean isBlack = false;
+					for (String blackLabel : blackEntityPrefixSet) {
+						if(candTitle.startsWith(blackLabel)){
+							isBlack = true;
+							break;
+						}
+					}
+					
+					if(isBlack){
 						continue;
 					}
 					
