@@ -1,5 +1,6 @@
 package knowledgebase;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -327,7 +328,7 @@ public class ClientManagement {
 		return nodeList;
 	}
 	
-	public static HashMap<Predicate, HashSet<String>> getPredicatePipe(String entity, LinkedList<Predicate> predList) {
+	public static HashMap<Predicate, HashSet<String>> getPredicatePipe(String entity, ArrayList<Predicate> predList) {
 		HashMap<Predicate, HashSet<String>> predMap = new HashMap<>();
 		for (Predicate predicate : predList) {
 			String predUri = predicate.getUri();
@@ -338,30 +339,22 @@ public class ClientManagement {
 			ResultSet rs = ClientManagement.query(firstQuery, true);
 			while (rs.hasNext()) {
 				RDFNode node = rs.next().get("o");
-				
+				if(node.isLiteral()) { // literal case
+					literalFlag = true;
+					break;
+				} else { // resource case
+					LinkedList<RDFNode> secondPredList = getSurroundingPred(node.toString());
+					for (RDFNode secondPredicate : secondPredList) {
+						if(!secondPredicate.equals(predicate))
+							predSet.add(secondPredicate.toString());
+					}
+				}
+			}
+			if(literalFlag) {
+				continue;
 			}
 			
-			
-			
-			
-			
-//			String sparql = "SELECT DISTINCT ?p WHERE {"
-//					+ "{<"+entity+"> <"+predUri+"> ?o. ?o ?p ?o1.} " //out - out
-//					+ "UNION {<"+entity+"> <"+predUri+"> ?o. ?o1 ?p ?o.} " // out - in
-//					+ "UNION {?o <"+predUri+"> <"+entity+">. ?o ?p ?o2.} " // in - out
-//					+ "UNION {?o <"+predUri+"> <"+entity+">. ?o2 ?p ?o.} " // in - in
-//					+ "}";
-//			ResultSet rs = ClientManagement.query(sparql, true);
-//			while(rs.hasNext()) {
-//				RDFNode node = rs.next().get("p");
-//				System.err.println(node.toString());
-//				predSet.add(node.toString());
-//			}
-//			if(predSet.size() > 0) {
-//				predMap.put(predicate, predSet);
-//			}
 		}
-		
 		return predMap;
 	}
 	
@@ -467,10 +460,10 @@ public class ClientManagement {
 	
 	public static void main(String[] args) throws Exception {
 //		ClientManagement.setServerType(Server.ONLINE);
-		/**
+		/**/
 		String entity = "http://dbpedia.org/resource/Beijing";
 		Predicate p1 = new Predicate("http://dbpedia.org/property/areaCode", 0, "");
-		LinkedList<Predicate> predList = new LinkedList<>();
+		ArrayList<Predicate> predList = new ArrayList<>();
 		predList.add(p1);
 		HashMap<Predicate, HashSet<String>> predMap = ClientManagement.getPredicatePipe(entity, predList);
 		
@@ -484,13 +477,13 @@ public class ClientManagement {
 		}
 		/**/
 //		String query = "select distinct ?s where {?s ?p ?o} limit 50";
-		String query = "SELECT DISTINCT ?o1 WHERE {<http://dbpedia.org/resource/Beijing> <http://dbpedia.org/property/areaCode> ?o. ?o1 ?p ?o}";
+//		String query = "SELECT DISTINCT ?o1 WHERE {<http://dbpedia.org/resource/Beijing> <http://dbpedia.org/ontology/country> ?o. ?o1 ?p ?o}";
 //		String query = "SELECT (COUNT(DISTINCT ?p) AS ?count) WHERE {{<http://dbpedia.org/resource/Beijing> <http://dbpedia.org/property/areaCode> ?o. ?o ?p ?o1.} UNION {<http://dbpedia.org/resource/Beijing> <http://dbpedia.org/property/areaCode> ?o. ?o1 ?p ?o.} UNION {?o <http://dbpedia.org/property/areaCode> <http://dbpedia.org/resource/Beijing>. ?o ?p ?o2.} UNION {?o <http://dbpedia.org/property/areaCode> <http://dbpedia.org/resource/Beijing>. ?o2 ?p ?o.} }";//"SELECT DISTINCT ?s WHERE { ?s ?p ?o } LIMIT 5";
-		ResultSet rs = ClientManagement.query(query, true);
-		System.out.println("OVER");
-		while(rs.hasNext()) {
-			System.out.println(rs.next().get("o1"));
-		}
+//		ResultSet rs = ClientManagement.query(query, true);
+//		System.out.println("OVER");
+//		while(rs.hasNext()) {
+//			System.out.println(rs.next().get("o1"));
+//		}
 		/**/
 	}
 }
