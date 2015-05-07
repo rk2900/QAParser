@@ -243,6 +243,11 @@ public class XMLParser {
 			// set question attribute
 			question.setAttribute("id", id.toString());
 			
+			// set string element
+			Element stringElement = doc.createElement("string");
+			stringElement.setAttribute("lang", "en");
+			question.appendChild(stringElement);
+			
 			// answers element
 			Element answers = doc.createElement("answers");
 			question.appendChild(answers);
@@ -275,7 +280,7 @@ public class XMLParser {
 			doc.appendChild(dataset);
 			
 			LinkedList<String> answerList = new LinkedList<String>();
-			answerList.add("http://dbpedia.org/resource/Beijing");
+			answerList.add("http://dbpedia.org/resource/India");
 			Element element = xmlParser.getQuestionElement(doc, 10, answerList);
 			if(element != null) {
 				dataset.appendChild(element);

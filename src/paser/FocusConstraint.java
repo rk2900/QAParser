@@ -82,6 +82,11 @@ public class FocusConstraint {
 		return predTypeScores;
 	}
 	
+	/**
+	 * To get the confidence of how much predicate is matched along with the entity constraint in Focus
+	 * @param answer
+	 * @return
+	 */
 	public static HashMap<Predicate, Double> getPredicateEntityConstraintScore(Answer answer) {
 		HashMap<Predicate, Double> predEntityScores = new HashMap<>();
 		QuestionFrame qf = answer.qf;

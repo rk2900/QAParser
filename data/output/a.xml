@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataset id="qald-5_test">
 <question id="10">
+<string lang="en"/>
 <answers>
-<answer>http://dbpedia.org/resource/Beijing</answer>
+<answer>http://dbpedia.org/resource/India</answer>
 </answers>
 </question>
 </dataset>
