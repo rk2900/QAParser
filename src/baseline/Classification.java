@@ -14,7 +14,7 @@ import finder.Pipeline;
 
 public class Classification {
 	public static HashMap<String, Integer> map;
-//	public static enum classfication {normal, date, where, who, number, resource};
+//	public static enum CLASSIFICATION {NORMAL, DATE, WHERE, WHO, NUMBER, RESOURCE};
 	static{
 		map = new HashMap<String, Integer>();
 		map.put("normal", 0);
