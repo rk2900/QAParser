@@ -26,6 +26,8 @@ public class Answer {
 	public int answerType;
 	public LinkedList<PairPredicate> pairPredicates;
 	public HashMap<PairPredicate, LinkedList<RDFNode>> pairResources;
+	public HashMap<PairPredicate, Double> pairTypeConstraintScore;
+	public HashMap<PairPredicate, Double> pairEntityConstraintScore;
 	
 	public Answer(){
 		answerType = 0;
@@ -38,11 +40,14 @@ public class Answer {
 		case 0:
 			predictList = new ArrayList<Predicate>();
 			typeConstrainScore = new HashMap<>();
+			entityConstrainScore  = new HashMap<Predicate, Double>();
 			resources = new HashMap<Predicate, LinkedList<RDFNode>>(); 
 			break;
 		case 1:
 			pairPredicates = new LinkedList<PairPredicate>();
 			pairResources = new HashMap<PairPredicate, LinkedList<RDFNode>>();
+			pairTypeConstraintScore = new HashMap<PairPredicate, Double>();
+			pairEntityConstraintScore = new HashMap<PairPredicate, Double>();
 			break;
 		default:
 			break;

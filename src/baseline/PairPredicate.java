@@ -12,10 +12,10 @@ public class PairPredicate implements Comparable<PairPredicate> {
 	public PairPredicate(Predicate p1, Predicate p2){
 		Predicate1 = p1;
 		Predicate2 = p2;
-		score = calScore();
+		score = initialScore();
 	}
 	
-	private double calScore(){
+	private double initialScore(){
 		return Predicate1.maxScore * Predicate2.maxScore;
 	}
 
