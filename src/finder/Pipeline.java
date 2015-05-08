@@ -311,12 +311,46 @@ public class Pipeline {
 		
 		OutputRedirector.openFileOutput("./data/output/debug.txt");
 		
+		for(QuestionFrame qf: pipeline.bool) {
+			parser.setEntityList(qf, TOOLKIT.MINERDIS);
+			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.NORMAL);
+			qf.print();
+			if(answer!=null && answer.isException()) {
+				System.out.println("ANSWER = null / ANSWER has exception: " + answer.exceptionString );
+				continue;
+			} else {
+				if(answer.answerType == 0) {
+					System.out.println("ANSWER_TYPE = 0");
+					if(answer.predictList.size() > 0) {
+						Predicate p = answer.predictList.get(0);
+						System.out.println("Predicate: "+p.getUri());
+						LinkedList<RDFNode> nodeList = answer.resources.get(p);
+						for (RDFNode rdfNode : nodeList) {
+							System.out.print("\t"+rdfNode.toString());
+						}
+						qaMap.put(qf, nodeList);
+					}
+				} else {
+					if(answer.pairPredicates.size() > 0) {
+						PairPredicate pairPredicate = answer.pairPredicates.get(0);
+						System.out.println("Pair Predicate: "+pairPredicate.Predicate1.getUri() + "\t" + pairPredicate.Predicate2.getUri());
+						LinkedList<RDFNode> nodeList = answer.pairResources.get(pairPredicate);
+						for (RDFNode rdfNode : nodeList) {
+							System.out.print("\t"+rdfNode.toString());
+						}
+						qaMap.put(qf, nodeList);
+					}
+				}
+			}
+			System.out.println("\n====================================================\n");
+		}
+		
 		for(QuestionFrame qf: pipeline.comparison) {
 			parser.setEntityList(qf, TOOLKIT.MINERDIS);
 			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.NORMAL);
 			qf.print();
 			if(answer!=null && answer.isException()) {
-				System.out.println("ANSWER = null / ANSWER has exception");
+				System.out.println("ANSWER = null / ANSWER has exception: " + answer.exceptionString );
 				continue;
 			} else {
 				if(answer.answerType == 0) {
@@ -345,175 +379,175 @@ public class Pipeline {
 			System.out.println("\n====================================================\n");
 		}
 	
-//		for(QuestionFrame qf: pipeline.number) {
-//			parser.setEntityList(qf, TOOLKIT.MINERDIS);
-//			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.NUMBER);
-//			qf.print();
-//			if(answer!=null && answer.isException()) {
-//				System.out.println("ANSWER = null / ANSWER has exception");
-//				continue;
-//			} else {
-//				if(answer.answerType == 0) {
-//					System.out.println("ANSWER_TYPE = 0");
-//					if(answer.predictList.size() > 0) {
-//						Predicate p = answer.predictList.get(0);
-//						System.out.println("Predicate: "+p.getUri());
-//						LinkedList<RDFNode> nodeList = answer.resources.get(p);
-//						for (RDFNode rdfNode : nodeList) {
-//							System.out.print("\t"+rdfNode.toString());
-//						}
-//						qaMap.put(qf, nodeList);
-//					}
-//				} else {
-//					if(answer.pairPredicates.size() > 0) {
-//						PairPredicate pairPredicate = answer.pairPredicates.get(0);
-//						System.out.println("Pair Predicate: "+pairPredicate.Predicate1.getUri() + "\t" + pairPredicate.Predicate2.getUri());
-//						LinkedList<RDFNode> nodeList = answer.pairResources.get(pairPredicate);
-//						for (RDFNode rdfNode : nodeList) {
-//							System.out.print("\t"+rdfNode.toString());
-//						}
-//						qaMap.put(qf, nodeList);
-//					}
-//				}
-//			}
-//			System.out.println("\n====================================================\n");
-//		}
-//		
-//		for(QuestionFrame qf: pipeline.date) {
-//			parser.setEntityList(qf, TOOLKIT.MINERDIS);
-//			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.DATE);
-//			qf.print();
-//			if(answer!=null && answer.isException()) {
-//				System.out.println("ANSWER = null / ANSWER has exception");
-//				continue;
-//			} else {
-//				if(answer.answerType == 0) {
-//					System.out.println("ANSWER_TYPE = 0");
-//					if(answer.predictList.size() > 0) {
-//						Predicate p = answer.predictList.get(0);
-//						System.out.println("Predicate: "+p.getUri());
-//						LinkedList<RDFNode> nodeList = answer.resources.get(p);
-//						for (RDFNode rdfNode : nodeList) {
-//							System.out.print("\t"+rdfNode.toString());
-//						}
-//						qaMap.put(qf, nodeList);
-//					}
-//				} else {
-//					if(answer.pairPredicates.size() > 0) {
-//						PairPredicate pairPredicate = answer.pairPredicates.get(0);
-//						System.out.println("Pair Predicate: "+pairPredicate.Predicate1.getUri() + "\t" + pairPredicate.Predicate2.getUri());
-//						LinkedList<RDFNode> nodeList = answer.pairResources.get(pairPredicate);
-//						for (RDFNode rdfNode : nodeList) {
-//							System.out.print("\t"+rdfNode.toString());
-//						}
-//						qaMap.put(qf, nodeList);
-//					}
-//				}
-//			}
-//			System.out.println("\n====================================================\n");
-//		}
-//		
-//		for(QuestionFrame qf: pipeline.where) {
-//			parser.setEntityList(qf, TOOLKIT.MINERDIS);
-//			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.WHERE);
-//			qf.print();
-//			if(answer!=null && answer.isException()) {
-//				System.out.println("ANSWER = null / ANSWER has exception");
-//				continue;
-//			} else {
-//				if(answer.answerType == 0) {
-//					System.out.println("ANSWER_TYPE = 0");
-//					if(answer.predictList.size() > 0) {
-//						Predicate p = answer.predictList.get(0);
-//						System.out.println("Predicate: "+p.getUri());
-//						LinkedList<RDFNode> nodeList = answer.resources.get(p);
-//						for (RDFNode rdfNode : nodeList) {
-//							System.out.print("\t"+rdfNode.toString());
-//						}
-//						qaMap.put(qf, nodeList);
-//					}
-//				} else {
-//					if(answer.pairPredicates.size() > 0) {
-//						PairPredicate pairPredicate = answer.pairPredicates.get(0);
-//						System.out.println("Pair Predicate: "+pairPredicate.Predicate1.getUri() + "\t" + pairPredicate.Predicate2.getUri());
-//						LinkedList<RDFNode> nodeList = answer.pairResources.get(pairPredicate);
-//						for (RDFNode rdfNode : nodeList) {
-//							System.out.print("\t"+rdfNode.toString());
-//						}
-//						qaMap.put(qf, nodeList);
-//					}
-//				}
-//			}
-//			System.out.println("\n====================================================\n");
-//		}
-//		
-//		for(QuestionFrame qf: pipeline.who) {
-//			parser.setEntityList(qf, TOOLKIT.MINERDIS);
-//			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.WHO);
-//			qf.print();
-//			if(answer!=null && answer.isException()) {
-//				System.out.println("ANSWER = null / ANSWER has exception");
-//				continue;
-//			} else {
-//				if(answer.answerType == 0) {
-//					System.out.println("ANSWER_TYPE = 0");
-//					if(answer.predictList.size() > 0) {
-//						Predicate p = answer.predictList.get(0);
-//						System.out.println("Predicate: "+p.getUri());
-//						LinkedList<RDFNode> nodeList = answer.resources.get(p);
-//						for (RDFNode rdfNode : nodeList) {
-//							System.out.print("\t"+rdfNode.toString());
-//						}
-//						qaMap.put(qf, nodeList);
-//					}
-//				} else {
-//					if(answer.pairPredicates.size() > 0) {
-//						PairPredicate pairPredicate = answer.pairPredicates.get(0);
-//						System.out.println("Pair Predicate: "+pairPredicate.Predicate1.getUri() + "\t" + pairPredicate.Predicate2.getUri());
-//						LinkedList<RDFNode> nodeList = answer.pairResources.get(pairPredicate);
-//						for (RDFNode rdfNode : nodeList) {
-//							System.out.print("\t"+rdfNode.toString());
-//						}
-//						qaMap.put(qf, nodeList);
-//					}
-//				}
-//			}
-//			System.out.println("\n====================================================\n");
-//		}
-//		
-//		for(QuestionFrame qf: pipeline.resource) {
-//			parser.setEntityList(qf, TOOLKIT.MINERDIS);
-//			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.RESOURCE);
-//			qf.print();
-//			if(answer!=null && answer.isException()) {
-//				System.out.println("ANSWER = null / ANSWER has exception");
-//				continue;
-//			} else {
-//				if(answer.answerType == 0) {
-//					System.out.println("ANSWER_TYPE = 0");
-//					if(answer.predictList.size() > 0) {
-//						Predicate p = answer.predictList.get(0);
-//						System.out.println("Predicate: "+p.getUri());
-//						LinkedList<RDFNode> nodeList = answer.resources.get(p);
-//						for (RDFNode rdfNode : nodeList) {
-//							System.out.print("\t"+rdfNode.toString());
-//						}
-//						qaMap.put(qf, nodeList);
-//					}
-//				} else {
-//					if(answer.pairPredicates.size() > 0) {
-//						PairPredicate pairPredicate = answer.pairPredicates.get(0);
-//						System.out.println("Pair Predicate: "+pairPredicate.Predicate1.getUri() + "\t" + pairPredicate.Predicate2.getUri());
-//						LinkedList<RDFNode> nodeList = answer.pairResources.get(pairPredicate);
-//						for (RDFNode rdfNode : nodeList) {
-//							System.out.print("\t"+rdfNode.toString());
-//						}
-//						qaMap.put(qf, nodeList);
-//					}
-//				}
-//			}
-//			System.out.println("\n====================================================\n");
-//		}
+		for(QuestionFrame qf: pipeline.number) {
+			parser.setEntityList(qf, TOOLKIT.MINERDIS);
+			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.NUMBER);
+			qf.print();
+			if(answer!=null && answer.isException()) {
+				System.out.println("ANSWER = null / ANSWER has exception: " + answer.exceptionString );
+				continue;
+			} else {
+				if(answer.answerType == 0) {
+					System.out.println("ANSWER_TYPE = 0");
+					if(answer.predictList.size() > 0) {
+						Predicate p = answer.predictList.get(0);
+						System.out.println("Predicate: "+p.getUri());
+						LinkedList<RDFNode> nodeList = answer.resources.get(p);
+						for (RDFNode rdfNode : nodeList) {
+							System.out.print("\t"+rdfNode.toString());
+						}
+						qaMap.put(qf, nodeList);
+					}
+				} else {
+					if(answer.pairPredicates.size() > 0) {
+						PairPredicate pairPredicate = answer.pairPredicates.get(0);
+						System.out.println("Pair Predicate: "+pairPredicate.Predicate1.getUri() + "\t" + pairPredicate.Predicate2.getUri());
+						LinkedList<RDFNode> nodeList = answer.pairResources.get(pairPredicate);
+						for (RDFNode rdfNode : nodeList) {
+							System.out.print("\t"+rdfNode.toString());
+						}
+						qaMap.put(qf, nodeList);
+					}
+				}
+			}
+			System.out.println("\n====================================================\n");
+		}
+		
+		for(QuestionFrame qf: pipeline.date) {
+			parser.setEntityList(qf, TOOLKIT.MINERDIS);
+			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.DATE);
+			qf.print();
+			if(answer!=null && answer.isException()) {
+				System.out.println("ANSWER = null / ANSWER has exception: " + answer.exceptionString );
+				continue;
+			} else {
+				if(answer.answerType == 0) {
+					System.out.println("ANSWER_TYPE = 0");
+					if(answer.predictList.size() > 0) {
+						Predicate p = answer.predictList.get(0);
+						System.out.println("Predicate: "+p.getUri());
+						LinkedList<RDFNode> nodeList = answer.resources.get(p);
+						for (RDFNode rdfNode : nodeList) {
+							System.out.print("\t"+rdfNode.toString());
+						}
+						qaMap.put(qf, nodeList);
+					}
+				} else {
+					if(answer.pairPredicates.size() > 0) {
+						PairPredicate pairPredicate = answer.pairPredicates.get(0);
+						System.out.println("Pair Predicate: "+pairPredicate.Predicate1.getUri() + "\t" + pairPredicate.Predicate2.getUri());
+						LinkedList<RDFNode> nodeList = answer.pairResources.get(pairPredicate);
+						for (RDFNode rdfNode : nodeList) {
+							System.out.print("\t"+rdfNode.toString());
+						}
+						qaMap.put(qf, nodeList);
+					}
+				}
+			}
+			System.out.println("\n====================================================\n");
+		}
+		
+		for(QuestionFrame qf: pipeline.where) {
+			parser.setEntityList(qf, TOOLKIT.MINERDIS);
+			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.WHERE);
+			qf.print();
+			if(answer!=null && answer.isException()) {
+				System.out.println("ANSWER = null / ANSWER has exception: " + answer.exceptionString );
+				continue;
+			} else {
+				if(answer.answerType == 0) {
+					System.out.println("ANSWER_TYPE = 0");
+					if(answer.predictList.size() > 0) {
+						Predicate p = answer.predictList.get(0);
+						System.out.println("Predicate: "+p.getUri());
+						LinkedList<RDFNode> nodeList = answer.resources.get(p);
+						for (RDFNode rdfNode : nodeList) {
+							System.out.print("\t"+rdfNode.toString());
+						}
+						qaMap.put(qf, nodeList);
+					}
+				} else {
+					if(answer.pairPredicates.size() > 0) {
+						PairPredicate pairPredicate = answer.pairPredicates.get(0);
+						System.out.println("Pair Predicate: "+pairPredicate.Predicate1.getUri() + "\t" + pairPredicate.Predicate2.getUri());
+						LinkedList<RDFNode> nodeList = answer.pairResources.get(pairPredicate);
+						for (RDFNode rdfNode : nodeList) {
+							System.out.print("\t"+rdfNode.toString());
+						}
+						qaMap.put(qf, nodeList);
+					}
+				}
+			}
+			System.out.println("\n====================================================\n");
+		}
+		
+		for(QuestionFrame qf: pipeline.who) {
+			parser.setEntityList(qf, TOOLKIT.MINERDIS);
+			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.WHO);
+			qf.print();
+			if(answer!=null && answer.isException()) {
+				System.out.println("ANSWER = null / ANSWER has exception: " + answer.exceptionString );
+				continue;
+			} else {
+				if(answer.answerType == 0) {
+					System.out.println("ANSWER_TYPE = 0");
+					if(answer.predictList.size() > 0) {
+						Predicate p = answer.predictList.get(0);
+						System.out.println("Predicate: "+p.getUri());
+						LinkedList<RDFNode> nodeList = answer.resources.get(p);
+						for (RDFNode rdfNode : nodeList) {
+							System.out.print("\t"+rdfNode.toString());
+						}
+						qaMap.put(qf, nodeList);
+					}
+				} else {
+					if(answer.pairPredicates.size() > 0) {
+						PairPredicate pairPredicate = answer.pairPredicates.get(0);
+						System.out.println("Pair Predicate: "+pairPredicate.Predicate1.getUri() + "\t" + pairPredicate.Predicate2.getUri());
+						LinkedList<RDFNode> nodeList = answer.pairResources.get(pairPredicate);
+						for (RDFNode rdfNode : nodeList) {
+							System.out.print("\t"+rdfNode.toString());
+						}
+						qaMap.put(qf, nodeList);
+					}
+				}
+			}
+			System.out.println("\n====================================================\n");
+		}
+		
+		for(QuestionFrame qf: pipeline.resource) {
+			parser.setEntityList(qf, TOOLKIT.MINERDIS);
+			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.RESOURCE);
+			qf.print();
+			if(answer!=null && answer.isException()) {
+				System.out.println("ANSWER = null / ANSWER has exception: " + answer.exceptionString );
+				continue;
+			} else {
+				if(answer.answerType == 0) {
+					System.out.println("ANSWER_TYPE = 0");
+					if(answer.predictList.size() > 0) {
+						Predicate p = answer.predictList.get(0);
+						System.out.println("Predicate: "+p.getUri());
+						LinkedList<RDFNode> nodeList = answer.resources.get(p);
+						for (RDFNode rdfNode : nodeList) {
+							System.out.print("\t"+rdfNode.toString());
+						}
+						qaMap.put(qf, nodeList);
+					}
+				} else {
+					if(answer.pairPredicates.size() > 0) {
+						PairPredicate pairPredicate = answer.pairPredicates.get(0);
+						System.out.println("Pair Predicate: "+pairPredicate.Predicate1.getUri() + "\t" + pairPredicate.Predicate2.getUri());
+						LinkedList<RDFNode> nodeList = answer.pairResources.get(pairPredicate);
+						for (RDFNode rdfNode : nodeList) {
+							System.out.print("\t"+rdfNode.toString());
+						}
+						qaMap.put(qf, nodeList);
+					}
+				}
+			}
+			System.out.println("\n====================================================\n");
+		}
 		
 		pipeline.xmlParser.outputAnswer("./data/output/test.xml", qaMap);
 		OutputRedirector.closeFileOutput();

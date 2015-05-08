@@ -62,10 +62,8 @@ When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?
                   (PP (IN in)
                     (NP (DT the) (NNP Netherlands))))))))))
     (. ?)))
-Ans: syntacticParser.Node@3e6acec2
-"the movie Worst Case Scenario [2,6]"	"going to be in cinemas in the Netherlands "	"syntacticParser.Node@3e6acec2"
-http://dbpedia.org/resource/Netherlands[13,14]
-http://dbpedia.org/resource/Movie_theater[11,11]
+Ans: syntacticParser.Node@2152fde5
+"the movie Worst Case Scenario [2,6]"	"going to be in cinemas in the Netherlands "	"syntacticParser.Node@2152fde5"
 
 OUT OF SCOPE
 
@@ -80,8 +78,8 @@ Which German cities have more than 250000 inhabitants?
           (QP (JJR more) (IN than) (CD 250000))
           (NNS inhabitants))))
     (. ?)))
-Ans: syntacticParser.Node@acb1c9c
-"syntacticParser.Node@acb1c9c"	"have"	"more than 250000 inhabitants [4,7]"
+Ans: syntacticParser.Node@138a952f
+"syntacticParser.Node@138a952f"	"have"	"more than 250000 inhabitants [4,7]"
 http://dbpedia.org/resource/German_language[1,1]
 
  
@@ -108,9 +106,8 @@ Who was John F. Kennedy's vice president?
         (NP (NNP John) (NNP F.) (NNP Kennedy) (POS 's))
         (JJ vice) (NN president)))
     (. ?)))
-Ans: syntacticParser.Node@51eeae0a
+Ans: syntacticParser.Node@2f70d78c
 http://dbpedia.org/resource/John_F._Kennedy[2,5]
-http://dbpedia.org/resource/Vice_president[6,7]
 
  
 PREFIX dbo: <http://dbpedia.org/ontology/> 
@@ -132,9 +129,8 @@ Who is the mayor of Berlin?
         (PP (IN of)
           (NP (NNP Berlin)))))
     (. ?)))
-Ans: syntacticParser.Node@4283f29b
-http://dbpedia.org/resource/Governing_Mayor_of_Berlin[3,5]
-http://dbpedia.org/resource/Mayor[3,3]
+Ans: syntacticParser.Node@6d810e94
+"syntacticParser.Node@6d810e94"	"the mayor "	"Berlin [5,5]"
 http://dbpedia.org/resource/Berlin[5,5]
 
  
@@ -161,8 +157,8 @@ How many students does the Free University in Amsterdam have?
           (NP (NNP Amsterdam))))
       (VP (VB have)))
     (. ?)))
-Ans: syntacticParser.Node@184b3575
-"the Free University in Amsterdam [4,8]"	"have "	"syntacticParser.Node@184b3575"
+Ans: syntacticParser.Node@a9e31e8
+"the Free University in Amsterdam [4,8]"	"have "	"syntacticParser.Node@a9e31e8"
 http://dbpedia.org/resource/VU_University_Amsterdam[5,8]
 http://dbpedia.org/resource/Amsterdam[8,8]
 
@@ -187,9 +183,8 @@ What is the second highest mountain on Earth?
         (PP (IN on)
           (NP (NNP Earth)))))
     (. ?)))
-Ans: syntacticParser.Node@6325ef80
-"syntacticParser.Node@6325ef80"	"the second highest mountain "	"Earth [7,7]"
-http://dbpedia.org/resource/Mountain[5,5]
+Ans: syntacticParser.Node@508f2b78
+"syntacticParser.Node@508f2b78"	"the second highest mountain "	"Earth [7,7]"
 http://dbpedia.org/resource/Earth[7,7]
 
  
@@ -216,9 +211,8 @@ Give me all professional skateboarders from Sweden.
         (PP (IN from)
           (NP (NNP Sweden)))))
     (. .)))
-Ans: syntacticParser.Node@1269538a
-"syntacticParser.Node@1269538a"	"all professional skateboarders "	"Sweden [6,6]"
-http://dbpedia.org/resource/Skateboarding[4,4]
+Ans: syntacticParser.Node@3906de9
+"syntacticParser.Node@3906de9"	"all professional skateboarders "	"Sweden [6,6]"
 http://dbpedia.org/resource/Sweden[6,6]
 
  
@@ -245,10 +239,9 @@ When was Alberta admitted as province?
       (VP (VBN admitted)
         (PP (IN as) (NN province))))
     (. ?)))
-Ans: syntacticParser.Node@22a85176
-"Alberta [2,2]"	"admitted as province "	"syntacticParser.Node@22a85176"
+Ans: syntacticParser.Node@74bca3db
+"Alberta [2,2]"	"admitted as province "	"syntacticParser.Node@74bca3db"
 http://dbpedia.org/resource/Alberta[2,2]
-http://dbpedia.org/resource/Province[5,5]
 
  
 PREFIX dbp: <http://dbpedia.org/property/> 
@@ -270,10 +263,9 @@ To which countries does the Himalayan mountain system extend?
       (NP (DT the) (JJ Himalayan) (NN mountain) (NN system))
       (VP (VB extend)))
     (. ?)))
-Ans: syntacticParser.Node@693d61c1
-"the Himalayan mountain system [4,7]"	"extend "	"syntacticParser.Node@693d61c1"
+Ans: syntacticParser.Node@96160a
+"the Himalayan mountain system [4,7]"	"extend "	"syntacticParser.Node@96160a"
 http://dbpedia.org/resource/Himalayas[5,6]
-http://dbpedia.org/resource/Mountain[6,6]
 
  
 PREFIX dbp: <http://dbpedia.org/property/> 
@@ -301,10 +293,8 @@ Give me a list of all bandleaders that play trumpet.
             (VP (VBP play)
               (NP (NN trumpet)))))))
     (. .)))
-Ans: syntacticParser.Node@5dbe891a
-"syntacticParser.Node@5dbe891a"	"play"	"trumpet [9,9]"
-http://dbpedia.org/resource/Trumpet[9,9]
-http://dbpedia.org/resource/Bandleader[6,6]
+Ans: syntacticParser.Node@1c222382
+"syntacticParser.Node@1c222382"	"play"	"trumpet [9,9]"
 
  
 PREFIX dbo: <http://dbpedia.org/ontology/> 
@@ -328,9 +318,8 @@ Which countries have more than ten caves?
           (QP (JJR more) (IN than) (CD ten))
           (NNP caves))))
     (. ?)))
-Ans: syntacticParser.Node@6674f28a
-"syntacticParser.Node@6674f28a"	"have"	"more than ten caves [3,6]"
-http://dbpedia.org/resource/Cave[6,6]
+Ans: syntacticParser.Node@79ff05db
+"syntacticParser.Node@79ff05db"	"have"	"more than ten caves [3,6]"
 
  
 PREFIX dbo: <http://dbpedia.org/ontology/> 
@@ -366,9 +355,9 @@ What is the total amount of men and women serving in the FDNY?
               (PP (IN in)
                 (NP (DT the) (NNP FDNY))))))))
     (. ?)))
-Ans: syntacticParser.Node@6554d9a
-"syntacticParser.Node@30d64921"	"serving in"	"the FDNY [11,12]"
-"syntacticParser.Node@6554d9a"	"the total amount "	"syntacticParser.Node@30d64921"
+Ans: syntacticParser.Node@552a1498
+"syntacticParser.Node@4d237ca5"	"serving in"	"the FDNY [11,12]"
+"syntacticParser.Node@552a1498"	"the total amount "	"syntacticParser.Node@4d237ca5"
 http://dbpedia.org/resource/New_York_City_Fire_Department[12,12]
 
  
@@ -390,8 +379,8 @@ Who produces Orangina?
       (VP (VBZ produces)
         (NP (NNP Orangina))))
     (. ?)))
-Ans: syntacticParser.Node@203a51cf
-"syntacticParser.Node@203a51cf"	"produces"	"Orangina [2,2]"
+Ans: syntacticParser.Node@95675ab
+"syntacticParser.Node@95675ab"	"produces"	"Orangina [2,2]"
 http://dbpedia.org/resource/Orangina[2,2]
 
  
@@ -415,9 +404,8 @@ Who is the Formula 1 race driver with the most races?
         (PP (IN with)
           (NP (DT the) (JJS most) (NNS races)))))
     (. ?)))
-Ans: syntacticParser.Node@2e0c2e84
-"syntacticParser.Node@2e0c2e84"	"the Formula 1 race driver "	"the most races [8,10]"
-http://dbpedia.org/resource/Auto_racing[5,6]
+Ans: syntacticParser.Node@3779df1c
+"syntacticParser.Node@3779df1c"	"the Formula 1 race driver "	"the most races [8,10]"
 http://dbpedia.org/resource/Formula_One[3,4]
 
  
@@ -446,10 +434,8 @@ Give me all world heritage sites designated within the past two years.
           (PP (IN within)
             (NP (DT the) (JJ past) (CD two) (NNS years))))))
     (. .)))
-Ans: syntacticParser.Node@721ca881
-"syntacticParser.Node@721ca881"	"designated within"	"the past two years [8,11]"
-http://dbpedia.org/resource/World_Heritage_Site[3,5]
-http://dbpedia.org/resource/Cultural_heritage[4,4]
+Ans: syntacticParser.Node@237c67aa
+"syntacticParser.Node@237c67aa"	"designated within"	"the past two years [8,11]"
 
  
 PREFIX dbo: <http://dbpedia.org/ontology/> 
@@ -477,8 +463,8 @@ Who is the youngest player in the Premier League?
         (PP (IN in)
           (NP (DT the) (NN Premier) (NN League)))))
     (. ?)))
-Ans: syntacticParser.Node@5c87b3f
-"syntacticParser.Node@5c87b3f"	"the youngest player "	"the Premier League [6,8]"
+Ans: syntacticParser.Node@45f4f928
+"syntacticParser.Node@45f4f928"	"the youngest player "	"the Premier League [6,8]"
 http://dbpedia.org/resource/Premier[7,7]
 
  
@@ -506,8 +492,8 @@ Give me all members of Prodigy.
         (PP (IN of)
           (NP (NNP Prodigy)))))
     (. .)))
-Ans: syntacticParser.Node@71df3d2b
-"syntacticParser.Node@71df3d2b"	"all members "	"Prodigy [5,5]"
+Ans: syntacticParser.Node@64d580fe
+"syntacticParser.Node@64d580fe"	"all members "	"Prodigy [5,5]"
 http://dbpedia.org/resource/Prodigy_(rapper)[5,5]
 
  
@@ -528,8 +514,7 @@ What is the longest river?
     (SQ (VBZ is)
       (NP (DT the) (JJS longest) (NN river)))
     (. ?)))
-Ans: syntacticParser.Node@1ff92311
-http://dbpedia.org/resource/River[4,4]
+Ans: syntacticParser.Node@74bc5421
 
  
 PREFIX dbo: <http://dbpedia.org/ontology/> 
@@ -561,9 +546,9 @@ Does Breaking Bad have more episodes than Game of Thrones?
             (PP (IN of)
               (NP (NNP Thrones)))))))
     (. ?)))
-Ans: syntacticParser.Node@2aff048a
-"syntacticParser.Node@38fd4c9e"	"more episodes "	"Game of Thrones [7,9]"
-"syntacticParser.Node@2aff048a"	"have"	"syntacticParser.Node@38fd4c9e"
+Ans: syntacticParser.Node@59529ee
+"syntacticParser.Node@4a784724"	"more episodes "	"Game of Thrones [7,9]"
+"syntacticParser.Node@59529ee"	"have"	"syntacticParser.Node@4a784724"
 http://dbpedia.org/resource/Breaking_Bad[1,2]
 http://dbpedia.org/resource/Game_of_Thrones[7,9]
 
@@ -595,8 +580,8 @@ Give me all cars that are produced in Germany.
                 (PP (IN in)
                   (NP (NNP Germany)))))))))
     (. .)))
-Ans: syntacticParser.Node@2e92f232
-"syntacticParser.Node@2e92f232"	"produced in"	"Germany [8,8]"
+Ans: syntacticParser.Node@5c29c253
+"syntacticParser.Node@5c29c253"	"produced in"	"Germany [8,8]"
 http://dbpedia.org/resource/Germany[8,8]
 
  
@@ -633,9 +618,8 @@ What were the main discoveries of the Mars rover Curiosity?
         (PP (IN of)
           (NP (DT the) (NNP Mars) (NN rover) (NNP Curiosity)))))
     (. ?)))
-Ans: syntacticParser.Node@34d81a76
-"syntacticParser.Node@34d81a76"	"the main discoveries "	"the Mars rover Curiosity [6,9]"
-http://dbpedia.org/resource/Rover_(space_exploration)[8,8]
+Ans: syntacticParser.Node@5d2582aa
+"syntacticParser.Node@5d2582aa"	"the main discoveries "	"the Mars rover Curiosity [6,9]"
 http://dbpedia.org/resource/Mars_rover[7,8]
 http://dbpedia.org/resource/Mars[7,7]
 
@@ -662,9 +646,9 @@ Give me all people that were born in Vienna and died in Berlin.
                 (PP (IN in)
                   (NP (NNP Berlin)))))))))
     (. .)))
-Ans: syntacticParser.Node@5c644453
-"syntacticParser.Node@5c644453"	"born in"	"Vienna [8,8]"
-"syntacticParser.Node@5c644453"	"died in"	"Berlin [12,12]"
+Ans: syntacticParser.Node@20f08fb8
+"syntacticParser.Node@20f08fb8"	"born in"	"Vienna [8,8]"
+"syntacticParser.Node@20f08fb8"	"died in"	"Berlin [12,12]"
 http://dbpedia.org/resource/Vienna[8,8]
 http://dbpedia.org/resource/Berlin[12,12]
 
@@ -686,9 +670,7 @@ Is proinsulin a protein?
     (NP (NNP proinsulin))
     (NP (DT a) (NN protein))
     (. ?)))
-Ans: syntacticParser.Node@1ff4f685
-http://dbpedia.org/resource/Proinsulin[1,1]
-http://dbpedia.org/resource/Protein[3,3]
+Ans: syntacticParser.Node@57625fe5
 
  
 PREFIX dbo: <http://dbpedia.org/ontology/> 
@@ -709,7 +691,7 @@ How tall is Michael Jordan?
     (SQ (VBZ is)
       (NP (NNP Michael) (NNP Jordan)))
     (. ?)))
-Ans: syntacticParser.Node@3889af02
+Ans: syntacticParser.Node@559201f4
 http://dbpedia.org/resource/Michael_Jordan[3,4]
 http://dbpedia.org/resource/Jordan[4,4]
 
@@ -734,8 +716,8 @@ What is the capital of Canada?
         (PP (IN of)
           (NP (NNP Canada)))))
     (. ?)))
-Ans: syntacticParser.Node@2ab19cf5
-"syntacticParser.Node@2ab19cf5"	"the capital "	"Canada [5,5]"
+Ans: syntacticParser.Node@54a2f191
+"syntacticParser.Node@54a2f191"	"the capital "	"Canada [5,5]"
 http://dbpedia.org/resource/Canada[5,5]
 
  
@@ -759,8 +741,8 @@ Who is the governor of Wyoming?
         (PP (IN of)
           (NP (NNP Wyoming)))))
     (. ?)))
-Ans: syntacticParser.Node@1d1c808a
-"syntacticParser.Node@1d1c808a"	"the governor "	"Wyoming [5,5]"
+Ans: syntacticParser.Node@42fbed68
+"syntacticParser.Node@42fbed68"	"the governor "	"Wyoming [5,5]"
 http://dbpedia.org/resource/Wyoming[5,5]
 
  
@@ -784,8 +766,8 @@ Do Prince Harry and Prince William have the same parents?
     (VP (VB have)
       (NP (DT the) (JJ same) (NNS parents)))
     (. ?)))
-Ans: syntacticParser.Node@1800f14
-"syntacticParser.Node@1800f14"	"have"	"the same parents [7,9]"
+Ans: syntacticParser.Node@96abcd
+"syntacticParser.Node@96abcd"	"have"	"the same parents [7,9]"
 http://dbpedia.org/resource/Prince_Harry[1,2]
 http://dbpedia.org/resource/Prince_William,_Duke_of_Cambridge[4,5]
 
@@ -810,8 +792,8 @@ Who was the father of Queen Elizabeth II?
         (PP (IN of)
           (NP (NNP Queen) (NNP Elizabeth) (NNP II)))))
     (. ?)))
-Ans: syntacticParser.Node@550fbcc5
-"syntacticParser.Node@550fbcc5"	"the father "	"Queen Elizabeth II [5,7]"
+Ans: syntacticParser.Node@58bf6cb6
+"syntacticParser.Node@58bf6cb6"	"the father "	"Queen Elizabeth II [5,7]"
 http://dbpedia.org/resource/Elizabeth_II[5,7]
 
  
@@ -835,8 +817,8 @@ Which U.S. state has been admitted latest?
           (VP (VBN admitted)
             (NP (JJS latest))))))
     (. ?)))
-Ans: syntacticParser.Node@6fd43291
-"syntacticParser.Node@6fd43291"	"admitted"	"latest [6,6]"
+Ans: syntacticParser.Node@50ced32a
+"syntacticParser.Node@50ced32a"	"admitted"	"latest [6,6]"
 http://dbpedia.org/resource/U.S._state[1,2]
 
  
@@ -864,8 +846,8 @@ How many languages are spoken in Turkmenistan?
         (PP (IN in)
           (NP (NNP Turkmenistan)))))
     (. ?)))
-Ans: syntacticParser.Node@6bae3d41
-"syntacticParser.Node@6bae3d41"	"spoken in"	"Turkmenistan [6,6]"
+Ans: syntacticParser.Node@27b8294c
+"syntacticParser.Node@27b8294c"	"spoken in"	"Turkmenistan [6,6]"
 http://dbpedia.org/resource/Turkmenistan[6,6]
 
  
@@ -889,8 +871,8 @@ Sean Parnell is the governor of which U.S. state?
         (WHPP (IN of)
           (WHNP (WDT which) (NNP U.S.) (NN state)))))
     (. ?)))
-Ans: syntacticParser.Node@74177cc
-"syntacticParser.Node@74177cc"	"is"	"the governor of which U.S. state [3,8]"
+Ans: syntacticParser.Node@63ecabed
+"syntacticParser.Node@63ecabed"	"is"	"the governor of which U.S. state [3,8]"
 http://dbpedia.org/resource/Sean_Parnell[0,1]
 http://dbpedia.org/resource/U.S._state[7,8]
 
@@ -919,8 +901,8 @@ Give me all movies directed by Francis Ford Coppola.
           (PP (IN by)
             (NP (NNP Francis) (NNP Ford) (NNP Coppola))))))
     (. .)))
-Ans: syntacticParser.Node@38e4b0d1
-"syntacticParser.Node@38e4b0d1"	"directed by"	"Francis Ford Coppola [6,8]"
+Ans: syntacticParser.Node@2aade22e
+"syntacticParser.Node@2aade22e"	"directed by"	"Francis Ford Coppola [6,8]"
 http://dbpedia.org/resource/Francis_Ford_Coppola[6,8]
 
  
@@ -951,12 +933,10 @@ Give me all actors starring in movies directed by William Shatner.
                 (PP (IN by)
                   (NP (NNP William) (NNP Shatner)))))))))
     (. .)))
-Ans: syntacticParser.Node@6fc952b
-"syntacticParser.Node@4f02af16"	"directed by"	"William Shatner [9,10]"
-"syntacticParser.Node@6fc952b"	"starring in"	"syntacticParser.Node@4f02af16"
+Ans: syntacticParser.Node@75d20677
+"syntacticParser.Node@6f47cf2"	"directed by"	"William Shatner [9,10]"
+"syntacticParser.Node@75d20677"	"starring in"	"syntacticParser.Node@6f47cf2"
 http://dbpedia.org/resource/William_Shatner[9,10]
-http://dbpedia.org/resource/Film_director[7,7]
-http://dbpedia.org/resource/Film[6,6]
 
  
 PREFIX dbo: <http://dbpedia.org/ontology/> 
@@ -980,10 +960,7 @@ Are tree frogs a type of amphibian?
       (IN of)
       (NP (NN amphibian)))
     (. ?)))
-Ans: syntacticParser.Node@1a00d771
-http://dbpedia.org/resource/Amphibian[6,6]
-http://dbpedia.org/resource/Tree[1,1]
-http://dbpedia.org/resource/Frog[2,2]
+Ans: syntacticParser.Node@fb0b77d
 
  
 PREFIX dbo: <http://dbpedia.org/ontology/> 
@@ -1006,8 +983,8 @@ What is the birth name of Angela Merkel?
         (PP (IN of)
           (NP (NNP Angela) (NNP Merkel)))))
     (. ?)))
-Ans: syntacticParser.Node@4a68abf0
-"syntacticParser.Node@4a68abf0"	"the birth name "	"Angela Merkel [6,7]"
+Ans: syntacticParser.Node@3422e277
+"syntacticParser.Node@3422e277"	"the birth name "	"Angela Merkel [6,7]"
 http://dbpedia.org/resource/Angela_Merkel[6,7]
 
  
@@ -1028,7 +1005,7 @@ Give me all Methodist politicians.
       (NP (PRP me))
       (NP (DT all) (JJ Methodist) (NNS politicians)))
     (. .)))
-Ans: syntacticParser.Node@724e7f0e
+Ans: syntacticParser.Node@bcab6ca
 http://dbpedia.org/resource/Methodism[3,3]
 
  
@@ -1052,8 +1029,8 @@ How often did Jane Fonda marry?
       (NP (NNP Jane) (NNS Fonda))
       (VP (VB marry)))
     (. ?)))
-Ans: syntacticParser.Node@324e1b76
-"Jane Fonda [3,4]"	"marry "	"syntacticParser.Node@324e1b76"
+Ans: syntacticParser.Node@30b7fefa
+"Jane Fonda [3,4]"	"marry "	"syntacticParser.Node@30b7fefa"
 http://dbpedia.org/resource/Jane_Fonda[3,4]
 http://dbpedia.org/resource/Fonda,_New_York[4,4]
 
@@ -1075,7 +1052,7 @@ Give me all Australian nonprofit organizations.
       (NP (PRP me))
       (NP (DT all) (JJ Australian) (JJ nonprofit) (NNS organizations)))
     (. .)))
-Ans: syntacticParser.Node@512422d6
+Ans: syntacticParser.Node@38b7553
 http://dbpedia.org/resource/Australians[3,3]
 
  
@@ -1106,8 +1083,8 @@ In which military conflicts did Lawrence of Arabia participate?
           (NP (NNP Arabia))))
       (VP (VB participate)))
     (. ?)))
-Ans: syntacticParser.Node@50892938
-"Lawrence of Arabia [5,7]"	"participate "	"syntacticParser.Node@50892938"
+Ans: syntacticParser.Node@67e3b4bb
+"Lawrence of Arabia [5,7]"	"participate "	"syntacticParser.Node@67e3b4bb"
 http://dbpedia.org/resource/Lawrence_of_Arabia_(film)[5,7]
 
  
@@ -1129,8 +1106,8 @@ Who developed Minecraft?
       (VP (VBD developed)
         (NP (NNP Minecraft))))
     (. ?)))
-Ans: syntacticParser.Node@4d9c5a3e
-"syntacticParser.Node@4d9c5a3e"	"developed"	"Minecraft [2,2]"
+Ans: syntacticParser.Node@45d67cb2
+"syntacticParser.Node@45d67cb2"	"developed"	"Minecraft [2,2]"
 http://dbpedia.org/resource/Minecraft[2,2]
 
  
@@ -1154,11 +1131,8 @@ What is the melting point of copper?
         (PP (IN of)
           (NP (NN copper)))))
     (. ?)))
-Ans: syntacticParser.Node@4363eb6f
-"syntacticParser.Node@4363eb6f"	"the melting point "	"copper [6,6]"
-http://dbpedia.org/resource/Melting_point[3,4]
-http://dbpedia.org/resource/Melting[3,3]
-http://dbpedia.org/resource/Copper[6,6]
+Ans: syntacticParser.Node@2a7118e7
+"syntacticParser.Node@2a7118e7"	"the melting point "	"copper [6,6]"
 
 OUT OF SCOPE
 
@@ -1173,9 +1147,8 @@ Give me all sister cities of Brno.
         (PP (IN of)
           (NP (NNP Brno)))))
     (. .)))
-Ans: syntacticParser.Node@4b2bd092
-"syntacticParser.Node@4b2bd092"	"all sister cities "	"Brno [6,6]"
-http://dbpedia.org/resource/Twin_towns_and_sister_cities[3,4]
+Ans: syntacticParser.Node@4703e0a6
+"syntacticParser.Node@4703e0a6"	"all sister cities "	"Brno [6,6]"
 http://dbpedia.org/resource/Brno[6,6]
 
 OUT OF SCOPE
@@ -1191,8 +1164,8 @@ How many inhabitants does Maribor have?
       (NP (NNP Maribor))
       (VP (VB have)))
     (. ?)))
-Ans: syntacticParser.Node@2e8a13a6
-"Maribor [4,4]"	"have "	"syntacticParser.Node@2e8a13a6"
+Ans: syntacticParser.Node@37766d5c
+"Maribor [4,4]"	"have "	"syntacticParser.Node@37766d5c"
 http://dbpedia.org/resource/Maribor[4,4]
 
  
@@ -1215,7 +1188,7 @@ Give me all companies in Munich.
       (PP (IN in)
         (NP (NNP Munich))))
     (. .)))
-Ans: syntacticParser.Node@6df666f8
+Ans: syntacticParser.Node@158a8f5b
 http://dbpedia.org/resource/Munich[5,5]
 
  
@@ -1242,7 +1215,7 @@ How tall is Claudia Schiffer?
     (SQ (VBZ is)
       (NP (NNP Claudia) (NNP Schiffer)))
     (. ?)))
-Ans: syntacticParser.Node@6092727a
+Ans: syntacticParser.Node@21b0f3d8
 http://dbpedia.org/resource/Claudia_Schiffer[3,4]
 
  
@@ -1264,7 +1237,7 @@ List all games by GMT.
       (PP (IN by)
         (NP (NNS GMT))))
     (. .)))
-Ans: syntacticParser.Node@5b903518
+Ans: syntacticParser.Node@5f94dc11
 http://dbpedia.org/resource/Greenwich_Mean_Time[4,4]
 
  
@@ -1286,8 +1259,8 @@ Who founded Intel?
       (VP (VBD founded)
         (NP (NNP Intel))))
     (. ?)))
-Ans: syntacticParser.Node@443e4970
-"syntacticParser.Node@443e4970"	"founded"	"Intel [2,2]"
+Ans: syntacticParser.Node@2968e451
+"syntacticParser.Node@2968e451"	"founded"	"Intel [2,2]"
 http://dbpedia.org/resource/Intel[2,2]
 
  
@@ -1311,8 +1284,8 @@ Who is the husband of Amanda Palmer?
         (PP (IN of)
           (NP (NNP Amanda) (NNP Palmer)))))
     (. ?)))
-Ans: syntacticParser.Node@63aac134
-"syntacticParser.Node@63aac134"	"the husband "	"Amanda Palmer [5,6]"
+Ans: syntacticParser.Node@14b56fd3
+"syntacticParser.Node@14b56fd3"	"the husband "	"Amanda Palmer [5,6]"
 http://dbpedia.org/resource/Amanda_Palmer[5,6]
 
  
@@ -1336,10 +1309,9 @@ Give me all breeds of the German Shepherd dog.
         (PP (IN of)
           (NP (DT the) (JJ German) (NNP Shepherd) (NN dog)))))
     (. .)))
-Ans: syntacticParser.Node@de1cc16
-"syntacticParser.Node@de1cc16"	"all breeds "	"the German Shepherd dog [5,8]"
+Ans: syntacticParser.Node@5d9c8791
+"syntacticParser.Node@5d9c8791"	"all breeds "	"the German Shepherd dog [5,8]"
 http://dbpedia.org/resource/German_Shepherd[6,8]
-http://dbpedia.org/resource/Dog[8,8]
 http://dbpedia.org/resource/Germany[6,6]
 
  
@@ -1362,9 +1334,8 @@ Which cities does the Weser flow through?
       (VP (VB flow)
         (PP (IN through))))
     (. ?)))
-Ans: syntacticParser.Node@6f01220c
-"the Weser [3,4]"	"flow through "	"syntacticParser.Node@6f01220c"
-http://dbpedia.org/resource/City[1,1]
+Ans: syntacticParser.Node@5156ca6
+"the Weser [3,4]"	"flow through "	"syntacticParser.Node@5156ca6"
 http://dbpedia.org/resource/Weser[4,4]
 
  
@@ -1387,8 +1358,8 @@ Which countries are connected by the Rhine?
         (PP (IN by)
           (NP (DT the) (NN Rhine)))))
     (. ?)))
-Ans: syntacticParser.Node@63f92432
-"syntacticParser.Node@63f92432"	"connected by"	"the Rhine [5,6]"
+Ans: syntacticParser.Node@400ef404
+"syntacticParser.Node@400ef404"	"connected by"	"the Rhine [5,6]"
 http://dbpedia.org/resource/Rhine[6,6]
 
  
@@ -1416,8 +1387,8 @@ Which professional surfers were born in Australia?
         (PP (IN in)
           (NP (NNP Australia)))))
     (. ?)))
-Ans: syntacticParser.Node@ee6e52f
-"syntacticParser.Node@ee6e52f"	"born in"	"Australia [6,6]"
+Ans: syntacticParser.Node@203679c2
+"syntacticParser.Node@203679c2"	"born in"	"Australia [6,6]"
 http://dbpedia.org/resource/Australia[6,6]
 
  
@@ -1445,9 +1416,8 @@ What is the average temperature on Hawaii?
         (PP (IN on)
           (NP (NNP Hawaii)))))
     (. ?)))
-Ans: syntacticParser.Node@778efdc1
-"syntacticParser.Node@778efdc1"	"the average temperature "	"Hawaii [6,6]"
-http://dbpedia.org/resource/Temperature[4,4]
+Ans: syntacticParser.Node@42186d
+"syntacticParser.Node@42186d"	"the average temperature "	"Hawaii [6,6]"
 http://dbpedia.org/resource/Hawaii[6,6]
 
 OUT OF SCOPE
@@ -1464,8 +1434,8 @@ In which UK city are the headquarters of the MI6?
         (PP (IN of)
           (NP (DT the) (NNP MI6)))))
     (. ?)))
-Ans: syntacticParser.Node@3c3e2384
-"syntacticParser.Node@3c3e2384"	"the headquarters "	"the MI6 [8,9]"
+Ans: syntacticParser.Node@2fb93086
+"syntacticParser.Node@2fb93086"	"the headquarters "	"the MI6 [8,9]"
 http://dbpedia.org/resource/Secret_Intelligence_Service[9,9]
 http://dbpedia.org/resource/United_Kingdom[2,2]
 
@@ -1493,10 +1463,9 @@ Which other weapons did the designer of the Uzi develop?
           (NP (DT the) (NN Uzi))))
       (VP (VB develop)))
     (. ?)))
-Ans: syntacticParser.Node@18083657
-"syntacticParser.Node@2b8c1f8c"	"the designer "	"the Uzi [7,8]"
-"syntacticParser.Node@2b8c1f8c"	"develop "	"syntacticParser.Node@18083657"
-http://dbpedia.org/resource/Designer[5,5]
+Ans: syntacticParser.Node@29fb4434
+"syntacticParser.Node@7fd7688a"	"the designer "	"the Uzi [7,8]"
+"syntacticParser.Node@7fd7688a"	"develop "	"syntacticParser.Node@29fb4434"
 
  
 PREFIX dbo: <http://dbpedia.org/ontology/> 
@@ -1522,8 +1491,8 @@ Who created Goofy?
       (VP (VBD created)
         (NP (NNP Goofy))))
     (. ?)))
-Ans: syntacticParser.Node@28fe00d3
-"syntacticParser.Node@28fe00d3"	"created"	"Goofy [2,2]"
+Ans: syntacticParser.Node@4df2ac4d
+"syntacticParser.Node@4df2ac4d"	"created"	"Goofy [2,2]"
 http://dbpedia.org/resource/Goofy[2,2]
 
  
@@ -1548,7 +1517,7 @@ Was the Cuban Missile Crisis earlier than the Bay of Pigs Invasion?
           (PP (IN of)
             (NP (NNP Pigs) (NNP Invasion))))))
     (. ?)))
-Ans: syntacticParser.Node@60c60171
+Ans: syntacticParser.Node@5fd3e21c
 http://dbpedia.org/resource/Bay_of_Pigs_Invasion[8,11]
 http://dbpedia.org/resource/Cuban_missile_crisis[2,4]
 http://dbpedia.org/resource/Bay_of_Pigs[8,10]
@@ -1580,8 +1549,8 @@ Give me all islands that belong to Japan.
               (PP (TO to)
                 (NP (NNP Japan))))))))
     (. .)))
-Ans: syntacticParser.Node@4ef76b77
-"syntacticParser.Node@4ef76b77"	"belong to"	"Japan [7,7]"
+Ans: syntacticParser.Node@73a5b6c9
+"syntacticParser.Node@73a5b6c9"	"belong to"	"Japan [7,7]"
 http://dbpedia.org/resource/Japan[7,7]
 
  
@@ -1605,9 +1574,8 @@ Who invented the zipper?
       (VP (VBD invented)
         (NP (DT the) (NN zipper))))
     (. ?)))
-Ans: syntacticParser.Node@32dfa236
-"syntacticParser.Node@32dfa236"	"invented"	"the zipper [2,3]"
-http://dbpedia.org/resource/Zipper[3,3]
+Ans: syntacticParser.Node@4bd611c2
+"syntacticParser.Node@4bd611c2"	"invented"	"the zipper [2,3]"
 
 OUT OF SCOPE
 
@@ -1622,9 +1590,8 @@ What is the ruling party in Lisbon?
         (PP (IN in)
           (NP (NNP Lisbon)))))
     (. ?)))
-Ans: syntacticParser.Node@3a7e0c51
-"syntacticParser.Node@3a7e0c51"	"the ruling party "	"Lisbon [6,6]"
-http://dbpedia.org/resource/Ruling_party[3,4]
+Ans: syntacticParser.Node@67a31c37
+"syntacticParser.Node@67a31c37"	"the ruling party "	"Lisbon [6,6]"
 http://dbpedia.org/resource/Lisbon[6,6]
 
  
@@ -1648,9 +1615,8 @@ What are the nicknames of San Francisco?
         (PP (IN of)
           (NP (NNP San) (NNP Francisco)))))
     (. ?)))
-Ans: syntacticParser.Node@290efc99
-"syntacticParser.Node@290efc99"	"the nicknames "	"San Francisco [5,6]"
-http://dbpedia.org/resource/Nickname[3,3]
+Ans: syntacticParser.Node@31b57704
+"syntacticParser.Node@31b57704"	"the nicknames "	"San Francisco [5,6]"
 http://dbpedia.org/resource/San_Francisco[5,6]
 
  
@@ -1674,8 +1640,8 @@ Which Greek goddesses dwelt on Mount Olympus?
         (PP (IN on)
           (NP (NNP Mount) (NNP Olympus)))))
     (. ?)))
-Ans: syntacticParser.Node@495c2a54
-"syntacticParser.Node@495c2a54"	"dwelt on"	"Mount Olympus [5,6]"
+Ans: syntacticParser.Node@3c714546
+"syntacticParser.Node@3c714546"	"dwelt on"	"Mount Olympus [5,6]"
 http://dbpedia.org/resource/Mount_Olympus[5,6]
 http://dbpedia.org/resource/Greek_mythology[1,2]
 http://dbpedia.org/resource/Greek_language[1,1]
@@ -1702,8 +1668,8 @@ When were the Hells Angels founded?
       (NP (DT the) (NN Hells) (NN Angels))
       (VP (VBN founded)))
     (. ?)))
-Ans: syntacticParser.Node@29071020
-"the Hells Angels [2,4]"	"founded "	"syntacticParser.Node@29071020"
+Ans: syntacticParser.Node@26379f84
+"the Hells Angels [2,4]"	"founded "	"syntacticParser.Node@26379f84"
 http://dbpedia.org/resource/Angels_(Robbie_Williams_song)[4,4]
 http://dbpedia.org/resource/Hells_Angels[3,4]
 
@@ -1725,9 +1691,8 @@ Give me all Apollo 14 astronauts.
       (NP (PRP me))
       (NP (DT all) (NN Apollo) (CD 14) (NNS astronauts)))
     (. .)))
-Ans: syntacticParser.Node@61a403bc
+Ans: syntacticParser.Node@3c9a52ec
 http://dbpedia.org/resource/Apollo_14[3,4]
-http://dbpedia.org/resource/Astronaut[5,5]
 http://dbpedia.org/resource/Apollo[3,3]
 
  
@@ -1753,8 +1718,8 @@ What is the time zone of Salt Lake City?
         (PP (IN of)
           (NP (NNP Salt) (NNP Lake) (NNP City)))))
     (. ?)))
-Ans: syntacticParser.Node@68957147
-"syntacticParser.Node@68957147"	"the time zone "	"Salt Lake City [6,8]"
+Ans: syntacticParser.Node@2836a04d
+"syntacticParser.Node@2836a04d"	"the time zone "	"Salt Lake City [6,8]"
 http://dbpedia.org/resource/Salt_Lake_City[6,8]
 
  
@@ -1780,10 +1745,9 @@ Which U.S. states are in the same time zone as Utah?
             (PP (IN as)
               (NP (NNP Utah)))))))
     (. ?)))
-Ans: syntacticParser.Node@4055d099
+Ans: syntacticParser.Node@69b09f85
 http://dbpedia.org/resource/U.S._state[1,2]
 http://dbpedia.org/resource/Utah[10,10]
-http://dbpedia.org/resource/Time_zone[7,8]
 
  
 PREFIX res: <http://dbpedia.org/resource/> 
@@ -1814,10 +1778,9 @@ Give me the capitals of all countries in Africa.
             (PP (IN in)
               (NP (NNP Africa)))))))
     (. .)))
-Ans: syntacticParser.Node@4e33d334
-"syntacticParser.Node@8232d1f"	"all countries "	"Africa [8,8]"
-"syntacticParser.Node@4e33d334"	"the capitals "	"syntacticParser.Node@8232d1f"
-http://dbpedia.org/resource/Capital_(architecture)[3,3]
+Ans: syntacticParser.Node@69703cad
+"syntacticParser.Node@491cfb1"	"all countries "	"Africa [8,8]"
+"syntacticParser.Node@69703cad"	"the capitals "	"syntacticParser.Node@491cfb1"
 
  
 PREFIX dbo: <http://dbpedia.org/ontology/> 
@@ -1845,8 +1808,8 @@ Give me a list of all lakes in Denmark.
             (PP (IN in)
               (NP (NNP Denmark)))))))
     (. .)))
-Ans: syntacticParser.Node@77cb177c
-"syntacticParser.Node@77cb177c"	"all lakes "	"Denmark [8,8]"
+Ans: syntacticParser.Node@1a64153b
+"syntacticParser.Node@1a64153b"	"all lakes "	"Denmark [8,8]"
 http://dbpedia.org/resource/Denmark[8,8]
 
  
@@ -1875,8 +1838,8 @@ How many missions does the Soyuz programme have?
       (NP (DT the) (NN Soyuz) (NN programme))
       (VP (VB have)))
     (. ?)))
-Ans: syntacticParser.Node@5f8324e
-"the Soyuz programme [4,6]"	"have "	"syntacticParser.Node@5f8324e"
+Ans: syntacticParser.Node@35b3b536
+"the Soyuz programme [4,6]"	"have "	"syntacticParser.Node@35b3b536"
 http://dbpedia.org/resource/Soyuz_programme[5,6]
 http://dbpedia.org/resource/Soyuz_(spacecraft)[5,5]
 
@@ -1898,8 +1861,8 @@ Did Socrates influence Aristotle?
     (VP (VB influence)
       (NP (NNP Aristotle)))
     (. ?)))
-Ans: syntacticParser.Node@33169970
-"syntacticParser.Node@33169970"	"influence"	"Aristotle [3,3]"
+Ans: syntacticParser.Node@2ee2ba46
+"syntacticParser.Node@2ee2ba46"	"influence"	"Aristotle [3,3]"
 http://dbpedia.org/resource/Socrates[1,1]
 http://dbpedia.org/resource/Aristotle[3,3]
 
@@ -1921,7 +1884,7 @@ Give me all Danish movies.
       (NP (PRP me))
       (NP (PDT all) (PRP$ Danish) (NNS movies)))
     (. .)))
-Ans: syntacticParser.Node@36298f94
+Ans: syntacticParser.Node@5a7a4e35
 http://dbpedia.org/resource/Denmark[3,3]
 
  
@@ -1948,8 +1911,8 @@ Give me all launch pads operated by NASA.
           (PP (IN by)
             (NP (NNP NASA))))))
     (. .)))
-Ans: syntacticParser.Node@5e20f1c
-"syntacticParser.Node@5e20f1c"	"operated by"	"NASA [7,7]"
+Ans: syntacticParser.Node@1356e39f
+"syntacticParser.Node@1356e39f"	"operated by"	"NASA [7,7]"
 http://dbpedia.org/resource/NASA[7,7]
 
  
@@ -1973,8 +1936,8 @@ Which instruments does Cat Stevens play?
       (NP (NNP Cat) (NNP Stevens))
       (VP (VB play)))
     (. ?)))
-Ans: syntacticParser.Node@f0feeeb
-"Cat Stevens [3,4]"	"play "	"syntacticParser.Node@f0feeeb"
+Ans: syntacticParser.Node@77c8b3a8
+"Cat Stevens [3,4]"	"play "	"syntacticParser.Node@77c8b3a8"
 
  
 PREFIX dbo: <http://dbpedia.org/ontology/> 
@@ -1996,8 +1959,8 @@ Which ships were called after Benjamin Franklin?
         (PP (IN after)
           (NP (NNP Benjamin) (NNP Franklin)))))
     (. ?)))
-Ans: syntacticParser.Node@62d5c3e3
-"syntacticParser.Node@62d5c3e3"	"called after"	"Benjamin Franklin [5,6]"
+Ans: syntacticParser.Node@4941ef91
+"syntacticParser.Node@4941ef91"	"called after"	"Benjamin Franklin [5,6]"
 http://dbpedia.org/resource/Franklin_(TV_series)[6,6]
 http://dbpedia.org/resource/Benjamin_Franklin[5,6]
 
@@ -2025,9 +1988,9 @@ Who are the parents of the wife of Juan Carlos I?
             (PP (IN of)
               (NP (NNP Juan) (NNP Carlos) (NNP I)))))))
     (. ?)))
-Ans: syntacticParser.Node@794e51f8
-"syntacticParser.Node@24aa9f55"	"the wife "	"Juan Carlos I [8,10]"
-"syntacticParser.Node@794e51f8"	"the parents "	"syntacticParser.Node@24aa9f55"
+Ans: syntacticParser.Node@b020770
+"syntacticParser.Node@645bfe2"	"the wife "	"Juan Carlos I [8,10]"
+"syntacticParser.Node@b020770"	"the parents "	"syntacticParser.Node@645bfe2"
 http://dbpedia.org/resource/Juan_Carlos_I_of_Spain[8,10]
 
  
@@ -2052,8 +2015,8 @@ How many employees does Google have?
       (NP (NNP Google))
       (VP (VB have)))
     (. ?)))
-Ans: syntacticParser.Node@46640400
-"Google [4,4]"	"have "	"syntacticParser.Node@46640400"
+Ans: syntacticParser.Node@b14c31
+"Google [4,4]"	"have "	"syntacticParser.Node@b14c31"
 http://dbpedia.org/resource/Google[4,4]
 
  
@@ -2077,12 +2040,10 @@ Did Tesla win a nobel prize in physics?
         (PP (IN in)
           (NP (NN physics)))))
     (. ?)))
-Ans: syntacticParser.Node@5d4c8739
-"syntacticParser.Node@67c2b564"	"a nobel prize "	"physics [7,7]"
-"syntacticParser.Node@5d4c8739"	"win"	"syntacticParser.Node@67c2b564"
-http://dbpedia.org/resource/Nobel_Prize[4,5]
+Ans: syntacticParser.Node@18b9338b
+"syntacticParser.Node@7e5151c3"	"a nobel prize "	"physics [7,7]"
+"syntacticParser.Node@18b9338b"	"win"	"syntacticParser.Node@7e5151c3"
 http://dbpedia.org/resource/Tesla_(band)[1,1]
-http://dbpedia.org/resource/Physics[7,7]
 
  
 PREFIX dbo: <http://dbpedia.org/ontology/> 
@@ -2109,8 +2070,8 @@ Give me all cities in New Jersey with more than 100000 inhabitants.
           (QP (JJR more) (IN than) (CD 100000))
           (NNS inhabitants))))
     (. .)))
-Ans: syntacticParser.Node@37e9ef08
-"syntacticParser.Node@37e9ef08"	"all cities "	"New Jersey [5,6]"
+Ans: syntacticParser.Node@1298f8ee
+"syntacticParser.Node@1298f8ee"	"all cities "	"New Jersey [5,6]"
 http://dbpedia.org/resource/New_Jersey[5,6]
 
  
@@ -2137,8 +2098,8 @@ Is Rita Wilson the wife of Tom Hanks?
       (PP (IN of)
         (NP (NNP Tom) (NNP Hanks))))
     (. ?)))
-Ans: syntacticParser.Node@595cece2
-"syntacticParser.Node@595cece2"	"the wife "	"Tom Hanks [6,7]"
+Ans: syntacticParser.Node@1a5dd2b4
+"syntacticParser.Node@1a5dd2b4"	"the wife "	"Tom Hanks [6,7]"
 http://dbpedia.org/resource/Rita_Wilson[1,2]
 
  
@@ -2163,8 +2124,8 @@ When was the Statue of Liberty built?
           (NP (NNP Liberty))))
       (VP (VBN built)))
     (. ?)))
-Ans: syntacticParser.Node@17ede2b2
-"the Statue of Liberty [2,5]"	"built "	"syntacticParser.Node@17ede2b2"
+Ans: syntacticParser.Node@7389f792
+"the Statue of Liberty [2,5]"	"built "	"syntacticParser.Node@7389f792"
 http://dbpedia.org/resource/Statue_of_Liberty[3,5]
 
  
@@ -2187,8 +2148,8 @@ In which U.S. state is Fort Knox located?
       (NP (NNP Fort) (NNP Knox))
       (VP (VBN located)))
     (. ?)))
-Ans: syntacticParser.Node@229e0c30
-"Fort Knox [5,6]"	"located "	"syntacticParser.Node@229e0c30"
+Ans: syntacticParser.Node@744fca03
+"Fort Knox [5,6]"	"located "	"syntacticParser.Node@744fca03"
 http://dbpedia.org/resource/U.S._state[2,3]
 http://dbpedia.org/resource/Knox_County,_Indiana[6,6]
 http://dbpedia.org/resource/Fort_Knox[5,6]
@@ -2216,8 +2177,8 @@ How many children did Benjamin Franklin have?
       (NP (NNP Benjamin) (NNP Franklin))
       (VP (VB have)))
     (. ?)))
-Ans: syntacticParser.Node@338ba42d
-"Benjamin Franklin [4,5]"	"have "	"syntacticParser.Node@338ba42d"
+Ans: syntacticParser.Node@503dd449
+"Benjamin Franklin [4,5]"	"have "	"syntacticParser.Node@503dd449"
 http://dbpedia.org/resource/Franklin_(TV_series)[5,5]
 http://dbpedia.org/resource/Benjamin_Franklin[4,5]
 
@@ -2240,8 +2201,8 @@ When did Michael Jackson die?
       (NP (NNP Michael) (NNP Jackson))
       (VP (VB die)))
     (. ?)))
-Ans: syntacticParser.Node@523cf49a
-"Michael Jackson [2,3]"	"die "	"syntacticParser.Node@523cf49a"
+Ans: syntacticParser.Node@6ea9341
+"Michael Jackson [2,3]"	"die "	"syntacticParser.Node@6ea9341"
 http://dbpedia.org/resource/Michael_Jackson[2,3]
 
  
@@ -2273,8 +2234,8 @@ Which Chess players died in the same place they were born in?
                     (VP (VBN born)
                       (PP (IN in)))))))))))
     (. ?)))
-Ans: syntacticParser.Node@1a065f63
-"syntacticParser.Node@1a065f63"	"died in"	"the same place they were born in [5,11]"
+Ans: syntacticParser.Node@4db9c4b2
+"syntacticParser.Node@4db9c4b2"	"died in"	"the same place they were born in [5,11]"
 http://dbpedia.org/resource/Chess[1,1]
 
  
@@ -2300,8 +2261,8 @@ List the children of Margaret Thatcher.
         (PP (IN of)
           (NP (NNP Margaret) (NNP Thatcher)))))
     (. .)))
-Ans: syntacticParser.Node@51073360
-"syntacticParser.Node@51073360"	"the children "	"Margaret Thatcher [4,5]"
+Ans: syntacticParser.Node@26a4e789
+"syntacticParser.Node@26a4e789"	"the children "	"Margaret Thatcher [4,5]"
 http://dbpedia.org/resource/Margaret_Thatcher[4,5]
 
  
@@ -2323,8 +2284,8 @@ Who was called Frank The Tank?
       (VP (VBN called)
         (NP (NNP Frank) (DT The) (NN Tank))))
     (. ?)))
-Ans: syntacticParser.Node@12151016
-"syntacticParser.Node@12151016"	"called"	"Frank The Tank [3,5]"
+Ans: syntacticParser.Node@41048de6
+"syntacticParser.Node@41048de6"	"called"	"Frank The Tank [3,5]"
 
  
 PREFIX dbp: <http://dbpedia.org/property/> 
@@ -2342,9 +2303,8 @@ Was Margaret Thatcher a chemist?
     (NP (NNP Margaret) (NNP Thatcher))
     (NP (DT a) (NN chemist))
     (. ?)))
-Ans: syntacticParser.Node@67aab0ea
+Ans: syntacticParser.Node@ca5a97b
 http://dbpedia.org/resource/Margaret_Thatcher[1,2]
-http://dbpedia.org/resource/Chemist[4,4]
 
  
 PREFIX res: <http://dbpedia.org/resource/> 
@@ -2363,9 +2323,8 @@ Was Marc Chagall a jew?
     (NP (NNP Marc) (NNP Chagall))
     (NP (DT a) (NNS jew))
     (. ?)))
-Ans: syntacticParser.Node@73fb3707
+Ans: syntacticParser.Node@45225679
 http://dbpedia.org/resource/Marc_Chagall[1,2]
-http://dbpedia.org/resource/Jews[4,4]
 
 
 PREFIX dbp: <http://dbpedia.org/property/>
@@ -2387,7 +2346,7 @@ Which museum exhibits The Scream by Munch?
         (PP (IN by)
           (NP (NNP Munch)))))
     (. ?)))
-Ans: syntacticParser.Node@e759cf2
+Ans: syntacticParser.Node@39b1af97
 http://dbpedia.org/resource/The_Scream[3,4]
 http://dbpedia.org/resource/Scream[4,4]
 http://dbpedia.org/resource/Edvard_Munch[6,6]
@@ -2416,8 +2375,8 @@ Give me all books by William Goldman with more than 300 pages.
           (QP (JJR more) (IN than) (CD 300))
           (NNS pages))))
     (. .)))
-Ans: syntacticParser.Node@4dbf7057
-"syntacticParser.Node@4dbf7057"	"all books "	"William Goldman [5,6]"
+Ans: syntacticParser.Node@7317575c
+"syntacticParser.Node@7317575c"	"all books "	"William Goldman [5,6]"
 http://dbpedia.org/resource/William_Goldman[5,6]
 
 
@@ -2447,9 +2406,9 @@ Which books by Kerouac were published by Viking Press?
         (PP (IN by)
           (NP (NNP Viking) (NNP Press)))))
     (. ?)))
-Ans: syntacticParser.Node@720adf25
-"syntacticParser.Node@720adf25"	"books "	"Kerouac [3,3]"
-"syntacticParser.Node@720adf25"	"published by"	"Viking Press [7,8]"
+Ans: syntacticParser.Node@1701c6f
+"syntacticParser.Node@1701c6f"	"books "	"Kerouac [3,3]"
+"syntacticParser.Node@1701c6f"	"published by"	"Viking Press [7,8]"
 http://dbpedia.org/resource/Viking_Press[7,8]
 http://dbpedia.org/resource/Vikings[7,7]
 
@@ -2476,8 +2435,7 @@ Give me a list of all American inventions.
         (PP (IN of)
           (NP (DT all) (JJ American) (NNS inventions)))))
     (. .)))
-Ans: syntacticParser.Node@56764dd9
-http://dbpedia.org/resource/Invention[7,7]
+Ans: syntacticParser.Node@4e49ac93
 
 
 PREFIX yago: <http://dbpedia.org/class/yago/>
@@ -2496,7 +2454,7 @@ How high is the Mount Everest?
     (SQ (VBZ is)
       (NP (DT the) (NNP Mount) (NNP Everest)))
     (. ?)))
-Ans: syntacticParser.Node@51d42333
+Ans: syntacticParser.Node@49c7170
 http://dbpedia.org/resource/Mount_Everest[4,5]
 
 
@@ -2517,8 +2475,8 @@ Who created the comic Captain America?
       (VP (VBD created)
         (NP (DT the) (JJ comic) (NNP Captain) (NNP America))))
     (. ?)))
-Ans: syntacticParser.Node@699a2f34
-"syntacticParser.Node@699a2f34"	"created"	"the comic Captain America [2,5]"
+Ans: syntacticParser.Node@2ac1f74b
+"syntacticParser.Node@2ac1f74b"	"created"	"the comic Captain America [2,5]"
 http://dbpedia.org/resource/Captain_America[4,5]
 
 
@@ -2545,9 +2503,9 @@ How many people live in the capital of Australia?
             (PP (IN of)
               (NP (NNP Australia)))))))
     (. ?)))
-Ans: syntacticParser.Node@497695b9
-"syntacticParser.Node@790c6590"	"the capital "	"Australia [8,8]"
-"syntacticParser.Node@497695b9"	"live in"	"syntacticParser.Node@790c6590"
+Ans: syntacticParser.Node@64d4e7c4
+"syntacticParser.Node@4fef0e6a"	"the capital "	"Australia [8,8]"
+"syntacticParser.Node@64d4e7c4"	"live in"	"syntacticParser.Node@4fef0e6a"
 http://dbpedia.org/resource/Australia[8,8]
 
 
@@ -2571,8 +2529,8 @@ What is the largest city in Australia?
         (PP (IN in)
           (NP (NNP Australia)))))
     (. ?)))
-Ans: syntacticParser.Node@4e8aeac0
-"syntacticParser.Node@4e8aeac0"	"the largest city "	"Australia [6,6]"
+Ans: syntacticParser.Node@3517b663
+"syntacticParser.Node@3517b663"	"the largest city "	"Australia [6,6]"
 http://dbpedia.org/resource/Australia[6,6]
 
 
@@ -2598,9 +2556,9 @@ Who composed the music for Harold and Maude?
               (CC and)
               (NNP Maude))))))
     (. ?)))
-Ans: syntacticParser.Node@3fd93b9c
-"syntacticParser.Node@1e67e122"	"the music "	"Harold and Maude [5,7]"
-"syntacticParser.Node@3fd93b9c"	"composed"	"syntacticParser.Node@1e67e122"
+Ans: syntacticParser.Node@795fd185
+"syntacticParser.Node@ffca073"	"the music "	"Harold and Maude [5,7]"
+"syntacticParser.Node@795fd185"	"composed"	"syntacticParser.Node@ffca073"
 http://dbpedia.org/resource/Harold_and_Maude[5,7]
 http://dbpedia.org/resource/Maude_(TV_series)[7,7]
 
@@ -2626,8 +2584,8 @@ Which films starring Clint Eastwood did he direct himself?
       (VP (VB direct)
         (NP (PRP himself))))
     (. ?)))
-Ans: syntacticParser.Node@403290f
-"he [6,6]"	"direct himself "	"syntacticParser.Node@403290f"
+Ans: syntacticParser.Node@6508e5d9
+"he [6,6]"	"direct himself "	"syntacticParser.Node@6508e5d9"
 http://dbpedia.org/resource/Clint_Eastwood[3,4]
 http://dbpedia.org/resource/Eastwood,_Nottinghamshire[4,4]
 
@@ -2651,8 +2609,8 @@ In which city was the former Dutch queen Juliana buried?
       (NP (DT the) (JJ former) (JJ Dutch) (NN queen) (NNP Juliana))
       (VP (VBN buried)))
     (. ?)))
-Ans: syntacticParser.Node@3537e0ea
-"the former Dutch queen Juliana [4,8]"	"buried "	"syntacticParser.Node@3537e0ea"
+Ans: syntacticParser.Node@20a24a6d
+"the former Dutch queen Juliana [4,8]"	"buried "	"syntacticParser.Node@20a24a6d"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -2675,8 +2633,8 @@ Is Egypts largest city also its capital?
       (PP (RB also)
         (NP (PRP$ its) (NN capital))))
     (. ?)))
-Ans: syntacticParser.Node@7f6e1449
-"syntacticParser.Node@7f6e1449"	"largest city "	"its capital [5,6]"
+Ans: syntacticParser.Node@43fdbaa6
+"syntacticParser.Node@43fdbaa6"	"largest city "	"its capital [5,6]"
 
 
 PREFIX res: <http://dbpedia.org/resource/>
@@ -2703,11 +2661,10 @@ Where is the residence of the prime minister of Spain?
             (PP (IN of)
               (NP (NNP Spain)))))))
     (. ?)))
-Ans: syntacticParser.Node@56897d9a
-"syntacticParser.Node@56897d9a"	"the residence "	"the prime minister of Spain [5,9]"
+Ans: syntacticParser.Node@10c20829
+"syntacticParser.Node@441b9651"	"the prime minister "	"Spain [9,9]"
+"syntacticParser.Node@10c20829"	"the residence "	"syntacticParser.Node@441b9651"
 http://dbpedia.org/resource/Spain[9,9]
-http://dbpedia.org/resource/Prime_Minister_of_Spain[6,9]
-http://dbpedia.org/resource/Prime_minister[6,7]
 
 
 PREFIX dbp: <http://dbpedia.org/property/>
@@ -2727,8 +2684,8 @@ Which U.S. state has the abbreviation MN?
       (VP (VBZ has)
         (NP (DT the) (NN abbreviation) (NNP MN))))
     (. ?)))
-Ans: syntacticParser.Node@7db62ec8
-"syntacticParser.Node@7db62ec8"	"has"	"the abbreviation MN [4,6]"
+Ans: syntacticParser.Node@4b411539
+"syntacticParser.Node@4b411539"	"has"	"the abbreviation MN [4,6]"
 http://dbpedia.org/resource/U.S._state[1,2]
 
 
@@ -2759,9 +2716,9 @@ Show me all songs from Bruce Springsteen released between 1980 and 1990.
                   (CC and)
                   (CD 1990))))))))
     (. .)))
-Ans: syntacticParser.Node@25ed4a1a
-"syntacticParser.Node@5efa1143"	"released between"	"1980 and 1990 [9,11]"
-"syntacticParser.Node@25ed4a1a"	"all songs "	"syntacticParser.Node@5efa1143"
+Ans: syntacticParser.Node@67a3bd0b
+"syntacticParser.Node@31183650"	"released between"	"1980 and 1990 [9,11]"
+"syntacticParser.Node@67a3bd0b"	"all songs "	"syntacticParser.Node@31183650"
 http://dbpedia.org/resource/Bruce_Springsteen[5,6]
 
 
@@ -2787,10 +2744,9 @@ Which movies did Kurosawa direct?
       (NP (NNP Kurosawa))
       (VP (NN direct)))
     (. ?)))
-Ans: syntacticParser.Node@347c97cc
-"Kurosawa [3,3]"	"direct "	"syntacticParser.Node@347c97cc"
+Ans: syntacticParser.Node@b3bd538
+"Kurosawa [3,3]"	"direct "	"syntacticParser.Node@b3bd538"
 http://dbpedia.org/resource/Akira_Kurosawa[3,3]
-http://dbpedia.org/resource/Film[1,1]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -2820,12 +2776,11 @@ What is the founding year of the brewery that produces Pilsner Urquell?
                 (VP (VBZ produces)
                   (NP (JJ Pilsner) (NN Urquell)))))))))
     (. ?)))
-Ans: syntacticParser.Node@320ae415
-"syntacticParser.Node@32893eae"	"produces"	"Pilsner Urquell [10,11]"
-"syntacticParser.Node@320ae415"	"the founding year "	"syntacticParser.Node@32893eae"
+Ans: syntacticParser.Node@25f625e5
+"syntacticParser.Node@51690826"	"produces"	"Pilsner Urquell [10,11]"
+"syntacticParser.Node@25f625e5"	"the founding year "	"syntacticParser.Node@51690826"
 http://dbpedia.org/resource/Pilsner_Urquell[10,11]
 http://dbpedia.org/resource/Pilsner[10,10]
-http://dbpedia.org/resource/Brewery[7,7]
 
 
 PREFIX dbp: <http://dbpedia.org/property/>
@@ -2849,12 +2804,10 @@ Who wrote the lyrics for the Polish national anthem?
           (PP (IN for)
             (NP (DT the) (JJ Polish) (JJ national) (NN anthem))))))
     (. ?)))
-Ans: syntacticParser.Node@2633407a
-"syntacticParser.Node@21d8be75"	"the lyrics "	"the Polish national anthem [5,8]"
-"syntacticParser.Node@2633407a"	"wrote"	"syntacticParser.Node@21d8be75"
+Ans: syntacticParser.Node@11c22ea3
+"syntacticParser.Node@702b2cd7"	"the lyrics "	"the Polish national anthem [5,8]"
+"syntacticParser.Node@11c22ea3"	"wrote"	"syntacticParser.Node@702b2cd7"
 http://dbpedia.org/resource/Poland_Is_Not_Yet_Lost[6,8]
-http://dbpedia.org/resource/National_anthem[7,8]
-http://dbpedia.org/resource/Lyrics[3,3]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -2878,9 +2831,8 @@ Give me all B-sides of the Ramones.
         (PP (IN of)
           (NP (DT the) (NNP Ramones)))))
     (. .)))
-Ans: syntacticParser.Node@be99496
-"syntacticParser.Node@be99496"	"all B-sides "	"the Ramones [5,6]"
-http://dbpedia.org/resource/Ramones[5,6]
+Ans: syntacticParser.Node@7d74e12e
+"syntacticParser.Node@7d74e12e"	"all B-sides "	"the Ramones [5,6]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -2906,8 +2858,8 @@ Who painted The Storm on the Sea of Galilee?
             (PP (IN of)
               (NP (NNP Galilee)))))))
     (. ?)))
-Ans: syntacticParser.Node@71b10a11
-"syntacticParser.Node@71b10a11"	"the Sea "	"Galilee [8,8]"
+Ans: syntacticParser.Node@d5bcd1a
+"syntacticParser.Node@d5bcd1a"	"the Sea "	"Galilee [8,8]"
 http://dbpedia.org/resource/The_Storm_(band)[2,3]
 http://dbpedia.org/resource/Storm_(Marvel_Comics)[3,3]
 
@@ -2933,9 +2885,9 @@ Which country does the creator of Miffy come from?
       (VP (VBN come)
         (PP (IN from))))
     (. ?)))
-Ans: syntacticParser.Node@50a1575d
-"syntacticParser.Node@2ec4eff4"	"the creator "	"Miffy [6,6]"
-"syntacticParser.Node@2ec4eff4"	"come from "	"syntacticParser.Node@50a1575d"
+Ans: syntacticParser.Node@15d68a69
+"syntacticParser.Node@2c93c9fe"	"the creator "	"Miffy [6,6]"
+"syntacticParser.Node@2c93c9fe"	"come from "	"syntacticParser.Node@15d68a69"
 http://dbpedia.org/resource/Miffy[6,6]
 
 
@@ -2959,8 +2911,8 @@ For which label did Elvis record his first album?
       (VP (VB record)
         (NP (PRP$ his) (JJ first) (NN album))))
     (. ?)))
-Ans: syntacticParser.Node@7165c807
-"Elvis [4,4]"	"record his first album "	"syntacticParser.Node@7165c807"
+Ans: syntacticParser.Node@6e69234
+"Elvis [4,4]"	"record his first album "	"syntacticParser.Node@6e69234"
 http://dbpedia.org/resource/Elvis_Presley[4,4]
 
 
@@ -2992,12 +2944,10 @@ Give me the birthdays of all actors of the television show Charmed.
             (PP (IN of)
               (NP (DT the) (NN television) (NN show) (NNP Charmed)))))))
     (. .)))
-Ans: syntacticParser.Node@3eae55a
-"syntacticParser.Node@2950b3de"	"all actors "	"the television show Charmed [8,11]"
-"syntacticParser.Node@3eae55a"	"the birthdays "	"syntacticParser.Node@2950b3de"
+Ans: syntacticParser.Node@52860a00
+"syntacticParser.Node@73f4e785"	"all actors "	"the television show Charmed [8,11]"
+"syntacticParser.Node@52860a00"	"the birthdays "	"syntacticParser.Node@73f4e785"
 http://dbpedia.org/resource/Charmed[11,11]
-http://dbpedia.org/resource/Television[9,9]
-http://dbpedia.org/resource/Television_program[9,10]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -3020,8 +2970,8 @@ How many employees does IBM have?
       (NP (NNP IBM))
       (VP (VB have)))
     (. ?)))
-Ans: syntacticParser.Node@7f3c3e41
-"IBM [4,4]"	"have "	"syntacticParser.Node@7f3c3e41"
+Ans: syntacticParser.Node@40082195
+"IBM [4,4]"	"have "	"syntacticParser.Node@40082195"
 http://dbpedia.org/resource/IBM[4,4]
 
 
@@ -3042,8 +2992,8 @@ Which states border Illinois?
       (VP (VBZ states)
         (NP (NN border) (NNP Illinois))))
     (. ?)))
-Ans: syntacticParser.Node@19d457e
-"syntacticParser.Node@19d457e"	"states"	"border Illinois [2,3]"
+Ans: syntacticParser.Node@2b3b5a6f
+"syntacticParser.Node@2b3b5a6f"	"states"	"border Illinois [2,3]"
 
 
 PREFIX res: <http://dbpedia.org/resource/>
@@ -3063,7 +3013,7 @@ In which country is the Limerick Lake?
     (SQ (VBZ is)
       (NP (DT the) (NN Limerick) (NNP Lake)))
     (. ?)))
-Ans: syntacticParser.Node@4ae7e2e9
+Ans: syntacticParser.Node@5dc0e1a6
 http://dbpedia.org/resource/Limerick[5,5]
 
 
@@ -3085,11 +3035,9 @@ Which television shows were created by John Cleese?
         (PP (IN by)
           (NP (NNP John) (NNP Cleese)))))
     (. ?)))
-Ans: syntacticParser.Node@746ef91f
-"syntacticParser.Node@746ef91f"	"created by"	"John Cleese [6,7]"
+Ans: syntacticParser.Node@15a7750c
+"syntacticParser.Node@15a7750c"	"created by"	"John Cleese [6,7]"
 http://dbpedia.org/resource/John_Cleese[6,7]
-http://dbpedia.org/resource/Television[1,1]
-http://dbpedia.org/resource/Television_program[1,2]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -3113,10 +3061,9 @@ Which mountain is the highest after the Annapurna?
         (PP (IN after)
           (NP (DT the) (NN Annapurna)))))
     (. ?)))
-Ans: syntacticParser.Node@6be46a3a
-"syntacticParser.Node@6be46a3a"	"the highest "	"the Annapurna [6,7]"
+Ans: syntacticParser.Node@1e485894
+"syntacticParser.Node@1e485894"	"the highest "	"the Annapurna [6,7]"
 http://dbpedia.org/resource/Annapurna[7,7]
-http://dbpedia.org/resource/Mountain[1,1]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -3148,9 +3095,9 @@ In which films directed by Garry Marshall was Julia Roberts starring?
       (NP (NNP Julia) (NNP Roberts))
       (VP (VBN starring)))
     (. ?)))
-Ans: syntacticParser.Node@4fafd49d
-"syntacticParser.Node@4fafd49d"	"directed by"	"Garry Marshall [5,6]"
-"Julia Roberts [8,9]"	"starring "	"syntacticParser.Node@4fafd49d"
+Ans: syntacticParser.Node@7c4beb42
+"syntacticParser.Node@7c4beb42"	"directed by"	"Garry Marshall [5,6]"
+"Julia Roberts [8,9]"	"starring "	"syntacticParser.Node@7c4beb42"
 http://dbpedia.org/resource/Julia_Roberts[8,9]
 
 
@@ -3177,8 +3124,8 @@ Which bridges are of the same type as the Manhattan Bridge?
           (PP (IN as)
             (NP (DT the) (NNP Manhattan) (NNP Bridge))))))
     (. ?)))
-Ans: syntacticParser.Node@8cf93cb
-"syntacticParser.Node@8cf93cb"	"the same type "	"the Manhattan Bridge [8,10]"
+Ans: syntacticParser.Node@215ee2f1
+"syntacticParser.Node@215ee2f1"	"the same type "	"the Manhattan Bridge [8,10]"
 http://dbpedia.org/resource/Manhattan_Bridge[9,10]
 http://dbpedia.org/resource/Manhattan[9,9]
 
@@ -3205,8 +3152,8 @@ Was U.S. president Jackson involved in a war?
       (PP (IN in)
         (NP (DT a) (NN war))))
     (. ?)))
-Ans: syntacticParser.Node@6d5ea512
-"syntacticParser.Node@6d5ea512"	"involved in"	"a war [6,7]"
+Ans: syntacticParser.Node@5e4b7a3b
+"syntacticParser.Node@5e4b7a3b"	"involved in"	"a war [6,7]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -3225,9 +3172,7 @@ Give me all communist countries.
       (NP (PRP me))
       (NP (DT all) (JJ communist) (NNS countries)))
     (. .)))
-Ans: syntacticParser.Node@dc4043b
-http://dbpedia.org/resource/Communism[3,3]
-http://dbpedia.org/resource/Communist_state[3,4]
+Ans: syntacticParser.Node@32a677a3
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -3251,8 +3196,8 @@ Which awards did Douglas Hofstadter win?
       (NP (NNP Douglas) (NNP Hofstadter))
       (VP (VB win)))
     (. ?)))
-Ans: syntacticParser.Node@6e814ac1
-"Douglas Hofstadter [3,4]"	"win "	"syntacticParser.Node@6e814ac1"
+Ans: syntacticParser.Node@7c2f1baf
+"Douglas Hofstadter [3,4]"	"win "	"syntacticParser.Node@7c2f1baf"
 
 
 PREFIX res: <http://dbpedia.org/resource/>
@@ -3277,8 +3222,8 @@ Who is the daughter of Robert Kennedy married to?
         (VP (VBN married)
           (PP (TO to)))))
     (. ?)))
-Ans: syntacticParser.Node@47de54a4
-"syntacticParser.Node@47de54a4"	"the daughter "	"Robert Kennedy [5,6]"
+Ans: syntacticParser.Node@340f2842
+"syntacticParser.Node@340f2842"	"the daughter "	"Robert Kennedy [5,6]"
 http://dbpedia.org/resource/Robert_F._Kennedy[5,6]
 http://dbpedia.org/resource/John_F._Kennedy[6,6]
 
@@ -3301,11 +3246,9 @@ Which U.S. state has the highest population density?
       (VP (VBZ has)
         (NP (DT the) (JJS highest) (NN population) (NN density))))
     (. ?)))
-Ans: syntacticParser.Node@232d8d44
-"syntacticParser.Node@232d8d44"	"has"	"the highest population density [4,7]"
-http://dbpedia.org/resource/Population_density[6,7]
+Ans: syntacticParser.Node@74de2bae
+"syntacticParser.Node@74de2bae"	"has"	"the highest population density [4,7]"
 http://dbpedia.org/resource/U.S._state[1,2]
-http://dbpedia.org/resource/Population[6,6]
 
 
 PREFIX yago: <http://dbpedia.org/class/yago/>
@@ -3331,10 +3274,9 @@ What is the currency of the Czech Republic?
         (PP (IN of)
           (NP (DT the) (JJ Czech) (NN Republic)))))
     (. ?)))
-Ans: syntacticParser.Node@1ae7ac1
-"syntacticParser.Node@1ae7ac1"	"the currency "	"the Czech Republic [5,7]"
+Ans: syntacticParser.Node@2df2d0b4
+"syntacticParser.Node@2df2d0b4"	"the currency "	"the Czech Republic [5,7]"
 http://dbpedia.org/resource/Czech_Republic[6,7]
-http://dbpedia.org/resource/Currency[3,3]
 http://dbpedia.org/resource/Czechs[6,6]
 
 
@@ -3355,8 +3297,8 @@ Which countries adopted the Euro?
       (VP (VBD adopted)
         (NP (DT the) (NN Euro))))
     (. ?)))
-Ans: syntacticParser.Node@63293551
-"syntacticParser.Node@63293551"	"adopted"	"the Euro [3,4]"
+Ans: syntacticParser.Node@276ec458
+"syntacticParser.Node@276ec458"	"adopted"	"the Euro [3,4]"
 http://dbpedia.org/resource/Euro[4,4]
 
 
@@ -3384,9 +3326,8 @@ What is the area code of Berlin?
         (PP (IN of)
           (NP (NNP Berlin)))))
     (. ?)))
-Ans: syntacticParser.Node@65dde7fc
-"syntacticParser.Node@65dde7fc"	"the area code "	"Berlin [6,6]"
-http://dbpedia.org/resource/Telephone_numbering_plan[3,4]
+Ans: syntacticParser.Node@49aefbd7
+"syntacticParser.Node@49aefbd7"	"the area code "	"Berlin [6,6]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -3408,9 +3349,8 @@ Which countries have more than two official languages?
           (QP (JJR more) (IN than) (CD two))
           (JJ official) (NNS languages))))
     (. ?)))
-Ans: syntacticParser.Node@700ee1b1
-"syntacticParser.Node@700ee1b1"	"have"	"more than two official languages [3,7]"
-http://dbpedia.org/resource/Official_language[6,7]
+Ans: syntacticParser.Node@651f9b58
+"syntacticParser.Node@651f9b58"	"have"	"more than two official languages [3,7]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -3435,8 +3375,8 @@ Who is the owner of Rolls-Royce?
         (PP (IN of)
           (NP (NNP Rolls-Royce)))))
     (. ?)))
-Ans: syntacticParser.Node@25917ba6
-"syntacticParser.Node@25917ba6"	"the owner "	"Rolls-Royce [5,5]"
+Ans: syntacticParser.Node@5748a391
+"syntacticParser.Node@5748a391"	"the owner "	"Rolls-Royce [5,5]"
 http://dbpedia.org/resource/Rolls-Royce_Limited[5,5]
 
 
@@ -3458,10 +3398,9 @@ Through which countries does the Yenisei river flow?
       (NP (DT the) (NNP Yenisei) (NN river))
       (VP (VB flow)))
     (. ?)))
-Ans: syntacticParser.Node@2b39a801
-"the Yenisei river [4,6]"	"flow "	"syntacticParser.Node@2b39a801"
+Ans: syntacticParser.Node@30e65c91
+"the Yenisei river [4,6]"	"flow "	"syntacticParser.Node@30e65c91"
 http://dbpedia.org/resource/Yenisei[5,6]
-http://dbpedia.org/resource/River[6,6]
 
 
 PREFIX res: <http://dbpedia.org/resource/>
@@ -3482,11 +3421,10 @@ When did Latvia join the EU?
       (VP (VB join)
         (NP (DT the) (NNP EU))))
     (. ?)))
-Ans: syntacticParser.Node@7a63b7fa
-"Latvia [2,2]"	"join the EU "	"syntacticParser.Node@7a63b7fa"
+Ans: syntacticParser.Node@6e83d677
+"Latvia [2,2]"	"join the EU "	"syntacticParser.Node@6e83d677"
 http://dbpedia.org/resource/Latvia[2,2]
 http://dbpedia.org/resource/European_Union[5,5]
-http://dbpedia.org/resource/Enlargement_of_the_European_Union[3,5]
 
 
 PREFIX res: <http://dbpedia.org/resource/>
@@ -3507,8 +3445,8 @@ Which monarchs were married to a German?
         (PP (TO to)
           (NP (DT a) (NNP German)))))
     (. ?)))
-Ans: syntacticParser.Node@2d9ac74d
-"syntacticParser.Node@2d9ac74d"	"married to"	"a German [5,6]"
+Ans: syntacticParser.Node@6ba87c4b
+"syntacticParser.Node@6ba87c4b"	"married to"	"a German [5,6]"
 http://dbpedia.org/resource/Germany[6,6]
 
 
@@ -3537,7 +3475,7 @@ When was the Battle of Gettysburg?
         (PP (IN of)
           (NP (NNP Gettysburg)))))
     (. ?)))
-Ans: syntacticParser.Node@4f383c09
+Ans: syntacticParser.Node@7f90604c
 http://dbpedia.org/resource/Battle_of_Gettysburg[3,5]
 
 
@@ -3558,12 +3496,10 @@ Which river does the Brooklyn Bridge cross?
       (NP (DT the) (NNP Brooklyn) (NNP Bridge))
       (VP (VB cross)))
     (. ?)))
-Ans: syntacticParser.Node@12ef85e6
-"the Brooklyn Bridge [3,5]"	"cross "	"syntacticParser.Node@12ef85e6"
+Ans: syntacticParser.Node@7e1bbaed
+"the Brooklyn Bridge [3,5]"	"cross "	"syntacticParser.Node@7e1bbaed"
 http://dbpedia.org/resource/Brooklyn_Bridge[4,5]
-http://dbpedia.org/resource/River[1,1]
 http://dbpedia.org/resource/Brooklyn[4,4]
-http://dbpedia.org/resource/Cross[6,6]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -3585,9 +3521,8 @@ What is the highest mountain in Australia?
         (PP (IN in)
           (NP (NNP Australia)))))
     (. ?)))
-Ans: syntacticParser.Node@1fbcbfa6
-"syntacticParser.Node@1fbcbfa6"	"the highest mountain "	"Australia [6,6]"
-http://dbpedia.org/resource/Mountain[4,4]
+Ans: syntacticParser.Node@1dd9c7ed
+"syntacticParser.Node@1dd9c7ed"	"the highest mountain "	"Australia [6,6]"
 http://dbpedia.org/resource/Australia[6,6]
 
 
@@ -3614,9 +3549,8 @@ Give me all soccer clubs in Spain.
       (PP (IN in)
         (NP (NNP Spain))))
     (. .)))
-Ans: syntacticParser.Node@721b0ef4
+Ans: syntacticParser.Node@5ef74c0f
 http://dbpedia.org/resource/Spain[6,6]
-http://dbpedia.org/resource/Association_football[3,3]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -3644,11 +3578,9 @@ What is the official language of Suriname?
         (PP (IN of)
           (NP (NNP Suriname)))))
     (. ?)))
-Ans: syntacticParser.Node@5d58730b
-"syntacticParser.Node@5d58730b"	"the official language "	"Suriname [6,6]"
-http://dbpedia.org/resource/Language[4,4]
+Ans: syntacticParser.Node@38dcda36
+"syntacticParser.Node@38dcda36"	"the official language "	"Suriname [6,6]"
 http://dbpedia.org/resource/Suriname[6,6]
-http://dbpedia.org/resource/Official_language[3,4]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -3670,10 +3602,9 @@ Who is the mayor of Tel Aviv?
         (PP (IN of)
           (NP (NNP Tel) (NNP Aviv)))))
     (. ?)))
-Ans: syntacticParser.Node@6f78dc6f
-"syntacticParser.Node@6f78dc6f"	"the mayor "	"Tel Aviv [5,6]"
+Ans: syntacticParser.Node@7a976013
+"syntacticParser.Node@7a976013"	"the mayor "	"Tel Aviv [5,6]"
 http://dbpedia.org/resource/Tel_Aviv[5,6]
-http://dbpedia.org/resource/Mayor[3,3]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -3693,8 +3624,8 @@ Who designed the Brooklyn Bridge?
       (VP (VBD designed)
         (NP (DT the) (NNP Brooklyn) (NNP Bridge))))
     (. ?)))
-Ans: syntacticParser.Node@74d93093
-"syntacticParser.Node@74d93093"	"designed"	"the Brooklyn Bridge [2,4]"
+Ans: syntacticParser.Node@2531f63b
+"syntacticParser.Node@2531f63b"	"designed"	"the Brooklyn Bridge [2,4]"
 http://dbpedia.org/resource/Brooklyn_Bridge[3,4]
 http://dbpedia.org/resource/Brooklyn[3,3]
 
@@ -3717,10 +3648,9 @@ Which telecommunications organizations are located in Belgium?
         (PP (IN in)
           (NP (NNP Belgium)))))
     (. ?)))
-Ans: syntacticParser.Node@61e9f8cb
-"syntacticParser.Node@61e9f8cb"	"located in"	"Belgium [6,6]"
+Ans: syntacticParser.Node@5ca056f5
+"syntacticParser.Node@5ca056f5"	"located in"	"Belgium [6,6]"
 http://dbpedia.org/resource/Belgium[6,6]
-http://dbpedia.org/resource/Telecommunication[1,1]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -3749,7 +3679,7 @@ Is Frank Herbert still alive?
       (ADVP (RB still))
       (JJ alive))
     (. ?)))
-Ans: syntacticParser.Node@59047e65
+Ans: syntacticParser.Node@5ac465bc
 http://dbpedia.org/resource/Frank_Herbert[1,2]
 
 
@@ -3773,8 +3703,8 @@ What is the highest place of the Urals?
         (PP (IN of)
           (NP (DT the) (NNS Urals)))))
     (. ?)))
-Ans: syntacticParser.Node@75541a75
-"syntacticParser.Node@75541a75"	"the highest place "	"the Urals [6,7]"
+Ans: syntacticParser.Node@25f6c4f0
+"syntacticParser.Node@25f6c4f0"	"the highest place "	"the Urals [6,7]"
 http://dbpedia.org/resource/Ural_Mountains[7,7]
 
 
@@ -3797,9 +3727,8 @@ Who is the editor of Forbes?
         (PP (IN of)
           (NP (NNP Forbes)))))
     (. ?)))
-Ans: syntacticParser.Node@2a9d5f8c
-"syntacticParser.Node@2a9d5f8c"	"the editor "	"Forbes [5,5]"
-http://dbpedia.org/resource/Editing[3,3]
+Ans: syntacticParser.Node@6c35a0f
+"syntacticParser.Node@6c35a0f"	"the editor "	"Forbes [5,5]"
 
 
 PREFIX res: <http://dbpedia.org/resource/>
@@ -3820,9 +3749,7 @@ Give me all companies in the advertising industry.
       (PP (IN in)
         (NP (DT the) (NN advertising) (NN industry))))
     (. .)))
-Ans: syntacticParser.Node@1a9bab68
-http://dbpedia.org/resource/Industry[7,7]
-http://dbpedia.org/resource/Advertising[6,6]
+Ans: syntacticParser.Node@6f57edff
 
 
 PREFIX dbp: <http://dbpedia.org/property/>
@@ -3851,7 +3778,7 @@ How many countries are there in Europe?
       (PP (IN in)
         (NP (NNP Europe))))
     (. ?)))
-Ans: syntacticParser.Node@694eeaa0
+Ans: syntacticParser.Node@d7d4ada
 http://dbpedia.org/resource/Europe[6,6]
 
 
@@ -3873,8 +3800,8 @@ What did Bruce Carver die from?
       (VP (VB die)
         (PP (IN from))))
     (. ?)))
-Ans: syntacticParser.Node@1eaabf5d
-"Bruce Carver [2,3]"	"die from "	"syntacticParser.Node@1eaabf5d"
+Ans: syntacticParser.Node@587d1ae
+"Bruce Carver [2,3]"	"die from "	"syntacticParser.Node@587d1ae"
 http://dbpedia.org/resource/Carver_County,_Minnesota[3,3]
 
 
@@ -3899,8 +3826,7 @@ Give me all libraries established earlier than 1400.
             (PP (IN than)
               (NP (CD 1400)))))))
     (. .)))
-Ans: syntacticParser.Node@4471f167
-http://dbpedia.org/resource/Library[3,3]
+Ans: syntacticParser.Node@7d4c1c5a
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -3924,8 +3850,8 @@ Which presidents were born in 1945?
         (PP (IN in)
           (NP (CD 1945)))))
     (. ?)))
-Ans: syntacticParser.Node@4b0f2067
-"syntacticParser.Node@4b0f2067"	"born in"	"1945 [5,5]"
+Ans: syntacticParser.Node@29fd0d78
+"syntacticParser.Node@29fd0d78"	"born in"	"1945 [5,5]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -3949,10 +3875,9 @@ Give me all federal chancellors of Germany.
         (PP (IN of)
           (NP (NNP Germany)))))
     (. .)))
-Ans: syntacticParser.Node@2b29011a
-"syntacticParser.Node@2b29011a"	"all federal chancellors "	"Germany [6,6]"
+Ans: syntacticParser.Node@1d6cb077
+"syntacticParser.Node@1d6cb077"	"all federal chancellors "	"Germany [6,6]"
 http://dbpedia.org/resource/Germany[6,6]
-http://dbpedia.org/resource/Federation[3,3]
 
 
 PREFIX dbp: <http://dbpedia.org/property/>
@@ -3979,9 +3904,8 @@ Who was the wife of U.S. president Lincoln?
         (PP (IN of)
           (NP (NNP U.S.) (NNP president) (NNP Lincoln)))))
     (. ?)))
-Ans: syntacticParser.Node@4bfd1873
-"syntacticParser.Node@4bfd1873"	"the wife "	"U.S. president Lincoln [5,7]"
-http://dbpedia.org/resource/Abraham_Lincoln[6,7]
+Ans: syntacticParser.Node@153354f
+"syntacticParser.Node@153354f"	"the wife "	"U.S. president Lincoln [5,7]"
 http://dbpedia.org/resource/President_of_the_United_States[5,6]
 
 
@@ -4005,11 +3929,9 @@ Who developed the video game World of Warcraft?
           (PP (IN of)
             (NP (NNP Warcraft))))))
     (. ?)))
-Ans: syntacticParser.Node@32778d3a
-"syntacticParser.Node@32778d3a"	"developed"	"the video game World of Warcraft [2,7]"
+Ans: syntacticParser.Node@1d879479
+"syntacticParser.Node@1d879479"	"developed"	"the video game World of Warcraft [2,7]"
 http://dbpedia.org/resource/World_of_Warcraft[5,7]
-http://dbpedia.org/resource/Video_game[3,4]
-http://dbpedia.org/resource/Video[3,3]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -4031,10 +3953,9 @@ What is the official website of Tom Cruise?
         (PP (IN of)
           (NP (NNP Tom) (NNP Cruise)))))
     (. ?)))
-Ans: syntacticParser.Node@6c0f3014
-"syntacticParser.Node@6c0f3014"	"the official website "	"Tom Cruise [6,7]"
+Ans: syntacticParser.Node@e7e2d72
+"syntacticParser.Node@e7e2d72"	"the official website "	"Tom Cruise [6,7]"
 http://dbpedia.org/resource/Tom_Cruise[6,7]
-http://dbpedia.org/resource/Website[4,4]
 
 
 PREFIX dbp: <http://dbpedia.org/property/>
@@ -4060,12 +3981,11 @@ List all episodes of the first season of the HBO television series The Sopranos.
                 (NP (DT the) (NNP HBO) (NN television) (NN series))
                 (NP (DT The) (NN Sopranos))))))))
     (. .)))
-Ans: syntacticParser.Node@42256fb3
-"syntacticParser.Node@588383e5"	"the first season "	"the HBO television series The Sopranos [8,13]"
-"syntacticParser.Node@42256fb3"	"all episodes "	"syntacticParser.Node@588383e5"
+Ans: syntacticParser.Node@767eb92b
+"syntacticParser.Node@5b5d0c4b"	"the first season "	"the HBO television series The Sopranos [8,13]"
+"syntacticParser.Node@767eb92b"	"all episodes "	"syntacticParser.Node@5b5d0c4b"
 http://dbpedia.org/resource/The_Sopranos[12,13]
 http://dbpedia.org/resource/HBO[9,9]
-http://dbpedia.org/resource/Television_program[10,11]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -4086,8 +4006,8 @@ Who produced the most films?
       (VP (VBD produced)
         (NP (DT the) (JJS most) (NNS films))))
     (. ?)))
-Ans: syntacticParser.Node@e14a2fd
-"syntacticParser.Node@e14a2fd"	"produced"	"the most films [2,4]"
+Ans: syntacticParser.Node@658a4aa
+"syntacticParser.Node@658a4aa"	"produced"	"the most films [2,4]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -4111,7 +4031,7 @@ Give me all people with first name Jimmy.
       (PP (IN with)
         (NP (JJ first) (NN name) (NNP Jimmy))))
     (. .)))
-Ans: syntacticParser.Node@60452f4e
+Ans: syntacticParser.Node@74264824
 
 
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
@@ -4133,8 +4053,8 @@ In which city did John F. Kennedy die?
       (NP (NNP John) (NNP F.) (NNP Kennedy))
       (VP (VB die)))
     (. ?)))
-Ans: syntacticParser.Node@5ee3e74d
-"John F. Kennedy [4,6]"	"die "	"syntacticParser.Node@5ee3e74d"
+Ans: syntacticParser.Node@749e43f8
+"John F. Kennedy [4,6]"	"die "	"syntacticParser.Node@749e43f8"
 http://dbpedia.org/resource/John_F._Kennedy[4,6]
 
 
@@ -4159,8 +4079,7 @@ Is there a video game called Battle Chess?
         (S
           (NP (NN Battle) (NNS Chess)))))
     (. ?)))
-Ans: syntacticParser.Node@e2676e3
-http://dbpedia.org/resource/Video_game[3,4]
+Ans: syntacticParser.Node@5436d086
 http://dbpedia.org/resource/Battle_Chess[6,7]
 
 
@@ -4185,7 +4104,7 @@ Which mountains are higher than the Nanga Parbat?
         (PP (IN than)
           (NP (DT the) (NNP Nanga) (NNP Parbat)))))
     (. ?)))
-Ans: syntacticParser.Node@2c034dea
+Ans: syntacticParser.Node@3429e939
 http://dbpedia.org/resource/Nanga_Parbat[6,7]
 
 
@@ -4213,8 +4132,8 @@ Who created Wikipedia?
       (VP (VBD created)
         (NP (NNP Wikipedia))))
     (. ?)))
-Ans: syntacticParser.Node@2b5264d3
-"syntacticParser.Node@2b5264d3"	"created"	"Wikipedia [2,2]"
+Ans: syntacticParser.Node@f01180a
+"syntacticParser.Node@f01180a"	"created"	"Wikipedia [2,2]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -4237,8 +4156,8 @@ Give me all actors starring in Last Action Hero.
           (PP (IN in)
             (NP (JJ Last) (NN Action) (NNP Hero))))))
     (. .)))
-Ans: syntacticParser.Node@63c9e067
-"syntacticParser.Node@63c9e067"	"starring in"	"Last Action Hero [6,8]"
+Ans: syntacticParser.Node@14c3c9b1
+"syntacticParser.Node@14c3c9b1"	"starring in"	"Last Action Hero [6,8]"
 http://dbpedia.org/resource/Last_Action_Hero[6,8]
 
 
@@ -4266,10 +4185,9 @@ Which software has been developed by organizations founded in California?
                   (PP (IN in)
                     (NP (NNP California))))))))))
     (. ?)))
-Ans: syntacticParser.Node@6fe9956d
-"syntacticParser.Node@1a2d82b2"	"founded in"	"California [9,9]"
-"syntacticParser.Node@6fe9956d"	"developed by"	"syntacticParser.Node@1a2d82b2"
-http://dbpedia.org/resource/Software[1,1]
+Ans: syntacticParser.Node@3285d870
+"syntacticParser.Node@6b156c30"	"founded in"	"California [9,9]"
+"syntacticParser.Node@3285d870"	"developed by"	"syntacticParser.Node@6b156c30"
 http://dbpedia.org/resource/California[9,9]
 
 
@@ -4299,9 +4217,7 @@ Which companies work in the aerospace industry as well as in medicine?
         (PP (IN in)
           (NP (NN medicine)))))
     (. ?)))
-Ans: syntacticParser.Node@7886ba60
-http://dbpedia.org/resource/Aerospace[5,5]
-http://dbpedia.org/resource/Aerospace_manufacturer[5,6]
+Ans: syntacticParser.Node@67724b51
 
 
 PREFIX dbo:  <http://dbpedia.org/ontology/>
@@ -4324,8 +4240,8 @@ Is Christian Bale starring in Velvet Goldmine?
       (PP (IN in)
         (NP (JJ Velvet) (NNP Goldmine))))
     (. ?)))
-Ans: syntacticParser.Node@4eff42d8
-"syntacticParser.Node@4eff42d8"	"starring in"	"Velvet Goldmine [5,6]"
+Ans: syntacticParser.Node@6398380
+"syntacticParser.Node@6398380"	"starring in"	"Velvet Goldmine [5,6]"
 http://dbpedia.org/resource/Christian_Bale[1,2]
 http://dbpedia.org/resource/Velvet_Goldmine[5,6]
 http://dbpedia.org/resource/Christian[1,1]
@@ -4354,8 +4270,8 @@ Give me the websites of companies with more than 500000 employees.
           (QP (JJR more) (IN than) (CD 500000))
           (NNS employees))))
     (. .)))
-Ans: syntacticParser.Node@58c431ea
-"syntacticParser.Node@58c431ea"	"the websites "	"companies [5,5]"
+Ans: syntacticParser.Node@616ce305
+"syntacticParser.Node@616ce305"	"the websites "	"companies [5,5]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -4383,8 +4299,8 @@ Which actors were born in Germany?
         (PP (IN in)
           (NP (NNP Germany)))))
     (. ?)))
-Ans: syntacticParser.Node@51d16e6f
-"syntacticParser.Node@51d16e6f"	"born in"	"Germany [5,5]"
+Ans: syntacticParser.Node@3d6e3c8c
+"syntacticParser.Node@3d6e3c8c"	"born in"	"Germany [5,5]"
 http://dbpedia.org/resource/Germany[5,5]
 
 
@@ -4412,9 +4328,8 @@ Which caves have more than 3 entrances?
           (QP (JJR more) (IN than) (CD 3))
           (NNS entrances))))
     (. ?)))
-Ans: syntacticParser.Node@b29dccf
-"syntacticParser.Node@b29dccf"	"have"	"more than 3 entrances [3,6]"
-http://dbpedia.org/resource/Cave[1,1]
+Ans: syntacticParser.Node@1cf0e40c
+"syntacticParser.Node@1cf0e40c"	"have"	"more than 3 entrances [3,6]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -4441,9 +4356,8 @@ Was the wife of president Lincoln called Mary?
       (S
         (NP (NNP Mary))))
     (. ?)))
-Ans: syntacticParser.Node@44f12b4d
-"syntacticParser.Node@44f12b4d"	"the wife "	"president Lincoln [4,5]"
-http://dbpedia.org/resource/Abraham_Lincoln[4,5]
+Ans: syntacticParser.Node@183786d2
+"syntacticParser.Node@183786d2"	"the wife "	"president Lincoln [4,5]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -4469,8 +4383,8 @@ Give me all films produced by Hal Roach.
           (PP (IN by)
             (NP (NNP Hal) (NNP Roach))))))
     (. .)))
-Ans: syntacticParser.Node@1418a86d
-"syntacticParser.Node@1418a86d"	"produced by"	"Hal Roach [6,7]"
+Ans: syntacticParser.Node@175d4d91
+"syntacticParser.Node@175d4d91"	"produced by"	"Hal Roach [6,7]"
 http://dbpedia.org/resource/Rutilus[7,7]
 
 
@@ -4496,8 +4410,8 @@ Give me all video games published by Mean Hamster Software.
           (PP (IN by)
             (NP (NN Mean) (NNP Hamster) (NNP Software))))))
     (. .)))
-Ans: syntacticParser.Node@5b0134a
-"syntacticParser.Node@5b0134a"	"published by"	"Mean Hamster Software [7,9]"
+Ans: syntacticParser.Node@35b5d406
+"syntacticParser.Node@35b5d406"	"published by"	"Mean Hamster Software [7,9]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -4520,8 +4434,8 @@ Which languages are spoken in Estonia?
         (PP (IN in)
           (NP (NNP Estonia)))))
     (. ?)))
-Ans: syntacticParser.Node@2849c7f8
-"syntacticParser.Node@2849c7f8"	"spoken in"	"Estonia [5,5]"
+Ans: syntacticParser.Node@2b6da69c
+"syntacticParser.Node@2b6da69c"	"spoken in"	"Estonia [5,5]"
 http://dbpedia.org/resource/Estonia[5,5]
 
 
@@ -4544,7 +4458,7 @@ How many Aldi stores are there?
     (SQ (VBP are)
       (NP (EX there)))
     (. ?)))
-Ans: syntacticParser.Node@7cd16e31
+Ans: syntacticParser.Node@1a9fc140
 http://dbpedia.org/resource/Aldi[2,2]
 
 
@@ -4570,8 +4484,8 @@ Which capitals in Europe were host cities of the summer olympic games?
         (PP (IN of)
           (NP (DT the) (NN summer) (NN olympic) (NNS games)))))
     (. ?)))
-Ans: syntacticParser.Node@7d77ec6e
-"syntacticParser.Node@7d77ec6e"	"host cities "	"the summer olympic games [8,11]"
+Ans: syntacticParser.Node@75a42b23
+"syntacticParser.Node@75a42b23"	"host cities "	"the summer olympic games [8,11]"
 http://dbpedia.org/resource/Europe[3,3]
 
 
@@ -4595,8 +4509,8 @@ Who was the 16th president of the United States?
         (PP (IN of)
           (NP (DT the) (NNP United) (NNPS States)))))
     (. ?)))
-Ans: syntacticParser.Node@6fa5c43e
-http://dbpedia.org/resource/President_of_the_United_States[4,8]
+Ans: syntacticParser.Node@10489cfe
+"syntacticParser.Node@10489cfe"	"the 16th president "	"the United States [6,8]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -4619,8 +4533,8 @@ How many films did Hal Roach produce?
       (NP (NNP Hal) (NNP Roach))
       (VP (VB produce)))
     (. ?)))
-Ans: syntacticParser.Node@3baca23d
-"Hal Roach [4,5]"	"produce "	"syntacticParser.Node@3baca23d"
+Ans: syntacticParser.Node@711d1896
+"Hal Roach [4,5]"	"produce "	"syntacticParser.Node@711d1896"
 http://dbpedia.org/resource/Rutilus[5,5]
 
 
@@ -4643,11 +4557,8 @@ Which music albums contain the song Last Christmas?
           (NP (DT the) (NN song))
           (NP (JJ Last) (NNP Christmas)))))
     (. ?)))
-Ans: syntacticParser.Node@1c247759
-"syntacticParser.Node@1c247759"	"contain"	"the song Last Christmas [4,7]"
-http://dbpedia.org/resource/Album[1,2]
-http://dbpedia.org/resource/Music[1,1]
-http://dbpedia.org/resource/Song[5,5]
+Ans: syntacticParser.Node@52d684a
+"syntacticParser.Node@52d684a"	"contain"	"the song Last Christmas [4,7]"
 http://dbpedia.org/resource/Last_Christmas[6,7]
 
 
@@ -4672,8 +4583,8 @@ Give me all books written by Danielle Steel.
           (PP (IN by)
             (NP (NNP Danielle) (NNP Steel))))))
     (. .)))
-Ans: syntacticParser.Node@56eff1b6
-"syntacticParser.Node@56eff1b6"	"written by"	"Danielle Steel [6,7]"
+Ans: syntacticParser.Node@59a1d215
+"syntacticParser.Node@59a1d215"	"written by"	"Danielle Steel [6,7]"
 http://dbpedia.org/resource/Danielle_Steel[6,7]
 
 
@@ -4700,9 +4611,8 @@ Which airports are located in California, USA?
             (, ,)
             (NP (NNP USA))))))
     (. ?)))
-Ans: syntacticParser.Node@6c295e87
-"syntacticParser.Node@6c295e87"	"located in"	"California , USA [5,7]"
-http://dbpedia.org/resource/Airport[1,1]
+Ans: syntacticParser.Node@263b7704
+"syntacticParser.Node@263b7704"	"located in"	"California , USA [5,7]"
 http://dbpedia.org/resource/United_States[7,7]
 http://dbpedia.org/resource/California[5,5]
 
@@ -4737,12 +4647,11 @@ Which states of Germany are governed by the Social Democratic Party?
         (PP (IN by)
           (NP (DT the) (JJ Social) (JJ Democratic) (NNP Party)))))
     (. ?)))
-Ans: syntacticParser.Node@3af16b5a
-"syntacticParser.Node@3af16b5a"	"governed by"	"the Social Democratic Party [7,10]"
+Ans: syntacticParser.Node@3f171a45
+"syntacticParser.Node@3f171a45"	"governed by"	"the Social Democratic Party [7,10]"
 http://dbpedia.org/resource/Democratic_Party_(United_States)[9,10]
 http://dbpedia.org/resource/Germany[3,3]
 http://dbpedia.org/resource/Social_Democratic_Party_of_Germany[8,10]
-http://dbpedia.org/resource/States_of_Germany[1,3]
 http://dbpedia.org/resource/Social_democracy[8,9]
 
 
@@ -4768,9 +4677,8 @@ Give me all Canadian Grunge record labels.
       (NP (PRP me))
       (NP (DT all) (JJ Canadian) (NNP Grunge) (NN record) (NNS labels)))
     (. .)))
-Ans: syntacticParser.Node@4296b52f
+Ans: syntacticParser.Node@77ad8c5d
 http://dbpedia.org/resource/Canada[3,3]
-http://dbpedia.org/resource/Record_label[5,6]
 http://dbpedia.org/resource/Grunge[4,4]
 
 
@@ -4794,9 +4702,8 @@ Which country has the most official languages?
       (VP (VBZ has)
         (NP (DT the) (JJS most) (JJ official) (NNS languages))))
     (. ?)))
-Ans: syntacticParser.Node@2c304aab
-"syntacticParser.Node@2c304aab"	"has"	"the most official languages [3,6]"
-http://dbpedia.org/resource/Official_language[5,6]
+Ans: syntacticParser.Node@73b0180d
+"syntacticParser.Node@73b0180d"	"has"	"the most official languages [3,6]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -4821,10 +4728,8 @@ In which programming language is GIMP written?
       (NP (NNP GIMP))
       (VP (VBN written)))
     (. ?)))
-Ans: syntacticParser.Node@48311fe8
-"GIMP [5,5]"	"written "	"syntacticParser.Node@48311fe8"
-http://dbpedia.org/resource/Programming_language[2,3]
-http://dbpedia.org/resource/Computer_programming[2,2]
+Ans: syntacticParser.Node@8a3871d
+"GIMP [5,5]"	"written "	"syntacticParser.Node@8a3871d"
 http://dbpedia.org/resource/GIMP[5,5]
 
 
@@ -4848,9 +4753,9 @@ Who produced films starring Natalie Portman?
           (VP (VBG starring)
             (NP (NNP Natalie) (NNP Portman))))))
     (. ?)))
-Ans: syntacticParser.Node@fa770bb
-"syntacticParser.Node@60240ca7"	"starring"	"Natalie Portman [4,5]"
-"syntacticParser.Node@fa770bb"	"produced"	"syntacticParser.Node@60240ca7"
+Ans: syntacticParser.Node@7052625e
+"syntacticParser.Node@4d4bc94f"	"starring"	"Natalie Portman [4,5]"
+"syntacticParser.Node@7052625e"	"produced"	"syntacticParser.Node@4d4bc94f"
 http://dbpedia.org/resource/Natalie_Portman[4,5]
 http://dbpedia.org/resource/Natalie[4,4]
 
@@ -4876,9 +4781,8 @@ Give me all movies with Tom Cruise.
       (PP (IN with)
         (NP (NNP Tom) (NNP Cruise))))
     (. .)))
-Ans: syntacticParser.Node@3cfa558b
+Ans: syntacticParser.Node@2b8346ad
 http://dbpedia.org/resource/Tom_Cruise[5,6]
-http://dbpedia.org/resource/Film[3,3]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -4904,8 +4808,8 @@ In which films did Julia Roberts as well as Richard Gere play?
         (PP (IN as)
           (NP (NNP Richard) (NNP Gere) (NN play)))))
     (. ?)))
-Ans: syntacticParser.Node@39f92833
-"Julia Roberts [4,5]"	"as well as Richard Gere play "	"syntacticParser.Node@39f92833"
+Ans: syntacticParser.Node@3e684b68
+"Julia Roberts [4,5]"	"as well as Richard Gere play "	"syntacticParser.Node@3e684b68"
 http://dbpedia.org/resource/Julia_Roberts[4,5]
 http://dbpedia.org/resource/Richard_Gere[9,10]
 http://dbpedia.org/resource/Julia_the_Elder[4,4]
@@ -4932,8 +4836,7 @@ Give me all female given names.
       (PP (VBN given)
         (NP (NNS names))))
     (. .)))
-Ans: syntacticParser.Node@46289488
-http://dbpedia.org/resource/Mooto[4,5]
+Ans: syntacticParser.Node@67fc6f3b
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -4960,8 +4863,8 @@ Who wrote the book The Pillars of the Earth?
             (PP (IN of)
               (NP (DT the) (NNP Earth)))))))
     (. ?)))
-Ans: syntacticParser.Node@251b2810
-"syntacticParser.Node@251b2810"	"wrote"	"the book The Pillars of the Earth [2,8]"
+Ans: syntacticParser.Node@3f2e97bd
+"syntacticParser.Node@3f2e97bd"	"wrote"	"the book The Pillars of the Earth [2,8]"
 http://dbpedia.org/resource/The_Pillars_of_the_Earth[4,8]
 http://dbpedia.org/resource/Earth[8,8]
 
@@ -4986,8 +4889,8 @@ How many films did Leonardo DiCaprio star in?
       (VP (VB star)
         (PP (IN in))))
     (. ?)))
-Ans: syntacticParser.Node@71e3e282
-"Leonardo DiCaprio [4,5]"	"star in "	"syntacticParser.Node@71e3e282"
+Ans: syntacticParser.Node@4555af6
+"Leonardo DiCaprio [4,5]"	"star in "	"syntacticParser.Node@4555af6"
 http://dbpedia.org/resource/Leonardo_DiCaprio[4,5]
 http://dbpedia.org/resource/Leonardo_(Teenage_Mutant_Ninja_Turtles)[4,4]
 
@@ -5012,7 +4915,7 @@ Give me all soccer clubs in the Premier League.
       (PP (IN in)
         (NP (DT the) (NN Premier) (NN League))))
     (. .)))
-Ans: syntacticParser.Node@1eb30be5
+Ans: syntacticParser.Node@114f1407
 http://dbpedia.org/resource/Premier[7,7]
 
 
@@ -5036,8 +4939,8 @@ In which U.S. state is Mount McKinley located?
       (NP (NNP Mount) (NNP McKinley))
       (VP (VBN located)))
     (. ?)))
-Ans: syntacticParser.Node@7118bc34
-"Mount McKinley [5,6]"	"located "	"syntacticParser.Node@7118bc34"
+Ans: syntacticParser.Node@1ff45393
+"Mount McKinley [5,6]"	"located "	"syntacticParser.Node@1ff45393"
 http://dbpedia.org/resource/U.S._state[2,3]
 http://dbpedia.org/resource/Mount_McKinley[5,6]
 
@@ -5062,8 +4965,8 @@ When was Capcom founded?
       (NP (NNP Capcom))
       (VP (VBN founded)))
     (. ?)))
-Ans: syntacticParser.Node@7d1f263a
-"Capcom [2,2]"	"founded "	"syntacticParser.Node@7d1f263a"
+Ans: syntacticParser.Node@7d5f0520
+"Capcom [2,2]"	"founded "	"syntacticParser.Node@7d5f0520"
 http://dbpedia.org/resource/Capcom[2,2]
 
 
@@ -5085,8 +4988,8 @@ Which organizations were founded in 1930?
         (PP (IN in)
           (NP (CD 1930)))))
     (. ?)))
-Ans: syntacticParser.Node@68632166
-"syntacticParser.Node@68632166"	"founded in"	"1930 [5,5]"
+Ans: syntacticParser.Node@71130ad1
+"syntacticParser.Node@71130ad1"	"founded in"	"1930 [5,5]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -5109,8 +5012,7 @@ What is the highest mountain?
     (SQ (VBZ is)
       (NP (DT the) (JJS highest) (NN mountain)))
     (. ?)))
-Ans: syntacticParser.Node@1dd1dc35
-http://dbpedia.org/resource/Mountain[4,4]
+Ans: syntacticParser.Node@6b658ebf
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -5133,8 +5035,8 @@ Was Natalie Portman born in the United States?
       (PP (IN in)
         (NP (DT the) (NNP United) (NNPS States))))
     (. ?)))
-Ans: syntacticParser.Node@5a1ae4f9
-"syntacticParser.Node@5a1ae4f9"	"born in"	"the United States [5,7]"
+Ans: syntacticParser.Node@27735ad6
+"syntacticParser.Node@27735ad6"	"born in"	"the United States [5,7]"
 http://dbpedia.org/resource/Natalie_Portman[1,2]
 http://dbpedia.org/resource/Natalie[1,1]
 http://dbpedia.org/resource/United_States[6,7]
@@ -5164,9 +5066,9 @@ Which budget did the first movie of Zdenek Sverak have?
           (NP (NNP Zdenek) (NNP Sverak))))
       (VP (VB have)))
     (. ?)))
-Ans: syntacticParser.Node@7951619a
-"syntacticParser.Node@34816c66"	"the first movie "	"Zdenek Sverak [7,8]"
-"syntacticParser.Node@34816c66"	"have "	"syntacticParser.Node@7951619a"
+Ans: syntacticParser.Node@5878b9b1
+"syntacticParser.Node@15f093ed"	"the first movie "	"Zdenek Sverak [7,8]"
+"syntacticParser.Node@15f093ed"	"have "	"syntacticParser.Node@5878b9b1"
 
 OUT OF SCOPE
 
@@ -5183,7 +5085,7 @@ How many big fires struck Paris during the Middle Ages?
         (PP (IN during)
           (NP (DT the) (NNP Middle) (NNP Ages)))))
     (. ?)))
-Ans: syntacticParser.Node@2aa4cb8d
+Ans: syntacticParser.Node@fc1b9f5
 http://dbpedia.org/resource/Middle_Ages[8,9]
 http://dbpedia.org/resource/Paris[5,5]
 
@@ -5196,9 +5098,8 @@ Is Pamela Anderson a vegan?
     (NP (NNP Pamela) (NNP Anderson))
     (NP (DT a) (NN vegan))
     (. ?)))
-Ans: syntacticParser.Node@246e3218
+Ans: syntacticParser.Node@2873249e
 http://dbpedia.org/resource/Pamela_Anderson[1,2]
-http://dbpedia.org/resource/Veganism[4,4]
 
 OUT OF SCOPE
 
@@ -5211,8 +5112,8 @@ How often was Michael Jordan divorced?
       (NP (NNP Michael) (NNP Jordan))
       (VP (VBN divorced)))
     (. ?)))
-Ans: syntacticParser.Node@40725ef5
-"Michael Jordan [3,4]"	"divorced "	"syntacticParser.Node@40725ef5"
+Ans: syntacticParser.Node@2463c74d
+"Michael Jordan [3,4]"	"divorced "	"syntacticParser.Node@2463c74d"
 http://dbpedia.org/resource/Michael_Jordan[3,4]
 http://dbpedia.org/resource/Jordan[4,4]
 
@@ -5228,7 +5129,7 @@ What is the most beautiful painting?
         (ADJP (RBS most) (JJ beautiful))
         (NN painting)))
     (. ?)))
-Ans: syntacticParser.Node@256805b3
+Ans: syntacticParser.Node@2078e96f
 
 OUT OF SCOPE
 
@@ -5247,12 +5148,10 @@ Give me all animal species that live in the Amazon rainforest.
               (PP (IN in)
                 (NP (DT the) (NN Amazon) (NN rainforest))))))))
     (. .)))
-Ans: syntacticParser.Node@1053ecea
-"syntacticParser.Node@1053ecea"	"live in"	"the Amazon rainforest [8,10]"
+Ans: syntacticParser.Node@7b85b4bd
+"syntacticParser.Node@7b85b4bd"	"live in"	"the Amazon rainforest [8,10]"
 http://dbpedia.org/resource/Amazon_rainforest[9,10]
-http://dbpedia.org/resource/Rainforest[10,10]
 http://dbpedia.org/resource/Amazon_River[9,9]
-http://dbpedia.org/resource/Species[4,4]
 
 OUT OF SCOPE
 
@@ -5270,10 +5169,9 @@ How many inhabitants does the largest city in Canada have?
           (NP (NNP Canada))))
       (VP (VB have)))
     (. ?)))
-Ans: syntacticParser.Node@10dc266b
-"syntacticParser.Node@2ad8e750"	"the largest city "	"Canada [8,8]"
-"syntacticParser.Node@2ad8e750"	"have "	"syntacticParser.Node@10dc266b"
-http://dbpedia.org/resource/City[6,6]
+Ans: syntacticParser.Node@58bd0dba
+"syntacticParser.Node@4dbd6c5f"	"the largest city "	"Canada [8,8]"
+"syntacticParser.Node@4dbd6c5f"	"have "	"syntacticParser.Node@58bd0dba"
 http://dbpedia.org/resource/Canada[8,8]
 
 
@@ -5297,9 +5195,8 @@ In which studio did the Beatles record their first album?
       (VP (VB record)
         (NP (PRP$ their) (JJ first) (NN album))))
     (. ?)))
-Ans: syntacticParser.Node@190f4668
-"the Beatles [4,5]"	"record their first album "	"syntacticParser.Node@190f4668"
-http://dbpedia.org/resource/The_Beatles[4,5]
+Ans: syntacticParser.Node@5cefc3fc
+"the Beatles [4,5]"	"record their first album "	"syntacticParser.Node@5cefc3fc"
 
 OUT OF SCOPE
 
@@ -5317,8 +5214,8 @@ Who was the first to climb Mount Everest?
               (VP (VB climb)
                 (NP (NNP Mount) (NNP Everest))))))))
     (. ?)))
-Ans: syntacticParser.Node@275adfee
-"syntacticParser.Node@275adfee"	"climb"	"Mount Everest [6,7]"
+Ans: syntacticParser.Node@27f85e00
+"syntacticParser.Node@27f85e00"	"climb"	"Mount Everest [6,7]"
 http://dbpedia.org/resource/Mount_Everest[6,7]
 
 
@@ -5340,9 +5237,7 @@ How many programming languages are there?
     (SQ (VBP are)
       (NP (EX there)))
     (. ?)))
-Ans: syntacticParser.Node@5b57687c
-http://dbpedia.org/resource/Computer_programming[2,2]
-http://dbpedia.org/resource/Programming_language[2,3]
+Ans: syntacticParser.Node@2d3fa504
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -5367,8 +5262,8 @@ What is the official color of the University of Oxford?
             (PP (IN of)
               (NP (NNP Oxford)))))))
     (. ?)))
-Ans: syntacticParser.Node@106a6297
-"syntacticParser.Node@106a6297"	"the official color "	"the University of Oxford [6,9]"
+Ans: syntacticParser.Node@2fa509c0
+"syntacticParser.Node@2fa509c0"	"the official color "	"the University of Oxford [6,9]"
 http://dbpedia.org/resource/University_of_Oxford[7,9]
 
 
@@ -5393,10 +5288,9 @@ How many gold medals did Michael Phelps win at the 2008 Olympics?
         (PP (IN at)
           (NP (DT the) (CD 2008) (NN Olympics)))))
     (. ?)))
-Ans: syntacticParser.Node@10481d07
-"Michael Phelps [5,6]"	"win at the 2008 Olympics "	"syntacticParser.Node@10481d07"
+Ans: syntacticParser.Node@210d2f69
+"Michael Phelps [5,6]"	"win at the 2008 Olympics "	"syntacticParser.Node@210d2f69"
 http://dbpedia.org/resource/Michael_Phelps[5,6]
-http://dbpedia.org/resource/2008_Summer_Olympics[10,11]
 http://dbpedia.org/resource/Olympic_Games[11,11]
 
 OUT OF SCOPE
@@ -5415,11 +5309,9 @@ To which artistic movement did the painter of The Three Dancers belong?
           (NP (DT The) (JJ Three) (NN Dancers))))
       (VP (VB belong)))
     (. ?)))
-Ans: syntacticParser.Node@4c18b2c2
-"syntacticParser.Node@18b11520"	"the painter "	"The Three Dancers [8,10]"
-"syntacticParser.Node@18b11520"	"belong "	"syntacticParser.Node@4c18b2c2"
-http://dbpedia.org/resource/Painting[6,6]
-http://dbpedia.org/resource/Art_movement[2,3]
+Ans: syntacticParser.Node@4952085d
+"syntacticParser.Node@2e345023"	"the painter "	"The Three Dancers [8,10]"
+"syntacticParser.Node@2e345023"	"belong "	"syntacticParser.Node@4952085d"
 
 
 PREFIX res: <http://dbpedia.org/resource/>
@@ -5445,8 +5337,7 @@ Give me all animals that are extinct.
             (VP (VBP are)
               (ADJP (JJ extinct)))))))
     (. .)))
-Ans: syntacticParser.Node@4e4bf5de
-http://dbpedia.org/resource/Extinction[6,6]
+Ans: syntacticParser.Node@4f18fa1b
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -5468,8 +5359,8 @@ Does Abraham Lincoln's death place have a website?
     (VP (VB have)
       (NP (DT a) (NN website)))
     (. ?)))
-Ans: syntacticParser.Node@69bbcea9
-"syntacticParser.Node@69bbcea9"	"have"	"a website [7,8]"
+Ans: syntacticParser.Node@7d0724ff
+"syntacticParser.Node@7d0724ff"	"have"	"a website [7,8]"
 http://dbpedia.org/resource/Abraham_Lincoln[1,3]
 http://dbpedia.org/resource/Lincoln,_England[2,2]
 
@@ -5493,7 +5384,7 @@ How deep is Lake Placid?
     (SQ (VBZ is)
       (NP (NNP Lake) (NNP Placid)))
     (. ?)))
-Ans: syntacticParser.Node@1ab4f23b
+Ans: syntacticParser.Node@5ee653f9
 http://dbpedia.org/resource/Lake_Placid,_New_York[3,4]
 
 
@@ -5515,8 +5406,8 @@ Give me the grandchildren of Bruce Lee.
         (PP (IN of)
           (NP (NNP Bruce) (NNP Lee)))))
     (. .)))
-Ans: syntacticParser.Node@3f40644d
-"syntacticParser.Node@3f40644d"	"the grandchildren "	"Bruce Lee [5,6]"
+Ans: syntacticParser.Node@645da527
+"syntacticParser.Node@645da527"	"the grandchildren "	"Bruce Lee [5,6]"
 http://dbpedia.org/resource/Bruce_Lee[5,6]
 
 
@@ -5537,7 +5428,7 @@ Who is the youngest Darts player?
     (SQ (VBZ is)
       (NP (DT the) (JJS youngest) (NNP Darts) (NN player)))
     (. ?)))
-Ans: syntacticParser.Node@2ee1828f
+Ans: syntacticParser.Node@36fa7564
 http://dbpedia.org/resource/Darts[4,4]
 
 
@@ -5561,8 +5452,8 @@ Where was Bach born?
       (NP (NNP Bach))
       (VP (VBN born)))
     (. ?)))
-Ans: syntacticParser.Node@2f341fcd
-"Bach [2,2]"	"born "	"syntacticParser.Node@2f341fcd"
+Ans: syntacticParser.Node@25be2887
+"Bach [2,2]"	"born "	"syntacticParser.Node@25be2887"
 http://dbpedia.org/resource/Johann_Sebastian_Bach[2,2]
 
 
@@ -5589,11 +5480,10 @@ In which countries can you pay using the West African CFA franc?
               (ADJP (JJ West) (JJ African))
               (NN CFA) (NN franc))))))
     (. ?)))
-Ans: syntacticParser.Node@24d5aa87
-"syntacticParser.Node@24d5aa87"	"using"	"the West African CFA franc [7,11]"
+Ans: syntacticParser.Node@5180701f
+"syntacticParser.Node@5180701f"	"using"	"the West African CFA franc [7,11]"
 http://dbpedia.org/resource/CFA_franc[10,11]
 http://dbpedia.org/resource/West_African_CFA_franc[8,11]
-http://dbpedia.org/resource/Franc[11,11]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -5616,9 +5506,8 @@ What are the top-10 action role-playing video games according to IGN?
           (PP (TO to)
             (NP (NNP IGN))))))
     (. ?)))
-Ans: syntacticParser.Node@6dfefa6a
+Ans: syntacticParser.Node@b58a78c
 http://dbpedia.org/resource/IGN[10,10]
-http://dbpedia.org/resource/Action_role-playing_game[4,7]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -5646,8 +5535,8 @@ What is the most frequent cause of death?
         (PP (IN of)
           (NP (NN death)))))
     (. ?)))
-Ans: syntacticParser.Node@7d10b8ff
-"syntacticParser.Node@7d10b8ff"	"the most frequent cause "	"death [7,7]"
+Ans: syntacticParser.Node@56b11ef
+"syntacticParser.Node@56b11ef"	"the most frequent cause "	"death [7,7]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -5668,10 +5557,9 @@ Does the Isar flow into a lake?
       (PP (IN into)
         (NP (DT a) (NN lake))))
     (. ?)))
-Ans: syntacticParser.Node@2ad0d192
-"syntacticParser.Node@2ad0d192"	"flow into"	"a lake [5,6]"
+Ans: syntacticParser.Node@60d642fa
+"syntacticParser.Node@60d642fa"	"flow into"	"a lake [5,6]"
 http://dbpedia.org/resource/Isar[2,2]
-http://dbpedia.org/resource/Lake[6,6]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -5702,9 +5590,8 @@ Give me all films produced by Steven Spielberg with a budget of at least $80 mil
                 (NP
                   (QP (IN at) (JJS least) ($ $) (CD 80) (CD million)))))))))
     (. .)))
-Ans: syntacticParser.Node@2811bfdf
-"syntacticParser.Node@2811bfdf"	"a budget "	"at least $ 80 million [12,16]"
-http://dbpedia.org/resource/Budget[10,10]
+Ans: syntacticParser.Node@5f53e928
+"syntacticParser.Node@5f53e928"	"a budget "	"at least $ 80 million [12,16]"
 http://dbpedia.org/resource/Steven_Spielberg[6,7]
 
 
@@ -5736,7 +5623,7 @@ Give me all writers that won the Nobel Prize in literature.
               (PP (IN in)
                 (NP (NNS literature))))))))
     (. .)))
-Ans: syntacticParser.Node@251209d
+Ans: syntacticParser.Node@407c55ee
 http://dbpedia.org/resource/Nobel_Prize_in_Literature[7,10]
 http://dbpedia.org/resource/Nobel_Prize[7,8]
 
@@ -5758,7 +5645,7 @@ Give me all taikonauts.
       (NP (PRP me))
       (NP (DT all) (NN taikonauts)))
     (. .)))
-Ans: syntacticParser.Node@20719b71
+Ans: syntacticParser.Node@393c8ffa
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -5784,8 +5671,8 @@ How many pages does War and Peace have?
         (NN Peace))
       (VP (VB have)))
     (. ?)))
-Ans: syntacticParser.Node@59d7530b
-"War and Peace [4,6]"	"have "	"syntacticParser.Node@59d7530b"
+Ans: syntacticParser.Node@19a43976
+"War and Peace [4,6]"	"have "	"syntacticParser.Node@19a43976"
 http://dbpedia.org/resource/War_and_Peace[4,6]
 
 
@@ -5808,8 +5695,8 @@ What is the bridge with the longest span?
         (PP (IN with)
           (NP (DT the) (JJS longest) (NN span)))))
     (. ?)))
-Ans: syntacticParser.Node@7c015cd5
-"syntacticParser.Node@7c015cd5"	"the bridge "	"the longest span [5,7]"
+Ans: syntacticParser.Node@16c6a992
+"syntacticParser.Node@16c6a992"	"the bridge "	"the longest span [5,7]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -5836,7 +5723,7 @@ Give me all actors called Baldwin.
           (S
             (NP (NNP Baldwin))))))
     (. .)))
-Ans: syntacticParser.Node@6319e54e
+Ans: syntacticParser.Node@49228be5
 http://dbpedia.org/resource/Baldwin_Locomotive_Works[5,5]
 
 
@@ -5863,8 +5750,8 @@ Who is the tallest player of the Atlanta Falcons?
         (PP (IN of)
           (NP (DT the) (NNP Atlanta) (NNP Falcons)))))
     (. ?)))
-Ans: syntacticParser.Node@2fadf9a2
-"syntacticParser.Node@2fadf9a2"	"the tallest player "	"the Atlanta Falcons [6,8]"
+Ans: syntacticParser.Node@9d2167d
+"syntacticParser.Node@9d2167d"	"the tallest player "	"the Atlanta Falcons [6,8]"
 http://dbpedia.org/resource/Atlanta_Falcons[7,8]
 http://dbpedia.org/resource/Atlanta[7,7]
 
@@ -5891,9 +5778,8 @@ Which rivers flow into a German lake?
         (PP (IN into)
           (NP (DT a) (JJ German) (NN lake)))))
     (. ?)))
-Ans: syntacticParser.Node@554897ec
-"syntacticParser.Node@554897ec"	"flow into"	"a German lake [4,6]"
-http://dbpedia.org/resource/Lake[6,6]
+Ans: syntacticParser.Node@6cb30386
+"syntacticParser.Node@6cb30386"	"flow into"	"a German lake [4,6]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -5918,7 +5804,7 @@ How many James Bond movies are there?
     (SQ (VBP are)
       (NP (EX there)))
     (. ?)))
-Ans: syntacticParser.Node@27ad5175
+Ans: syntacticParser.Node@3da3b023
 http://dbpedia.org/resource/James_Bond[2,4]
 http://dbpedia.org/resource/James_Bond_in_film[2,4]
 http://dbpedia.org/resource/Bond_(band)[3,3]
@@ -5942,9 +5828,8 @@ Which rockets were launched from Baikonur?
         (PP (IN from)
           (NP (NNP Baikonur)))))
     (. ?)))
-Ans: syntacticParser.Node@ee35bb5
-"syntacticParser.Node@ee35bb5"	"launched from"	"Baikonur [5,5]"
-http://dbpedia.org/resource/Rocket[1,1]
+Ans: syntacticParser.Node@7ead6851
+"syntacticParser.Node@7ead6851"	"launched from"	"Baikonur [5,5]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -5966,9 +5851,8 @@ Which pope succeeded John Paul II?
       (VP (VBD succeeded)
         (NP (NNP John) (NNP Paul) (NNP II))))
     (. ?)))
-Ans: syntacticParser.Node@4f62018f
-"syntacticParser.Node@4f62018f"	"succeeded"	"John Paul II [3,5]"
-http://dbpedia.org/resource/Pope[1,1]
+Ans: syntacticParser.Node@20cb8696
+"syntacticParser.Node@20cb8696"	"succeeded"	"John Paul II [3,5]"
 http://dbpedia.org/resource/Pope_John_Paul_II[3,5]
 
 
@@ -5988,7 +5872,7 @@ Give me all Dutch parties.
       (NP (PRP me))
       (NP (DT all) (JJ Dutch) (NNS parties)))
     (. .)))
-Ans: syntacticParser.Node@611c1d9b
+Ans: syntacticParser.Node@33d3ddb7
 http://dbpedia.org/resource/Netherlands[3,3]
 
 
@@ -6010,7 +5894,7 @@ When is Halloween?
     (SQ (VBZ is)
       (NP (NNP Halloween)))
     (. ?)))
-Ans: syntacticParser.Node@587d2e5b
+Ans: syntacticParser.Node@1ca24ab1
 http://dbpedia.org/resource/Halloween[2,2]
 
 
@@ -6030,9 +5914,8 @@ Give me all Swedish oceanographers.
       (NP (PRP me))
       (NP (PDT all) (JJ Swedish) (NNP oceanographers)))
     (. .)))
-Ans: syntacticParser.Node@8fdd96a
+Ans: syntacticParser.Node@5fd40d5d
 http://dbpedia.org/resource/Sweden[3,3]
-http://dbpedia.org/resource/Oceanography[4,4]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -6060,8 +5943,8 @@ Give me all actors who were born in Berlin.
                 (PP (IN in)
                   (NP (NNP Berlin)))))))))
     (. .)))
-Ans: syntacticParser.Node@5cf322b7
-"syntacticParser.Node@5cf322b7"	"born in"	"Berlin [8,8]"
+Ans: syntacticParser.Node@aebf30a
+"syntacticParser.Node@aebf30a"	"born in"	"Berlin [8,8]"
 http://dbpedia.org/resource/Berlin[8,8]
 
 
@@ -6088,11 +5971,10 @@ What was the last movie with Alec Guinness?
             (VP (VBG Alec)
               (NP (NNP Guinness)))))))
     (. ?)))
-Ans: syntacticParser.Node@554d98d9
-"syntacticParser.Node@554d98d9"	"Alec"	"Guinness [7,7]"
+Ans: syntacticParser.Node@36afff3a
+"syntacticParser.Node@36afff3a"	"Alec"	"Guinness [7,7]"
 http://dbpedia.org/resource/Alec_Guinness[6,7]
 http://dbpedia.org/resource/Guinness[7,7]
-http://dbpedia.org/resource/Film[4,4]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -6117,9 +5999,8 @@ Which poet wrote the most books?
       (VP (VBD wrote)
         (NP (DT the) (JJS most) (NNS books))))
     (. ?)))
-Ans: syntacticParser.Node@3c012552
-"syntacticParser.Node@3c012552"	"wrote"	"the most books [3,5]"
-http://dbpedia.org/resource/Poet[1,1]
+Ans: syntacticParser.Node@5269a8fa
+"syntacticParser.Node@5269a8fa"	"wrote"	"the most books [3,5]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -6147,8 +6028,8 @@ How many languages are spoken in Colombia?
         (PP (IN in)
           (NP (NNP Colombia)))))
     (. ?)))
-Ans: syntacticParser.Node@7e99078d
-"syntacticParser.Node@7e99078d"	"spoken in"	"Colombia [6,6]"
+Ans: syntacticParser.Node@7b4f4529
+"syntacticParser.Node@7b4f4529"	"spoken in"	"Colombia [6,6]"
 http://dbpedia.org/resource/Colombia[6,6]
 
 
@@ -6171,8 +6052,8 @@ What does IYCM stand for?
       (VP (VB stand)
         (PP (IN for))))
     (. ?)))
-Ans: syntacticParser.Node@55dd4e48
-"IYCM [2,2]"	"stand for "	"syntacticParser.Node@55dd4e48"
+Ans: syntacticParser.Node@16959bbd
+"IYCM [2,2]"	"stand for "	"syntacticParser.Node@16959bbd"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -6196,8 +6077,8 @@ What was Brazil's lowest rank in the FIFA World Ranking?
         (PP (IN in)
           (NP (DT the) (NNP FIFA) (NNP World) (NNS Ranking)))))
     (. ?)))
-Ans: syntacticParser.Node@dbbca33
-"syntacticParser.Node@dbbca33"	"Brazil 's lowest rank "	"the FIFA World Ranking [7,10]"
+Ans: syntacticParser.Node@77f6cdcf
+"syntacticParser.Node@77f6cdcf"	"Brazil 's lowest rank "	"the FIFA World Ranking [7,10]"
 http://dbpedia.org/resource/Brazil[2,3]
 http://dbpedia.org/resource/FIFA[8,8]
 http://dbpedia.org/resource/FIFA_World_Rankings[8,10]
@@ -6227,8 +6108,7 @@ Give me the capitals of all countries that the Himalayas run through.
             (VP (VBP run)
               (ADVP (RB through)))))))
     (. .)))
-Ans: syntacticParser.Node@6fc8243c
-http://dbpedia.org/resource/Capital_(architecture)[3,3]
+Ans: syntacticParser.Node@26055141
 http://dbpedia.org/resource/Himalayas[9,9]
 
 
@@ -6251,10 +6131,9 @@ Which actor played Chewbacca?
       (VP (VBD played)
         (NP (NNP Chewbacca))))
     (. ?)))
-Ans: syntacticParser.Node@7b46637
-"syntacticParser.Node@7b46637"	"played"	"Chewbacca [3,3]"
+Ans: syntacticParser.Node@17eff7af
+"syntacticParser.Node@17eff7af"	"played"	"Chewbacca [3,3]"
 http://dbpedia.org/resource/Chewbacca[3,3]
-http://dbpedia.org/resource/Actor[1,1]
 
 
 PREFIX dbp: <http://dbpedia.org/property/>
@@ -6276,11 +6155,8 @@ Which ingredients do I need for carrot cake?
         (PP (IN for)
           (NP (NN carrot) (NN cake)))))
     (. ?)))
-Ans: syntacticParser.Node@2b7e675f
-"I [3,3]"	"need for carrot cake "	"syntacticParser.Node@2b7e675f"
-http://dbpedia.org/resource/Carrot_cake[6,7]
-http://dbpedia.org/resource/Carrot[6,6]
-http://dbpedia.org/resource/Cake[7,7]
+Ans: syntacticParser.Node@702a9d9b
+"I [3,3]"	"need for carrot cake "	"syntacticParser.Node@702a9d9b"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -6298,8 +6174,7 @@ Is Cola a beverage?
     (NP (NNS Cola))
     (NP (DT a) (NN beverage))
     (. ?)))
-Ans: syntacticParser.Node@4f1b9cbd
-http://dbpedia.org/resource/Drink[3,3]
+Ans: syntacticParser.Node@35d6d700
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -6323,7 +6198,7 @@ Who has Tom Cruise been married to?
           (VP (VBN married)
             (PP (TO to))))))
     (. ?)))
-Ans: syntacticParser.Node@3ef8dda6
+Ans: syntacticParser.Node@3e38479a
 http://dbpedia.org/resource/Tom_Cruise[2,3]
 
 
@@ -6348,10 +6223,10 @@ Which of Tim Burton's films had the highest budget?
     (VP (VBD had)
       (NP (DT the) (JJS highest) (NN budget)))
     (. ?)))
-Ans: syntacticParser.Node@50ecf83f
-"syntacticParser.Node@50ecf83f"	"Which "	"syntacticParser.Node@193a6c02"
-"syntacticParser.Node@50ecf83f"	"had"	"the highest budget [7,9]"
-"syntacticParser.Node@193a6c02"	"films "	"Tim Burton[2,15]"
+Ans: syntacticParser.Node@5f372375
+"syntacticParser.Node@5f372375"	"Which "	"syntacticParser.Node@1434818c"
+"syntacticParser.Node@5f372375"	"had"	"the highest budget [7,9]"
+"syntacticParser.Node@1434818c"	"films "	"Tim Burton[2,15]"
 http://dbpedia.org/resource/Tim_Burton[2,4]
 
 
@@ -6377,7 +6252,7 @@ How heavy is Jupiter's lightest moon?
         (NP (NNP Jupiter) (POS 's))
         (JJ lightest) (NN moon)))
     (. ?)))
-Ans: syntacticParser.Node@7884300f
+Ans: syntacticParser.Node@54707530
 http://dbpedia.org/resource/Jupiter[3,4]
 
 
@@ -6403,9 +6278,7 @@ Which actor was casted in the most movies?
       (PP (IN in)
         (NP (DT the) (JJS most) (NNS movies))))
     (. ?)))
-Ans: syntacticParser.Node@202cfd89
-http://dbpedia.org/resource/Actor[1,1]
-http://dbpedia.org/resource/Film[7,7]
+Ans: syntacticParser.Node@36f7937a
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -6429,7 +6302,7 @@ Is James Bond married?
     (NP (NNP James) (NNP Bond))
     (VP (VBN married))
     (. ?)))
-Ans: syntacticParser.Node@6a492d08
+Ans: syntacticParser.Node@7e88240d
 http://dbpedia.org/resource/James_Bond[1,2]
 http://dbpedia.org/resource/Bond_(band)[2,2]
 
@@ -6450,9 +6323,8 @@ Give me all Australian metalcore bands.
       (NP (PRP me))
       (NP (DT all) (JJ Australian) (NNP metalcore) (NNS bands)))
     (. .)))
-Ans: syntacticParser.Node@3f6b8559
+Ans: syntacticParser.Node@4b6fdb52
 http://dbpedia.org/resource/Australians[3,3]
-http://dbpedia.org/resource/Metalcore[4,4]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -6487,7 +6359,7 @@ Give me all actors who were born in Paris after 1950.
                 (PP (IN after)
                   (NP (CD 1950)))))))))
     (. .)))
-Ans: syntacticParser.Node@60a5227c
+Ans: syntacticParser.Node@1aa44d33
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -6511,8 +6383,8 @@ When was Carlo Giuliani shot?
       (NP (NNP Carlo) (NNP Giuliani))
       (VP (VBN shot)))
     (. ?)))
-Ans: syntacticParser.Node@3dfa56fe
-"Carlo Giuliani [2,3]"	"shot "	"syntacticParser.Node@3dfa56fe"
+Ans: syntacticParser.Node@421ec9be
+"Carlo Giuliani [2,3]"	"shot "	"syntacticParser.Node@421ec9be"
 http://dbpedia.org/resource/Death_of_Carlo_Giuliani[2,3]
 http://dbpedia.org/resource/Rudy_Giuliani[3,3]
 
@@ -6534,9 +6406,8 @@ Who are the four youngest MVP basketball players?
       (NP (DT the) (CD four) (JJ youngest)
         (NP (NN MVP) (NN basketball) (NNS players))))
     (. ?)))
-Ans: syntacticParser.Node@585a07e1
+Ans: syntacticParser.Node@714365ea
 http://dbpedia.org/resource/Most_Valuable_Player[5,5]
-http://dbpedia.org/resource/Basketball[6,7]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -6564,8 +6435,8 @@ Which companies have more than 1 million employees?
         (QP (JJR more) (IN than) (CD 1) (CD million))
         (NNS employees)))
     (. ?)))
-Ans: syntacticParser.Node@64b1e6d2
-"syntacticParser.Node@64b1e6d2"	"have"	"more than 1 million employees [3,7]"
+Ans: syntacticParser.Node@25e7d7ca
+"syntacticParser.Node@25e7d7ca"	"have"	"more than 1 million employees [3,7]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/> 
@@ -6596,9 +6467,8 @@ Give all swimmers that were born in Moscow.
                 (PP (IN in)
                   (NP (NNP Moscow)))))))))
     (. .)))
-Ans: syntacticParser.Node@6ffd54b
-"syntacticParser.Node@6ffd54b"	"born in"	"Moscow [7,7]"
-http://dbpedia.org/resource/Swimming_(sport)[2,2]
+Ans: syntacticParser.Node@458cedef
+"syntacticParser.Node@458cedef"	"born in"	"Moscow [7,7]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/> 
@@ -6620,8 +6490,8 @@ Who was called Rodzilla?
       (VP (VBN called)
         (NP (NNP Rodzilla))))
     (. ?)))
-Ans: syntacticParser.Node@444dc740
-"syntacticParser.Node@444dc740"	"called"	"Rodzilla [3,3]"
+Ans: syntacticParser.Node@48811e41
+"syntacticParser.Node@48811e41"	"called"	"Rodzilla [3,3]"
 
 
 PREFIX dbp: <http://dbpedia.org/property/> 
@@ -6645,7 +6515,7 @@ Show me the book that Muhammad Ali wrote.
             (NP (NNP Muhammad) (NNP Ali))
             (VP (VBD wrote))))))
     (. .)))
-Ans: syntacticParser.Node@603d82b2
+Ans: syntacticParser.Node@40b171ba
 http://dbpedia.org/resource/Muhammad_Ali[5,6]
 http://dbpedia.org/resource/Ali[6,6]
 http://dbpedia.org/resource/Muhammad[5,5]
@@ -6670,9 +6540,8 @@ Which museums does Paris have?
       (NP (NNP Paris))
       (VP (VB have)))
     (. ?)))
-Ans: syntacticParser.Node@27d383f3
-"Paris [3,3]"	"have "	"syntacticParser.Node@27d383f3"
-http://dbpedia.org/resource/Museum[1,1]
+Ans: syntacticParser.Node@59286e83
+"Paris [3,3]"	"have "	"syntacticParser.Node@59286e83"
 http://dbpedia.org/resource/Paris[3,3]
 
 
@@ -6695,9 +6564,8 @@ Which city has the most inhabitants?
       (VP (VBZ has)
         (NP (DT the) (JJS most) (NNS inhabitants))))
     (. ?)))
-Ans: syntacticParser.Node@5a22864e
-"syntacticParser.Node@5a22864e"	"has"	"the most inhabitants [3,5]"
-http://dbpedia.org/resource/City[1,1]
+Ans: syntacticParser.Node@8ac9657
+"syntacticParser.Node@8ac9657"	"has"	"the most inhabitants [3,5]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/> 
@@ -6721,9 +6589,8 @@ Which city has the least inhabitants?
       (VP (VBZ has)
         (NP (DT the) (JJS least) (NNS inhabitants))))
     (. ?)))
-Ans: syntacticParser.Node@5f3909b4
-"syntacticParser.Node@5f3909b4"	"has"	"the least inhabitants [3,5]"
-http://dbpedia.org/resource/City[1,1]
+Ans: syntacticParser.Node@5c23b335
+"syntacticParser.Node@5c23b335"	"has"	"the least inhabitants [3,5]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/> 
@@ -6748,7 +6615,7 @@ Give me all the TV shows with Neil Patrick Harris.
       (PP (IN with)
         (NP (NNP Neil) (NNP Patrick) (NNP Harris))))
     (. .)))
-Ans: syntacticParser.Node@51bafc72
+Ans: syntacticParser.Node@bf67d9a
 http://dbpedia.org/resource/Neil_Patrick_Harris[7,9]
 
 
@@ -6771,8 +6638,8 @@ Who wrote The Hunger Games?
       (VP (VBD wrote)
         (NP (DT The) (NN Hunger) (NN Games))))
     (. ?)))
-Ans: syntacticParser.Node@76281085
-"syntacticParser.Node@76281085"	"wrote"	"The Hunger Games [2,4]"
+Ans: syntacticParser.Node@3de90ebf
+"syntacticParser.Node@3de90ebf"	"wrote"	"The Hunger Games [2,4]"
 http://dbpedia.org/resource/The_Hunger_Games[2,4]
 http://dbpedia.org/resource/The_Hunger_(1983_film)[2,3]
 
@@ -6802,9 +6669,8 @@ Show a list of soccer clubs that play in the Bundesliga.
                   (PP (IN in)
                     (NP (DT the) (NNP Bundesliga))))))))))
     (. .)))
-Ans: syntacticParser.Node@9efb026
-"syntacticParser.Node@9efb026"	"play in"	"the Bundesliga [9,10]"
-http://dbpedia.org/resource/Association_football[4,4]
+Ans: syntacticParser.Node@7cf12ed9
+"syntacticParser.Node@7cf12ed9"	"play in"	"the Bundesliga [9,10]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -6826,7 +6692,7 @@ What country is Mount Everest in?
       (NP (NNP Mount) (NNP Everest))
       (PP (IN in)))
     (. ?)))
-Ans: syntacticParser.Node@dca781d
+Ans: syntacticParser.Node@597207f9
 http://dbpedia.org/resource/Mount_Everest[3,4]
 
 
@@ -6851,8 +6717,8 @@ Who is the founder of Penguin Books?
         (PP (IN of)
           (NP (NNP Penguin) (NNP Books)))))
     (. ?)))
-Ans: syntacticParser.Node@3a7e1f0e
-"syntacticParser.Node@3a7e1f0e"	"the founder "	"Penguin Books [5,6]"
+Ans: syntacticParser.Node@6c172e00
+"syntacticParser.Node@6c172e00"	"the founder "	"Penguin Books [5,6]"
 http://dbpedia.org/resource/Penguin_Books[5,6]
 
 
@@ -6874,11 +6740,9 @@ Which programming languages influenced Javascript?
       (VP (VBD influenced)
         (NP (NNP Javascript))))
     (. ?)))
-Ans: syntacticParser.Node@b14266
-"syntacticParser.Node@b14266"	"influenced"	"Javascript [4,4]"
+Ans: syntacticParser.Node@264dd507
+"syntacticParser.Node@264dd507"	"influenced"	"Javascript [4,4]"
 http://dbpedia.org/resource/JavaScript[4,4]
-http://dbpedia.org/resource/Programming_language[1,2]
-http://dbpedia.org/resource/Computer_programming[1,1]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -6899,8 +6763,8 @@ Did Che Guevara have children?
     (VP (VB have)
       (NP (NNS children)))
     (. ?)))
-Ans: syntacticParser.Node@40217560
-"syntacticParser.Node@40217560"	"have"	"children [4,4]"
+Ans: syntacticParser.Node@6009c1c9
+"syntacticParser.Node@6009c1c9"	"have"	"children [4,4]"
 http://dbpedia.org/resource/Che_Guevara[1,2]
 http://dbpedia.org/resource/Che_(2008_film)[1,1]
 
@@ -6925,10 +6789,9 @@ List all the musicals with music by Elton John.
           (PP (IN by)
             (NP (NNP Elton) (NNP John))))))
     (. .)))
-Ans: syntacticParser.Node@2d5ee5e4
-"syntacticParser.Node@2d5ee5e4"	"music "	"Elton John [7,8]"
+Ans: syntacticParser.Node@13287d92
+"syntacticParser.Node@13287d92"	"music "	"Elton John [7,8]"
 http://dbpedia.org/resource/Elton_John[7,8]
-http://dbpedia.org/resource/Musical_theatre[3,3]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -6951,8 +6814,7 @@ Show me all the breweries in Australia.
       (PP (IN in)
         (NP (NNP Australia))))
     (. .)))
-Ans: syntacticParser.Node@6e843bd3
-http://dbpedia.org/resource/Brewery[4,4]
+Ans: syntacticParser.Node@cd80fff
 http://dbpedia.org/resource/Australia[6,6]
 
 
@@ -6978,8 +6840,8 @@ When was the Titanic completed?
       (NP (DT the) (NNP Titanic))
       (VP (VBN completed)))
     (. ?)))
-Ans: syntacticParser.Node@253b4d18
-"the Titanic [2,3]"	"completed "	"syntacticParser.Node@253b4d18"
+Ans: syntacticParser.Node@429efbb0
+"the Titanic [2,3]"	"completed "	"syntacticParser.Node@429efbb0"
 http://dbpedia.org/resource/Titanic_(1997_film)[3,3]
 
 
@@ -7000,8 +6862,8 @@ How much did Pulp Fiction cost?
       (NP (NN Pulp) (NN Fiction))
       (VP (VB cost)))
     (. ?)))
-Ans: syntacticParser.Node@963f81d
-"Pulp Fiction [3,4]"	"cost "	"syntacticParser.Node@963f81d"
+Ans: syntacticParser.Node@64107e13
+"Pulp Fiction [3,4]"	"cost "	"syntacticParser.Node@64107e13"
 http://dbpedia.org/resource/Pulp_Fiction[3,4]
 http://dbpedia.org/resource/Pulp_(band)[3,3]
 
@@ -7024,8 +6886,7 @@ How many airlines are there?
     (SQ (VBP are)
       (NP (EX there)))
     (. ?)))
-Ans: syntacticParser.Node@484a3860
-http://dbpedia.org/resource/Airline[2,2]
+Ans: syntacticParser.Node@116f7c9a
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -7047,7 +6908,7 @@ Who played Agent Smith in Matrix?
         (PP (IN in)
           (NP (NNP Matrix)))))
     (. ?)))
-Ans: syntacticParser.Node@592816d6
+Ans: syntacticParser.Node@2f1407a8
 http://dbpedia.org/resource/Agent_Smith[2,3]
 http://dbpedia.org/resource/The_Matrix_(franchise)[5,5]
 
@@ -7071,11 +6932,8 @@ How much carbs does peanut butter have?
       (NP (NN peanut) (NN butter))
       (VP (VB have)))
     (. ?)))
-Ans: syntacticParser.Node@4e1bb405
-"peanut butter [4,5]"	"have "	"syntacticParser.Node@4e1bb405"
-http://dbpedia.org/resource/Peanut[4,4]
-http://dbpedia.org/resource/Peanut_butter[4,5]
-http://dbpedia.org/resource/Butter[5,5]
+Ans: syntacticParser.Node@22ec729b
+"peanut butter [4,5]"	"have "	"syntacticParser.Node@22ec729b"
 
 
 PREFIX dbp: <http://dbpedia.org/property/>
@@ -7095,8 +6953,8 @@ Which book has the most pages?
       (VP (VBZ has)
         (NP (DT the) (JJS most) (NNS pages))))
     (. ?)))
-Ans: syntacticParser.Node@211b8fc9
-"syntacticParser.Node@211b8fc9"	"has"	"the most pages [3,5]"
+Ans: syntacticParser.Node@63d067df
+"syntacticParser.Node@63d067df"	"has"	"the most pages [3,5]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -7119,9 +6977,8 @@ Which bridges cross the Seine?
       (VP (VBP cross)
         (NP (DT the) (NN Seine))))
     (. ?)))
-Ans: syntacticParser.Node@4b61fff5
-"syntacticParser.Node@4b61fff5"	"cross"	"the Seine [3,4]"
-http://dbpedia.org/resource/Cross[2,2]
+Ans: syntacticParser.Node@cdaae59
+"syntacticParser.Node@cdaae59"	"cross"	"the Seine [3,4]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -7148,10 +7005,9 @@ Who is the mayor of the capital of French Polynesia?
             (PP (IN of)
               (NP (JJ French) (NNS Polynesia)))))))
     (. ?)))
-Ans: syntacticParser.Node@70f9b032
-"syntacticParser.Node@628a7252"	"the capital "	"French Polynesia [8,9]"
-"syntacticParser.Node@70f9b032"	"the mayor "	"syntacticParser.Node@628a7252"
-http://dbpedia.org/resource/Mayor[3,3]
+Ans: syntacticParser.Node@24510e3d
+"syntacticParser.Node@f773c0b"	"the capital "	"French Polynesia [8,9]"
+"syntacticParser.Node@24510e3d"	"the mayor "	"syntacticParser.Node@f773c0b"
 http://dbpedia.org/resource/French_Polynesia[8,9]
 http://dbpedia.org/resource/France[8,8]
 
@@ -7176,9 +7032,9 @@ When did Dracula's creator die?
         (NN creator))
       (VP (VB die)))
     (. ?)))
-Ans: syntacticParser.Node@360abbe9
-"syntacticParser.Node@699eafb1"	"die "	"syntacticParser.Node@360abbe9"
-"syntacticParser.Node@699eafb1"	"creator "	"Dracula[2,13]"
+Ans: syntacticParser.Node@533e0980
+"syntacticParser.Node@91c9700"	"die "	"syntacticParser.Node@533e0980"
+"syntacticParser.Node@91c9700"	"creator "	"Dracula[2,13]"
 http://dbpedia.org/resource/Dracula[2,2]
 
 
@@ -7205,8 +7061,8 @@ What is the location of the Houses of Parliament?
             (PP (IN of)
               (NP (NNP Parliament)))))))
     (. ?)))
-Ans: syntacticParser.Node@44cfcb02
-"syntacticParser.Node@44cfcb02"	"the location "	"the Houses of Parliament [5,8]"
+Ans: syntacticParser.Node@723dcdc0
+"syntacticParser.Node@723dcdc0"	"the location "	"the Houses of Parliament [5,8]"
 http://dbpedia.org/resource/Palace_of_Westminster[6,8]
 
 
@@ -7230,8 +7086,8 @@ Show me all English Gothic buildings in Kent.
         (PP (IN in)
           (NP (NNP Kent)))))
     (. .)))
-Ans: syntacticParser.Node@6d077e0a
-"syntacticParser.Node@6d077e0a"	"all English Gothic buildings "	"Kent [7,7]"
+Ans: syntacticParser.Node@32403d1f
+"syntacticParser.Node@32403d1f"	"all English Gothic buildings "	"Kent [7,7]"
 http://dbpedia.org/resource/English_Gothic_architecture[3,4]
 http://dbpedia.org/resource/Gothic_architecture[4,5]
 
@@ -7261,10 +7117,8 @@ Who was the pope that founded the Vatican Television?
             (VP (VBD founded)
               (NP (DT the) (NNP Vatican) (NNP Television)))))))
     (. ?)))
-Ans: syntacticParser.Node@797e4667
-"syntacticParser.Node@797e4667"	"founded"	"the Vatican Television [6,8]"
-http://dbpedia.org/resource/Pope[3,3]
-http://dbpedia.org/resource/Holy_See[6,7]
+Ans: syntacticParser.Node@2bf617aa
+"syntacticParser.Node@2bf617aa"	"founded"	"the Vatican Television [6,8]"
 http://dbpedia.org/resource/Vatican_Television_Center[7,8]
 
 
@@ -7289,10 +7143,9 @@ What airlines are part of the SkyTeam alliance?
         (PP (IN of)
           (NP (DT the) (NNP SkyTeam) (NN alliance)))))
     (. ?)))
-Ans: syntacticParser.Node@f8195b3
-"syntacticParser.Node@f8195b3"	"part "	"the SkyTeam alliance [5,7]"
+Ans: syntacticParser.Node@53ae2ca2
+"syntacticParser.Node@53ae2ca2"	"part "	"the SkyTeam alliance [5,7]"
 http://dbpedia.org/resource/SkyTeam[6,6]
-http://dbpedia.org/resource/Alliance[7,7]
 
 
 PREFIX res: <http://dbpedia.org/resource/>
@@ -7320,8 +7173,8 @@ What is the total population of Melbourne, Florida?
           (NP (NNP Melbourne) (, ,)
             (NP (NNP Florida))))))
     (. ?)))
-Ans: syntacticParser.Node@6f1fa41f
-"syntacticParser.Node@6f1fa41f"	"the total population "	"Melbourne , Florida [6,8]"
+Ans: syntacticParser.Node@9ba1691
+"syntacticParser.Node@9ba1691"	"the total population "	"Melbourne , Florida [6,8]"
 http://dbpedia.org/resource/Florida[8,8]
 http://dbpedia.org/resource/Melbourne[6,6]
 http://dbpedia.org/resource/Melbourne,_Florida[6,8]
@@ -7343,11 +7196,10 @@ Which airports does Air China serve?
       (NP (NN Air) (NNP China))
       (VP (VB serve)))
     (. ?)))
-Ans: syntacticParser.Node@9adbce2
-"Air China [3,4]"	"serve "	"syntacticParser.Node@9adbce2"
+Ans: syntacticParser.Node@6f8b63fa
+"Air China [3,4]"	"serve "	"syntacticParser.Node@6f8b63fa"
 http://dbpedia.org/resource/Air_China[3,4]
 http://dbpedia.org/resource/New_Ventures[4,4]
-http://dbpedia.org/resource/Airport[1,1]
 
 
 PREFIX res: <http://dbpedia.org/resource/>
@@ -7368,8 +7220,8 @@ In which year was Rachel Stevens born?
       (NP (NNP Rachel) (NNP Stevens))
       (VP (VBN born)))
     (. ?)))
-Ans: syntacticParser.Node@71c8be99
-"Rachel Stevens [4,5]"	"born "	"syntacticParser.Node@71c8be99"
+Ans: syntacticParser.Node@8803469
+"Rachel Stevens [4,5]"	"born "	"syntacticParser.Node@8803469"
 http://dbpedia.org/resource/Rachel_Stevens[4,5]
 
 
@@ -7390,8 +7242,8 @@ Where was JFK assassinated?
       (NP (NNP JFK))
       (VP (VBN assassinated)))
     (. ?)))
-Ans: syntacticParser.Node@64bd9663
-"JFK [2,2]"	"assassinated "	"syntacticParser.Node@64bd9663"
+Ans: syntacticParser.Node@185a33d9
+"JFK [2,2]"	"assassinated "	"syntacticParser.Node@185a33d9"
 
 
 PREFIX res: <http://dbpedia.org/resource/>
@@ -7414,8 +7266,8 @@ How many politicians graduated from Columbia University?
         (PP (IN from)
           (NP (NNP Columbia) (NNP University)))))
     (. ?)))
-Ans: syntacticParser.Node@3c477278
-"syntacticParser.Node@3c477278"	"graduated from"	"Columbia University [5,6]"
+Ans: syntacticParser.Node@15be6e61
+"syntacticParser.Node@15be6e61"	"graduated from"	"Columbia University [5,6]"
 http://dbpedia.org/resource/Columbia_University[5,6]
 
 
@@ -7441,8 +7293,8 @@ Which scientist is known for the Manhattan Project and the Nobel Peace Prize?
             (CC and)
             (NP (DT the) (NNP Nobel) (NNP Peace) (NNP Prize))))))
     (. ?)))
-Ans: syntacticParser.Node@c91031d
-"syntacticParser.Node@c91031d"	"known for"	"the Manhattan Project and the Nobel Peace Prize [5,12]"
+Ans: syntacticParser.Node@6292ee49
+"syntacticParser.Node@6292ee49"	"known for"	"the Manhattan Project and the Nobel Peace Prize [5,12]"
 http://dbpedia.org/resource/Nobel_Peace_Prize[10,12]
 http://dbpedia.org/resource/Manhattan_Project[6,7]
 http://dbpedia.org/resource/Nobel_Prize[10,10]
@@ -7471,10 +7323,9 @@ What is the highest volcano in Africa?
         (PP (IN in)
           (NP (NNP Africa)))))
     (. ?)))
-Ans: syntacticParser.Node@58cc12de
-"syntacticParser.Node@58cc12de"	"the highest volcano "	"Africa [6,6]"
+Ans: syntacticParser.Node@3adc937d
+"syntacticParser.Node@3adc937d"	"the highest volcano "	"Africa [6,6]"
 http://dbpedia.org/resource/Africa[6,6]
-http://dbpedia.org/resource/Volcano[4,4]
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
@@ -7502,10 +7353,9 @@ Which beer originated in Ireland?
         (PP (IN in)
           (NP (NNP Ireland)))))
     (. ?)))
-Ans: syntacticParser.Node@6363ddcb
-"syntacticParser.Node@6363ddcb"	"originated in"	"Ireland [4,4]"
+Ans: syntacticParser.Node@5368a15e
+"syntacticParser.Node@5368a15e"	"originated in"	"Ireland [4,4]"
 http://dbpedia.org/resource/Ireland[4,4]
-http://dbpedia.org/resource/Beer[1,1]
 
 
 PREFIX res: <http://dbpedia.org/resource/>
@@ -7528,8 +7378,8 @@ What are the specialities of the UNC Health Care?
         (PP (IN of)
           (NP (DT the) (NNP UNC) (NNP Health) (NNP Care)))))
     (. ?)))
-Ans: syntacticParser.Node@7ab6bdc4
-"syntacticParser.Node@7ab6bdc4"	"the specialities "	"the UNC Health Care [5,8]"
+Ans: syntacticParser.Node@6e94b337
+"syntacticParser.Node@6e94b337"	"the specialities "	"the UNC Health Care [5,8]"
 http://dbpedia.org/resource/UNC_Health_Care[6,8]
 http://dbpedia.org/resource/University_of_North_Carolina_at_Chapel_Hill[6,6]
 
@@ -7555,8 +7405,8 @@ Who is the owner of Facebook?
         (PP (IN of)
           (NP (NNP Facebook)))))
     (. ?)))
-Ans: syntacticParser.Node@2ba1b9fb
-"syntacticParser.Node@2ba1b9fb"	"the owner "	"Facebook [5,5]"
+Ans: syntacticParser.Node@76086073
+"syntacticParser.Node@76086073"	"the owner "	"Facebook [5,5]"
 http://dbpedia.org/resource/Facebook[5,5]
 
 
@@ -7576,8 +7426,7 @@ From which region is the Melon de Bourgogne?
     (SQ (VBZ is)
       (NP (DT the) (JJ Melon) (JJ de) (NNP Bourgogne)))
     (. ?)))
-Ans: syntacticParser.Node@4be22d27
-http://dbpedia.org/resource/Regions_of_France[2,2]
+Ans: syntacticParser.Node@6197a4a9
 http://dbpedia.org/resource/Melon_de_Bourgogne[5,7]
 
 
@@ -7599,8 +7448,8 @@ Who was influenced by Socrates?
         (PP (IN by)
           (NP (NNS Socrates)))))
     (. ?)))
-Ans: syntacticParser.Node@25e4fcd6
-"syntacticParser.Node@25e4fcd6"	"influenced by"	"Socrates [4,4]"
+Ans: syntacticParser.Node@6d65805d
+"syntacticParser.Node@6d65805d"	"influenced by"	"Socrates [4,4]"
 http://dbpedia.org/resource/Socrates[4,4]
 
 
@@ -7625,9 +7474,9 @@ Who was president of Pakistan in 1978?
       (PP (IN in)
         (NP (CD 1978))))
     (. ?)))
-Ans: syntacticParser.Node@67f4e84d
+Ans: syntacticParser.Node@3ff30a22
+"syntacticParser.Node@3ff30a22"	"president "	"Pakistan [4,4]"
 http://dbpedia.org/resource/Pakistan[4,4]
-http://dbpedia.org/resource/President_of_Pakistan[2,4]
 
 
 PREFIX res: <http://dbpedia.org/resource/>
@@ -7651,8 +7500,8 @@ Give me English actors starring in Lovesick.
           (PP (IN in)
             (NP (NNP Lovesick))))))
     (. .)))
-Ans: syntacticParser.Node@4b02e4dd
-"syntacticParser.Node@4b02e4dd"	"starring in"	"Lovesick [6,6]"
+Ans: syntacticParser.Node@1a707ccc
+"syntacticParser.Node@1a707ccc"	"starring in"	"Lovesick [6,6]"
 http://dbpedia.org/resource/English_language[2,2]
 
 
@@ -7681,9 +7530,8 @@ Give me all types of eating disorders.
             (VP (VBG eating)
               (NP (NNS disorders)))))))
     (. .)))
-Ans: syntacticParser.Node@d51371a
-"syntacticParser.Node@d51371a"	"eating"	"disorders [6,6]"
-http://dbpedia.org/resource/Eating_disorder[5,6]
+Ans: syntacticParser.Node@561c549b
+"syntacticParser.Node@561c549b"	"eating"	"disorders [6,6]"
 
 
 PREFIX yago: <http://dbpedia.org/class/yago/> 
@@ -7704,8 +7552,8 @@ Who was married to president Chirac?
         (PP (TO to)
           (NP (NNP president) (NNP Chirac)))))
     (. ?)))
-Ans: syntacticParser.Node@650a8a7a
-"syntacticParser.Node@650a8a7a"	"married to"	"president Chirac [4,5]"
+Ans: syntacticParser.Node@f3b6790
+"syntacticParser.Node@f3b6790"	"married to"	"president Chirac [4,5]"
 
 
 PREFIX dbo: <http://dbpedia.org/ontology/> 
@@ -7727,9 +7575,8 @@ What is the largest metropolitan area in Washington state?
         (PP (IN in)
           (NP (NNP Washington) (NN state)))))
     (. ?)))
-Ans: syntacticParser.Node@4f776db5
-"syntacticParser.Node@4f776db5"	"the largest metropolitan area "	"Washington state [7,8]"
-http://dbpedia.org/resource/Metropolitan_area[4,5]
+Ans: syntacticParser.Node@3bacc83c
+"syntacticParser.Node@3bacc83c"	"the largest metropolitan area "	"Washington state [7,8]"
 
 
 PREFIX res: <http://dbpedia.org/resource/>
@@ -7751,11 +7598,9 @@ Where in France is sparkling wine produced?
       (NP (JJ sparkling) (NN wine))
       (VP (VBN produced)))
     (. ?)))
-Ans: syntacticParser.Node@409defc
-"sparkling wine [4,5]"	"produced "	"syntacticParser.Node@409defc"
-http://dbpedia.org/resource/Sparkling_wine[4,5]
+Ans: syntacticParser.Node@682ba557
+"sparkling wine [4,5]"	"produced "	"syntacticParser.Node@682ba557"
 http://dbpedia.org/resource/France[2,2]
-http://dbpedia.org/resource/Wine[5,5]
 
 
 PREFIX res: <http://dbpedia.org/resource/>
@@ -7776,8 +7621,8 @@ Where did Hillel Slovak die?
       (NP (NNP Hillel) (NNP Slovak))
       (VP (VB die)))
     (. ?)))
-Ans: syntacticParser.Node@3b02384b
-"Hillel Slovak [2,3]"	"die "	"syntacticParser.Node@3b02384b"
+Ans: syntacticParser.Node@11ece49e
+"Hillel Slovak [2,3]"	"die "	"syntacticParser.Node@11ece49e"
 http://dbpedia.org/resource/Hillel_Slovak[2,3]
 http://dbpedia.org/resource/Hillel_the_Elder[2,2]
 
@@ -7801,10 +7646,9 @@ What is the timezone in San Pedro de Atacama?
         (PP (IN in)
           (NP (NNP San) (NNP Pedro) (NNP de) (NNP Atacama)))))
     (. ?)))
-Ans: syntacticParser.Node@11f42d0
-"syntacticParser.Node@11f42d0"	"the timezone "	"San Pedro de Atacama [5,8]"
+Ans: syntacticParser.Node@6257c3f4
+"syntacticParser.Node@6257c3f4"	"the timezone "	"San Pedro de Atacama [5,8]"
 http://dbpedia.org/resource/San_Pedro_de_Atacama[5,8]
-http://dbpedia.org/resource/Time_zone[3,3]
 
 
 PREFIX res: <http://dbpedia.org/resource/>
@@ -7827,8 +7671,8 @@ In which city does the Chile Route 68 end?
         (ADVP (RB 68))
         (VB end)))
     (. ?)))
-Ans: syntacticParser.Node@3effc0b0
-"the Chile Route [4,6]"	"68 end "	"syntacticParser.Node@3effc0b0"
+Ans: syntacticParser.Node@3fca769
+"the Chile Route [4,6]"	"68 end "	"syntacticParser.Node@3fca769"
 http://dbpedia.org/resource/Chile[5,5]
 
 

@@ -1,15 +1,227 @@
+ID: 	12
+Content: 	Is proinsulin a protein?
+OnlyDBO: true	Aggregation: false
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=false}
+Focus Content: 	
+Entity List: 	0
+-------------------------
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+entityList size equals 0.
+
 Available catalogs: [/, chainyi, dbpedia2014, system, zhishime]
 
 Got a graph maker for the connection.
+ID: 	123
+Content: 	Do Prince Harry and Prince William have the same parents?
+OnlyDBO: false	Aggregation: true
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=false}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+ANSWER = null / ANSWER has exception: No matched entity in the Node.
+
+ID: 	13
+Content: 	Are tree frogs a type of amphibian?
+OnlyDBO: true	Aggregation: false
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=false}
+Focus Content: 	
+Entity List: 	0
+-------------------------
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+entityList size equals 0.
+
+ID: 	162
+Content: 	Did Socrates influence Aristotle?
+OnlyDBO: true	Aggregation: false
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=false}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/influenced
+	http://dbpedia.org/resource/Age_of_Enlightenment	http://dbpedia.org/resource/Christian_philosophy	http://dbpedia.org/resource/Western_philosophy	http://dbpedia.org/resource/Islamic_philosophy	http://dbpedia.org/resource/List_of_writers_influenced_by_Aristotle	http://dbpedia.org/resource/Jewish_philosophy	http://dbpedia.org/resource/Empedocles	http://dbpedia.org/resource/Socrates	http://dbpedia.org/resource/Heraclitus	http://dbpedia.org/resource/Zeno_of_Elea	http://dbpedia.org/resource/Aesop	http://dbpedia.org/resource/Parmenides
+====================================================
+
+ID: 	169
+Content: 	Did Tesla win a nobel prize in physics?
+OnlyDBO: true	Aggregation: false
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=false}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception: 169 constraintList size equals 2 && pipeline style &&No matched entity
+ID: 	170
+Content: 	Is Rita Wilson the wife of Tom Hanks?
+OnlyDBO: true	Aggregation: false
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=false}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception: No matched entity in the Node.
+
+ID: 	178
+Content: 	Was Margaret Thatcher a chemist?
+OnlyDBO: true	Aggregation: false
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=false}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+
+ID: 	179
+Content: 	Was Marc Chagall a jew?
+OnlyDBO: false	Aggregation: false
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=false}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+
+ID: 	27
+Content: 	Was U.S. president Jackson involved in a war?
+OnlyDBO: true	Aggregation: false
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=false}
+Focus Content: 	
+Entity List: 	0
+-------------------------
+ANSWER = null / ANSWER has exception: entityList size equals 0.
+
+ID: 	46
+Content: 	Is Frank Herbert still alive?
+OnlyDBO: true	Aggregation: true
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=false}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+
+ID: 	60
+Content: 	Is there a video game called Battle Chess?
+OnlyDBO: true	Aggregation: false
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=false}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+
+ID: 	66
+Content: 	Is Christian Bale starring in Velvet Goldmine?
+OnlyDBO: true	Aggregation: false
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=false}
+Focus Content: 	
+Entity List: 	3
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/starring
+	http://dbpedia.org/resource/Ewan_McGregor	http://dbpedia.org/resource/Christian_Bale	http://dbpedia.org/resource/Jonathan_Rhys_Meyers
+====================================================
+
+ID: 	7
+Content: 	Was the wife of president Lincoln called Mary?
+OnlyDBO: true	Aggregation: false
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=false}
+Focus Content: 	
+Entity List: 	0
+-------------------------
+ANSWER = null / ANSWER has exception: entityList size equals 0.
+
+ID: 	93
+Content: 	Was Natalie Portman born in the United States?
+OnlyDBO: true	Aggregation: false
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=false}
+Focus Content: 	
+Entity List: 	3
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/born
+	http://dbpedia.org/resource/Shawn_Z.	http://dbpedia.org/resource/Rob_Sonic	http://dbpedia.org/resource/Jonny_Chops	http://dbpedia.org/resource/Obadiah_Parker	http://dbpedia.org/resource/Julian_Hatton	http://dbpedia.org/resource/David_Maraghy	http://dbpedia.org/resource/Chris_Jay	http://dbpedia.org/resource/Jedd_Novatt	http://dbpedia.org/resource/Jeremy_Hitchcock	http://dbpedia.org/resource/Jake_Stanczak
+====================================================
+
+ID: 	96
+Content: 	Is Pamela Anderson a vegan?
+OnlyDBO: false	Aggregation: false
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=false}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+
+ID: 	223
+Content: 	Does Abraham Lincoln's death place have a website?
+OnlyDBO: true	Aggregation: false
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=false}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+ANSWER = null / ANSWER has exception: No matched entity in the Node.
+
+ID: 	207
+Content: 	Does the Isar flow into a lake?
+OnlyDBO: true	Aggregation: false
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=false}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception: No matched entity in the Node.
+
+ID: 	219
+Content: 	Is Cola a beverage?
+OnlyDBO: true	Aggregation: false
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=false}
+Focus Content: 	
+Entity List: 	0
+-------------------------
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+entityList size equals 0.
+
+ID: 	245
+Content: 	Is James Bond married?
+OnlyDBO: true	Aggregation: false
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=false}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+
+ID: 	264
+Content: 	Did Che Guevara have children?
+OnlyDBO: true	Aggregation: false
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=false}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+ANSWER = null / ANSWER has exception: No matched entity in the Node.
+
 ID: 	100
 Content: 	When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?
 OnlyDBO: false	Aggregation: false
 Category: 	DATE
 Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	
-Entity List: 	2
+Entity List: 	0
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: entityList size equals 0.
+
 ID: 	101
 Content: 	Which German cities have more than 250000 inhabitants?
 OnlyDBO: true	Aggregation: true
@@ -18,14 +230,15 @@ Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	German cities
 Entity List: 	1
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: No matched entity in the Node.
+
 ID: 	105
 Content: 	What is the second highest mountain on Earth?
 OnlyDBO: true	Aggregation: true
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	second highest mountain
-Entity List: 	2
+Entity List: 	1
 -------------------------
 ANSWER_TYPE = 0
 Predicate: http://dbpedia.org/property/mass
@@ -38,11 +251,9 @@ OnlyDBO: true	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	countries
-Entity List: 	1
+Entity List: 	0
 -------------------------
-ANSWER_TYPE = 0
-
-====================================================
+ANSWER = null / ANSWER has exception: entityList size equals 0.
 
 ID: 	111
 Content: 	Who is the Formula 1 race driver with the most races?
@@ -50,9 +261,10 @@ OnlyDBO: true	Aggregation: true
 Category: 	RESOURCE
 Rule Judgement:	{WHO=true, WHERE=false, COMPARISON=true}
 Focus Content: 	
-Entity List: 	2
+Entity List: 	1
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: No matched entity in the Node.
+
 ID: 	113
 Content: 	Who is the youngest player in the Premier League?
 OnlyDBO: true	Aggregation: true
@@ -71,9 +283,11 @@ OnlyDBO: false	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	longest river
-Entity List: 	1
+Entity List: 	0
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+entityList size equals 0.
+
 ID: 	116
 Content: 	Does Breaking Bad have more episodes than Game of Thrones?
 OnlyDBO: true	Aggregation: true
@@ -93,7 +307,8 @@ Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	U.S. state
 Entity List: 	1
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: No matched entity in the Node.
+
 ID: 	150
 Content: 	Was the Cuban Missile Crisis earlier than the Bay of Pigs Invasion?
 OnlyDBO: true	Aggregation: true
@@ -102,7 +317,8 @@ Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	
 Entity List: 	3
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+
 ID: 	17
 Content: 	Give me all cities in New Jersey with more than 100000 inhabitants.
 OnlyDBO: true	Aggregation: true
@@ -150,17 +366,19 @@ Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	
 Entity List: 	0
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: entityList size equals 0.
+
 ID: 	24
 Content: 	Which mountain is the highest after the Annapurna?
 OnlyDBO: true	Aggregation: true
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	mountain
-Entity List: 	2
+Entity List: 	1
 -------------------------
 ANSWER_TYPE = 0
-
+Predicate: http://dbpedia.org/ontology/mountainRange
+	http://dbpedia.org/resource/Himalayas
 ====================================================
 
 ID: 	30
@@ -169,11 +387,9 @@ OnlyDBO: false	Aggregation: true
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	U.S. state
-Entity List: 	3
+Entity List: 	1
 -------------------------
-ANSWER_TYPE = 0
-
-====================================================
+ANSWER = null / ANSWER has exception: No matched entity in the Node.
 
 ID: 	34
 Content: 	Which countries have more than two official languages?
@@ -181,11 +397,9 @@ OnlyDBO: true	Aggregation: true
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	countries
-Entity List: 	1
+Entity List: 	0
 -------------------------
-ANSWER_TYPE = 0
-
-====================================================
+ANSWER = null / ANSWER has exception: entityList size equals 0.
 
 ID: 	40
 Content: 	What is the highest mountain in Australia?
@@ -193,7 +407,7 @@ OnlyDBO: true	Aggregation: true
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	highest mountain
-Entity List: 	2
+Entity List: 	1
 -------------------------
 ANSWER_TYPE = 0
 Predicate: http://dbpedia.org/ontology/region
@@ -219,9 +433,11 @@ OnlyDBO: false	Aggregation: true
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	libraries
-Entity List: 	1
+Entity List: 	0
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+entityList size equals 0.
+
 ID: 	58
 Content: 	Who produced the most films?
 OnlyDBO: true	Aggregation: true
@@ -230,7 +446,8 @@ Rule Judgement:	{WHO=true, WHERE=false, COMPARISON=true}
 Focus Content: 	
 Entity List: 	0
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: entityList size equals 0.
+
 ID: 	61
 Content: 	Which mountains are higher than the Nanga Parbat?
 OnlyDBO: false	Aggregation: true
@@ -239,7 +456,8 @@ Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	mountains
 Entity List: 	1
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+
 ID: 	67
 Content: 	Give me the websites of companies with more than 500000 employees.
 OnlyDBO: false	Aggregation: true
@@ -248,27 +466,27 @@ Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	websites
 Entity List: 	0
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: entityList size equals 0.
+
 ID: 	69
 Content: 	Which caves have more than 3 entrances?
 OnlyDBO: false	Aggregation: true
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	caves
-Entity List: 	1
+Entity List: 	0
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: entityList size equals 0.
+
 ID: 	81
 Content: 	Which country has the most official languages?
 OnlyDBO: false	Aggregation: true
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	country
-Entity List: 	1
+Entity List: 	0
 -------------------------
-ANSWER_TYPE = 0
-
-====================================================
+ANSWER = null / ANSWER has exception: entityList size equals 0.
 
 ID: 	92
 Content: 	What is the highest mountain?
@@ -276,9 +494,11 @@ OnlyDBO: true	Aggregation: true
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	highest mountain
-Entity List: 	1
+Entity List: 	0
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+entityList size equals 0.
+
 ID: 	98
 Content: 	What is the most beautiful painting?
 OnlyDBO: false	Aggregation: false
@@ -287,14 +507,16 @@ Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	most beautiful painting
 Entity List: 	0
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+entityList size equals 0.
+
 ID: 	231
 Content: 	How many inhabitants does the largest city in Canada have?
 OnlyDBO: true	Aggregation: false
 Category: 	NUMBER
 Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	inhabitants
-Entity List: 	2
+Entity List: 	1
 -------------------------
 Pair Predicate: http://dbpedia.org/ontology/largestCity	http://dbpedia.org/property/resides
 	http://dbpedia.org/resource/Trish_Stratus	http://dbpedia.org/resource/Michael_Elgin	http://dbpedia.org/resource/Derek_Harvie	http://dbpedia.org/resource/Willie_Farakas	http://dbpedia.org/resource/Sweet_Daddy_Siki	http://dbpedia.org/resource/Johnny_Devine	http://dbpedia.org/resource/Orhan_Demir
@@ -308,7 +530,8 @@ Rule Judgement:	{WHO=true, WHERE=false, COMPARISON=true}
 Focus Content: 	
 Entity List: 	1
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+
 ID: 	214
 Content: 	What is the most frequent cause of death?
 OnlyDBO: true	Aggregation: false
@@ -317,16 +540,18 @@ Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	most frequent cause
 Entity List: 	0
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: entityList size equals 0.
+
 ID: 	218
 Content: 	Give me all films produced by Steven Spielberg with a budget of at least $80 million.
 OnlyDBO: true	Aggregation: true
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	films
-Entity List: 	2
+Entity List: 	1
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: No matched entity in the Node.
+
 ID: 	217
 Content: 	What is the bridge with the longest span?
 OnlyDBO: true	Aggregation: true
@@ -335,7 +560,8 @@ Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	bridge
 Entity List: 	0
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: entityList size equals 0.
+
 ID: 	216
 Content: 	Who is the tallest player of the Atlanta Falcons?
 OnlyDBO: true	Aggregation: true
@@ -355,9 +581,10 @@ OnlyDBO: true	Aggregation: true
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	poet
-Entity List: 	1
+Entity List: 	0
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: entityList size equals 0.
+
 ID: 	228
 Content: 	What was Brazil's lowest rank in the FIFA World Ranking?
 OnlyDBO: false	Aggregation: false
@@ -379,7 +606,8 @@ Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	Tim Burton
 Entity List: 	1
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: constraintList size > 2
+
 ID: 	209
 Content: 	How heavy is Jupiter's lightest moon?
 OnlyDBO: false	Aggregation: true
@@ -388,25 +616,29 @@ Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	
 Entity List: 	1
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+
 ID: 	220
 Content: 	Which actor was casted in the most movies?
 OnlyDBO: true	Aggregation: true
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	actor
-Entity List: 	2
+Entity List: 	0
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+entityList size equals 0.
+
 ID: 	224
 Content: 	Who are the four youngest MVP basketball players?
 OnlyDBO: false	Aggregation: true
 Category: 	RESOURCE
 Rule Judgement:	{WHO=true, WHERE=false, COMPARISON=true}
 Focus Content: 	
-Entity List: 	2
+Entity List: 	1
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+
 ID: 	251
 Content: 	Which companies have more than 1 million employees?
 OnlyDBO: false	Aggregation: false
@@ -415,25 +647,28 @@ Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	companies
 Entity List: 	0
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: entityList size equals 0.
+
 ID: 	256
 Content: 	Which city has the most inhabitants?
 OnlyDBO: true	Aggregation: true
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	city
-Entity List: 	1
+Entity List: 	0
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: entityList size equals 0.
+
 ID: 	257
 Content: 	Which city has the least inhabitants?
 OnlyDBO: true	Aggregation: true
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	city
-Entity List: 	1
+Entity List: 	0
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: entityList size equals 0.
+
 ID: 	272
 Content: 	Which book has the most pages?
 OnlyDBO: true	Aggregation: true
@@ -442,14 +677,15 @@ Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	book
 Entity List: 	0
 -------------------------
-ANSWER = null / ANSWER has exception
+ANSWER = null / ANSWER has exception: entityList size equals 0.
+
 ID: 	286
 Content: 	What is the highest volcano in Africa?
 OnlyDBO: false	Aggregation: true
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	highest volcano
-Entity List: 	2
+Entity List: 	1
 -------------------------
 ANSWER_TYPE = 0
 Predicate: http://dbpedia.org/property/continent
@@ -462,16 +698,21 @@ OnlyDBO: false	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, WHERE=false, COMPARISON=true}
 Focus Content: 	largest metropolitan area
-Entity List: 	1
+Entity List: 	0
 -------------------------
-ANSWER = null / ANSWER has exception
-XML Question ID: 17
-XML Question ID: 40
-XML Question ID: 216
+ANSWER = null / ANSWER has exception: entityList size equals 0.
+
 XML Question ID: 47
-XML Question ID: 180
-XML Question ID: 105
-XML Question ID: 186
-XML Question ID: 231
-XML Question ID: 228
+XML Question ID: 216
 XML Question ID: 286
+XML Question ID: 93
+XML Question ID: 66
+XML Question ID: 228
+XML Question ID: 180
+XML Question ID: 40
+XML Question ID: 24
+XML Question ID: 17
+XML Question ID: 231
+XML Question ID: 162
+XML Question ID: 186
+XML Question ID: 105

@@ -86,9 +86,14 @@ public class responseParser {
 							}
 						}
 					}
+						
 					IndexTransform transform = new IndexTransform(startIndex, endIndex, qf);
 					if(transform.isMatched){
-						entities.add(new Entity(candTitle, transform.start, transform.end));
+						if(Character.isUpperCase(qf.question.charAt(startIndex))){
+							entities.add(new Entity(candTitle, transform.start, transform.end));
+						}else{
+							System.err.println(qf.id + ": LowerCase");
+						}
 					}else{
 						System.err.println(qf.id + ": Entity not matched.");
 					}
