@@ -12,7 +12,9 @@ import java.util.List;
 
 import knowledgebase.ClientManagement;
 
+import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.RDFNode;
+
 import paser.FocusConstraint;
 import paser.QuestionFrame;
 import syntacticParser.Constraint;
@@ -207,8 +209,90 @@ public class Main {
 		addTypeConstraint(answer, type);
 	}
 	
+	public static Answer dealWithNumberConstraint(Answer answer){
+		LinkedList<RDFNode> res;
+		boolean isOneStep = false;
+		RDFNode oneStep = null;
+		Predicate p = null;
+		PairPredicate pa = null;
+		int i;
+		if(answer.answerType == 0){
+			for(i=0; i<answer.predictList.size() && i<SimilarityFunction.predictNum; ++i){
+				p = answer.predictList.get(i);
+				res = answer.resources.get(p);
+				if(res.size() > 1){
+					continue;
+				}
+				
+				RDFNode resource = res.get(0);
+				if(resource.isLiteral()){
+					Literal literal = resource.asLiteral();
+					String resourceString = literal.getLexicalForm();
+					int t;
+					for(t=0; t<resourceString.length(); ++t){
+						if(!Character.isDigit(resourceString.charAt(t)) && resourceString.charAt(t) != '.'){
+							break;
+						}
+					}
+					if(t == resourceString.length()){
+						isOneStep = true;
+						oneStep = resource;
+						break;
+					}
+				}
+			}
+			if(isOneStep){
+				answer.predictList = new ArrayList<Predicate>();
+				answer.predictList.add(p);
+			}else{
+				if(i == answer.predictList.size() || i == SimilarityFunction.predictNum){
+					answer.predictList = new ArrayList<Predicate>();
+				}
+			}
+		}
+		
+		if(answer.answerType == 1){
+			for (i=0; i<answer.pairPredicates.size() && i<SimilarityFunction.predictNum; ++i) {
+				pa = answer.pairPredicates.get(i);
+				res = answer.resources.get(pa);
+				if(res.size() > 1){
+					continue;
+				}
+				
+				RDFNode resource = res.get(0);
+				if(resource.isLiteral()){
+					Literal literal = resource.asLiteral();
+					String resourceString = literal.getLexicalForm();
+					int t;
+					for(t=0; t<resourceString.length(); ++t){
+						if(!Character.isDigit(resourceString.charAt(t)) && resourceString.charAt(t) != '.'){
+							break;
+						}
+					}
+					if(t == resourceString.length()){
+						isOneStep = true;
+						oneStep = resource;
+						break;
+					}
+				}
+			}
+			if(isOneStep){
+				answer.pairPredicates = new LinkedList<PairPredicate>();
+				answer.pairPredicates.add(pa);
+			}else{
+				if(i == answer.pairPredicates.size() || i == SimilarityFunction.predictNum){
+					answer.pairPredicates = new LinkedList<PairPredicate>();
+				}
+			}
+		}
+		return answer;
+	}
+	
 	public static void addTypeConstraint(Answer answer, CLASSIFICATION type){
 		switch (type) {
+		case NUMBER:
+			dealWithNumberConstraint(answer);
+			break;
 		case RESOURCE:
 			switch (answer.answerType) {
 			case 0:
@@ -228,16 +312,8 @@ public class Main {
 				answer.pairTypeConstraintScore = FocusConstraint.getPairPredicateTypeConstraintScore(answer);
 				LinkedList<PairPredicate> pairPredicates = new LinkedList<PairPredicate>();
 				for (PairPredicate pair : answer.pairPredicates) {
-//					if(!(pair.Predicate1.maxScore > SimilarityFunction.minSimilarityScore && pair.Predicate2.maxScore > SimilarityFunction.minSimilarityScore)){
-//						continue;
-//					}
 					double typeScore = answer.pairTypeConstraintScore.get(pair);
 					if(typeScore > 0 || pair.Predicate2.maxScore > SimilarityFunction.threshold){
-//						System.err.println("************************");
-//						System.err.println(pair.Predicate1.maxScore);
-//						System.err.println(pair.Predicate2.maxScore);
-//						System.err.println(typeScore);
-//						System.err.println("*****************");
 						pair.score = (pair.Predicate1.maxScore+pair.Predicate2.maxScore) / 2 + typeScore;
 						pairPredicates.add(pair);
 					}
@@ -249,9 +325,6 @@ public class Main {
 				answer.pairTypeConstraintScore = FocusConstraint.getPairPredicateTypeConstraintScore(answer);
 				LinkedList<PairPredicate> pairP = new LinkedList<PairPredicate>();
 				for (PairPredicate pair : answer.pairPredicates) {
-//					if(!(pair.Predicate1.maxScore > SimilarityFunction.minSimilarityScore && pair.Predicate2.maxScore > SimilarityFunction.minSimilarityScore)){
-//						continue;
-//					}
 					double typeScore = answer.pairTypeConstraintScore.get(pair);
 					if(typeScore > 0 || (pair.Predicate1.maxScore + pair.Predicate2.maxScore)/2 > SimilarityFunction.threshold){
 						pair.score = (pair.Predicate1.maxScore+pair.Predicate2.maxScore) / 2 + typeScore;
