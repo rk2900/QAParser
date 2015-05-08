@@ -1117,4 +1117,594 @@ Entity List: 	2
 -------------------------
 ANSWER_TYPE = 0
 Predicate: http://dbpedia.org/property/location
-	http://dbpedia.org/resource/Alaska
+	http://dbpedia.org/resource/Alaska	http://dbpedia.org/resource/Denali_National_Park_and_Preserve	http://dbpedia.org/resource/United_States
+====================================================
+ID: 	91
+Content: 	Which organizations were founded in 1930?
+OnlyDBO: true	Aggregation: true
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	organizations
+Entity List: 	0
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	94
+Content: 	Which budget did the first movie of Zdenek Sverak have?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	budget
+Entity List: 	0
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	99
+Content: 	Give me all animal species that live in the Amazon rainforest.
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	animal species
+Entity List: 	4
+-------------------------
+ANSWER_TYPE = 0
+
+====================================================
+ID: 	249
+Content: 	In which studio did the Beatles record their first album?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	studio
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/recordLabel
+	http://dbpedia.org/resource/Apple_Records	http://dbpedia.org/resource/Parlophone	http://dbpedia.org/resource/Capitol_Records	http://dbpedia.org/resource/United_Artists_Records	http://dbpedia.org/resource/Vee-Jay_Records	http://dbpedia.org/resource/Swan_Records
+====================================================
+ID: 	242
+Content: 	What is the official color of the University of Oxford?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	official color
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/colour
+	http://dbpedia.org/resource/Hale_School
+====================================================
+ID: 	235
+Content: 	To which artistic movement did the painter of The Three Dancers belong?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	artistic movement
+Entity List: 	2
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	211
+Content: 	Give me all animals that are extinct.
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	animals
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	244
+Content: 	How deep is Lake Placid?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	240
+Content: 	Give me the grandchildren of Bruce Lee.
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	grandchildren
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/child
+	http://dbpedia.org/resource/Brandon_Lee	http://dbpedia.org/resource/Shannon_Lee	http://dbpedia.org/resource/Lee_Hoi-chuen
+====================================================
+ID: 	232
+Content: 	In which countries can you pay using the West African CFA franc?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	countries
+Entity List: 	3
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/currency
+	http://dbpedia.org/resource/Sahel-Benin_Union	http://dbpedia.org/resource/French_Guinea	http://dbpedia.org/resource/French_Community	http://dbpedia.org/resource/Mali_Federation	http://dbpedia.org/resource/French_Cameroons	http://dbpedia.org/resource/Togo
+====================================================
+ID: 	225
+Content: 	What are the top-10 action role-playing video games according to IGN?
+OnlyDBO: false	Aggregation: true
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	top-10 action
+Entity List: 	2
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	241
+Content: 	Give me all writers that won the Nobel Prize in literature.
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	writers
+Entity List: 	2
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	201
+Content: 	Give me all taikonauts.
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	taikonauts
+Entity List: 	0
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	247
+Content: 	Give me all actors called Baldwin.
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	actors
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	208
+Content: 	Which rivers flow into a German lake?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	rivers
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+
+====================================================
+ID: 	246
+Content: 	Which rockets were launched from Baikonur?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	rockets
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	236
+Content: 	Which pope succeeded John Paul II?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	pope
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/successor
+	http://dbpedia.org/resource/Pope_Benedict_XVI	http://dbpedia.org/resource/Pope_John_Paul_I
+====================================================
+ID: 	205
+Content: 	Give me all Dutch parties.
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	Dutch parties
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	243
+Content: 	Give me all Swedish oceanographers.
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	Swedish oceanographers
+Entity List: 	2
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	226
+Content: 	Give me all actors who were born in Berlin.
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	actors
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/birthPlace
+	http://dbpedia.org/resource/Paul_Boll	http://dbpedia.org/resource/W._E._Metzenthin	http://dbpedia.org/resource/Lothar_Mendes	http://dbpedia.org/resource/Gottfried_Reinhardt	http://dbpedia.org/resource/Georg_Ebers	http://dbpedia.org/resource/Rolf_Johannesson	http://dbpedia.org/resource/Alhard_Freiherr_von_der_Borch	http://dbpedia.org/resource/Louis_de_Wohl	http://dbpedia.org/resource/Elisabeth_Altmann-Gottheiner	http://dbpedia.org/resource/Adam_M%C3%BCller	http://dbpedia.org/resource/Dmitri_Nabokov	http://dbpedia.org/resource/Gerhard_Bigalk	http://dbpedia.org/resource/Kurt_Kuschela	http://dbpedia.org/resource/Reinhold_Conrad_Muschler	http://dbpedia.org/resource/Erich_Unger	http://dbpedia.org/resource/Dieter_Krickow	http://dbpedia.org/resource/Peter_Przygodda	http://dbpedia.org/resource/Theo_Trebs	http://dbpedia.org/resource/Maxi_Biewer	http://dbpedia.org/resource/Sefa_Y%C4%B1lmaz	http://dbpedia.org/resource/Princess_Henriette_of_Sch%C3%B6naich-Carolath	http://dbpedia.org/resource/Gunther_Eysenbach	http://dbpedia.org/resource/Frank_Mischke	http://dbpedia.org/resource/Manuela_Kay	http://dbpedia.org/resource/Artur_Ullrich	http://dbpedia.org/resource/Moritz_Schlick	http://dbpedia.org/resource/G%C3%BCnter_Amelung	http://dbpedia.org/resource/Ludwig_Rex	http://dbpedia.org/resource/Werner_Canders	http://dbpedia.org/resource/Richard_Golz	http://dbpedia.org/resource/Max_Lindig	http://dbpedia.org/resource/Birgit_Hein	http://dbpedia.org/resource/Charlotte_B%C3%BChler	http://dbpedia.org/resource/Stephen_A._Jarislowsky	http://dbpedia.org/resource/Sascha_Bigalke	http://dbpedia.org/resource/Max_von_Brandt	http://dbpedia.org/resource/Mike_Kluge	http://dbpedia.org/resource/Siegfried_Kasche	http://dbpedia.org/resource/Emilie_Ortl%C3%B6pp	http://dbpedia.org/resource/Chris_von_Wangenheim	http://dbpedia.org/resource/Kurt_Ulrich	http://dbpedia.org/resource/John_Hans_Krebs	http://dbpedia.org/resource/Edgar_Bodenheimer	http://dbpedia.org/resource/Carsten_Podlesch	http://dbpedia.org/resource/Jan_Ebeling	http://dbpedia.org/resource/Ludwig_Wilhelm_Gilbert	http://dbpedia.org/resource/Alexander_Ferdinand_Grychtolik	http://dbpedia.org/resource/Joachim_Rittstieg	http://dbpedia.org/resource/Max_Liebermann	http://dbpedia.org/resource/Ian_Batherson	http://dbpedia.org/resource/Natja_Brunckhorst	http://dbpedia.org/resource/Maximilian_Levy	http://dbpedia.org/resource/Tomer_Sisley	http://dbpedia.org/resource/Rudolf_Schlechter	http://dbpedia.org/resource/Alec_Empire	http://dbpedia.org/resource/Franz-Otto_Kr%C3%BCger	http://dbpedia.org/resource/Frederick_William_IV_of_Prussia	http://dbpedia.org/resource/Robert_Jungk	http://dbpedia.org/resource/Oskar_Messter	http://dbpedia.org/resource/Lars_Christopher_Vilsvik	http://dbpedia.org/resource/Felice_Schragenheim	http://dbpedia.org/resource/Christian_Poswiat	http://dbpedia.org/resource/Norbert_Wollheim	http://dbpedia.org/resource/Christian_M%C3%BCller_(footballer_born_1984)	http://dbpedia.org/resource/Dennis_Lemke	http://dbpedia.org/resource/Herbert_Rieckhoff	http://dbpedia.org/resource/Martin_Kobyla%C5%84ski	http://dbpedia.org/resource/Oliver_Schr%C3%B6der	http://dbpedia.org/resource/Heike_Faber	http://dbpedia.org/resource/Dora_Gerson	http://dbpedia.org/resource/Hannelore_Bode	http://dbpedia.org/resource/Richard_B%C3%B6hm	http://dbpedia.org/resource/Hellmuth_Hauser	http://dbpedia.org/resource/Martin_Wandel	http://dbpedia.org/resource/Luigi_Bonos	http://dbpedia.org/resource/Friedrich_Eduard_Beneke	http://dbpedia.org/resource/Tatjana_G%C3%BCrbaca	http://dbpedia.org/resource/Anna_of_Brandenburg	http://dbpedia.org/resource/Hubert_Meyer	http://dbpedia.org/resource/Friedrich_Wilhelm_Felix_von_B%C3%A4rensprung	http://dbpedia.org/resource/Esther_Herlitz	http://dbpedia.org/resource/Ellen_Franz	http://dbpedia.org/resource/Henriette_Gottlieb	http://dbpedia.org/resource/Magda_Goebbels	http://dbpedia.org/resource/Louis_de_Beausobre	http://dbpedia.org/resource/Herbert_Marcuse	http://dbpedia.org/resource/Hermann_Wilhelm_Ebel	http://dbpedia.org/resource/Albert_Lortzing	http://dbpedia.org/resource/Maximilian_Nitze	http://dbpedia.org/resource/Henry_Friedlander	http://dbpedia.org/resource/Peter_K%C3%B6rte	http://dbpedia.org/resource/Stefan_Goldmann	http://dbpedia.org/resource/Erwin_Thiesies	http://dbpedia.org/resource/Daniil_Andreyev	http://dbpedia.org/resource/Laura_Basuki	http://dbpedia.org/resource/Paul_G%C3%BCssfeldt	http://dbpedia.org/resource/Harry_Halm	http://dbpedia.org/resource/Carolina_Eyck	http://dbpedia.org/resource/Edgar_Whitehead	http://dbpedia.org/resource/Joachim_Fest	http://dbpedia.org/resource/Eugen_Merzbacher	http://dbpedia.org/resource/Killing_of_Peter_Fechter	http://dbpedia.org/resource/Fritz_Bleiwei%C3%9F	http://dbpedia.org/resource/Gerd_E._M%C3%A4user	http://dbpedia.org/resource/Emil_du_Bois-Reymond	http://dbpedia.org/resource/Kurt_von_Tippelskirch	http://dbpedia.org/resource/Nico_Schulz	http://dbpedia.org/resource/Herman_Schalow	http://dbpedia.org/resource/Theodor_Weyl	http://dbpedia.org/resource/George_of_Evdokia	http://dbpedia.org/resource/Bernd_Erdmann	http://dbpedia.org/resource/Antonio_Bueno	http://dbpedia.org/resource/Peter_Lilienthal	http://dbpedia.org/resource/Wolfgang_Lukschy	http://dbpedia.org/resource/Thomas_Zink	http://dbpedia.org/resource/Guenter_Wendt	http://dbpedia.org/resource/Hans_Hahne_(general)	http://dbpedia.org/resource/Norbert_Janzon	http://dbpedia.org/resource/Erhan_Ayd%C4%B1n	http://dbpedia.org/resource/Marco_Hofschneider	http://dbpedia.org/resource/Eugen_Rosenstock-Huessy	http://dbpedia.org/resource/Wilhelm_Beer	http://dbpedia.org/resource/Lucian_Freud	http://dbpedia.org/resource/Florentine_Lahme	http://dbpedia.org/resource/Louis_Sussmann-Hellborn	http://dbpedia.org/resource/Sigurt-Horstmar_Freiherr_von_Beaulieu-Marconnay	http://dbpedia.org/resource/Mario_Barth	http://dbpedia.org/resource/Edgar_Ziesemer	http://dbpedia.org/resource/Karl_D%C3%B6nitz	http://dbpedia.org/resource/Shaghayegh_Dehghan	http://dbpedia.org/resource/Monika_Lundi	http://dbpedia.org/resource/Uwe_von_Schamann	http://dbpedia.org/resource/Laura_Brosius	http://dbpedia.org/resource/Steve_Previn	http://dbpedia.org/resource/Walther_von_Brauchitsch	http://dbpedia.org/resource/Frauenarzt	http://dbpedia.org/resource/Patrick_K%C3%B6ppchen	http://dbpedia.org/resource/Holger_Gehrke	http://dbpedia.org/resource/Friedrich_von_Rabenau	http://dbpedia.org/resource/Volkmar_Gro%C3%9F	http://dbpedia.org/resource/Badri_Latif	http://dbpedia.org/resource/S%C3%BCleyman_Ko%C3%A7	http://dbpedia.org/resource/Franz_Ollendorff	http://dbpedia.org/resource/Henning_Stahlberg	http://dbpedia.org/resource/Ludwig_Rellstab	http://dbpedia.org/resource/Rudolf_Nelson	http://dbpedia.org/resource/Michael_Frede	http://dbpedia.org/resource/Andreas_Sigismund_Marggraf	http://dbpedia.org/resource/Herbert_Lamprecht	http://dbpedia.org/resource/Christa_Reinig	http://dbpedia.org/resource/Yitzhak_Danziger	http://dbpedia.org/resource/Ludwig_Tieck	http://dbpedia.org/resource/Martin_Kesici	http://dbpedia.org/resource/Rudolf_Wittkower	http://dbpedia.org/resource/Moshe_Prausnitz	http://dbpedia.org/resource/Georg_Simmel	http://dbpedia.org/resource/Ludwig_Rellstab_(chess_player)	http://dbpedia.org/resource/Patrick_Beckert	http://dbpedia.org/resource/Hannelore_Schroth	http://dbpedia.org/resource/Sascha_Burchert	http://dbpedia.org/resource/Heinz_H%C3%B6hne	http://dbpedia.org/resource/Rolf_Scherenberg	http://dbpedia.org/resource/Michael_Ballhaus	http://dbpedia.org/resource/Ralf_B%C3%BCchner	http://dbpedia.org/resource/Curt_Bois	http://dbpedia.org/resource/Charlotte_Salomon	http://dbpedia.org/resource/Ludwig_Aschoff	http://dbpedia.org/resource/Tar%C3%A9%C3%A9c	http://dbpedia.org/resource/Simon_Geschke	http://dbpedia.org/resource/Annette_Dasch	http://dbpedia.org/resource/Rolf_Schimpf	http://dbpedia.org/resource/Maria_Lidka	http://dbpedia.org/resource/Max_Rothmann	http://dbpedia.org/resource/Ernst-Georg_Kedzia	http://dbpedia.org/resource/Sebastian_Elwing	http://dbpedia.org/resource/Carolin_Schiewe	http://dbpedia.org/resource/Ottokar_Runze	http://dbpedia.org/resource/Ilter_Tashkin	http://dbpedia.org/resource/Philipp_Veit	http://dbpedia.org/resource/Hans_Kosterlitz	http://dbpedia.org/resource/Edith_Andreae	http://dbpedia.org/resource/Hugo_Liepmann	http://dbpedia.org/resource/Heinz_Berggruen	http://dbpedia.org/resource/Ingeborg_Drewitz	http://dbpedia.org/resource/Heinz_Schubert_(SS_officer)	http://dbpedia.org/resource/Anaid_Iplicjian	http://dbpedia.org/resource/Henry_Brandon_(actor)	http://dbpedia.org/resource/Sascha_Lobo	http://dbpedia.org/resource/J%C3%BCrgen_Oelke	http://dbpedia.org/resource/Alexander_von_Schlippenbach	http://dbpedia.org/resource/Tassilo_von_Heydebrand_und_der_Lasa	http://dbpedia.org/resource/Emmanuel_Scheffer	http://dbpedia.org/resource/Kurt_Kr%C3%B6mer	http://dbpedia.org/resource/Carl_Moritz	http://dbpedia.org/resource/Konstanze_Vernon	http://dbpedia.org/resource/Erich_Neumann_(psychologist)	http://dbpedia.org/resource/Joachim_Berger	http://dbpedia.org/resource/Hans_Rosenthal	http://dbpedia.org/resource/Ferdinand_Hummel	http://dbpedia.org/resource/Cay-Lorenz_Baron_von_Brockdorff	http://dbpedia.org/resource/Ruth_Hellberg	http://dbpedia.org/resource/Siegfried_Wuppermann	http://dbpedia.org/resource/Cathleen_Rund	http://dbpedia.org/resource/Henning_Lohner	http://dbpedia.org/resource/Philip_A._Herfort	http://dbpedia.org/resource/Dorrit_Weixler	http://dbpedia.org/resource/Jules_Greenbaum	http://dbpedia.org/resource/Paul-Friedrich_Darjes	http://dbpedia.org/resource/Bill_Graham_(promoter)	http://dbpedia.org/resource/Rolf_Thomsen	http://dbpedia.org/resource/Julius_Schrader	http://dbpedia.org/resource/Ernst_Bresslau	http://dbpedia.org/resource/Kurt_Grelling	http://dbpedia.org/resource/Hans_H%C3%B6mberg	http://dbpedia.org/resource/Christian_Wolff_(actor)	http://dbpedia.org/resource/Georg_Bruchm%C3%BCller	http://dbpedia.org/resource/Ria_Schiffner	http://dbpedia.org/resource/Gesine_Schwan	http://dbpedia.org/resource/Johannes_Fr%C3%B6mming	http://dbpedia.org/resource/Marcus_Tanneberger	http://dbpedia.org/resource/Horst_Feistel	http://dbpedia.org/resource/Agnes_of_Brandenburg,_Duchess_of_Pomerania	http://dbpedia.org/resource/Jutta_Behrendt	http://dbpedia.org/resource/Klaus_Wowereit	http://dbpedia.org/resource/Johann_Baptist_Gradl	http://dbpedia.org/resource/Hans_Goldschmidt	http://dbpedia.org/resource/Herbert_Busemann	http://dbpedia.org/resource/Hans-Peter_Friedl%C3%A4nder	http://dbpedia.org/resource/Arthur_Wellin	http://dbpedia.org/resource/Sonja_Lehmann	http://dbpedia.org/resource/Walter_Pagel	http://dbpedia.org/resource/Dru_Berrymore	http://dbpedia.org/resource/Jan_Glinker	http://dbpedia.org/resource/Ralph_Beyer	http://dbpedia.org/resource/Gotthold_Eisenstein	http://dbpedia.org/resource/Hans_Engelien	http://dbpedia.org/resource/Johannes_Sobotta	http://dbpedia.org/resource/Uwe_Corsepius	http://dbpedia.org/resource/Jenny_Mensing	http://dbpedia.org/resource/Arthur_Boje	http://dbpedia.org/resource/Anja_Silja	http://dbpedia.org/resource/Stephan_Winkelmann	http://dbpedia.org/resource/Walter_Schreiber	http://dbpedia.org/resource/Otto_K%C3%B6nigsberger	http://dbpedia.org/resource/Paul_Thieme	http://dbpedia.org/resource/Bernd_Hiller	http://dbpedia.org/resource/Roland_Berger	http://dbpedia.org/resource/Maurice_A._de_Gosson	http://dbpedia.org/resource/Horst_Walter	http://dbpedia.org/resource/Michael_Schmidt_(footballer)	http://dbpedia.org/resource/Sebastian_Weigle	http://dbpedia.org/resource/Friedrich_Guimpel	http://dbpedia.org/resource/Hans_Gruhne	http://dbpedia.org/resource/Max_Lehrs	http://dbpedia.org/resource/Wigbert_Fehse	http://dbpedia.org/resource/Paul_Heyse	http://dbpedia.org/resource/John_Price_(diplomat)	http://dbpedia.org/resource/Count_Otto_von_Bray-Steinburg	http://dbpedia.org/resource/Jutta_Limbach	http://dbpedia.org/resource/Luise_K%C3%A4hler	http://dbpedia.org/resource/J%C3%BCrgen_Prochnow	http://dbpedia.org/resource/Kilian_Pruschke	http://dbpedia.org/resource/Andreas_Biermann	http://dbpedia.org/resource/Magdalene_of_Brandenburg	http://dbpedia.org/resource/Alexander_von_Hartmann	http://dbpedia.org/resource/Louis_Schneider_(actor)	http://dbpedia.org/resource/Serdar_G%C3%BCne%C5%9F	http://dbpedia.org/resource/Kurt_Eggers	http://dbpedia.org/resource/Niels_Giffey	http://dbpedia.org/resource/Michael_Schildberger	http://dbpedia.org/resource/Margarethe_von_Trotta	http://dbpedia.org/resource/Michael_Schubert	http://dbpedia.org/resource/Fritz_Albrecht	http://dbpedia.org/resource/Tim_Gerresheim	http://dbpedia.org/resource/Wolfgang_Reinhardt_(producer)	http://dbpedia.org/resource/Erwin_Blumenfeld	http://dbpedia.org/resource/Albrecht_von_Graefe_(politician)	http://dbpedia.org/resource/Max_Delbr%C3%BCck	http://dbpedia.org/resource/Peter_Danckert	http://dbpedia.org/resource/Kurt_Eisner	http://dbpedia.org/resource/Luna_Schweiger	http://dbpedia.org/resource/Gerson_von_Bleichr%C3%B6der	http://dbpedia.org/resource/Grete_Mosheim	http://dbpedia.org/resource/Hans_Berndt	http://dbpedia.org/resource/Siegmund_Gabriel	http://dbpedia.org/resource/Constantin_Carath%C3%A9odory	http://dbpedia.org/resource/Delia_Reinhardt	http://dbpedia.org/resource/Albert_Wodrig	http://dbpedia.org/resource/Philip_Sprint	http://dbpedia.org/resource/Edzard_Reuter	http://dbpedia.org/resource/Ernest_Bornemann	http://dbpedia.org/resource/Karl-Albrecht_von_Groddeck	http://dbpedia.org/resource/Alexandra_Neldel	http://dbpedia.org/resource/Benjamin_Siegert	http://dbpedia.org/resource/Heinrich_Rose	http://dbpedia.org/resource/George_Grosz	http://dbpedia.org/resource/Eric_Stephan	http://dbpedia.org/resource/J%C3%B6rn_Schl%C3%B6nvoigt	http://dbpedia.org/resource/Eduard_Bendemann	http://dbpedia.org/resource/Kurt_Huldschinsky	http://dbpedia.org/resource/Erwin_Hillier	http://dbpedia.org/resource/Wolfgang_Schomburg	http://dbpedia.org/resource/Ursula_Pearson	http://dbpedia.org/resource/Janine_Pietsch	http://dbpedia.org/resource/Oktay_Urkal	http://dbpedia.org/resource/Ruth_Bernhard	http://dbpedia.org/resource/Erwin_Vierow	http://dbpedia.org/resource/Ludwig_Elsholtz	http://dbpedia.org/resource/Leopold_Andrian	http://dbpedia.org/resource/G%C3%BCnther_Ballier	http://dbpedia.org/resource/Caspar_Friedrich_Wolff	http://dbpedia.org/resource/Hans_Behrendt	http://dbpedia.org/resource/Oskar_Eberhard_Ulbrich	http://dbpedia.org/resource/Peter_Vonhof	http://dbpedia.org/resource/Hanan_Rubin	http://dbpedia.org/resource/Johanna_Schall	http://dbpedia.org/resource/Colin_Campbell_(geologist)	http://dbpedia.org/resource/Karl_Theodor_Paschke	http://dbpedia.org/resource/Robert_Fuchs_(general)	http://dbpedia.org/resource/Michael_Grzimek	http://dbpedia.org/resource/Kurt_Tucholsky	http://dbpedia.org/resource/John_Gutmann	http://dbpedia.org/resource/Arnold_Kutzinski	http://dbpedia.org/resource/Bernhard_Britting	http://dbpedia.org/resource/J%C3%B6rg_Buttgereit	http://dbpedia.org/resource/Werner_Sanne	http://dbpedia.org/resource/Kathrin_Kadelbach	http://dbpedia.org/resource/Svetlana_Tsys	http://dbpedia.org/resource/Erwin_Rauch	http://dbpedia.org/resource/Alfred_Hirschmeier	http://dbpedia.org/resource/Patrick_Pohl	http://dbpedia.org/resource/Kurt_K%C3%BChme	http://dbpedia.org/resource/Alexander_Engel	http://dbpedia.org/resource/Frederick_Jaeger	http://dbpedia.org/resource/List_of_Playboy_Playmates_of_2006	http://dbpedia.org/resource/Katja_Abel	http://dbpedia.org/resource/Lotte_Spira	http://dbpedia.org/resource/Mich%C3%A9l_Mazingu-Dinzey	http://dbpedia.org/resource/Mike_Kogel	http://dbpedia.org/resource/Brigitte_Helm	http://dbpedia.org/resource/Nadja_Auermann	http://dbpedia.org/resource/Tim_Bendzko__,_Tim__1	http://dbpedia.org/resource/Daniel_Berger_(engraver)	http://dbpedia.org/resource/Gertrud_Kolmar	http://dbpedia.org/resource/Tommy_Heart	http://dbpedia.org/resource/Elisabeth_Noelle-Neumann	http://dbpedia.org/resource/Johannes_Palaschko	http://dbpedia.org/resource/Max_Cynader	http://dbpedia.org/resource/Wilhelm_Trabandt	http://dbpedia.org/resource/Rudolf_Peierls	http://dbpedia.org/resource/Isolde_Hausser	http://dbpedia.org/resource/Dana_Wynter	http://dbpedia.org/resource/Jack_Trevor	http://dbpedia.org/resource/Grit_Boettcher	http://dbpedia.org/resource/Hubertus_Bengsch	http://dbpedia.org/resource/Walter_Heiligenberg	http://dbpedia.org/resource/Gustav_Langenscheidt	http://dbpedia.org/resource/Peter_Neusel	http://dbpedia.org/resource/Gershom_Scholem	http://dbpedia.org/resource/Martina_Boesler	http://dbpedia.org/resource/Murat_Tosun	http://dbpedia.org/resource/Stefan_M%C3%BCcke	http://dbpedia.org/resource/Heinz_Wernicke	http://dbpedia.org/resource/Oktay_%C3%96zdemir	http://dbpedia.org/resource/Else_Meidner	http://dbpedia.org/resource/Carl-Heinrich_von_St%C3%BClpnagel	http://dbpedia.org/resource/Karl-Hermann_Geib	http://dbpedia.org/resource/G%C3%BCnther_Frenzel	http://dbpedia.org/resource/Artur_Pappenheim	http://dbpedia.org/resource/Oliver_P%C3%B6tschke	http://dbpedia.org/resource/AnNa_R.	http://dbpedia.org/resource/Ivan_Rebroff	http://dbpedia.org/resource/Julius_Rudolph_Theodor_Vogel	http://dbpedia.org/resource/Johannes_Wieland	http://dbpedia.org/resource/Prince_Friedrich_Karl_of_Prussia_(1828%E2%80%931885)	http://dbpedia.org/resource/Anja_Jaenicke	http://dbpedia.org/resource/Peter_Basch	http://dbpedia.org/resource/Meno_Burg	http://dbpedia.org/resource/Carl_Boese	http://dbpedia.org/resource/Walter_Heitz	http://dbpedia.org/resource/Karl_von_der_Heyden	http://dbpedia.org/resource/Arnold_von_Roon	http://dbpedia.org/resource/Wolfgang_D%C3%B6blin	http://dbpedia.org/resource/Claus_Korth	http://dbpedia.org/resource/Max_Riemelt	http://dbpedia.org/resource/Gerhard_Friedrich	http://dbpedia.org/resource/Wolf_von_Lojewski	http://dbpedia.org/resource/Bj%C3%B6rn_Andrae	http://dbpedia.org/resource/Richard_Paul_Wagner	http://dbpedia.org/resource/Hedwig_Pringsheim	http://dbpedia.org/resource/Irena_I%C5%82%C5%82akowicz	http://dbpedia.org/resource/Michael_Zander	http://dbpedia.org/resource/Waldemar_Erfurth	http://dbpedia.org/resource/Jorge_Henrique_Papf	http://dbpedia.org/resource/Sebastian_Patzler	http://dbpedia.org/resource/Heinz_Arendt	http://dbpedia.org/resource/Hans_Schweitzer	http://dbpedia.org/resource/Max_Jammer	http://dbpedia.org/resource/Aribert_Mog	http://dbpedia.org/resource/Emre_Turan	http://dbpedia.org/resource/Wolfgang_G%C3%B6dicke	http://dbpedia.org/resource/Joseph_Gl%C3%A6ser	http://dbpedia.org/resource/Willi_S%C3%A4nger	http://dbpedia.org/resource/Mike_Nichols	http://dbpedia.org/resource/Erich_Kettelhut	http://dbpedia.org/resource/Otto_Eugen_Schulz	http://dbpedia.org/resource/Christiane_Paul	http://dbpedia.org/resource/Wilhelm_von_Homburg	http://dbpedia.org/resource/Eugene_Rabe	http://dbpedia.org/resource/August_Nathanael_Grischow	http://dbpedia.org/resource/Rainer_Brandt	http://dbpedia.org/resource/Franz_von_Blon	http://dbpedia.org/resource/Fabian_Holland	http://dbpedia.org/resource/Hermann_Ehlers	http://dbpedia.org/resource/Heidemarie_Reineck	http://dbpedia.org/resource/Hans_Ferdinand_Massmann	http://dbpedia.org/resource/Paul_Huldschinsky	http://dbpedia.org/resource/Karl_Wolfgang_Boer	http://dbpedia.org/resource/Hedwig_Dohm	http://dbpedia.org/resource/Joan_Oumari	http://dbpedia.org/resource/Helmuth_Kahl	http://dbpedia.org/resource/Wilhelm_Borchert_(actor)	http://dbpedia.org/resource/Fritz_Poske	http://dbpedia.org/resource/Adalbert_Schnee	http://dbpedia.org/resource/Prince_Friedrich_Leopold_of_Prussia	http://dbpedia.org/resource/Arthur_Werner	http://dbpedia.org/resource/Anton_Braun	http://dbpedia.org/resource/Rudolph_Schoenheimer	http://dbpedia.org/resource/Heinrich_Karl_Brugsch	http://dbpedia.org/resource/Ursula_Hirschmann	http://dbpedia.org/resource/Nico_Motchebon	http://dbpedia.org/resource/Daniela_Samulski	http://dbpedia.org/resource/Clive_M._Schmitthoff	http://dbpedia.org/resource/John_Grenville	http://dbpedia.org/resource/Heinz_Schimmelpfennig	http://dbpedia.org/resource/Kathy_Radzuweit	http://dbpedia.org/resource/Heiko_Habermann	http://dbpedia.org/resource/Erwin_Wilhelm_M%C3%BCller	http://dbpedia.org/resource/Jan_Kobow	http://dbpedia.org/resource/Jenny_Wolf	http://dbpedia.org/resource/Leo_von_Caprivi	http://dbpedia.org/resource/Gene_Pukall	http://dbpedia.org/resource/Harald_Rosenthal	http://dbpedia.org/resource/Paul_Gerhard_Jahn	http://dbpedia.org/resource/Paul_Schmidt_(interpreter)	http://dbpedia.org/resource/Ferid_Heider	http://dbpedia.org/resource/Tom_Schilling	http://dbpedia.org/resource/Babette_March	http://dbpedia.org/resource/Margot_Hielscher	http://dbpedia.org/resource/Eduard_Magnus	http://dbpedia.org/resource/John_Decker_(artist)	http://dbpedia.org/resource/Kay_Weniger	http://dbpedia.org/resource/Frank_Hanisch	http://dbpedia.org/resource/Ken_Adam	http://dbpedia.org/resource/Christian_H%C3%BClsen	http://dbpedia.org/resource/Senetta_Yoseftal	http://dbpedia.org/resource/Werner_Israel	http://dbpedia.org/resource/Willy_Ley	http://dbpedia.org/resource/Max_Buskohl	http://dbpedia.org/resource/Paul_Schulze_(cyclist)	http://dbpedia.org/resource/Gustav_Casmir	http://dbpedia.org/resource/Frank_Zander	http://dbpedia.org/resource/Adolf_Otto_Reinhold_Windaus	http://dbpedia.org/resource/Margrave_Albert_Frederick_of_Brandenburg-Schwedt	http://dbpedia.org/resource/Rene_Kramer	http://dbpedia.org/resource/Michael_Beer_(poet)	http://dbpedia.org/resource/Maximilian_von_Edelsheim	http://dbpedia.org/resource/Carl_Busse_(architect)	http://dbpedia.org/resource/Gustav_Jaenecke	http://dbpedia.org/resource/Alexander_von_Humboldt	http://dbpedia.org/resource/Monique_Angerm%C3%BCller	http://dbpedia.org/resource/Moritz_von_Oswald	http://dbpedia.org/resource/Charles,_Electoral_Prince_of_Brandenburg	http://dbpedia.org/resource/Knut_Borchardt	http://dbpedia.org/resource/Adolf_Heinrich_von_Arnim-Boitzenburg	http://dbpedia.org/resource/Wilhelm_Cauer	http://dbpedia.org/resource/Ulrich_Gabler	http://dbpedia.org/resource/Klaus-Peter_Hanisch	http://dbpedia.org/resource/Frederick_Lau	http://dbpedia.org/resource/Hermann_Martens	http://dbpedia.org/resource/Rudolf_von_Gneist	http://dbpedia.org/resource/Exauc%C3%A9_Mayombo	http://dbpedia.org/resource/Carl_Eduard_Adolph_Gerstaecker	http://dbpedia.org/resource/Timmy_Thiele	http://dbpedia.org/resource/Erich_Kaiser-Titz	http://dbpedia.org/resource/Sezer_Badur	http://dbpedia.org/resource/Theodore_Motzkin	http://dbpedia.org/resource/Robert_Holzer	http://dbpedia.org/resource/Kurt_Stern	http://dbpedia.org/resource/Heinz_D%C3%B6rmer	http://dbpedia.org/resource/Peter_Alliss	http://dbpedia.org/resource/Henriette_Paalzow	http://dbpedia.org/resource/Eugen_Bamberger	http://dbpedia.org/resource/Arthur_Rosenberg	http://dbpedia.org/resource/Yehuda_Harel	http://dbpedia.org/resource/Hilde_Schulz-Amelang	http://dbpedia.org/resource/G%C3%BCnther_von_Lojewski	http://dbpedia.org/resource/Karl_von_B%C3%BClow	http://dbpedia.org/resource/Heinrich_Scholz	http://dbpedia.org/resource/Paul_Fentz	http://dbpedia.org/resource/Helga_M._Novak	http://dbpedia.org/resource/Wankelmut	http://dbpedia.org/resource/G%C3%BCnther_Krupkat	http://dbpedia.org/resource/Princess_Charlotte_Frederica_of_Prussia	http://dbpedia.org/resource/Irmgard_Bartenieff	http://dbpedia.org/resource/Bruno_Loerzer	http://dbpedia.org/resource/Prince_Friedrich_Sigismund_of_Prussia_(1891%E2%80%931927)	http://dbpedia.org/resource/DJ_Tocadisco	http://dbpedia.org/resource/Dominic_Monaghan	http://dbpedia.org/resource/Wolfgang_K%C3%B6pcke	http://dbpedia.org/resource/Jakob_Salomon_Bartholdy	http://dbpedia.org/resource/Katarina_Witt	http://dbpedia.org/resource/J%C3%BCrgen_Ohlsen	http://dbpedia.org/resource/Max_Lehmann	http://dbpedia.org/resource/Margot_W%C3%B6lk	http://dbpedia.org/resource/Michael_Fu%C3%9F	http://dbpedia.org/resource/Bj%C3%B6rn_Jopek	http://dbpedia.org/resource/Leon_Balogun	http://dbpedia.org/resource/Vera_Tschechowa	http://dbpedia.org/resource/Hans_Kuhnert	http://dbpedia.org/resource/Princess_Pauline_of_Orange-Nassau	http://dbpedia.org/resource/Hermann_Johannes_Pfannenstiel	http://dbpedia.org/resource/Dorothea_of_Brandenburg,_Duchess_of_Mecklenburg	http://dbpedia.org/resource/Wolf_V._Vishniac	http://dbpedia.org/resource/G%C3%BCnter_Pfitzmann	http://dbpedia.org/resource/Anna_Dorothea_Therbusch	http://dbpedia.org/resource/Stefan_Roloff	http://dbpedia.org/resource/Patrick_Reichelt	http://dbpedia.org/resource/Dolores_Guinness	http://dbpedia.org/resource/Norbert_Berkowitz	http://dbpedia.org/resource/Hans_Richter_(artist)	http://dbpedia.org/resource/Friedrich-Wilhelm_Wangerin	http://dbpedia.org/resource/T%C3%BCrkiz_Talay	http://dbpedia.org/resource/Paul_Otto	http://dbpedia.org/resource/Werner_Forssmann	http://dbpedia.org/resource/Dirk_Regel	http://dbpedia.org/resource/George_Bartenieff	http://dbpedia.org/resource/Kitty_Kat	http://dbpedia.org/resource/Alexander_Lion	http://dbpedia.org/resource/Heinrich_LXIII,_Prince_Reuss_of_K%C3%B6stritz	http://dbpedia.org/resource/Rita_Blankenburg	http://dbpedia.org/resource/Gerhard_Marcks	http://dbpedia.org/resource/Sebastian_Neumann	http://dbpedia.org/resource/Roman_G%C3%B6rtz	http://dbpedia.org/resource/Georg_Belwe	http://dbpedia.org/resource/Peter_Nemenyi	http://dbpedia.org/resource/Franz_Bracht	http://dbpedia.org/resource/Erwin_Schulz	http://dbpedia.org/resource/Karl_Ludwig_Michelet	http://dbpedia.org/resource/Trude_Hesterberg	http://dbpedia.org/resource/Wols	http://dbpedia.org/resource/Charlotte_Oelschl%C3%A4gel	http://dbpedia.org/resource/Bonaventura_Genelli	http://dbpedia.org/resource/Daniar_Zhunusov	http://dbpedia.org/resource/Max_Butting	http://dbpedia.org/resource/Ernst_Henrici	http://dbpedia.org/resource/Wolfram_Bode	http://dbpedia.org/resource/T._Lux_Feininger	http://dbpedia.org/resource/Hermine_K%C3%B6rner	http://dbpedia.org/resource/Franz_Karl_Achard	http://dbpedia.org/resource/Claus_Moser,_Baron_Moser	http://dbpedia.org/resource/Robert_Stoepel	http://dbpedia.org/resource/K.P._Brehmer	http://dbpedia.org/resource/Ferdinand_Deppe	http://dbpedia.org/resource/Eduard_Heine	http://dbpedia.org/resource/Rainer_H%C3%B6nisch	http://dbpedia.org/resource/Henri_Jordan	http://dbpedia.org/resource/Seweryn_Bialer	http://dbpedia.org/resource/Princess_Marianne_of_the_Netherlands	http://dbpedia.org/resource/Norbert_Stolzenburg	http://dbpedia.org/resource/%C3%9Cmit_Ergirdi	http://dbpedia.org/resource/Paul_Gustav_Heinrich_Bachmann	http://dbpedia.org/resource/Werner_Jacobs	http://dbpedia.org/resource/Margaret_Altmann	http://dbpedia.org/resource/M%C3%A9ret_Oppenheim	http://dbpedia.org/resource/Peter_Capell	http://dbpedia.org/resource/Ruth-Marion_Baruch	http://dbpedia.org/resource/Hans_Hermann_von_Katte	http://dbpedia.org/resource/Susanne_Charlotte_Engelmann	http://dbpedia.org/resource/Herluf_Bidstrup	http://dbpedia.org/resource/Claus_Theo_G%C3%A4rtner	http://dbpedia.org/resource/Lothar_Br%C3%BChne	http://dbpedia.org/resource/Rudolf_Roy	http://dbpedia.org/resource/Wolfgang_Wiegard	http://dbpedia.org/resource/Benjamin_K%C3%B6hler	http://dbpedia.org/resource/Gad_Beck	http://dbpedia.org/resource/Alice_Treff	http://dbpedia.org/resource/Albert_Otto_Hirschman	http://dbpedia.org/resource/Paul_Richard_Heinrich_Blasius	http://dbpedia.org/resource/Audra_McDonald	http://dbpedia.org/resource/Henrietta_Maria_of_Brandenburg-Schwedt	http://dbpedia.org/resource/Hannelore_Kohl	http://dbpedia.org/resource/Olga_Oelkers	http://dbpedia.org/resource/Kurt_Mendelssohn	http://dbpedia.org/resource/Drafi_Deutscher	http://dbpedia.org/resource/Lothar_Gericke	http://dbpedia.org/resource/Alpha_Female	http://dbpedia.org/resource/Dodo_(painter)	http://dbpedia.org/resource/G%C3%BCnther_Kohlmey	http://dbpedia.org/resource/Wilfried_Hartung	http://dbpedia.org/resource/Zafer_Yelen	http://dbpedia.org/resource/Judith_Burmeister	http://dbpedia.org/resource/Ali_Annabi	http://dbpedia.org/resource/Siegmund_Freiherr_von_Schleinitz	http://dbpedia.org/resource/Renate_Schneider	http://dbpedia.org/resource/Elena_Richter	http://dbpedia.org/resource/Svetlana_Alexeeva	http://dbpedia.org/resource/Manuel_Brehmer	http://dbpedia.org/resource/Hans-Georg_Hess	http://dbpedia.org/resource/Alexander_August_Wilhelm_von_Pape	http://dbpedia.org/resource/Klaus_Landsberg	http://dbpedia.org/resource/Burghart_Klau%C3%9Fner	http://dbpedia.org/resource/Wladimir_de_Schoenefeld	http://dbpedia.org/resource/Nathan_Zach	http://dbpedia.org/resource/Wilhelm_Adolf_Schmidt	http://dbpedia.org/resource/Heinz_Pehlke	http://dbpedia.org/resource/Steven_C._Beering	http://dbpedia.org/resource/Wilhelm_Crisolli	http://dbpedia.org/resource/Harry_Frank	http://dbpedia.org/resource/Wilhelm_Taubert	http://dbpedia.org/resource/Heinz_Budweg	http://dbpedia.org/resource/Helmut_Sonnenfeldt	http://dbpedia.org/resource/Gerhard_Schacht	http://dbpedia.org/resource/Carl_Theodore_Liebermann	http://dbpedia.org/resource/Gottfried_John	http://dbpedia.org/resource/Walther_Meissner	http://dbpedia.org/resource/Dieter_Mann	http://dbpedia.org/resource/Alexander_Carl_Otto_Westphal	http://dbpedia.org/resource/Gerhart_M._Riegner	http://dbpedia.org/resource/Frank-Michael_Marczewski	http://dbpedia.org/resource/G%C3%BCnter_Reisch	http://dbpedia.org/resource/Sally_Keeble	http://dbpedia.org/resource/Henri_Berger	http://dbpedia.org/resource/Ernst_D%C3%BCmmler	http://dbpedia.org/resource/Charlotte_Bischoff	http://dbpedia.org/resource/Volker_Berghahn	http://dbpedia.org/resource/Toni_Packer	http://dbpedia.org/resource/Aaron_Altaras	http://dbpedia.org/resource/Gerhard_Schmidt	http://dbpedia.org/resource/Paul_Lincke	http://dbpedia.org/resource/Heiko_Schaffartzik	http://dbpedia.org/resource/Eduard_Hitzig	http://dbpedia.org/resource/Fay_Ajzenberg-Selove	http://dbpedia.org/resource/Nicolette_Krebitz	http://dbpedia.org/resource/Hilde_Coppi	http://dbpedia.org/resource/Aviva_Kempner	http://dbpedia.org/resource/Vincent_Lange	http://dbpedia.org/resource/Hans-J%C3%BCrgen_Hellriegel	http://dbpedia.org/resource/Uwe_Peschel	http://dbpedia.org/resource/Michael_Mietke	http://dbpedia.org/resource/Rosel_Zech	http://dbpedia.org/resource/Heidi_Gen%C3%A9e	http://dbpedia.org/resource/Bernd_Lucke	http://dbpedia.org/resource/Hans_Ludwig_Striem	http://dbpedia.org/resource/Karin_Baal	http://dbpedia.org/resource/Princess_Alexandrine_of_Prussia_(1842%E2%80%931906)	http://dbpedia.org/resource/El%C5%BCbieta_Konstancja_Potulicka	http://dbpedia.org/resource/Klaus_Gysi	http://dbpedia.org/resource/Dietrich_Gra%C3%9Fmann	http://dbpedia.org/resource/Antje_Buschschulte	http://dbpedia.org/resource/Safia_Monney	http://dbpedia.org/resource/Walter_K%C3%A4ding	http://dbpedia.org/resource/Gerhard_Bielig	http://dbpedia.org/resource/Richard_Eichberg	http://dbpedia.org/resource/Reinhard_Bendix	http://dbpedia.org/resource/Rudolf_Cleve	http://dbpedia.org/resource/Frieda_Wunderlich	http://dbpedia.org/resource/Erich_M%C3%BChsam	http://dbpedia.org/resource/Heinrich_Eduard_Jacob	http://dbpedia.org/resource/Peter_Gorski	http://dbpedia.org/resource/Andrew_M._Bruckner	http://dbpedia.org/resource/Peter_Zadek	http://dbpedia.org/resource/Inka_Bach	http://dbpedia.org/resource/Anton_Grylewicz	http://dbpedia.org/resource/Hans_Hirschfeld_(hematologist)	http://dbpedia.org/resource/Evelyn_Holt	http://dbpedia.org/resource/Franz_Streubel	http://dbpedia.org/resource/Reiner_Protsch	http://dbpedia.org/resource/Hartmut_Becker	http://dbpedia.org/resource/Carlos_Kleiber	http://dbpedia.org/resource/Cesare_Mussini	http://dbpedia.org/resource/John_Sigismund,_Elector_of_Brandenburg	http://dbpedia.org/resource/Eduard_Knoblauch	http://dbpedia.org/resource/Oscar_Hinsberg	http://dbpedia.org/resource/Katharina_Rensch	http://dbpedia.org/resource/Sebastian_Stachnik	http://dbpedia.org/resource/Gunter_Christmann	http://dbpedia.org/resource/Andy_Gee	http://dbpedia.org/resource/Eberhard_Junkersdorf	http://dbpedia.org/resource/Joseph_Weizenbaum	http://dbpedia.org/resource/Hans-G%C3%BCnther_Stotten	http://dbpedia.org/resource/Julius_Bredt	http://dbpedia.org/resource/Erich_Fuchs	http://dbpedia.org/resource/Walter_Noddack	http://dbpedia.org/resource/Ernst_Wilhelm_von_Br%C3%BCcke	http://dbpedia.org/resource/Hansj%C3%B6rg_Felmy	http://dbpedia.org/resource/Count_Manfred_Beckett_Czernin	http://dbpedia.org/resource/Franz_Schlieper	http://dbpedia.org/resource/Eddie_Rosner	http://dbpedia.org/resource/Ivy_Quainoo	http://dbpedia.org/resource/Rudi_Godden	http://dbpedia.org/resource/Nico_Monien	http://dbpedia.org/resource/Manuel_Schmiedebach	http://dbpedia.org/resource/Ernst_Boris_Chain	http://dbpedia.org/resource/Marcus_Marsollek	http://dbpedia.org/resource/Andreas_Schmidt_(footballer)	http://dbpedia.org/resource/Princess_Louise_of_Prussia_(1808%E2%80%931870)	http://dbpedia.org/resource/Alice_Salomon	http://dbpedia.org/resource/Micha_Lindenstrauss	http://dbpedia.org/resource/Ilse_Pag%C3%A9	http://dbpedia.org/resource/Julia_Biedermann	http://dbpedia.org/resource/G%C3%BCnter_Tilch	http://dbpedia.org/resource/Werner_Damsch	http://dbpedia.org/resource/Kurt_Bundrock	http://dbpedia.org/resource/Atul_Chitnis	http://dbpedia.org/resource/Helmina_von_Ch%C3%A9zy	http://dbpedia.org/resource/Roland_Stelter	http://dbpedia.org/resource/Manfred_George	http://dbpedia.org/resource/Uwe_Kliemann	http://dbpedia.org/resource/Krafft_Arnold_Ehricke	http://dbpedia.org/resource/Prince_Frederick_of_the_Netherlands	http://dbpedia.org/resource/Anneliese_von_Oettingen	http://dbpedia.org/resource/Franck_Moutsinga	http://dbpedia.org/resource/John_Polanyi	http://dbpedia.org/resource/Peter_Fricke	http://dbpedia.org/resource/Rudy_Boschwitz	http://dbpedia.org/resource/Julian_Prochnow	http://dbpedia.org/resource/Otto_Wilhelm_Hermann_von_Abich	http://dbpedia.org/resource/Heinrich_Gustav_Magnus	http://dbpedia.org/resource/Pasquale_del_Pezzo	http://dbpedia.org/resource/Kiowa_Gordon	http://dbpedia.org/resource/Friedrich_August_Elsasser	http://dbpedia.org/resource/Nicole_Banecki	http://dbpedia.org/resource/Hans_Hinrich	http://dbpedia.org/resource/Erich_Mielke	http://dbpedia.org/resource/Ernst_Sprockhoff	http://dbpedia.org/resource/Hellmut_von_der_Chevallerie	http://dbpedia.org/resource/Louise-Rosalie_Lefebvre	http://dbpedia.org/resource/Prince_Augustus_Ferdinand_of_Prussia	http://dbpedia.org/resource/Alfred_Schmidt_(philosopher)	http://dbpedia.org/resource/Joseph_Mendelssohn	http://dbpedia.org/resource/Christiane_Pflug	http://dbpedia.org/resource/Hartmut_Reck	http://dbpedia.org/resource/Karl_Robert_Eduard_von_Hartmann	http://dbpedia.org/resource/Karl_Arning	http://dbpedia.org/resource/Kurt_Maetzig	http://dbpedia.org/resource/Ernst_Benda	http://dbpedia.org/resource/Gedion_Zelalem	http://dbpedia.org/resource/Alfred_Mallwitz	http://dbpedia.org/resource/Paul_Jacobsthal	http://dbpedia.org/resource/Paul_Kalisch	http://dbpedia.org/resource/Alexander_Fehling	http://dbpedia.org/resource/Enrico_K%C3%B6lling	http://dbpedia.org/resource/Hermann_Fr%C3%A4nkel	http://dbpedia.org/resource/Sebastian_Rieschick	http://dbpedia.org/resource/Stella_K%C3%BCbler	http://dbpedia.org/resource/Eckard_Wimmer	http://dbpedia.org/resource/Adin_Talbar	http://dbpedia.org/resource/Johann_Friedrich_Hennert	http://dbpedia.org/resource/Hans-Joachim_Born	http://dbpedia.org/resource/Holger_Handtke	http://dbpedia.org/resource/Erich_Maschke	http://dbpedia.org/resource/Walther_Schwieger	http://dbpedia.org/resource/Eckart_Dux	http://dbpedia.org/resource/Daniel_Offer	http://dbpedia.org/resource/Maria_Riva	http://dbpedia.org/resource/Ursula_K%C3%BCper	http://dbpedia.org/resource/Peter_Hirsch	http://dbpedia.org/resource/Silla_(rapper)	http://dbpedia.org/resource/Hans_Hamburger	http://dbpedia.org/resource/Franz_Schoenberner	http://dbpedia.org/resource/Jasmin_Gerat	http://dbpedia.org/resource/Otto_von_Gerlach	http://dbpedia.org/resource/Hans_Strelow	http://dbpedia.org/resource/Patrick_Hausding	http://dbpedia.org/resource/George_Albert_II,_Margrave_of_Brandenburg	http://dbpedia.org/resource/Anna_Rosina_de_Gasc	http://dbpedia.org/resource/Olaf_Kapagiannidis	http://dbpedia.org/resource/Karl-Heinz_Kutschke	http://dbpedia.org/resource/Walter_Mehring	http://dbpedia.org/resource/Arnold_Genthe	http://dbpedia.org/resource/Walter_Benjamin	http://dbpedia.org/resource/Ute_Noack_(swimmer)	http://dbpedia.org/resource/Marthe_Vogt	http://dbpedia.org/resource/Natascha_Engel	http://dbpedia.org/resource/Andreas_Sidon	http://dbpedia.org/resource/Johanna_Klum	http://dbpedia.org/resource/Volker_Kempe	http://dbpedia.org/resource/August_Conradi	http://dbpedia.org/resource/Wilhelm_Anhalt	http://dbpedia.org/resource/Ewald_Wenck	http://dbpedia.org/resource/Louisa_Ulrika_of_Prussia	http://dbpedia.org/resource/Gerhard_Lamprecht	http://dbpedia.org/resource/Manny_Marc	http://dbpedia.org/resource/Meshell_Ndegeocello	http://dbpedia.org/resource/Claus_Offe	http://dbpedia.org/resource/Hans-Levin_von_Barby	http://dbpedia.org/resource/Tron_(hacker)	http://dbpedia.org/resource/Ayd%C4%B1n_Karabulut	http://dbpedia.org/resource/Saul_Ascher	http://dbpedia.org/resource/Charlotte_von_Mahlsdorf	http://dbpedia.org/resource/Fritz_Bornemann	http://dbpedia.org/resource/Anton_Saefkow	http://dbpedia.org/resource/Stefanie_Frohberg	http://dbpedia.org/resource/Manfred_Klieme	http://dbpedia.org/resource/Karl_von_Grolman	http://dbpedia.org/resource/Regina_Jonas	http://dbpedia.org/resource/Eugene_Von_Grona	http://dbpedia.org/resource/Sebastian_Peschko	http://dbpedia.org/resource/Birgit_Havenstein	http://dbpedia.org/resource/Julia_Montes	http://dbpedia.org/resource/Friedrich-Karl_%22Tutti%22_M%C3%BCller	http://dbpedia.org/resource/Werner_E._Reichardt	http://dbpedia.org/resource/Jan_Schaffrath	http://dbpedia.org/resource/Richard_Felix_Marchand	http://dbpedia.org/resource/Winrich_Behr	http://dbpedia.org/resource/Peter_Max	http://dbpedia.org/resource/Erwin_Biegel	http://dbpedia.org/resource/Rina_Thieleke	http://dbpedia.org/resource/Reinhold_Muchow	http://dbpedia.org/resource/Hans_Alexis_von_Biehler	http://dbpedia.org/resource/Peter_Kunter	http://dbpedia.org/resource/Horst_Wolter	http://dbpedia.org/resource/Peter_Simon_Pallas	http://dbpedia.org/resource/Prince_Louis_Ferdinand_of_Prussia_(1772%E2%80%931806)	http://dbpedia.org/resource/Klaus-J%C3%BCrgen_Bathe	http://dbpedia.org/resource/Francis_Banecki	http://dbpedia.org/resource/Leonor_Michaelis	http://dbpedia.org/resource/Robert_Ren%C3%A9_Kuczynski	http://dbpedia.org/resource/Fler	http://dbpedia.org/resource/Andrew_Sachs	http://dbpedia.org/resource/Horst_Buchholz	http://dbpedia.org/resource/Veronika_Holletz	http://dbpedia.org/resource/Joy_Denalane	http://dbpedia.org/resource/Max_Ulich	http://dbpedia.org/resource/Kurd_Kisshauer	http://dbpedia.org/resource/Luigi_Mussini	http://dbpedia.org/resource/August_Immanuel_Bekker	http://dbpedia.org/resource/Hans_Curschmann	http://dbpedia.org/resource/Julius_Bernstein	http://dbpedia.org/resource/Rolf_Rocholl	http://dbpedia.org/resource/Bettina_Wegner	http://dbpedia.org/resource/Walther-Peer_Fellgiebel	http://dbpedia.org/resource/Fritz_Frauenheim	http://dbpedia.org/resource/Ilja_Wiederschein	http://dbpedia.org/resource/Werner_March	http://dbpedia.org/resource/Jan-Marco_Luczak	http://dbpedia.org/resource/Kazys_Lozoraitis	http://dbpedia.org/resource/Lotte_Stein	http://dbpedia.org/resource/Martin_Weisz	http://dbpedia.org/resource/J%C3%BCrgen_Warnke	http://dbpedia.org/resource/Sylta_Fee_Wegmann	http://dbpedia.org/resource/Paul_Reckzeh	http://dbpedia.org/resource/Max_Koch	http://dbpedia.org/resource/Friedrich_Wilhelm_Schadow	http://dbpedia.org/resource/Martin_Gareis	http://dbpedia.org/resource/Francis_Lieber	http://dbpedia.org/resource/Judith_Kerr	http://dbpedia.org/resource/Bernhard_Neumann	http://dbpedia.org/resource/Peter_Wynhoff	http://dbpedia.org/resource/Heinz_Schubert_(actor)	http://dbpedia.org/resource/Martin_Wolff	http://dbpedia.org/resource/Jakob_Tiedtke	http://dbpedia.org/resource/Eugen_D%C3%BChring	http://dbpedia.org/resource/Christina_Plate	http://dbpedia.org/resource/Fred_Flatow	http://dbpedia.org/resource/William_I,_German_Emperor	http://dbpedia.org/resource/Karl_Frankenstein	http://dbpedia.org/resource/Maike_Nollen	http://dbpedia.org/resource/Fran%C3%A7ois_Willi_Wendt	http://dbpedia.org/resource/Minnie_Maria_Dronke	http://dbpedia.org/resource/Michael_Verhoeven	http://dbpedia.org/resource/Konrad_Kellen	http://dbpedia.org/resource/Arman_%C4%B0nci	http://dbpedia.org/resource/Elisa_Radziwill	http://dbpedia.org/resource/Danny_Beath	http://dbpedia.org/resource/Arthur_Nebe	http://dbpedia.org/resource/Johann_Gottfried_Schadow	http://dbpedia.org/resource/Jari_Neugebauer	http://dbpedia.org/resource/Maximilian_Wolfgang_Duncker	http://dbpedia.org/resource/Curt_Kosswig	http://dbpedia.org/resource/Frank_Terletzki	http://dbpedia.org/resource/Ariane_Hingst	http://dbpedia.org/resource/Thorsten_Engelmann	http://dbpedia.org/resource/Gustav_K%C3%B6rte	http://dbpedia.org/resource/Helmut_Hauptmann	http://dbpedia.org/resource/Christian_Ziege	http://dbpedia.org/resource/Karin_Boldemann	http://dbpedia.org/resource/Rudi_Feld	http://dbpedia.org/resource/Hugo_Phillip_Graf_von_Lerchenfeld_auf_K%C3%B6fering_und_Sch%C3%B6nberg	http://dbpedia.org/resource/Aki_Orr	http://dbpedia.org/resource/Wolfgang_Plotka	http://dbpedia.org/resource/Hans_Einstein	http://dbpedia.org/resource/Michael_Roemer	http://dbpedia.org/resource/Michael_Rehbein	http://dbpedia.org/resource/List_of_Playboy_Playmates_of_2013	http://dbpedia.org/resource/Carolina_Micha%C3%ABlis_de_Vasconcellos	http://dbpedia.org/resource/Karl_Wiedergott	http://dbpedia.org/resource/Jana_Pallaske	http://dbpedia.org/resource/Curt_von_Bardeleben	http://dbpedia.org/resource/Anita_Kuhlke	http://dbpedia.org/resource/Hermann_Knoblauch	http://dbpedia.org/resource/Claus_Westermann	http://dbpedia.org/resource/Evelyn_Hecht-Galinski	http://dbpedia.org/resource/Anna_Thalbach	http://dbpedia.org/resource/Karl_Wilhelm_Rosenmund	http://dbpedia.org/resource/Catherine_Flemming	http://dbpedia.org/resource/Karolin_Thomas	http://dbpedia.org/resource/Alberto_Henschel	http://dbpedia.org/resource/Mathilde_Pauls	http://dbpedia.org/resource/Ingrid_Steeger	http://dbpedia.org/resource/Prince_Louis_Charles_of_Prussia	http://dbpedia.org/resource/Gisela_Grothaus	http://dbpedia.org/resource/Jan_Hendriks	http://dbpedia.org/resource/Reinhard_Mey	http://dbpedia.org/resource/Ludwig_Adolf_Wilhelm_von_L%C3%BCtzow	http://dbpedia.org/resource/Anne-Julia_Hagen	http://dbpedia.org/resource/Muho_Noelke	http://dbpedia.org/resource/DJ_Hype	http://dbpedia.org/resource/Karl_Bolle	http://dbpedia.org/resource/Joachim_Brennecke	http://dbpedia.org/resource/Gerard_Hoffnung	http://dbpedia.org/resource/Rex_Reason	http://dbpedia.org/resource/Erich_Bauer	http://dbpedia.org/resource/Ulrich_Pfisterer	http://dbpedia.org/resource/Karaja_(singer)	http://dbpedia.org/resource/Karim_Bellarabi	http://dbpedia.org/resource/Rudolf_von_Delbr%C3%BCck	http://dbpedia.org/resource/Sebastian_Albrecht	http://dbpedia.org/resource/Dagmar_Manzel	http://dbpedia.org/resource/Ernest_J._Sternglass	http://dbpedia.org/resource/Aylin_Yaren	http://dbpedia.org/resource/Rudolf_Mansfeld	http://dbpedia.org/resource/Otto_Hermann_Werner_Hadank	http://dbpedia.org/resource/Carl_Ludwig_Siegel	http://dbpedia.org/resource/Rudolf_Bahro	http://dbpedia.org/resource/Lennart_Hartmann	http://dbpedia.org/resource/Wilhelm_Steputat	http://dbpedia.org/resource/Eberhard_von_Brauchitsch	http://dbpedia.org/resource/Ellen_Brockh%C3%B6ft	http://dbpedia.org/resource/Friedrich_Fromm	http://dbpedia.org/resource/Karl-Otto_Alberty	http://dbpedia.org/resource/Konrad_Knopp	http://dbpedia.org/resource/Gustav_Scholz	http://dbpedia.org/resource/Fritz_Vehse	http://dbpedia.org/resource/Marianne_Birthler	http://dbpedia.org/resource/Princess_Louise_of_Prussia_(1770%E2%80%931836)	http://dbpedia.org/resource/Rene_R%C3%B6thke	http://dbpedia.org/resource/Ruth_Holzhausen	http://dbpedia.org/resource/Bernd_Barleben	http://dbpedia.org/resource/Mike_Mareen	http://dbpedia.org/resource/James_Israel	http://dbpedia.org/resource/Deniz_Aydo%C4%9Fdu	http://dbpedia.org/resource/Katharine_Cornell	http://dbpedia.org/resource/Melanie_Peres	http://dbpedia.org/resource/Karsten_B%C3%A4ron	http://dbpedia.org/resource/Birgit_Lorenz	http://dbpedia.org/resource/Reinhard_Sorge	http://dbpedia.org/resource/Stefan_Brecht	http://dbpedia.org/resource/Maximilian_Vogel_von_Falckenstein	http://dbpedia.org/resource/Lya_Lys	http://dbpedia.org/resource/Gabriele_M%C3%BCnter	http://dbpedia.org/resource/Friedel_Dzubas	http://dbpedia.org/resource/Max_Koffler	http://dbpedia.org/resource/Gunther_E._Rothenberg	http://dbpedia.org/resource/Volkan_Dikmen	http://dbpedia.org/resource/William_Schwarzer	http://dbpedia.org/resource/Julius_Klaproth	http://dbpedia.org/resource/Felix_Zymalkowski	http://dbpedia.org/resource/Albert_Niemann_(pediatrician)	http://dbpedia.org/resource/Alexander_Hacke	http://dbpedia.org/resource/Heinrich_Bruns	http://dbpedia.org/resource/Claire_Loewenfeld	http://dbpedia.org/resource/Klaus_Dumke	http://dbpedia.org/resource/Gustav_Stresemann	http://dbpedia.org/resource/Till_Tantau	http://dbpedia.org/resource/Carl_Bolle	http://dbpedia.org/resource/Karin_Boyd	http://dbpedia.org/resource/Prince_Frederick_of_Prussia_(1794%E2%80%931863)	http://dbpedia.org/resource/Paul_Bildt	http://dbpedia.org/resource/Kotaro_Yanagi	http://dbpedia.org/resource/Hans_Hermann_Eschke	http://dbpedia.org/resource/Frederic_Lewy	http://dbpedia.org/resource/Andrea_Hollander_Budy	http://dbpedia.org/resource/Ulrich_Heyse	http://dbpedia.org/resource/Pierre_Sanoussi-Bliss	http://dbpedia.org/resource/Andr%C3%A9_Wohllebe	http://dbpedia.org/resource/Hermann_von_Oppeln-Bronikowski	http://dbpedia.org/resource/Erwin_Leiser	http://dbpedia.org/resource/Jeff_Sipe	http://dbpedia.org/resource/Eilhard_Wiedemann	http://dbpedia.org/resource/Thorben_Marx	http://dbpedia.org/resource/Friedrich_Curschmann	http://dbpedia.org/resource/Robert_Baberske	http://dbpedia.org/resource/Kevin_Pannewitz	http://dbpedia.org/resource/Steven_Ruprecht	http://dbpedia.org/resource/Frank_Dehne	http://dbpedia.org/resource/Peer_Bork	http://dbpedia.org/resource/Inken_Beeken	http://dbpedia.org/resource/Bj%C3%B6rn_Werner	http://dbpedia.org/resource/Frank_Wormuth	http://dbpedia.org/resource/Russell_William_Thaw	http://dbpedia.org/resource/Werner_Stumpf	http://dbpedia.org/resource/J%C3%B6rn-Uwe_Fahrenkrog-Petersen__,_Uwe__1	http://dbpedia.org/resource/Wolfram_von_Soden	http://dbpedia.org/resource/Sebastian_F%C3%BClle	http://dbpedia.org/resource/Dirk_Heidemann	http://dbpedia.org/resource/Klaus_Bugdahl	http://dbpedia.org/resource/Klaus_Allisat	http://dbpedia.org/resource/Robert_Remak_(mathematician)	http://dbpedia.org/resource/Julian_Salatzki	http://dbpedia.org/resource/Arno_Peters	http://dbpedia.org/resource/Wilhelm_Dieter_Siebert	http://dbpedia.org/resource/J%C3%A9rome_Polenz	http://dbpedia.org/resource/Karl_Zerbe	http://dbpedia.org/resource/Paul_Landers	http://dbpedia.org/resource/Helmut_W._Schulz	http://dbpedia.org/resource/Isabel_Kerschowski	http://dbpedia.org/resource/Ursula_of_Brandenburg	http://dbpedia.org/resource/Gustav_Gassner	http://dbpedia.org/resource/Albert_Speer,_Jr.	http://dbpedia.org/resource/Heinrich_Roller	http://dbpedia.org/resource/Timmo_Niesner	http://dbpedia.org/resource/Hans-Werner_Wanzlick	http://dbpedia.org/resource/Shlomo_Shafir	http://dbpedia.org/resource/Philipp_Gr%C3%BCneberg	http://dbpedia.org/resource/Christian_Berkel	http://dbpedia.org/resource/Neal_Mallett	http://dbpedia.org/resource/Carsten_Str%C3%A4%C3%9Fer	http://dbpedia.org/resource/Felicio_Brown_Forbes	http://dbpedia.org/resource/Heinz_Gr%C3%BCndel	http://dbpedia.org/resource/Felix_von_Jascheroff	http://dbpedia.org/resource/Richard_Rado	http://dbpedia.org/resource/Johann_Heinrich_Samuel_Formey	http://dbpedia.org/resource/Ferdynand_Radziwi%C5%82%C5%82	http://dbpedia.org/resource/Uwe_Unterwalder	http://dbpedia.org/resource/Felix_Werder	http://dbpedia.org/resource/Sandra_Luesse	http://dbpedia.org/resource/Francis_Simon	http://dbpedia.org/resource/Friedrich_von_Canitz	http://dbpedia.org/resource/Arya_Mitra_Sharma	http://dbpedia.org/resource/Maximilian_Harden	http://dbpedia.org/resource/Otto_Ackermann_(painter)	http://dbpedia.org/resource/Yohanan_Simon	http://dbpedia.org/resource/Gunther_Stent	http://dbpedia.org/resource/Konrad_Zuse	http://dbpedia.org/resource/Paul_Citroen	http://dbpedia.org/resource/Christine_Errath	http://dbpedia.org/resource/Fritz_Buelow	http://dbpedia.org/resource/Trude_Berliner	http://dbpedia.org/resource/Ben_Zolinski	http://dbpedia.org/resource/Gerhard_Rohlfs	http://dbpedia.org/resource/Peter_Gr%C3%B6ning	http://dbpedia.org/resource/Wolfgang_Heidenfeld	http://dbpedia.org/resource/Erik_Zabel	http://dbpedia.org/resource/Erich_Fiedler	http://dbpedia.org/resource/Ernest_Beutler	http://dbpedia.org/resource/Mark_Ehrenfried	http://dbpedia.org/resource/Roger_Cicero	http://dbpedia.org/resource/Shlomo_Carlebach_(musician)	http://dbpedia.org/resource/Claudine_Wilde	http://dbpedia.org/resource/Manuela_Gro%C3%9F	http://dbpedia.org/resource/Viktor_Schmieden	http://dbpedia.org/resource/Veit_Harlan	http://dbpedia.org/resource/Manfred_Noa	http://dbpedia.org/resource/Hermann_Buse	http://dbpedia.org/resource/G%C3%BCnter_Vollmer	http://dbpedia.org/resource/Georg_Lassen	http://dbpedia.org/resource/Monika_Kruse	http://dbpedia.org/resource/Ludwig_Lewisohn	http://dbpedia.org/resource/Debra_Milke	http://dbpedia.org/resource/Wilhelm_Schirmer	http://dbpedia.org/resource/Ernst_Gustav_Gotthelf_Marcus	http://dbpedia.org/resource/Charlotte_Wilhelmina_Franziska_Brandes	http://dbpedia.org/resource/Bernhard_Reichenbach	http://dbpedia.org/resource/Johann_Christian_Cuno	http://dbpedia.org/resource/Christian_Sandow	http://dbpedia.org/resource/Richard_Wolffenstein_(chemist)	http://dbpedia.org/resource/Johanna_Hofer	http://dbpedia.org/resource/Mia-Sophie_Wellenbrink	http://dbpedia.org/resource/Ralph_Elliott	http://dbpedia.org/resource/Karl-Heinz_Spickenagel	http://dbpedia.org/resource/Louis_Adlon	http://dbpedia.org/resource/G%C3%BCnter_Litfin	http://dbpedia.org/resource/Pinchas_Biberfeld	http://dbpedia.org/resource/Dora_Doll	http://dbpedia.org/resource/Roman_Prokoph	http://dbpedia.org/resource/Johann_Wilhelm_Schwedler	http://dbpedia.org/resource/Tom_Trybull	http://dbpedia.org/resource/Jobst-Hilmar_von_Bose	http://dbpedia.org/resource/Franziska_Huhn	http://dbpedia.org/resource/Helga_Lin%C3%A9	http://dbpedia.org/resource/Hildegard_Trabant	http://dbpedia.org/resource/K%C3%A4the_Haack	http://dbpedia.org/resource/Cosima_Shaw	http://dbpedia.org/resource/Bente_Kraus	http://dbpedia.org/resource/Axel_Anderson	http://dbpedia.org/resource/Dominik_Schmidt	http://dbpedia.org/resource/Henry_H%C3%BCbchen	http://dbpedia.org/resource/Egbert_Hirschfelder	http://dbpedia.org/resource/Marie_Malavoy	http://dbpedia.org/resource/Andre_Gunder_Frank	http://dbpedia.org/resource/Hanno_Koffler	http://dbpedia.org/resource/Ludwig_Lachmann	http://dbpedia.org/resource/Grit_Lehmann	http://dbpedia.org/resource/Gabi_Novak	http://dbpedia.org/resource/Adelbert_Theodor_Wangemann	http://dbpedia.org/resource/Julius_Friedl%C3%A4nder	http://dbpedia.org/resource/Ernst_Remak	http://dbpedia.org/resource/Lukas_Foss	http://dbpedia.org/resource/Hans_Deppe	http://dbpedia.org/resource/Peer_Kusmagk	http://dbpedia.org/resource/Karl-Heinz_Noak	http://dbpedia.org/resource/J%C3%BCrgen_Theuerkauff	http://dbpedia.org/resource/Fritz_Oppenheimer	http://dbpedia.org/resource/Thomas_Eisner	http://dbpedia.org/resource/Liane_Berkowitz	http://dbpedia.org/resource/Thor_Freudenthal	http://dbpedia.org/resource/Brigitte_Horney	http://dbpedia.org/resource/Fritz_Losigkeit	http://dbpedia.org/resource/Wilhelm_Bleek	http://dbpedia.org/resource/Hans_Albin_Freiherr_von_Reitzenstein	http://dbpedia.org/resource/Thomas_Drechsel	http://dbpedia.org/resource/Ladarius_Green	http://dbpedia.org/resource/Hanns_Alexander	http://dbpedia.org/resource/Hanns_Becker	http://dbpedia.org/resource/Tanja_Kolbe	http://dbpedia.org/resource/Andy_Malecek	http://dbpedia.org/resource/Fritz_Perls	http://dbpedia.org/resource/Deso_Dogg	http://dbpedia.org/resource/Loo_Hardy	http://dbpedia.org/resource/Horst_E._Brandt	http://dbpedia.org/resource/Anna_M%C3%BCller-Lincke	http://dbpedia.org/resource/Alfred_Bengsch	http://dbpedia.org/resource/Mithat_Demirel	http://dbpedia.org/resource/Fritz_Kolbe	http://dbpedia.org/resource/Alexander_Bade	http://dbpedia.org/resource/Kurt_Knappe	http://dbpedia.org/resource/Ludwig_Godenschweg	http://dbpedia.org/resource/D%C3%B6rte_Th%C3%BCmmler	http://dbpedia.org/resource/Franz_Weller	http://dbpedia.org/resource/Helmut_Newton	http://dbpedia.org/resource/Alexander_Gottlieb_Baumgarten	http://dbpedia.org/resource/Hermann_Lux_(footballer)	http://dbpedia.org/resource/Loni_Nest	http://dbpedia.org/resource/Boris_Groys	http://dbpedia.org/resource/Otto_Wallburg	http://dbpedia.org/resource/Princess_Anna_of_Prussia	http://dbpedia.org/resource/Leo_Arons	http://dbpedia.org/resource/Inge_Keller	http://dbpedia.org/resource/Erhan_Emre	http://dbpedia.org/resource/Jan_Jagla	http://dbpedia.org/resource/Emmy_Damerius-Koenen	http://dbpedia.org/resource/Gino_Ferrin	http://dbpedia.org/resource/Alfred_Neumann_(East_Germany)	http://dbpedia.org/resource/August_Diehl	http://dbpedia.org/resource/Carola_Nitschke	http://dbpedia.org/resource/Hans_von_Ahlfen	http://dbpedia.org/resource/Otto_Winzer	http://dbpedia.org/resource/Andreas_Neuendorf	http://dbpedia.org/resource/Henry_H._Barschall	http://dbpedia.org/resource/Franz_Oppenheimer	http://dbpedia.org/resource/Tanja_Damaske	http://dbpedia.org/resource/Antonio_R%C3%BCdiger	http://dbpedia.org/resource/Michael_Kerr_(lawyer)	http://dbpedia.org/resource/Emil_Puhl	http://dbpedia.org/resource/Clemens-Heinrich_Graf_von_Kageneck	http://dbpedia.org/resource/Georg_Bohlmann	http://dbpedia.org/resource/Ernst_Zermelo	http://dbpedia.org/resource/Nikki_van_der_Zyl	http://dbpedia.org/resource/Karl_Anton_Eckert	http://dbpedia.org/resource/Joachim_Kunert	http://dbpedia.org/resource/Bernhard_Naunyn	http://dbpedia.org/resource/D'Anthony_Smith	http://dbpedia.org/resource/Norbert_Walter_(volleyball)	http://dbpedia.org/resource/Friedrich_Wilhelm_von_Thulemeyer	http://dbpedia.org/resource/Timo_Kahlen	http://dbpedia.org/resource/Albert_Eulenburg	http://dbpedia.org/resource/Gustav_Rose	http://dbpedia.org/resource/Fritz_Werner	http://dbpedia.org/resource/Gisela_Arendt	http://dbpedia.org/resource/Rudi_Ball	http://dbpedia.org/resource/Maxime_Hans_Kuczynski	http://dbpedia.org/resource/Karsten_Heine	http://dbpedia.org/resource/Bon%C3%A9_Uaferro	http://dbpedia.org/resource/Manfred_Durniok	http://dbpedia.org/resource/Dmitri_Borgmann	http://dbpedia.org/resource/Magnus_von_Eberhardt	http://dbpedia.org/resource/Bern_von_Baer	http://dbpedia.org/resource/Harry_Herrmann	http://dbpedia.org/resource/Nina_Hagen	http://dbpedia.org/resource/Bernd_Patzke	http://dbpedia.org/resource/Gustave_Kahnt	http://dbpedia.org/resource/Ferdinand_Avenarius	http://dbpedia.org/resource/Princess_Philippine_Charlotte_of_Prussia	http://dbpedia.org/resource/Daniel_Schulz	http://dbpedia.org/resource/Olaf_Helmer	http://dbpedia.org/resource/Edmund_F%C3%BCrst	http://dbpedia.org/resource/Werner_Thierfelder	http://dbpedia.org/resource/Richard_Quirin	http://dbpedia.org/resource/Heinz_Becker	http://dbpedia.org/resource/Ulrich_Matthes	http://dbpedia.org/resource/Eberhard_Kinzel	http://dbpedia.org/resource/Hans_Eysenck	http://dbpedia.org/resource/Peter_Liebers	http://dbpedia.org/resource/Stefan_Lorenz	http://dbpedia.org/resource/Carl-Heinz_R%C3%BChl	http://dbpedia.org/resource/Jutta_Wachowiak	http://dbpedia.org/resource/Annika_Schleu	http://dbpedia.org/resource/Marius_Gersbeck	http://dbpedia.org/resource/Landgravine_Louise_of_Hesse-Darmstadt_(1757%E2%80%931830)	http://dbpedia.org/resource/Rudolf_Noelte	http://dbpedia.org/resource/Max_von_Fabeck	http://dbpedia.org/resource/Benjamin_Huefner	http://dbpedia.org/resource/Carl_Froelich	http://dbpedia.org/resource/Heinz_Schr%C3%B6der	http://dbpedia.org/resource/J%C3%BCrgen_N%C3%B6ldner	http://dbpedia.org/resource/Jacky_Terrasson	http://dbpedia.org/resource/Alfred_Wegener	http://dbpedia.org/resource/Otto_zur_Strassen	http://dbpedia.org/resource/Lucie_Mannheim	http://dbpedia.org/resource/Jan_Gyamerah	http://dbpedia.org/resource/Carl_Ludvig_Engel	http://dbpedia.org/resource/Agnes_Bernelle	http://dbpedia.org/resource/R%C3%BCdiger_von_Wechmar	http://dbpedia.org/resource/Johann_Friedrich_Unger	http://dbpedia.org/resource/Max_Kepler	http://dbpedia.org/resource/Timo_Uster	http://dbpedia.org/resource/Baldur_von_Schirach	http://dbpedia.org/resource/D-Irie	http://dbpedia.org/resource/Max_Trapp	http://dbpedia.org/resource/Klaus_Holzkamp	http://dbpedia.org/resource/Johann_Christoph_Pepusch	http://dbpedia.org/resource/Kurt_Fricke	http://dbpedia.org/resource/Victor_Beaumont	http://dbpedia.org/resource/Hugo_Preu%C3%9F	http://dbpedia.org/resource/Viktor_Meyer	http://dbpedia.org/resource/Ulrich_Biel	http://dbpedia.org/resource/Ursula_Heinzelmann	http://dbpedia.org/resource/Louise_Reichardt	http://dbpedia.org/resource/Uwe_Jahn	http://dbpedia.org/resource/Franz_Breithaupt	http://dbpedia.org/resource/Elsa_Neumann	http://dbpedia.org/resource/Walther_Lucht	http://dbpedia.org/resource/Ursula_Deinert	http://dbpedia.org/resource/Moses_Schneider	http://dbpedia.org/resource/Helmut_Mahlke	http://dbpedia.org/resource/Felix_von_Leitner	http://dbpedia.org/resource/Lissy_Arna	http://dbpedia.org/resource/Fabian_Busch	http://dbpedia.org/resource/Nastassja_Kinski	http://dbpedia.org/resource/Gregor_Schnitzler	http://dbpedia.org/resource/Else_Ury	http://dbpedia.org/resource/Princess_Frederica_Wilhelmina_of_Prussia	http://dbpedia.org/resource/Anne_Wiazemsky	http://dbpedia.org/resource/Gerd_Heinrich	http://dbpedia.org/resource/Atossa_Leoni	http://dbpedia.org/resource/Wilhelm_M%C3%BCseler	http://dbpedia.org/resource/Joachim_Lemelsen	http://dbpedia.org/resource/Rudolf_Risch	http://dbpedia.org/resource/Pascal_Bieler	http://dbpedia.org/resource/J%C3%BCrgen_Schmidt	http://dbpedia.org/resource/John_Rayner	http://dbpedia.org/resource/Brigitte_D'Ortschy	http://dbpedia.org/resource/Lea_Rosh	http://dbpedia.org/resource/Taygun_Kuru	http://dbpedia.org/resource/Otto_Nebel	http://dbpedia.org/resource/Johanna_von_Koczian	http://dbpedia.org/resource/Lars_Wichert	http://dbpedia.org/resource/Erich_Jahn	http://dbpedia.org/resource/Willi_Stoph	http://dbpedia.org/resource/Klaus_Mollenhauer	http://dbpedia.org/resource/Heinz_Heck	http://dbpedia.org/resource/Hany_Mukhtar	http://dbpedia.org/resource/Felix_Zwayer	http://dbpedia.org/resource/Erich_Auerbach	http://dbpedia.org/resource/Heinz_Wolff	http://dbpedia.org/resource/James_Loxton	http://dbpedia.org/resource/Charles_Frederick_Albert,_Margrave_of_Brandenburg-Schwedt	http://dbpedia.org/resource/Hardy_Kr%C3%BCger	http://dbpedia.org/resource/Frank_Hahn	http://dbpedia.org/resource/Heinz_Lehmann	http://dbpedia.org/resource/Carl_Emanuel_Conrad	http://dbpedia.org/resource/Lilli_Schweiger	http://dbpedia.org/resource/Leo_Frobenius	http://dbpedia.org/resource/Wolf_Jobst_Siedler	http://dbpedia.org/resource/Karl_Friedrich_August_Rammelsberg	http://dbpedia.org/resource/Albert_Hague	http://dbpedia.org/resource/Arne_Feick	http://dbpedia.org/resource/Maya_Saban	http://dbpedia.org/resource/Birger_Sellin	http://dbpedia.org/resource/Wolfgang_S%C3%BChnholz	http://dbpedia.org/resource/George_Markstein	http://dbpedia.org/resource/Friedwardt_Winterberg	http://dbpedia.org/resource/Leopold_Biberti	http://dbpedia.org/resource/Reinhold_Strassmann	http://dbpedia.org/resource/Martin_H%C3%A4ner	http://dbpedia.org/resource/Ayya_Khema	http://dbpedia.org/resource/Brigitte_Bodenheimer	http://dbpedia.org/resource/Friedrich-Wilhelm_Kiel	http://dbpedia.org/resource/Heinz_Hilpert	http://dbpedia.org/resource/Max_Schreck	http://dbpedia.org/resource/Harry_M._Rosenfeld	http://dbpedia.org/resource/Julia_Franck	http://dbpedia.org/resource/Paul_de_Lagarde	http://dbpedia.org/resource/Hans_Bernd_von_Haeften	http://dbpedia.org/resource/Wilhelm_Behrens	http://dbpedia.org/resource/Julia_Fischer_(athlete)	http://dbpedia.org/resource/Volkan_Alt%C4%B1n	http://dbpedia.org/resource/Manfred_Gurlitt	http://dbpedia.org/resource/Otto_Devrient	http://dbpedia.org/resource/Peter_Schamoni	http://dbpedia.org/resource/Wilhelm_Biltz	http://dbpedia.org/resource/Dominik_Bielke	http://dbpedia.org/resource/Bruno_Walter	http://dbpedia.org/resource/Florian_Grossert	http://dbpedia.org/resource/Reinhold_Baer	http://dbpedia.org/resource/Ilja_Richter	http://dbpedia.org/resource/Hans_A._Linde	http://dbpedia.org/resource/Pola_Kinski	http://dbpedia.org/resource/Heinz_Werner	http://dbpedia.org/resource/Ulrich_Grauert	http://dbpedia.org/resource/Sexy_Cora	http://dbpedia.org/resource/Anna_Amalia,_Abbess_of_Quedlinburg	http://dbpedia.org/resource/Arthur_Kronfeld	http://dbpedia.org/resource/Edzard_Schmidt-Jortzig	http://dbpedia.org/resource/Erich_Kestin	http://dbpedia.org/resource/Rudolf_Bredow	http://dbpedia.org/resource/Rudolf_Schmidt	http://dbpedia.org/resource/Walter_Gropius	http://dbpedia.org/resource/Erwin_Casmir	http://dbpedia.org/resource/Ante_%C4%8Covi%C4%87_(Croatian_footballer)	http://dbpedia.org/resource/Mady_Rahl	http://dbpedia.org/resource/Paul_Biensfeldt	http://dbpedia.org/resource/Otto_Wels	http://dbpedia.org/resource/Torsten_Hiekmann	http://dbpedia.org/resource/Lilly_Wust	http://dbpedia.org/resource/Fran%C3%A7ois_Seydoux_de_Clausonne	http://dbpedia.org/resource/Hans-J%C3%BCrgen_Papier	http://dbpedia.org/resource/Franz_Danowski	http://dbpedia.org/resource/Leonard_Proxauf	http://dbpedia.org/resource/Bruno_Tesch	http://dbpedia.org/resource/Hans_Schweikart	http://dbpedia.org/resource/Eduard_Gaertner	http://dbpedia.org/resource/Sefton_Delmer	http://dbpedia.org/resource/Heinrich_Biltz	http://dbpedia.org/resource/Hillel_Furstenberg	http://dbpedia.org/resource/Axel_Neumann	http://dbpedia.org/resource/Jerome_Kiesewetter	http://dbpedia.org/resource/Otto_von_der_Gablentz	http://dbpedia.org/resource/Klaus_Voormann	http://dbpedia.org/resource/Klaus_Doldinger	http://dbpedia.org/resource/Max_Davidson	http://dbpedia.org/resource/Axel_Rosin	http://dbpedia.org/resource/Ludwig_Achim_von_Arnim	http://dbpedia.org/resource/Paul_Westermeier	http://dbpedia.org/resource/Erik_Ode	http://dbpedia.org/resource/Rotraut_Richter	http://dbpedia.org/resource/Hans_Coppi,_Jr.	http://dbpedia.org/resource/Peter_Popoff	http://dbpedia.org/resource/Philip_Lehr	http://dbpedia.org/resource/Erich_von_Manstein	http://dbpedia.org/resource/Alfred_G%C3%B6rnemann	http://dbpedia.org/resource/Wolfgang_Bahro	http://dbpedia.org/resource/Hartmut_Fl%C3%B6ckner	http://dbpedia.org/resource/Erwin_Planck	http://dbpedia.org/resource/Anke_Scholz	http://dbpedia.org/resource/Wolfgang_Kohlhaase	http://dbpedia.org/resource/Tania_Long	http://dbpedia.org/resource/Henry_Haase	http://dbpedia.org/resource/Kevin-Prince_Boateng	http://dbpedia.org/resource/Ra'ad_bin_Zeid	http://dbpedia.org/resource/Pardis_Fardjad-Azad	http://dbpedia.org/resource/Ernst_Waldow	http://dbpedia.org/resource/Petra_Kusch-L%C3%BCck	http://dbpedia.org/resource/Maurice_Trapp	http://dbpedia.org/resource/Sophie_Tieck	http://dbpedia.org/resource/Wolfgang_Schadewaldt	http://dbpedia.org/resource/Andrea_Pozzato	http://dbpedia.org/resource/Hermann_Kulke	http://dbpedia.org/resource/Karlheinz_Schulz_Streeck	http://dbpedia.org/resource/Anni_Albers	http://dbpedia.org/resource/Witold_Conti	http://dbpedia.org/resource/Shervin_Radjabali-Fardi	http://dbpedia.org/resource/Steffen_Landgraf	http://dbpedia.org/resource/Theodor_Julius_Jaff%C3%A9	http://dbpedia.org/resource/Mark_Strizic	http://dbpedia.org/resource/Gustav_Heinrich_Ralph_von_Koenigswald	http://dbpedia.org/resource/Charles_Albert_Tindley	http://dbpedia.org/resource/Heinz_Lucas	http://dbpedia.org/resource/Heinz_Franke	http://dbpedia.org/resource/Prince_Waldemar_of_Prussia_(1868%E2%80%931879)	http://dbpedia.org/resource/Reiner_Lemoine	http://dbpedia.org/resource/Detlef_Gromoll	http://dbpedia.org/resource/Heinrich_Hax	http://dbpedia.org/resource/Frederick_William_I_of_Prussia	http://dbpedia.org/resource/Adolf_von_Baeyer	http://dbpedia.org/resource/Julius_Rietz	http://dbpedia.org/resource/Michael_Woythe	http://dbpedia.org/resource/Norman_Jeschke	http://dbpedia.org/resource/Colin_Grzanna	http://dbpedia.org/resource/Walburga,_Lady_Paget	http://dbpedia.org/resource/G%C3%BCnter_Herlitz	http://dbpedia.org/resource/Thorsten_Wittek	http://dbpedia.org/resource/Willy_Semmelrogge	http://dbpedia.org/resource/Paul_Graener	http://dbpedia.org/resource/Klaus_Goldschlag	http://dbpedia.org/resource/Harry_Polewacz	http://dbpedia.org/resource/Lena_Nitro	http://dbpedia.org/resource/Franziska_van_Almsick	http://dbpedia.org/resource/Heinrich_Neumann	http://dbpedia.org/resource/Adolf_Christen	http://dbpedia.org/resource/Janine_Habeck	http://dbpedia.org/resource/Siegfried_Eifrig	http://dbpedia.org/resource/Walter_Lassally	http://dbpedia.org/resource/Herbert_von_Bismarck	http://dbpedia.org/resource/Peretz_Naftali	http://dbpedia.org/resource/Ernst_Lubitsch	http://dbpedia.org/resource/Emil_Rathenau	http://dbpedia.org/resource/Alexander_von_Arentschildt	http://dbpedia.org/resource/Kurt_Lilien	http://dbpedia.org/resource/Leni_Stengel	http://dbpedia.org/resource/Marvin_Tepper	http://dbpedia.org/resource/Ludwig_Bussler	http://dbpedia.org/resource/Jens-Daniel_Herzog	http://dbpedia.org/resource/Nico_Pellatz	http://dbpedia.org/resource/Walther_Rathenau	http://dbpedia.org/resource/Harald_Braem	http://dbpedia.org/resource/Edmund_Landau	http://dbpedia.org/resource/Alexander_Marcus	http://dbpedia.org/resource/Werner_Hinz	http://dbpedia.org/resource/Hans_Wallach	http://dbpedia.org/resource/Anna_Maria_M%C3%BChe	http://dbpedia.org/resource/Egon_Aghta	http://dbpedia.org/resource/Robin_Backhaus_(German_swimmer)	http://dbpedia.org/resource/Prince_Albert_of_Prussia_(1837%E2%80%931906)	http://dbpedia.org/resource/Robert_Thalheim	http://dbpedia.org/resource/Waldemar_Pabst	http://dbpedia.org/resource/John_Anthony_Brooks	http://dbpedia.org/resource/Julius_Falkenstein	http://dbpedia.org/resource/Princess_Louise_of_Prussia	http://dbpedia.org/resource/Alpa_Gun	http://dbpedia.org/resource/Rolf_Zacher	http://dbpedia.org/resource/Heinz_Brandt	http://dbpedia.org/resource/St%C3%A9phane_Hessel	http://dbpedia.org/resource/Kurt_Gerron	http://dbpedia.org/resource/Ernst-Anton_von_Krosigk	http://dbpedia.org/resource/Walther_Kruse	http://dbpedia.org/resource/Richard_L%C3%B6wenthal	http://dbpedia.org/resource/Horst_Wendlandt	http://dbpedia.org/resource/Lasse_Kopitz	http://dbpedia.org/resource/Richard_Jaeger	http://dbpedia.org/resource/Hans-J%C3%BCrgen_Schatz	http://dbpedia.org/resource/Tim_Bendzko	http://dbpedia.org/resource/Ren%C3%A9_Klingbeil	http://dbpedia.org/resource/Werner_Hartmann_(physicist)	http://dbpedia.org/resource/Renate_Mayntz	http://dbpedia.org/resource/Eser_Ya%C4%9Fmur	http://dbpedia.org/resource/Ingrid_van_Houten-Groeneveld	http://dbpedia.org/resource/Alfredo_Morales	http://dbpedia.org/resource/Misan_Haldin	http://dbpedia.org/resource/J%C3%BCrgen_Bertow	http://dbpedia.org/resource/Achmed_Khammas	http://dbpedia.org/resource/Erdmuthe_of_Brandenburg	http://dbpedia.org/resource/Eugen_Rex	http://dbpedia.org/resource/Gustav_Br%C3%BChl	http://dbpedia.org/resource/Hans-Paul_Schwefel	http://dbpedia.org/resource/Reinhard_Kolldehoff	http://dbpedia.org/resource/Barnaby_Metschurat	http://dbpedia.org/resource/Kossa_Bokchan	http://dbpedia.org/resource/Klaus_Reinhardt	http://dbpedia.org/resource/Fritz_Hippler	http://dbpedia.org/resource/Gerhard_A._Ritter	http://dbpedia.org/resource/Marvin_Knoll	http://dbpedia.org/resource/Monty_Don	http://dbpedia.org/resource/Katharina_Thalbach	http://dbpedia.org/resource/Bernd_M%C3%BCller_(footballer_born_1949)	http://dbpedia.org/resource/Lotte_Reiniger	http://dbpedia.org/resource/Johannes_Dietrich	http://dbpedia.org/resource/Nelly_Sachs	http://dbpedia.org/resource/Werner_Rittberger	http://dbpedia.org/resource/Bass_Sultan_Hengzt	http://dbpedia.org/resource/Wolfgang_Klausewitz	http://dbpedia.org/resource/David_Hurst	http://dbpedia.org/resource/Michael_Pflug	http://dbpedia.org/resource/Heinz_Waaske	http://dbpedia.org/resource/Herbert_Selpin	http://dbpedia.org/resource/Jaecki_Schwarz	http://dbpedia.org/resource/J%C3%BCrgen_Geschke	http://dbpedia.org/resource/Oliver_Petszokat	http://dbpedia.org/resource/Killa_Hakan	http://dbpedia.org/resource/Frank_Michael_Beyer	http://dbpedia.org/resource/Dorothea_von_Schlegel	http://dbpedia.org/resource/G%C3%BCnter_de_Bruyn	http://dbpedia.org/resource/Hasso_Plattner	http://dbpedia.org/resource/Sybille_Bedford	http://dbpedia.org/resource/Ben_Ishola	http://dbpedia.org/resource/Isadore_S._Jachman	http://dbpedia.org/resource/Bjorn_Barta	http://dbpedia.org/resource/Erich_Kallius	http://dbpedia.org/resource/Friedrich_Wilhelm_Foerster	http://dbpedia.org/resource/Emil_Wiesemann	http://dbpedia.org/resource/Wilhelm_von_Hahnke	http://dbpedia.org/resource/August_Brand	http://dbpedia.org/resource/Hugh_Rose,_1st_Baron_Strathnairn	http://dbpedia.org/resource/Ernst_Reicher	http://dbpedia.org/resource/Prince_Henry_of_Prussia_(1862%E2%80%931929)	http://dbpedia.org/resource/Leonie_Mellinger	http://dbpedia.org/resource/Karl_Wilhelm_von_Stutterheim	http://dbpedia.org/resource/Heinz_Korn	http://dbpedia.org/resource/Carl_Wilhelm_Borchardt	http://dbpedia.org/resource/J%C3%B6rn-Uwe_Fahrenkrog-Petersen	http://dbpedia.org/resource/Christian_Lorenz	http://dbpedia.org/resource/Franz_Schafheitlin	http://dbpedia.org/resource/Ilse_St%C3%B6be	http://dbpedia.org/resource/U%C4%9Fur_Demirkol	http://dbpedia.org/resource/Andreas_Kratky	http://dbpedia.org/resource/Curt_Courant	http://dbpedia.org/resource/Joachim_Werner_(rower)	http://dbpedia.org/resource/Kurt_Schulz_(cinematographer)	http://dbpedia.org/resource/Alfred_Genz	http://dbpedia.org/resource/Daniela_Schulte	http://dbpedia.org/resource/Walter_Lange	http://dbpedia.org/resource/Franz_Eichhorst	http://dbpedia.org/resource/Lina_Abarbanell	http://dbpedia.org/resource/Helmut_Kuhnert	http://dbpedia.org/resource/Peter_Eggert	http://dbpedia.org/resource/Georg_Wittig	http://dbpedia.org/resource/Arno_Steffenhagen	http://dbpedia.org/resource/C%C3%A4cilia_Rentmeister	http://dbpedia.org/resource/Michael_Nikolay	http://dbpedia.org/resource/Frederick_William_II_of_Prussia	http://dbpedia.org/resource/Fritz_Kalkbrenner	http://dbpedia.org/resource/Simon_Pallas	http://dbpedia.org/resource/Siegfried_Lehman	http://dbpedia.org/resource/Harald_Braun	http://dbpedia.org/resource/Tanja_Wenzel	http://dbpedia.org/resource/Alexander_Goehr	http://dbpedia.org/resource/Volkhard_Eitner	http://dbpedia.org/resource/Uwe_Kropinski	http://dbpedia.org/resource/Fay_Godwin	http://dbpedia.org/resource/Ernst_Heilmann	http://dbpedia.org/resource/Fritz_John	http://dbpedia.org/resource/Karl_Koetz	http://dbpedia.org/resource/Halet_%C3%87ambel	http://dbpedia.org/resource/Werner_Schaaphok	http://dbpedia.org/resource/Princess_Sophia_Dorothea_of_Prussia	http://dbpedia.org/resource/Henry_F._Urban	http://dbpedia.org/resource/Klemens_von_Klemperer	http://dbpedia.org/resource/Adelbert_Schulz	http://dbpedia.org/resource/Arthur_Nussbaum	http://dbpedia.org/resource/Maria_Zakrzewska	http://dbpedia.org/resource/Fritz_Wolffheim	http://dbpedia.org/resource/Trude_Sojka	http://dbpedia.org/resource/Bettina_Moissi	http://dbpedia.org/resource/Robert_Zuppke	http://dbpedia.org/resource/Adelheid_Seeck	http://dbpedia.org/resource/Martin_Luther_(diplomat)	http://dbpedia.org/resource/Guido_Buchwald	http://dbpedia.org/resource/Andreas_Wisniewski	http://dbpedia.org/resource/Heinz_Bergmann	http://dbpedia.org/resource/Frederick_Lowenheim	http://dbpedia.org/resource/Ed_Eiteljorge	http://dbpedia.org/resource/Ludwig_Berger_(composer)	http://dbpedia.org/resource/Ren%C3%A9_Lohse	http://dbpedia.org/resource/Heinz_Buschkowsky	http://dbpedia.org/resource/Margravine_Louise_Charlotte_of_Brandenburg	http://dbpedia.org/resource/Samuel_Schwarz_(speed_skater)	http://dbpedia.org/resource/J%C3%BCrgen_Oesten	http://dbpedia.org/resource/Ruth_Cohn	http://dbpedia.org/resource/Paul_Demetrius_Kotzebue	http://dbpedia.org/resource/Bj%C3%B6rn_Schr%C3%B6der	http://dbpedia.org/resource/Edwin_Hennig	http://dbpedia.org/resource/Christian_Biegai	http://dbpedia.org/resource/George_W._Stocking,_Jr.	http://dbpedia.org/resource/Erik_Thorbecke	http://dbpedia.org/resource/Gregor_Vietz	http://dbpedia.org/resource/Elga_Brink	http://dbpedia.org/resource/Florian_Hube	http://dbpedia.org/resource/Wilhelm_Schneemelcher	http://dbpedia.org/resource/Fritz_Mauruschat	http://dbpedia.org/resource/Wilhelmina_of_Prussia,_Princess_of_Orange	http://dbpedia.org/resource/Hans-Dieter_Pophal	http://dbpedia.org/resource/Sascha_Sch%C3%BCnemann	http://dbpedia.org/resource/Kevin_Stephan	http://dbpedia.org/resource/Thomas_Elsaesser	http://dbpedia.org/resource/Belhe_Zaimo%C4%9Flu	http://dbpedia.org/resource/Alice_Samter	http://dbpedia.org/resource/Robert_Gysae	http://dbpedia.org/resource/Jan_Herzog	http://dbpedia.org/resource/Clemens_Brummer	http://dbpedia.org/resource/Muhamed_Be%C5%A1i%C4%87	http://dbpedia.org/resource/Dagmar_Berghoff	http://dbpedia.org/resource/Antoine_Hey	http://dbpedia.org/resource/Theodor_Plievier	http://dbpedia.org/resource/Kurt_St%C3%B6pel	http://dbpedia.org/resource/Emil_Rameau	http://dbpedia.org/resource/Uwe_Karpa	http://dbpedia.org/resource/Ludwig_Friedrich_Leopold_von_Gerlach	http://dbpedia.org/resource/Jos%C3%A9_Francisco_Guerra	http://dbpedia.org/resource/Beate_Hermelin	http://dbpedia.org/resource/Kurt_von_der_Chevallerie	http://dbpedia.org/resource/Herbert_Norkus	http://dbpedia.org/resource/Desir%C3%A9e_Schumann	http://dbpedia.org/resource/Gotthard_Frantz	http://dbpedia.org/resource/Berthold_Koch	http://dbpedia.org/resource/Dieter_Gerhardt	http://dbpedia.org/resource/G%C3%BCnther_Simon	http://dbpedia.org/resource/Klaus_Basikow	http://dbpedia.org/resource/Julia_Jentsch	http://dbpedia.org/resource/Inge_Druckrey	http://dbpedia.org/resource/Hans-Joachim_Marseille	http://dbpedia.org/resource/Albrecht_Ritschl	http://dbpedia.org/resource/Cem_Efe	http://dbpedia.org/resource/Werner_Panse	http://dbpedia.org/resource/Peter_G%C3%B6bel	http://dbpedia.org/resource/Gerhard_Schaar	http://dbpedia.org/resource/R%C3%BCdiger_Vollborn	http://dbpedia.org/resource/Franz_Ludwig_Catel	http://dbpedia.org/resource/Felix_Schiller	http://dbpedia.org/resource/Sebastian_Stefaniszin	http://dbpedia.org/resource/Christopher_Quiring	http://dbpedia.org/resource/Sascha_Rabe	http://dbpedia.org/resource/Ernst_Werner_Techow	http://dbpedia.org/resource/Sebastian_Haffner	http://dbpedia.org/resource/Hans_Poelzig	http://dbpedia.org/resource/Wassili_Luckhardt	http://dbpedia.org/resource/Vincent_Redetzki	http://dbpedia.org/resource/Henry_Koster	http://dbpedia.org/resource/Albert_G%C3%B6ring	http://dbpedia.org/resource/G%C3%BCnter_Fink	http://dbpedia.org/resource/Wilhelm_von_Sch%C3%BCtz	http://dbpedia.org/resource/Valentin_Schweiger	http://dbpedia.org/resource/Martin_Gropius	http://dbpedia.org/resource/Walter_Kaufmann_(author)	http://dbpedia.org/resource/Janusz_Radziwi%C5%82%C5%82_(1880%E2%80%931967)	http://dbpedia.org/resource/Ralf_Braun	http://dbpedia.org/resource/Fritz_Lange	http://dbpedia.org/resource/Klaus_Bretschneider	http://dbpedia.org/resource/Erika_Abels_d'Albert	http://dbpedia.org/resource/Karl_Friedrich_Becker	http://dbpedia.org/resource/Klaus_Ihlenfeld	http://dbpedia.org/resource/Rainer_Eisfeld	http://dbpedia.org/resource/Lutz_D._Schmadel	http://dbpedia.org/resource/George_V_of_Hanover	http://dbpedia.org/resource/Dagny_Servaes	http://dbpedia.org/resource/Janin_Lindenberg	http://dbpedia.org/resource/Friedrich_Hiller_von_Gaertringen	http://dbpedia.org/resource/Abdoul_Thiam	http://dbpedia.org/resource/Gottfried_Graf_von_Bismarck-Sch%C3%B6nhausen	http://dbpedia.org/resource/Birgit_Hollmann	http://dbpedia.org/resource/Ernst_Meiners	http://dbpedia.org/resource/Sabine_Peters	http://dbpedia.org/resource/Karl_Oenike	http://dbpedia.org/resource/Bilal_%C3%87ubuk%C3%A7u	http://dbpedia.org/resource/Walter_Dubislav	http://dbpedia.org/resource/Max_Baumert	http://dbpedia.org/resource/Fritz_Klein_(historian)	http://dbpedia.org/resource/Carl_Theodor_Schulz	http://dbpedia.org/resource/Robert_Jaspert	http://dbpedia.org/resource/Gerda_Christian	http://dbpedia.org/resource/Karl_Friedrich_von_Kl%C3%B6den	http://dbpedia.org/resource/Federico_Kurtz	http://dbpedia.org/resource/Michael_Rapoport	http://dbpedia.org/resource/Klaus_Fischer-Dieskau	http://dbpedia.org/resource/Alfred_Oppenheim	http://dbpedia.org/resource/Walter_Gronostay	http://dbpedia.org/resource/Ra%C3%BAl_Richter	http://dbpedia.org/resource/Ernst_Knobil	http://dbpedia.org/resource/Hubert_Trzybinski	http://dbpedia.org/resource/Wilhelmine_of_Prussia,_Margravine_of_Brandenburg-Bayreuth	http://dbpedia.org/resource/Heinz_Koppel	http://dbpedia.org/resource/Rudolf_Arnheim	http://dbpedia.org/resource/Gerd_Achterberg	http://dbpedia.org/resource/Harald_Mante	http://dbpedia.org/resource/Fred_Goebel	http://dbpedia.org/resource/Erwin_Sander	http://dbpedia.org/resource/Hans_Heilbronn	http://dbpedia.org/resource/Carl_Hasenpflug	http://dbpedia.org/resource/Ernst_Julius_Richard_Ewald	http://dbpedia.org/resource/Otto_Detlev_Creutzfeldt	http://dbpedia.org/resource/Ernst_Levy_(jurist)	http://dbpedia.org/resource/Rainer_Br%C3%BCderle	http://dbpedia.org/resource/Zamil_(rigger)	http://dbpedia.org/resource/Otto_von_Knobelsdorff	http://dbpedia.org/resource/G%C3%B6tz_George	http://dbpedia.org/resource/Frederick_Loewe	http://dbpedia.org/resource/Avner_Less	http://dbpedia.org/resource/Karsten_Schubert	http://dbpedia.org/resource/Joachim_Peiper	http://dbpedia.org/resource/Dmitriy_Tarabin	http://dbpedia.org/resource/Tamara_Desni	http://dbpedia.org/resource/Fritz_Feld	http://dbpedia.org/resource/Georg_Freiherr_von_Gayl	http://dbpedia.org/resource/Georg_Dertinger	http://dbpedia.org/resource/Anton_Schmid_(Oberst)	http://dbpedia.org/resource/Johann_Wilhelm_L%C3%B6bell	http://dbpedia.org/resource/Prince_Adalbert_of_Prussia_(1811%E2%80%931873)	http://dbpedia.org/resource/Florian_Lukas	http://dbpedia.org/resource/Marcus_B%C3%B6hme	http://dbpedia.org/resource/Alexander_Grothendieck	http://dbpedia.org/resource/Kurt_Hahn	http://dbpedia.org/resource/Harry_W%C3%BCstenhagen	http://dbpedia.org/resource/Paul_St%C3%A4ckel	http://dbpedia.org/resource/Hansi_Bochow-Bl%C3%BCthgen	http://dbpedia.org/resource/Princess_Alexandrine_of_Prussia	http://dbpedia.org/resource/Ken_Reichel	http://dbpedia.org/resource/Martin_Fischer-Dieskau	http://dbpedia.org/resource/Herbert_Schwender	http://dbpedia.org/resource/Hermann_Prey	http://dbpedia.org/resource/Adolf_Kirchhoff	http://dbpedia.org/resource/Wilhelm_Gustav_Franz_Herter	http://dbpedia.org/resource/Otto-Hermann_Br%C3%BCcker	http://dbpedia.org/resource/Jan_Pawe%C5%82_Nowacki	http://dbpedia.org/resource/Detlev_Grabs	http://dbpedia.org/resource/J%C3%BCrgen_Bachmann	http://dbpedia.org/resource/Princess_Elisabeth_of_Prussia	http://dbpedia.org/resource/Giacomo_Meyerbeer	http://dbpedia.org/resource/Betty_Heidler	http://dbpedia.org/resource/Inge_King	http://dbpedia.org/resource/Heinz_Hajek-Halke	http://dbpedia.org/resource/Tekin_Sazlog	http://dbpedia.org/resource/Fritz_Thiele	http://dbpedia.org/resource/Prince_Alexander_of_Prussia	http://dbpedia.org/resource/Harry_Benjamin	http://dbpedia.org/resource/Markus_Kaya	http://dbpedia.org/resource/Willi_Eichler	http://dbpedia.org/resource/Prince_Wilhelm_of_Prussia_(1783%E2%80%931851)	http://dbpedia.org/resource/Heinz_Schweizer	http://dbpedia.org/resource/Princess_Friederike_Luise_of_Prussia	http://dbpedia.org/resource/Thomas_Emmrich	http://dbpedia.org/resource/Alice_Orlowski	http://dbpedia.org/resource/Kurt_Koffka	http://dbpedia.org/resource/Kaaren_Verne	http://dbpedia.org/resource/Ernst_Blasius	http://dbpedia.org/resource/Wolfgang_Friedmann	http://dbpedia.org/resource/Richard_G._Salomon	http://dbpedia.org/resource/Atif_Bashir	http://dbpedia.org/resource/Michael_Strauss	http://dbpedia.org/resource/David_Sch%C3%BCtz	http://dbpedia.org/resource/Hedwig_Wangel	http://dbpedia.org/resource/Albert_Grunow	http://dbpedia.org/resource/Bel_Kaufman	http://dbpedia.org/resource/Monique_Kerschowski	http://dbpedia.org/resource/Benjamin_Trinks	http://dbpedia.org/resource/Frederick_Rolf	http://dbpedia.org/resource/Vera_Zorina	http://dbpedia.org/resource/Steven_Rupprich	http://dbpedia.org/resource/Siegfried_Lowitz	http://dbpedia.org/resource/Paul_Wilhelm_Magnus
+====================================================
+ID: 	237
+Content: 	What was the last movie with Alec Guinness?
+OnlyDBO: true	Aggregation: true
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	last movie
+Entity List: 	3
+-------------------------
+ANSWER_TYPE = 0
+
+====================================================
+ID: 	248
+Content: 	What does IYCM stand for?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	IYCM
+Entity List: 	0
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	233
+Content: 	Give me the capitals of all countries that the Himalayas run through.
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	capitals
+Entity List: 	2
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	239
+Content: 	Which actor played Chewbacca?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	actor
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+
+====================================================
+ID: 	213
+Content: 	Which ingredients do I need for carrot cake?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	ingredients
+Entity List: 	3
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	229
+Content: 	Give me all Australian metalcore bands.
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	Australian metalcore bands
+Entity List: 	2
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	227
+Content: 	Give me all actors who were born in Paris after 1950.
+OnlyDBO: true	Aggregation: true
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	actors
+Entity List: 	0
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	252
+Content: 	Give all swimmers that were born in Moscow.
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	swimmers
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	254
+Content: 	Show me the book that Muhammad Ali wrote.
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	book
+Entity List: 	3
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	255
+Content: 	Which museums does Paris have?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	museums
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+
+====================================================
+ID: 	258
+Content: 	Give me all the TV shows with Neil Patrick Harris.
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	TV
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	260
+Content: 	Show a list of soccer clubs that play in the Bundesliga.
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	soccer clubs
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	261
+Content: 	What country is Mount Everest in?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	country
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	263
+Content: 	Which programming languages influenced Javascript?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	programming languages
+Entity List: 	3
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/influenced
+	http://dbpedia.org/resource/CoffeeScript	http://dbpedia.org/resource/QML	http://dbpedia.org/resource/Node.js	http://dbpedia.org/resource/Objective-J	http://dbpedia.org/resource/ActionScript	http://dbpedia.org/resource/LiveScript	http://dbpedia.org/resource/TypeScript	http://dbpedia.org/resource/JScript_.NET	http://dbpedia.org/resource/Dart_(programming_language)	http://dbpedia.org/resource/C_(programming_language)	http://dbpedia.org/resource/Self_(programming_language)	http://dbpedia.org/resource/Python_(programming_language)	http://dbpedia.org/resource/Scheme_(programming_language)	http://dbpedia.org/resource/Lisp_(programming_language)	http://dbpedia.org/resource/Perl	http://dbpedia.org/resource/Java_(programming_language)
+====================================================
+ID: 	265
+Content: 	List all the musicals with music by Elton John.
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	musicals
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/music
+	http://dbpedia.org/resource/Gnomeo_&_Juliet	http://dbpedia.org/resource/Day_Job_(Suburban_Legends_album)	http://dbpedia.org/resource/Vers%C3%A3o_Ac%C3%BAstica_4	http://dbpedia.org/resource/The_Muse_(1999_film)	http://dbpedia.org/resource/A_Change_of_Seasons	http://dbpedia.org/resource/Aida_(musical)	http://dbpedia.org/resource/The_Road_to_El_Dorado	http://dbpedia.org/resource/Friends_(1971_film)	http://dbpedia.org/resource/Billy_Elliot_the_Musical	http://dbpedia.org/resource/Lestat_(musical)	http://dbpedia.org/resource/The_Lion_King_(musical)	http://dbpedia.org/resource/Grammy_Nominees
+====================================================
+ID: 	266
+Content: 	Show me all the breweries in Australia.
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	breweries
+Entity List: 	2
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	273
+Content: 	Which bridges cross the Seine?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	bridges
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	276
+Content: 	What is the location of the Houses of Parliament?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	location
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/location
+	http://dbpedia.org/resource/Greater_London	http://dbpedia.org/resource/City_of_Westminster	http://dbpedia.org/resource/England	http://dbpedia.org/resource/Parliament_of_the_United_Kingdom	http://dbpedia.org/resource/House_of_Lords	http://dbpedia.org/resource/House_of_Commons_of_England	http://dbpedia.org/resource/House_of_Commons_of_Great_Britain	http://dbpedia.org/resource/Parliament_of_Great_Britain	http://dbpedia.org/resource/St_Mary_Undercroft	http://dbpedia.org/resource/Parliament_of_England	http://dbpedia.org/resource/House_of_Commons_of_the_United_Kingdom
+====================================================
+ID: 	277
+Content: 	Show me all English Gothic buildings in Kent.
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	English Gothic buildings
+Entity List: 	2
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	279
+Content: 	What airlines are part of the SkyTeam alliance?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	airlines
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+
+====================================================
+ID: 	280
+Content: 	What is the total population of Melbourne, Florida?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	total population
+Entity List: 	3
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/populationPlace
+	http://dbpedia.org/resource/Seminole	http://dbpedia.org/resource/Filipino_American	http://dbpedia.org/resource/Galician_American	http://dbpedia.org/resource/Moroccan_American	http://dbpedia.org/resource/Jamaican_American	http://dbpedia.org/resource/Asturian_American	http://dbpedia.org/resource/Hungarian_American	http://dbpedia.org/resource/English_American	http://dbpedia.org/resource/Black_Hispanic_and_Latino_Americans	http://dbpedia.org/resource/Venezuelan_American	http://dbpedia.org/resource/Indo-Caribbean_American	http://dbpedia.org/resource/Yustaga	http://dbpedia.org/resource/West_Indian_American	http://dbpedia.org/resource/Argentine_American	http://dbpedia.org/resource/Micronesian_American	http://dbpedia.org/resource/Puerto_Ricans_in_the_United_States	http://dbpedia.org/resource/List_of_Lebanese_people_in_the_United_States	http://dbpedia.org/resource/Asian_Hispanic_and_Latino_Americans	http://dbpedia.org/resource/Austrian_American	http://dbpedia.org/resource/Lebanese_American	http://dbpedia.org/resource/Egyptian_American	http://dbpedia.org/resource/Assyrian/Chaldean/Syriac_Americans	http://dbpedia.org/resource/Black_Seminoles	http://dbpedia.org/resource/Trinidadian_and_Tobagonian_American	http://dbpedia.org/resource/Ecuadorian_American	http://dbpedia.org/resource/Bahamian_American	http://dbpedia.org/resource/Miccosukee	http://dbpedia.org/resource/Brazilian_American	http://dbpedia.org/resource/Russian_American	http://dbpedia.org/resource/Colombian_American	http://dbpedia.org/resource/Saturiwa	http://dbpedia.org/resource/Uruguayan_American	http://dbpedia.org/resource/Spanish_American	http://dbpedia.org/resource/Surinamese_American	http://dbpedia.org/resource/Scandinavian_American	http://dbpedia.org/resource/Mocama	http://dbpedia.org/resource/Yamasee	http://dbpedia.org/resource/Barbadian_American	http://dbpedia.org/resource/Portuguese_American	http://dbpedia.org/resource/Agua_Dulce_people	http://dbpedia.org/resource/Afghan_American	http://dbpedia.org/resource/Afro-Bahamian
+====================================================
+ID: 	281
+Content: 	Which airports does Air China serve?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	airports
+Entity List: 	3
+-------------------------
+ANSWER_TYPE = 0
+
+====================================================
+ID: 	282
+Content: 	In which year was Rachel Stevens born?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	year
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/years
+	http://dbpedia.org/resource/Strictly_Come_Dancing_(series_6)
+====================================================
+ID: 	285
+Content: 	Which scientist is known for the Manhattan Project and the Nobel Peace Prize?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	scientist
+Entity List: 	4
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/knownFor
+	http://dbpedia.org/resource/Joseph_Rotblat	http://dbpedia.org/resource/Ludwig_Quidde	http://dbpedia.org/resource/Ralph_Bunche	http://dbpedia.org/resource/Emily_Greene_Balch	http://dbpedia.org/resource/Ferdinand_Buisson	http://dbpedia.org/resource/Jody_Williams	http://dbpedia.org/resource/Norman_Angell
+====================================================
+ID: 	287
+Content: 	Which beer originated in Ireland?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	beer
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/origin
+	http://dbpedia.org/resource/Cream_cracker	http://dbpedia.org/resource/Bacon_and_cabbage	http://dbpedia.org/resource/Black_Champion_potato	http://dbpedia.org/resource/Boru_Vodka	http://dbpedia.org/resource/Ford_Mk_V_Armoured_Car	http://dbpedia.org/resource/Brady's_Irish_Cream	http://dbpedia.org/resource/Irish_stew	http://dbpedia.org/resource/Guinness_Black_Lager	http://dbpedia.org/resource/Killian's	http://dbpedia.org/resource/Irish_whiskey	http://dbpedia.org/resource/Skirts_and_kidneys	http://dbpedia.org/resource/Celtic_Honey	http://dbpedia.org/resource/Skerry_Champion_potato	http://dbpedia.org/resource/Irish_Mist	http://dbpedia.org/resource/Champ_(food)	http://dbpedia.org/resource/Goody_(dessert)	http://dbpedia.org/resource/Boxty	http://dbpedia.org/resource/Irish_White_potato	http://dbpedia.org/resource/Mizen_potato	http://dbpedia.org/resource/White_pudding	http://dbpedia.org/resource/Leyland_Armoured_Car	http://dbpedia.org/resource/Ulster_emblem_potato	http://dbpedia.org/resource/Colcannon	http://dbpedia.org/resource/Cork_Dry_Gin	http://dbpedia.org/resource/Drisheen	http://dbpedia.org/resource/Bloomer_potato	http://dbpedia.org/resource/Leek_soup	http://dbpedia.org/resource/Coddle	http://dbpedia.org/resource/Barmbrack
+====================================================
+ID: 	288
+Content: 	What are the specialities of the UNC Health Care?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	specialities
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/speciality
+	http://dbpedia.org/resource/Trauma_center	http://dbpedia.org/resource/Cancer
+====================================================
+ID: 	290
+Content: 	From which region is the Melon de Bourgogne?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	region
+Entity List: 	2
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	293
+Content: 	Give me English actors starring in Lovesick.
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	English actors
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	294
+Content: 	Give me all types of eating disorders.
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	types
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	299
+Content: 	What is the timezone in San Pedro de Atacama?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	timezone
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/timezoneDst
+	http://dbpedia.org/resource/Time_in_Chile
+====================================================
+ID: 	300
+Content: 	In which city does the Chile Route 68 end?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=false}
+Focus Content: 	city
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/city
+	http://dbpedia.org/resource/Gamboa_Airport	http://dbpedia.org/resource/Chacalluta_International_Airport	http://dbpedia.org/resource/Eulogio_S%C3%A1nchez_Airport	http://dbpedia.org/resource/Diego_Aracena_International_Airport	http://dbpedia.org/resource/El_Bosque_Airport	http://dbpedia.org/resource/Puc%C3%B3n_Airport	http://dbpedia.org/resource/Presidente_Carlos_Ib%C3%A1%C3%B1ez_del_Campo_International_Airport	http://dbpedia.org/resource/Las_Mar%C3%ADas_Airport	http://dbpedia.org/resource/Ca%C3%B1al_Bajo_Carlos_Hott_Siebert_Airport	http://dbpedia.org/resource/Maquehue_Airport	http://dbpedia.org/resource/Pichoy_Airport	http://dbpedia.org/resource/Guardiamarina_Za%C3%B1artu_Airport
+====================================================
+XML Question ID: 136
+XML Question ID: 172
+XML Question ID: 146
+XML Question ID: 6
+XML Question ID: 117
+XML Question ID: 64
+XML Question ID: 282
+XML Question ID: 148
+XML Question ID: 9
+XML Question ID: 236
+XML Question ID: 119
+XML Question ID: 299
+XML Question ID: 226
+XML Question ID: 32
+XML Question ID: 72
+XML Question ID: 42
+XML Question ID: 85
+XML Question ID: 285
+XML Question ID: 63
+XML Question ID: 249
+XML Question ID: 121
+XML Question ID: 45
+XML Question ID: 288
+XML Question ID: 137
+XML Question ID: 108
+XML Question ID: 242
+XML Question ID: 56
+XML Question ID: 68
+XML Question ID: 10
+XML Question ID: 23
+XML Question ID: 287
+XML Question ID: 198
+XML Question ID: 109
+XML Question ID: 130
+XML Question ID: 232
+XML Question ID: 263
+XML Question ID: 4
+XML Question ID: 276
+XML Question ID: 106
+XML Question ID: 154
+XML Question ID: 280
+XML Question ID: 110
+XML Question ID: 57
+XML Question ID: 128
+XML Question ID: 176
+XML Question ID: 36
+XML Question ID: 240
+XML Question ID: 158
+XML Question ID: 114
+XML Question ID: 79
+XML Question ID: 147
+XML Question ID: 50
+XML Question ID: 265
+XML Question ID: 8
+XML Question ID: 196
+XML Question ID: 78
+XML Question ID: 143
+XML Question ID: 26
+XML Question ID: 193
+XML Question ID: 199
+XML Question ID: 164
+XML Question ID: 300
+XML Question ID: 31
+XML Question ID: 129
+XML Question ID: 153
+XML Question ID: 145
+XML Question ID: 118
+XML Question ID: 82
