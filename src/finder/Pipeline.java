@@ -23,6 +23,7 @@ import baseline.Classification;
 import baseline.Entity;
 import baseline.Main;
 import baseline.Classification.CLASSIFICATION;
+import baseline.PairPredicate;
 import baseline.Predicate;
 import basic.FileOps;
 import paser.Question;
@@ -98,7 +99,6 @@ public class Pipeline {
 				bool.add(qf);
 			}
 		}
-		
 	}
 	
 	public Pipeline(DataSource s) {
@@ -309,84 +309,130 @@ public class Pipeline {
 		responseParser parser = new responseParser();
 		HashMap<QuestionFrame, LinkedList<RDFNode>> qaMap = new HashMap<QuestionFrame, LinkedList<RDFNode>>();
 		
-		for(QuestionFrame qf: pipeline.date) {
+		OutputRedirector.openFileOutput("./data/output/debug.txt");
+	
+		for(QuestionFrame qf: pipeline.resource) {
 			parser.setEntityList(qf, TOOLKIT.MINERDIS);
-			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.DATE);
-			if(answer.isException()) {
-				break;
+			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.RESOURCE);
+			qf.print();
+			if(answer!=null && answer.isException()) {
+				System.out.println("ANSWER = null / ANSWER has exception");
+				continue;
 			} else {
 				if(answer.answerType == 0) {
+					System.out.println("ANSWER_TYPE = 0");
 					if(answer.predictList.size() > 0) {
-						LinkedList<RDFNode> nodeList = answer.resources.get(answer.predictList.get(0));
+						Predicate p = answer.predictList.get(0);
+						System.out.println("Predicate: "+p.getUri());
+						LinkedList<RDFNode> nodeList = answer.resources.get(p);
+						for (RDFNode rdfNode : nodeList) {
+							System.out.print("\t"+rdfNode.toString());
+						}
 						qaMap.put(qf, nodeList);
 					}
 				} else {
 					if(answer.pairPredicates.size() > 0) {
-						LinkedList<RDFNode> nodeList = answer.pairResources.get(answer.pairPredicates.get(0));
+						PairPredicate pairPredicate = answer.pairPredicates.get(0);
+						System.out.println("Pair Predicate: "+pairPredicate.Predicate1.getUri() + "\t" + pairPredicate.Predicate2.getUri());
+						LinkedList<RDFNode> nodeList = answer.pairResources.get(pairPredicate);
+						for (RDFNode rdfNode : nodeList) {
+							System.out.print("\t"+rdfNode.toString());
+						}
 						qaMap.put(qf, nodeList);
 					}
 				}
-					
 			}
+			System.out.println("\n====================================================");
 		}
+		
+		pipeline.xmlParser.outputAnswer("./data/output/test.xml", qaMap);
+		OutputRedirector.closeFileOutput();
 		
 //		for(QuestionFrame qf: pipeline.number) {
 //			parser.setEntityList(qf, TOOLKIT.MINERDIS);
 //			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.NUMBER);
-//			if(answer.isException()) {
+//			if(answer!=null && answer.isException()) {
 //				break;
 //			} else {
-//				if(answer.answerType == 1)
+//				if(answer.answerType == 0) {
 //					if(answer.predictList.size() > 0) {
 //						LinkedList<RDFNode> nodeList = answer.resources.get(answer.predictList.get(0));
 //						qaMap.put(qf, nodeList);
 //					}
+//				} else {
+//					if(answer.pairPredicates.size() > 0) {
+//						LinkedList<RDFNode> nodeList = answer.pairResources.get(answer.pairPredicates.get(0));
+//						qaMap.put(qf, nodeList);
+//					}
+//				}
+//					
 //			}
 //		}
-//		
+		
 //		for(QuestionFrame qf: pipeline.who) {
 //			parser.setEntityList(qf, TOOLKIT.MINERDIS);
 //			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.WHO);
-//			if(answer.isException()) {
+//			if(answer!=null && answer.isException()) {
 //				break;
 //			} else {
-//				if(answer.answerType == 1)
+//				if(answer.answerType == 0) {
 //					if(answer.predictList.size() > 0) {
 //						LinkedList<RDFNode> nodeList = answer.resources.get(answer.predictList.get(0));
 //						qaMap.put(qf, nodeList);
 //					}
+//				} else {
+//					if(answer.pairPredicates.size() > 0) {
+//						LinkedList<RDFNode> nodeList = answer.pairResources.get(answer.pairPredicates.get(0));
+//						qaMap.put(qf, nodeList);
+//					}
+//				}
+//					
 //			}
 //		}
 //		
 //		for(QuestionFrame qf: pipeline.where) {
 //			parser.setEntityList(qf, TOOLKIT.MINERDIS);
 //			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.WHERE);
-//			if(answer.isException()) {
+//			if(answer!=null && answer.isException()) {
 //				break;
 //			} else {
-//				if(answer.answerType == 1)
+//				if(answer.answerType == 0) {
 //					if(answer.predictList.size() > 0) {
 //						LinkedList<RDFNode> nodeList = answer.resources.get(answer.predictList.get(0));
 //						qaMap.put(qf, nodeList);
 //					}
+//				} else {
+//					if(answer.pairPredicates.size() > 0) {
+//						LinkedList<RDFNode> nodeList = answer.pairResources.get(answer.pairPredicates.get(0));
+//						qaMap.put(qf, nodeList);
+//					}
+//				}
+//					
 //			}
 //		}
 //		
 //		for(QuestionFrame qf: pipeline.resource) {
 //			parser.setEntityList(qf, TOOLKIT.MINERDIS);
 //			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.RESOURCE);
-//			if(answer.isException()) {
+//			if(answer!=null && answer.isException()) {
 //				break;
 //			} else {
-//				if(answer.answerType == 1)
+//				if(answer.answerType == 0) {
 //					if(answer.predictList.size() > 0) {
 //						LinkedList<RDFNode> nodeList = answer.resources.get(answer.predictList.get(0));
 //						qaMap.put(qf, nodeList);
 //					}
+//				} else {
+//					if(answer.pairPredicates.size() > 0) {
+//						LinkedList<RDFNode> nodeList = answer.pairResources.get(answer.pairPredicates.get(0));
+//						qaMap.put(qf, nodeList);
+//					}
+//				}
+//					
 //			}
 //		}
 		
-		pipeline.xmlParser.outputAnswer("./data/output/test.xml", qaMap);
+		
 
 	}
 

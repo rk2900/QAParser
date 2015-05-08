@@ -115,15 +115,12 @@ public class QuestionFrame extends Question {
 	
 	@Override
 	public void print() {
-		System.out.println("-------------------------");
 		System.out.println("ID: "+"\t"+id);
+		System.out.println("Content: "+"\t"+this.question);
 		System.out.println("OnlyDBO: "+onlydbo+"\tAggregation: "+aggregation);
 		System.out.println("Category: "+"\t"+this.questionClassifier.category);
 		System.out.println("Rule Judgement:"+"\t"+this.questionClassifier.label);
-		System.out.println("Content: "+"\t"+this.question);
 		System.out.println("Focus Content: "+"\t"+this.focus.getFocusContent(wordList));
-		System.out.println("Word List: "+"\t"+this.wordList);
-		System.out.println("POS List: "+"\t"+this.posList);
 		System.out.println("Entity List: "+"\t"+this.entityList.size());
 		System.out.println("-------------------------");
 	}

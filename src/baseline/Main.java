@@ -254,7 +254,7 @@ public class Main {
 		if(answer.answerType == 1){
 			for (i=0; i<answer.pairPredicates.size() && i<SimilarityFunction.predictNum; ++i) {
 				pa = answer.pairPredicates.get(i);
-				res = answer.resources.get(pa);
+				res = answer.pairResources.get(pa);
 				if(res.size() > 1){
 					continue;
 				}

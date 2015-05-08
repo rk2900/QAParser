@@ -238,12 +238,12 @@ public class XMLParser {
 	}
 	
 	public Element getQuestionElement(Document doc, Integer id, LinkedList<RDFNode> answerList) {
-//		try {
 			// question element
 			Element question = doc.createElement("question");
 			// set question attribute
 			question.setAttribute("id", id.toString());
 			
+			System.out.println("XML Question ID: "+id);
 			// set string element
 			Element stringElement = doc.createElement("string");
 			stringElement.setAttribute("lang", "en");
@@ -257,7 +257,7 @@ public class XMLParser {
 			for (RDFNode node : answerList) {
 				String ans;
 				if(node.isLiteral()) {
-					ans = node.asLiteral().getValue().toString();
+					ans = node.asLiteral().getLexicalForm();
 				} else {
 					ans = node.toString();
 				}

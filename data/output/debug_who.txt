@@ -1,0 +1,450 @@
+Available catalogs: [/, chainyi, dbpedia2014, system, zhishime]
+
+Got a graph maker for the connection.
+ID: 	102
+Content: 	Who was John F. Kennedy's vice president?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	103
+Content: 	Who is the mayor of Berlin?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	3
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	200
+Content: 	Who produces Orangina?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/product
+	http://dbpedia.org/resource/A.G._Barr
+====================================================
+ID: 	122
+Content: 	Who is the governor of Wyoming?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/governor
+	http://dbpedia.org/resource/Matt_Mead
+====================================================
+ID: 	124
+Content: 	Who was the father of Queen Elizabeth II?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/father
+	http://dbpedia.org/resource/George_VI
+====================================================
+ID: 	135
+Content: 	Who developed Minecraft?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/developer
+	http://dbpedia.org/resource/Mojang	http://dbpedia.org/resource/4J_Studios
+====================================================
+ID: 	141
+Content: 	Who founded Intel?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/founder
+	http://dbpedia.org/resource/Gordon_Moore	http://dbpedia.org/resource/Robert_Noyce	http://dbpedia.org/resource/Trusted_Computing_Group
+====================================================
+ID: 	142
+Content: 	Who is the husband of Amanda Palmer?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/spouse
+	http://dbpedia.org/resource/Neil_Gaiman
+====================================================
+ID: 	15
+Content: 	Who created Goofy?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/creator
+	http://dbpedia.org/resource/Paul_Murry	http://dbpedia.org/resource/Walt_Disney	http://dbpedia.org/resource/Del_Connell
+====================================================
+ID: 	152
+Content: 	Who invented the zipper?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+
+====================================================
+ID: 	167
+Content: 	Who are the parents of the wife of Juan Carlos I?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+Pair Predicate: http://dbpedia.org/ontology/spouse	http://dbpedia.org/ontology/parent
+	http://dbpedia.org/resource/Paul_of_Greece	http://dbpedia.org/resource/Frederica_of_Hanover	http://dbpedia.org/resource/Infanta_Cristina,_Duchess_of_Palma_de_Mallorca	http://dbpedia.org/resource/Felipe,_Prince_of_Asturias	http://dbpedia.org/resource/Infanta_Elena,_Duchess_of_Lugo
+====================================================
+ID: 	177
+Content: 	Who was called Frank The Tank?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	0
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	184
+Content: 	Who created the comic Captain America?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/creator
+	http://dbpedia.org/resource/Joe_Simon	http://dbpedia.org/resource/Jack_Kirby	http://dbpedia.org/resource/Isaiah_Bradley
+====================================================
+ID: 	187
+Content: 	Who composed the music for Harold and Maude?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+
+====================================================
+ID: 	195
+Content: 	Who wrote the lyrics for the Polish national anthem?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	3
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	197
+Content: 	Who painted The Storm on the Sea of Galilee?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	3
+Content: 	Who is the daughter of Robert Kennedy married to?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/child
+	http://dbpedia.org/resource/Joseph_P._Kennedy_II	http://dbpedia.org/resource/Max_Kennedy	http://dbpedia.org/resource/Robert_F._Kennedy,_Jr.	http://dbpedia.org/resource/Kathleen_Kennedy_Townsend	http://dbpedia.org/resource/David_Kennedy	http://dbpedia.org/resource/Courtney_Kennedy_Hill	http://dbpedia.org/resource/Christopher_G._Kennedy	http://dbpedia.org/resource/Douglas_Harriman_Kennedy	http://dbpedia.org/resource/Rory_Kennedy	http://dbpedia.org/resource/Kerry_Kennedy	http://dbpedia.org/resource/Michael_LeMoyne_Kennedy
+====================================================
+ID: 	35
+Content: 	Who is the owner of Rolls-Royce?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/employer
+	http://dbpedia.org/resource/Ronald_Thomas_Shepherd
+====================================================
+ID: 	43
+Content: 	Who is the mayor of Tel Aviv?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/leaderName
+	http://dbpedia.org/resource/Ron_Huldai
+====================================================
+ID: 	44
+Content: 	Who designed the Brooklyn Bridge?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/designer
+	http://dbpedia.org/resource/John_A._Roebling
+====================================================
+ID: 	48
+Content: 	Who is the editor of Forbes?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	54
+Content: 	Who was the wife of U.S. president Lincoln?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/spouse
+	http://dbpedia.org/resource/Mary_Todd_Lincoln
+====================================================
+ID: 	55
+Content: 	Who developed the video game World of Warcraft?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	3
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/developer
+	http://dbpedia.org/resource/Blizzard_Entertainment
+====================================================
+ID: 	62
+Content: 	Who created Wikipedia?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	0
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	75
+Content: 	Who was the 16th president of the United States?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	83
+Content: 	Who produced films starring Natalie Portman?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+Pair Predicate: http://dbpedia.org/ontology/starring	http://dbpedia.org/ontology/producer
+	http://dbpedia.org/resource/Doug_Magallon,_Greg_Strom	http://dbpedia.org/resource/Mike_Nichols	http://dbpedia.org/resource/Laurence_Mark	http://dbpedia.org/resource/Rick_McCallum	http://dbpedia.org/resource/San_Francisco_Ballet	http://dbpedia.org/resource/Scott_Steindorff	http://dbpedia.org/resource/Alison_Owen	http://dbpedia.org/resource/Richard_N._Gladstein	http://dbpedia.org/resource/Patrice_Ledoux	http://dbpedia.org/resource/Saul_Zaentz	http://dbpedia.org/resource/Natalie_Portman	http://dbpedia.org/resource/Marc_E._Platt	http://dbpedia.org/resource/Wong_Kar-wai	http://dbpedia.org/resource/Mike_Medavoy	http://dbpedia.org/resource/Larry_J._Franco	http://dbpedia.org/resource/Scott_Stuber	http://dbpedia.org/resource/David_McFadzean	http://dbpedia.org/resource/Gary_Gilbert	http://dbpedia.org/resource/Ryan_Kavanaugh	http://dbpedia.org/resource/John_Calley	http://dbpedia.org/resource/Cary_Brokaw	http://dbpedia.org/resource/Laurent_Truchot	http://dbpedia.org/resource/Michael_Tapuah	http://dbpedia.org/resource/Spencer_Susser	http://dbpedia.org/resource/Dan_Bucatinsky	http://dbpedia.org/resource/Ari_Handel	http://dbpedia.org/resource/Tim_Burton	http://dbpedia.org/resource/Susan_Cartsonis	http://dbpedia.org/resource/Matt_Williams_(TV_producer)	http://dbpedia.org/resource/Michael_De_Luca	http://dbpedia.org/resource/Sigurj%C3%B3n_Sighvatsson
+====================================================
+ID: 	87
+Content: 	Who wrote the book The Pillars of the Earth?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/author
+	http://dbpedia.org/resource/Ken_Follett
+====================================================
+ID: 	234
+Content: 	Who was the first to climb Mount Everest?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/notableAscents
+	http://dbpedia.org/resource/Nasuh_Mahruki
+====================================================
+ID: 	215
+Content: 	Who has Tom Cruise been married to?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	253
+Content: 	Who was called Rodzilla?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	0
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	259
+Content: 	Who wrote The Hunger Games?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/author
+	http://dbpedia.org/resource/Suzanne_Collins
+====================================================
+ID: 	262
+Content: 	Who is the founder of Penguin Books?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/founder
+	http://dbpedia.org/resource/Allen_Lane
+====================================================
+ID: 	270
+Content: 	Who played Agent Smith in Matrix?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	274
+Content: 	Who is the mayor of the capital of French Polynesia?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	3
+-------------------------
+Pair Predicate: http://dbpedia.org/ontology/city	http://dbpedia.org/property/focusCities
+	http://dbpedia.org/resource/Air_Moorea
+====================================================
+ID: 	278
+Content: 	Who was the pope that founded the Vatican Television?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	3
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/alliances
+	http://dbpedia.org/resource/Nightcrawler_(comics)	http://dbpedia.org/resource/Marley_Davidson
+====================================================
+ID: 	289
+Content: 	Who is the owner of Facebook?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/keyPerson
+	http://dbpedia.org/resource/Chief_operating_officer	http://dbpedia.org/resource/Sheryl_Sandberg	http://dbpedia.org/resource/Chief_executive_officer	http://dbpedia.org/resource/Chairman	http://dbpedia.org/resource/Mark_Zuckerberg
+====================================================
+ID: 	291
+Content: 	Who was influenced by Socrates?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/influenced
+	http://dbpedia.org/resource/Aristippus	http://dbpedia.org/resource/Plato	http://dbpedia.org/resource/Antisthenes	http://dbpedia.org/resource/Western_philosophy	http://dbpedia.org/resource/Aristotle	http://dbpedia.org/resource/Aesop	http://dbpedia.org/resource/Parmenides
+====================================================
+ID: 	292
+Content: 	Who was president of Pakistan in 1978?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+ANSWER = null / ANSWER has exception
+ID: 	295
+Content: 	Who was married to president Chirac?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{COMPARISON=false, WHERE=false, WHO=true}
+Focus Content: 	
+Entity List: 	0
+-------------------------
+ANSWER = null / ANSWER has exception
+XML Question ID: 135
+XML Question ID: 43
+XML Question ID: 87
+XML Question ID: 200
+XML Question ID: 278
+XML Question ID: 15
+XML Question ID: 259
+XML Question ID: 122
+XML Question ID: 167
+XML Question ID: 55
+XML Question ID: 234
+XML Question ID: 3
+XML Question ID: 35
+XML Question ID: 54
+XML Question ID: 124
+XML Question ID: 141
+XML Question ID: 142
+XML Question ID: 83
+XML Question ID: 274
+XML Question ID: 262
+XML Question ID: 184
+XML Question ID: 44
+XML Question ID: 289
+XML Question ID: 291

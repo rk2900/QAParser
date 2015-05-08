@@ -138,14 +138,25 @@ public class Classification {
 					}else{
 						e = Main.getEntity(entityList, cs1.right);
 					}
-					step1 = new MatchDetail(e, cs1, cs1Location,focusString);
+					if(e == null){
+						answer.exceptionString = qf.id + ": map style; No matched Entity.";
+						return answer;
+					}else{
+						step1 = new MatchDetail(e, cs1, cs1Location,focusString);
+					}
 					
 					if(cs2Location == 0){
 						e = Main.getEntity(entityList, cs2.left);
 					}else{
 						e = Main.getEntity(entityList, cs2.right);
 					}
-					step2 = new MatchDetail(e, cs2, cs2Location,focusString);
+					
+					if(e == null){
+						answer.exceptionString = qf.id + ": map style; No matched Entity.";
+						return answer;
+					}else{
+						step2 = new MatchDetail(e, cs2, cs2Location,focusString);
+					}
 					answer.initial(2);
 					Main.map(answer, step1, step2, type);
 				}
