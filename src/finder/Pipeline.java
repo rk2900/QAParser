@@ -342,7 +342,7 @@ public class Pipeline {
 					}
 				}
 			}
-			System.out.println("\n====================================================");
+			System.out.println("\n====================================================\n");
 		}
 		
 		pipeline.xmlParser.outputAnswer("./data/output/test.xml", qaMap);
