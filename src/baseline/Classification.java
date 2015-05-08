@@ -7,7 +7,6 @@ import paser.QuestionFrame;
 import syntacticParser.Constraint;
 import syntacticParser.ConstraintSet;
 import syntacticParser.Node;
-import tool.OutputRedirector;
 import knowledgebase.ClientManagement;
 import finder.Pipeline;
 

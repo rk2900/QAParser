@@ -91,7 +91,7 @@ public class entityClient {
 	
 	public static void main(String [] args){
 		String test = "Which soccer players were born on Malta?";
-		test = "Which books by Kerouac were published by Viking Press?";
+		test = "Who is the mayor of Berlin?";
 		
 //		String result = entityClient.queryAPI(test, entityClientConst.TOOLKIT.MINERDIS);
 //		String title = "Vrije Universiteit";
