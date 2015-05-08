@@ -1,0 +1,579 @@
+Available catalogs: [/, chainyi, dbpedia2014, system, zhishime]
+
+Got a graph maker for the connection.
+
+====================================================
+
+
+====================================================
+
+
+====================================================
+
+ID: 	3
+Content: 	Who is the youngest Pulitzer Prize winner?
+OnlyDBO: true	Aggregation: true
+Category: 	RESOURCE
+Rule Judgement:	{WHO=true, COMPARISON=true, WHERE=false}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+
+ID: 	10
+Content: 	Who is the oldest child of Meryl Streep?
+OnlyDBO: true	Aggregation: true
+Category: 	RESOURCE
+Rule Judgement:	{WHO=true, COMPARISON=true, WHERE=false}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/child
+	http://dbpedia.org/resource/Grace_Gummer	http://dbpedia.org/resource/Henry_Wolfe_Gummer	http://dbpedia.org/resource/Mamie_Gummer
+====================================================
+
+ID: 	13
+Content: 	Which frequent flyer program has the most airlines?
+OnlyDBO: false	Aggregation: true
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=true, WHERE=false}
+Focus Content: 	frequent flyer program
+Entity List: 	0
+-------------------------
+ANSWER = null / ANSWER has exception: entityList size equals 0.
+
+ID: 	27
+Content: 	Which musician wrote the most books?
+OnlyDBO: true	Aggregation: true
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=true, WHERE=false}
+Focus Content: 	musician
+Entity List: 	0
+-------------------------
+ANSWER = null / ANSWER has exception: entityList size equals 0.
+
+ID: 	34
+Content: 	Which museum in New York has the most visitors?
+OnlyDBO: true	Aggregation: true
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=true, WHERE=false}
+Focus Content: 	museum
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception: No matched entity in the Node.
+
+ID: 	35
+Content: 	Is Lake Baikal bigger than the Great Bear Lake?
+OnlyDBO: true	Aggregation: false
+Category: 	BOOLEAN
+Rule Judgement:	{WHO=false, COMPARISON=true, WHERE=false}
+Focus Content: 	
+Entity List: 	4
+-------------------------
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+
+ID: 	37
+Content: 	What is the highest mountain in Italy?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=true, WHERE=false}
+Focus Content: 	highest mountain
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/riverMouth
+	http://dbpedia.org/resource/Roya_(river)	http://dbpedia.org/resource/Ticino_(river)
+====================================================
+
+ID: 	48
+Content: 	Who is the heaviest player of the Chicago Bulls?
+OnlyDBO: false	Aggregation: true
+Category: 	RESOURCE
+Rule Judgement:	{WHO=true, COMPARISON=true, WHERE=false}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/playerTeams
+	http://dbpedia.org/resource/Corey_Williams_(basketball,_born_1970)	http://dbpedia.org/resource/Fred_Hoiberg	http://dbpedia.org/resource/Rusty_LaRue
+====================================================
+
+ID: 	50
+Content: 	Who is the tallest basketball player?
+OnlyDBO: true	Aggregation: true
+Category: 	RESOURCE
+Rule Judgement:	{WHO=true, COMPARISON=true, WHERE=false}
+Focus Content: 	
+Entity List: 	0
+-------------------------
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+entityList size equals 0.
+
+ID: 	9
+Content: 	How many children does Eddie Murphy have?
+OnlyDBO: false	Aggregation: false
+Category: 	NUMBER
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	children
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/children
+	8^^http://www.w3.org/2001/XMLSchema#integer
+====================================================
+
+ID: 	15
+Content: 	How many scientists graduated from an Ivy League university?
+OnlyDBO: true	Aggregation: false
+Category: 	NUMBER
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	scientists
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+
+====================================================
+
+ID: 	22
+Content: 	How many companies were founded by the founder of Facebook?
+OnlyDBO: true	Aggregation: true
+Category: 	NUMBER
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	companies
+Entity List: 	1
+-------------------------
+
+====================================================
+
+ID: 	23
+Content: 	How many companies were founded in the same year as Google?
+OnlyDBO: true	Aggregation: true
+Category: 	NUMBER
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	companies
+Entity List: 	1
+-------------------------
+
+====================================================
+
+ID: 	25
+Content: 	How many airlines are members of the Star Alliance?
+OnlyDBO: false	Aggregation: true
+Category: 	NUMBER
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	airlines
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/airports
+	1269^^http://www.w3.org/2001/XMLSchema#integer
+====================================================
+
+ID: 	45
+Content: 	How many ethnic groups live in Slovenia?
+OnlyDBO: true	Aggregation: true
+Category: 	NUMBER
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	ethnic groups
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/ethnicGroups
+	83^^http://www.w3.org/2001/XMLSchema#integer
+====================================================
+
+ID: 	33
+Content: 	When did the Ming dynasty dissolve?
+OnlyDBO: true	Aggregation: false
+Category: 	DATE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/dissolutionDate
+	1644-04-25^^http://www.w3.org/2001/XMLSchema#date
+====================================================
+
+ID: 	38
+Content: 	Where did the architect of the Eiffel Tower study?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=true}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+
+====================================================
+
+ID: 	11
+Content: 	Who killed John Lennon?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=true, COMPARISON=false, WHERE=false}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+
+====================================================
+
+ID: 	17
+Content: 	Who is starring in Spanish movies produced by Benicio del Toro?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=true, COMPARISON=false, WHERE=false}
+Focus Content: 	
+Entity List: 	3
+-------------------------
+Pair Predicate: http://dbpedia.org/ontology/producer	http://dbpedia.org/ontology/starring
+	http://dbpedia.org/resource/Benicio_del_Toro	http://dbpedia.org/resource/Lou_Diamond_Phillips	http://dbpedia.org/resource/Emily_Blunt	http://dbpedia.org/resource/Anthony_Hopkins	http://dbpedia.org/resource/Hugo_Weaving	http://dbpedia.org/resource/Rodrigo_Santoro	http://dbpedia.org/resource/%C3%89dgar_Ram%C3%ADrez	http://dbpedia.org/resource/Catalina_Sandino_Moreno	http://dbpedia.org/resource/Franka_Potente	http://dbpedia.org/resource/Julia_Ormond	http://dbpedia.org/resource/Demi%C3%A1n_Bichir	http://dbpedia.org/resource/Joaquim_de_Almeida	http://dbpedia.org/resource/Santiago_Cabrera
+====================================================
+
+ID: 	18
+Content: 	Who is the manager of Real Madrid?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=true, COMPARISON=false, WHERE=false}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/manager
+	http://dbpedia.org/resource/Carlo_Ancelotti
+====================================================
+
+ID: 	41
+Content: 	Who is the mayor of Rotterdam?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=true, COMPARISON=false, WHERE=false}
+Focus Content: 	
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/leaderName
+	http://dbpedia.org/resource/Ahmed_Aboutaleb
+====================================================
+
+ID: 	47
+Content: 	Who were the parents of Queen Victoria?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=true, COMPARISON=false, WHERE=false}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/parent
+	http://dbpedia.org/resource/Princess_Victoria_of_Saxe-Coburg-Saalfeld	http://dbpedia.org/resource/Prince_Edward,_Duke_of_Kent_and_Strathearn	http://dbpedia.org/resource/Alfred,_Duke_of_Saxe-Coburg_and_Gotha	http://dbpedia.org/resource/Prince_Arthur,_Duke_of_Connaught_and_Strathearn	http://dbpedia.org/resource/Princess_Louise,_Duchess_of_Argyll	http://dbpedia.org/resource/Princess_Helena_of_the_United_Kingdom	http://dbpedia.org/resource/Edward_VII	http://dbpedia.org/resource/Princess_Beatrice_of_the_United_Kingdom	http://dbpedia.org/resource/Princess_Alice_of_the_United_Kingdom	http://dbpedia.org/resource/Victoria,_Princess_Royal	http://dbpedia.org/resource/Prince_Leopold,_Duke_of_Albany
+====================================================
+
+ID: 	1
+Content: 	Give me all ESA astronauts.
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	ESA astronauts
+Entity List: 	2
+-------------------------
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+
+ID: 	2
+Content: 	Give me all Swedish holidays.
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	Swedish holidays
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+
+ID: 	4
+Content: 	Which animals are critically endangered?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	animals
+Entity List: 	0
+-------------------------
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+entityList size equals 0.
+
+ID: 	5
+Content: 	Which soccer players were born on Malta?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	soccer players
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/birthPlace
+	http://dbpedia.org/resource/Joe_Brincat	http://dbpedia.org/resource/Francis_Dominic_Bencini	http://dbpedia.org/resource/Philip_Mizzi	http://dbpedia.org/resource/Suzanne_Mizzi	http://dbpedia.org/resource/Anthony_Borg_Barthet	http://dbpedia.org/resource/John_Bonello	http://dbpedia.org/resource/Edward_Azzopardi	http://dbpedia.org/resource/Madeleine_Collinson	http://dbpedia.org/resource/Stefan_Giglio	http://dbpedia.org/resource/Adrian_Mifsud	http://dbpedia.org/resource/Mary_Collinson	http://dbpedia.org/resource/Joe_Cini	http://dbpedia.org/resource/Maria_de_Dominici	http://dbpedia.org/resource/Emmanuel_Agius	http://dbpedia.org/resource/Charles_Micallef	http://dbpedia.org/resource/Ernest_Barry_(footballer)	http://dbpedia.org/resource/Mario_Farrugia	http://dbpedia.org/resource/Andrew_Cohen_(footballer)	http://dbpedia.org/resource/John_Constance_Parnis	http://dbpedia.org/resource/Sid_C._Attard	http://dbpedia.org/resource/William_Camenzuli	http://dbpedia.org/resource/David_Cluett	http://dbpedia.org/resource/Carlo_Mamo	http://dbpedia.org/resource/Antonius_Grech_Delicata_Testaferrata	http://dbpedia.org/resource/Arnold_Cassola	http://dbpedia.org/resource/Giovanna_Debono	http://dbpedia.org/resource/Daniel_Testa	http://dbpedia.org/resource/Donat_Spiteri	http://dbpedia.org/resource/Saviour_Pirotta	http://dbpedia.org/resource/Rachel_Cuschieri	http://dbpedia.org/resource/Fabrizio_Sceberras_Testaferrata	http://dbpedia.org/resource/William_Savona	http://dbpedia.org/resource/Aidan_Zammit	http://dbpedia.org/resource/Adrian_Crowley	http://dbpedia.org/resource/Marco_Brown	http://dbpedia.org/resource/Ryan_Fenech	http://dbpedia.org/resource/Kenneth_Scicluna	http://dbpedia.org/resource/Cornelius_Hogan	http://dbpedia.org/resource/Jeffrey_Pullicino_Orlando	http://dbpedia.org/resource/Graziana_Axisa	http://dbpedia.org/resource/Martin_Scicluna	http://dbpedia.org/resource/Norman_Lowell	http://dbpedia.org/resource/Michael_Galea	http://dbpedia.org/resource/Anton_B._Dougall	http://dbpedia.org/resource/Tony_Drago	http://dbpedia.org/resource/Johnny_Hutchinson	http://dbpedia.org/resource/Agatha_Barbara	http://dbpedia.org/resource/Ugo_Pasquale_Mifsud	http://dbpedia.org/resource/Cameron_Rusby	http://dbpedia.org/resource/Ivan_Zammit	http://dbpedia.org/resource/David_Cooke_(Royal_Navy_officer)	http://dbpedia.org/resource/Joseph_Demarco	http://dbpedia.org/resource/Karmenu_Mifsud_Bonnici	http://dbpedia.org/resource/Francis_Saviour_Farrugia	http://dbpedia.org/resource/Reginald_Cini	http://dbpedia.org/resource/Darren_Debono	http://dbpedia.org/resource/Kenelm_Burridge	http://dbpedia.org/resource/Jesmond_Delia	http://dbpedia.org/resource/Mikel_Scicluna	http://dbpedia.org/resource/Karl_Chircop	http://dbpedia.org/resource/Kevin_Borg	http://dbpedia.org/resource/Glenn_Bedingfield	http://dbpedia.org/resource/Lino_Galea	http://dbpedia.org/resource/Angelo_Farrugia	http://dbpedia.org/resource/Edwyn_Alexander-Sinclair	http://dbpedia.org/resource/Mike_Campbell-Lamerton	http://dbpedia.org/resource/George_Preca	http://dbpedia.org/resource/Carmelo_Pace	http://dbpedia.org/resource/Adrian_Pulis	http://dbpedia.org/resource/Chris_Arrowsmith	http://dbpedia.org/resource/Hubert_Suda	http://dbpedia.org/resource/Jon_Cassar	http://dbpedia.org/resource/Roberta_Metsola	http://dbpedia.org/resource/Edward_Scicluna	http://dbpedia.org/resource/Michael_Gonzi	http://dbpedia.org/resource/Alex_Muscat	http://dbpedia.org/resource/Stefano_Pace	http://dbpedia.org/resource/Ugo_Mifsud_Bonnici	http://dbpedia.org/resource/Esprit_Barthet	http://dbpedia.org/resource/Jerome_Leocata	http://dbpedia.org/resource/Carmel_Busuttil	http://dbpedia.org/resource/Tonio_Borg	http://dbpedia.org/resource/Massimo_Ellul	http://dbpedia.org/resource/Rohan_Delacombe	http://dbpedia.org/resource/John_Cutbush_(footballer)	http://dbpedia.org/resource/Joseph_Muscat	http://dbpedia.org/resource/Adrian_Ciantar	http://dbpedia.org/resource/Pablo_Micallef	http://dbpedia.org/resource/J._Valentine_Smith	http://dbpedia.org/resource/Silvio_Vella	http://dbpedia.org/resource/Madre_Teresa_Nuzzo	http://dbpedia.org/resource/Michael_Franciscus_Buttigieg	http://dbpedia.org/resource/Steve_Borg	http://dbpedia.org/resource/Clyde_Puli	http://dbpedia.org/resource/Mark_A._Sammut	http://dbpedia.org/resource/Charlie_Williams_(soccer)	http://dbpedia.org/resource/S._Debono	http://dbpedia.org/resource/Gabriela_N	http://dbpedia.org/resource/Dyson_Falzon	http://dbpedia.org/resource/Nazzareno_Camilleri	http://dbpedia.org/resource/Saviour_Darmanin	http://dbpedia.org/resource/Andr%C3%A9_Schembri	http://dbpedia.org/resource/Charles_van_Straubenzee	http://dbpedia.org/resource/Ursula_Vaughan_Williams	http://dbpedia.org/resource/Aaron_Farrugia	http://dbpedia.org/resource/Saviour_Bernard	http://dbpedia.org/resource/Pierre_Aquilina	http://dbpedia.org/resource/Walter_Micallef	http://dbpedia.org/resource/Herbert_Ganado	http://dbpedia.org/resource/George_William_Vella	http://dbpedia.org/resource/Peter_Baldacchino	http://dbpedia.org/resource/Thomas_Cauchi	http://dbpedia.org/resource/Peter_Paul_Borg	http://dbpedia.org/resource/Brian_Said	http://dbpedia.org/resource/Albert_Busuttil	http://dbpedia.org/resource/George_Stoddart_Whitmore	http://dbpedia.org/resource/Edmond_Agius	http://dbpedia.org/resource/Veronica_Hurst	http://dbpedia.org/resource/Paul_Zammit_(footballer)	http://dbpedia.org/resource/Marlene_Mizzi	http://dbpedia.org/resource/Gareth_Sciberras	http://dbpedia.org/resource/Massimo_Grima	http://dbpedia.org/resource/Anthony_J._Mifsud	http://dbpedia.org/resource/Carmelo_Abela	http://dbpedia.org/resource/Tony_Aquilina	http://dbpedia.org/resource/Owen_Bonnici	http://dbpedia.org/resource/Joseph_Vassallo	http://dbpedia.org/resource/Larry_Attard	http://dbpedia.org/resource/Justin_John_Camilleri	http://dbpedia.org/resource/Marco_Borg	http://dbpedia.org/resource/Francesco_Buhagiar	http://dbpedia.org/resource/John_Attard_Montalto	http://dbpedia.org/resource/Charles_Azzopardi	http://dbpedia.org/resource/Vittorio_Cassar	http://dbpedia.org/resource/Dominic_Borg	http://dbpedia.org/resource/Michael_Briguglio	http://dbpedia.org/resource/Stephanie_Zammit	http://dbpedia.org/resource/Jonathan_Holland	http://dbpedia.org/resource/John_Nicholas_Muscat	http://dbpedia.org/resource/Guido_de_Marco	http://dbpedia.org/resource/Diana_Ross_(author)	http://dbpedia.org/resource/Kevin_Sammut	http://dbpedia.org/resource/Edward_Attard	http://dbpedia.org/resource/Ray_Farrugia	http://dbpedia.org/resource/Denis_Cauchi	http://dbpedia.org/resource/Ian_Azzopardi	http://dbpedia.org/resource/Kristian_Laferla	http://dbpedia.org/resource/Saviour_Cumbo	http://dbpedia.org/resource/Nicolas_Isouard	http://dbpedia.org/resource/Michael_Cutajar	http://dbpedia.org/resource/Simon_Tortell	http://dbpedia.org/resource/Anthony_Abela	http://dbpedia.org/resource/Mikiel_Gonzi	http://dbpedia.org/resource/Angelo_Pirotta	http://dbpedia.org/resource/Enrico_Mizzi	http://dbpedia.org/resource/Edward_de_Bono	http://dbpedia.org/resource/Antoine_Zahra_(footballer_born_1981)	http://dbpedia.org/resource/Francis_George_Adeodatus_Micallef	http://dbpedia.org/resource/Jimmy_Briffa	http://dbpedia.org/resource/Martin_Gregory	http://dbpedia.org/resource/Emanuel_Fabri	http://dbpedia.org/resource/Nikol_Joseph_Cauchi	http://dbpedia.org/resource/John_Peter_Portelli	http://dbpedia.org/resource/Sean_Sullivan_(footballer)	http://dbpedia.org/resource/Roderick_Bajada	http://dbpedia.org/resource/Ian_Ciantar	http://dbpedia.org/resource/Paul_Fenech_(footballer)	http://dbpedia.org/resource/Brian_Strutt	http://dbpedia.org/resource/Paul_Boffa	http://dbpedia.org/resource/Luke_Dimech	http://dbpedia.org/resource/Constance_Vella	http://dbpedia.org/resource/Michael_Zammit	http://dbpedia.org/resource/Emmanuel_Vitale	http://dbpedia.org/resource/Juan_Bautista_Azopardo	http://dbpedia.org/resource/Dylan_Kerr	http://dbpedia.org/resource/Charles_Mangion	http://dbpedia.org/resource/Marama_Corlett	http://dbpedia.org/resource/John_Aquilina	http://dbpedia.org/resource/Edward_Darmanin	http://dbpedia.org/resource/Edward_Herrera	http://dbpedia.org/resource/Cyrus_Engerer	http://dbpedia.org/resource/Austin_Gatt	http://dbpedia.org/resource/Carmelo_Mifsud_Bonnici	http://dbpedia.org/resource/Jonathan_Magri_Overend	http://dbpedia.org/resource/Gaetanus_Matthew_Perez	http://dbpedia.org/resource/Joseph_Barth	http://dbpedia.org/resource/Gorg_Mallia	http://dbpedia.org/resource/John_Caruana	http://dbpedia.org/resource/Girolamo_Cassar	http://dbpedia.org/resource/Anthony_Perici	http://dbpedia.org/resource/John_Leaver	http://dbpedia.org/resource/Nicholas_Zammit	http://dbpedia.org/resource/Joseph_Matthews_(Medal_of_Honor)	http://dbpedia.org/resource/Sandra_Dingli	http://dbpedia.org/resource/Karl_Sacco	http://dbpedia.org/resource/Saviour_Montebello	http://dbpedia.org/resource/Mario_Muscat	http://dbpedia.org/resource/Gaia_Cauchi	http://dbpedia.org/resource/Sir_Henry_de_Bathe,_4th_Baronet	http://dbpedia.org/resource/Christian_Zahra	http://dbpedia.org/resource/Pippo_Psaila	http://dbpedia.org/resource/Jeffrey_Chetcuti	http://dbpedia.org/resource/Andy_Partridge	http://dbpedia.org/resource/Joseph_John_Aquilina	http://dbpedia.org/resource/Tom_Bradby	http://dbpedia.org/resource/Dom_Mintoff	http://dbpedia.org/resource/Jonathan_Caruana	http://dbpedia.org/resource/Peter_Long	http://dbpedia.org/resource/Salvinu_Schembri	http://dbpedia.org/resource/Walter_Edward_Davidson	http://dbpedia.org/resource/Mark_William_Graham_Kerr	http://dbpedia.org/resource/Michael_Degiorgio	http://dbpedia.org/resource/Philip_Mifsud	http://dbpedia.org/resource/Joe_Debono_Grech	http://dbpedia.org/resource/Pauline_Green	http://dbpedia.org/resource/Muxu	http://dbpedia.org/resource/Peter_Serracino_Inglott	http://dbpedia.org/resource/Mark_Loram	http://dbpedia.org/resource/Michael_Field-Buss	http://dbpedia.org/resource/Anthony_Mamo	http://dbpedia.org/resource/Stephen_Azzopardi	http://dbpedia.org/resource/Emma_Heming	http://dbpedia.org/resource/Trevor_Cilia	http://dbpedia.org/resource/Dominic_Pace	http://dbpedia.org/resource/George_Sagnani	http://dbpedia.org/resource/Terence_Vella	http://dbpedia.org/resource/William_Goodell_(gynecologist)	http://dbpedia.org/resource/Gianluca_Bezzina	http://dbpedia.org/resource/Lino_Grech	http://dbpedia.org/resource/Paul_Tisdale	http://dbpedia.org/resource/Themistocles_Zammit	http://dbpedia.org/resource/James_Stout	http://dbpedia.org/resource/Stefan_Sultana	http://dbpedia.org/resource/Pawlu_Aquilina	http://dbpedia.org/resource/Ninu_Zammit	http://dbpedia.org/resource/Jerome_Inglott	http://dbpedia.org/resource/Charles_Scerri	http://dbpedia.org/resource/Orlando_E._Caruana	http://dbpedia.org/resource/Robert_Arrigo	http://dbpedia.org/resource/David_Millar	http://dbpedia.org/resource/Brian_Grech	http://dbpedia.org/resource/Joseph_Howard_(Prime_Minister)	http://dbpedia.org/resource/Ildebrando_Zacchini	http://dbpedia.org/resource/Eric_Schembri	http://dbpedia.org/resource/Noel_Turner	http://dbpedia.org/resource/Konrad_Mizzi	http://dbpedia.org/resource/Franco_Debono	http://dbpedia.org/resource/Gasper_Grima	http://dbpedia.org/resource/Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha	http://dbpedia.org/resource/Dennis_Mizzi	http://dbpedia.org/resource/Jesmond_Zerafa	http://dbpedia.org/resource/Marc_Storace	http://dbpedia.org/resource/Louis_Grech	http://dbpedia.org/resource/Stephen_Wellman	http://dbpedia.org/resource/Reuben_Gauci	http://dbpedia.org/resource/Joseph_Sapiano	http://dbpedia.org/resource/David_Camilleri	http://dbpedia.org/resource/Daniel_Theuma	http://dbpedia.org/resource/Joe_Cassar	http://dbpedia.org/resource/Antonio_Williams	http://dbpedia.org/resource/Paul_Darmanin	http://dbpedia.org/resource/Jean_Pierre_Mifsud_Triganza	http://dbpedia.org/resource/Angelo_Muscat	http://dbpedia.org/resource/Terry_Camilleri	http://dbpedia.org/resource/Manwel_Dimech	http://dbpedia.org/resource/Clayton_Failla	http://dbpedia.org/resource/Wistin_Abela	http://dbpedia.org/resource/Rebecca_D'Agostino	http://dbpedia.org/resource/Steve_Bezzina	http://dbpedia.org/resource/Chris_d'Lacey	http://dbpedia.org/resource/Gillian_Attard	http://dbpedia.org/resource/Clint_Bajada	http://dbpedia.org/resource/Alex_Perici_Calascione	http://dbpedia.org/resource/Anthony_Lowe	http://dbpedia.org/resource/Kenneth_Wain	http://dbpedia.org/resource/Lou_Bondi	http://dbpedia.org/resource/Joe_Sacco	http://dbpedia.org/resource/Francis_Adams_(writer)	http://dbpedia.org/resource/Roderick_Briffa	http://dbpedia.org/resource/Rosarius_Mary_Hagius	http://dbpedia.org/resource/Oliver_Friggieri	http://dbpedia.org/resource/Robert_Galea	http://dbpedia.org/resource/Pietru_Caxaro	http://dbpedia.org/resource/Antoine_Zahra_(footballer_born_1977)	http://dbpedia.org/resource/Raphael_Debono	http://dbpedia.org/resource/Joseph_Rizzo	http://dbpedia.org/resource/George_Bayard_Hynes	http://dbpedia.org/resource/Alfred_Xuereb	http://dbpedia.org/resource/Josef_Mifsud	http://dbpedia.org/resource/Ray_Buttigieg	http://dbpedia.org/resource/Jon_Courtenay_Grimwood	http://dbpedia.org/resource/Nicky_Saliba	http://dbpedia.org/resource/Edmund_Whitmore	http://dbpedia.org/resource/Raymond_Xuereb	http://dbpedia.org/resource/Michael_Mifsud	http://dbpedia.org/resource/Federica_Falzon	http://dbpedia.org/resource/Josephine_Gatt_Ciancio	http://dbpedia.org/resource/Fortunatus_Victor_Costa	http://dbpedia.org/resource/Saint_Publius	http://dbpedia.org/resource/Saverius_Pace	http://dbpedia.org/resource/Sue_Barnes	http://dbpedia.org/resource/Salvatore_Gaffiero	http://dbpedia.org/resource/Giuseppe_Mifsud_Bonnici	http://dbpedia.org/resource/Andrew_Chetcuti	http://dbpedia.org/resource/Malcolm_Licari	http://dbpedia.org/resource/Marie_Louise_Coleiro_Preca	http://dbpedia.org/resource/John_McNeill_(footballer)	http://dbpedia.org/resource/Justin_Haber	http://dbpedia.org/resource/Joseph_Cuschieri	http://dbpedia.org/resource/Gerald_Strickland,_1st_Baron_Strickland	http://dbpedia.org/resource/Cleavon_Frendo	http://dbpedia.org/resource/Charles_Muscat	http://dbpedia.org/resource/Thea_Garrett	http://dbpedia.org/resource/John_Formosa	http://dbpedia.org/resource/Andrei_Agius	http://dbpedia.org/resource/Claude_Mattocks	http://dbpedia.org/resource/Roger_Scannura	http://dbpedia.org/resource/Vince_Riolo	http://dbpedia.org/resource/Vincent_Borg_Bonaci	http://dbpedia.org/resource/Justus_Azzopardi	http://dbpedia.org/resource/Eric_Cole	http://dbpedia.org/resource/Lolly_Vella	http://dbpedia.org/resource/Mario_de_Marco	http://dbpedia.org/resource/Gilbert_Agius	http://dbpedia.org/resource/Joseph_De_Piro	http://dbpedia.org/resource/Ian_Stevens_(footballer)	http://dbpedia.org/resource/Terence_Scerri	http://dbpedia.org/resource/List_of_Playboy_Playmates_of_1970	http://dbpedia.org/resource/Frans_Sammut	http://dbpedia.org/resource/Louis_Farrugia	http://dbpedia.org/resource/Nigel_Stock_(actor)	http://dbpedia.org/resource/John_Matthew_Rispoli	http://dbpedia.org/resource/Igor_Judge,_Baron_Judge	http://dbpedia.org/resource/George_Abela	http://dbpedia.org/resource/Salvino_Busuttil	http://dbpedia.org/resource/John_Buttigieg_(footballer)	http://dbpedia.org/resource/Maximilian_Balzan	http://dbpedia.org/resource/Cecil_Satariano	http://dbpedia.org/resource/Henry_Regnand	http://dbpedia.org/resource/Francis_Bonnici	http://dbpedia.org/resource/Aaron_Xuereb	http://dbpedia.org/resource/George_Mallia	http://dbpedia.org/resource/Jonathan_Stanbury	http://dbpedia.org/resource/Louis_Briffa	http://dbpedia.org/resource/Agostino_Bonello	http://dbpedia.org/resource/Joseph_Xerri	http://dbpedia.org/resource/Dominic_Bezzina	http://dbpedia.org/resource/Joseph_Calleia	http://dbpedia.org/resource/Aloisio_Galea	http://dbpedia.org/resource/Henry_Ercole	http://dbpedia.org/resource/Louis_Galea	http://dbpedia.org/resource/Eddie_Dwane	http://dbpedia.org/resource/Anastasio_Cuschieri	http://dbpedia.org/resource/Anton_Buttigieg	http://dbpedia.org/resource/Lawrence_Gonzi
+====================================================
+
+ID: 	7
+Content: 	Which programming languages were influenced by Perl?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	programming languages
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/influenced
+	http://dbpedia.org/resource/LPC_(programming_language)	http://dbpedia.org/resource/Python_(programming_language)	http://dbpedia.org/resource/Windows_PowerShell	http://dbpedia.org/resource/Falcon_(programming_language)	http://dbpedia.org/resource/Ruby_(programming_language)	http://dbpedia.org/resource/JavaScript	http://dbpedia.org/resource/ECMAScript	http://dbpedia.org/resource/PHP	http://dbpedia.org/resource/Perl_6	http://dbpedia.org/resource/Qore_Language	http://dbpedia.org/resource/C_(programming_language)	http://dbpedia.org/resource/AWK	http://dbpedia.org/resource/Lisp_(programming_language)	http://dbpedia.org/resource/Sed	http://dbpedia.org/resource/C++
+====================================================
+
+ID: 	12
+Content: 	In which city is Air China headquartered?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	city
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+
+====================================================
+
+ID: 	14
+Content: 	Which artists were born on the same date as Rachel Stevens?
+OnlyDBO: true	Aggregation: true
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	artists
+Entity List: 	1
+-------------------------
+
+====================================================
+
+ID: 	16
+Content: 	Which types of grapes grow in Oregon?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	types
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+
+====================================================
+
+ID: 	19
+Content: 	Give me the currency of China.
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	currency
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+
+====================================================
+
+ID: 	20
+Content: 	Which movies starring Brad Pitt were directed by Guy Ritchie?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	movies
+Entity List: 	2
+-------------------------
+Pair Predicate: http://dbpedia.org/ontology/starring	http://dbpedia.org/ontology/director
+	http://dbpedia.org/resource/Snatch_(film)
+====================================================
+
+ID: 	24
+Content: 	Which subsidiary of Lufthansa serves both Dortmund and Berlin Tegel?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	subsidiary
+Entity List: 	5
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/cityServed
+	http://dbpedia.org/resource/Berlin	http://dbpedia.org/resource/Germany
+====================================================
+
+ID: 	26
+Content: 	Give me all spacecrafts that flew to Mars.
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	spacecrafts
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/satelliteOf
+	http://dbpedia.org/resource/Nozomi_(spacecraft)	http://dbpedia.org/resource/Phobos_program	http://dbpedia.org/resource/Mars_3	http://dbpedia.org/resource/Viking_2	http://dbpedia.org/resource/Viking_1	http://dbpedia.org/resource/Deimos_(moon)	http://dbpedia.org/resource/Phobos_(moon)	http://dbpedia.org/resource/ExoMars_Trace_Gas_Orbiter
+====================================================
+
+ID: 	28
+Content: 	Show me everyone who was born on Halloween.
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	everyone
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/product
+	http://dbpedia.org/resource/BuyCostumes.com
+====================================================
+
+ID: 	29
+Content: 	Give me all Swiss non-profit organizations.
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	Swiss non-profit organizations
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+
+ID: 	30
+Content: 	In which country is Mecca located?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	country
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/ontology/country
+	http://dbpedia.org/resource/Saudi_Arabia
+====================================================
+
+ID: 	31
+Content: 	What is the net income of Apple?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	net income
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/netIncome
+	US$ 37.037 billion@en
+====================================================
+
+ID: 	32
+Content: 	What does the abbreviation FIFA stand for?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	abbreviation FIFA
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/sign
+	http://dbpedia.org/resource/List_of_men's_national_association_football_teams
+====================================================
+
+ID: 	36
+Content: 	Desserts from which country contain fish?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	country
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception: No matched entity in the Node.
+
+ID: 	39
+Content: 	Which Greek parties are pro-European?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	Greek parties
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+
+ID: 	40
+Content: 	What is the height difference between Mount Everest and K2?
+OnlyDBO: true	Aggregation: true
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	height difference
+Entity List: 	2
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/width
+	300^^http://www.w3.org/2001/XMLSchema#integer
+====================================================
+
+ID: 	42
+Content: 	In which city were the parents of Che Guevara born?
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	city
+Entity List: 	1
+-------------------------
+Pair Predicate: http://dbpedia.org/ontology/child	http://dbpedia.org/ontology/residence
+	http://dbpedia.org/resource/Havana
+====================================================
+
+ID: 	43
+Content: 	How high is the Yokohama Marine Tower?
+OnlyDBO: true	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	
+Entity List: 	2
+-------------------------
+ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+
+ID: 	46
+Content: 	List the seven kings of Rome.
+OnlyDBO: false	Aggregation: false
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	seven kings
+Entity List: 	1
+-------------------------
+ANSWER_TYPE = 0
+Predicate: http://dbpedia.org/property/coronation
+	http://dbpedia.org/resource/Conrad_II,_Holy_Roman_Emperor	http://dbpedia.org/resource/Henry_II,_Holy_Roman_Emperor
+====================================================
+
+ID: 	49
+Content: 	Which volcanos in Japan erupted since 2000?
+OnlyDBO: true	Aggregation: true
+Category: 	RESOURCE
+Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
+Focus Content: 	volcanos
+Entity List: 	1
+-------------------------
+ANSWER = null / ANSWER has exception: 49: map style; No matched Entity.
+XML Question ID: 47
+XML Question ID: 20
+XML Question ID: 25
+XML Question ID: 6
+XML Question ID: 41
+XML Question ID: 18
+XML Question ID: 26
+XML Question ID: 28
+XML Question ID: 32
+XML Question ID: 44
+XML Question ID: 37
+XML Question ID: 5
+XML Question ID: 42
+XML Question ID: 8
+XML Question ID: 7
+XML Question ID: 24
+XML Question ID: 45
+XML Question ID: 40
+XML Question ID: 33
+XML Question ID: 30
+XML Question ID: 31
+XML Question ID: 48
+XML Question ID: 10
+XML Question ID: 9
+XML Question ID: 17
+XML Question ID: 46

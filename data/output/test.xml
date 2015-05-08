@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset id="qald-5_test">
+<question id="47">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Princess_Victoria_of_Saxe-Coburg-Saalfeld</answer>
+<answer>http://dbpedia.org/resource/Prince_Edward,_Duke_of_Kent_and_Strathearn</answer>
+<answer>http://dbpedia.org/resource/Alfred,_Duke_of_Saxe-Coburg_and_Gotha</answer>
+<answer>http://dbpedia.org/resource/Prince_Arthur,_Duke_of_Connaught_and_Strathearn</answer>
+<answer>http://dbpedia.org/resource/Princess_Louise,_Duchess_of_Argyll</answer>
+<answer>http://dbpedia.org/resource/Princess_Helena_of_the_United_Kingdom</answer>
+<answer>http://dbpedia.org/resource/Edward_VII</answer>
+<answer>http://dbpedia.org/resource/Princess_Beatrice_of_the_United_Kingdom</answer>
+<answer>http://dbpedia.org/resource/Princess_Alice_of_the_United_Kingdom</answer>
+<answer>http://dbpedia.org/resource/Victoria,_Princess_Royal</answer>
+<answer>http://dbpedia.org/resource/Prince_Leopold,_Duke_of_Albany</answer>
+</answers>
+</question>
+<question id="20">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Snatch_(film)</answer>
+</answers>
+</question>
+<question id="25">
+<string lang="en"/>
+<answers>
+<answer>1269</answer>
+</answers>
+</question>
+<question id="6">
+<string lang="en"/>
+<answers>
+<answer>false</answer>
+</answers>
+</question>
+<question id="41">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Ahmed_Aboutaleb</answer>
+</answers>
+</question>
+<question id="18">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Carlo_Ancelotti</answer>
+</answers>
+</question>
+<question id="26">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Nozomi_(spacecraft)</answer>
+<answer>http://dbpedia.org/resource/Phobos_program</answer>
+<answer>http://dbpedia.org/resource/Mars_3</answer>
+<answer>http://dbpedia.org/resource/Viking_2</answer>
+<answer>http://dbpedia.org/resource/Viking_1</answer>
+<answer>http://dbpedia.org/resource/Deimos_(moon)</answer>
+<answer>http://dbpedia.org/resource/Phobos_(moon)</answer>
+<answer>http://dbpedia.org/resource/ExoMars_Trace_Gas_Orbiter</answer>
+</answers>
+</question>
+<question id="28">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/BuyCostumes.com</answer>
+</answers>
+</question>
+<question id="32">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/List_of_men's_national_association_football_teams</answer>
+</answers>
+</question>
+<question id="44">
+<string lang="en"/>
+<answers>
+<answer>false</answer>
+</answers>
+</question>
+<question id="37">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Roya_(river)</answer>
+<answer>http://dbpedia.org/resource/Ticino_(river)</answer>
+</answers>
+</question>
+<question id="5">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Joe_Brincat</answer>
+<answer>http://dbpedia.org/resource/Francis_Dominic_Bencini</answer>
+<answer>http://dbpedia.org/resource/Philip_Mizzi</answer>
+<answer>http://dbpedia.org/resource/Suzanne_Mizzi</answer>
+<answer>http://dbpedia.org/resource/Anthony_Borg_Barthet</answer>
+<answer>http://dbpedia.org/resource/John_Bonello</answer>
+<answer>http://dbpedia.org/resource/Edward_Azzopardi</answer>
+<answer>http://dbpedia.org/resource/Madeleine_Collinson</answer>
+<answer>http://dbpedia.org/resource/Stefan_Giglio</answer>
+<answer>http://dbpedia.org/resource/Adrian_Mifsud</answer>
+<answer>http://dbpedia.org/resource/Mary_Collinson</answer>
+<answer>http://dbpedia.org/resource/Joe_Cini</answer>
+<answer>http://dbpedia.org/resource/Maria_de_Dominici</answer>
+<answer>http://dbpedia.org/resource/Emmanuel_Agius</answer>
+<answer>http://dbpedia.org/resource/Charles_Micallef</answer>
+<answer>http://dbpedia.org/resource/Ernest_Barry_(footballer)</answer>
+<answer>http://dbpedia.org/resource/Mario_Farrugia</answer>
+<answer>http://dbpedia.org/resource/Andrew_Cohen_(footballer)</answer>
+<answer>http://dbpedia.org/resource/John_Constance_Parnis</answer>
+<answer>http://dbpedia.org/resource/Sid_C._Attard</answer>
+<answer>http://dbpedia.org/resource/William_Camenzuli</answer>
+<answer>http://dbpedia.org/resource/David_Cluett</answer>
+<answer>http://dbpedia.org/resource/Carlo_Mamo</answer>
+<answer>http://dbpedia.org/resource/Antonius_Grech_Delicata_Testaferrata</answer>
+<answer>http://dbpedia.org/resource/Arnold_Cassola</answer>
+<answer>http://dbpedia.org/resource/Giovanna_Debono</answer>
+<answer>http://dbpedia.org/resource/Daniel_Testa</answer>
+<answer>http://dbpedia.org/resource/Donat_Spiteri</answer>
+<answer>http://dbpedia.org/resource/Saviour_Pirotta</answer>
+<answer>http://dbpedia.org/resource/Rachel_Cuschieri</answer>
+<answer>http://dbpedia.org/resource/Fabrizio_Sceberras_Testaferrata</answer>
+<answer>http://dbpedia.org/resource/William_Savona</answer>
+<answer>http://dbpedia.org/resource/Aidan_Zammit</answer>
+<answer>http://dbpedia.org/resource/Adrian_Crowley</answer>
+<answer>http://dbpedia.org/resource/Marco_Brown</answer>
+<answer>http://dbpedia.org/resource/Ryan_Fenech</answer>
+<answer>http://dbpedia.org/resource/Kenneth_Scicluna</answer>
+<answer>http://dbpedia.org/resource/Cornelius_Hogan</answer>
+<answer>http://dbpedia.org/resource/Jeffrey_Pullicino_Orlando</answer>
+<answer>http://dbpedia.org/resource/Graziana_Axisa</answer>
+<answer>http://dbpedia.org/resource/Martin_Scicluna</answer>
+<answer>http://dbpedia.org/resource/Norman_Lowell</answer>
+<answer>http://dbpedia.org/resource/Michael_Galea</answer>
+<answer>http://dbpedia.org/resource/Anton_B._Dougall</answer>
+<answer>http://dbpedia.org/resource/Tony_Drago</answer>
+<answer>http://dbpedia.org/resource/Johnny_Hutchinson</answer>
+<answer>http://dbpedia.org/resource/Agatha_Barbara</answer>
+<answer>http://dbpedia.org/resource/Ugo_Pasquale_Mifsud</answer>
+<answer>http://dbpedia.org/resource/Cameron_Rusby</answer>
+<answer>http://dbpedia.org/resource/Ivan_Zammit</answer>
+<answer>http://dbpedia.org/resource/David_Cooke_(Royal_Navy_officer)</answer>
+<answer>http://dbpedia.org/resource/Joseph_Demarco</answer>
+<answer>http://dbpedia.org/resource/Karmenu_Mifsud_Bonnici</answer>
+<answer>http://dbpedia.org/resource/Francis_Saviour_Farrugia</answer>
+<answer>http://dbpedia.org/resource/Reginald_Cini</answer>
+<answer>http://dbpedia.org/resource/Darren_Debono</answer>
+<answer>http://dbpedia.org/resource/Kenelm_Burridge</answer>
+<answer>http://dbpedia.org/resource/Jesmond_Delia</answer>
+<answer>http://dbpedia.org/resource/Mikel_Scicluna</answer>
+<answer>http://dbpedia.org/resource/Karl_Chircop</answer>
+<answer>http://dbpedia.org/resource/Kevin_Borg</answer>
+<answer>http://dbpedia.org/resource/Glenn_Bedingfield</answer>
+<answer>http://dbpedia.org/resource/Lino_Galea</answer>
+<answer>http://dbpedia.org/resource/Angelo_Farrugia</answer>
+<answer>http://dbpedia.org/resource/Edwyn_Alexander-Sinclair</answer>
+<answer>http://dbpedia.org/resource/Mike_Campbell-Lamerton</answer>
+<answer>http://dbpedia.org/resource/George_Preca</answer>
+<answer>http://dbpedia.org/resource/Carmelo_Pace</answer>
+<answer>http://dbpedia.org/resource/Adrian_Pulis</answer>
+<answer>http://dbpedia.org/resource/Chris_Arrowsmith</answer>
+<answer>http://dbpedia.org/resource/Hubert_Suda</answer>
+<answer>http://dbpedia.org/resource/Jon_Cassar</answer>
+<answer>http://dbpedia.org/resource/Roberta_Metsola</answer>
+<answer>http://dbpedia.org/resource/Edward_Scicluna</answer>
+<answer>http://dbpedia.org/resource/Michael_Gonzi</answer>
+<answer>http://dbpedia.org/resource/Alex_Muscat</answer>
+<answer>http://dbpedia.org/resource/Stefano_Pace</answer>
+<answer>http://dbpedia.org/resource/Ugo_Mifsud_Bonnici</answer>
+<answer>http://dbpedia.org/resource/Esprit_Barthet</answer>
+<answer>http://dbpedia.org/resource/Jerome_Leocata</answer>
+<answer>http://dbpedia.org/resource/Carmel_Busuttil</answer>
+<answer>http://dbpedia.org/resource/Tonio_Borg</answer>
+<answer>http://dbpedia.org/resource/Massimo_Ellul</answer>
+<answer>http://dbpedia.org/resource/Rohan_Delacombe</answer>
+<answer>http://dbpedia.org/resource/John_Cutbush_(footballer)</answer>
+<answer>http://dbpedia.org/resource/Joseph_Muscat</answer>
+<answer>http://dbpedia.org/resource/Adrian_Ciantar</answer>
+<answer>http://dbpedia.org/resource/Pablo_Micallef</answer>
+<answer>http://dbpedia.org/resource/J._Valentine_Smith</answer>
+<answer>http://dbpedia.org/resource/Silvio_Vella</answer>
+<answer>http://dbpedia.org/resource/Madre_Teresa_Nuzzo</answer>
+<answer>http://dbpedia.org/resource/Michael_Franciscus_Buttigieg</answer>
+<answer>http://dbpedia.org/resource/Steve_Borg</answer>
+<answer>http://dbpedia.org/resource/Clyde_Puli</answer>
+<answer>http://dbpedia.org/resource/Mark_A._Sammut</answer>
+<answer>http://dbpedia.org/resource/Charlie_Williams_(soccer)</answer>
+<answer>http://dbpedia.org/resource/S._Debono</answer>
+<answer>http://dbpedia.org/resource/Gabriela_N</answer>
+<answer>http://dbpedia.org/resource/Dyson_Falzon</answer>
+<answer>http://dbpedia.org/resource/Nazzareno_Camilleri</answer>
+<answer>http://dbpedia.org/resource/Saviour_Darmanin</answer>
+<answer>http://dbpedia.org/resource/Andr%C3%A9_Schembri</answer>
+<answer>http://dbpedia.org/resource/Charles_van_Straubenzee</answer>
+<answer>http://dbpedia.org/resource/Ursula_Vaughan_Williams</answer>
+<answer>http://dbpedia.org/resource/Aaron_Farrugia</answer>
+<answer>http://dbpedia.org/resource/Saviour_Bernard</answer>
+<answer>http://dbpedia.org/resource/Pierre_Aquilina</answer>
+<answer>http://dbpedia.org/resource/Walter_Micallef</answer>
+<answer>http://dbpedia.org/resource/Herbert_Ganado</answer>
+<answer>http://dbpedia.org/resource/George_William_Vella</answer>
+<answer>http://dbpedia.org/resource/Peter_Baldacchino</answer>
+<answer>http://dbpedia.org/resource/Thomas_Cauchi</answer>
+<answer>http://dbpedia.org/resource/Peter_Paul_Borg</answer>
+<answer>http://dbpedia.org/resource/Brian_Said</answer>
+<answer>http://dbpedia.org/resource/Albert_Busuttil</answer>
+<answer>http://dbpedia.org/resource/George_Stoddart_Whitmore</answer>
+<answer>http://dbpedia.org/resource/Edmond_Agius</answer>
+<answer>http://dbpedia.org/resource/Veronica_Hurst</answer>
+<answer>http://dbpedia.org/resource/Paul_Zammit_(footballer)</answer>
+<answer>http://dbpedia.org/resource/Marlene_Mizzi</answer>
+<answer>http://dbpedia.org/resource/Gareth_Sciberras</answer>
+<answer>http://dbpedia.org/resource/Massimo_Grima</answer>
+<answer>http://dbpedia.org/resource/Anthony_J._Mifsud</answer>
+<answer>http://dbpedia.org/resource/Carmelo_Abela</answer>
+<answer>http://dbpedia.org/resource/Tony_Aquilina</answer>
+<answer>http://dbpedia.org/resource/Owen_Bonnici</answer>
+<answer>http://dbpedia.org/resource/Joseph_Vassallo</answer>
+<answer>http://dbpedia.org/resource/Larry_Attard</answer>
+<answer>http://dbpedia.org/resource/Justin_John_Camilleri</answer>
+<answer>http://dbpedia.org/resource/Marco_Borg</answer>
+<answer>http://dbpedia.org/resource/Francesco_Buhagiar</answer>
+<answer>http://dbpedia.org/resource/John_Attard_Montalto</answer>
+<answer>http://dbpedia.org/resource/Charles_Azzopardi</answer>
+<answer>http://dbpedia.org/resource/Vittorio_Cassar</answer>
+<answer>http://dbpedia.org/resource/Dominic_Borg</answer>
+<answer>http://dbpedia.org/resource/Michael_Briguglio</answer>
+<answer>http://dbpedia.org/resource/Stephanie_Zammit</answer>
+<answer>http://dbpedia.org/resource/Jonathan_Holland</answer>
+<answer>http://dbpedia.org/resource/John_Nicholas_Muscat</answer>
+<answer>http://dbpedia.org/resource/Guido_de_Marco</answer>
+<answer>http://dbpedia.org/resource/Diana_Ross_(author)</answer>
+<answer>http://dbpedia.org/resource/Kevin_Sammut</answer>
+<answer>http://dbpedia.org/resource/Edward_Attard</answer>
+<answer>http://dbpedia.org/resource/Ray_Farrugia</answer>
+<answer>http://dbpedia.org/resource/Denis_Cauchi</answer>
+<answer>http://dbpedia.org/resource/Ian_Azzopardi</answer>
+<answer>http://dbpedia.org/resource/Kristian_Laferla</answer>
+<answer>http://dbpedia.org/resource/Saviour_Cumbo</answer>
+<answer>http://dbpedia.org/resource/Nicolas_Isouard</answer>
+<answer>http://dbpedia.org/resource/Michael_Cutajar</answer>
+<answer>http://dbpedia.org/resource/Simon_Tortell</answer>
+<answer>http://dbpedia.org/resource/Anthony_Abela</answer>
+<answer>http://dbpedia.org/resource/Mikiel_Gonzi</answer>
+<answer>http://dbpedia.org/resource/Angelo_Pirotta</answer>
+<answer>http://dbpedia.org/resource/Enrico_Mizzi</answer>
+<answer>http://dbpedia.org/resource/Edward_de_Bono</answer>
+<answer>http://dbpedia.org/resource/Antoine_Zahra_(footballer_born_1981)</answer>
+<answer>http://dbpedia.org/resource/Francis_George_Adeodatus_Micallef</answer>
+<answer>http://dbpedia.org/resource/Jimmy_Briffa</answer>
+<answer>http://dbpedia.org/resource/Martin_Gregory</answer>
+<answer>http://dbpedia.org/resource/Emanuel_Fabri</answer>
+<answer>http://dbpedia.org/resource/Nikol_Joseph_Cauchi</answer>
+<answer>http://dbpedia.org/resource/John_Peter_Portelli</answer>
+<answer>http://dbpedia.org/resource/Sean_Sullivan_(footballer)</answer>
+<answer>http://dbpedia.org/resource/Roderick_Bajada</answer>
+<answer>http://dbpedia.org/resource/Ian_Ciantar</answer>
+<answer>http://dbpedia.org/resource/Paul_Fenech_(footballer)</answer>
+<answer>http://dbpedia.org/resource/Brian_Strutt</answer>
+<answer>http://dbpedia.org/resource/Paul_Boffa</answer>
+<answer>http://dbpedia.org/resource/Luke_Dimech</answer>
+<answer>http://dbpedia.org/resource/Constance_Vella</answer>
+<answer>http://dbpedia.org/resource/Michael_Zammit</answer>
+<answer>http://dbpedia.org/resource/Emmanuel_Vitale</answer>
+<answer>http://dbpedia.org/resource/Juan_Bautista_Azopardo</answer>
+<answer>http://dbpedia.org/resource/Dylan_Kerr</answer>
+<answer>http://dbpedia.org/resource/Charles_Mangion</answer>
+<answer>http://dbpedia.org/resource/Marama_Corlett</answer>
+<answer>http://dbpedia.org/resource/John_Aquilina</answer>
+<answer>http://dbpedia.org/resource/Edward_Darmanin</answer>
+<answer>http://dbpedia.org/resource/Edward_Herrera</answer>
+<answer>http://dbpedia.org/resource/Cyrus_Engerer</answer>
+<answer>http://dbpedia.org/resource/Austin_Gatt</answer>
+<answer>http://dbpedia.org/resource/Carmelo_Mifsud_Bonnici</answer>
+<answer>http://dbpedia.org/resource/Jonathan_Magri_Overend</answer>
+<answer>http://dbpedia.org/resource/Gaetanus_Matthew_Perez</answer>
+<answer>http://dbpedia.org/resource/Joseph_Barth</answer>
+<answer>http://dbpedia.org/resource/Gorg_Mallia</answer>
+<answer>http://dbpedia.org/resource/John_Caruana</answer>
+<answer>http://dbpedia.org/resource/Girolamo_Cassar</answer>
+<answer>http://dbpedia.org/resource/Anthony_Perici</answer>
+<answer>http://dbpedia.org/resource/John_Leaver</answer>
+<answer>http://dbpedia.org/resource/Nicholas_Zammit</answer>
+<answer>http://dbpedia.org/resource/Joseph_Matthews_(Medal_of_Honor)</answer>
+<answer>http://dbpedia.org/resource/Sandra_Dingli</answer>
+<answer>http://dbpedia.org/resource/Karl_Sacco</answer>
+<answer>http://dbpedia.org/resource/Saviour_Montebello</answer>
+<answer>http://dbpedia.org/resource/Mario_Muscat</answer>
+<answer>http://dbpedia.org/resource/Gaia_Cauchi</answer>
+<answer>http://dbpedia.org/resource/Sir_Henry_de_Bathe,_4th_Baronet</answer>
+<answer>http://dbpedia.org/resource/Christian_Zahra</answer>
+<answer>http://dbpedia.org/resource/Pippo_Psaila</answer>
+<answer>http://dbpedia.org/resource/Jeffrey_Chetcuti</answer>
+<answer>http://dbpedia.org/resource/Andy_Partridge</answer>
+<answer>http://dbpedia.org/resource/Joseph_John_Aquilina</answer>
+<answer>http://dbpedia.org/resource/Tom_Bradby</answer>
+<answer>http://dbpedia.org/resource/Dom_Mintoff</answer>
+<answer>http://dbpedia.org/resource/Jonathan_Caruana</answer>
+<answer>http://dbpedia.org/resource/Peter_Long</answer>
+<answer>http://dbpedia.org/resource/Salvinu_Schembri</answer>
+<answer>http://dbpedia.org/resource/Walter_Edward_Davidson</answer>
+<answer>http://dbpedia.org/resource/Mark_William_Graham_Kerr</answer>
+<answer>http://dbpedia.org/resource/Michael_Degiorgio</answer>
+<answer>http://dbpedia.org/resource/Philip_Mifsud</answer>
+<answer>http://dbpedia.org/resource/Joe_Debono_Grech</answer>
+<answer>http://dbpedia.org/resource/Pauline_Green</answer>
+<answer>http://dbpedia.org/resource/Muxu</answer>
+<answer>http://dbpedia.org/resource/Peter_Serracino_Inglott</answer>
+<answer>http://dbpedia.org/resource/Mark_Loram</answer>
+<answer>http://dbpedia.org/resource/Michael_Field-Buss</answer>
+<answer>http://dbpedia.org/resource/Anthony_Mamo</answer>
+<answer>http://dbpedia.org/resource/Stephen_Azzopardi</answer>
+<answer>http://dbpedia.org/resource/Emma_Heming</answer>
+<answer>http://dbpedia.org/resource/Trevor_Cilia</answer>
+<answer>http://dbpedia.org/resource/Dominic_Pace</answer>
+<answer>http://dbpedia.org/resource/George_Sagnani</answer>
+<answer>http://dbpedia.org/resource/Terence_Vella</answer>
+<answer>http://dbpedia.org/resource/William_Goodell_(gynecologist)</answer>
+<answer>http://dbpedia.org/resource/Gianluca_Bezzina</answer>
+<answer>http://dbpedia.org/resource/Lino_Grech</answer>
+<answer>http://dbpedia.org/resource/Paul_Tisdale</answer>
+<answer>http://dbpedia.org/resource/Themistocles_Zammit</answer>
+<answer>http://dbpedia.org/resource/James_Stout</answer>
+<answer>http://dbpedia.org/resource/Stefan_Sultana</answer>
+<answer>http://dbpedia.org/resource/Pawlu_Aquilina</answer>
+<answer>http://dbpedia.org/resource/Ninu_Zammit</answer>
+<answer>http://dbpedia.org/resource/Jerome_Inglott</answer>
+<answer>http://dbpedia.org/resource/Charles_Scerri</answer>
+<answer>http://dbpedia.org/resource/Orlando_E._Caruana</answer>
+<answer>http://dbpedia.org/resource/Robert_Arrigo</answer>
+<answer>http://dbpedia.org/resource/David_Millar</answer>
+<answer>http://dbpedia.org/resource/Brian_Grech</answer>
+<answer>http://dbpedia.org/resource/Joseph_Howard_(Prime_Minister)</answer>
+<answer>http://dbpedia.org/resource/Ildebrando_Zacchini</answer>
+<answer>http://dbpedia.org/resource/Eric_Schembri</answer>
+<answer>http://dbpedia.org/resource/Noel_Turner</answer>
+<answer>http://dbpedia.org/resource/Konrad_Mizzi</answer>
+<answer>http://dbpedia.org/resource/Franco_Debono</answer>
+<answer>http://dbpedia.org/resource/Gasper_Grima</answer>
+<answer>http://dbpedia.org/resource/Princess_Victoria_Melita_of_Saxe-Coburg_and_Gotha</answer>
+<answer>http://dbpedia.org/resource/Dennis_Mizzi</answer>
+<answer>http://dbpedia.org/resource/Jesmond_Zerafa</answer>
+<answer>http://dbpedia.org/resource/Marc_Storace</answer>
+<answer>http://dbpedia.org/resource/Louis_Grech</answer>
+<answer>http://dbpedia.org/resource/Stephen_Wellman</answer>
+<answer>http://dbpedia.org/resource/Reuben_Gauci</answer>
+<answer>http://dbpedia.org/resource/Joseph_Sapiano</answer>
+<answer>http://dbpedia.org/resource/David_Camilleri</answer>
+<answer>http://dbpedia.org/resource/Daniel_Theuma</answer>
+<answer>http://dbpedia.org/resource/Joe_Cassar</answer>
+<answer>http://dbpedia.org/resource/Antonio_Williams</answer>
+<answer>http://dbpedia.org/resource/Paul_Darmanin</answer>
+<answer>http://dbpedia.org/resource/Jean_Pierre_Mifsud_Triganza</answer>
+<answer>http://dbpedia.org/resource/Angelo_Muscat</answer>
+<answer>http://dbpedia.org/resource/Terry_Camilleri</answer>
+<answer>http://dbpedia.org/resource/Manwel_Dimech</answer>
+<answer>http://dbpedia.org/resource/Clayton_Failla</answer>
+<answer>http://dbpedia.org/resource/Wistin_Abela</answer>
+<answer>http://dbpedia.org/resource/Rebecca_D'Agostino</answer>
+<answer>http://dbpedia.org/resource/Steve_Bezzina</answer>
+<answer>http://dbpedia.org/resource/Chris_d'Lacey</answer>
+<answer>http://dbpedia.org/resource/Gillian_Attard</answer>
+<answer>http://dbpedia.org/resource/Clint_Bajada</answer>
+<answer>http://dbpedia.org/resource/Alex_Perici_Calascione</answer>
+<answer>http://dbpedia.org/resource/Anthony_Lowe</answer>
+<answer>http://dbpedia.org/resource/Kenneth_Wain</answer>
+<answer>http://dbpedia.org/resource/Lou_Bondi</answer>
+<answer>http://dbpedia.org/resource/Joe_Sacco</answer>
+<answer>http://dbpedia.org/resource/Francis_Adams_(writer)</answer>
+<answer>http://dbpedia.org/resource/Roderick_Briffa</answer>
+<answer>http://dbpedia.org/resource/Rosarius_Mary_Hagius</answer>
+<answer>http://dbpedia.org/resource/Oliver_Friggieri</answer>
+<answer>http://dbpedia.org/resource/Robert_Galea</answer>
+<answer>http://dbpedia.org/resource/Pietru_Caxaro</answer>
+<answer>http://dbpedia.org/resource/Antoine_Zahra_(footballer_born_1977)</answer>
+<answer>http://dbpedia.org/resource/Raphael_Debono</answer>
+<answer>http://dbpedia.org/resource/Joseph_Rizzo</answer>
+<answer>http://dbpedia.org/resource/George_Bayard_Hynes</answer>
+<answer>http://dbpedia.org/resource/Alfred_Xuereb</answer>
+<answer>http://dbpedia.org/resource/Josef_Mifsud</answer>
+<answer>http://dbpedia.org/resource/Ray_Buttigieg</answer>
+<answer>http://dbpedia.org/resource/Jon_Courtenay_Grimwood</answer>
+<answer>http://dbpedia.org/resource/Nicky_Saliba</answer>
+<answer>http://dbpedia.org/resource/Edmund_Whitmore</answer>
+<answer>http://dbpedia.org/resource/Raymond_Xuereb</answer>
+<answer>http://dbpedia.org/resource/Michael_Mifsud</answer>
+<answer>http://dbpedia.org/resource/Federica_Falzon</answer>
+<answer>http://dbpedia.org/resource/Josephine_Gatt_Ciancio</answer>
+<answer>http://dbpedia.org/resource/Fortunatus_Victor_Costa</answer>
+<answer>http://dbpedia.org/resource/Saint_Publius</answer>
+<answer>http://dbpedia.org/resource/Saverius_Pace</answer>
+<answer>http://dbpedia.org/resource/Sue_Barnes</answer>
+<answer>http://dbpedia.org/resource/Salvatore_Gaffiero</answer>
+<answer>http://dbpedia.org/resource/Giuseppe_Mifsud_Bonnici</answer>
+<answer>http://dbpedia.org/resource/Andrew_Chetcuti</answer>
+<answer>http://dbpedia.org/resource/Malcolm_Licari</answer>
+<answer>http://dbpedia.org/resource/Marie_Louise_Coleiro_Preca</answer>
+<answer>http://dbpedia.org/resource/John_McNeill_(footballer)</answer>
+<answer>http://dbpedia.org/resource/Justin_Haber</answer>
+<answer>http://dbpedia.org/resource/Joseph_Cuschieri</answer>
+<answer>http://dbpedia.org/resource/Gerald_Strickland,_1st_Baron_Strickland</answer>
+<answer>http://dbpedia.org/resource/Cleavon_Frendo</answer>
+<answer>http://dbpedia.org/resource/Charles_Muscat</answer>
+<answer>http://dbpedia.org/resource/Thea_Garrett</answer>
+<answer>http://dbpedia.org/resource/John_Formosa</answer>
+<answer>http://dbpedia.org/resource/Andrei_Agius</answer>
+<answer>http://dbpedia.org/resource/Claude_Mattocks</answer>
+<answer>http://dbpedia.org/resource/Roger_Scannura</answer>
+<answer>http://dbpedia.org/resource/Vince_Riolo</answer>
+<answer>http://dbpedia.org/resource/Vincent_Borg_Bonaci</answer>
+<answer>http://dbpedia.org/resource/Justus_Azzopardi</answer>
+<answer>http://dbpedia.org/resource/Eric_Cole</answer>
+<answer>http://dbpedia.org/resource/Lolly_Vella</answer>
+<answer>http://dbpedia.org/resource/Mario_de_Marco</answer>
+<answer>http://dbpedia.org/resource/Gilbert_Agius</answer>
+<answer>http://dbpedia.org/resource/Joseph_De_Piro</answer>
+<answer>http://dbpedia.org/resource/Ian_Stevens_(footballer)</answer>
+<answer>http://dbpedia.org/resource/Terence_Scerri</answer>
+<answer>http://dbpedia.org/resource/List_of_Playboy_Playmates_of_1970</answer>
+<answer>http://dbpedia.org/resource/Frans_Sammut</answer>
+<answer>http://dbpedia.org/resource/Louis_Farrugia</answer>
+<answer>http://dbpedia.org/resource/Nigel_Stock_(actor)</answer>
+<answer>http://dbpedia.org/resource/John_Matthew_Rispoli</answer>
+<answer>http://dbpedia.org/resource/Igor_Judge,_Baron_Judge</answer>
+<answer>http://dbpedia.org/resource/George_Abela</answer>
+<answer>http://dbpedia.org/resource/Salvino_Busuttil</answer>
+<answer>http://dbpedia.org/resource/John_Buttigieg_(footballer)</answer>
+<answer>http://dbpedia.org/resource/Maximilian_Balzan</answer>
+<answer>http://dbpedia.org/resource/Cecil_Satariano</answer>
+<answer>http://dbpedia.org/resource/Henry_Regnand</answer>
+<answer>http://dbpedia.org/resource/Francis_Bonnici</answer>
+<answer>http://dbpedia.org/resource/Aaron_Xuereb</answer>
+<answer>http://dbpedia.org/resource/George_Mallia</answer>
+<answer>http://dbpedia.org/resource/Jonathan_Stanbury</answer>
+<answer>http://dbpedia.org/resource/Louis_Briffa</answer>
+<answer>http://dbpedia.org/resource/Agostino_Bonello</answer>
+<answer>http://dbpedia.org/resource/Joseph_Xerri</answer>
+<answer>http://dbpedia.org/resource/Dominic_Bezzina</answer>
+<answer>http://dbpedia.org/resource/Joseph_Calleia</answer>
+<answer>http://dbpedia.org/resource/Aloisio_Galea</answer>
+<answer>http://dbpedia.org/resource/Henry_Ercole</answer>
+<answer>http://dbpedia.org/resource/Louis_Galea</answer>
+<answer>http://dbpedia.org/resource/Eddie_Dwane</answer>
+<answer>http://dbpedia.org/resource/Anastasio_Cuschieri</answer>
+<answer>http://dbpedia.org/resource/Anton_Buttigieg</answer>
+<answer>http://dbpedia.org/resource/Lawrence_Gonzi</answer>
+</answers>
+</question>
+<question id="42">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Havana</answer>
+</answers>
+</question>
+<question id="8">
+<string lang="en"/>
+<answers>
+<answer>false</answer>
+</answers>
+</question>
+<question id="7">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/LPC_(programming_language)</answer>
+<answer>http://dbpedia.org/resource/Python_(programming_language)</answer>
+<answer>http://dbpedia.org/resource/Windows_PowerShell</answer>
+<answer>http://dbpedia.org/resource/Falcon_(programming_language)</answer>
+<answer>http://dbpedia.org/resource/Ruby_(programming_language)</answer>
+<answer>http://dbpedia.org/resource/JavaScript</answer>
+<answer>http://dbpedia.org/resource/ECMAScript</answer>
+<answer>http://dbpedia.org/resource/PHP</answer>
+<answer>http://dbpedia.org/resource/Perl_6</answer>
+<answer>http://dbpedia.org/resource/Qore_Language</answer>
+<answer>http://dbpedia.org/resource/C_(programming_language)</answer>
+<answer>http://dbpedia.org/resource/AWK</answer>
+<answer>http://dbpedia.org/resource/Lisp_(programming_language)</answer>
+<answer>http://dbpedia.org/resource/Sed</answer>
+<answer>http://dbpedia.org/resource/C++</answer>
+</answers>
+</question>
+<question id="24">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Berlin</answer>
+<answer>http://dbpedia.org/resource/Germany</answer>
+</answers>
+</question>
+<question id="45">
+<string lang="en"/>
+<answers>
+<answer>83</answer>
+</answers>
+</question>
+<question id="40">
+<string lang="en"/>
+<answers>
+<answer>300</answer>
+</answers>
+</question>
+<question id="33">
+<string lang="en"/>
+<answers>
+<answer>1644-04-25</answer>
+</answers>
+</question>
+<question id="30">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Saudi_Arabia</answer>
+</answers>
+</question>
+<question id="31">
+<string lang="en"/>
+<answers>
+<answer>US$ 37.037 billion</answer>
+</answers>
+</question>
+<question id="48">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Corey_Williams_(basketball,_born_1970)</answer>
+<answer>http://dbpedia.org/resource/Fred_Hoiberg</answer>
+<answer>http://dbpedia.org/resource/Rusty_LaRue</answer>
+</answers>
+</question>
+<question id="10">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Grace_Gummer</answer>
+<answer>http://dbpedia.org/resource/Henry_Wolfe_Gummer</answer>
+<answer>http://dbpedia.org/resource/Mamie_Gummer</answer>
+</answers>
+</question>
+<question id="9">
+<string lang="en"/>
+<answers>
+<answer>8</answer>
+</answers>
+</question>
+<question id="17">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Benicio_del_Toro</answer>
+<answer>http://dbpedia.org/resource/Lou_Diamond_Phillips</answer>
+<answer>http://dbpedia.org/resource/Emily_Blunt</answer>
+<answer>http://dbpedia.org/resource/Anthony_Hopkins</answer>
+<answer>http://dbpedia.org/resource/Hugo_Weaving</answer>
+<answer>http://dbpedia.org/resource/Rodrigo_Santoro</answer>
+<answer>http://dbpedia.org/resource/%C3%89dgar_Ram%C3%ADrez</answer>
+<answer>http://dbpedia.org/resource/Catalina_Sandino_Moreno</answer>
+<answer>http://dbpedia.org/resource/Franka_Potente</answer>
+<answer>http://dbpedia.org/resource/Julia_Ormond</answer>
+<answer>http://dbpedia.org/resource/Demi%C3%A1n_Bichir</answer>
+<answer>http://dbpedia.org/resource/Joaquim_de_Almeida</answer>
+<answer>http://dbpedia.org/resource/Santiago_Cabrera</answer>
+</answers>
+</question>
+<question id="46">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Conrad_II,_Holy_Roman_Emperor</answer>
+<answer>http://dbpedia.org/resource/Henry_II,_Holy_Roman_Emperor</answer>
+</answers>
+</question>
+</dataset>

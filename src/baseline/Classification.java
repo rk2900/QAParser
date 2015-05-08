@@ -11,7 +11,7 @@ import knowledgebase.ClientManagement;
 import finder.Pipeline;
 
 public class Classification {
-	public static enum CLASSIFICATION {NORMAL, DATE, WHERE, WHO, NUMBER, RESOURCE};
+	public static enum CLASSIFICATION {NORMAL, DATE, WHERE, WHO, NUMBER, RESOURCE,BOOLEAN};
 	
 	public static Answer getAnswer(QuestionFrame qf){
 		return getAnswer(qf,CLASSIFICATION.NORMAL);

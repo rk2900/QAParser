@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Properties;
 
+import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.RDFNode;
 
 import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
@@ -305,7 +306,7 @@ public class Pipeline {
 	}
 	
 	public static void main(String[] args) {
-		Pipeline pipeline = new Pipeline(DataSource.TRAIN);
+		Pipeline pipeline = new Pipeline(DataSource.TEST);
 		responseParser parser = new responseParser();
 		HashMap<QuestionFrame, LinkedList<RDFNode>> qaMap = new HashMap<QuestionFrame, LinkedList<RDFNode>>();
 		
@@ -313,35 +314,48 @@ public class Pipeline {
 		
 		for(QuestionFrame qf: pipeline.bool) {
 			parser.setEntityList(qf, TOOLKIT.MINERDIS);
-			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.NORMAL);
-			qf.print();
-			if(answer!=null && answer.isException()) {
-				System.out.println("ANSWER = null / ANSWER has exception: " + answer.exceptionString );
-				continue;
-			} else {
-				if(answer.answerType == 0) {
-					System.out.println("ANSWER_TYPE = 0");
-					if(answer.predictList.size() > 0) {
-						Predicate p = answer.predictList.get(0);
-						System.out.println("Predicate: "+p.getUri());
-						LinkedList<RDFNode> nodeList = answer.resources.get(p);
-						for (RDFNode rdfNode : nodeList) {
-							System.out.print("\t"+rdfNode.toString());
-						}
-						qaMap.put(qf, nodeList);
-					}
-				} else {
-					if(answer.pairPredicates.size() > 0) {
-						PairPredicate pairPredicate = answer.pairPredicates.get(0);
-						System.out.println("Pair Predicate: "+pairPredicate.Predicate1.getUri() + "\t" + pairPredicate.Predicate2.getUri());
-						LinkedList<RDFNode> nodeList = answer.pairResources.get(pairPredicate);
-						for (RDFNode rdfNode : nodeList) {
-							System.out.print("\t"+rdfNode.toString());
-						}
-						qaMap.put(qf, nodeList);
-					}
-				}
+//			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.BOOLEAN);
+//			qf.print();
+			
+			Model model;
+			RDFNode r = null;
+			try {
+				model = ClientManagement.getAgModel();
+				r = model.createResource("true");
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
+			LinkedList<RDFNode> l = new LinkedList<RDFNode>();
+			l.add(r);
+			qaMap.put(qf, l );
+//			if(answer!=null && answer.isException()) {
+//				System.out.println("ANSWER = null / ANSWER has exception: " + answer.exceptionString );
+//				continue;
+//			} else {
+//				if(answer.answerType == 0) {
+//					System.out.println("ANSWER_TYPE = 0");
+//					if(answer.predictList.size() > 0) {
+//						Predicate p = answer.predictList.get(0);
+//						System.out.println("Predicate: "+p.getUri());
+//						LinkedList<RDFNode> nodeList = answer.resources.get(p);
+//						for (RDFNode rdfNode : nodeList) {
+//							System.out.print("\t"+rdfNode.toString());
+//						}
+//						qaMap.put(qf, nodeList);
+//					}
+//				} else {
+//					if(answer.pairPredicates.size() > 0) {
+//						PairPredicate pairPredicate = answer.pairPredicates.get(0);
+//						System.out.println("Pair Predicate: "+pairPredicate.Predicate1.getUri() + "\t" + pairPredicate.Predicate2.getUri());
+//						LinkedList<RDFNode> nodeList = answer.pairResources.get(pairPredicate);
+//						for (RDFNode rdfNode : nodeList) {
+//							System.out.print("\t"+rdfNode.toString());
+//						}
+//						qaMap.put(qf, nodeList);
+//					}
+//				}
+//			}
 			System.out.println("\n====================================================\n");
 		}
 		
