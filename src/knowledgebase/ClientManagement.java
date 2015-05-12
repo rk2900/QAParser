@@ -602,17 +602,12 @@ public class ClientManagement {
 	
 	public static void main(String[] args) throws Exception {
 		/**/
-		String e1 = "http://dbpedia.org/resource/Beijing";
-		String e2 = "http://dbpedia.org/resource/Xi_Jinping";
-		CLASSIFICATION c = CLASSIFICATION.DATE;
-		
-		HashMap<String, HashSet<String>> map = ClientManagement.getPredicateCross(e1, e2, c);
-		for (String key : map.keySet()) {
-			System.out.println(key);
-			HashSet<String> set = map.get(key);
-			for (String string : set) {
-				System.out.println("\t"+string);
-			}
+		String sparql = "SELECT DISTINCT ?o1 WHERE {<http://dbpedia.org/resource/Beijing> <http://dbpedia.org/ontology/country> ?o. ?o1 <http://dbpedia.org/ontology/stateOfOrigin> ?o}";
+		ResultSet rs = ClientManagement.query(sparql, true);
+		while(rs.hasNext()) {
+			QuerySolution qs = rs.next();
+			System.out.println(qs.get("o1"));
+			System.out.println();
 		}
 		
 	}
