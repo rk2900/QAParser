@@ -26,10 +26,10 @@ public class TestMain {
 		System.out.println(qf.answers);
 	}
 	public static void main(String[] args) {
-		Pipeline pipeline = new Pipeline(DataSource.TRAIN);
+		Pipeline pipeline = new Pipeline(DataSource.TEST);
 		responseParser parser = new responseParser();
 		
-		showSingleQF(pipeline, parser, 160);
+		showSingleQF(pipeline, parser, 37);
 //		OutputRedirector.openFileOutput("./data/api_classification/normal-type-pipe.txt");
 //		for(int i=1; i<=pipeline.totalNumber; i++) {
 //			

@@ -92,12 +92,15 @@ public class entityClient {
 	public static void main(String [] args){
 		String test = "Which soccer players were born on Malta?";
 		test = "Which books by Kerouac were published by Viking Press?";
-		
+		test ="Give me the currency of China.";
+		test = "Which soccer players were born on Malta?";
+		test = "Who is the mayor of Berlin?";
+		test = "Which movies starring Brad Pitt were directed by Guy Ritchie?";
 //		String result = entityClient.queryAPI(test, entityClientConst.TOOLKIT.MINERDIS);
 //		String title = "Vrije Universiteit";
 //		Entity entity = new Entity(title, 0, 0);
 //		System.out.println(entity.getUri());
-		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.MINER));
+		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.MINERDIS));
 //		System.out.println(result);
 //		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.DEXTER));
 //		System.out.println(entityClient.queryAPI(test, entityClientConst.TOOLKIT.SPOTLIGHT1));
