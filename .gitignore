@@ -49,3 +49,5 @@ target/classes/*
 *.class
 target/classes/finder/Pipeline.class
 *.rar
+*.class
+target/classes/finder/Pipeline.class
