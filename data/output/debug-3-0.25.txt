@@ -54,7 +54,7 @@ OnlyDBO: true	Aggregation: true
 Category: 	RESOURCE
 Rule Judgement:	{WHO=true, COMPARISON=true, WHERE=false}
 Focus Content: 	
-Entity List: 	2
+Entity List: 	1
 -------------------------
 ANSWER = null / ANSWER has exception: No matched entity in the Node.
 
@@ -93,7 +93,7 @@ OnlyDBO: true	Aggregation: true
 Category: 	BOOLEAN
 Rule Judgement:	{WHO=false, COMPARISON=true, WHERE=false}
 Focus Content: 	
-Entity List: 	3
+Entity List: 	2
 -------------------------
 ANSWER = null / ANSWER has exception: 16 constraintList size equals 2 && pipeline style &&No matched entity
 ID: 	25
@@ -173,12 +173,9 @@ OnlyDBO: true	Aggregation: true
 Category: 	NUMBER
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	official languages
-Entity List: 	1
+Entity List: 	0
 -------------------------
-ANSWER_TYPE = 0
-Predicate: http://dbpedia.org/ontology/officialLanguage
-
-====================================================
+ANSWER = null / ANSWER has exception: entityList size equals 0.
 
 ID: 	32
 Content: 	
@@ -191,8 +188,7 @@ Focus Content:
 Entity List: 	2
 -------------------------
 ANSWER_TYPE = 0
-Predicate: http://dbpedia.org/ontology/birthName
-	Nicole Mary Kidman@en
+
 ====================================================
 
 ID: 	38
@@ -248,7 +244,6 @@ Focus Content: 	children
 Entity List: 	2
 -------------------------
 ANSWER_TYPE = 0
-Predicate: http://dbpedia.org/ontology/child
 
 ====================================================
 
@@ -262,8 +257,7 @@ Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	people
 Entity List: 	1
 -------------------------
-Pair Predicate: http://dbpedia.org/ontology/capital	http://dbpedia.org/ontology/populationTotal
-	381488^^http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+
 ====================================================
 
 ID: 	7
@@ -304,7 +298,7 @@ OnlyDBO: false	Aggregation: false
 Category: 	DATE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	
-Entity List: 	3
+Entity List: 	1
 -------------------------
 ANSWER_TYPE = 0
 Predicate: http://dbpedia.org/property/beginningDate
@@ -319,7 +313,7 @@ OnlyDBO: true	Aggregation: false
 Category: 	DATE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	
-Entity List: 	2
+Entity List: 	1
 -------------------------
 ANSWER_TYPE = 0
 Predicate: http://dbpedia.org/ontology/deathDate
@@ -393,7 +387,7 @@ OnlyDBO: false	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=true, COMPARISON=false, WHERE=false}
 Focus Content: 	
-Entity List: 	2
+Entity List: 	1
 -------------------------
 ANSWER_TYPE = 0
 Predicate: http://dbpedia.org/property/father
@@ -494,7 +488,7 @@ OnlyDBO: false	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=true, COMPARISON=false, WHERE=false}
 Focus Content: 	
-Entity List: 	3
+Entity List: 	1
 -------------------------
 ANSWER_TYPE = 0
 Predicate: http://dbpedia.org/ontology/creator
@@ -704,7 +698,7 @@ OnlyDBO: false	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	U.S. state
-Entity List: 	3
+Entity List: 	2
 -------------------------
 ANSWER_TYPE = 0
 
@@ -718,7 +712,7 @@ OnlyDBO: true	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	
-Entity List: 	3
+Entity List: 	2
 -------------------------
 ANSWER_TYPE = 0
 Predicate: http://dbpedia.org/property/director
@@ -896,12 +890,9 @@ OnlyDBO: true	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	professional surfers
-Entity List: 	1
+Entity List: 	0
 -------------------------
-ANSWER_TYPE = 0
-Predicate: http://dbpedia.org/property/born
-	http://dbpedia.org/resource/Danny_Sillada	http://dbpedia.org/resource/Sunshine_Dizon
-====================================================
+ANSWER = null / ANSWER has exception: entityList size equals 0.
 
 ID: 	47
 Content: 	
@@ -955,11 +946,9 @@ OnlyDBO: false	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	
-Entity List: 	3
+Entity List: 	2
 -------------------------
-ANSWER_TYPE = 0
-
-====================================================
+ANSWER = null / ANSWER has exception: No matched entity in the Node.
 
 ID: 	53
 Content: 	
@@ -1025,7 +1014,7 @@ OnlyDBO: false	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	time zone
-Entity List: 	2
+Entity List: 	1
 -------------------------
 ANSWER_TYPE = 0
 Predicate: http://dbpedia.org/ontology/timeZone
@@ -1217,11 +1206,11 @@ OnlyDBO: true	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	city
-Entity List: 	2
+Entity List: 	1
 -------------------------
 ANSWER_TYPE = 0
-Predicate: http://dbpedia.org/ontology/restingPlace
-	http://dbpedia.org/resource/Nieuwe_Kerk_(Delft)	http://dbpedia.org/resource/Delft	http://dbpedia.org/resource/Netherlands
+Predicate: http://dbpedia.org/ontology/city
+	http://dbpedia.org/resource/Hilversum_Airport	http://dbpedia.org/resource/2012_IPC_Athletics_European_Championships	http://dbpedia.org/resource/1994_FEI_World_Equestrian_Games	http://dbpedia.org/resource/Red_Eagles_'s-Hertogenbosch	http://dbpedia.org/resource/Woensdrecht_Air_Base	http://dbpedia.org/resource/Garden_Culture	http://dbpedia.org/resource/Oostwold_Airport	http://dbpedia.org/resource/1980_Summer_Paralympics	http://dbpedia.org/resource/Dordrecht_Lions	http://dbpedia.org/resource/2013_European_Youth_Summer_Olympic_Festival	http://dbpedia.org/resource/1980_World_Championships_in_Athletics	http://dbpedia.org/resource/Enschede_Airport_Twente	http://dbpedia.org/resource/Amsterdam_Airport_Schiphol	http://dbpedia.org/resource/Eindhoven_Airport	http://dbpedia.org/resource/Maastricht_Aachen_Airport	http://dbpedia.org/resource/Hoogeveen_Airport	http://dbpedia.org/resource/STAR_(student_association)	http://dbpedia.org/resource/Groningen_Airport_Eelde	http://dbpedia.org/resource/Lord_Ashcroft_International_Business_School
 ====================================================
 
 ID: 	91
@@ -1281,12 +1270,9 @@ OnlyDBO: false	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	
-Entity List: 	2
+Entity List: 	1
 -------------------------
-ANSWER_TYPE = 0
-Predicate: http://dbpedia.org/property/label
-	http://dbpedia.org/resource/Philips_Records	http://dbpedia.org/resource/Sire_Records	http://dbpedia.org/resource/Chrysalis_Records	http://dbpedia.org/resource/Radioactive_Records	http://dbpedia.org/resource/Beggars_Banquet_Records
-====================================================
+ANSWER = null / ANSWER has exception: No matched entity in the Node.
 
 ID: 	98
 Content: 	
@@ -1317,69 +1303,63 @@ Predicate: http://dbpedia.org/property/name
 	Presley, Elvis Aaron@en	Elvis Presley@en	http://dbpedia.org/resource/List_of_Tau_Kappa_Epsilon_brothers
 ====================================================
 
-XML Question ID: 95
-XML Question ID: 49
-XML Question ID: 89
-XML Question ID: 45
-XML Question ID: 24
-XML Question ID: 87
-XML Question ID: 58
 XML Question ID: 19
+XML Question ID: 95
+XML Question ID: 7
+XML Question ID: 65
+XML Question ID: 99
+XML Question ID: 80
+XML Question ID: 62
+XML Question ID: 78
+XML Question ID: 37
+XML Question ID: 45
+XML Question ID: 89
 XML Question ID: 53
 XML Question ID: 72
-XML Question ID: 17
-XML Question ID: 54
-XML Question ID: 4
-XML Question ID: 84
+XML Question ID: 28
+XML Question ID: 49
+XML Question ID: 38
 XML Question ID: 68
-XML Question ID: 30
-XML Question ID: 29
-XML Question ID: 78
-XML Question ID: 62
-XML Question ID: 64
-XML Question ID: 6
-XML Question ID: 67
-XML Question ID: 37
-XML Question ID: 43
-XML Question ID: 48
 XML Question ID: 23
 XML Question ID: 56
-XML Question ID: 10
-XML Question ID: 74
-XML Question ID: 2
-XML Question ID: 46
-XML Question ID: 99
-XML Question ID: 65
-XML Question ID: 96
-XML Question ID: 73
-XML Question ID: 41
-XML Question ID: 98
-XML Question ID: 42
-XML Question ID: 5
-XML Question ID: 69
-XML Question ID: 38
-XML Question ID: 7
-XML Question ID: 81
-XML Question ID: 70
 XML Question ID: 3
-XML Question ID: 66
-XML Question ID: 80
-XML Question ID: 77
-XML Question ID: 28
-XML Question ID: 71
-XML Question ID: 21
-XML Question ID: 8
-XML Question ID: 100
-XML Question ID: 86
-XML Question ID: 47
 XML Question ID: 14
+XML Question ID: 6
+XML Question ID: 66
+XML Question ID: 58
 XML Question ID: 35
-XML Question ID: 44
-XML Question ID: 79
-XML Question ID: 22
-XML Question ID: 26
-XML Question ID: 85
+XML Question ID: 100
+XML Question ID: 98
+XML Question ID: 86
+XML Question ID: 54
 XML Question ID: 90
 XML Question ID: 76
+XML Question ID: 69
+XML Question ID: 30
+XML Question ID: 4
+XML Question ID: 21
+XML Question ID: 8
+XML Question ID: 41
+XML Question ID: 70
+XML Question ID: 71
+XML Question ID: 43
+XML Question ID: 67
+XML Question ID: 10
+XML Question ID: 77
 XML Question ID: 93
-XML Question ID: 32
+XML Question ID: 5
+XML Question ID: 2
+XML Question ID: 84
+XML Question ID: 47
+XML Question ID: 44
+XML Question ID: 22
+XML Question ID: 24
+XML Question ID: 81
+XML Question ID: 42
+XML Question ID: 17
+XML Question ID: 79
+XML Question ID: 87
+XML Question ID: 64
+XML Question ID: 74
+XML Question ID: 29
+XML Question ID: 48

@@ -9,7 +9,7 @@ public class umbcTest {
 		umbcDB db = new umbcDB();
 //		db.updateValue("In", "Link", -1);
 //		System.out.println(UMBC.getSimilarity("Link", "In"));
-		System.out.println(db.getScore("died", "death"));
+		System.out.println(db.getScore("people", "country"));
 	}
 
 }

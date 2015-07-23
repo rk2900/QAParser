@@ -54,7 +54,7 @@ OnlyDBO: true	Aggregation: true
 Category: 	RESOURCE
 Rule Judgement:	{WHO=true, COMPARISON=true, WHERE=false}
 Focus Content: 	
-Entity List: 	2
+Entity List: 	1
 -------------------------
 ANSWER = null / ANSWER has exception: No matched entity in the Node.
 
@@ -93,7 +93,7 @@ OnlyDBO: true	Aggregation: true
 Category: 	BOOLEAN
 Rule Judgement:	{WHO=false, COMPARISON=true, WHERE=false}
 Focus Content: 	
-Entity List: 	3
+Entity List: 	2
 -------------------------
 ANSWER = null / ANSWER has exception: 16 constraintList size equals 2 && pipeline style &&No matched entity
 ID: 	25
@@ -173,12 +173,9 @@ OnlyDBO: true	Aggregation: true
 Category: 	NUMBER
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	official languages
-Entity List: 	1
+Entity List: 	0
 -------------------------
-ANSWER_TYPE = 0
-Predicate: http://dbpedia.org/ontology/officialLanguage
-
-====================================================
+ANSWER = null / ANSWER has exception: entityList size equals 0.
 
 ID: 	32
 Content: 	
@@ -191,8 +188,7 @@ Focus Content:
 Entity List: 	2
 -------------------------
 ANSWER_TYPE = 0
-Predicate: http://dbpedia.org/ontology/birthName
-	Nicole Mary Kidman@en
+
 ====================================================
 
 ID: 	38
@@ -248,7 +244,6 @@ Focus Content: 	children
 Entity List: 	2
 -------------------------
 ANSWER_TYPE = 0
-Predicate: http://dbpedia.org/ontology/child
 
 ====================================================
 
@@ -262,8 +257,7 @@ Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	people
 Entity List: 	1
 -------------------------
-Pair Predicate: http://dbpedia.org/ontology/capital	http://dbpedia.org/ontology/populationTotal
-	381488^^http://www.w3.org/2001/XMLSchema#nonNegativeInteger
+
 ====================================================
 
 ID: 	7
@@ -304,7 +298,7 @@ OnlyDBO: false	Aggregation: false
 Category: 	DATE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	
-Entity List: 	3
+Entity List: 	1
 -------------------------
 ANSWER_TYPE = 0
 Predicate: http://dbpedia.org/property/beginningDate
@@ -319,7 +313,7 @@ OnlyDBO: true	Aggregation: false
 Category: 	DATE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	
-Entity List: 	2
+Entity List: 	1
 -------------------------
 ANSWER_TYPE = 0
 Predicate: http://dbpedia.org/ontology/deathDate
@@ -393,7 +387,7 @@ OnlyDBO: false	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=true, COMPARISON=false, WHERE=false}
 Focus Content: 	
-Entity List: 	2
+Entity List: 	1
 -------------------------
 ANSWER_TYPE = 0
 Predicate: http://dbpedia.org/property/father
@@ -494,7 +488,7 @@ OnlyDBO: false	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=true, COMPARISON=false, WHERE=false}
 Focus Content: 	
-Entity List: 	3
+Entity List: 	1
 -------------------------
 ANSWER_TYPE = 0
 Predicate: http://dbpedia.org/ontology/creator
@@ -523,7 +517,7 @@ OnlyDBO: false	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=true, COMPARISON=false, WHERE=false}
 Focus Content: 	
-Entity List: 	2
+Entity List: 	1
 -------------------------
 Pair Predicate: http://dbpedia.org/ontology/anthem	http://dbpedia.org/ontology/language
 	http://dbpedia.org/resource/Polish_language	http://dbpedia.org/resource/Without_Anesthesia	http://dbpedia.org/resource/Maria_Kuncewiczowa	http://dbpedia.org/resource/By%C5%82o_sobie_miasteczko...	http://dbpedia.org/resource/The_Cruise_(film)	http://dbpedia.org/resource/Chc%C4%99_zna%C4%87_sw%C3%B3j_grzech...	http://dbpedia.org/resource/Death_in_Venice_(film)	http://dbpedia.org/resource/A_Jungle_Book_of_Regulations	http://dbpedia.org/resource/A_Woman's_Decision	http://dbpedia.org/resource/U%C5%82ani,_u%C5%82ani,_ch%C5%82opcy_malowani	http://dbpedia.org/resource/Przytul_mnie_mocno	http://dbpedia.org/resource/Ale_jestem	http://dbpedia.org/resource/Comedy_Central_Family_(Poland)	http://dbpedia.org/resource/Ma%C5%82%C5%BCe%C5%84stwo_z_rozs%C4%85dku	http://dbpedia.org/resource/Polonica.net	http://dbpedia.org/resource/CBS_Europa	http://dbpedia.org/resource/Three_Colors:_Blue	http://dbpedia.org/resource/Szamanka	http://dbpedia.org/resource/The_Doll_(1968_film)	http://dbpedia.org/resource/M%C4%85%C5%BC_swojej_%C5%BCony	http://dbpedia.org/resource/Geographical_Dictionary_of_the_Kingdom_of_Poland	http://dbpedia.org/resource/11_listopada	http://dbpedia.org/resource/Tadeusz_Peiper	http://dbpedia.org/resource/The_Voice_of_Poland	http://dbpedia.org/resource/A_Love_in_Germany	http://dbpedia.org/resource/Marian_Hemar	http://dbpedia.org/resource/To_takie_proste	http://dbpedia.org/resource/Ranczo_(TV_series)	http://dbpedia.org/resource/To_nie_ja!	http://dbpedia.org/resource/Czas_honoru	http://dbpedia.org/resource/Wyprawa_Robinson	http://dbpedia.org/resource/The_Office_(film)	http://dbpedia.org/resource/Feliks_Konarski	http://dbpedia.org/resource/Jutro_idziemy_do_kina	http://dbpedia.org/resource/Dziennik_Polska-Europa-%C5%9Awiat	http://dbpedia.org/resource/Pod_bander%C4%85_mi%C5%82o%C5%9Bci	http://dbpedia.org/resource/Dagny_(film)	http://dbpedia.org/resource/Witold_Gombrowicz	http://dbpedia.org/resource/Cylinder_van_Troffa	http://dbpedia.org/resource/Ladies_in_Lavender	http://dbpedia.org/resource/Zakazane_piosenki	http://dbpedia.org/resource/Tlen.pl	http://dbpedia.org/resource/Operacja_Samum	http://dbpedia.org/resource/The_Winner_(2011_film)	http://dbpedia.org/resource/A_Bridge_Too_Far_(film)	http://dbpedia.org/resource/From_a_Night_Porter's_Point_of_View	http://dbpedia.org/resource/Na_dobre_i_na_z%C5%82e	http://dbpedia.org/resource/Concert_of_Requests	http://dbpedia.org/resource/On_the_Silver_Globe_(film)	http://dbpedia.org/resource/A_Year_of_the_Quiet_Sun	http://dbpedia.org/resource/Daas_(2011_film)	http://dbpedia.org/resource/The_Three_Colors_trilogy	http://dbpedia.org/resource/Hydrozagadka	http://dbpedia.org/resource/VH1_Poland	http://dbpedia.org/resource/Urania_%E2%80%93_Post%C4%99py_Astronomii	http://dbpedia.org/resource/Sama_(song)	http://dbpedia.org/resource/Chopin:_Desire_for_Love
@@ -537,9 +531,9 @@ OnlyDBO: false	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=true, COMPARISON=false, WHERE=false}
 Focus Content: 	
-Entity List: 	4
+Entity List: 	2
 -------------------------
-ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+ANSWER = null / ANSWER has exception: No matched entity in the Node.
 
 ID: 	100
 Content: 	
@@ -704,7 +698,7 @@ OnlyDBO: false	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	U.S. state
-Entity List: 	3
+Entity List: 	2
 -------------------------
 ANSWER_TYPE = 0
 
@@ -718,7 +712,7 @@ OnlyDBO: true	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	
-Entity List: 	3
+Entity List: 	1
 -------------------------
 ANSWER_TYPE = 0
 Predicate: http://dbpedia.org/property/director
@@ -896,12 +890,9 @@ OnlyDBO: true	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	professional surfers
-Entity List: 	1
+Entity List: 	0
 -------------------------
-ANSWER_TYPE = 0
-Predicate: http://dbpedia.org/property/born
-	http://dbpedia.org/resource/Danny_Sillada	http://dbpedia.org/resource/Sunshine_Dizon
-====================================================
+ANSWER = null / ANSWER has exception: entityList size equals 0.
 
 ID: 	47
 Content: 	
@@ -941,11 +932,9 @@ OnlyDBO: false	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	other weapons
-Entity List: 	1
+Entity List: 	0
 -------------------------
-Pair Predicate: http://dbpedia.org/property/designer	http://dbpedia.org/property/designer
-	http://dbpedia.org/resource/Minebea_PM-9	http://dbpedia.org/resource/Uzi
-====================================================
+ANSWER = null / ANSWER has exception: entityList size equals 0.
 
 ID: 	51
 Content: 	
@@ -955,11 +944,9 @@ OnlyDBO: false	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	
-Entity List: 	3
+Entity List: 	1
 -------------------------
-ANSWER_TYPE = 0
-
-====================================================
+ANSWER = null / ANSWER has exception: No matched entity in the Node.
 
 ID: 	53
 Content: 	
@@ -1025,7 +1012,7 @@ OnlyDBO: false	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	time zone
-Entity List: 	2
+Entity List: 	1
 -------------------------
 ANSWER_TYPE = 0
 Predicate: http://dbpedia.org/ontology/timeZone
@@ -1040,10 +1027,11 @@ OnlyDBO: false	Aggregation: true
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	U.S. states
-Entity List: 	2
+Entity List: 	1
 -------------------------
 ANSWER_TYPE = 0
-
+Predicate: http://dbpedia.org/ontology/country
+	http://dbpedia.org/resource/United_States	http://dbpedia.org/resource/United_States_House_of_Representatives_election_in_Utah,_1895	http://dbpedia.org/resource/191st_Air_Refueling_Squadron	http://dbpedia.org/resource/151st_Air_Refueling_Wing	http://dbpedia.org/resource/United_States_presidential_election_in_Utah,_1976	http://dbpedia.org/resource/United_States_presidential_election_in_Utah,_1984	http://dbpedia.org/resource/United_States_presidential_election_in_Utah,_1988	http://dbpedia.org/resource/United_States_presidential_election_in_Utah,_1980	http://dbpedia.org/resource/Utah_Army_National_Guard	http://dbpedia.org/resource/Life_Sentence_Records	http://dbpedia.org/resource/Pioneer_Day_(Utah)	http://dbpedia.org/resource/Utah_Education_Association	http://dbpedia.org/resource/United_States_presidential_election_in_Utah,_1992	http://dbpedia.org/resource/United_States_presidential_election_in_Utah,_1996	http://dbpedia.org/resource/Utah_Air_National_Guard	http://dbpedia.org/resource/United_States_presidential_election_in_Utah,_2004	http://dbpedia.org/resource/United_States_presidential_election_in_Utah,_2008	http://dbpedia.org/resource/United_States_presidential_election_in_Utah,_2000	http://dbpedia.org/resource/Utah_gubernatorial_election,_2008	http://dbpedia.org/resource/United_States_House_of_Representatives_elections_in_Utah,_2014
 ====================================================
 
 ID: 	60
@@ -1140,9 +1128,9 @@ OnlyDBO: false	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	daughters
-Entity List: 	1
+Entity List: 	0
 -------------------------
-ANSWER = null / ANSWER has exception: No matched entity in the Node.
+ANSWER = null / ANSWER has exception: entityList size equals 0.
 
 ID: 	76
 Content: 	
@@ -1167,12 +1155,9 @@ OnlyDBO: true	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	books
-Entity List: 	3
+Entity List: 	2
 -------------------------
-Pair Predicate: http://dbpedia.org/ontology/author	http://dbpedia.org/ontology/publisher
-	http://dbpedia.org/resource/Atop_an_Underwood:_Early_Stories_and_Other_Writings	http://dbpedia.org/resource/Door_Wide_Open	http://dbpedia.org/resource/References_in_On_the_Road	http://dbpedia.org/resource/On_the_Road
-====================================================
-
+ANSWER = null / ANSWER has exception: 81: map style; No matched Entity.
 ID: 	82
 Content: 	
 Give me a list of all American inventions.
@@ -1181,9 +1166,10 @@ OnlyDBO: false	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	
-Entity List: 	1
+Entity List: 	0
 -------------------------
 ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
+entityList size equals 0.
 
 ID: 	83
 Content: 	
@@ -1217,12 +1203,9 @@ OnlyDBO: true	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	city
-Entity List: 	2
+Entity List: 	0
 -------------------------
-ANSWER_TYPE = 0
-Predicate: http://dbpedia.org/ontology/restingPlace
-	http://dbpedia.org/resource/Nieuwe_Kerk_(Delft)	http://dbpedia.org/resource/Delft	http://dbpedia.org/resource/Netherlands
-====================================================
+ANSWER = null / ANSWER has exception: entityList size equals 0.
 
 ID: 	91
 Content: 	
@@ -1281,12 +1264,9 @@ OnlyDBO: false	Aggregation: false
 Category: 	RESOURCE
 Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	
-Entity List: 	2
+Entity List: 	0
 -------------------------
-ANSWER_TYPE = 0
-Predicate: http://dbpedia.org/property/label
-	http://dbpedia.org/resource/Philips_Records	http://dbpedia.org/resource/Sire_Records	http://dbpedia.org/resource/Chrysalis_Records	http://dbpedia.org/resource/Radioactive_Records	http://dbpedia.org/resource/Beggars_Banquet_Records
-====================================================
+ANSWER = null / ANSWER has exception: entityList size equals 0.
 
 ID: 	98
 Content: 	
@@ -1317,69 +1297,61 @@ Predicate: http://dbpedia.org/property/name
 	Presley, Elvis Aaron@en	Elvis Presley@en	http://dbpedia.org/resource/List_of_Tau_Kappa_Epsilon_brothers
 ====================================================
 
-XML Question ID: 95
-XML Question ID: 49
-XML Question ID: 89
-XML Question ID: 45
-XML Question ID: 24
-XML Question ID: 87
-XML Question ID: 58
-XML Question ID: 19
-XML Question ID: 53
-XML Question ID: 72
-XML Question ID: 17
-XML Question ID: 54
-XML Question ID: 4
-XML Question ID: 84
-XML Question ID: 68
-XML Question ID: 30
-XML Question ID: 29
-XML Question ID: 78
-XML Question ID: 62
-XML Question ID: 64
-XML Question ID: 6
-XML Question ID: 67
-XML Question ID: 37
-XML Question ID: 43
+XML Question ID: 44
+XML Question ID: 7
 XML Question ID: 48
+XML Question ID: 72
+XML Question ID: 59
+XML Question ID: 80
+XML Question ID: 10
+XML Question ID: 62
+XML Question ID: 78
+XML Question ID: 8
+XML Question ID: 21
+XML Question ID: 28
+XML Question ID: 38
+XML Question ID: 43
+XML Question ID: 47
+XML Question ID: 68
 XML Question ID: 23
 XML Question ID: 56
-XML Question ID: 10
-XML Question ID: 74
-XML Question ID: 2
-XML Question ID: 46
-XML Question ID: 99
-XML Question ID: 65
-XML Question ID: 96
-XML Question ID: 73
-XML Question ID: 41
-XML Question ID: 98
-XML Question ID: 42
-XML Question ID: 5
-XML Question ID: 69
-XML Question ID: 38
-XML Question ID: 7
-XML Question ID: 81
-XML Question ID: 70
-XML Question ID: 3
-XML Question ID: 66
-XML Question ID: 80
-XML Question ID: 77
-XML Question ID: 28
-XML Question ID: 71
-XML Question ID: 21
-XML Question ID: 8
 XML Question ID: 100
-XML Question ID: 86
-XML Question ID: 47
-XML Question ID: 14
+XML Question ID: 3
+XML Question ID: 58
+XML Question ID: 99
 XML Question ID: 35
-XML Question ID: 44
-XML Question ID: 79
-XML Question ID: 22
-XML Question ID: 26
-XML Question ID: 85
-XML Question ID: 90
-XML Question ID: 76
 XML Question ID: 93
-XML Question ID: 32
+XML Question ID: 86
+XML Question ID: 30
+XML Question ID: 90
+XML Question ID: 69
+XML Question ID: 37
+XML Question ID: 19
+XML Question ID: 45
+XML Question ID: 64
+XML Question ID: 54
+XML Question ID: 4
+XML Question ID: 95
+XML Question ID: 41
+XML Question ID: 70
+XML Question ID: 71
+XML Question ID: 76
+XML Question ID: 67
+XML Question ID: 5
+XML Question ID: 6
+XML Question ID: 77
+XML Question ID: 53
+XML Question ID: 17
+XML Question ID: 65
+XML Question ID: 2
+XML Question ID: 84
+XML Question ID: 22
+XML Question ID: 98
+XML Question ID: 24
+XML Question ID: 42
+XML Question ID: 79
+XML Question ID: 87
+XML Question ID: 66
+XML Question ID: 74
+XML Question ID: 14
+XML Question ID: 29

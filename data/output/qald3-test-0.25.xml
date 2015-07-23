@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset id="qald-5_test">
+<question id="19">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Eduard_von_Winterstein</answer>
+<answer>http://dbpedia.org/resource/Adolf_Klein</answer>
+<answer>http://dbpedia.org/resource/Michael_von_Newlinsky</answer>
+<answer>http://dbpedia.org/resource/Hugo_Flink</answer>
+<answer>http://dbpedia.org/resource/Therese_Gr%C3%BCnbaum</answer>
+<answer>http://dbpedia.org/resource/Richard_Thurnwald</answer>
+<answer>http://dbpedia.org/resource/Alfred_Halm</answer>
+<answer>http://dbpedia.org/resource/Hilde_K%C3%B6rber</answer>
+<answer>http://dbpedia.org/resource/Erik_Jan_Hanussen</answer>
+<answer>http://dbpedia.org/resource/Steffie_Spira</answer>
+<answer>http://dbpedia.org/resource/Grete_von_Zieritz</answer>
+<answer>http://dbpedia.org/resource/Karl_Hellmer</answer>
+<answer>http://dbpedia.org/resource/Karl_Etlinger</answer>
+</answers>
+</question>
+<question id="95">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Polish_language</answer>
+<answer>http://dbpedia.org/resource/Without_Anesthesia</answer>
+<answer>http://dbpedia.org/resource/Maria_Kuncewiczowa</answer>
+<answer>http://dbpedia.org/resource/By%C5%82o_sobie_miasteczko...</answer>
+<answer>http://dbpedia.org/resource/The_Cruise_(film)</answer>
+<answer>http://dbpedia.org/resource/Chc%C4%99_zna%C4%87_sw%C3%B3j_grzech...</answer>
+<answer>http://dbpedia.org/resource/Death_in_Venice_(film)</answer>
+<answer>http://dbpedia.org/resource/A_Jungle_Book_of_Regulations</answer>
+<answer>http://dbpedia.org/resource/A_Woman's_Decision</answer>
+<answer>http://dbpedia.org/resource/U%C5%82ani,_u%C5%82ani,_ch%C5%82opcy_malowani</answer>
+<answer>http://dbpedia.org/resource/Przytul_mnie_mocno</answer>
+<answer>http://dbpedia.org/resource/Ale_jestem</answer>
+<answer>http://dbpedia.org/resource/Comedy_Central_Family_(Poland)</answer>
+<answer>http://dbpedia.org/resource/Ma%C5%82%C5%BCe%C5%84stwo_z_rozs%C4%85dku</answer>
+<answer>http://dbpedia.org/resource/Polonica.net</answer>
+<answer>http://dbpedia.org/resource/CBS_Europa</answer>
+<answer>http://dbpedia.org/resource/Three_Colors:_Blue</answer>
+<answer>http://dbpedia.org/resource/Szamanka</answer>
+<answer>http://dbpedia.org/resource/The_Doll_(1968_film)</answer>
+<answer>http://dbpedia.org/resource/M%C4%85%C5%BC_swojej_%C5%BCony</answer>
+<answer>http://dbpedia.org/resource/Geographical_Dictionary_of_the_Kingdom_of_Poland</answer>
+<answer>http://dbpedia.org/resource/11_listopada</answer>
+<answer>http://dbpedia.org/resource/Tadeusz_Peiper</answer>
+<answer>http://dbpedia.org/resource/The_Voice_of_Poland</answer>
+<answer>http://dbpedia.org/resource/A_Love_in_Germany</answer>
+<answer>http://dbpedia.org/resource/Marian_Hemar</answer>
+<answer>http://dbpedia.org/resource/To_takie_proste</answer>
+<answer>http://dbpedia.org/resource/Ranczo_(TV_series)</answer>
+<answer>http://dbpedia.org/resource/To_nie_ja!</answer>
+<answer>http://dbpedia.org/resource/Czas_honoru</answer>
+<answer>http://dbpedia.org/resource/Wyprawa_Robinson</answer>
+<answer>http://dbpedia.org/resource/The_Office_(film)</answer>
+<answer>http://dbpedia.org/resource/Feliks_Konarski</answer>
+<answer>http://dbpedia.org/resource/Jutro_idziemy_do_kina</answer>
+<answer>http://dbpedia.org/resource/Dziennik_Polska-Europa-%C5%9Awiat</answer>
+<answer>http://dbpedia.org/resource/Pod_bander%C4%85_mi%C5%82o%C5%9Bci</answer>
+<answer>http://dbpedia.org/resource/Dagny_(film)</answer>
+<answer>http://dbpedia.org/resource/Witold_Gombrowicz</answer>
+<answer>http://dbpedia.org/resource/Cylinder_van_Troffa</answer>
+<answer>http://dbpedia.org/resource/Ladies_in_Lavender</answer>
+<answer>http://dbpedia.org/resource/Zakazane_piosenki</answer>
+<answer>http://dbpedia.org/resource/Tlen.pl</answer>
+<answer>http://dbpedia.org/resource/Operacja_Samum</answer>
+<answer>http://dbpedia.org/resource/The_Winner_(2011_film)</answer>
+<answer>http://dbpedia.org/resource/A_Bridge_Too_Far_(film)</answer>
+<answer>http://dbpedia.org/resource/From_a_Night_Porter's_Point_of_View</answer>
+<answer>http://dbpedia.org/resource/Na_dobre_i_na_z%C5%82e</answer>
+<answer>http://dbpedia.org/resource/Concert_of_Requests</answer>
+<answer>http://dbpedia.org/resource/On_the_Silver_Globe_(film)</answer>
+<answer>http://dbpedia.org/resource/A_Year_of_the_Quiet_Sun</answer>
+<answer>http://dbpedia.org/resource/Daas_(2011_film)</answer>
+<answer>http://dbpedia.org/resource/The_Three_Colors_trilogy</answer>
+<answer>http://dbpedia.org/resource/Hydrozagadka</answer>
+<answer>http://dbpedia.org/resource/VH1_Poland</answer>
+<answer>http://dbpedia.org/resource/Urania_%E2%80%93_Post%C4%99py_Astronomii</answer>
+<answer>http://dbpedia.org/resource/Sama_(song)</answer>
+<answer>http://dbpedia.org/resource/Chopin:_Desire_for_Love</answer>
+</answers>
+</question>
+<question id="7">
+<string lang="en"/>
+<answers>
+<answer>1905-09-01</answer>
+</answers>
+</question>
+<question id="65">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Rickenbacker_325</answer>
+</answers>
+</question>
+<question id="99">
+<string lang="en"/>
+<answers>
+<answer>Presley, Elvis Aaron</answer>
+<answer>Elvis Presley</answer>
+<answer>http://dbpedia.org/resource/List_of_Tau_Kappa_Epsilon_brothers</answer>
+</answers>
+</question>
+<question id="80">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Adventures_in_the_Screen_Trade</answer>
+<answer>http://dbpedia.org/resource/A_Family_Affair_(musical)</answer>
+<answer>http://dbpedia.org/resource/Brothers_(Goldman_novel)</answer>
+<answer>http://dbpedia.org/resource/Hype_and_Glory</answer>
+<answer>http://dbpedia.org/resource/Your_Turn_to_Curtsy,_My_Turn_to_Bow</answer>
+<answer>http://dbpedia.org/resource/Magic_(novel)</answer>
+<answer>http://dbpedia.org/resource/Wait_Till_Next_Year</answer>
+<answer>http://dbpedia.org/resource/Soldier_in_the_Rain__Soldier_in_the_Rain__1</answer>
+<answer>http://dbpedia.org/resource/The_Season:_A_Candid_Look_at_Broadway</answer>
+<answer>http://dbpedia.org/resource/Wigger_(novel)</answer>
+<answer>http://dbpedia.org/resource/The_Silent_Gondoliers</answer>
+<answer>http://dbpedia.org/resource/Boys_and_Girls_Together</answer>
+<answer>http://dbpedia.org/resource/Marathon_Man_(novel)</answer>
+<answer>http://dbpedia.org/resource/The_Temple_of_Gold</answer>
+<answer>http://dbpedia.org/resource/Father's_Day_(novel)</answer>
+<answer>http://dbpedia.org/resource/The_Princess_Bride</answer>
+<answer>http://dbpedia.org/resource/Which_Lie_Did_I_Tell%3F</answer>
+<answer>http://dbpedia.org/resource/Tinsel_(novel)</answer>
+<answer>http://dbpedia.org/resource/The_Thing_of_It_Is...</answer>
+<answer>http://dbpedia.org/resource/The_Color_of_Light</answer>
+<answer>http://dbpedia.org/resource/No_Way_to_Treat_a_Lady__No_Way_to_Treat_a_Lady__1</answer>
+<answer>http://dbpedia.org/resource/Blood,_Sweat_and_Stanley_Poole</answer>
+<answer>http://dbpedia.org/resource/Control_(novel)</answer>
+<answer>http://dbpedia.org/resource/Heat_(Goldman_novel)</answer>
+</answers>
+</question>
+<question id="62">
+<string lang="en"/>
+<answers>
+<answer>true</answer>
+</answers>
+</question>
+<question id="78">
+<string lang="en"/>
+<answers>
+<answer>true</answer>
+</answers>
+</question>
+<question id="37">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/University_of_Defence_(Czech_Republic)</answer>
+<answer>http://dbpedia.org/resource/Brno_Reservoir</answer>
+<answer>http://dbpedia.org/resource/University_of_Veterinary_and_Pharmaceutical_Sciences,_Brno</answer>
+<answer>http://dbpedia.org/resource/HC_Kometa_Brno</answer>
+<answer>http://dbpedia.org/resource/D1_motorway_(Czech_Republic)</answer>
+<answer>http://dbpedia.org/resource/Masaryk_University</answer>
+<answer>http://dbpedia.org/resource/R43_expressway_(Czech_Republic)</answer>
+<answer>http://dbpedia.org/resource/Brno_University_of_Technology</answer>
+<answer>http://dbpedia.org/resource/R52_expressway_(Czech_Republic)</answer>
+<answer>http://dbpedia.org/resource/Mendel_University_Brno</answer>
+<answer>http://dbpedia.org/resource/D2_motorway_(Czech_Republic)</answer>
+<answer>http://dbpedia.org/resource/Brno%E2%80%93Tu%C5%99any_Airport</answer>
+</answers>
+</question>
+<question id="45">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Austria</answer>
+<answer>http://dbpedia.org/resource/Switzerland</answer>
+<answer>http://dbpedia.org/resource/Liechtenstein</answer>
+<answer>http://dbpedia.org/resource/Netherlands</answer>
+<answer>http://dbpedia.org/resource/Germany</answer>
+</answers>
+</question>
+<question id="89">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Hilversum_Airport</answer>
+<answer>http://dbpedia.org/resource/2012_IPC_Athletics_European_Championships</answer>
+<answer>http://dbpedia.org/resource/1994_FEI_World_Equestrian_Games</answer>
+<answer>http://dbpedia.org/resource/Red_Eagles_'s-Hertogenbosch</answer>
+<answer>http://dbpedia.org/resource/Woensdrecht_Air_Base</answer>
+<answer>http://dbpedia.org/resource/Garden_Culture</answer>
+<answer>http://dbpedia.org/resource/Oostwold_Airport</answer>
+<answer>http://dbpedia.org/resource/1980_Summer_Paralympics</answer>
+<answer>http://dbpedia.org/resource/Dordrecht_Lions</answer>
+<answer>http://dbpedia.org/resource/2013_European_Youth_Summer_Olympic_Festival</answer>
+<answer>http://dbpedia.org/resource/1980_World_Championships_in_Athletics</answer>
+<answer>http://dbpedia.org/resource/Enschede_Airport_Twente</answer>
+<answer>http://dbpedia.org/resource/Amsterdam_Airport_Schiphol</answer>
+<answer>http://dbpedia.org/resource/Eindhoven_Airport</answer>
+<answer>http://dbpedia.org/resource/Maastricht_Aachen_Airport</answer>
+<answer>http://dbpedia.org/resource/Hoogeveen_Airport</answer>
+<answer>http://dbpedia.org/resource/STAR_(student_association)</answer>
+<answer>http://dbpedia.org/resource/Groningen_Airport_Eelde</answer>
+<answer>http://dbpedia.org/resource/Lord_Ashcroft_International_Business_School</answer>
+</answers>
+</question>
+<question id="53">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Socialist_Party_(Portugal)</answer>
+</answers>
+</question>
+<question id="72">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Kentucky</answer>
+<answer>http://dbpedia.org/resource/Fort_Knox__location__1</answer>
+<answer>http://dbpedia.org/resource/Godman_Army_Airfield</answer>
+<answer>http://dbpedia.org/resource/United_States_Bullion_Depository</answer>
+</answers>
+</question>
+<question id="28">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/The_Cotton_Club_(film)</answer>
+<answer>http://dbpedia.org/resource/The_Godfather_Part_III</answer>
+<answer>http://dbpedia.org/resource/Battle_Beyond_the_Sun</answer>
+<answer>http://dbpedia.org/resource/Bram_Stoker's_Dracula</answer>
+<answer>http://dbpedia.org/resource/Tetro</answer>
+<answer>http://dbpedia.org/resource/The_Outsiders_(film)</answer>
+<answer>http://dbpedia.org/resource/One_from_the_Heart</answer>
+<answer>http://dbpedia.org/resource/The_Godfather_Saga</answer>
+<answer>http://dbpedia.org/resource/Dementia_13</answer>
+<answer>http://dbpedia.org/resource/Rumble_Fish</answer>
+<answer>http://dbpedia.org/resource/The_Godfather_(film_series)</answer>
+<answer>http://dbpedia.org/resource/Peggy_Sue_Got_Married</answer>
+<answer>http://dbpedia.org/resource/Apocalypse_Now_Redux</answer>
+<answer>http://dbpedia.org/resource/Gardens_of_Stone</answer>
+<answer>http://dbpedia.org/resource/The_Bellboy_and_the_Playgirls</answer>
+<answer>http://dbpedia.org/resource/Tucker:_The_Man_and_His_Dream</answer>
+<answer>http://dbpedia.org/resource/The_Terror_(1963_film)</answer>
+<answer>http://dbpedia.org/resource/The_Rainmaker_(1997_film)</answer>
+<answer>http://dbpedia.org/resource/New_York_Stories</answer>
+<answer>http://dbpedia.org/resource/The_Godfather_Part_II</answer>
+<answer>http://dbpedia.org/resource/Twixt_(film)</answer>
+<answer>http://dbpedia.org/resource/Apocalypse_Now</answer>
+<answer>http://dbpedia.org/resource/Tonight_for_Sure</answer>
+<answer>http://dbpedia.org/resource/The_Godfather</answer>
+<answer>http://dbpedia.org/resource/The_Rain_People</answer>
+<answer>http://dbpedia.org/resource/Youth_Without_Youth_(film)</answer>
+<answer>http://dbpedia.org/resource/The_Conversation</answer>
+<answer>http://dbpedia.org/resource/You're_a_Big_Boy_Now</answer>
+<answer>http://dbpedia.org/resource/Jack_(1996_film)</answer>
+</answers>
+</question>
+<question id="49">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Minebea_PM-9</answer>
+<answer>http://dbpedia.org/resource/Uzi</answer>
+</answers>
+</question>
+<question id="38">
+<string lang="en"/>
+<answers>
+<answer>114487</answer>
+</answers>
+</question>
+<question id="68">
+<string lang="en"/>
+<answers>
+<answer>49829</answer>
+</answers>
+</question>
+<question id="23">
+<string lang="en"/>
+<answers>
+<answer>true</answer>
+</answers>
+</question>
+<question id="56">
+<string lang="en"/>
+<answers>
+<answer>1948-03-17</answer>
+</answers>
+</question>
+<question id="3">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Klaus_Wowereit</answer>
+</answers>
+</question>
+<question id="14">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Mobb_Deep</answer>
+</answers>
+</question>
+<question id="6">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/UXu__1</answer>
+</answers>
+</question>
+<question id="66">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Ben_Franklin_(PX-15)</answer>
+<answer>http://dbpedia.org/resource/USS_Franklin_(1795)</answer>
+<answer>http://dbpedia.org/resource/USS_Franklin_(1815)</answer>
+<answer>http://dbpedia.org/resource/HMS_Canopus_(1798)</answer>
+</answers>
+</question>
+<question id="58">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Mountain_Time_Zone</answer>
+</answers>
+</question>
+<question id="35">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Mojang</answer>
+<answer>http://dbpedia.org/resource/4J_Studios</answer>
+</answers>
+</question>
+<question id="100">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/A.G._Barr</answer>
+</answers>
+</question>
+<question id="98">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Netherlands</answer>
+</answers>
+</question>
+<question id="86">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Sydney</answer>
+</answers>
+</question>
+<question id="54">
+<string lang="en"/>
+<answers>
+<answer>The City by the Bay; Fog City; San Fran; Frisco; The City that Knows How ; Baghdad by the Bay ; The Paris of the West</answer>
+</answers>
+</question>
+<question id="90">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/House_of_Bourbon</answer>
+</answers>
+</question>
+<question id="76">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Mark_Thatcher</answer>
+<answer>http://dbpedia.org/resource/Carol_Thatcher</answer>
+</answers>
+</question>
+<question id="69">
+<string lang="en"/>
+<answers>
+<answer>true</answer>
+</answers>
+</question>
+<question id="30">
+<string lang="en"/>
+<answers>
+<answer>Angela Dorothea Kasner</answer>
+</answers>
+</question>
+<question id="4">
+<string lang="en"/>
+<answers>
+<answer>24500</answer>
+</answers>
+</question>
+<question id="21">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Ottawa</answer>
+<answer>http://dbpedia.org/resource/Aerican_Empire</answer>
+</answers>
+</question>
+<question id="8">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Bhutan</answer>
+</answers>
+</question>
+<question id="41">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Gordon_Moore</answer>
+<answer>http://dbpedia.org/resource/Robert_Noyce</answer>
+<answer>http://dbpedia.org/resource/Trusted_Computing_Group</answer>
+</answers>
+</question>
+<question id="70">
+<string lang="en"/>
+<answers>
+<answer>true</answer>
+</answers>
+</question>
+<question id="71">
+<string lang="en"/>
+<answers>
+<answer>1886-10-28</answer>
+</answers>
+</question>
+<question id="43">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Strongheart</answer>
+<answer>http://dbpedia.org/resource/Trakr</answer>
+<answer>http://dbpedia.org/resource/Crumstone_Irma</answer>
+<answer>http://dbpedia.org/resource/Rifleman_Khan</answer>
+<answer>http://dbpedia.org/resource/Jet_of_Iada</answer>
+<answer>http://dbpedia.org/resource/Lightning_(dog)</answer>
+<answer>http://dbpedia.org/resource/Antis_(dog)</answer>
+<answer>http://dbpedia.org/resource/Nemo_A534</answer>
+<answer>http://dbpedia.org/resource/Mancs_(dog)</answer>
+<answer>http://dbpedia.org/resource/Appollo_(dog)</answer>
+</answers>
+</question>
+<question id="67">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Paul_of_Greece</answer>
+<answer>http://dbpedia.org/resource/Frederica_of_Hanover</answer>
+<answer>http://dbpedia.org/resource/Infanta_Cristina,_Duchess_of_Palma_de_Mallorca</answer>
+<answer>http://dbpedia.org/resource/Felipe,_Prince_of_Asturias</answer>
+<answer>http://dbpedia.org/resource/Infanta_Elena,_Duchess_of_Lugo</answer>
+</answers>
+</question>
+<question id="10">
+<string lang="en"/>
+<answers>
+<answer>1989-06-30</answer>
+</answers>
+</question>
+<question id="77">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Rap-A-Lot_Records</answer>
+<answer>http://dbpedia.org/resource/Atlantic_Records</answer>
+<answer>http://dbpedia.org/resource/Asylum_Records</answer>
+</answers>
+</question>
+<question id="93">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/The_Men_Who_Tread_on_the_Tiger's_Tail</answer>
+<answer>http://dbpedia.org/resource/High_and_Low_(1963_film)</answer>
+<answer>http://dbpedia.org/resource/Ikiru</answer>
+<answer>http://dbpedia.org/resource/Seven_Samurai</answer>
+<answer>http://dbpedia.org/resource/Those_Who_Make_Tomorrow</answer>
+<answer>http://dbpedia.org/resource/I_Live_in_Fear</answer>
+<answer>http://dbpedia.org/resource/Sanshiro_Sugata_Part_II</answer>
+<answer>http://dbpedia.org/resource/Throne_of_Blood</answer>
+<answer>http://dbpedia.org/resource/Rashomon</answer>
+<answer>http://dbpedia.org/resource/No_Regrets_for_Our_Youth</answer>
+<answer>http://dbpedia.org/resource/Stray_Dog_(film)</answer>
+<answer>http://dbpedia.org/resource/The_Lower_Depths_(1957_film)</answer>
+<answer>http://dbpedia.org/resource/Drunken_Angel</answer>
+<answer>http://dbpedia.org/resource/Dodes'ka-den</answer>
+<answer>http://dbpedia.org/resource/Ran_(film)</answer>
+<answer>http://dbpedia.org/resource/Yojimbo_(film)</answer>
+<answer>http://dbpedia.org/resource/Dersu_Uzala_(1975_film)</answer>
+<answer>http://dbpedia.org/resource/Kagemusha</answer>
+<answer>http://dbpedia.org/resource/Horse_(1941_film)</answer>
+<answer>http://dbpedia.org/resource/Rhapsody_in_August</answer>
+<answer>http://dbpedia.org/resource/The_Hidden_Fortress</answer>
+<answer>http://dbpedia.org/resource/Madadayo</answer>
+<answer>http://dbpedia.org/resource/The_Most_Beautiful</answer>
+<answer>http://dbpedia.org/resource/One_Wonderful_Sunday</answer>
+<answer>http://dbpedia.org/resource/Dreams_(1990_film)</answer>
+<answer>http://dbpedia.org/resource/The_Quiet_Duel</answer>
+<answer>http://dbpedia.org/resource/Sanshiro_Sugata</answer>
+<answer>http://dbpedia.org/resource/The_Idiot_(1951_film)</answer>
+<answer>http://dbpedia.org/resource/Red_Beard</answer>
+<answer>http://dbpedia.org/resource/Scandal_(1950_film)</answer>
+<answer>http://dbpedia.org/resource/Sanjuro</answer>
+<answer>http://dbpedia.org/resource/The_Bad_Sleep_Well</answer>
+</answers>
+</question>
+<question id="5">
+<string lang="en"/>
+<answers>
+<answer>3</answer>
+</answers>
+</question>
+<question id="2">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Tip_O'Neill</answer>
+<answer>http://dbpedia.org/resource/Benjamin_A._Smith_II</answer>
+<answer>http://dbpedia.org/resource/Lyndon_B._Johnson</answer>
+<answer>http://dbpedia.org/resource/Dwight_D._Eisenhower</answer>
+<answer>http://dbpedia.org/resource/James_Michael_Curley</answer>
+<answer>http://dbpedia.org/resource/Presidency_of_Dwight_D._Eisenhower</answer>
+</answers>
+</question>
+<question id="84">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Joe_Simon</answer>
+<answer>http://dbpedia.org/resource/Jack_Kirby</answer>
+<answer>http://dbpedia.org/resource/Isaiah_Bradley</answer>
+</answers>
+</question>
+<question id="47">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Kaimuki-McKinley-Roosevelt_Complex_Area</answer>
+<answer>http://dbpedia.org/resource/HHSAA_State_Football_Championships</answer>
+<answer>http://dbpedia.org/resource/Farrington-Kaiser-Kalani_Complex_Area</answer>
+</answers>
+</question>
+<question id="44">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Fulda_(river)</answer>
+<answer>http://dbpedia.org/resource/Hamelin</answer>
+<answer>http://dbpedia.org/resource/Hann._M%C3%BCnden</answer>
+<answer>http://dbpedia.org/resource/Bremerhaven</answer>
+<answer>http://dbpedia.org/resource/Minden</answer>
+<answer>http://dbpedia.org/resource/Kassel</answer>
+<answer>http://dbpedia.org/resource/Bremen</answer>
+</answers>
+</question>
+<question id="22">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Matt_Mead</answer>
+</answers>
+</question>
+<question id="24">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/George_VI</answer>
+</answers>
+</question>
+<question id="81">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Atop_an_Underwood:_Early_Stories_and_Other_Writings</answer>
+<answer>http://dbpedia.org/resource/Door_Wide_Open</answer>
+<answer>http://dbpedia.org/resource/References_in_On_the_Road</answer>
+<answer>http://dbpedia.org/resource/On_the_Road</answer>
+</answers>
+</question>
+<question id="42">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Neil_Gaiman</answer>
+</answers>
+</question>
+<question id="17">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/BMW_i8</answer>
+<answer>http://dbpedia.org/resource/Mercedes-Benz_CLS-Class</answer>
+</answers>
+</question>
+<question id="79">
+<string lang="en"/>
+<answers>
+<answer>true</answer>
+</answers>
+</question>
+<question id="87">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Alun_Davies_(guitarist)</answer>
+<answer>http://dbpedia.org/resource/Bernard_Purdie</answer>
+<answer>http://dbpedia.org/resource/The_McCrarys</answer>
+<answer>http://dbpedia.org/resource/Gerry_Conway_(musician)</answer>
+<answer>http://dbpedia.org/resource/Bruce_Lynch</answer>
+<answer>http://dbpedia.org/resource/Dolly_Parton</answer>
+<answer>http://dbpedia.org/resource/Rick_Wakeman</answer>
+<answer>http://dbpedia.org/resource/Nicky_Hopkins</answer>
+<answer>http://dbpedia.org/resource/Marc_Marot</answer>
+<answer>http://dbpedia.org/resource/Dawud_Wharnsby</answer>
+<answer>http://dbpedia.org/resource/Shel_Talmy</answer>
+<answer>http://dbpedia.org/resource/Zain_Bhikha</answer>
+<answer>http://dbpedia.org/resource/Linda_Lewis</answer>
+<answer>http://dbpedia.org/resource/Don_Weller_(musician)</answer>
+<answer>http://dbpedia.org/resource/Mike_Hurst_(producer)</answer>
+<answer>http://dbpedia.org/resource/Chuck_Kaye</answer>
+<answer>http://dbpedia.org/resource/Magna_Carta_(band)</answer>
+<answer>http://dbpedia.org/resource/Hamza_Robertson</answer>
+<answer>http://dbpedia.org/resource/Christos_Demetriou</answer>
+<answer>http://dbpedia.org/resource/Ian_Whiteman</answer>
+</answers>
+</question>
+<question id="64">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/MV_Retriever</answer>
+<answer>http://dbpedia.org/resource/Kennedy_Space_Center_Launch_Complex_39</answer>
+<answer>http://dbpedia.org/resource/White_Sands_Space_Harbor</answer>
+<answer>http://dbpedia.org/resource/Broglio_Space_Centre</answer>
+<answer>http://dbpedia.org/resource/Spaceport_Florida_Launch_Complex_36</answer>
+<answer>http://dbpedia.org/resource/Wallops_Flight_Facility_Launch_Area_3</answer>
+<answer>http://dbpedia.org/resource/Cape_Canaveral_Air_Force_Station_Launch_Complex_13</answer>
+<answer>http://dbpedia.org/resource/Keweenaw_Rocket_Range</answer>
+<answer>http://dbpedia.org/resource/Mid-Atlantic_Regional_Spaceport_Launch_Pad_0</answer>
+</answers>
+</question>
+<question id="74">
+<string lang="en"/>
+<answers>
+<answer>2009-06-25</answer>
+</answers>
+</question>
+<question id="29">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/Lorraine_Gary</answer>
+<answer>http://dbpedia.org/resource/Hal_Holbrook</answer>
+<answer>http://dbpedia.org/resource/Stewart_Granger</answer>
+<answer>http://dbpedia.org/resource/William_Shatner</answer>
+<answer>http://dbpedia.org/resource/Cybill_Shepherd</answer>
+<answer>http://dbpedia.org/resource/Frank_McRae</answer>
+<answer>http://dbpedia.org/resource/Roddy_McDowall</answer>
+<answer>http://dbpedia.org/resource/Sonny_Bono</answer>
+<answer>http://dbpedia.org/resource/Angie_Dickinson</answer>
+<answer>http://dbpedia.org/resource/Eric_McCormack</answer>
+<answer>http://dbpedia.org/resource/George_Takei</answer>
+<answer>http://dbpedia.org/resource/Leonard_Nimoy</answer>
+<answer>http://dbpedia.org/resource/Woody_Strode</answer>
+<answer>http://dbpedia.org/resource/Richard_Kind</answer>
+<answer>http://dbpedia.org/resource/Monica_Potter</answer>
+<answer>http://dbpedia.org/resource/Howard_Da_Silva</answer>
+<answer>http://dbpedia.org/resource/Chris_Rock</answer>
+<answer>http://dbpedia.org/resource/Charles_Beaumont</answer>
+<answer>http://dbpedia.org/resource/Ernie_Hudson</answer>
+<answer>http://dbpedia.org/resource/Nick_Nolte</answer>
+<answer>http://dbpedia.org/resource/Stephen_Collins</answer>
+<answer>http://dbpedia.org/resource/Linda_Purl</answer>
+<answer>http://dbpedia.org/resource/Gary_Coleman</answer>
+<answer>http://dbpedia.org/resource/Desi_Lydic</answer>
+<answer>http://dbpedia.org/resource/Amanda_Peet</answer>
+<answer>http://dbpedia.org/resource/Patty_Duke</answer>
+<answer>http://dbpedia.org/resource/Dan_Martin_(actor)</answer>
+<answer>http://dbpedia.org/resource/Michael_Short</answer>
+<answer>http://dbpedia.org/resource/Eddie_Murphy</answer>
+<answer>http://dbpedia.org/resource/Ernest_Borgnine</answer>
+<answer>http://dbpedia.org/resource/Greer_Garson</answer>
+<answer>http://dbpedia.org/resource/Richard_Herd</answer>
+<answer>http://dbpedia.org/resource/E._G._Marshall</answer>
+<answer>http://dbpedia.org/resource/Tammy_Grimes</answer>
+<answer>http://dbpedia.org/resource/Jessica_Alba</answer>
+<answer>http://dbpedia.org/resource/Stephen_Macht</answer>
+<answer>http://dbpedia.org/resource/Ben_Folds</answer>
+<answer>http://dbpedia.org/resource/Kelly_Clarkson</answer>
+<answer>http://dbpedia.org/resource/Mel_Torm%C3%A9</answer>
+<answer>http://dbpedia.org/resource/Joseph_Cotten</answer>
+<answer>http://dbpedia.org/resource/Richard_Basehart</answer>
+<answer>http://dbpedia.org/resource/Nicole_Sullivan</answer>
+<answer>http://dbpedia.org/resource/Marjoe_Gortner</answer>
+<answer>http://dbpedia.org/resource/Robert_Reed</answer>
+<answer>http://dbpedia.org/resource/Andy_Griffith</answer>
+<answer>http://dbpedia.org/resource/Janet_Margolin</answer>
+<answer>http://dbpedia.org/resource/Van_Johnson</answer>
+<answer>http://dbpedia.org/resource/Ava_Gardner</answer>
+<answer>http://dbpedia.org/resource/Bernard_Fox_(actor)</answer>
+<answer>http://dbpedia.org/resource/Mila_Kunis</answer>
+<answer>http://dbpedia.org/resource/Michelle_Phillips</answer>
+<answer>http://dbpedia.org/resource/Samuel_L._Jackson</answer>
+<answer>http://dbpedia.org/resource/Kathy_Ireland</answer>
+<answer>http://dbpedia.org/resource/Emilio_Estevez</answer>
+<answer>http://dbpedia.org/resource/Tim_Curry</answer>
+<answer>http://dbpedia.org/resource/Barbara_Eden</answer>
+<answer>http://dbpedia.org/resource/Morgan_Fairchild</answer>
+<answer>http://dbpedia.org/resource/Traci_Lords</answer>
+<answer>http://dbpedia.org/resource/Lloyd_Bridges</answer>
+<answer>http://dbpedia.org/resource/Julie_Hagerty</answer>
+<answer>http://dbpedia.org/resource/Rip_Torn</answer>
+<answer>http://dbpedia.org/resource/Chuck_Connors</answer>
+<answer>http://dbpedia.org/resource/Chad_Everett</answer>
+<answer>http://dbpedia.org/resource/Robert_Hays</answer>
+<answer>http://dbpedia.org/resource/Peter_Graves</answer>
+<answer>http://dbpedia.org/resource/Wendy_Phillips</answer>
+<answer>http://dbpedia.org/resource/Stephen_Stucker</answer>
+<answer>http://dbpedia.org/resource/Tom_Skerritt</answer>
+<answer>http://dbpedia.org/resource/Phil_LaMarr</answer>
+<answer>http://dbpedia.org/resource/Audie_England</answer>
+<answer>http://dbpedia.org/resource/Rafer_Weigel</answer>
+<answer>http://dbpedia.org/resource/Nichelle_Nichols</answer>
+<answer>http://dbpedia.org/resource/Walter_Koenig</answer>
+<answer>http://dbpedia.org/resource/DeForest_Kelley</answer>
+<answer>http://dbpedia.org/resource/James_Doohan</answer>
+<answer>http://dbpedia.org/resource/Eddie_Izzard</answer>
+<answer>http://dbpedia.org/resource/Colin_Hay</answer>
+<answer>http://dbpedia.org/resource/Patrick_Warburton</answer>
+<answer>http://dbpedia.org/resource/Chris_Edgerly</answer>
+<answer>http://dbpedia.org/resource/Greg_Cipes</answer>
+<answer>http://dbpedia.org/resource/Jim_Belushi</answer>
+<answer>http://dbpedia.org/resource/Janeane_Garofalo</answer>
+<answer>http://dbpedia.org/resource/Bob_Joles</answer>
+<answer>http://dbpedia.org/resource/Don_Cherry</answer>
+<answer>http://dbpedia.org/resource/Kiefer_Sutherland</answer>
+<answer>http://dbpedia.org/resource/Betty_White</answer>
+<answer>http://dbpedia.org/resource/Tara_Summers</answer>
+<answer>http://dbpedia.org/resource/Julie_Bowen</answer>
+<answer>http://dbpedia.org/resource/John_Larroquette</answer>
+<answer>http://dbpedia.org/resource/Rhona_Mitra</answer>
+<answer>http://dbpedia.org/resource/Christian_Clemenson</answer>
+<answer>http://dbpedia.org/resource/Gary_Anthony_Williams</answer>
+<answer>http://dbpedia.org/resource/Taraji_P._Henson</answer>
+<answer>http://dbpedia.org/resource/Ren%C3%A9_Auberjonois</answer>
+<answer>http://dbpedia.org/resource/Saffron_Burrows</answer>
+<answer>http://dbpedia.org/resource/Mark_Valley</answer>
+<answer>http://dbpedia.org/resource/James_Spader</answer>
+<answer>http://dbpedia.org/resource/Candice_Bergen</answer>
+<answer>http://dbpedia.org/resource/Justin_Mentell</answer>
+<answer>http://dbpedia.org/resource/Constance_Zimmer</answer>
+<answer>http://dbpedia.org/resource/Ryan_Michelle_Bathe</answer>
+<answer>http://dbpedia.org/resource/Craig_Bierko</answer>
+<answer>http://dbpedia.org/resource/Laurence_Harvey</answer>
+<answer>http://dbpedia.org/resource/Paul_Newman</answer>
+<answer>http://dbpedia.org/resource/Claire_Bloom</answer>
+<answer>http://dbpedia.org/resource/Edward_G._Robinson</answer>
+<answer>http://dbpedia.org/resource/Laurence_Fishburne</answer>
+<answer>http://dbpedia.org/resource/David_Hyde_Pierce</answer>
+<answer>http://dbpedia.org/resource/Chris_Elliott</answer>
+<answer>http://dbpedia.org/resource/Molly_Shannon</answer>
+<answer>http://dbpedia.org/resource/Brandy_Norwood</answer>
+<answer>http://dbpedia.org/resource/Bill_Murray</answer>
+<answer>http://dbpedia.org/resource/Jason_Priestley</answer>
+<answer>http://dbpedia.org/resource/Eric_Johnson_(actor)</answer>
+<answer>http://dbpedia.org/resource/Jeanne_Cooper</answer>
+<answer>http://dbpedia.org/resource/Sandra_Bullock</answer>
+<answer>http://dbpedia.org/resource/Michael_Caine</answer>
+<answer>http://dbpedia.org/resource/Benjamin_Bratt</answer>
+<answer>http://dbpedia.org/resource/Garry_Shandling</answer>
+<answer>http://dbpedia.org/resource/Bruce_Willis</answer>
+<answer>http://dbpedia.org/resource/Steve_Carell</answer>
+<answer>http://dbpedia.org/resource/Wanda_Sykes</answer>
+<answer>http://dbpedia.org/resource/Persis_Khambatta</answer>
+<answer>http://dbpedia.org/resource/Milos_Milos</answer>
+<answer>http://dbpedia.org/resource/Michael_Ironside</answer>
+<answer>http://dbpedia.org/resource/Lee_Grant</answer>
+<answer>http://dbpedia.org/resource/Dinah_Manoff</answer>
+<answer>http://dbpedia.org/resource/Tori_Spelling</answer>
+<answer>http://dbpedia.org/resource/Chris_Pine</answer>
+<answer>http://dbpedia.org/resource/Brent_Spiner</answer>
+<answer>http://dbpedia.org/resource/Hayden_Christensen</answer>
+<answer>http://dbpedia.org/resource/Mark_Hamill</answer>
+<answer>http://dbpedia.org/resource/Abigail_Breslin</answer>
+<answer>http://dbpedia.org/resource/Robert_Picardo</answer>
+<answer>http://dbpedia.org/resource/James_Earl_Jones</answer>
+<answer>http://dbpedia.org/resource/Sandra_Oh</answer>
+<answer>http://dbpedia.org/resource/Doug_Jones_(actor)</answer>
+<answer>http://dbpedia.org/resource/Spencer_Breslin</answer>
+<answer>http://dbpedia.org/resource/Stephanie_Zimbalist</answer>
+<answer>http://dbpedia.org/resource/John_Houseman</answer>
+<answer>http://dbpedia.org/resource/J.T._Colosa</answer>
+<answer>http://dbpedia.org/resource/Rickey_Medlocke</answer>
+<answer>http://dbpedia.org/resource/Dick_Van_Patten</answer>
+<answer>http://dbpedia.org/resource/Duane_Whitaker</answer>
+<answer>http://dbpedia.org/resource/Amy_Acker</answer>
+<answer>http://dbpedia.org/resource/John_Prosky</answer>
+<answer>http://dbpedia.org/resource/Brenda_Bakke</answer>
+<answer>http://dbpedia.org/resource/Tom_Towles</answer>
+<answer>http://dbpedia.org/resource/Chuck_Williams_(actor)</answer>
+<answer>http://dbpedia.org/resource/Dan_Gauthier</answer>
+<answer>http://dbpedia.org/resource/Eugene_Levy</answer>
+<answer>http://dbpedia.org/resource/John_Candy</answer>
+<answer>http://dbpedia.org/resource/Jock_Brandis</answer>
+<answer>http://dbpedia.org/resource/Martin_Short</answer>
+<answer>http://dbpedia.org/resource/Leslie_Nielsen</answer>
+<answer>http://dbpedia.org/resource/Christopher_Britton_(actor)</answer>
+<answer>http://dbpedia.org/resource/Robert_De_Niro</answer>
+<answer>http://dbpedia.org/resource/Rene_Russo</answer>
+<answer>http://dbpedia.org/resource/Eddie_Albert</answer>
+<answer>http://dbpedia.org/resource/Anton_LaVey</answer>
+<answer>http://dbpedia.org/resource/John_Travolta</answer>
+<answer>http://dbpedia.org/resource/Doug_McClure</answer>
+<answer>http://dbpedia.org/resource/Dennis_Cole</answer>
+<answer>http://dbpedia.org/resource/Robert_Young_(actor)</answer>
+<answer>http://dbpedia.org/resource/Dorothy_McGuire</answer>
+<answer>http://dbpedia.org/resource/Eve_Plumb</answer>
+<answer>http://dbpedia.org/resource/Susan_Dey</answer>
+<answer>http://dbpedia.org/resource/Meredith_Baxter</answer>
+<answer>http://dbpedia.org/resource/James_Darren</answer>
+<answer>http://dbpedia.org/resource/Adrian_Zmed</answer>
+<answer>http://dbpedia.org/resource/Heather_Locklear</answer>
+<answer>http://dbpedia.org/resource/Pat_Hingle</answer>
+<answer>http://dbpedia.org/resource/Paul_L._Smith</answer>
+<answer>http://dbpedia.org/resource/Yvette_Mimieux</answer>
+<answer>http://dbpedia.org/resource/Raymond_Burr</answer>
+<answer>http://dbpedia.org/resource/Robert_Fuller</answer>
+<answer>http://dbpedia.org/resource/Roy_Thinnes</answer>
+<answer>http://dbpedia.org/resource/Jane_Merrow</answer>
+<answer>http://dbpedia.org/resource/Buddy_Ebsen</answer>
+<answer>http://dbpedia.org/resource/Russell_Johnson</answer>
+<answer>http://dbpedia.org/resource/George_Lopez</answer>
+<answer>http://dbpedia.org/resource/Sof%C3%ADa_Vergara</answer>
+<answer>http://dbpedia.org/resource/Rob_Corddry</answer>
+<answer>http://dbpedia.org/resource/Steve_Zahn</answer>
+<answer>http://dbpedia.org/resource/Ricky_Gervais</answer>
+<answer>http://dbpedia.org/resource/Jane_Lynch</answer>
+<answer>http://dbpedia.org/resource/Craig_Robinson_(actor)</answer>
+<answer>http://dbpedia.org/resource/Sarah_Jessica_Parker</answer>
+<answer>http://dbpedia.org/resource/Jonathan_Morgan_Heit</answer>
+<answer>http://dbpedia.org/resource/Brendan_Fraser</answer>
+<answer>http://dbpedia.org/resource/Lindsay_Crouse</answer>
+<answer>http://dbpedia.org/resource/Estelle_Parsons</answer>
+<answer>http://dbpedia.org/resource/Lynn_Carlin</answer>
+<answer>http://dbpedia.org/resource/Ossie_Davis</answer>
+<answer>http://dbpedia.org/resource/Henry_Rollins</answer>
+<answer>http://dbpedia.org/resource/Margo_Sappington</answer>
+<answer>http://dbpedia.org/resource/Heidi_Klum</answer>
+<answer>http://dbpedia.org/resource/Robin_Williams</answer>
+<answer>http://dbpedia.org/resource/Matt_Lauer</answer>
+<answer>http://dbpedia.org/resource/Jai_Rodriguez</answer>
+<answer>http://dbpedia.org/resource/Reba_McEntire</answer>
+<answer>http://dbpedia.org/resource/Danica_Patrick</answer>
+<answer>http://dbpedia.org/resource/Ken_Jeong</answer>
+<answer>http://dbpedia.org/resource/Whoopi_Goldberg</answer>
+<answer>http://dbpedia.org/resource/Blake_Shelton</answer>
+<answer>http://dbpedia.org/resource/Jay_Leno</answer>
+<answer>http://dbpedia.org/resource/Trisha_Yearwood</answer>
+<answer>http://dbpedia.org/resource/Vince_Edwards</answer>
+<answer>http://dbpedia.org/resource/Will_Sasso</answer>
+<answer>http://dbpedia.org/resource/Jonathan_Sadowski</answer>
+<answer>http://dbpedia.org/resource/Tim_Bagley</answer>
+</answers>
+</question>
+<question id="48">
+<string lang="en"/>
+<answers>
+<answer>http://dbpedia.org/resource/SIS_Building</answer>
+<answer>http://dbpedia.org/resource/United_Kingdom</answer>
+<answer>http://dbpedia.org/resource/London</answer>
+</answers>
+</question>
+</dataset>
