@@ -37,6 +37,29 @@ public class PreProcess {
 		q.setPOSList(posList);
 	}
 	
-	public static void main(String[] args) {}
+	public static void main(String[] args) {
+		LinkedList<String> wordList = new LinkedList<>();
+		LinkedList<String> posList = new LinkedList<>();
+		String sentence = "\nDoes the new Battlestar Galactica series have more episodes than the old one?";
+		Annotation annotation = new Annotation(sentence);
+		Pipeline.pipeline.annotate(annotation);
+		CoreMap labeledSentence = annotation.get(SentencesAnnotation.class).get(0);
+		for(CoreLabel label: labeledSentence.get(TokensAnnotation.class)) {
+			wordList.add(label.get(TextAnnotation.class));
+			posList.add(label.get(PartOfSpeechAnnotation.class));
+		}
+		if(wordList.size() != posList.size()) {
+			System.err.println("Word list is not as long as POS list!");
+			return ;
+		}
+		
+		// to remove the last punctuation
+		wordList.remove(wordList.size()-1);
+		posList.remove(posList.size()-1);
+		
+		System.out.println(wordList);
+		System.out.println(posList);
+		
+	}
 
 }

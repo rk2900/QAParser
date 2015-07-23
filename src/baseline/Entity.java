@@ -66,7 +66,7 @@ public class Entity implements Comparator<Entity>, Comparable<Entity> {
 		if(result != 0){
 			return result;
 		}
-		return o1.end - o2.end;
+		return o2.end - o1.end;
 	}
 
 	@Override
@@ -76,7 +76,7 @@ public class Entity implements Comparator<Entity>, Comparable<Entity> {
 		if(result != 0){
 			return result;
 		}
-		return end - o.end;
+		return o.end - end;
 	}
 	
 }

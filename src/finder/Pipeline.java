@@ -5,8 +5,14 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Properties;
 
+import com.hp.hpl.jena.graph.Node;
+import com.hp.hpl.jena.ontology.OntModel;
+import com.hp.hpl.jena.rdf.model.Literal;
 import com.hp.hpl.jena.rdf.model.Model;
+import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.RDFNode;
+import com.hp.hpl.jena.rdf.model.RDFVisitor;
+import com.hp.hpl.jena.rdf.model.Resource;
 
 import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
@@ -43,7 +49,11 @@ public class Pipeline {
 	
 	public static DataSource source = DataSource.TRAIN;
 	public static String questionFile = "./data/qald-5_train.xml";
-	public static String testQuestionFile = "./data/qald-5_test_questions.xml";
+//	public static String testQuestionFile = "./data/qald-5_test_questions.xml";
+	public static String testQuestionFile = "./data/qald3/dbpedia-test.xml";
+//	public static String testQuestionFile = "./data/qald4/qald-4_multilingual_test_withanswers.xml";
+//	public static String testQuestionFile = "./data/qald1/dbpedia-test.xml";
+	
 	public static int totalNumber = 300;
 	
 	public static String wikiEntityFilePath = "./data/q-e/all-mark-wiki-entity.txt";
@@ -99,6 +109,7 @@ public class Pipeline {
 			} else if(qf.questionClassifier.category == Category.BOOLEAN) {
 				bool.add(qf);
 			}
+//			System.err.println(qf.id+"\t"+qf.questionClassifier.category+"\t"+qf.questionClassifier.label.get(Label.COMPARISON));
 		}
 	}
 	
@@ -106,7 +117,7 @@ public class Pipeline {
 		if(s == DataSource.TEST) {
 			source = DataSource.TEST;
 			questionFile = testQuestionFile;
-			totalNumber = 49;
+			totalNumber = 99;
 			initialize();
 		} else {
 			initialize();
@@ -311,7 +322,6 @@ public class Pipeline {
 		HashMap<QuestionFrame, LinkedList<RDFNode>> qaMap = new HashMap<QuestionFrame, LinkedList<RDFNode>>();
 		
 		OutputRedirector.openFileOutput("./data/output/debug.txt");
-		
 		for(QuestionFrame qf: pipeline.bool) {
 			parser.setEntityList(qf, TOOLKIT.MINERDIS);
 //			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.BOOLEAN);
@@ -393,6 +403,7 @@ public class Pipeline {
 			System.out.println("\n====================================================\n");
 		}
 	
+		OntModel ontModel = ModelFactory.createOntologyModel();
 		for(QuestionFrame qf: pipeline.number) {
 			parser.setEntityList(qf, TOOLKIT.MINERDIS);
 			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.NUMBER);
@@ -407,7 +418,15 @@ public class Pipeline {
 						Predicate p = answer.predictList.get(0);
 						System.out.println("Predicate: "+p.getUri());
 						LinkedList<RDFNode> nodeList = answer.resources.get(p);
+						
 						for (RDFNode rdfNode : nodeList) {
+							//目的是对添加需要count的情形
+							if(rdfNode.isURIResource()){
+								RDFNode tmpNode = ontModel.createLiteral(nodeList.size()+"");
+								nodeList.clear();
+								nodeList.add(tmpNode);
+								break;
+							}
 							System.out.print("\t"+rdfNode.toString());
 						}
 						qaMap.put(qf, nodeList);
@@ -418,6 +437,13 @@ public class Pipeline {
 						System.out.println("Pair Predicate: "+pairPredicate.Predicate1.getUri() + "\t" + pairPredicate.Predicate2.getUri());
 						LinkedList<RDFNode> nodeList = answer.pairResources.get(pairPredicate);
 						for (RDFNode rdfNode : nodeList) {
+							//目的是对添加需要count的情形
+							if(rdfNode.isURIResource()){
+								RDFNode tmpNode = ontModel.createLiteral(nodeList.size()+"");
+								nodeList.clear();
+								nodeList.add(tmpNode);
+								break;
+							}
 							System.out.print("\t"+rdfNode.toString());
 						}
 						qaMap.put(qf, nodeList);
@@ -563,7 +589,7 @@ public class Pipeline {
 			System.out.println("\n====================================================\n");
 		}
 		
-		pipeline.xmlParser.outputAnswer("./data/output/test.xml", qaMap);
+		pipeline.xmlParser.outputAnswer("./data/output/qald3-tmp-test-0.25.xml", qaMap);
 		OutputRedirector.closeFileOutput();
 		
 	}

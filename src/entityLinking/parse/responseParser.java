@@ -2,6 +2,7 @@ package entityLinking.parse;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -92,12 +93,20 @@ public class responseParser {
 						if(Character.isUpperCase(qf.question.charAt(startIndex))){
 							entities.add(new Entity(candTitle, transform.start, transform.end));
 						}else{
-							System.err.println(qf.id + ": LowerCase");
+							String entityText = qf.question.substring(startIndex, endIndex);
+							String [] tempList = entityText.split(" ");
+							if(tempList.length > 1){
+								if(Character.isUpperCase(tempList[1].charAt(0))){
+									entities.add(new Entity(candTitle, transform.start, transform.end));
+									System.err.println(qf.id + ": the + Upper");
+								}
+							}else{
+								System.err.println(qf.id + ": LowerCase");
+							}
 						}
 					}else{
 						System.err.println(qf.id + ": Entity not matched.");
 					}
-					
 				}
 			} catch (JSONException e) {
 				e.printStackTrace();
@@ -107,6 +116,7 @@ public class responseParser {
 			System.err.println("null toolkit");
 			break;
 		}
+		Collections.sort(entities);
 		return entities;
 	}
 	

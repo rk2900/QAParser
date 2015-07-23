@@ -25,7 +25,8 @@ import baseline.Classification.CLASSIFICATION;
 import basic.FileOps;
 
 public class Main {
-	
+	public static double threshold = 0.5;
+	public static double pairThreshold = 0.8;
 	public static void entityExtraction(String inPath,String outPath, Pipeline pipeline){
 		LinkedList<String> wikiLines = FileOps.LoadFilebyLine(inPath);
 		HashMap<String, ArrayList<Entity>> map = new HashMap<String, ArrayList<Entity>>();
@@ -170,12 +171,26 @@ public class Main {
 	
 	//entityList 已经排过序了 
 	public static Entity getEntity(LinkedList<Entity> entityList, Node node){
+//		for (Entity entity : entityList) {
+//			if(node.left <= entity.start && node.right >= entity.end){
+//				return entity;
+//			}
+//		}
+//		return null;
+		//===========================================================
+		Entity e = null;
 		for (Entity entity : entityList) {
 			if(node.left <= entity.start && node.right >= entity.end){
-				return entity;
+				if(e == null){
+					e = entity;
+				}else{
+					if(entity.start > e.end){
+						e = entity;
+					}
+				}
 			}
 		}
-		return null;
+		return e;
 	}
 	
 	
@@ -246,13 +261,20 @@ public class Main {
 				answer.predictList.add(p);
 			}else{
 				if(i == answer.predictList.size() || i == SimilarityFunction.predictNum){
-					answer.predictList = new ArrayList<Predicate>();
+//					answer.predictList = new ArrayList<Predicate>();
+					//===============================================================
+					if(answer.predictList.get(0).getMaxScore() > threshold){
+						p = answer.predictList.get(0);
+						answer.predictList.clear();
+						answer.predictList.add(p);
+					}
 				}
 			}
 		}
 		
 		if(answer.answerType == 1){
-			for (i=0; i<answer.pairPredicates.size() && i<SimilarityFunction.predictNum; ++i) {
+//			for (i=0; i<answer.pairPredicates.size() && i<SimilarityFunction.predictNum; ++i) {
+			for (i=0; i<answer.pairPredicates.size() && i<25; ++i) {
 				pa = answer.pairPredicates.get(i);
 				res = answer.pairResources.get(pa);
 				if(res.size() > 1){
@@ -281,7 +303,12 @@ public class Main {
 				answer.pairPredicates.add(pa);
 			}else{
 				if(i == answer.pairPredicates.size() || i == SimilarityFunction.predictNum){
-					answer.pairPredicates = new LinkedList<PairPredicate>();
+//					answer.pairPredicates = new LinkedList<PairPredicate>();
+					if(answer.pairPredicates.get(0).score > pairThreshold){
+						pa = answer.pairPredicates.get(0);
+						answer.pairPredicates.clear();
+						answer.pairPredicates.add(pa);
+					}
 				}
 			}
 		}
@@ -368,13 +395,18 @@ public class Main {
 					answer.exceptionString = "pipe style, step 1 error, resources size equals: 0";
 				}else{
 					HashMap<Predicate, HashSet<String>> pipePredicates = ClientManagement.getPredicatePipe(answer.entityUri, firstAnswer.predictList, type);
+//					for (Predicate p : pipePredicates.keySet()) {
+//						System.out.println(p.getUri());
+//						System.out.println(pipePredicates.get(p));
+//						System.out.println("===========");
+//					}
 					HashMap<String, Predicate> p2Map = new HashMap<String, Predicate>();
 					for (Predicate p1 : pipePredicates.keySet()) {
 						for (String p2String : pipePredicates.get(p1)) {
 							if(!p2Map.containsKey(p2String)){
 								Predicate p2 = SimilarityFunction.getPredicate(p2String, NL, focusString);
 								p2Map.put(p2String, p2);
-							}
+							} 
 							if(p2Map.get(p2String).maxScore > SimilarityFunction.minSimilarityScore){
 								PairPredicate pairP = new PairPredicate(p1,p2Map.get(p2String));
 								answer.pairPredicates.add(pairP);
@@ -382,9 +414,13 @@ public class Main {
 						}
 					}
 					Collections.sort(answer.pairPredicates, Collections.reverseOrder());
+					
 					for (PairPredicate pairP : answer.pairPredicates) {
 						LinkedList<RDFNode> res = ClientManagement.getPipeNode(answer.entityUri, pairP.Predicate1.uri, pairP.Predicate2.uri);
 						answer.pairResources.put(pairP, res);
+						
+						//=============================
+//						System.out.println(pairP.Predicate1.getUri()+"\t"+pairP.Predicate2.getUri()+"\t"+pairP.score);
 					}
 					addTypeConstraint(answer, type);
 				}
