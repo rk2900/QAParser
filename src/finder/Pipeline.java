@@ -589,7 +589,7 @@ public class Pipeline {
 			System.out.println("\n====================================================\n");
 		}
 		
-		pipeline.xmlParser.outputAnswer("./data/output/qald3-tmp-test-0.25.xml", qaMap);
+		pipeline.xmlParser.outputAnswer("./data/output/qald3-test-0.15.xml", qaMap);
 		OutputRedirector.closeFileOutput();
 		
 	}

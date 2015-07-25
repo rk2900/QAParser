@@ -679,8 +679,7 @@ Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	
 Entity List: 	2
 -------------------------
-ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
-
+ANSWER = null / ANSWER has exception: special situation
 ID: 	21
 Content: 	
 What is the capital of Canada?
@@ -764,8 +763,7 @@ Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	
 Entity List: 	1
 -------------------------
-ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
-
+ANSWER = null / ANSWER has exception: special situation
 ID: 	33
 Content: 	
 Give me all Australian nonprofit organizations.
@@ -776,8 +774,7 @@ Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	
 Entity List: 	1
 -------------------------
-ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
-
+ANSWER = null / ANSWER has exception: special situation
 ID: 	34
 Content: 	
 In which military conflicts did Lawrence of Arabia participate?
@@ -829,8 +826,7 @@ Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	
 Entity List: 	1
 -------------------------
-ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
-
+ANSWER = null / ANSWER has exception: special situation
 ID: 	40
 Content: 	
 List all games by GMT.
@@ -841,8 +837,7 @@ Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	games
 Entity List: 	1
 -------------------------
-ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
-
+ANSWER = null / ANSWER has exception: special situation
 ID: 	43
 Content: 	
 Give me all breeds of the German Shepherd dog.
@@ -1015,8 +1010,7 @@ Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	
 Entity List: 	2
 -------------------------
-ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
-
+ANSWER = null / ANSWER has exception: special situation
 ID: 	58
 Content: 	
 What is the time zone of Salt Lake City?
@@ -1070,8 +1064,7 @@ Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	
 Entity List: 	2
 -------------------------
-ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
-
+ANSWER = null / ANSWER has exception: special situation
 ID: 	64
 Content: 	
 Give me all launch pads operated by NASA.
@@ -1183,8 +1176,7 @@ Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	
 Entity List: 	1
 -------------------------
-ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
-
+ANSWER = null / ANSWER has exception: special situation
 ID: 	83
 Content: 	
 How high is the Mount Everest?
@@ -1195,8 +1187,7 @@ Rule Judgement:	{WHO=false, COMPARISON=false, WHERE=false}
 Focus Content: 	
 Entity List: 	1
 -------------------------
-ANSWER = null / ANSWER has exception: ConstraintList size equals 0.
-
+ANSWER = null / ANSWER has exception: special situation
 ID: 	88
 Content: 	
 Which films starring Clint Eastwood did he direct himself?
@@ -1318,68 +1309,68 @@ Predicate: http://dbpedia.org/property/name
 ====================================================
 
 XML Question ID: 95
-XML Question ID: 49
-XML Question ID: 89
-XML Question ID: 45
 XML Question ID: 24
+XML Question ID: 66
+XML Question ID: 76
 XML Question ID: 87
-XML Question ID: 58
-XML Question ID: 19
 XML Question ID: 53
-XML Question ID: 72
+XML Question ID: 19
+XML Question ID: 43
+XML Question ID: 58
+XML Question ID: 28
 XML Question ID: 17
-XML Question ID: 54
 XML Question ID: 4
+XML Question ID: 46
 XML Question ID: 84
+XML Question ID: 48
+XML Question ID: 21
+XML Question ID: 81
+XML Question ID: 99
 XML Question ID: 68
-XML Question ID: 30
-XML Question ID: 29
+XML Question ID: 96
 XML Question ID: 78
 XML Question ID: 62
-XML Question ID: 64
 XML Question ID: 6
 XML Question ID: 67
-XML Question ID: 37
-XML Question ID: 43
-XML Question ID: 48
+XML Question ID: 29
+XML Question ID: 93
 XML Question ID: 23
 XML Question ID: 56
 XML Question ID: 10
+XML Question ID: 30
 XML Question ID: 74
 XML Question ID: 2
-XML Question ID: 46
-XML Question ID: 99
-XML Question ID: 65
-XML Question ID: 96
 XML Question ID: 73
 XML Question ID: 41
-XML Question ID: 98
 XML Question ID: 42
-XML Question ID: 5
+XML Question ID: 44
+XML Question ID: 64
+XML Question ID: 65
 XML Question ID: 69
 XML Question ID: 38
 XML Question ID: 7
-XML Question ID: 81
 XML Question ID: 70
+XML Question ID: 54
 XML Question ID: 3
-XML Question ID: 66
+XML Question ID: 45
 XML Question ID: 80
 XML Question ID: 77
-XML Question ID: 28
+XML Question ID: 89
+XML Question ID: 49
 XML Question ID: 71
-XML Question ID: 21
+XML Question ID: 72
 XML Question ID: 8
 XML Question ID: 100
-XML Question ID: 86
 XML Question ID: 47
+XML Question ID: 86
+XML Question ID: 98
 XML Question ID: 14
+XML Question ID: 5
 XML Question ID: 35
-XML Question ID: 44
 XML Question ID: 79
 XML Question ID: 22
 XML Question ID: 26
 XML Question ID: 85
+XML Question ID: 37
 XML Question ID: 90
-XML Question ID: 76
-XML Question ID: 93
 XML Question ID: 32

@@ -1,5 +1,6 @@
 package baseline;
 
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -38,6 +39,43 @@ public class Classification {
 		
 		if(entityList.size() == 0){
 			answer.exceptionString += "entityList size equals 0.\n";
+			return answer;
+		}
+		
+		if( constraintList.size() == 0){
+			if(type ==  CLASSIFICATION.BOOLEAN){
+				return answer;
+			}
+			Entity e = entityList.get(0);
+			for(int i=1; i<entityList.size(); ++i){
+				Entity tmp = entityList.get(i);
+				if(tmp.start < e.start || tmp.end > e.end){
+					return answer;
+				}
+			}
+			
+			answer.exceptionString = "special situation";
+//			MatchDetail onestep = new MatchDetail(entityList.get(0), new Con, 0,focusString);
+			StringBuilder nlSB = new StringBuilder();
+			String [] ignoreWords = {"is","the","was","were","are","do","does"};
+			HashSet<String> ignoreSet = new HashSet<String>();
+			for (String string : ignoreWords) {
+				ignoreSet.add(string);
+			}
+			for(int i=1; i<e.start; ++i){
+				String tmpNL = qf.getWordList().get(i);
+				if(ignoreSet.contains(tmpNL) || Character.isUpperCase(tmpNL.charAt(0))){
+					continue;
+				}
+				nlSB.append(tmpNL);
+			}
+			Constraint c = new Constraint(null, nlSB.toString(), null);
+			MatchDetail detail = new MatchDetail(e, c, 0, focusString);
+			
+			answer.initial(0);
+			Main.stepAnswer(detail, answer, type);
+//			System.out.println(e);
+//			System.out.println(answer.);
 			return answer;
 		}
 		

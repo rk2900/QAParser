@@ -104,6 +104,7 @@ public class entityClient {
 		test = "Give me all members of Prodigy."; 
 //		test = "Who painted The Storm on the Sea of Galilee?";
 		test = "In which city was the former Dutch queen Juliana buried?";
+		test = "Who invented the zipper?";
 //		test = "Who painted The Storm on the Sea of Galilee?";
 //		test = "How many official languages are spoken on the Seychelles?";
 //		test = "In which military conflicts did Lawrence of Arabia participate?";
