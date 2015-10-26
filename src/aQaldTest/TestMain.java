@@ -16,21 +16,29 @@ public class TestMain {
 		QuestionFrame qf = pipeline.xmlParser.getQuestionFrameWithId(qid);
 		parser.setEntityList(qf, TOOLKIT.MINERDIS);
 		
-		Answer answer = Classification.getAnswer(qf,CLASSIFICATION.RESOURCE);
-		System.out.println(answer.predictList.get(1).getUri() + answer.predictList.get(1).getMaxScore());
-		System.out.println(answer.resources.get(answer.predictList.get(0).getUri()));
-		System.err.println("******************************************");
-		for (Entity entity : qf.entityList) {
-			entity.print();
+		Answer answer = Classification.getAnswer(qf,CLASSIFICATION.WHO);
+//		System.out.println(answer.answerType);
+		System.out.println(answer.entityUri);
+		if(answer.predictList != null && answer.predictList.size() > 0){
+			System.out.println(answer.predictList.get(0).getUri() + "\t" + answer.predictList.get(0).getMaxScore());
+			System.out.println(answer.resources.get(answer.predictList.get(0)));
 		}
+		if(answer.pairPredicates != null && answer.pairPredicates.size() > 0){
+			System.out.println(answer.pairPredicates.get(0).Predicate1.getUri() + "\t" + answer.pairPredicates.get(0).Predicate2.getUri() + "\t" + answer.pairPredicates.getFirst().score);
+			System.out.println(answer.pairResources.get(answer.pairPredicates.getFirst()));
+		}
+		System.err.println("******************************************");
+//		for (Entity entity : qf.entityList) {
+//			entity.print();
+//		}
 		System.out.println(syntacticParser.Main.get(qf,qf.question));
-		System.out.println(qf.answers);
+//		System.out.println(qf.answers);
 	}
 	public static void main(String[] args) {
 		Pipeline pipeline = new Pipeline(DataSource.TEST);
 		responseParser parser = new responseParser();
 		
-		showSingleQF(pipeline, parser, 83);
+		showSingleQF(pipeline, parser, 96);
 //		OutputRedirector.openFileOutput("./data/api_classification/normal-type-pipe.txt");
 //		for(int i=1; i<=pipeline.totalNumber; i++) {
 //			

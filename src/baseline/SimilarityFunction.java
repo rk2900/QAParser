@@ -44,6 +44,9 @@ public class SimilarityFunction {
 		if(predictLabel.contains(" ")){
 			String [] words = predictLabel.split(" ");
 			for (String word : words) {
+				if(word.startsWith("(") && word.endsWith(")") && word.length() == 3){
+					continue;
+				}
 				wordList.add(word);
 			}
 		}else{

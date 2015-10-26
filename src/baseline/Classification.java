@@ -54,7 +54,8 @@ public class Classification {
 				}
 			}
 			
-			answer.exceptionString = "special situation";
+//			answer.exceptionString = "special situation";
+			answer.exceptionString = "";
 //			MatchDetail onestep = new MatchDetail(entityList.get(0), new Con, 0,focusString);
 			StringBuilder nlSB = new StringBuilder();
 			String [] ignoreWords = {"is","the","was","were","are","do","does"};
@@ -69,11 +70,12 @@ public class Classification {
 				}
 				nlSB.append(tmpNL);
 			}
+			System.err.println(nlSB.toString()+"***");
 			Constraint c = new Constraint(null, nlSB.toString(), null);
 			MatchDetail detail = new MatchDetail(e, c, 0, focusString);
 			
 			answer.initial(0);
-			Main.stepAnswer(detail, answer, type);
+			Main.stepAnswer(detail, answer, CLASSIFICATION.NORMAL);
 //			System.out.println(e);
 //			System.out.println(answer.);
 			return answer;

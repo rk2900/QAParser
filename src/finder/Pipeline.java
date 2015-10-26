@@ -322,52 +322,52 @@ public class Pipeline {
 		HashMap<QuestionFrame, LinkedList<RDFNode>> qaMap = new HashMap<QuestionFrame, LinkedList<RDFNode>>();
 		
 		OutputRedirector.openFileOutput("./data/output/debug.txt");
-		for(QuestionFrame qf: pipeline.bool) {
-			parser.setEntityList(qf, TOOLKIT.MINERDIS);
-//			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.BOOLEAN);
-//			qf.print();
-			
-			Model model;
-			RDFNode r = null;
-			try {
-				model = ClientManagement.getAgModel();
-				r = model.createResource("true");
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			LinkedList<RDFNode> l = new LinkedList<RDFNode>();
-			l.add(r);
-			qaMap.put(qf, l );
-//			if(answer!=null && answer.isException()) {
-//				System.out.println("ANSWER = null / ANSWER has exception: " + answer.exceptionString );
-//				continue;
-//			} else {
-//				if(answer.answerType == 0) {
-//					System.out.println("ANSWER_TYPE = 0");
-//					if(answer.predictList.size() > 0) {
-//						Predicate p = answer.predictList.get(0);
-//						System.out.println("Predicate: "+p.getUri());
-//						LinkedList<RDFNode> nodeList = answer.resources.get(p);
-//						for (RDFNode rdfNode : nodeList) {
-//							System.out.print("\t"+rdfNode.toString());
-//						}
-//						qaMap.put(qf, nodeList);
-//					}
-//				} else {
-//					if(answer.pairPredicates.size() > 0) {
-//						PairPredicate pairPredicate = answer.pairPredicates.get(0);
-//						System.out.println("Pair Predicate: "+pairPredicate.Predicate1.getUri() + "\t" + pairPredicate.Predicate2.getUri());
-//						LinkedList<RDFNode> nodeList = answer.pairResources.get(pairPredicate);
-//						for (RDFNode rdfNode : nodeList) {
-//							System.out.print("\t"+rdfNode.toString());
-//						}
-//						qaMap.put(qf, nodeList);
-//					}
-//				}
+//		for(QuestionFrame qf: pipeline.bool) {
+//			parser.setEntityList(qf, TOOLKIT.MINERDIS);
+////			Answer answer = Classification.getAnswer(qf,CLASSIFICATION.BOOLEAN);
+////			qf.print();
+//			
+//			Model model;
+//			RDFNode r = null;
+//			try {
+//				model = ClientManagement.getAgModel();
+//				r = model.createResource("true");
+//			} catch (Exception e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
 //			}
-			System.out.println("\n====================================================\n");
-		}
+//			LinkedList<RDFNode> l = new LinkedList<RDFNode>();
+//			l.add(r);
+//			qaMap.put(qf, l );
+////			if(answer!=null && answer.isException()) {
+////				System.out.println("ANSWER = null / ANSWER has exception: " + answer.exceptionString );
+////				continue;
+////			} else {
+////				if(answer.answerType == 0) {
+////					System.out.println("ANSWER_TYPE = 0");
+////					if(answer.predictList.size() > 0) {
+////						Predicate p = answer.predictList.get(0);
+////						System.out.println("Predicate: "+p.getUri());
+////						LinkedList<RDFNode> nodeList = answer.resources.get(p);
+////						for (RDFNode rdfNode : nodeList) {
+////							System.out.print("\t"+rdfNode.toString());
+////						}
+////						qaMap.put(qf, nodeList);
+////					}
+////				} else {
+////					if(answer.pairPredicates.size() > 0) {
+////						PairPredicate pairPredicate = answer.pairPredicates.get(0);
+////						System.out.println("Pair Predicate: "+pairPredicate.Predicate1.getUri() + "\t" + pairPredicate.Predicate2.getUri());
+////						LinkedList<RDFNode> nodeList = answer.pairResources.get(pairPredicate);
+////						for (RDFNode rdfNode : nodeList) {
+////							System.out.print("\t"+rdfNode.toString());
+////						}
+////						qaMap.put(qf, nodeList);
+////					}
+////				}
+////			}
+//			System.out.println("\n====================================================\n");
+//		}
 		
 		for(QuestionFrame qf: pipeline.comparison) {
 			parser.setEntityList(qf, TOOLKIT.MINERDIS);
@@ -589,7 +589,7 @@ public class Pipeline {
 			System.out.println("\n====================================================\n");
 		}
 		
-		pipeline.xmlParser.outputAnswer("./data/output/qald3-test-0.15.xml", qaMap);
+		pipeline.xmlParser.outputAnswer("./data/output/qald3-try-test-0.15.xml", qaMap);
 		OutputRedirector.closeFileOutput();
 		
 	}
